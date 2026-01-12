@@ -1,0 +1,121 @@
+Driving (Estimate),Straight Line,FromAddress,ToCity,ToState,Cost,ShippingTimeDays
+375,334,Ontario,San Jose,California,10.25,2
+75,66,Stockton ,San Jose,California,7.62,1
+840,713,Tacoma,San Jose,California,10.25,2
+1260,914,Denver,San Jose,California,10.25,2
+1720,1386,Dallas,San Jose,California,13.17,3
+2160,1747,Chicago,San Jose,California,14.97,4
+2430,1973,Columbus,San Jose,California,14.97,4
+2470,2140,Atlanta GA,San Jose,California,14.97,4
+2760,2450,Orlando Florida,San Jose,California,14.97,4
+2750,2348,Harrisburg,San Jose,California,14.97,4
+2260,1815,Indianapolis,San Jose,California,14.97,4
+672,525,Boise,San Jose,California,8.5,2
+1370,1171,Ontario,San Antonio,Texas,13.21,3
+1730,1435,Stockton ,San Antonio,Texas,12.19,3
+2130,1712,Tacoma,San Antonio,Texas,13.21,4
+920,740,Denver,San Antonio,Texas,10.29,2
+275,243,Dallas,San Antonio,Texas,8.54,1
+1150,1007,Chicago,San Antonio,Texas,12.19,3
+1380,1155,Columbus,San Antonio,Texas,13.21,3
+980,874,Atlanta GA,San Antonio,Texas,10.29,2
+1200,1048,Orlando Florida,San Antonio,Texas,12.19,2
+1650,1390,Harrisburg,San Antonio,Texas,13.21,3
+1190,925,Indianapolis,San Antonio,Texas,12.19,3
+1650,1390,Boise,San Antonio,Texas,13.21,4
+2700,2284,Ontario,Miami,Florida,15.01,4
+3060,2585,Stockton ,Miami,Florida,15.01,8
+3320,2723,Tacoma,Miami,Florida,15.01,8
+2070,1723,Denver,Miami,Florida,13.21,3
+1310,1110,Dallas,Miami,Florida,13.21,2
+1380,1189,Chicago,Miami,Florida,12.19,3
+1150,990,Columbus,Miami,Florida,12.19,2
+660,605,Atlanta GA,Miami,Florida,8.54,2
+235,204,Orlando Florida,Miami,Florida,8.54,1
+1140,941,Harrisburg,Miami,Florida,10.29,2
+1200,1025,Indianapolis,Miami,Florida,12.19,3
+2835,2375,Boise,Miami,Florida,15.01,8
+2780,2432,Ontario,New York,New York,15.01,4
+2910,2536,Stockton ,New York,New York,15.01,4
+2860,2402,Tacoma,New York,New York,15.01,4
+1780,1620,Denver,New York,New York,13.21,3
+1550,1304,Dallas,New York,New York,12.19,3
+790,711,Chicago,New York,New York,10.29,2
+540,466,Columbus,New York,New York,8.54,2
+880,751,Atlanta GA,New York,New York,10.29,2
+1080,940,Orlando Florida,New York,New York,10.29,2
+172,155,Harrisburg,New York,New York,7.66,1
+715,645,Indianapolis,New York,New York,10.29,2
+2468,2065,Boise,New York,New York,15.01,8
+2500,2154,Ontario,Pittsburgh,Pennsylvania,14.97,4
+2620,2252,Stockton ,Pittsburgh,Pennsylvania,14.97,4
+2520,2131,Tacoma,Pittsburgh,Pennsylvania,14.97,4
+1450,1317,Denver,Pittsburgh,Pennsylvania,11.95,3
+1210,1075,Dallas,Pittsburgh,Pennsylvania,11.95,3
+460,410,Chicago,Pittsburgh,Pennsylvania,8.5,2
+185,162,Columbus,Pittsburgh,Pennsylvania,7.86,1
+685,603,Atlanta GA,Pittsburgh,Pennsylvania,8.5,2
+960,855,Orlando Florida,Pittsburgh,Pennsylvania,10.25,2
+205,170,Harrisburg,Pittsburgh,Pennsylvania,7.86,1
+360,335,Indianapolis,Pittsburgh,Pennsylvania,8.5,2
+2135,1875,Boise,Pittsburgh,Pennsylvania,14.97,4
+2420,2082,Ontario,Charlotte,North Carolina,15.01,4
+2780,2365,Stockton ,Charlotte,North Carolina,15.01,8
+2820,2300,Tacoma,Charlotte,North Carolina,15.01,8
+1560,1332,Denver,Charlotte,North Carolina,12.19,3
+1020,930,Dallas,Charlotte,North Carolina,10.29,3
+750,594,Chicago,Charlotte,North Carolina,10.29,2
+430,370,Columbus,Charlotte,North Carolina,8.54,2
+245,226,Atlanta GA,Charlotte,North Carolina,7.9,1
+520,438,Orlando Florida,Charlotte,North Carolina,8.54,2
+470,425,Harrisburg,Charlotte,North Carolina,8.54,2
+580,495,Indianapolis,Charlotte,North Carolina,8.54,2
+2332,1958,Boise,Charlotte,North Carolina,15.01,8
+2240,1928,Ontario,Columbus,Ohio,15.01,4
+2370,2034,Stockton ,Columbus,Ohio,15.01,4
+2340,1937,Tacoma,Columbus,Ohio,15.01,4
+1270,1154,Denver,Columbus,Ohio,12.19,3
+1030,927,Dallas,Columbus,Ohio,10.29,3
+355,315,Chicago,Columbus,Ohio,8.54,2
+0,0,Columbus,Columbus,Ohio,7.66,1
+565,464,Atlanta GA,Columbus,Ohio,8.54,2
+950,815,Orlando Florida,Columbus,Ohio,10.29,2
+370,315,Harrisburg,Columbus,Ohio,8.54,2
+175,153,Indianapolis,Columbus,Ohio,7.9,1
+"1,980",1750,Boise,Columbus,Ohio,13.21,8
+2180,1895,Ontario,Atlanta,Georgia,14.97,4
+2540,2184,Stockton ,Atlanta,Georgia,14.97,4
+2650,2178,Tacoma,Atlanta,Georgia,14.97,4
+1400,1215,Denver,Atlanta,Georgia,11.95,3
+780,720,Dallas,Atlanta,Georgia,10.25,2
+720,595,Chicago,Atlanta,Georgia,10.25,2
+565,464,Columbus,Atlanta,Georgia,8.5,2
+0,0,Atlanta GA,Atlanta,Georgia,7.62,1
+440,393,Orlando Florida,Atlanta,Georgia,8.5,2
+700,620,Harrisburg,Atlanta,Georgia,10.25,2
+540,461,Indianapolis,Atlanta,Georgia,8.5,2
+2171,1845,Boise,Atlanta,Georgia,14.97,4
+2030,1748,Ontario,Sycamore,Illinois,15.01,3
+2080,1832,Stockton ,Sycamore,Illinois,13.21,3
+2050,1735,Tacoma,Sycamore,Illinois,13.21,3
+1000,835,Denver,Sycamore,Illinois,10.29,2
+970,765,Dallas,Sycamore,Illinois,10.29,2
+65,54,Chicago,Sycamore,Illinois,7.66,1
+385,320,Columbus,Sycamore,Illinois,8.54,1
+780,615,Atlanta GA,Sycamore,Illinois,10.29,2
+1210,1025,Orlando Florida,Sycamore,Illinois,12.19,2
+720,635,Harrisburg,Sycamore,Illinois,10.29,2
+245,204,Indianapolis,Sycamore,Illinois,7.9,1
+1641,1430,Boise,Sycamore,Illinois,13.21,4
+2650,2288,Ontario,Arlington,Virginia,15.01,4
+2810,2420,Stockton ,Arlington,Virginia,15.01,4
+2780,2320,Tacoma,Arlington,Virginia,15.01,8
+1660,1478,Denver,Arlington,Virginia,13.21,3
+1310,1185,Dallas,Arlington,Virginia,12.19,3
+700,595,Chicago,Arlington,Virginia,8.54,3
+410,345,Columbus,Arlington,Virginia,8.54,2
+640,541,Atlanta GA,Arlington,Virginia,8.54,2
+850,755,Orlando Florida,Arlington,Virginia,10.29,2
+120,95,Harrisburg,Arlington,Virginia,7.66,1
+590,495,Indianapolis,Arlington,Virginia,8.54,2
+2375,2050,Boise,Arlington,Virginia,15.01,4
