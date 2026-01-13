@@ -315,6 +315,21 @@ with tab_dashboard:
     cost_weight = st.sidebar.slider("Cost weight (Time weight = 1 - Cost)", 0.0, 1.0, 0.6, 0.05)
     signs_per_month = st.sidebar.number_input("Signs sold per month", min_value=0, value=500, step=50)
     build_cost_weight = cost_weight
+    st.sidebar.markdown("Size mix (%)")
+    size_small_pct = st.sidebar.number_input("Small", min_value=0.0, max_value=100.0, value=45.0, step=1.0, format="%.2f")
+    size_medium_pct = st.sidebar.number_input("Medium", min_value=0.0, max_value=100.0, value=33.0, step=1.0, format="%.2f")
+    size_large_pct = st.sidebar.number_input("Large", min_value=0.0, max_value=100.0, value=22.0, step=1.0, format="%.2f")
+    size_mix_total = size_small_pct + size_medium_pct + size_large_pct
+    if size_mix_total <= 0:
+        size_mix = {"Small": 0.0, "Medium": 0.0, "Large": 0.0}
+    else:
+        size_mix = {
+            "Small": size_small_pct / size_mix_total,
+            "Medium": size_medium_pct / size_mix_total,
+            "Large": size_large_pct / size_mix_total,
+        }
+    if abs(size_mix_total - 100.0) > 0.5:
+        st.sidebar.caption("Size mix is normalized to 100%.")
 
     st.sidebar.markdown("Destination share (%)")
     destination_list = sorted(df_raw["Destination"].unique())
@@ -374,7 +389,15 @@ with tab_dashboard:
         baseline_time_by_dest["Weight"].to_numpy(),
     )
     time_savings_pct = ((avg_time - optimal_time_avg) / avg_time * 100.0) if avg_time else 0.0
-    avg_cost = float(df["Cost"].mean())
+    baseline_cost_by_dest = df[df["FromAddress"] == baseline_origin].groupby(
+        "Destination",
+        as_index=False,
+    ).agg(AvgCost=("Cost", "mean"))
+    baseline_cost_by_dest["Weight"] = baseline_cost_by_dest["Destination"].map(dest_weights).fillna(0.0)
+    avg_cost = weighted_mean(
+        baseline_cost_by_dest["AvgCost"].to_numpy(),
+        baseline_cost_by_dest["Weight"].to_numpy(),
+    )
     best_cost_by_dest = df.groupby("Destination", as_index=False).agg(BestCost=("Cost", "min"))
     best_cost_by_dest["Weight"] = best_cost_by_dest["Destination"].map(dest_weights).fillna(0.0)
     optimal_cost_avg = weighted_mean(best_cost_by_dest["BestCost"].to_numpy(), best_cost_by_dest["Weight"].to_numpy())
@@ -417,9 +440,51 @@ with tab_dashboard:
             built_best_cost["BestCost"].to_numpy(),
             built_best_cost["Weight"].to_numpy(),
         )
-    col10, col11 = st.columns(2)
+
+    def size_mix_monthly_savings(day: str, size_mix: dict, signs_per_month: float) -> float:
+        total = 0.0
+        for size, share in size_mix.items():
+            if share <= 0:
+                continue
+            size_df = load_data(DATASETS[size][day])
+            if size_df.empty:
+                continue
+            origins = sorted(size_df["FromAddress"].unique())
+            if not origins:
+                continue
+            baseline = baseline_origin if baseline_origin in origins else origins[0]
+            built_origins = [o for o in built_network_origins if o in origins]
+            if not built_origins:
+                built_origins = [baseline]
+            dest_in_view = sorted(size_df["Destination"].unique())
+            dest_weights_size = normalize_destination_weights(dest_in_view, dest_pct_map)
+            baseline_cost_by_dest = size_df[size_df["FromAddress"] == baseline].groupby(
+                "Destination",
+                as_index=False,
+            ).agg(AvgCost=("Cost", "mean"))
+            baseline_cost_by_dest["Weight"] = baseline_cost_by_dest["Destination"].map(dest_weights_size).fillna(0.0)
+            baseline_avg_cost = weighted_mean(
+                baseline_cost_by_dest["AvgCost"].to_numpy(),
+                baseline_cost_by_dest["Weight"].to_numpy(),
+            )
+            built_subset_size = size_df[size_df["FromAddress"].isin(built_origins)]
+            if built_subset_size.empty:
+                continue
+            built_best_cost = built_subset_size.groupby("Destination", as_index=False).agg(BestCost=("Cost", "min"))
+            built_best_cost["Weight"] = built_best_cost["Destination"].map(dest_weights_size).fillna(0.0)
+            built_avg_cost = weighted_mean(
+                built_best_cost["BestCost"].to_numpy(),
+                built_best_cost["Weight"].to_numpy(),
+            )
+            if np.isfinite(baseline_avg_cost) and np.isfinite(built_avg_cost):
+                total += share * signs_per_month * (baseline_avg_cost - built_avg_cost)
+        return total
+
+    monthly_savings = size_mix_monthly_savings(shipping_day, size_mix, float(signs_per_month))
+    col10, col11, col12 = st.columns(3)
     col10.metric("Built network avg time", f"{built_optimal_time_avg:.2f}" if np.isfinite(built_optimal_time_avg) else "n/a")
     col11.metric("Built network avg cost", f"{built_optimal_cost_avg:.2f}" if np.isfinite(built_optimal_cost_avg) else "n/a")
+    col12.metric("Monthly savings (size mix)", f"{monthly_savings:,.2f}" if np.isfinite(monthly_savings) else "n/a")
 
     st.markdown("---")
 
