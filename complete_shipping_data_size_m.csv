@@ -1,0 +1,3775 @@
+FromAddress,ToCity,ToState,PackageSize,Cost,ShippingTimeDays,Service
+Atlanta,Brooklyn,NY,Size M,8.57,2,UPS® Ground
+Atlanta,Houston,TX,Size M,8.57,2,UPS® Ground
+Atlanta,Phoenix,AZ,Size M,10.66,3,UPS® Ground
+Atlanta,San Antonio,TX,Size M,8.57,2,UPS® Ground
+Atlanta,Chicago,IL,Size M,8.57,2,UPS® Ground
+Atlanta,Austin,TX,Size M,8.57,2,UPS® Ground
+Atlanta,Charlotte,NC,Size M,8.24,1,UPS® Ground
+Atlanta,New York,NY,Size M,8.57,2,UPS® Ground
+Atlanta,Atlanta,GA,Size M,7.57,1,UPS® Ground
+Atlanta,Orlando,FL,Size M,8.69,2,UPS® Ground
+Atlanta,Las Vegas,NV,Size M,10.66,4,UPS® Ground
+Atlanta,Colorado Springs,CO,Size M,10.07,3,UPS® Ground
+Atlanta,Marble Falls,TX,Size M,8.57,2,UPS® Ground
+Atlanta,San Diego,CA,Size M,11.7,3,UPS® Ground
+Atlanta,Tampa,FL,Size M,7.91,2,UPS® Ground
+Atlanta,Jacksonville,FL,Size M,8.24,1,UPS® Ground
+Atlanta,Louisville,KY,Size M,8.69,2,UPS® Ground
+Atlanta,Marietta,GA,Size M,7.57,1,UPS® Ground
+Atlanta,Raleigh,NC,Size M,8.69,2,UPS® Ground
+Atlanta,Fort Worth,TX,Size M,8.57,2,UPS® Ground
+Atlanta,Oklahoma City,OK,Size M,8.57,2,UPS® Ground
+Atlanta,Chesapeake,VA,Size M,8.69,2,UPS® Ground
+Atlanta,Dallas,TX,Size M,8.57,2,UPS® Ground
+Atlanta,Denver,CO,Size M,10.07,3,UPS® Ground
+Atlanta,Miami,FL,Size M,8.69,2,UPS® Ground
+Atlanta,Omaha,NE,Size M,8.57,3,UPS® Ground
+Atlanta,Pittsburgh,PA,Size M,8.69,2,UPS® Ground
+Atlanta,Portland,OR,Size M,11.7,4,UPS® Ground
+Atlanta,San Francisco,CA,Size M,11.61,4,UPS® Ground
+Atlanta,San Jose,CA,Size M,11.7,4,UPS® Ground
+Atlanta,Tucson,AZ,Size M,10.66,3,UPS® Ground
+Atlanta,Virginia Beach,VA,Size M,8.69,2,UPS® Ground
+Atlanta,Albuquerque,NM,Size M,10.07,3,UPS® Ground
+Atlanta,Canton,GA,Size M,7.57,1,UPS® Ground
+Atlanta,Gilbert,AZ,Size M,10.66,3,UPS® Ground
+Atlanta,Kansas City,MO,Size M,8.57,2,UPS® Ground
+Atlanta,Nashville,TN,Size M,8.24,2,UPS® Ground
+Atlanta,Saint Louis,MO,Size M,8.69,2,UPS® Ground
+Atlanta,Seattle,WA,Size M,11.7,4,UPS® Ground
+Atlanta,Boise,ID,Size M,11.7,3,UPS® Ground
+Atlanta,Indianapolis,IN,Size M,8.69,2,UPS® Ground
+Atlanta,Knoxville,TN,Size M,8.24,2,UPS® Ground
+Atlanta,Reno,NV,Size M,11.7,4,UPS® Ground
+Atlanta,Rochester,NY,Size M,8.57,2,UPS® Ground
+Atlanta,Bismarck,ND,Size M,10.07,3,UPS® Ground
+Atlanta,Columbia,MO,Size M,8.69,2,UPS® Ground
+Atlanta,Franklin,TN,Size M,8.24,2,UPS® Ground
+Atlanta,Los Angeles,CA,Size M,11.61,3,UPS® Ground
+Atlanta,Mesa,AZ,Size M,10.66,3,UPS® Ground
+Atlanta,Milwaukee,WI,Size M,8.57,2,UPS® Ground
+Atlanta,Abbeville,LA,Size M,8.69,2,UPS® Ground
+Atlanta,Abbot,ME,Size M,10.07,2,UPS® Ground
+Atlanta,Abingdon,MD,Size M,8.57,2,UPS® Ground
+Atlanta,Accord,NY,Size M,8.57,,UPS® Ground
+Atlanta,Acton,CA,Size M,11.7,3,UPS® Ground
+Atlanta,Acton,MA,Size M,8.57,2,UPS® Ground
+Atlanta,Acton,ME,Size M,10.07,,UPS® Ground
+Atlanta,Acworth,GA,Size M,7.57,1,UPS® Ground
+Atlanta,Ada,MI,Size M,8.57,,UPS® Ground
+Atlanta,Ada,OK,Size M,8.57,2,UPS® Ground
+Atlanta,Adams,MA,Size M,8.57,2,UPS® Ground
+Atlanta,Adams Run,SC,Size M,8.24,,UPS® Ground
+Atlanta,Adamsville,TN,Size M,8.24,,UPS® Ground
+Atlanta,Adel,GA,Size M,8.24,1,UPS® Ground
+Atlanta,Adirondack,NY,Size M,8.57,,UPS® Ground
+Atlanta,Adrian,MO,Size M,8.57,,UPS® Ground
+Atlanta,Advance,NC,Size M,8.24,2,UPS® Ground
+Atlanta,Affton,MO,Size M,8.69,2,UPS® Ground
+Atlanta,Afton,NY,Size M,8.57,,UPS® Ground
+Atlanta,Ahwahnee,CA,Size M,11.7,,UPS® Ground
+Atlanta,Alabaster,AL,Size M,7.57,1,UPS® Ground
+Atlanta,Alamo,CA,Size M,11.7,,UPS® Ground
+Atlanta,Alapaha,GA,Size M,8.24,,UPS® Ground
+Atlanta,Alba,TX,Size M,8.57,,UPS® Ground
+Boise,Brooklyn,NY,Size M,11.7,5,UPS® Ground
+Boise,Houston,TX,Size M,10.66,4,UPS® Ground
+Boise,Phoenix,AZ,Size M,8.57,3,UPS® Ground
+Boise,San Antonio,TX,Size M,10.07,4,UPS® Ground
+Boise,Chicago,IL,Size M,10.66,4,UPS® Ground
+Boise,Austin,TX,Size M,10.07,3,UPS® Ground
+Boise,Charlotte,NC,Size M,11.7,5,UPS® Ground
+Boise,New York,NY,Size M,11.7,5,UPS® Ground
+Boise,Atlanta,GA,Size M,11.7,4,UPS® Ground
+Boise,Orlando,FL,Size M,11.7,5,UPS® Ground
+Boise,Las Vegas,NV,Size M,8.57,2,UPS® Ground
+Boise,Colorado Springs,CO,Size M,8.57,2,UPS® Ground
+Boise,Marble Falls,TX,Size M,10.07,3,UPS® Ground
+Boise,San Diego,CA,Size M,8.57,2,UPS® Ground
+Boise,Tampa,FL,Size M,11.61,5,UPS® Ground
+Boise,Jacksonville,FL,Size M,11.7,5,UPS® Ground
+Boise,Louisville,KY,Size M,10.66,4,UPS® Ground
+Boise,Marietta,GA,Size M,11.7,4,UPS® Ground
+Boise,Raleigh,NC,Size M,11.7,5,UPS® Ground
+Boise,Fort Worth,TX,Size M,10.07,3,UPS® Ground
+Boise,Oklahoma City,OK,Size M,10.07,3,UPS® Ground
+Boise,Chesapeake,VA,Size M,11.7,5,UPS® Ground
+Boise,Dallas,TX,Size M,10.07,3,UPS® Ground
+Boise,Denver,CO,Size M,8.57,2,UPS® Ground
+Boise,Miami,FL,Size M,11.7,5,UPS® Ground
+Boise,Omaha,NE,Size M,10.07,3,UPS® Ground
+Boise,Pittsburgh,PA,Size M,11.7,4,UPS® Ground
+Boise,Portland,OR,Size M,8.69,2,UPS® Ground
+Boise,San Francisco,CA,Size M,7.91,2,UPS® Ground
+Boise,San Jose,CA,Size M,8.69,2,UPS® Ground
+Boise,Tucson,AZ,Size M,8.57,3,UPS® Ground
+Boise,Virginia Beach,VA,Size M,11.7,5,UPS® Ground
+Boise,Albuquerque,NM,Size M,8.57,3,UPS® Ground
+Boise,Canton,GA,Size M,10.66,4,UPS® Ground
+Boise,Gilbert,AZ,Size M,8.57,3,UPS® Ground
+Boise,Kansas City,MO,Size M,10.07,3,UPS® Ground
+Boise,Nashville,TN,Size M,10.66,4,UPS® Ground
+Boise,Saint Louis,MO,Size M,10.07,3,UPS® Ground
+Boise,Seattle,WA,Size M,8.69,2,UPS® Ground
+Boise,Boise,ID,Size M,7.57,1,UPS® Ground
+Boise,Indianapolis,IN,Size M,10.66,4,UPS® Ground
+Boise,Knoxville,TN,Size M,10.66,4,UPS® Ground
+Boise,Reno,NV,Size M,8.69,1,UPS® Ground
+Boise,Rochester,NY,Size M,11.7,5,UPS® Ground
+Boise,Bismarck,ND,Size M,8.57,3,UPS® Ground
+Boise,Columbia,MO,Size M,10.07,3,UPS® Ground
+Boise,Franklin,TN,Size M,10.66,4,UPS® Ground
+Boise,Los Angeles,CA,Size M,8.48,2,UPS® Ground
+Boise,Mesa,AZ,Size M,8.57,3,UPS® Ground
+Boise,Milwaukee,WI,Size M,10.66,4,UPS® Ground
+Boise,Abbeville,LA,Size M,10.66,4,UPS® Ground
+Boise,Abbot,ME,Size M,11.7,5,UPS® Ground
+Boise,Abingdon,MD,Size M,11.7,4,UPS® Ground
+Boise,Accord,NY,Size M,11.7,,UPS® Ground
+Boise,Acton,CA,Size M,8.69,3,UPS® Ground
+Boise,Acton,MA,Size M,11.7,5,UPS® Ground
+Boise,Acton,ME,Size M,11.7,,UPS® Ground
+Boise,Acworth,GA,Size M,10.66,4,UPS® Ground
+Boise,Ada,MI,Size M,10.66,,UPS® Ground
+Boise,Ada,OK,Size M,10.07,3,UPS® Ground
+Boise,Adams,MA,Size M,11.7,5,UPS® Ground
+Boise,Adams Run,SC,Size M,11.7,,UPS® Ground
+Boise,Adamsville,TN,Size M,10.66,,UPS® Ground
+Boise,Adel,GA,Size M,11.7,4,UPS® Ground
+Boise,Adirondack,NY,Size M,11.7,,UPS® Ground
+Boise,Adrian,MO,Size M,10.07,,UPS® Ground
+Boise,Advance,NC,Size M,11.7,5,UPS® Ground
+Boise,Affton,MO,Size M,10.07,3,UPS® Ground
+Boise,Afton,NY,Size M,11.7,,UPS® Ground
+Boise,Ahwahnee,CA,Size M,8.69,,UPS® Ground
+Boise,Alabaster,AL,Size M,10.66,4,UPS® Ground
+Boise,Alamo,CA,Size M,8.69,,UPS® Ground
+Boise,Alapaha,GA,Size M,11.7,,UPS® Ground
+Boise,Alba,TX,Size M,10.07,,UPS® Ground
+Chicago,Brooklyn,NY,Size M,8.57,2,UPS® Ground
+Chicago,Houston,TX,Size M,10.07,3,UPS® Ground
+Chicago,Phoenix,AZ,Size M,10.66,3,UPS® Ground
+Chicago,San Antonio,TX,Size M,10.07,3,UPS® Ground
+Chicago,Chicago,IL,Size M,7.57,1,UPS® Ground
+Chicago,Austin,TX,Size M,8.57,2,UPS® Ground
+Chicago,Charlotte,NC,Size M,8.57,2,UPS® Ground
+Chicago,New York,NY,Size M,8.57,2,UPS® Ground
+Chicago,Atlanta,GA,Size M,8.57,2,UPS® Ground
+Chicago,Orlando,FL,Size M,10.07,2,UPS® Ground
+Chicago,Las Vegas,NV,Size M,10.66,3,UPS® Ground
+Chicago,Colorado Springs,CO,Size M,8.57,2,UPS® Ground
+Chicago,Marble Falls,TX,Size M,8.57,2,UPS® Ground
+Chicago,San Diego,CA,Size M,10.66,3,UPS® Ground
+Chicago,Tampa,FL,Size M,8.48,2,UPS® Ground
+Chicago,Jacksonville,FL,Size M,8.57,2,UPS® Ground
+Chicago,Louisville,KY,Size M,8.24,2,UPS® Ground
+Chicago,Marietta,GA,Size M,8.57,2,UPS® Ground
+Chicago,Raleigh,NC,Size M,8.57,2,UPS® Ground
+Chicago,Fort Worth,TX,Size M,8.57,2,UPS® Ground
+Chicago,Oklahoma City,OK,Size M,8.57,2,UPS® Ground
+Chicago,Chesapeake,VA,Size M,8.57,3,UPS® Ground
+Chicago,Dallas,TX,Size M,8.57,2,UPS® Ground
+Chicago,Denver,CO,Size M,8.57,2,UPS® Ground
+Chicago,Miami,FL,Size M,10.07,3,UPS® Ground
+Chicago,Omaha,NE,Size M,8.69,2,UPS® Ground
+Chicago,Pittsburgh,PA,Size M,8.69,2,UPS® Ground
+Chicago,Portland,OR,Size M,10.66,3,UPS® Ground
+Chicago,San Francisco,CA,Size M,11.61,4,UPS® Ground
+Chicago,San Jose,CA,Size M,11.7,4,UPS® Ground
+Chicago,Tucson,AZ,Size M,10.66,3,UPS® Ground
+Chicago,Virginia Beach,VA,Size M,8.57,3,UPS® Ground
+Chicago,Albuquerque,NM,Size M,10.07,4,UPS® Ground
+Chicago,Canton,GA,Size M,8.57,2,UPS® Ground
+Chicago,Gilbert,AZ,Size M,10.66,3,UPS® Ground
+Chicago,Kansas City,MO,Size M,8.69,2,UPS® Ground
+Chicago,Nashville,TN,Size M,8.69,2,UPS® Ground
+Chicago,Saint Louis,MO,Size M,8.69,1,UPS® Ground
+Chicago,Seattle,WA,Size M,10.66,4,UPS® Ground
+Chicago,Boise,ID,Size M,10.66,3,UPS® Ground
+Chicago,Indianapolis,IN,Size M,8.24,1,UPS® Ground
+Chicago,Knoxville,TN,Size M,8.69,2,UPS® Ground
+Chicago,Reno,NV,Size M,10.66,3,UPS® Ground
+Chicago,Rochester,NY,Size M,8.69,2,UPS® Ground
+Chicago,Bismarck,ND,Size M,8.57,3,UPS® Ground
+Chicago,Columbia,MO,Size M,8.69,2,UPS® Ground
+Chicago,Franklin,TN,Size M,8.69,2,UPS® Ground
+Chicago,Los Angeles,CA,Size M,10.57,3,UPS® Ground
+Chicago,Mesa,AZ,Size M,10.66,3,UPS® Ground
+Chicago,Milwaukee,WI,Size M,7.57,1,UPS® Ground
+Chicago,Abbeville,LA,Size M,8.57,3,UPS® Ground
+Chicago,Abbot,ME,Size M,8.57,3,UPS® Ground
+Chicago,Abingdon,MD,Size M,8.57,2,UPS® Ground
+Chicago,Accord,NY,Size M,8.57,,UPS® Ground
+Chicago,Acton,CA,Size M,10.66,3,UPS® Ground
+Chicago,Acton,MA,Size M,8.57,3,UPS® Ground
+Chicago,Acton,ME,Size M,8.57,,UPS® Ground
+Chicago,Acworth,GA,Size M,8.57,2,UPS® Ground
+Chicago,Ada,MI,Size M,7.57,,UPS® Ground
+Chicago,Ada,OK,Size M,8.57,2,UPS® Ground
+Chicago,Adams,MA,Size M,8.57,3,UPS® Ground
+Chicago,Adams Run,SC,Size M,8.57,,UPS® Ground
+Chicago,Adamsville,TN,Size M,8.69,,UPS® Ground
+Chicago,Adel,GA,Size M,8.57,2,UPS® Ground
+Chicago,Adirondack,NY,Size M,8.57,,UPS® Ground
+Chicago,Adrian,MO,Size M,8.69,,UPS® Ground
+Chicago,Advance,NC,Size M,8.69,2,UPS® Ground
+Chicago,Affton,MO,Size M,8.69,1,UPS® Ground
+Chicago,Afton,NY,Size M,8.57,,UPS® Ground
+Chicago,Ahwahnee,CA,Size M,10.66,,UPS® Ground
+Chicago,Alabaster,AL,Size M,8.69,2,UPS® Ground
+Chicago,Alamo,CA,Size M,11.7,,UPS® Ground
+Chicago,Alapaha,GA,Size M,8.57,,UPS® Ground
+Chicago,Alba,TX,Size M,8.57,,UPS® Ground
+Columbus,Brooklyn,NY,Size M,8.57,2,UPS® Ground
+Columbus,Houston,TX,Size M,10.07,3,UPS® Ground
+Columbus,Phoenix,AZ,Size M,10.66,4,UPS® Ground
+Columbus,San Antonio,TX,Size M,10.66,3,UPS® Ground
+Columbus,Chicago,IL,Size M,8.69,1,UPS® Ground
+Columbus,Austin,TX,Size M,10.07,2,UPS® Ground
+Columbus,Charlotte,NC,Size M,8.69,2,UPS® Ground
+Columbus,New York,NY,Size M,8.69,2,UPS® Ground
+Columbus,Atlanta,GA,Size M,8.69,2,UPS® Ground
+Columbus,Orlando,FL,Size M,8.57,2,UPS® Ground
+Columbus,Las Vegas,NV,Size M,11.7,3,UPS® Ground
+Columbus,Colorado Springs,CO,Size M,10.07,3,UPS® Ground
+Columbus,Marble Falls,TX,Size M,10.07,2,UPS® Ground
+Columbus,San Diego,CA,Size M,11.7,3,UPS® Ground
+Columbus,Tampa,FL,Size M,8.48,2,UPS® Ground
+Columbus,Jacksonville,FL,Size M,8.57,2,UPS® Ground
+Columbus,Louisville,KY,Size M,8.24,1,UPS® Ground
+Columbus,Marietta,GA,Size M,8.69,2,UPS® Ground
+Columbus,Raleigh,NC,Size M,8.69,2,UPS® Ground
+Columbus,Fort Worth,TX,Size M,8.57,2,UPS® Ground
+Columbus,Oklahoma City,OK,Size M,8.57,3,UPS® Ground
+Columbus,Chesapeake,VA,Size M,8.69,2,UPS® Ground
+Columbus,Dallas,TX,Size M,8.57,2,UPS® Ground
+Columbus,Denver,CO,Size M,10.66,3,UPS® Ground
+Columbus,Miami,FL,Size M,10.07,2,UPS® Ground
+Columbus,Omaha,NE,Size M,8.57,2,UPS® Ground
+Columbus,Pittsburgh,PA,Size M,8.24,1,UPS® Ground
+Columbus,Portland,OR,Size M,11.7,3,UPS® Ground
+Columbus,San Francisco,CA,Size M,11.61,4,UPS® Ground
+Columbus,San Jose,CA,Size M,11.7,4,UPS® Ground
+Columbus,Tucson,AZ,Size M,10.66,4,UPS® Ground
+Columbus,Virginia Beach,VA,Size M,8.69,2,UPS® Ground
+Columbus,Albuquerque,NM,Size M,10.07,4,UPS® Ground
+Columbus,Canton,GA,Size M,8.69,2,UPS® Ground
+Columbus,Gilbert,AZ,Size M,10.66,4,UPS® Ground
+Columbus,Kansas City,MO,Size M,8.57,2,UPS® Ground
+Columbus,Nashville,TN,Size M,8.69,2,UPS® Ground
+Columbus,Saint Louis,MO,Size M,8.69,2,UPS® Ground
+Columbus,Seattle,WA,Size M,11.7,4,UPS® Ground
+Columbus,Boise,ID,Size M,10.66,3,UPS® Ground
+Columbus,Indianapolis,IN,Size M,8.24,1,UPS® Ground
+Columbus,Knoxville,TN,Size M,8.24,2,UPS® Ground
+Columbus,Reno,NV,Size M,11.7,3,UPS® Ground
+Columbus,Rochester,NY,Size M,8.69,2,UPS® Ground
+Columbus,Bismarck,ND,Size M,8.57,3,UPS® Ground
+Columbus,Columbia,MO,Size M,8.69,2,UPS® Ground
+Columbus,Franklin,TN,Size M,8.69,2,UPS® Ground
+Columbus,Los Angeles,CA,Size M,11.61,3,UPS® Ground
+Columbus,Mesa,AZ,Size M,10.66,4,UPS® Ground
+Columbus,Milwaukee,WI,Size M,8.69,2,UPS® Ground
+Columbus,Abbeville,LA,Size M,8.57,3,UPS® Ground
+Columbus,Abbot,ME,Size M,8.57,2,UPS® Ground
+Columbus,Abingdon,MD,Size M,8.69,2,UPS® Ground
+Columbus,Accord,NY,Size M,8.69,,UPS® Ground
+Columbus,Acton,CA,Size M,11.7,3,UPS® Ground
+Columbus,Acton,MA,Size M,8.57,2,UPS® Ground
+Columbus,Acton,ME,Size M,8.57,,UPS® Ground
+Columbus,Acworth,GA,Size M,8.69,2,UPS® Ground
+Columbus,Ada,MI,Size M,8.24,,UPS® Ground
+Columbus,Ada,OK,Size M,8.57,3,UPS® Ground
+Columbus,Adams,MA,Size M,8.69,2,UPS® Ground
+Columbus,Adams Run,SC,Size M,8.69,,UPS® Ground
+Columbus,Adamsville,TN,Size M,8.69,,UPS® Ground
+Columbus,Adel,GA,Size M,8.69,2,UPS® Ground
+Columbus,Adirondack,NY,Size M,8.69,,UPS® Ground
+Columbus,Adrian,MO,Size M,8.57,,UPS® Ground
+Columbus,Advance,NC,Size M,8.24,2,UPS® Ground
+Columbus,Affton,MO,Size M,8.69,2,UPS® Ground
+Columbus,Afton,NY,Size M,8.69,,UPS® Ground
+Columbus,Ahwahnee,CA,Size M,11.7,,UPS® Ground
+Columbus,Alabaster,AL,Size M,8.69,2,UPS® Ground
+Columbus,Alamo,CA,Size M,11.7,,UPS® Ground
+Columbus,Alapaha,GA,Size M,8.69,,UPS® Ground
+Columbus,Alba,TX,Size M,8.57,,UPS® Ground
+Dallas,Brooklyn,NY,Size M,10.07,3,UPS® Ground
+Dallas,Houston,TX,Size M,8.24,1,UPS® Ground
+Dallas,Phoenix,AZ,Size M,10.07,3,UPS® Ground
+Dallas,San Antonio,TX,Size M,8.69,1,UPS® Ground
+Dallas,Chicago,IL,Size M,8.57,2,UPS® Ground
+Dallas,Austin,TX,Size M,8.24,1,UPS® Ground
+Dallas,Charlotte,NC,Size M,8.57,3,UPS® Ground
+Dallas,New York,NY,Size M,10.07,3,UPS® Ground
+Dallas,Atlanta,GA,Size M,8.57,2,UPS® Ground
+Dallas,Orlando,FL,Size M,10.07,2,UPS® Ground
+Dallas,Las Vegas,NV,Size M,10.66,3,UPS® Ground
+Dallas,Colorado Springs,CO,Size M,8.57,2,UPS® Ground
+Dallas,Marble Falls,TX,Size M,8.24,1,UPS® Ground
+Dallas,San Diego,CA,Size M,10.07,3,UPS® Ground
+Dallas,Tampa,FL,Size M,8.48,2,UPS® Ground
+Dallas,Jacksonville,FL,Size M,8.57,2,UPS® Ground
+Dallas,Louisville,KY,Size M,8.57,3,UPS® Ground
+Dallas,Marietta,GA,Size M,8.57,2,UPS® Ground
+Dallas,Raleigh,NC,Size M,10.07,3,UPS® Ground
+Dallas,Fort Worth,TX,Size M,7.57,1,UPS® Ground
+Dallas,Oklahoma City,OK,Size M,8.24,1,UPS® Ground
+Dallas,Chesapeake,VA,Size M,10.07,3,UPS® Ground
+Dallas,Dallas,TX,Size M,7.57,1,UPS® Ground
+Dallas,Denver,CO,Size M,8.57,2,UPS® Ground
+Dallas,Miami,FL,Size M,10.66,3,UPS® Ground
+Dallas,Omaha,NE,Size M,8.57,2,UPS® Ground
+Dallas,Pittsburgh,PA,Size M,10.07,3,UPS® Ground
+Dallas,Portland,OR,Size M,10.66,4,UPS® Ground
+Dallas,San Francisco,CA,Size M,10.57,3,UPS® Ground
+Dallas,San Jose,CA,Size M,10.66,3,UPS® Ground
+Dallas,Tucson,AZ,Size M,8.57,3,UPS® Ground
+Dallas,Virginia Beach,VA,Size M,10.07,3,UPS® Ground
+Dallas,Albuquerque,NM,Size M,8.57,2,UPS® Ground
+Dallas,Canton,GA,Size M,8.57,2,UPS® Ground
+Dallas,Gilbert,AZ,Size M,10.07,3,UPS® Ground
+Dallas,Kansas City,MO,Size M,8.69,2,UPS® Ground
+Dallas,Nashville,TN,Size M,8.57,2,UPS® Ground
+Dallas,Saint Louis,MO,Size M,8.69,2,UPS® Ground
+Dallas,Seattle,WA,Size M,10.66,4,UPS® Ground
+Dallas,Boise,ID,Size M,10.07,4,UPS® Ground
+Dallas,Indianapolis,IN,Size M,8.57,3,UPS® Ground
+Dallas,Knoxville,TN,Size M,8.57,2,UPS® Ground
+Dallas,Reno,NV,Size M,10.07,4,UPS® Ground
+Dallas,Rochester,NY,Size M,10.07,4,UPS® Ground
+Dallas,Bismarck,ND,Size M,8.57,3,UPS® Ground
+Dallas,Columbia,MO,Size M,8.69,2,UPS® Ground
+Dallas,Franklin,TN,Size M,8.57,2,UPS® Ground
+Dallas,Los Angeles,CA,Size M,9.98,3,UPS® Ground
+Dallas,Mesa,AZ,Size M,10.07,3,UPS® Ground
+Dallas,Milwaukee,WI,Size M,8.57,3,UPS® Ground
+Dallas,Abbeville,LA,Size M,8.69,2,UPS® Ground
+Dallas,Abbot,ME,Size M,10.66,3,UPS® Ground
+Dallas,Abingdon,MD,Size M,10.07,3,UPS® Ground
+Dallas,Accord,NY,Size M,10.07,,UPS® Ground
+Dallas,Acton,CA,Size M,10.07,3,UPS® Ground
+Dallas,Acton,MA,Size M,10.66,3,UPS® Ground
+Dallas,Acton,ME,Size M,10.66,,UPS® Ground
+Dallas,Acworth,GA,Size M,8.57,2,UPS® Ground
+Dallas,Ada,MI,Size M,8.57,,UPS® Ground
+Dallas,Ada,OK,Size M,8.24,1,UPS® Ground
+Dallas,Adams,MA,Size M,10.07,3,UPS® Ground
+Dallas,Adams Run,SC,Size M,8.57,,UPS® Ground
+Dallas,Adamsville,TN,Size M,8.69,,UPS® Ground
+Dallas,Adel,GA,Size M,8.57,2,UPS® Ground
+Dallas,Adirondack,NY,Size M,10.66,,UPS® Ground
+Dallas,Adrian,MO,Size M,8.69,,UPS® Ground
+Dallas,Advance,NC,Size M,8.57,3,UPS® Ground
+Dallas,Affton,MO,Size M,8.69,2,UPS® Ground
+Dallas,Afton,NY,Size M,10.07,,UPS® Ground
+Dallas,Ahwahnee,CA,Size M,10.07,,UPS® Ground
+Dallas,Alabaster,AL,Size M,8.69,2,UPS® Ground
+Dallas,Alamo,CA,Size M,10.66,,UPS® Ground
+Dallas,Alapaha,GA,Size M,8.57,,UPS® Ground
+Dallas,Alba,TX,Size M,7.57,,UPS® Ground
+Denver,Brooklyn,NY,Size M,10.66,3,UPS® Ground
+Denver,Houston,TX,Size M,8.57,2,UPS® Ground
+Denver,Phoenix,AZ,Size M,8.57,2,UPS® Ground
+Denver,San Antonio,TX,Size M,8.57,2,UPS® Ground
+Denver,Chicago,IL,Size M,8.57,2,UPS® Ground
+Denver,Austin,TX,Size M,8.57,2,UPS® Ground
+Denver,Charlotte,NC,Size M,10.07,3,UPS® Ground
+Denver,New York,NY,Size M,10.66,3,UPS® Ground
+Denver,Atlanta,GA,Size M,10.07,3,UPS® Ground
+Denver,Orlando,FL,Size M,10.66,3,UPS® Ground
+Denver,Las Vegas,NV,Size M,10.07,2,UPS® Ground
+Denver,Colorado Springs,CO,Size M,7.57,1,UPS® Ground
+Denver,Marble Falls,TX,Size M,8.57,2,UPS® Ground
+Denver,San Diego,CA,Size M,8.57,2,UPS® Ground
+Denver,Tampa,FL,Size M,10.57,3,UPS® Ground
+Denver,Jacksonville,FL,Size M,10.66,3,UPS® Ground
+Denver,Louisville,KY,Size M,10.07,3,UPS® Ground
+Denver,Marietta,GA,Size M,10.07,3,UPS® Ground
+Denver,Raleigh,NC,Size M,10.66,3,UPS® Ground
+Denver,Fort Worth,TX,Size M,8.57,2,UPS® Ground
+Denver,Oklahoma City,OK,Size M,8.69,2,UPS® Ground
+Denver,Chesapeake,VA,Size M,10.66,3,UPS® Ground
+Denver,Dallas,TX,Size M,8.57,2,UPS® Ground
+Denver,Denver,CO,Size M,7.57,1,UPS® Ground
+Denver,Miami,FL,Size M,10.66,3,UPS® Ground
+Denver,Omaha,NE,Size M,8.69,2,UPS® Ground
+Denver,Pittsburgh,PA,Size M,10.07,3,UPS® Ground
+Denver,Portland,OR,Size M,8.57,3,UPS® Ground
+Denver,San Francisco,CA,Size M,8.48,2,UPS® Ground
+Denver,San Jose,CA,Size M,8.57,2,UPS® Ground
+Denver,Tucson,AZ,Size M,8.57,2,UPS® Ground
+Denver,Virginia Beach,VA,Size M,10.66,3,UPS® Ground
+Denver,Albuquerque,NM,Size M,8.69,2,UPS® Ground
+Denver,Canton,GA,Size M,10.07,3,UPS® Ground
+Denver,Gilbert,AZ,Size M,8.57,2,UPS® Ground
+Denver,Kansas City,MO,Size M,8.69,2,UPS® Ground
+Denver,Nashville,TN,Size M,10.07,3,UPS® Ground
+Denver,Saint Louis,MO,Size M,8.57,2,UPS® Ground
+Denver,Seattle,WA,Size M,10.07,3,UPS® Ground
+Denver,Boise,ID,Size M,8.57,2,UPS® Ground
+Denver,Indianapolis,IN,Size M,10.07,3,UPS® Ground
+Denver,Knoxville,TN,Size M,10.07,3,UPS® Ground
+Denver,Reno,NV,Size M,8.57,2,UPS® Ground
+Denver,Rochester,NY,Size M,10.66,4,UPS® Ground
+Denver,Bismarck,ND,Size M,8.69,3,UPS® Ground
+Denver,Columbia,MO,Size M,8.57,2,UPS® Ground
+Denver,Franklin,TN,Size M,10.07,3,UPS® Ground
+Denver,Los Angeles,CA,Size M,8.48,2,UPS® Ground
+Denver,Mesa,AZ,Size M,8.57,2,UPS® Ground
+Denver,Milwaukee,WI,Size M,8.57,2,UPS® Ground
+Denver,Abbeville,LA,Size M,8.57,3,UPS® Ground
+Denver,Abbot,ME,Size M,11.7,3,UPS® Ground
+Denver,Abingdon,MD,Size M,10.66,3,UPS® Ground
+Denver,Accord,NY,Size M,10.66,,UPS® Ground
+Denver,Acton,CA,Size M,8.57,2,UPS® Ground
+Denver,Acton,MA,Size M,10.66,3,UPS® Ground
+Denver,Acton,ME,Size M,10.66,,UPS® Ground
+Denver,Acworth,GA,Size M,10.07,3,UPS® Ground
+Denver,Ada,MI,Size M,10.07,,UPS® Ground
+Denver,Ada,OK,Size M,8.69,2,UPS® Ground
+Denver,Adams,MA,Size M,10.66,3,UPS® Ground
+Denver,Adams Run,SC,Size M,10.66,,UPS® Ground
+Denver,Adamsville,TN,Size M,8.57,,UPS® Ground
+Denver,Adel,GA,Size M,10.07,3,UPS® Ground
+Denver,Adirondack,NY,Size M,10.66,,UPS® Ground
+Denver,Adrian,MO,Size M,8.69,,UPS® Ground
+Denver,Advance,NC,Size M,10.07,3,UPS® Ground
+Denver,Affton,MO,Size M,8.57,2,UPS® Ground
+Denver,Afton,NY,Size M,10.66,,UPS® Ground
+Denver,Ahwahnee,CA,Size M,8.57,,UPS® Ground
+Denver,Alabaster,AL,Size M,10.07,3,UPS® Ground
+Denver,Alamo,CA,Size M,8.57,,UPS® Ground
+Denver,Alapaha,GA,Size M,10.07,,UPS® Ground
+Denver,Alba,TX,Size M,8.57,,UPS® Ground
+Ontario,Brooklyn,NY,Size M,11.7,4,UPS® Ground
+Ontario,Houston,TX,Size M,10.66,3,UPS® Ground
+Ontario,Phoenix,AZ,Size M,8.57,2,UPS® Ground
+Ontario,San Antonio,TX,Size M,10.66,3,UPS® Ground
+Ontario,Chicago,IL,Size M,11.7,3,UPS® Ground
+Ontario,Austin,TX,Size M,10.07,3,UPS® Ground
+Ontario,Charlotte,NC,Size M,11.7,4,UPS® Ground
+Ontario,New York,NY,Size M,11.7,4,UPS® Ground
+Ontario,Atlanta,GA,Size M,11.7,4,UPS® Ground
+Ontario,Orlando,FL,Size M,11.7,4,UPS® Ground
+Ontario,Las Vegas,NV,Size M,8.24,1,UPS® Ground
+Ontario,Colorado Springs,CO,Size M,8.57,2,UPS® Ground
+Ontario,Marble Falls,TX,Size M,10.07,3,UPS® Ground
+Ontario,San Diego,CA,Size M,7.57,1,UPS® Ground
+Ontario,Tampa,FL,Size M,11.61,4,UPS® Ground
+Ontario,Jacksonville,FL,Size M,11.7,4,UPS® Ground
+Ontario,Louisville,KY,Size M,11.7,4,UPS® Ground
+Ontario,Marietta,GA,Size M,11.7,4,UPS® Ground
+Ontario,Raleigh,NC,Size M,11.7,4,UPS® Ground
+Ontario,Fort Worth,TX,Size M,10.07,3,UPS® Ground
+Ontario,Oklahoma City,OK,Size M,10.07,3,UPS® Ground
+Ontario,Chesapeake,VA,Size M,11.7,4,UPS® Ground
+Ontario,Dallas,TX,Size M,10.66,3,UPS® Ground
+Ontario,Denver,CO,Size M,8.57,3,UPS® Ground
+Ontario,Miami,FL,Size M,11.7,4,UPS® Ground
+Ontario,Omaha,NE,Size M,10.07,4,UPS® Ground
+Ontario,Pittsburgh,PA,Size M,11.7,4,UPS® Ground
+Ontario,Portland,OR,Size M,8.57,3,UPS® Ground
+Ontario,San Francisco,CA,Size M,7.91,2,UPS® Ground
+Ontario,San Jose,CA,Size M,8.57,2,UPS® Ground
+Ontario,Tucson,AZ,Size M,8.69,2,UPS® Ground
+Ontario,Virginia Beach,VA,Size M,11.7,4,UPS® Ground
+Ontario,Albuquerque,NM,Size M,8.57,2,UPS® Ground
+Ontario,Canton,GA,Size M,11.7,4,UPS® Ground
+Ontario,Gilbert,AZ,Size M,8.57,2,UPS® Ground
+Ontario,Kansas City,MO,Size M,10.07,4,UPS® Ground
+Ontario,Nashville,TN,Size M,10.66,4,UPS® Ground
+Ontario,Saint Louis,MO,Size M,10.66,4,UPS® Ground
+Ontario,Seattle,WA,Size M,10.07,3,UPS® Ground
+Ontario,Boise,ID,Size M,8.57,3,UPS® Ground
+Ontario,Indianapolis,IN,Size M,11.7,4,UPS® Ground
+Ontario,Knoxville,TN,Size M,11.7,4,UPS® Ground
+Ontario,Reno,NV,Size M,8.69,2,UPS® Ground
+Ontario,Rochester,NY,Size M,11.7,5,UPS® Ground
+Ontario,Bismarck,ND,Size M,10.07,4,UPS® Ground
+Ontario,Columbia,MO,Size M,10.66,4,UPS® Ground
+Ontario,Franklin,TN,Size M,11.7,4,UPS® Ground
+Ontario,Los Angeles,CA,Size M,7.04,1,UPS® Ground
+Ontario,Mesa,AZ,Size M,8.57,2,UPS® Ground
+Ontario,Milwaukee,WI,Size M,10.66,4,UPS® Ground
+Ontario,Abbeville,LA,Size M,10.66,4,UPS® Ground
+Ontario,Abbot,ME,Size M,11.7,5,UPS® Ground
+Ontario,Abingdon,MD,Size M,11.7,4,UPS® Ground
+Ontario,Accord,NY,Size M,11.7,,UPS® Ground
+Ontario,Acton,CA,Size M,7.57,1,UPS® Ground
+Ontario,Acton,MA,Size M,11.7,4,UPS® Ground
+Ontario,Acton,ME,Size M,11.7,,UPS® Ground
+Ontario,Acworth,GA,Size M,11.7,4,UPS® Ground
+Ontario,Ada,MI,Size M,11.7,,UPS® Ground
+Ontario,Ada,OK,Size M,10.07,3,UPS® Ground
+Ontario,Adams,MA,Size M,11.7,5,UPS® Ground
+Ontario,Adams Run,SC,Size M,11.7,,UPS® Ground
+Ontario,Adamsville,TN,Size M,10.66,,UPS® Ground
+Ontario,Adel,GA,Size M,11.7,4,UPS® Ground
+Ontario,Adirondack,NY,Size M,11.7,,UPS® Ground
+Ontario,Adrian,MO,Size M,10.07,,UPS® Ground
+Ontario,Advance,NC,Size M,11.7,4,UPS® Ground
+Ontario,Affton,MO,Size M,10.66,4,UPS® Ground
+Ontario,Afton,NY,Size M,11.7,,UPS® Ground
+Ontario,Ahwahnee,CA,Size M,8.24,,UPS® Ground
+Ontario,Alabaster,AL,Size M,10.66,4,UPS® Ground
+Ontario,Alamo,CA,Size M,8.57,,UPS® Ground
+Ontario,Alapaha,GA,Size M,11.7,,UPS® Ground
+Ontario,Alba,TX,Size M,10.07,,UPS® Ground
+Orlando,Brooklyn,NY,Size M,8.57,3,UPS® Ground
+Orlando,Houston,TX,Size M,8.57,3,UPS® Ground
+Orlando,Phoenix,AZ,Size M,11.7,3,UPS® Ground
+Orlando,San Antonio,TX,Size M,10.07,2,UPS® Ground
+Orlando,Chicago,IL,Size M,10.07,2,UPS® Ground
+Orlando,Austin,TX,Size M,10.07,2,UPS® Ground
+Orlando,Charlotte,NC,Size M,8.69,2,UPS® Ground
+Orlando,New York,NY,Size M,8.57,2,UPS® Ground
+Orlando,Atlanta,GA,Size M,8.69,2,UPS® Ground
+Orlando,Orlando,FL,Size M,7.57,1,UPS® Ground
+Orlando,Las Vegas,NV,Size M,11.7,4,UPS® Ground
+Orlando,Colorado Springs,CO,Size M,10.66,3,UPS® Ground
+Orlando,Marble Falls,TX,Size M,10.07,2,UPS® Ground
+Orlando,San Diego,CA,Size M,11.7,4,UPS® Ground
+Orlando,Tampa,FL,Size M,7.04,1,UPS® Ground
+Orlando,Jacksonville,FL,Size M,8.24,1,UPS® Ground
+Orlando,Louisville,KY,Size M,8.57,2,UPS® Ground
+Orlando,Marietta,GA,Size M,8.69,2,UPS® Ground
+Orlando,Raleigh,NC,Size M,8.69,2,UPS® Ground
+Orlando,Fort Worth,TX,Size M,8.57,3,UPS® Ground
+Orlando,Oklahoma City,OK,Size M,8.57,2,UPS® Ground
+Orlando,Chesapeake,VA,Size M,8.57,2,UPS® Ground
+Orlando,Dallas,TX,Size M,8.57,3,UPS® Ground
+Orlando,Denver,CO,Size M,10.66,3,UPS® Ground
+Orlando,Miami,FL,Size M,8.69,1,UPS® Ground
+Orlando,Omaha,NE,Size M,10.07,3,UPS® Ground
+Orlando,Pittsburgh,PA,Size M,8.57,2,UPS® Ground
+Orlando,Portland,OR,Size M,11.7,4,UPS® Ground
+Orlando,San Francisco,CA,Size M,11.61,4,UPS® Ground
+Orlando,San Jose,CA,Size M,11.7,4,UPS® Ground
+Orlando,Tucson,AZ,Size M,10.66,3,UPS® Ground
+Orlando,Virginia Beach,VA,Size M,8.57,2,UPS® Ground
+Orlando,Albuquerque,NM,Size M,10.66,4,UPS® Ground
+Orlando,Canton,GA,Size M,8.69,2,UPS® Ground
+Orlando,Gilbert,AZ,Size M,11.7,3,UPS® Ground
+Orlando,Kansas City,MO,Size M,10.07,3,UPS® Ground
+Orlando,Nashville,TN,Size M,8.57,2,UPS® Ground
+Orlando,Saint Louis,MO,Size M,8.57,3,UPS® Ground
+Orlando,Seattle,WA,Size M,11.7,4,UPS® Ground
+Orlando,Boise,ID,Size M,11.7,6,UPS® Ground
+Orlando,Indianapolis,IN,Size M,8.57,3,UPS® Ground
+Orlando,Knoxville,TN,Size M,8.69,2,UPS® Ground
+Orlando,Reno,NV,Size M,11.7,4,UPS® Ground
+Orlando,Rochester,NY,Size M,10.07,3,UPS® Ground
+Orlando,Bismarck,ND,Size M,10.66,4,UPS® Ground
+Orlando,Columbia,MO,Size M,8.57,3,UPS® Ground
+Orlando,Franklin,TN,Size M,8.57,2,UPS® Ground
+Orlando,Los Angeles,CA,Size M,11.61,4,UPS® Ground
+Orlando,Mesa,AZ,Size M,11.7,3,UPS® Ground
+Orlando,Milwaukee,WI,Size M,10.07,3,UPS® Ground
+Orlando,Abbeville,LA,Size M,8.57,2,UPS® Ground
+Orlando,Abbot,ME,Size M,10.07,3,UPS® Ground
+Orlando,Abingdon,MD,Size M,8.57,3,UPS® Ground
+Orlando,Accord,NY,Size M,10.07,,UPS® Ground
+Orlando,Acton,CA,Size M,11.7,4,UPS® Ground
+Orlando,Acton,MA,Size M,10.07,3,UPS® Ground
+Orlando,Acton,ME,Size M,10.07,,UPS® Ground
+Orlando,Acworth,GA,Size M,8.69,2,UPS® Ground
+Orlando,Ada,MI,Size M,10.07,,UPS® Ground
+Orlando,Ada,OK,Size M,10.07,2,UPS® Ground
+Orlando,Adams,MA,Size M,10.07,3,UPS® Ground
+Orlando,Adams Run,SC,Size M,8.69,,UPS® Ground
+Orlando,Adamsville,TN,Size M,8.57,,UPS® Ground
+Orlando,Adel,GA,Size M,8.24,1,UPS® Ground
+Orlando,Adirondack,NY,Size M,10.07,3,UPS® Ground
+Orlando,Adrian,MO,Size M,8.57,,UPS® Ground
+Orlando,Advance,NC,Size M,8.69,2,UPS® Ground
+Orlando,Affton,MO,Size M,8.57,3,UPS® Ground
+Orlando,Afton,NY,Size M,10.07,,UPS® Ground
+Orlando,Ahwahnee,CA,Size M,11.7,,UPS® Ground
+Orlando,Alabaster,AL,Size M,8.69,2,UPS® Ground
+Orlando,Alamo,CA,Size M,11.7,,UPS® Ground
+Orlando,Alapaha,GA,Size M,8.24,,UPS® Ground
+Orlando,Alba,TX,Size M,8.57,,UPS® Ground
+Stockton,Brooklyn,NY,Size M,11.7,4,UPS® Ground
+Stockton,Houston,TX,Size M,10.66,4,UPS® Ground
+Stockton,Phoenix,AZ,Size M,8.57,2,UPS® Ground
+Stockton,San Antonio,TX,Size M,10.07,3,UPS® Ground
+Stockton,Chicago,IL,Size M,10.66,3,UPS® Ground
+Stockton,Austin,TX,Size M,10.66,3,UPS® Ground
+Stockton,Charlotte,NC,Size M,11.7,5,UPS® Ground
+Stockton,New York,NY,Size M,11.7,4,UPS® Ground
+Stockton,Atlanta,GA,Size M,11.7,4,UPS® Ground
+Stockton,Orlando,FL,Size M,11.7,5,UPS® Ground
+Stockton,Las Vegas,NV,Size M,8.69,2,UPS® Ground
+Stockton,Colorado Springs,CO,Size M,8.57,3,UPS® Ground
+Stockton,Marble Falls,TX,Size M,10.66,3,UPS® Ground
+Stockton,San Diego,CA,Size M,8.69,2,UPS® Ground
+Stockton,Tampa,FL,Size M,11.61,5,UPS® Ground
+Stockton,Jacksonville,FL,Size M,11.7,5,UPS® Ground
+Stockton,Louisville,KY,Size M,11.7,3,UPS® Ground
+Stockton,Marietta,GA,Size M,11.7,4,UPS® Ground
+Stockton,Raleigh,NC,Size M,11.7,5,UPS® Ground
+Stockton,Fort Worth,TX,Size M,10.07,4,UPS® Ground
+Stockton,Oklahoma City,OK,Size M,10.07,4,UPS® Ground
+Stockton,Chesapeake,VA,Size M,11.7,4,UPS® Ground
+Stockton,Dallas,TX,Size M,10.07,4,UPS® Ground
+Stockton,Denver,CO,Size M,8.57,3,UPS® Ground
+Stockton,Miami,FL,Size M,11.7,5,UPS® Ground
+Stockton,Omaha,NE,Size M,10.07,4,UPS® Ground
+Stockton,Pittsburgh,PA,Size M,11.7,4,UPS® Ground
+Stockton,Portland,OR,Size M,8.69,2,UPS® Ground
+Stockton,San Francisco,CA,Size M,7.04,1,UPS® Ground
+Stockton,San Jose,CA,Size M,7.57,1,UPS® Ground
+Stockton,Tucson,AZ,Size M,8.57,2,UPS® Ground
+Stockton,Virginia Beach,VA,Size M,11.7,4,UPS® Ground
+Stockton,Albuquerque,NM,Size M,8.57,3,UPS® Ground
+Stockton,Canton,GA,Size M,11.7,4,UPS® Ground
+Stockton,Gilbert,AZ,Size M,8.57,2,UPS® Ground
+Stockton,Kansas City,MO,Size M,10.07,4,UPS® Ground
+Stockton,Nashville,TN,Size M,11.7,4,UPS® Ground
+Stockton,Saint Louis,MO,Size M,10.66,4,UPS® Ground
+Stockton,Seattle,WA,Size M,10.07,2,UPS® Ground
+Stockton,Boise,ID,Size M,8.69,2,UPS® Ground
+Stockton,Indianapolis,IN,Size M,11.7,3,UPS® Ground
+Stockton,Knoxville,TN,Size M,11.7,4,UPS® Ground
+Stockton,Reno,NV,Size M,8.24,1,UPS® Ground
+Stockton,Rochester,NY,Size M,11.7,4,UPS® Ground
+Stockton,Bismarck,ND,Size M,10.07,4,UPS® Ground
+Stockton,Columbia,MO,Size M,10.66,4,UPS® Ground
+Stockton,Franklin,TN,Size M,11.7,4,UPS® Ground
+Stockton,Los Angeles,CA,Size M,7.91,2,UPS® Ground
+Stockton,Mesa,AZ,Size M,8.57,2,UPS® Ground
+Stockton,Milwaukee,WI,Size M,10.66,3,UPS® Ground
+Stockton,Abbeville,LA,Size M,10.66,4,UPS® Ground
+Stockton,Abbot,ME,Size M,11.7,5,UPS® Ground
+Stockton,Abingdon,MD,Size M,11.7,4,UPS® Ground
+Stockton,Accord,NY,Size M,11.7,,UPS® Ground
+Stockton,Acton,CA,Size M,8.24,2,UPS® Ground
+Stockton,Acton,MA,Size M,11.7,5,UPS® Ground
+Stockton,Acton,ME,Size M,11.7,,UPS® Ground
+Stockton,Acworth,GA,Size M,11.7,4,UPS® Ground
+Stockton,Ada,MI,Size M,11.7,,UPS® Ground
+Stockton,Ada,OK,Size M,10.07,4,UPS® Ground
+Stockton,Adams,MA,Size M,11.7,5,UPS® Ground
+Stockton,Adams Run,SC,Size M,11.7,,UPS® Ground
+Stockton,Adamsville,TN,Size M,10.66,,UPS® Ground
+Stockton,Adel,GA,Size M,11.7,5,UPS® Ground
+Stockton,Adirondack,NY,Size M,11.7,,UPS® Ground
+Stockton,Adrian,MO,Size M,10.66,,UPS® Ground
+Stockton,Advance,NC,Size M,11.7,5,UPS® Ground
+Stockton,Affton,MO,Size M,10.66,4,UPS® Ground
+Stockton,Afton,NY,Size M,11.7,,UPS® Ground
+Stockton,Ahwahnee,CA,Size M,7.57,,UPS® Ground
+Stockton,Alabaster,AL,Size M,11.7,5,UPS® Ground
+Stockton,Alamo,CA,Size M,8.24,,UPS® Ground
+Stockton,Alapaha,GA,Size M,11.7,,UPS® Ground
+Stockton,Alba,TX,Size M,10.66,,UPS® Ground
+Tacoma,Brooklyn,NY,Size M,11.7,4,UPS® Ground
+Tacoma,Houston,TX,Size M,11.7,4,UPS® Ground
+Tacoma,Phoenix,AZ,Size M,10.66,3,UPS® Ground
+Tacoma,San Antonio,TX,Size M,10.66,4,UPS® Ground
+Tacoma,Chicago,IL,Size M,10.66,3,UPS® Ground
+Tacoma,Austin,TX,Size M,10.66,4,UPS® Ground
+Tacoma,Charlotte,NC,Size M,11.7,5,UPS® Ground
+Tacoma,New York,NY,Size M,11.7,4,UPS® Ground
+Tacoma,Atlanta,GA,Size M,11.7,4,UPS® Ground
+Tacoma,Orlando,FL,Size M,11.7,5,UPS® Ground
+Tacoma,Las Vegas,NV,Size M,8.57,3,UPS® Ground
+Tacoma,Colorado Springs,CO,Size M,10.07,3,UPS® Ground
+Tacoma,Marble Falls,TX,Size M,10.66,4,UPS® Ground
+Tacoma,San Diego,CA,Size M,10.07,3,UPS® Ground
+Tacoma,Tampa,FL,Size M,11.61,5,UPS® Ground
+Tacoma,Jacksonville,FL,Size M,11.7,5,UPS® Ground
+Tacoma,Louisville,KY,Size M,11.7,4,UPS® Ground
+Tacoma,Marietta,GA,Size M,11.7,4,UPS® Ground
+Tacoma,Raleigh,NC,Size M,11.7,5,UPS® Ground
+Tacoma,Fort Worth,TX,Size M,10.66,4,UPS® Ground
+Tacoma,Oklahoma City,OK,Size M,10.66,4,UPS® Ground
+Tacoma,Chesapeake,VA,Size M,11.7,5,UPS® Ground
+Tacoma,Dallas,TX,Size M,10.66,4,UPS® Ground
+Tacoma,Denver,CO,Size M,10.07,3,UPS® Ground
+Tacoma,Miami,FL,Size M,11.7,5,UPS® Ground
+Tacoma,Omaha,NE,Size M,10.07,3,UPS® Ground
+Tacoma,Pittsburgh,PA,Size M,11.7,4,UPS® Ground
+Tacoma,Portland,OR,Size M,7.57,1,UPS® Ground
+Tacoma,San Francisco,CA,Size M,8.48,2,UPS® Ground
+Tacoma,San Jose,CA,Size M,8.57,2,UPS® Ground
+Tacoma,Tucson,AZ,Size M,10.07,3,UPS® Ground
+Tacoma,Virginia Beach,VA,Size M,11.7,5,UPS® Ground
+Tacoma,Albuquerque,NM,Size M,10.07,4,UPS® Ground
+Tacoma,Canton,GA,Size M,11.7,4,UPS® Ground
+Tacoma,Gilbert,AZ,Size M,10.66,3,UPS® Ground
+Tacoma,Kansas City,MO,Size M,10.66,4,UPS® Ground
+Tacoma,Nashville,TN,Size M,11.7,4,UPS® Ground
+Tacoma,Saint Louis,MO,Size M,10.66,4,UPS® Ground
+Tacoma,Seattle,WA,Size M,7.57,1,UPS® Ground
+Tacoma,Boise,ID,Size M,8.69,2,UPS® Ground
+Tacoma,Indianapolis,IN,Size M,11.7,4,UPS® Ground
+Tacoma,Knoxville,TN,Size M,11.7,4,UPS® Ground
+Tacoma,Reno,NV,Size M,8.69,2,UPS® Ground
+Tacoma,Rochester,NY,Size M,11.7,4,UPS® Ground
+Tacoma,Bismarck,ND,Size M,8.57,3,UPS® Ground
+Tacoma,Columbia,MO,Size M,10.66,4,UPS® Ground
+Tacoma,Franklin,TN,Size M,11.7,4,UPS® Ground
+Tacoma,Los Angeles,CA,Size M,8.48,3,UPS® Ground
+Tacoma,Mesa,AZ,Size M,10.66,3,UPS® Ground
+Tacoma,Milwaukee,WI,Size M,10.66,3,UPS® Ground
+Tacoma,Abbeville,LA,Size M,11.7,5,UPS® Ground
+Tacoma,Abbot,ME,Size M,11.7,5,UPS® Ground
+Tacoma,Abingdon,MD,Size M,11.7,5,UPS® Ground
+Tacoma,Accord,NY,Size M,11.7,,UPS® Ground
+Tacoma,Acton,CA,Size M,8.57,3,UPS® Ground
+Tacoma,Acton,MA,Size M,11.7,5,UPS® Ground
+Tacoma,Acton,ME,Size M,11.7,,UPS® Ground
+Tacoma,Acworth,GA,Size M,11.7,4,UPS® Ground
+Tacoma,Ada,MI,Size M,10.66,,UPS® Ground
+Tacoma,Ada,OK,Size M,10.66,4,UPS® Ground
+Tacoma,Adams,MA,Size M,11.7,5,UPS® Ground
+Tacoma,Adams Run,SC,Size M,11.7,,UPS® Ground
+Tacoma,Adamsville,TN,Size M,11.7,,UPS® Ground
+Tacoma,Adel,GA,Size M,11.7,5,UPS® Ground
+Tacoma,Adirondack,NY,Size M,11.7,,UPS® Ground
+Tacoma,Adrian,MO,Size M,10.66,,UPS® Ground
+Tacoma,Advance,NC,Size M,11.7,5,UPS® Ground
+Tacoma,Affton,MO,Size M,10.66,4,UPS® Ground
+Tacoma,Afton,NY,Size M,11.7,,UPS® Ground
+Tacoma,Ahwahnee,CA,Size M,8.57,,UPS® Ground
+Tacoma,Alabaster,AL,Size M,11.7,5,UPS® Ground
+Tacoma,Alamo,CA,Size M,8.57,,UPS® Ground
+Tacoma,Alapaha,GA,Size M,11.7,,UPS® Ground
+Tacoma,Alba,TX,Size M,10.66,,UPS® Ground
+Seattle,Brooklyn,NY,Size M,11.7,4,UPS® Ground
+Seattle,Houston,TX,Size M,11.7,4,UPS® Ground
+Seattle,Phoenix,AZ,Size M,10.66,3,UPS® Ground
+Seattle,San Antonio,TX,Size M,10.66,4,UPS® Ground
+Seattle,Chicago,IL,Size M,10.66,3,UPS® Ground
+Seattle,Austin,TX,Size M,11.7,4,UPS® Ground
+Seattle,Charlotte,NC,Size M,11.7,5,UPS® Ground
+Seattle,New York,NY,Size M,11.7,4,UPS® Ground
+Seattle,Atlanta,GA,Size M,11.7,4,UPS® Ground
+Seattle,Orlando,FL,Size M,11.7,5,UPS® Ground
+Seattle,Las Vegas,NV,Size M,10.07,3,UPS® Ground
+Seattle,Colorado Springs,CO,Size M,8.57,3,UPS® Ground
+Seattle,Marble Falls,TX,Size M,11.7,4,UPS® Ground
+Seattle,San Diego,CA,Size M,10.07,3,UPS® Ground
+Seattle,Tampa,FL,Size M,11.61,5,UPS® Ground
+Seattle,Jacksonville,FL,Size M,11.7,5,UPS® Ground
+Seattle,Louisville,KY,Size M,11.7,4,UPS® Ground
+Seattle,Marietta,GA,Size M,11.7,4,UPS® Ground
+Seattle,Raleigh,NC,Size M,11.7,5,UPS® Ground
+Seattle,Fort Worth,TX,Size M,10.66,4,UPS® Ground
+Seattle,Oklahoma City,OK,Size M,10.66,4,UPS® Ground
+Seattle,Chesapeake,VA,Size M,11.7,5,UPS® Ground
+Seattle,Dallas,TX,Size M,10.66,4,UPS® Ground
+Seattle,Denver,CO,Size M,10.07,3,UPS® Ground
+Seattle,Miami,FL,Size M,11.7,5,UPS® Ground
+Seattle,Omaha,NE,Size M,10.07,3,UPS® Ground
+Seattle,Pittsburgh,PA,Size M,11.7,4,UPS® Ground
+Seattle,Portland,OR,Size M,7.57,1,UPS® Ground
+Seattle,San Francisco,CA,Size M,8.48,2,UPS® Ground
+Seattle,San Jose,CA,Size M,8.57,2,UPS® Ground
+Seattle,Tucson,AZ,Size M,10.07,3,UPS® Ground
+Seattle,Virginia Beach,VA,Size M,11.7,5,UPS® Ground
+Seattle,Albuquerque,NM,Size M,10.07,4,UPS® Ground
+Seattle,Canton,GA,Size M,11.7,4,UPS® Ground
+Seattle,Gilbert,AZ,Size M,10.66,3,UPS® Ground
+Seattle,Kansas City,MO,Size M,10.66,4,UPS® Ground
+Seattle,Nashville,TN,Size M,11.7,4,UPS® Ground
+Seattle,Saint Louis,MO,Size M,10.66,4,UPS® Ground
+Seattle,Seattle,WA,Size M,7.57,1,UPS® Ground
+Seattle,Boise,ID,Size M,8.69,2,UPS® Ground
+Seattle,Indianapolis,IN,Size M,11.7,4,UPS® Ground
+Seattle,Knoxville,TN,Size M,11.7,4,UPS® Ground
+Seattle,Reno,NV,Size M,8.69,2,UPS® Ground
+Seattle,Rochester,NY,Size M,11.7,4,UPS® Ground
+Seattle,Bismarck,ND,Size M,8.57,3,UPS® Ground
+Seattle,Columbia,MO,Size M,10.66,4,UPS® Ground
+Seattle,Franklin,TN,Size M,11.7,4,UPS® Ground
+Seattle,Los Angeles,CA,Size M,8.48,3,UPS® Ground
+Seattle,Mesa,AZ,Size M,10.66,3,UPS® Ground
+Seattle,Milwaukee,WI,Size M,10.66,3,UPS® Ground
+Seattle,Abbeville,LA,Size M,11.7,5,UPS® Ground
+Seattle,Abbot,ME,Size M,11.7,5,UPS® Ground
+Seattle,Abingdon,MD,Size M,11.7,5,UPS® Ground
+Seattle,Accord,NY,Size M,11.7,,UPS® Ground
+Seattle,Acton,CA,Size M,8.57,3,UPS® Ground
+Seattle,Acton,MA,Size M,11.7,5,UPS® Ground
+Seattle,Acton,ME,Size M,11.7,,UPS® Ground
+Seattle,Acworth,GA,Size M,11.7,4,UPS® Ground
+Seattle,Ada,MI,Size M,10.66,,UPS® Ground
+Seattle,Ada,OK,Size M,10.66,4,UPS® Ground
+Seattle,Adams,MA,Size M,11.7,5,UPS® Ground
+Seattle,Adams Run,SC,Size M,11.7,,UPS® Ground
+Seattle,Adamsville,TN,Size M,11.7,,UPS® Ground
+Seattle,Adel,GA,Size M,11.7,5,UPS® Ground
+Seattle,Adirondack,NY,Size M,11.7,,UPS® Ground
+Seattle,Adrian,MO,Size M,10.66,,UPS® Ground
+Seattle,Advance,NC,Size M,11.7,5,UPS® Ground
+Seattle,Affton,MO,Size M,10.66,4,UPS® Ground
+Seattle,Afton,NY,Size M,11.7,,UPS® Ground
+Seattle,Ahwahnee,CA,Size M,8.57,,UPS® Ground
+Seattle,Alabaster,AL,Size M,11.7,5,UPS® Ground
+Seattle,Alamo,CA,Size M,8.57,,UPS® Ground
+Seattle,Alapaha,GA,Size M,11.7,,UPS® Ground
+Seattle,Alba,TX,Size M,10.66,,UPS® Ground
+Portland,Brooklyn,NY,Size M,12.06,5,UPS® Ground
+Portland,Houston,TX,Size M,12.06,5,UPS® Ground
+Portland,Phoenix,AZ,Size M,11.0,4,UPS® Ground
+Portland,San Antonio,TX,Size M,11.0,5,UPS® Ground
+Portland,Chicago,IL,Size M,11.0,4,UPS® Ground
+Portland,Austin,TX,Size M,11.0,5,UPS® Ground
+Portland,Charlotte,NC,Size M,12.06,6,UPS® Ground
+Portland,New York,NY,Size M,12.06,5,UPS® Ground
+Portland,Atlanta,GA,Size M,12.06,5,UPS® Ground
+Portland,Orlando,FL,Size M,12.06,6,UPS® Ground
+Portland,Las Vegas,NV,Size M,8.86,4,UPS® Ground
+Portland,Colorado Springs,CO,Size M,10.4,3,UPS® Ground
+Portland,Marble Falls,TX,Size M,11.0,5,UPS® Ground
+Portland,San Diego,CA,Size M,8.86,4,UPS® Ground
+Portland,Tampa,FL,Size M,11.97,6,UPS® Ground
+Portland,Jacksonville,FL,Size M,12.06,6,UPS® Ground
+Portland,Louisville,KY,Size M,12.06,5,UPS® Ground
+Portland,Marietta,GA,Size M,12.06,5,UPS® Ground
+Portland,Raleigh,NC,Size M,12.06,6,UPS® Ground
+Portland,Fort Worth,TX,Size M,11.0,5,UPS® Ground
+Portland,Oklahoma City,OK,Size M,11.0,5,UPS® Ground
+Portland,Chesapeake,VA,Size M,12.06,5,UPS® Ground
+Portland,Dallas,TX,Size M,11.0,5,UPS® Ground
+Portland,Denver,CO,Size M,10.4,3,UPS® Ground
+Portland,Miami,FL,Size M,12.06,6,UPS® Ground
+Portland,Omaha,NE,Size M,10.4,4,UPS® Ground
+Portland,Pittsburgh,PA,Size M,12.06,5,UPS® Ground
+Portland,Portland,OR,Size M,7.79,1,UPS® Ground
+Portland,San Francisco,CA,Size M,7.91,3,UPS® Ground
+Portland,San Jose,CA,Size M,8.86,3,UPS® Ground
+Portland,Tucson,AZ,Size M,10.4,4,UPS® Ground
+Portland,Virginia Beach,VA,Size M,12.06,5,UPS® Ground
+Portland,Albuquerque,NM,Size M,10.4,5,UPS® Ground
+Portland,Canton,GA,Size M,12.06,5,UPS® Ground
+Portland,Gilbert,AZ,Size M,11.0,4,UPS® Ground
+Portland,Kansas City,MO,Size M,11.0,4,UPS® Ground
+Portland,Nashville,TN,Size M,12.06,5,UPS® Ground
+Portland,Saint Louis,MO,Size M,11.0,4,UPS® Ground
+Portland,Seattle,WA,Size M,7.79,1,UPS® Ground
+Portland,Boise,ID,Size M,8.69,3,UPS® Ground
+Portland,Indianapolis,IN,Size M,12.06,5,UPS® Ground
+Portland,Knoxville,TN,Size M,12.06,5,UPS® Ground
+Portland,Reno,NV,Size M,8.69,3,UPS® Ground
+Portland,Rochester,NY,Size M,12.06,5,UPS® Ground
+Portland,Bismarck,ND,Size M,10.4,4,UPS® Ground
+Portland,Columbia,MO,Size M,11.0,4,UPS® Ground
+Portland,Franklin,TN,Size M,12.06,5,UPS® Ground
+Portland,Los Angeles,CA,Size M,8.77,4,UPS® Ground
+Portland,Mesa,AZ,Size M,11.0,4,UPS® Ground
+Portland,Milwaukee,WI,Size M,11.0,4,UPS® Ground
+Portland,Abbeville,LA,Size M,12.06,5,UPS® Ground
+Portland,Abbot,ME,Size M,12.06,5,UPS® Ground
+Portland,Abingdon,MD,Size M,12.06,5,UPS® Ground
+Portland,Accord,NY,Size M,12.06,,UPS® Ground
+Portland,Acton,CA,Size M,8.86,4,UPS® Ground
+Portland,Acton,MA,Size M,12.06,5,UPS® Ground
+Portland,Acton,ME,Size M,12.06,,UPS® Ground
+Portland,Acworth,GA,Size M,12.06,5,UPS® Ground
+Portland,Ada,MI,Size M,12.06,,UPS® Ground
+Portland,Ada,OK,Size M,11.0,5,UPS® Ground
+Portland,Adams,MA,Size M,12.06,5,UPS® Ground
+Portland,Adams Run,SC,Size M,12.06,,UPS® Ground
+Portland,Adamsville,TN,Size M,12.06,,UPS® Ground
+Portland,Adel,GA,Size M,12.06,6,UPS® Ground
+Portland,Adirondack,NY,Size M,12.06,,UPS® Ground
+Portland,Adrian,MO,Size M,11.0,,UPS® Ground
+Portland,Advance,NC,Size M,12.06,6,UPS® Ground
+Portland,Affton,MO,Size M,11.0,4,UPS® Ground
+Portland,Afton,NY,Size M,12.06,,UPS® Ground
+Portland,Ahwahnee,CA,Size M,8.86,,UPS® Ground
+Portland,Alabaster,AL,Size M,12.06,6,UPS® Ground
+Portland,Alamo,CA,Size M,8.86,,UPS® Ground
+Portland,Alapaha,GA,Size M,12.06,,UPS® Ground
+Portland,Alba,TX,Size M,11.0,,UPS® Ground
+Spokane,Brooklyn,NY,Size M,12.06,6,UPS® Ground
+Spokane,Houston,TX,Size M,11.0,5,UPS® Ground
+Spokane,Phoenix,AZ,Size M,10.4,4,UPS® Ground
+Spokane,San Antonio,TX,Size M,11.0,5,UPS® Ground
+Spokane,Chicago,IL,Size M,11.0,4,UPS® Ground
+Spokane,Austin,TX,Size M,11.0,5,UPS® Ground
+Spokane,Charlotte,NC,Size M,12.06,6,UPS® Ground
+Spokane,New York,NY,Size M,12.06,6,UPS® Ground
+Spokane,Atlanta,GA,Size M,12.06,5,UPS® Ground
+Spokane,Orlando,FL,Size M,12.06,6,UPS® Ground
+Spokane,Las Vegas,NV,Size M,8.86,4,UPS® Ground
+Spokane,Colorado Springs,CO,Size M,8.86,4,UPS® Ground
+Spokane,Marble Falls,TX,Size M,11.0,5,UPS® Ground
+Spokane,San Diego,CA,Size M,10.4,4,UPS® Ground
+Spokane,Tampa,FL,Size M,11.97,6,UPS® Ground
+Spokane,Jacksonville,FL,Size M,12.06,6,UPS® Ground
+Spokane,Louisville,KY,Size M,11.0,6,UPS® Ground
+Spokane,Marietta,GA,Size M,12.06,5,UPS® Ground
+Spokane,Raleigh,NC,Size M,12.06,6,UPS® Ground
+Spokane,Fort Worth,TX,Size M,11.0,5,UPS® Ground
+Spokane,Oklahoma City,OK,Size M,10.4,5,UPS® Ground
+Spokane,Chesapeake,VA,Size M,12.06,5,UPS® Ground
+Spokane,Dallas,TX,Size M,11.0,5,UPS® Ground
+Spokane,Denver,CO,Size M,8.86,4,UPS® Ground
+Spokane,Miami,FL,Size M,12.06,6,UPS® Ground
+Spokane,Omaha,NE,Size M,10.4,4,UPS® Ground
+Spokane,Pittsburgh,PA,Size M,12.06,5,UPS® Ground
+Spokane,Portland,OR,Size M,8.24,3,UPS® Ground
+Spokane,San Francisco,CA,Size M,8.77,4,UPS® Ground
+Spokane,San Jose,CA,Size M,8.86,4,UPS® Ground
+Spokane,Tucson,AZ,Size M,10.4,4,UPS® Ground
+Spokane,Virginia Beach,VA,Size M,12.06,5,UPS® Ground
+Spokane,Albuquerque,NM,Size M,10.4,4,UPS® Ground
+Spokane,Canton,GA,Size M,12.06,5,UPS® Ground
+Spokane,Gilbert,AZ,Size M,10.4,4,UPS® Ground
+Spokane,Kansas City,MO,Size M,10.4,5,UPS® Ground
+Spokane,Nashville,TN,Size M,11.0,5,UPS® Ground
+Spokane,Saint Louis,MO,Size M,11.0,5,UPS® Ground
+Spokane,Seattle,WA,Size M,8.24,2,UPS® Ground
+Spokane,Boise,ID,Size M,8.24,3,UPS® Ground
+Spokane,Indianapolis,IN,Size M,11.0,5,UPS® Ground
+Spokane,Knoxville,TN,Size M,12.06,5,UPS® Ground
+Spokane,Reno,NV,Size M,8.69,3,UPS® Ground
+Spokane,Rochester,NY,Size M,12.06,5,UPS® Ground
+Spokane,Bismarck,ND,Size M,8.86,4,UPS® Ground
+Spokane,Columbia,MO,Size M,10.4,5,UPS® Ground
+Spokane,Franklin,TN,Size M,11.0,5,UPS® Ground
+Spokane,Los Angeles,CA,Size M,8.77,4,UPS® Ground
+Spokane,Mesa,AZ,Size M,10.4,4,UPS® Ground
+Spokane,Milwaukee,WI,Size M,11.0,5,UPS® Ground
+Spokane,Abbeville,LA,Size M,11.0,6,UPS® Ground
+Spokane,Abbot,ME,Size M,12.06,6,UPS® Ground
+Spokane,Abingdon,MD,Size M,12.06,5,UPS® Ground
+Spokane,Accord,NY,Size M,12.06,,UPS® Ground
+Spokane,Acton,CA,Size M,8.86,4,UPS® Ground
+Spokane,Acton,MA,Size M,12.06,6,UPS® Ground
+Spokane,Acton,ME,Size M,12.06,,UPS® Ground
+Spokane,Acworth,GA,Size M,12.06,5,UPS® Ground
+Spokane,Ada,MI,Size M,11.0,,UPS® Ground
+Spokane,Ada,OK,Size M,10.4,5,UPS® Ground
+Spokane,Adams,MA,Size M,12.06,6,UPS® Ground
+Spokane,Adams Run,SC,Size M,12.06,,UPS® Ground
+Spokane,Adamsville,TN,Size M,11.0,,UPS® Ground
+Spokane,Adel,GA,Size M,12.06,5,UPS® Ground
+Spokane,Adirondack,NY,Size M,12.06,,UPS® Ground
+Spokane,Adrian,MO,Size M,10.4,,UPS® Ground
+Spokane,Advance,NC,Size M,12.06,6,UPS® Ground
+Spokane,Affton,MO,Size M,11.0,5,UPS® Ground
+Spokane,Afton,NY,Size M,12.06,,UPS® Ground
+Spokane,Ahwahnee,CA,Size M,8.86,,UPS® Ground
+Spokane,Alabaster,AL,Size M,12.06,5,UPS® Ground
+Spokane,Alamo,CA,Size M,8.86,,UPS® Ground
+Spokane,Alapaha,GA,Size M,12.06,,UPS® Ground
+Spokane,Alba,TX,Size M,11.0,,UPS® Ground
+Salt Lake City,Brooklyn,NY,Size M,12.06,5,UPS® Ground
+Salt Lake City,Houston,TX,Size M,11.0,4,UPS® Ground
+Salt Lake City,Phoenix,AZ,Size M,8.69,3,UPS® Ground
+Salt Lake City,San Antonio,TX,Size M,10.4,4,UPS® Ground
+Salt Lake City,Chicago,IL,Size M,10.4,4,UPS® Ground
+Salt Lake City,Austin,TX,Size M,10.4,4,UPS® Ground
+Salt Lake City,Charlotte,NC,Size M,11.0,5,UPS® Ground
+Salt Lake City,New York,NY,Size M,12.06,5,UPS® Ground
+Salt Lake City,Atlanta,GA,Size M,11.0,5,UPS® Ground
+Salt Lake City,Orlando,FL,Size M,12.06,5,UPS® Ground
+Salt Lake City,Las Vegas,NV,Size M,8.69,3,UPS® Ground
+Salt Lake City,Colorado Springs,CO,Size M,8.69,3,UPS® Ground
+Salt Lake City,Marble Falls,TX,Size M,10.4,4,UPS® Ground
+Salt Lake City,San Diego,CA,Size M,8.86,3,UPS® Ground
+Salt Lake City,Tampa,FL,Size M,11.97,5,UPS® Ground
+Salt Lake City,Jacksonville,FL,Size M,12.06,5,UPS® Ground
+Salt Lake City,Louisville,KY,Size M,11.0,5,UPS® Ground
+Salt Lake City,Marietta,GA,Size M,11.0,5,UPS® Ground
+Salt Lake City,Raleigh,NC,Size M,12.06,5,UPS® Ground
+Salt Lake City,Fort Worth,TX,Size M,8.86,4,UPS® Ground
+Salt Lake City,Oklahoma City,OK,Size M,8.86,4,UPS® Ground
+Salt Lake City,Chesapeake,VA,Size M,12.06,5,UPS® Ground
+Salt Lake City,Dallas,TX,Size M,10.4,4,UPS® Ground
+Salt Lake City,Denver,CO,Size M,8.69,3,UPS® Ground
+Salt Lake City,Miami,FL,Size M,12.06,5,UPS® Ground
+Salt Lake City,Omaha,NE,Size M,8.86,3,UPS® Ground
+Salt Lake City,Pittsburgh,PA,Size M,11.0,6,UPS® Ground
+Salt Lake City,Portland,OR,Size M,8.86,3,UPS® Ground
+Salt Lake City,San Francisco,CA,Size M,8.77,3,UPS® Ground
+Salt Lake City,San Jose,CA,Size M,8.86,3,UPS® Ground
+Salt Lake City,Tucson,AZ,Size M,8.86,3,UPS® Ground
+Salt Lake City,Virginia Beach,VA,Size M,12.06,5,UPS® Ground
+Salt Lake City,Albuquerque,NM,Size M,8.69,3,UPS® Ground
+Salt Lake City,Canton,GA,Size M,11.0,5,UPS® Ground
+Salt Lake City,Gilbert,AZ,Size M,8.69,3,UPS® Ground
+Salt Lake City,Kansas City,MO,Size M,8.86,4,UPS® Ground
+Salt Lake City,Nashville,TN,Size M,10.4,5,UPS® Ground
+Salt Lake City,Saint Louis,MO,Size M,10.4,4,UPS® Ground
+Salt Lake City,Seattle,WA,Size M,8.86,3,UPS® Ground
+Salt Lake City,Boise,ID,Size M,8.69,3,UPS® Ground
+Salt Lake City,Indianapolis,IN,Size M,10.4,5,UPS® Ground
+Salt Lake City,Knoxville,TN,Size M,11.0,5,UPS® Ground
+Salt Lake City,Reno,NV,Size M,8.69,3,UPS® Ground
+Salt Lake City,Rochester,NY,Size M,11.0,5,UPS® Ground
+Salt Lake City,Bismarck,ND,Size M,8.86,4,UPS® Ground
+Salt Lake City,Columbia,MO,Size M,10.4,4,UPS® Ground
+Salt Lake City,Franklin,TN,Size M,11.0,5,UPS® Ground
+Salt Lake City,Los Angeles,CA,Size M,8.77,3,UPS® Ground
+Salt Lake City,Mesa,AZ,Size M,8.69,3,UPS® Ground
+Salt Lake City,Milwaukee,WI,Size M,10.4,5,UPS® Ground
+Salt Lake City,Abbeville,LA,Size M,10.4,5,UPS® Ground
+Salt Lake City,Abbot,ME,Size M,12.06,5,UPS® Ground
+Salt Lake City,Abingdon,MD,Size M,12.06,5,UPS® Ground
+Salt Lake City,Accord,NY,Size M,12.06,,UPS® Ground
+Salt Lake City,Acton,CA,Size M,8.69,3,UPS® Ground
+Salt Lake City,Acton,MA,Size M,12.06,5,UPS® Ground
+Salt Lake City,Acton,ME,Size M,12.06,,UPS® Ground
+Salt Lake City,Acworth,GA,Size M,11.0,5,UPS® Ground
+Salt Lake City,Ada,MI,Size M,10.4,,UPS® Ground
+Salt Lake City,Ada,OK,Size M,8.86,4,UPS® Ground
+Salt Lake City,Adams,MA,Size M,12.06,5,UPS® Ground
+Salt Lake City,Adams Run,SC,Size M,12.06,,UPS® Ground
+Salt Lake City,Adamsville,TN,Size M,10.4,,UPS® Ground
+Salt Lake City,Adel,GA,Size M,11.0,5,UPS® Ground
+Salt Lake City,Adirondack,NY,Size M,12.06,,UPS® Ground
+Salt Lake City,Adrian,MO,Size M,8.86,,UPS® Ground
+Salt Lake City,Advance,NC,Size M,11.0,5,UPS® Ground
+Salt Lake City,Affton,MO,Size M,10.4,4,UPS® Ground
+Salt Lake City,Afton,NY,Size M,12.06,,UPS® Ground
+Salt Lake City,Ahwahnee,CA,Size M,8.69,,UPS® Ground
+Salt Lake City,Alabaster,AL,Size M,11.0,5,UPS® Ground
+Salt Lake City,Alamo,CA,Size M,8.86,,UPS® Ground
+Salt Lake City,Alapaha,GA,Size M,11.0,,UPS® Ground
+Salt Lake City,Alba,TX,Size M,10.4,,UPS® Ground
+Reno,Brooklyn,NY,Size M,12.06,5,UPS® Ground
+Reno,Houston,TX,Size M,11.0,4,UPS® Ground
+Reno,Phoenix,AZ,Size M,8.86,3,UPS® Ground
+Reno,San Antonio,TX,Size M,11.0,4,UPS® Ground
+Reno,Chicago,IL,Size M,11.0,4,UPS® Ground
+Reno,Austin,TX,Size M,11.0,4,UPS® Ground
+Reno,Charlotte,NC,Size M,12.06,5,UPS® Ground
+Reno,New York,NY,Size M,12.06,5,UPS® Ground
+Reno,Atlanta,GA,Size M,12.06,5,UPS® Ground
+Reno,Orlando,FL,Size M,12.06,6,UPS® Ground
+Reno,Las Vegas,NV,Size M,8.69,2,UPS® Ground
+Reno,Colorado Springs,CO,Size M,8.86,3,UPS® Ground
+Reno,Marble Falls,TX,Size M,10.4,4,UPS® Ground
+Reno,San Diego,CA,Size M,8.69,3,UPS® Ground
+Reno,Tampa,FL,Size M,11.97,6,UPS® Ground
+Reno,Jacksonville,FL,Size M,12.06,6,UPS® Ground
+Reno,Louisville,KY,Size M,12.06,4,UPS® Ground
+Reno,Marietta,GA,Size M,12.06,5,UPS® Ground
+Reno,Raleigh,NC,Size M,12.06,5,UPS® Ground
+Reno,Fort Worth,TX,Size M,10.4,4,UPS® Ground
+Reno,Oklahoma City,OK,Size M,10.4,4,UPS® Ground
+Reno,Chesapeake,VA,Size M,12.06,5,UPS® Ground
+Reno,Dallas,TX,Size M,10.4,4,UPS® Ground
+Reno,Denver,CO,Size M,8.86,3,UPS® Ground
+Reno,Miami,FL,Size M,12.06,6,UPS® Ground
+Reno,Omaha,NE,Size M,12.84,4,UPS® Ground
+Reno,Pittsburgh,PA,Size M,12.06,5,UPS® Ground
+Reno,Portland,OR,Size M,8.69,3,UPS® Ground
+Reno,San Francisco,CA,Size M,7.4,1,UPS® Ground
+Reno,San Jose,CA,Size M,8.24,1,UPS® Ground
+Reno,Tucson,AZ,Size M,8.86,3,UPS® Ground
+Reno,Virginia Beach,VA,Size M,12.06,5,UPS® Ground
+Reno,Albuquerque,NM,Size M,8.86,4,UPS® Ground
+Reno,Canton,GA,Size M,12.06,5,UPS® Ground
+Reno,Gilbert,AZ,Size M,10.4,3,UPS® Ground
+Reno,Kansas City,MO,Size M,10.4,4,UPS® Ground
+Reno,Nashville,TN,Size M,12.06,5,UPS® Ground
+Reno,Saint Louis,MO,Size M,11.0,4,UPS® Ground
+Reno,Seattle,WA,Size M,8.86,3,UPS® Ground
+Reno,Boise,ID,Size M,8.69,3,UPS® Ground
+Reno,Indianapolis,IN,Size M,11.0,4,UPS® Ground
+Reno,Knoxville,TN,Size M,12.06,5,UPS® Ground
+Reno,Reno,NV,Size M,7.79,1,UPS® Ground
+Reno,Rochester,NY,Size M,12.06,5,UPS® Ground
+Reno,Bismarck,ND,Size M,10.4,5,UPS® Ground
+Reno,Columbia,MO,Size M,11.0,4,UPS® Ground
+Reno,Franklin,TN,Size M,12.06,5,UPS® Ground
+Reno,Los Angeles,CA,Size M,7.91,3,UPS® Ground
+Reno,Mesa,AZ,Size M,10.4,3,UPS® Ground
+Reno,Milwaukee,WI,Size M,11.0,4,UPS® Ground
+Reno,Abbeville,LA,Size M,11.0,6,UPS® Ground
+Reno,Abbot,ME,Size M,12.06,6,UPS® Ground
+Reno,Abingdon,MD,Size M,12.06,5,UPS® Ground
+Reno,Accord,NY,Size M,12.06,,UPS® Ground
+Reno,Acton,CA,Size M,8.69,3,UPS® Ground
+Reno,Acton,MA,Size M,12.06,6,UPS® Ground
+Reno,Acton,ME,Size M,12.06,,UPS® Ground
+Reno,Acworth,GA,Size M,12.06,5,UPS® Ground
+Reno,Ada,MI,Size M,11.0,,UPS® Ground
+Reno,Ada,OK,Size M,10.4,4,UPS® Ground
+Reno,Adams,MA,Size M,12.06,6,UPS® Ground
+Reno,Adams Run,SC,Size M,12.06,,UPS® Ground
+Reno,Adamsville,TN,Size M,11.0,,UPS® Ground
+Reno,Adel,GA,Size M,12.06,6,UPS® Ground
+Reno,Adirondack,NY,Size M,12.06,,UPS® Ground
+Reno,Adrian,MO,Size M,10.4,,UPS® Ground
+Reno,Advance,NC,Size M,12.06,5,UPS® Ground
+Reno,Affton,MO,Size M,11.0,4,UPS® Ground
+Reno,Afton,NY,Size M,12.06,,UPS® Ground
+Reno,Ahwahnee,CA,Size M,8.24,,UPS® Ground
+Reno,Alabaster,AL,Size M,12.06,5,UPS® Ground
+Reno,Alamo,CA,Size M,8.24,,UPS® Ground
+Reno,Alapaha,GA,Size M,12.06,,UPS® Ground
+Reno,Alba,TX,Size M,11.0,,UPS® Ground
+Las Vegas,Brooklyn,NY,Size M,12.06,5,UPS® Ground
+Las Vegas,Houston,TX,Size M,11.0,4,UPS® Ground
+Las Vegas,Phoenix,AZ,Size M,8.69,3,UPS® Ground
+Las Vegas,San Antonio,TX,Size M,11.0,4,UPS® Ground
+Las Vegas,Chicago,IL,Size M,11.0,4,UPS® Ground
+Las Vegas,Austin,TX,Size M,10.4,4,UPS® Ground
+Las Vegas,Charlotte,NC,Size M,12.06,5,UPS® Ground
+Las Vegas,New York,NY,Size M,12.06,5,UPS® Ground
+Las Vegas,Atlanta,GA,Size M,11.0,6,UPS® Ground
+Las Vegas,Orlando,FL,Size M,12.06,5,UPS® Ground
+Las Vegas,Las Vegas,NV,Size M,7.79,1,UPS® Ground
+Las Vegas,Colorado Springs,CO,Size M,8.86,3,UPS® Ground
+Las Vegas,Marble Falls,TX,Size M,10.4,4,UPS® Ground
+Las Vegas,San Diego,CA,Size M,8.24,2,UPS® Ground
+Las Vegas,Tampa,FL,Size M,11.97,5,UPS® Ground
+Las Vegas,Jacksonville,FL,Size M,12.06,5,UPS® Ground
+Las Vegas,Louisville,KY,Size M,11.0,4,UPS® Ground
+Las Vegas,Marietta,GA,Size M,12.06,6,UPS® Ground
+Las Vegas,Raleigh,NC,Size M,12.06,5,UPS® Ground
+Las Vegas,Fort Worth,TX,Size M,11.0,4,UPS® Ground
+Las Vegas,Oklahoma City,OK,Size M,10.4,4,UPS® Ground
+Las Vegas,Chesapeake,VA,Size M,12.06,5,UPS® Ground
+Las Vegas,Dallas,TX,Size M,11.0,4,UPS® Ground
+Las Vegas,Denver,CO,Size M,10.4,3,UPS® Ground
+Las Vegas,Miami,FL,Size M,12.06,5,UPS® Ground
+Las Vegas,Omaha,NE,Size M,10.4,4,UPS® Ground
+Las Vegas,Pittsburgh,PA,Size M,12.06,5,UPS® Ground
+Las Vegas,Portland,OR,Size M,10.4,4,UPS® Ground
+Las Vegas,San Francisco,CA,Size M,7.91,3,UPS® Ground
+Las Vegas,San Jose,CA,Size M,8.69,3,UPS® Ground
+Las Vegas,Tucson,AZ,Size M,8.86,3,UPS® Ground
+Las Vegas,Virginia Beach,VA,Size M,12.06,5,UPS® Ground
+Las Vegas,Albuquerque,NM,Size M,8.69,4,UPS® Ground
+Las Vegas,Canton,GA,Size M,11.0,6,UPS® Ground
+Las Vegas,Gilbert,AZ,Size M,8.69,3,UPS® Ground
+Las Vegas,Kansas City,MO,Size M,10.4,4,UPS® Ground
+Las Vegas,Nashville,TN,Size M,11.0,5,UPS® Ground
+Las Vegas,Saint Louis,MO,Size M,13.84,4,UPS® Ground
+Las Vegas,Seattle,WA,Size M,10.4,4,UPS® Ground
+Las Vegas,Boise,ID,Size M,8.69,3,UPS® Ground
+Las Vegas,Indianapolis,IN,Size M,11.0,4,UPS® Ground
+Las Vegas,Knoxville,TN,Size M,11.0,5,UPS® Ground
+Las Vegas,Reno,NV,Size M,8.69,3,UPS® Ground
+Las Vegas,Rochester,NY,Size M,12.06,5,UPS® Ground
+Las Vegas,Bismarck,ND,Size M,10.4,4,UPS® Ground
+Las Vegas,Columbia,MO,Size M,10.4,4,UPS® Ground
+Las Vegas,Franklin,TN,Size M,11.0,5,UPS® Ground
+Las Vegas,Los Angeles,CA,Size M,7.91,2,UPS® Ground
+Las Vegas,Mesa,AZ,Size M,8.69,3,UPS® Ground
+Las Vegas,Milwaukee,WI,Size M,11.0,4,UPS® Ground
+Las Vegas,Abbeville,LA,Size M,10.4,5,UPS® Ground
+Las Vegas,Abbot,ME,Size M,12.06,5,UPS® Ground
+Las Vegas,Abingdon,MD,Size M,12.06,5,UPS® Ground
+Las Vegas,Accord,NY,Size M,12.06,,UPS® Ground
+Las Vegas,Acton,CA,Size M,8.24,3,UPS® Ground
+Las Vegas,Acton,MA,Size M,12.06,5,UPS® Ground
+Las Vegas,Acton,ME,Size M,12.06,,UPS® Ground
+Las Vegas,Acworth,GA,Size M,11.0,6,UPS® Ground
+Las Vegas,Ada,MI,Size M,11.0,,UPS® Ground
+Las Vegas,Ada,OK,Size M,10.4,4,UPS® Ground
+Las Vegas,Adams,MA,Size M,12.06,5,UPS® Ground
+Las Vegas,Adams Run,SC,Size M,12.06,,UPS® Ground
+Las Vegas,Adamsville,TN,Size M,13.84,,UPS® Ground
+Las Vegas,Adel,GA,Size M,12.06,6,UPS® Ground
+Las Vegas,Adirondack,NY,Size M,12.06,,UPS® Ground
+Las Vegas,Adrian,MO,Size M,10.4,,UPS® Ground
+Las Vegas,Advance,NC,Size M,12.06,5,UPS® Ground
+Las Vegas,Affton,MO,Size M,11.0,4,UPS® Ground
+Las Vegas,Afton,NY,Size M,12.06,,UPS® Ground
+Las Vegas,Ahwahnee,CA,Size M,8.24,,UPS® Ground
+Las Vegas,Alabaster,AL,Size M,11.0,5,UPS® Ground
+Las Vegas,Alamo,CA,Size M,8.69,,UPS® Ground
+Las Vegas,Alapaha,GA,Size M,12.06,,UPS® Ground
+Las Vegas,Alba,TX,Size M,10.4,,UPS® Ground
+Phoenix,Brooklyn,NY,Size M,12.06,5,UPS® Ground
+Phoenix,Houston,TX,Size M,10.4,3,UPS® Ground
+Phoenix,Phoenix,AZ,Size M,7.79,1,UPS® Ground
+Phoenix,San Antonio,TX,Size M,10.4,3,UPS® Ground
+Phoenix,Chicago,IL,Size M,11.0,4,UPS® Ground
+Phoenix,Austin,TX,Size M,10.4,3,UPS® Ground
+Phoenix,Charlotte,NC,Size M,11.0,5,UPS® Ground
+Phoenix,New York,NY,Size M,12.06,5,UPS® Ground
+Phoenix,Atlanta,GA,Size M,11.0,5,UPS® Ground
+Phoenix,Orlando,FL,Size M,12.06,4,UPS® Ground
+Phoenix,Las Vegas,NV,Size M,8.69,2,UPS® Ground
+Phoenix,Colorado Springs,CO,Size M,8.86,3,UPS® Ground
+Phoenix,Marble Falls,TX,Size M,10.4,3,UPS® Ground
+Phoenix,San Diego,CA,Size M,8.69,3,UPS® Ground
+Phoenix,Tampa,FL,Size M,10.91,4,UPS® Ground
+Phoenix,Jacksonville,FL,Size M,11.0,4,UPS® Ground
+Phoenix,Louisville,KY,Size M,11.0,4,UPS® Ground
+Phoenix,Marietta,GA,Size M,11.0,5,UPS® Ground
+Phoenix,Raleigh,NC,Size M,12.06,5,UPS® Ground
+Phoenix,Fort Worth,TX,Size M,10.4,3,UPS® Ground
+Phoenix,Oklahoma City,OK,Size M,8.86,4,UPS® Ground
+Phoenix,Chesapeake,VA,Size M,12.06,5,UPS® Ground
+Phoenix,Dallas,TX,Size M,10.4,3,UPS® Ground
+Phoenix,Denver,CO,Size M,8.86,3,UPS® Ground
+Phoenix,Miami,FL,Size M,12.06,5,UPS® Ground
+Phoenix,Omaha,NE,Size M,11.0,4,UPS® Ground
+Phoenix,Pittsburgh,PA,Size M,12.06,5,UPS® Ground
+Phoenix,Portland,OR,Size M,11.0,4,UPS® Ground
+Phoenix,San Francisco,CA,Size M,8.77,3,UPS® Ground
+Phoenix,San Jose,CA,Size M,8.86,3,UPS® Ground
+Phoenix,Tucson,AZ,Size M,7.79,1,UPS® Ground
+Phoenix,Virginia Beach,VA,Size M,12.06,5,UPS® Ground
+Phoenix,Albuquerque,NM,Size M,8.69,3,UPS® Ground
+Phoenix,Canton,GA,Size M,11.0,5,UPS® Ground
+Phoenix,Gilbert,AZ,Size M,7.79,1,UPS® Ground
+Phoenix,Kansas City,MO,Size M,10.4,4,UPS® Ground
+Phoenix,Nashville,TN,Size M,11.0,6,UPS® Ground
+Phoenix,Saint Louis,MO,Size M,10.4,4,UPS® Ground
+Phoenix,Seattle,WA,Size M,11.0,4,UPS® Ground
+Phoenix,Boise,ID,Size M,8.86,4,UPS® Ground
+Phoenix,Indianapolis,IN,Size M,11.0,4,UPS® Ground
+Phoenix,Knoxville,TN,Size M,11.0,6,UPS® Ground
+Phoenix,Reno,NV,Size M,8.86,3,UPS® Ground
+Phoenix,Rochester,NY,Size M,12.06,5,UPS® Ground
+Phoenix,Bismarck,ND,Size M,10.4,5,UPS® Ground
+Phoenix,Columbia,MO,Size M,10.4,4,UPS® Ground
+Phoenix,Franklin,TN,Size M,11.0,6,UPS® Ground
+Phoenix,Los Angeles,CA,Size M,8.77,3,UPS® Ground
+Phoenix,Mesa,AZ,Size M,7.79,1,UPS® Ground
+Phoenix,Milwaukee,WI,Size M,11.0,4,UPS® Ground
+Phoenix,Abbeville,LA,Size M,10.4,4,UPS® Ground
+Phoenix,Abbot,ME,Size M,12.06,5,UPS® Ground
+Phoenix,Abingdon,MD,Size M,12.06,5,UPS® Ground
+Phoenix,Accord,NY,Size M,12.06,,UPS® Ground
+Phoenix,Acton,CA,Size M,8.24,3,UPS® Ground
+Phoenix,Acton,MA,Size M,12.06,5,UPS® Ground
+Phoenix,Acton,ME,Size M,12.06,,UPS® Ground
+Phoenix,Acworth,GA,Size M,11.0,5,UPS® Ground
+Phoenix,Ada,MI,Size M,11.0,,UPS® Ground
+Phoenix,Ada,OK,Size M,8.86,3,UPS® Ground
+Phoenix,Adams,MA,Size M,12.06,5,UPS® Ground
+Phoenix,Adams Run,SC,Size M,12.06,,UPS® Ground
+Phoenix,Adamsville,TN,Size M,10.4,,UPS® Ground
+Phoenix,Adel,GA,Size M,11.0,5,UPS® Ground
+Phoenix,Adirondack,NY,Size M,12.06,,UPS® Ground
+Phoenix,Adrian,MO,Size M,10.4,,UPS® Ground
+Phoenix,Advance,NC,Size M,11.0,5,UPS® Ground
+Phoenix,Affton,MO,Size M,10.4,4,UPS® Ground
+Phoenix,Afton,NY,Size M,12.06,,UPS® Ground
+Phoenix,Ahwahnee,CA,Size M,8.69,,UPS® Ground
+Phoenix,Alabaster,AL,Size M,11.0,4,UPS® Ground
+Phoenix,Alamo,CA,Size M,8.86,,UPS® Ground
+Phoenix,Alapaha,GA,Size M,11.0,,UPS® Ground
+Phoenix,Alba,TX,Size M,8.86,,UPS® Ground
+Albuquerque,Brooklyn,NY,Size M,12.06,6,UPS® Ground
+Albuquerque,Houston,TX,Size M,8.86,3,UPS® Ground
+Albuquerque,Phoenix,AZ,Size M,8.69,3,UPS® Ground
+Albuquerque,San Antonio,TX,Size M,8.86,3,UPS® Ground
+Albuquerque,Chicago,IL,Size M,10.4,4,UPS® Ground
+Albuquerque,Austin,TX,Size M,8.86,3,UPS® Ground
+Albuquerque,Charlotte,NC,Size M,11.0,4,UPS® Ground
+Albuquerque,New York,NY,Size M,12.06,6,UPS® Ground
+Albuquerque,Atlanta,GA,Size M,10.4,4,UPS® Ground
+Albuquerque,Orlando,FL,Size M,11.0,4,UPS® Ground
+Albuquerque,Las Vegas,NV,Size M,8.69,4,UPS® Ground
+Albuquerque,Colorado Springs,CO,Size M,8.69,3,UPS® Ground
+Albuquerque,Marble Falls,TX,Size M,8.86,3,UPS® Ground
+Albuquerque,San Diego,CA,Size M,8.86,4,UPS® Ground
+Albuquerque,Tampa,FL,Size M,10.91,4,UPS® Ground
+Albuquerque,Jacksonville,FL,Size M,11.0,4,UPS® Ground
+Albuquerque,Louisville,KY,Size M,10.4,5,UPS® Ground
+Albuquerque,Marietta,GA,Size M,10.4,4,UPS® Ground
+Albuquerque,Raleigh,NC,Size M,11.0,4,UPS® Ground
+Albuquerque,Fort Worth,TX,Size M,8.69,3,UPS® Ground
+Albuquerque,Oklahoma City,OK,Size M,8.69,3,UPS® Ground
+Albuquerque,Chesapeake,VA,Size M,11.0,5,UPS® Ground
+Albuquerque,Dallas,TX,Size M,8.69,3,UPS® Ground
+Albuquerque,Denver,CO,Size M,8.69,3,UPS® Ground
+Albuquerque,Miami,FL,Size M,11.0,5,UPS® Ground
+Albuquerque,Omaha,NE,Size M,8.86,4,UPS® Ground
+Albuquerque,Pittsburgh,PA,Size M,11.0,5,UPS® Ground
+Albuquerque,Portland,OR,Size M,10.4,4,UPS® Ground
+Albuquerque,San Francisco,CA,Size M,8.77,4,UPS® Ground
+Albuquerque,San Jose,CA,Size M,8.86,4,UPS® Ground
+Albuquerque,Tucson,AZ,Size M,8.69,3,UPS® Ground
+Albuquerque,Virginia Beach,VA,Size M,11.0,5,UPS® Ground
+Albuquerque,Albuquerque,NM,Size M,7.79,1,UPS® Ground
+Albuquerque,Canton,GA,Size M,10.4,4,UPS® Ground
+Albuquerque,Gilbert,AZ,Size M,8.69,3,UPS® Ground
+Albuquerque,Kansas City,MO,Size M,8.86,4,UPS® Ground
+Albuquerque,Nashville,TN,Size M,10.4,4,UPS® Ground
+Albuquerque,Saint Louis,MO,Size M,8.86,4,UPS® Ground
+Albuquerque,Seattle,WA,Size M,10.4,4,UPS® Ground
+Albuquerque,Boise,ID,Size M,8.86,4,UPS® Ground
+Albuquerque,Indianapolis,IN,Size M,10.4,5,UPS® Ground
+Albuquerque,Knoxville,TN,Size M,10.4,4,UPS® Ground
+Albuquerque,Reno,NV,Size M,8.86,4,UPS® Ground
+Albuquerque,Rochester,NY,Size M,11.0,5,UPS® Ground
+Albuquerque,Bismarck,ND,Size M,8.86,5,UPS® Ground
+Albuquerque,Columbia,MO,Size M,8.86,4,UPS® Ground
+Albuquerque,Franklin,TN,Size M,10.4,4,UPS® Ground
+Albuquerque,Los Angeles,CA,Size M,8.77,4,UPS® Ground
+Albuquerque,Mesa,AZ,Size M,8.69,3,UPS® Ground
+Albuquerque,Milwaukee,WI,Size M,10.4,4,UPS® Ground
+Albuquerque,Abbeville,LA,Size M,8.86,4,UPS® Ground
+Albuquerque,Abbot,ME,Size M,12.06,6,UPS® Ground
+Albuquerque,Abingdon,MD,Size M,11.0,5,UPS® Ground
+Albuquerque,Accord,NY,Size M,12.06,,UPS® Ground
+Albuquerque,Acton,CA,Size M,8.86,4,UPS® Ground
+Albuquerque,Acton,MA,Size M,12.06,6,UPS® Ground
+Albuquerque,Acton,ME,Size M,12.06,,UPS® Ground
+Albuquerque,Acworth,GA,Size M,10.4,4,UPS® Ground
+Albuquerque,Ada,MI,Size M,10.4,,UPS® Ground
+Albuquerque,Ada,OK,Size M,8.69,3,UPS® Ground
+Albuquerque,Adams,MA,Size M,12.06,6,UPS® Ground
+Albuquerque,Adams Run,SC,Size M,11.0,,UPS® Ground
+Albuquerque,Adamsville,TN,Size M,8.86,,UPS® Ground
+Albuquerque,Adel,GA,Size M,10.4,4,UPS® Ground
+Albuquerque,Adirondack,NY,Size M,12.06,,UPS® Ground
+Albuquerque,Adrian,MO,Size M,8.86,,UPS® Ground
+Albuquerque,Advance,NC,Size M,11.0,4,UPS® Ground
+Albuquerque,Affton,MO,Size M,8.86,4,UPS® Ground
+Albuquerque,Afton,NY,Size M,11.0,,UPS® Ground
+Albuquerque,Ahwahnee,CA,Size M,8.86,,UPS® Ground
+Albuquerque,Alabaster,AL,Size M,10.4,4,UPS® Ground
+Albuquerque,Alamo,CA,Size M,8.86,,UPS® Ground
+Albuquerque,Alapaha,GA,Size M,10.4,,UPS® Ground
+Albuquerque,Alba,TX,Size M,8.86,,UPS® Ground
+San Diego,Brooklyn,NY,Size M,12.06,5,UPS® Ground
+San Diego,Houston,TX,Size M,11.0,4,UPS® Ground
+San Diego,Phoenix,AZ,Size M,8.69,2,UPS® Ground
+San Diego,San Antonio,TX,Size M,10.4,4,UPS® Ground
+San Diego,Chicago,IL,Size M,11.0,5,UPS® Ground
+San Diego,Austin,TX,Size M,10.4,4,UPS® Ground
+San Diego,Charlotte,NC,Size M,12.06,5,UPS® Ground
+San Diego,New York,NY,Size M,12.06,5,UPS® Ground
+San Diego,Atlanta,GA,Size M,12.06,5,UPS® Ground
+San Diego,Orlando,FL,Size M,12.06,5,UPS® Ground
+San Diego,Las Vegas,NV,Size M,8.69,1,UPS® Ground
+San Diego,Colorado Springs,CO,Size M,8.86,3,UPS® Ground
+San Diego,Marble Falls,TX,Size M,10.4,4,UPS® Ground
+San Diego,San Diego,CA,Size M,7.79,1,UPS® Ground
+San Diego,Tampa,FL,Size M,11.97,5,UPS® Ground
+San Diego,Jacksonville,FL,Size M,12.06,5,UPS® Ground
+San Diego,Louisville,KY,Size M,11.0,5,UPS® Ground
+San Diego,Marietta,GA,Size M,12.06,5,UPS® Ground
+San Diego,Raleigh,NC,Size M,12.06,5,UPS® Ground
+San Diego,Fort Worth,TX,Size M,10.4,4,UPS® Ground
+San Diego,Oklahoma City,OK,Size M,10.4,4,UPS® Ground
+San Diego,Chesapeake,VA,Size M,12.06,5,UPS® Ground
+San Diego,Dallas,TX,Size M,10.4,4,UPS® Ground
+San Diego,Denver,CO,Size M,8.86,3,UPS® Ground
+San Diego,Miami,FL,Size M,12.06,5,UPS® Ground
+San Diego,Omaha,NE,Size M,10.4,5,UPS® Ground
+San Diego,Pittsburgh,PA,Size M,12.06,5,UPS® Ground
+San Diego,Portland,OR,Size M,8.86,3,UPS® Ground
+San Diego,San Francisco,CA,Size M,7.91,2,UPS® Ground
+San Diego,San Jose,CA,Size M,8.69,2,UPS® Ground
+San Diego,Tucson,AZ,Size M,8.69,2,UPS® Ground
+San Diego,Virginia Beach,VA,Size M,12.06,5,UPS® Ground
+San Diego,Albuquerque,NM,Size M,8.86,3,UPS® Ground
+San Diego,Canton,GA,Size M,12.06,5,UPS® Ground
+San Diego,Gilbert,AZ,Size M,8.69,2,UPS® Ground
+San Diego,Kansas City,MO,Size M,10.4,5,UPS® Ground
+San Diego,Nashville,TN,Size M,11.0,5,UPS® Ground
+San Diego,Saint Louis,MO,Size M,11.0,5,UPS® Ground
+San Diego,Seattle,WA,Size M,10.4,3,UPS® Ground
+San Diego,Boise,ID,Size M,8.86,3,UPS® Ground
+San Diego,Indianapolis,IN,Size M,12.06,5,UPS® Ground
+San Diego,Knoxville,TN,Size M,12.06,5,UPS® Ground
+San Diego,Reno,NV,Size M,8.69,2,UPS® Ground
+San Diego,Rochester,NY,Size M,12.06,5,UPS® Ground
+San Diego,Bismarck,ND,Size M,13.84,4,UPS® Ground
+San Diego,Columbia,MO,Size M,11.0,5,UPS® Ground
+San Diego,Franklin,TN,Size M,12.06,5,UPS® Ground
+San Diego,Los Angeles,CA,Size M,7.26,1,UPS® Ground
+San Diego,Mesa,AZ,Size M,8.69,2,UPS® Ground
+San Diego,Milwaukee,WI,Size M,11.0,5,UPS® Ground
+San Diego,Abbeville,LA,Size M,11.0,5,UPS® Ground
+San Diego,Abbot,ME,Size M,12.06,6,UPS® Ground
+San Diego,Abingdon,MD,Size M,12.06,5,UPS® Ground
+San Diego,Accord,NY,Size M,12.06,,UPS® Ground
+San Diego,Acton,CA,Size M,8.24,1,UPS® Ground
+San Diego,Acton,MA,Size M,12.06,5,UPS® Ground
+San Diego,Acton,ME,Size M,12.06,,UPS® Ground
+San Diego,Acworth,GA,Size M,12.06,5,UPS® Ground
+San Diego,Ada,MI,Size M,12.06,,UPS® Ground
+San Diego,Ada,OK,Size M,10.4,4,UPS® Ground
+San Diego,Adams,MA,Size M,12.06,5,UPS® Ground
+San Diego,Adams Run,SC,Size M,12.06,,UPS® Ground
+San Diego,Adamsville,TN,Size M,11.0,,UPS® Ground
+San Diego,Adel,GA,Size M,12.06,5,UPS® Ground
+San Diego,Adirondack,NY,Size M,12.06,,UPS® Ground
+San Diego,Adrian,MO,Size M,10.4,,UPS® Ground
+San Diego,Advance,NC,Size M,12.06,5,UPS® Ground
+San Diego,Affton,MO,Size M,11.0,5,UPS® Ground
+San Diego,Afton,NY,Size M,12.06,,UPS® Ground
+San Diego,Ahwahnee,CA,Size M,8.69,,UPS® Ground
+San Diego,Alabaster,AL,Size M,11.0,5,UPS® Ground
+San Diego,Alamo,CA,Size M,8.69,,UPS® Ground
+San Diego,Alapaha,GA,Size M,12.06,,UPS® Ground
+San Diego,Alba,TX,Size M,10.4,,UPS® Ground
+Los Angeles,Brooklyn,NY,Size M,12.06,5,UPS® Ground
+Los Angeles,Houston,TX,Size M,11.0,4,UPS® Ground
+Los Angeles,Phoenix,AZ,Size M,8.86,2,UPS® Ground
+Los Angeles,San Antonio,TX,Size M,10.4,4,UPS® Ground
+Los Angeles,Chicago,IL,Size M,11.0,4,UPS® Ground
+Los Angeles,Austin,TX,Size M,10.4,4,UPS® Ground
+Los Angeles,Charlotte,NC,Size M,12.06,5,UPS® Ground
+Los Angeles,New York,NY,Size M,12.06,5,UPS® Ground
+Los Angeles,Atlanta,GA,Size M,12.06,5,UPS® Ground
+Los Angeles,Orlando,FL,Size M,12.06,5,UPS® Ground
+Los Angeles,Las Vegas,NV,Size M,8.69,2,UPS® Ground
+Los Angeles,Colorado Springs,CO,Size M,8.86,3,UPS® Ground
+Los Angeles,Marble Falls,TX,Size M,10.4,4,UPS® Ground
+Los Angeles,San Diego,CA,Size M,7.79,1,UPS® Ground
+Los Angeles,Tampa,FL,Size M,11.97,5,UPS® Ground
+Los Angeles,Jacksonville,FL,Size M,12.06,5,UPS® Ground
+Los Angeles,Louisville,KY,Size M,12.06,5,UPS® Ground
+Los Angeles,Marietta,GA,Size M,12.06,5,UPS® Ground
+Los Angeles,Raleigh,NC,Size M,12.06,5,UPS® Ground
+Los Angeles,Fort Worth,TX,Size M,10.4,4,UPS® Ground
+Los Angeles,Oklahoma City,OK,Size M,10.4,4,UPS® Ground
+Los Angeles,Chesapeake,VA,Size M,12.06,5,UPS® Ground
+Los Angeles,Dallas,TX,Size M,10.4,4,UPS® Ground
+Los Angeles,Denver,CO,Size M,8.86,3,UPS® Ground
+Los Angeles,Miami,FL,Size M,12.06,5,UPS® Ground
+Los Angeles,Omaha,NE,Size M,10.4,5,UPS® Ground
+Los Angeles,Pittsburgh,PA,Size M,12.06,5,UPS® Ground
+Los Angeles,Portland,OR,Size M,8.86,3,UPS® Ground
+Los Angeles,San Francisco,CA,Size M,7.91,2,UPS® Ground
+Los Angeles,San Jose,CA,Size M,8.69,2,UPS® Ground
+Los Angeles,Tucson,AZ,Size M,8.69,2,UPS® Ground
+Los Angeles,Virginia Beach,VA,Size M,12.06,5,UPS® Ground
+Los Angeles,Albuquerque,NM,Size M,8.86,3,UPS® Ground
+Los Angeles,Canton,GA,Size M,12.06,5,UPS® Ground
+Los Angeles,Gilbert,AZ,Size M,8.86,2,UPS® Ground
+Los Angeles,Kansas City,MO,Size M,10.4,5,UPS® Ground
+Los Angeles,Nashville,TN,Size M,11.0,5,UPS® Ground
+Los Angeles,Saint Louis,MO,Size M,11.0,5,UPS® Ground
+Los Angeles,Seattle,WA,Size M,10.4,3,UPS® Ground
+Los Angeles,Boise,ID,Size M,8.86,3,UPS® Ground
+Los Angeles,Indianapolis,IN,Size M,12.06,5,UPS® Ground
+Los Angeles,Knoxville,TN,Size M,12.06,5,UPS® Ground
+Los Angeles,Reno,NV,Size M,8.69,2,UPS® Ground
+Los Angeles,Rochester,NY,Size M,12.06,5,UPS® Ground
+Los Angeles,Bismarck,ND,Size M,10.4,4,UPS® Ground
+Los Angeles,Columbia,MO,Size M,11.0,5,UPS® Ground
+Los Angeles,Franklin,TN,Size M,11.0,5,UPS® Ground
+Los Angeles,Los Angeles,CA,Size M,7.26,1,UPS® Ground
+Los Angeles,Mesa,AZ,Size M,8.86,2,UPS® Ground
+Los Angeles,Milwaukee,WI,Size M,11.0,5,UPS® Ground
+Los Angeles,Abbeville,LA,Size M,11.0,5,UPS® Ground
+Los Angeles,Abbot,ME,Size M,12.06,6,UPS® Ground
+Los Angeles,Abingdon,MD,Size M,12.06,5,UPS® Ground
+Los Angeles,Accord,NY,Size M,12.06,,UPS® Ground
+Los Angeles,Acton,CA,Size M,7.79,1,UPS® Ground
+Los Angeles,Acton,MA,Size M,12.06,5,UPS® Ground
+Los Angeles,Acton,ME,Size M,12.06,,UPS® Ground
+Los Angeles,Acworth,GA,Size M,12.06,5,UPS® Ground
+Los Angeles,Ada,MI,Size M,12.06,,UPS® Ground
+Los Angeles,Ada,OK,Size M,10.4,4,UPS® Ground
+Los Angeles,Adams,MA,Size M,12.06,5,UPS® Ground
+Los Angeles,Adams Run,SC,Size M,12.06,,UPS® Ground
+Los Angeles,Adamsville,TN,Size M,11.0,,UPS® Ground
+Los Angeles,Adel,GA,Size M,12.06,5,UPS® Ground
+Los Angeles,Adirondack,NY,Size M,12.06,,UPS® Ground
+Los Angeles,Adrian,MO,Size M,10.4,,UPS® Ground
+Los Angeles,Advance,NC,Size M,12.06,5,UPS® Ground
+Los Angeles,Affton,MO,Size M,11.0,5,UPS® Ground
+Los Angeles,Afton,NY,Size M,12.06,,UPS® Ground
+Los Angeles,Ahwahnee,CA,Size M,8.24,,UPS® Ground
+Los Angeles,Alabaster,AL,Size M,11.0,5,UPS® Ground
+Los Angeles,Alamo,CA,Size M,8.69,,UPS® Ground
+Los Angeles,Alapaha,GA,Size M,12.06,,UPS® Ground
+Los Angeles,Alba,TX,Size M,10.4,,UPS® Ground
+Sacramento,Brooklyn,NY,Size M,12.06,5,UPS® Ground
+Sacramento,Houston,TX,Size M,11.0,4,UPS® Ground
+Sacramento,Phoenix,AZ,Size M,8.86,3,UPS® Ground
+Sacramento,San Antonio,TX,Size M,11.0,4,UPS® Ground
+Sacramento,Chicago,IL,Size M,11.0,4,UPS® Ground
+Sacramento,Austin,TX,Size M,11.0,4,UPS® Ground
+Sacramento,Charlotte,NC,Size M,12.06,6,UPS® Ground
+Sacramento,New York,NY,Size M,12.06,5,UPS® Ground
+Sacramento,Atlanta,GA,Size M,12.06,5,UPS® Ground
+Sacramento,Orlando,FL,Size M,12.06,6,UPS® Ground
+Sacramento,Las Vegas,NV,Size M,8.86,3,UPS® Ground
+Sacramento,Colorado Springs,CO,Size M,8.86,4,UPS® Ground
+Sacramento,Marble Falls,TX,Size M,11.0,4,UPS® Ground
+Sacramento,San Diego,CA,Size M,8.69,3,UPS® Ground
+Sacramento,Tampa,FL,Size M,11.97,6,UPS® Ground
+Sacramento,Jacksonville,FL,Size M,12.06,6,UPS® Ground
+Sacramento,Louisville,KY,Size M,12.06,4,UPS® Ground
+Sacramento,Marietta,GA,Size M,12.06,5,UPS® Ground
+Sacramento,Raleigh,NC,Size M,12.06,6,UPS® Ground
+Sacramento,Fort Worth,TX,Size M,11.0,4,UPS® Ground
+Sacramento,Oklahoma City,OK,Size M,10.4,4,UPS® Ground
+Sacramento,Chesapeake,VA,Size M,12.06,5,UPS® Ground
+Sacramento,Dallas,TX,Size M,11.0,4,UPS® Ground
+Sacramento,Denver,CO,Size M,8.86,4,UPS® Ground
+Sacramento,Miami,FL,Size M,12.06,6,UPS® Ground
+Sacramento,Omaha,NE,Size M,10.4,4,UPS® Ground
+Sacramento,Pittsburgh,PA,Size M,12.06,5,UPS® Ground
+Sacramento,Portland,OR,Size M,8.69,3,UPS® Ground
+Sacramento,San Francisco,CA,Size M,7.26,1,UPS® Ground
+Sacramento,San Jose,CA,Size M,7.79,1,UPS® Ground
+Sacramento,Tucson,AZ,Size M,8.86,3,UPS® Ground
+Sacramento,Virginia Beach,VA,Size M,12.06,5,UPS® Ground
+Sacramento,Albuquerque,NM,Size M,8.86,4,UPS® Ground
+Sacramento,Canton,GA,Size M,12.06,5,UPS® Ground
+Sacramento,Gilbert,AZ,Size M,8.86,3,UPS® Ground
+Sacramento,Kansas City,MO,Size M,11.0,5,UPS® Ground
+Sacramento,Nashville,TN,Size M,12.06,5,UPS® Ground
+Sacramento,Saint Louis,MO,Size M,11.0,5,UPS® Ground
+Sacramento,Seattle,WA,Size M,8.86,3,UPS® Ground
+Sacramento,Boise,ID,Size M,8.69,3,UPS® Ground
+Sacramento,Indianapolis,IN,Size M,12.06,4,UPS® Ground
+Sacramento,Knoxville,TN,Size M,12.06,5,UPS® Ground
+Sacramento,Reno,NV,Size M,7.79,1,UPS® Ground
+Sacramento,Rochester,NY,Size M,12.06,5,UPS® Ground
+Sacramento,Bismarck,ND,Size M,10.4,5,UPS® Ground
+Sacramento,Columbia,MO,Size M,11.0,5,UPS® Ground
+Sacramento,Franklin,TN,Size M,12.06,5,UPS® Ground
+Sacramento,Los Angeles,CA,Size M,7.91,3,UPS® Ground
+Sacramento,Mesa,AZ,Size M,8.86,3,UPS® Ground
+Sacramento,Milwaukee,WI,Size M,11.0,4,UPS® Ground
+Sacramento,Abbeville,LA,Size M,11.0,5,UPS® Ground
+Sacramento,Abbot,ME,Size M,12.06,6,UPS® Ground
+Sacramento,Abingdon,MD,Size M,12.06,5,UPS® Ground
+Sacramento,Accord,NY,Size M,12.06,,UPS® Ground
+Sacramento,Acton,CA,Size M,8.69,3,UPS® Ground
+Sacramento,Acton,MA,Size M,12.06,6,UPS® Ground
+Sacramento,Acton,ME,Size M,12.06,,UPS® Ground
+Sacramento,Acworth,GA,Size M,12.06,5,UPS® Ground
+Sacramento,Ada,MI,Size M,12.06,,UPS® Ground
+Sacramento,Ada,OK,Size M,10.4,4,UPS® Ground
+Sacramento,Adams,MA,Size M,12.06,6,UPS® Ground
+Sacramento,Adams Run,SC,Size M,12.06,,UPS® Ground
+Sacramento,Adamsville,TN,Size M,12.06,,UPS® Ground
+Sacramento,Adel,GA,Size M,12.06,6,UPS® Ground
+Sacramento,Adirondack,NY,Size M,12.06,,UPS® Ground
+Sacramento,Adrian,MO,Size M,13.84,,UPS® Ground
+Sacramento,Advance,NC,Size M,12.06,6,UPS® Ground
+Sacramento,Affton,MO,Size M,13.84,5,UPS® Ground
+Sacramento,Afton,NY,Size M,12.06,,UPS® Ground
+Sacramento,Ahwahnee,CA,Size M,8.24,,UPS® Ground
+Sacramento,Alabaster,AL,Size M,14.84,6,UPS® Ground
+Sacramento,Alamo,CA,Size M,7.79,,UPS® Ground
+Sacramento,Alapaha,GA,Size M,12.06,,UPS® Ground
+Sacramento,Alba,TX,Size M,13.84,,UPS® Ground
+San Francisco,Brooklyn,NY,Size M,12.06,5,UPS® Ground
+San Francisco,Houston,TX,Size M,11.0,5,UPS® Ground
+San Francisco,Phoenix,AZ,Size M,8.86,3,UPS® Ground
+San Francisco,San Antonio,TX,Size M,11.0,4,UPS® Ground
+San Francisco,Chicago,IL,Size M,12.06,5,UPS® Ground
+San Francisco,Austin,TX,Size M,11.0,4,UPS® Ground
+San Francisco,Charlotte,NC,Size M,12.06,6,UPS® Ground
+San Francisco,New York,NY,Size M,12.06,5,UPS® Ground
+San Francisco,Atlanta,GA,Size M,12.06,6,UPS® Ground
+San Francisco,Orlando,FL,Size M,12.06,6,UPS® Ground
+San Francisco,Las Vegas,NV,Size M,8.86,3,UPS® Ground
+San Francisco,Colorado Springs,CO,Size M,8.86,4,UPS® Ground
+San Francisco,Marble Falls,TX,Size M,11.0,4,UPS® Ground
+San Francisco,San Diego,CA,Size M,8.69,3,UPS® Ground
+San Francisco,Tampa,FL,Size M,11.97,6,UPS® Ground
+San Francisco,Jacksonville,FL,Size M,12.06,6,UPS® Ground
+San Francisco,Louisville,KY,Size M,12.06,5,UPS® Ground
+San Francisco,Marietta,GA,Size M,12.06,6,UPS® Ground
+San Francisco,Raleigh,NC,Size M,12.06,6,UPS® Ground
+San Francisco,Fort Worth,TX,Size M,11.0,5,UPS® Ground
+San Francisco,Oklahoma City,OK,Size M,10.4,5,UPS® Ground
+San Francisco,Chesapeake,VA,Size M,12.06,5,UPS® Ground
+San Francisco,Dallas,TX,Size M,11.0,5,UPS® Ground
+San Francisco,Denver,CO,Size M,8.86,4,UPS® Ground
+San Francisco,Miami,FL,Size M,12.06,6,UPS® Ground
+San Francisco,Omaha,NE,Size M,10.4,5,UPS® Ground
+San Francisco,Pittsburgh,PA,Size M,12.06,6,UPS® Ground
+San Francisco,Portland,OR,Size M,8.69,3,UPS® Ground
+San Francisco,San Francisco,CA,Size M,7.26,1,UPS® Ground
+San Francisco,San Jose,CA,Size M,7.79,1,UPS® Ground
+San Francisco,Tucson,AZ,Size M,8.86,3,UPS® Ground
+San Francisco,Virginia Beach,VA,Size M,12.06,5,UPS® Ground
+San Francisco,Albuquerque,NM,Size M,8.86,4,UPS® Ground
+San Francisco,Canton,GA,Size M,12.06,6,UPS® Ground
+San Francisco,Gilbert,AZ,Size M,8.86,3,UPS® Ground
+San Francisco,Kansas City,MO,Size M,11.0,5,UPS® Ground
+San Francisco,Nashville,TN,Size M,12.06,6,UPS® Ground
+San Francisco,Saint Louis,MO,Size M,13.84,5,UPS® Ground
+San Francisco,Seattle,WA,Size M,8.86,3,UPS® Ground
+San Francisco,Boise,ID,Size M,8.69,3,UPS® Ground
+San Francisco,Indianapolis,IN,Size M,14.84,5,UPS® Ground
+San Francisco,Knoxville,TN,Size M,12.06,6,UPS® Ground
+San Francisco,Reno,NV,Size M,8.24,1,UPS® Ground
+San Francisco,Rochester,NY,Size M,12.06,6,UPS® Ground
+San Francisco,Bismarck,ND,Size M,10.4,5,UPS® Ground
+San Francisco,Columbia,MO,Size M,11.0,5,UPS® Ground
+San Francisco,Franklin,TN,Size M,12.06,6,UPS® Ground
+San Francisco,Los Angeles,CA,Size M,7.91,3,UPS® Ground
+San Francisco,Mesa,AZ,Size M,8.86,3,UPS® Ground
+San Francisco,Milwaukee,WI,Size M,12.06,5,UPS® Ground
+San Francisco,Abbeville,LA,Size M,11.0,5,UPS® Ground
+San Francisco,Abbot,ME,Size M,12.06,6,UPS® Ground
+San Francisco,Abingdon,MD,Size M,14.84,5,UPS® Ground
+San Francisco,Accord,NY,Size M,12.06,,UPS® Ground
+San Francisco,Acton,CA,Size M,8.24,3,UPS® Ground
+San Francisco,Acton,MA,Size M,14.84,6,UPS® Ground
+San Francisco,Acton,ME,Size M,12.06,,UPS® Ground
+San Francisco,Acworth,GA,Size M,12.06,6,UPS® Ground
+San Francisco,Ada,MI,Size M,12.06,,UPS® Ground
+San Francisco,Ada,OK,Size M,13.84,5,UPS® Ground
+San Francisco,Adams,MA,Size M,12.06,6,UPS® Ground
+San Francisco,Adams Run,SC,Size M,14.84,,UPS® Ground
+San Francisco,Adamsville,TN,Size M,12.06,,UPS® Ground
+San Francisco,Adel,GA,Size M,14.84,6,UPS® Ground
+San Francisco,Adirondack,NY,Size M,12.06,,UPS® Ground
+San Francisco,Adrian,MO,Size M,11.0,,UPS® Ground
+San Francisco,Advance,NC,Size M,12.06,6,UPS® Ground
+San Francisco,Affton,MO,Size M,11.0,5,UPS® Ground
+San Francisco,Afton,NY,Size M,12.06,,UPS® Ground
+San Francisco,Ahwahnee,CA,Size M,7.79,,UPS® Ground
+San Francisco,Alabaster,AL,Size M,12.06,6,UPS® Ground
+San Francisco,Alamo,CA,Size M,7.79,,UPS® Ground
+San Francisco,Alapaha,GA,Size M,12.06,,UPS® Ground
+San Francisco,Alba,TX,Size M,11.0,,UPS® Ground
+Houston,Brooklyn,NY,Size M,13.84,4,UPS® Ground
+Houston,Houston,TX,Size M,7.79,1,UPS® Ground
+Houston,Phoenix,AZ,Size M,12.84,4,UPS® Ground
+Houston,San Antonio,TX,Size M,8.24,2,UPS® Ground
+Houston,Chicago,IL,Size M,10.4,3,UPS® Ground
+Houston,Austin,TX,Size M,7.79,2,UPS® Ground
+Houston,Charlotte,NC,Size M,8.86,4,UPS® Ground
+Houston,New York,NY,Size M,11.0,4,UPS® Ground
+Houston,Atlanta,GA,Size M,8.86,3,UPS® Ground
+Houston,Orlando,FL,Size M,10.84,3,UPS® Ground
+Houston,Las Vegas,NV,Size M,11.0,5,UPS® Ground
+Houston,Colorado Springs,CO,Size M,8.86,3,UPS® Ground
+Houston,Marble Falls,TX,Size M,8.24,2,UPS® Ground
+Houston,San Diego,CA,Size M,10.4,4,UPS® Ground
+Houston,Tampa,FL,Size M,8.77,3,UPS® Ground
+Houston,Jacksonville,FL,Size M,10.84,3,UPS® Ground
+Houston,Louisville,KY,Size M,8.86,4,UPS® Ground
+Houston,Marietta,GA,Size M,8.86,3,UPS® Ground
+Houston,Raleigh,NC,Size M,10.4,4,UPS® Ground
+Houston,Fort Worth,TX,Size M,8.24,3,UPS® Ground
+Houston,Oklahoma City,OK,Size M,8.69,3,UPS® Ground
+Houston,Chesapeake,VA,Size M,12.84,4,UPS® Ground
+Houston,Dallas,TX,Size M,8.24,2,UPS® Ground
+Houston,Denver,CO,Size M,8.86,3,UPS® Ground
+Houston,Miami,FL,Size M,10.84,4,UPS® Ground
+Houston,Omaha,NE,Size M,10.84,3,UPS® Ground
+Houston,Pittsburgh,PA,Size M,12.84,4,UPS® Ground
+Houston,Portland,OR,Size M,12.06,5,UPS® Ground
+Houston,San Francisco,CA,Size M,13.84,4,UPS® Ground
+Houston,San Jose,CA,Size M,11.0,4,UPS® Ground
+Houston,Tucson,AZ,Size M,10.4,4,UPS® Ground
+Houston,Virginia Beach,VA,Size M,12.84,4,UPS® Ground
+Houston,Albuquerque,NM,Size M,8.86,4,UPS® Ground
+Houston,Canton,GA,Size M,10.84,3,UPS® Ground
+Houston,Gilbert,AZ,Size M,10.4,4,UPS® Ground
+Houston,Kansas City,MO,Size M,8.86,3,UPS® Ground
+Houston,Nashville,TN,Size M,10.84,3,UPS® Ground
+Houston,Saint Louis,MO,Size M,8.86,3,UPS® Ground
+Houston,Seattle,WA,Size M,12.06,5,UPS® Ground
+Houston,Boise,ID,Size M,11.0,5,UPS® Ground
+Houston,Indianapolis,IN,Size M,10.84,3,UPS® Ground
+Houston,Knoxville,TN,Size M,8.86,3,UPS® Ground
+Houston,Reno,NV,Size M,11.0,5,UPS® Ground
+Houston,Rochester,NY,Size M,10.4,4,UPS® Ground
+Houston,Bismarck,ND,Size M,12.84,5,UPS® Ground
+Houston,Columbia,MO,Size M,8.86,3,UPS® Ground
+Houston,Franklin,TN,Size M,8.86,3,UPS® Ground
+Houston,Los Angeles,CA,Size M,13.84,4,UPS® Ground
+Houston,Mesa,AZ,Size M,10.4,4,UPS® Ground
+Houston,Milwaukee,WI,Size M,10.4,3,UPS® Ground
+Houston,Abbeville,LA,Size M,8.24,2,UPS® Ground
+Houston,Abbot,ME,Size M,11.0,5,UPS® Ground
+Houston,Abingdon,MD,Size M,10.4,4,UPS® Ground
+Houston,Accord,NY,Size M,13.84,,UPS® Ground
+Houston,Acton,CA,Size M,10.4,4,UPS® Ground
+Houston,Acton,MA,Size M,11.0,4,UPS® Ground
+Houston,Acton,ME,Size M,11.0,,UPS® Ground
+Houston,Acworth,GA,Size M,8.86,3,UPS® Ground
+Houston,Ada,MI,Size M,10.84,,UPS® Ground
+Houston,Ada,OK,Size M,8.69,3,UPS® Ground
+Houston,Adams,MA,Size M,11.0,4,UPS® Ground
+Houston,Adams Run,SC,Size M,10.4,,UPS® Ground
+Houston,Adamsville,TN,Size M,8.69,,UPS® Ground
+Houston,Adel,GA,Size M,8.86,3,UPS® Ground
+Houston,Adirondack,NY,Size M,13.84,,UPS® Ground
+Houston,Adrian,MO,Size M,10.84,,UPS® Ground
+Houston,Advance,NC,Size M,10.84,4,UPS® Ground
+Houston,Affton,MO,Size M,8.86,3,UPS® Ground
+Houston,Afton,NY,Size M,11.0,,UPS® Ground
+Houston,Ahwahnee,CA,Size M,13.84,,UPS® Ground
+Houston,Alabaster,AL,Size M,10.84,3,UPS® Ground
+Houston,Alamo,CA,Size M,11.0,,UPS® Ground
+Houston,Alapaha,GA,Size M,8.86,,UPS® Ground
+Houston,Alba,TX,Size M,8.24,,UPS® Ground
+Austin,Brooklyn,NY,Size M,11.0,4,UPS® Ground
+Austin,Houston,TX,Size M,8.24,1,UPS® Ground
+Austin,Phoenix,AZ,Size M,8.86,4,UPS® Ground
+Austin,San Antonio,TX,Size M,7.79,1,UPS® Ground
+Austin,Chicago,IL,Size M,12.84,2,UPS® Ground
+Austin,Austin,TX,Size M,7.79,1,UPS® Ground
+Austin,Charlotte,NC,Size M,13.84,4,UPS® Ground
+Austin,New York,NY,Size M,11.0,4,UPS® Ground
+Austin,Atlanta,GA,Size M,10.84,2,UPS® Ground
+Austin,Orlando,FL,Size M,8.86,3,UPS® Ground
+Austin,Las Vegas,NV,Size M,12.84,4,UPS® Ground
+Austin,Colorado Springs,CO,Size M,10.84,2,UPS® Ground
+Austin,Marble Falls,TX,Size M,7.79,1,UPS® Ground
+Austin,San Diego,CA,Size M,12.84,4,UPS® Ground
+Austin,Tampa,FL,Size M,8.77,3,UPS® Ground
+Austin,Jacksonville,FL,Size M,8.86,3,UPS® Ground
+Austin,Louisville,KY,Size M,8.86,3,UPS® Ground
+Austin,Marietta,GA,Size M,10.84,2,UPS® Ground
+Austin,Raleigh,NC,Size M,10.4,4,UPS® Ground
+Austin,Fort Worth,TX,Size M,8.24,1,UPS® Ground
+Austin,Oklahoma City,OK,Size M,8.69,1,UPS® Ground
+Austin,Chesapeake,VA,Size M,10.4,4,UPS® Ground
+Austin,Dallas,TX,Size M,8.24,1,UPS® Ground
+Austin,Denver,CO,Size M,10.84,2,UPS® Ground
+Austin,Miami,FL,Size M,12.84,3,UPS® Ground
+Austin,Omaha,NE,Size M,10.84,3,UPS® Ground
+Austin,Pittsburgh,PA,Size M,12.84,4,UPS® Ground
+Austin,Portland,OR,Size M,11.0,5,UPS® Ground
+Austin,San Francisco,CA,Size M,13.84,5,UPS® Ground
+Austin,San Jose,CA,Size M,13.84,5,UPS® Ground
+Austin,Tucson,AZ,Size M,10.84,4,UPS® Ground
+Austin,Virginia Beach,VA,Size M,12.84,4,UPS® Ground
+Austin,Albuquerque,NM,Size M,8.86,2,UPS® Ground
+Austin,Canton,GA,Size M,10.84,2,UPS® Ground
+Austin,Gilbert,AZ,Size M,10.84,4,UPS® Ground
+Austin,Kansas City,MO,Size M,8.86,2,UPS® Ground
+Austin,Nashville,TN,Size M,10.84,2,UPS® Ground
+Austin,Saint Louis,MO,Size M,10.84,3,UPS® Ground
+Austin,Seattle,WA,Size M,12.06,5,UPS® Ground
+Austin,Boise,ID,Size M,12.84,5,UPS® Ground
+Austin,Indianapolis,IN,Size M,8.86,3,UPS® Ground
+Austin,Knoxville,TN,Size M,8.86,2,UPS® Ground
+Austin,Reno,NV,Size M,11.0,5,UPS® Ground
+Austin,Rochester,NY,Size M,13.84,5,UPS® Ground
+Austin,Bismarck,ND,Size M,10.4,3,UPS® Ground
+Austin,Columbia,MO,Size M,10.84,3,UPS® Ground
+Austin,Franklin,TN,Size M,8.86,2,UPS® Ground
+Austin,Los Angeles,CA,Size M,10.31,4,UPS® Ground
+Austin,Mesa,AZ,Size M,8.86,4,UPS® Ground
+Austin,Milwaukee,WI,Size M,12.84,3,UPS® Ground
+Austin,Abbeville,LA,Size M,8.69,2,UPS® Ground
+Austin,Abbot,ME,Size M,12.06,5,UPS® Ground
+Austin,Abingdon,MD,Size M,12.84,4,UPS® Ground
+Austin,Accord,NY,Size M,13.84,,UPS® Ground
+Austin,Acton,CA,Size M,10.4,4,UPS® Ground
+Austin,Acton,MA,Size M,13.84,4,UPS® Ground
+Austin,Acton,ME,Size M,13.84,,UPS® Ground
+Austin,Acworth,GA,Size M,10.84,2,UPS® Ground
+Austin,Ada,MI,Size M,12.84,,UPS® Ground
+Austin,Ada,OK,Size M,8.69,1,UPS® Ground
+Austin,Adams,MA,Size M,13.84,4,UPS® Ground
+Austin,Adams Run,SC,Size M,12.84,,UPS® Ground
+Austin,Adamsville,TN,Size M,10.84,,UPS® Ground
+Austin,Adel,GA,Size M,8.86,2,UPS® Ground
+Austin,Adirondack,NY,Size M,11.0,,UPS® Ground
+Austin,Adrian,MO,Size M,8.69,,UPS® Ground
+Austin,Advance,NC,Size M,10.4,4,UPS® Ground
+Austin,Affton,MO,Size M,10.84,3,UPS® Ground
+Austin,Afton,NY,Size M,11.0,,UPS® Ground
+Austin,Ahwahnee,CA,Size M,10.4,,UPS® Ground
+Austin,Alabaster,AL,Size M,8.86,2,UPS® Ground
+Austin,Alamo,CA,Size M,11.0,,UPS® Ground
+Austin,Alapaha,GA,Size M,10.84,,UPS® Ground
+Austin,Alba,TX,Size M,8.24,,UPS® Ground
+San Antonio,Brooklyn,NY,Size M,13.84,4,UPS® Ground
+San Antonio,Houston,TX,Size M,8.24,2,UPS® Ground
+San Antonio,Phoenix,AZ,Size M,12.84,4,UPS® Ground
+San Antonio,San Antonio,TX,Size M,7.79,1,UPS® Ground
+San Antonio,Chicago,IL,Size M,12.84,4,UPS® Ground
+San Antonio,Austin,TX,Size M,7.79,1,UPS® Ground
+San Antonio,Charlotte,NC,Size M,10.4,4,UPS® Ground
+San Antonio,New York,NY,Size M,11.0,4,UPS® Ground
+San Antonio,Atlanta,GA,Size M,8.86,4,UPS® Ground
+San Antonio,Orlando,FL,Size M,10.4,3,UPS® Ground
+San Antonio,Las Vegas,NV,Size M,11.0,4,UPS® Ground
+San Antonio,Colorado Springs,CO,Size M,8.86,3,UPS® Ground
+San Antonio,Marble Falls,TX,Size M,7.79,1,UPS® Ground
+San Antonio,San Diego,CA,Size M,12.84,5,UPS® Ground
+San Antonio,Tampa,FL,Size M,10.84,3,UPS® Ground
+San Antonio,Jacksonville,FL,Size M,10.4,3,UPS® Ground
+San Antonio,Louisville,KY,Size M,10.84,3,UPS® Ground
+San Antonio,Marietta,GA,Size M,8.86,4,UPS® Ground
+San Antonio,Raleigh,NC,Size M,10.4,4,UPS® Ground
+San Antonio,Fort Worth,TX,Size M,8.69,2,UPS® Ground
+San Antonio,Oklahoma City,OK,Size M,8.69,3,UPS® Ground
+San Antonio,Chesapeake,VA,Size M,10.4,4,UPS® Ground
+San Antonio,Dallas,TX,Size M,8.24,2,UPS® Ground
+San Antonio,Denver,CO,Size M,10.84,3,UPS® Ground
+San Antonio,Miami,FL,Size M,10.4,3,UPS® Ground
+San Antonio,Omaha,NE,Size M,10.84,4,UPS® Ground
+San Antonio,Pittsburgh,PA,Size M,12.84,4,UPS® Ground
+San Antonio,Portland,OR,Size M,13.84,5,UPS® Ground
+San Antonio,San Francisco,CA,Size M,13.84,5,UPS® Ground
+San Antonio,San Jose,CA,Size M,13.84,5,UPS® Ground
+San Antonio,Tucson,AZ,Size M,10.84,4,UPS® Ground
+San Antonio,Virginia Beach,VA,Size M,12.84,4,UPS® Ground
+San Antonio,Albuquerque,NM,Size M,10.84,4,UPS® Ground
+San Antonio,Canton,GA,Size M,10.84,4,UPS® Ground
+San Antonio,Gilbert,AZ,Size M,10.84,4,UPS® Ground
+San Antonio,Kansas City,MO,Size M,10.84,3,UPS® Ground
+San Antonio,Nashville,TN,Size M,10.84,3,UPS® Ground
+San Antonio,Saint Louis,MO,Size M,10.84,3,UPS® Ground
+San Antonio,Seattle,WA,Size M,13.84,5,UPS® Ground
+San Antonio,Boise,ID,Size M,12.84,4,UPS® Ground
+San Antonio,Indianapolis,IN,Size M,10.84,5,UPS® Ground
+San Antonio,Knoxville,TN,Size M,10.84,3,UPS® Ground
+San Antonio,Reno,NV,Size M,13.84,5,UPS® Ground
+San Antonio,Rochester,NY,Size M,13.84,5,UPS® Ground
+San Antonio,Bismarck,ND,Size M,12.84,4,UPS® Ground
+San Antonio,Columbia,MO,Size M,10.84,3,UPS® Ground
+San Antonio,Franklin,TN,Size M,10.84,3,UPS® Ground
+San Antonio,Los Angeles,CA,Size M,12.84,3,UPS® Ground
+San Antonio,Mesa,AZ,Size M,10.84,4,UPS® Ground
+San Antonio,Milwaukee,WI,Size M,12.84,4,UPS® Ground
+San Antonio,Abbeville,LA,Size M,8.69,3,UPS® Ground
+San Antonio,Abbot,ME,Size M,14.84,5,UPS® Ground
+San Antonio,Abingdon,MD,Size M,13.84,4,UPS® Ground
+San Antonio,Accord,NY,Size M,13.84,,UPS® Ground
+San Antonio,Acton,CA,Size M,12.84,3,UPS® Ground
+San Antonio,Acton,MA,Size M,13.84,4,UPS® Ground
+San Antonio,Acton,ME,Size M,14.84,,UPS® Ground
+San Antonio,Acworth,GA,Size M,10.84,4,UPS® Ground
+San Antonio,Ada,MI,Size M,12.84,,UPS® Ground
+San Antonio,Ada,OK,Size M,8.69,3,UPS® Ground
+San Antonio,Adams,MA,Size M,13.84,4,UPS® Ground
+San Antonio,Adams Run,SC,Size M,12.84,,UPS® Ground
+San Antonio,Adamsville,TN,Size M,10.84,,UPS® Ground
+San Antonio,Adel,GA,Size M,10.84,3,UPS® Ground
+San Antonio,Adirondack,NY,Size M,13.84,,UPS® Ground
+San Antonio,Adrian,MO,Size M,8.69,,UPS® Ground
+San Antonio,Advance,NC,Size M,12.84,4,UPS® Ground
+San Antonio,Affton,MO,Size M,10.84,3,UPS® Ground
+San Antonio,Afton,NY,Size M,13.84,,UPS® Ground
+San Antonio,Ahwahnee,CA,Size M,12.84,,UPS® Ground
+San Antonio,Alabaster,AL,Size M,10.84,3,UPS® Ground
+San Antonio,Alamo,CA,Size M,13.84,,UPS® Ground
+San Antonio,Alapaha,GA,Size M,10.84,,UPS® Ground
+San Antonio,Alba,TX,Size M,8.69,,UPS® Ground
+Oklahoma City,Brooklyn,NY,Size M,12.84,5,UPS® Ground
+Oklahoma City,Houston,TX,Size M,10.84,1,UPS® Ground
+Oklahoma City,Phoenix,AZ,Size M,10.84,4,UPS® Ground
+Oklahoma City,San Antonio,TX,Size M,8.69,1,UPS® Ground
+Oklahoma City,Chicago,IL,Size M,10.84,2,UPS® Ground
+Oklahoma City,Austin,TX,Size M,8.69,1,UPS® Ground
+Oklahoma City,Charlotte,NC,Size M,10.84,4,UPS® Ground
+Oklahoma City,New York,NY,Size M,12.84,5,UPS® Ground
+Oklahoma City,Atlanta,GA,Size M,10.84,2,UPS® Ground
+Oklahoma City,Orlando,FL,Size M,12.84,3,UPS® Ground
+Oklahoma City,Las Vegas,NV,Size M,12.84,4,UPS® Ground
+Oklahoma City,Colorado Springs,CO,Size M,8.69,2,UPS® Ground
+Oklahoma City,Marble Falls,TX,Size M,8.69,1,UPS® Ground
+Oklahoma City,San Diego,CA,Size M,12.84,4,UPS® Ground
+Oklahoma City,Tampa,FL,Size M,12.84,3,UPS® Ground
+Oklahoma City,Jacksonville,FL,Size M,10.84,3,UPS® Ground
+Oklahoma City,Louisville,KY,Size M,10.84,3,UPS® Ground
+Oklahoma City,Marietta,GA,Size M,10.84,2,UPS® Ground
+Oklahoma City,Raleigh,NC,Size M,12.84,4,UPS® Ground
+Oklahoma City,Fort Worth,TX,Size M,8.24,1,UPS® Ground
+Oklahoma City,Oklahoma City,OK,Size M,7.79,1,UPS® Ground
+Oklahoma City,Chesapeake,VA,Size M,12.84,4,UPS® Ground
+Oklahoma City,Dallas,TX,Size M,8.24,1,UPS® Ground
+Oklahoma City,Denver,CO,Size M,8.69,2,UPS® Ground
+Oklahoma City,Miami,FL,Size M,13.84,3,UPS® Ground
+Oklahoma City,Omaha,NE,Size M,8.69,3,UPS® Ground
+Oklahoma City,Pittsburgh,PA,Size M,12.84,4,UPS® Ground
+Oklahoma City,Portland,OR,Size M,13.84,5,UPS® Ground
+Oklahoma City,San Francisco,CA,Size M,12.84,4,UPS® Ground
+Oklahoma City,San Jose,CA,Size M,12.84,4,UPS® Ground
+Oklahoma City,Tucson,AZ,Size M,10.84,4,UPS® Ground
+Oklahoma City,Virginia Beach,VA,Size M,12.84,4,UPS® Ground
+Oklahoma City,Albuquerque,NM,Size M,8.69,2,UPS® Ground
+Oklahoma City,Canton,GA,Size M,10.84,2,UPS® Ground
+Oklahoma City,Gilbert,AZ,Size M,10.84,4,UPS® Ground
+Oklahoma City,Kansas City,MO,Size M,8.69,2,UPS® Ground
+Oklahoma City,Nashville,TN,Size M,8.69,2,UPS® Ground
+Oklahoma City,Saint Louis,MO,Size M,8.69,3,UPS® Ground
+Oklahoma City,Seattle,WA,Size M,13.84,5,UPS® Ground
+Oklahoma City,Boise,ID,Size M,12.84,4,UPS® Ground
+Oklahoma City,Indianapolis,IN,Size M,10.84,3,UPS® Ground
+Oklahoma City,Knoxville,TN,Size M,10.84,2,UPS® Ground
+Oklahoma City,Reno,NV,Size M,12.84,5,UPS® Ground
+Oklahoma City,Rochester,NY,Size M,12.84,4,UPS® Ground
+Oklahoma City,Bismarck,ND,Size M,10.84,3,UPS® Ground
+Oklahoma City,Columbia,MO,Size M,8.69,3,UPS® Ground
+Oklahoma City,Franklin,TN,Size M,8.69,2,UPS® Ground
+Oklahoma City,Los Angeles,CA,Size M,12.84,4,UPS® Ground
+Oklahoma City,Mesa,AZ,Size M,10.84,4,UPS® Ground
+Oklahoma City,Milwaukee,WI,Size M,10.84,3,UPS® Ground
+Oklahoma City,Abbeville,LA,Size M,8.69,3,UPS® Ground
+Oklahoma City,Abbot,ME,Size M,13.84,5,UPS® Ground
+Oklahoma City,Abingdon,MD,Size M,12.84,4,UPS® Ground
+Oklahoma City,Accord,NY,Size M,12.84,,UPS® Ground
+Oklahoma City,Acton,CA,Size M,12.84,4,UPS® Ground
+Oklahoma City,Acton,MA,Size M,13.84,5,UPS® Ground
+Oklahoma City,Acton,ME,Size M,13.84,,UPS® Ground
+Oklahoma City,Acworth,GA,Size M,10.84,2,UPS® Ground
+Oklahoma City,Ada,MI,Size M,10.84,,UPS® Ground
+Oklahoma City,Ada,OK,Size M,7.79,1,UPS® Ground
+Oklahoma City,Adams,MA,Size M,12.84,5,UPS® Ground
+Oklahoma City,Adams Run,SC,Size M,12.84,,UPS® Ground
+Oklahoma City,Adamsville,TN,Size M,8.69,,UPS® Ground
+Oklahoma City,Adel,GA,Size M,10.84,2,UPS® Ground
+Oklahoma City,Adirondack,NY,Size M,12.84,,UPS® Ground
+Oklahoma City,Adrian,MO,Size M,8.24,,UPS® Ground
+Oklahoma City,Advance,NC,Size M,10.84,4,UPS® Ground
+Oklahoma City,Affton,MO,Size M,8.69,3,UPS® Ground
+Oklahoma City,Afton,NY,Size M,12.84,,UPS® Ground
+Oklahoma City,Ahwahnee,CA,Size M,12.84,,UPS® Ground
+Oklahoma City,Alabaster,AL,Size M,10.84,2,UPS® Ground
+Oklahoma City,Alamo,CA,Size M,12.84,,UPS® Ground
+Oklahoma City,Alapaha,GA,Size M,10.84,,UPS® Ground
+Oklahoma City,Alba,TX,Size M,8.24,,UPS® Ground
+Tulsa,Brooklyn,NY,Size M,12.84,5,UPS® Ground
+Tulsa,Houston,TX,Size M,8.69,3,UPS® Ground
+Tulsa,Phoenix,AZ,Size M,12.84,4,UPS® Ground
+Tulsa,San Antonio,TX,Size M,8.69,3,UPS® Ground
+Tulsa,Chicago,IL,Size M,10.84,3,UPS® Ground
+Tulsa,Austin,TX,Size M,8.69,3,UPS® Ground
+Tulsa,Charlotte,NC,Size M,10.84,4,UPS® Ground
+Tulsa,New York,NY,Size M,13.84,5,UPS® Ground
+Tulsa,Atlanta,GA,Size M,10.84,4,UPS® Ground
+Tulsa,Orlando,FL,Size M,12.84,3,UPS® Ground
+Tulsa,Las Vegas,NV,Size M,12.84,4,UPS® Ground
+Tulsa,Colorado Springs,CO,Size M,8.69,3,UPS® Ground
+Tulsa,Marble Falls,TX,Size M,8.69,3,UPS® Ground
+Tulsa,San Diego,CA,Size M,12.84,4,UPS® Ground
+Tulsa,Tampa,FL,Size M,10.84,3,UPS® Ground
+Tulsa,Jacksonville,FL,Size M,10.84,3,UPS® Ground
+Tulsa,Louisville,KY,Size M,8.69,4,UPS® Ground
+Tulsa,Marietta,GA,Size M,10.84,4,UPS® Ground
+Tulsa,Raleigh,NC,Size M,10.84,4,UPS® Ground
+Tulsa,Fort Worth,TX,Size M,8.24,3,UPS® Ground
+Tulsa,Oklahoma City,OK,Size M,7.79,1,UPS® Ground
+Tulsa,Chesapeake,VA,Size M,12.84,4,UPS® Ground
+Tulsa,Dallas,TX,Size M,8.24,3,UPS® Ground
+Tulsa,Denver,CO,Size M,8.69,3,UPS® Ground
+Tulsa,Miami,FL,Size M,12.84,3,UPS® Ground
+Tulsa,Omaha,NE,Size M,8.69,3,UPS® Ground
+Tulsa,Pittsburgh,PA,Size M,10.84,4,UPS® Ground
+Tulsa,Portland,OR,Size M,13.84,5,UPS® Ground
+Tulsa,San Francisco,CA,Size M,13.84,4,UPS® Ground
+Tulsa,San Jose,CA,Size M,13.84,4,UPS® Ground
+Tulsa,Tucson,AZ,Size M,10.84,4,UPS® Ground
+Tulsa,Virginia Beach,VA,Size M,12.84,4,UPS® Ground
+Tulsa,Albuquerque,NM,Size M,10.84,3,UPS® Ground
+Tulsa,Canton,GA,Size M,10.84,4,UPS® Ground
+Tulsa,Gilbert,AZ,Size M,12.84,4,UPS® Ground
+Tulsa,Kansas City,MO,Size M,8.24,2,UPS® Ground
+Tulsa,Nashville,TN,Size M,8.69,3,UPS® Ground
+Tulsa,Saint Louis,MO,Size M,8.69,3,UPS® Ground
+Tulsa,Seattle,WA,Size M,13.84,5,UPS® Ground
+Tulsa,Boise,ID,Size M,12.84,4,UPS® Ground
+Tulsa,Indianapolis,IN,Size M,8.69,4,UPS® Ground
+Tulsa,Knoxville,TN,Size M,10.84,3,UPS® Ground
+Tulsa,Reno,NV,Size M,12.84,5,UPS® Ground
+Tulsa,Rochester,NY,Size M,12.84,4,UPS® Ground
+Tulsa,Bismarck,ND,Size M,10.84,4,UPS® Ground
+Tulsa,Columbia,MO,Size M,8.24,3,UPS® Ground
+Tulsa,Franklin,TN,Size M,8.69,3,UPS® Ground
+Tulsa,Los Angeles,CA,Size M,13.84,4,UPS® Ground
+Tulsa,Mesa,AZ,Size M,12.84,4,UPS® Ground
+Tulsa,Milwaukee,WI,Size M,10.84,3,UPS® Ground
+Tulsa,Abbeville,LA,Size M,8.69,3,UPS® Ground
+Tulsa,Abbot,ME,Size M,13.84,5,UPS® Ground
+Tulsa,Abingdon,MD,Size M,12.84,4,UPS® Ground
+Tulsa,Accord,NY,Size M,12.84,,UPS® Ground
+Tulsa,Acton,CA,Size M,12.84,4,UPS® Ground
+Tulsa,Acton,MA,Size M,12.84,5,UPS® Ground
+Tulsa,Acton,ME,Size M,13.84,,UPS® Ground
+Tulsa,Acworth,GA,Size M,10.84,4,UPS® Ground
+Tulsa,Ada,MI,Size M,10.84,,UPS® Ground
+Tulsa,Ada,OK,Size M,7.79,1,UPS® Ground
+Tulsa,Adams,MA,Size M,12.84,5,UPS® Ground
+Tulsa,Adams Run,SC,Size M,10.84,,UPS® Ground
+Tulsa,Adamsville,TN,Size M,8.69,,UPS® Ground
+Tulsa,Adel,GA,Size M,10.84,3,UPS® Ground
+Tulsa,Adirondack,NY,Size M,12.84,,UPS® Ground
+Tulsa,Adrian,MO,Size M,8.24,,UPS® Ground
+Tulsa,Advance,NC,Size M,10.84,4,UPS® Ground
+Tulsa,Affton,MO,Size M,8.69,3,UPS® Ground
+Tulsa,Afton,NY,Size M,12.84,,UPS® Ground
+Tulsa,Ahwahnee,CA,Size M,12.84,,UPS® Ground
+Tulsa,Alabaster,AL,Size M,8.69,3,UPS® Ground
+Tulsa,Alamo,CA,Size M,13.84,,UPS® Ground
+Tulsa,Alapaha,GA,Size M,10.84,,UPS® Ground
+Tulsa,Alba,TX,Size M,8.24,,UPS® Ground
+Kansas City,Brooklyn,NY,Size M,12.84,4,UPS® Ground
+Kansas City,Houston,TX,Size M,12.84,3,UPS® Ground
+Kansas City,Phoenix,AZ,Size M,13.84,4,UPS® Ground
+Kansas City,San Antonio,TX,Size M,10.84,3,UPS® Ground
+Kansas City,Chicago,IL,Size M,8.69,3,UPS® Ground
+Kansas City,Austin,TX,Size M,10.84,3,UPS® Ground
+Kansas City,Charlotte,NC,Size M,10.84,3,UPS® Ground
+Kansas City,New York,NY,Size M,12.84,4,UPS® Ground
+Kansas City,Atlanta,GA,Size M,10.84,3,UPS® Ground
+Kansas City,Orlando,FL,Size M,12.84,4,UPS® Ground
+Kansas City,Las Vegas,NV,Size M,13.84,4,UPS® Ground
+Kansas City,Colorado Springs,CO,Size M,8.69,3,UPS® Ground
+Kansas City,Marble Falls,TX,Size M,10.84,3,UPS® Ground
+Kansas City,San Diego,CA,Size M,12.84,4,UPS® Ground
+Kansas City,Tampa,FL,Size M,12.84,4,UPS® Ground
+Kansas City,Jacksonville,FL,Size M,10.84,4,UPS® Ground
+Kansas City,Louisville,KY,Size M,8.69,3,UPS® Ground
+Kansas City,Marietta,GA,Size M,10.84,3,UPS® Ground
+Kansas City,Raleigh,NC,Size M,10.84,3,UPS® Ground
+Kansas City,Fort Worth,TX,Size M,10.84,3,UPS® Ground
+Kansas City,Oklahoma City,OK,Size M,8.69,3,UPS® Ground
+Kansas City,Chesapeake,VA,Size M,12.84,3,UPS® Ground
+Kansas City,Dallas,TX,Size M,8.69,3,UPS® Ground
+Kansas City,Denver,CO,Size M,10.84,3,UPS® Ground
+Kansas City,Miami,FL,Size M,13.84,4,UPS® Ground
+Kansas City,Omaha,NE,Size M,8.24,2,UPS® Ground
+Kansas City,Pittsburgh,PA,Size M,10.84,3,UPS® Ground
+Kansas City,Portland,OR,Size M,13.84,4,UPS® Ground
+Kansas City,San Francisco,CA,Size M,13.84,4,UPS® Ground
+Kansas City,San Jose,CA,Size M,13.84,4,UPS® Ground
+Kansas City,Tucson,AZ,Size M,12.84,4,UPS® Ground
+Kansas City,Virginia Beach,VA,Size M,10.84,3,UPS® Ground
+Kansas City,Albuquerque,NM,Size M,10.84,3,UPS® Ground
+Kansas City,Canton,GA,Size M,10.84,3,UPS® Ground
+Kansas City,Gilbert,AZ,Size M,12.84,4,UPS® Ground
+Kansas City,Kansas City,MO,Size M,7.79,1,UPS® Ground
+Kansas City,Nashville,TN,Size M,8.69,3,UPS® Ground
+Kansas City,Saint Louis,MO,Size M,8.69,2,UPS® Ground
+Kansas City,Seattle,WA,Size M,13.84,4,UPS® Ground
+Kansas City,Boise,ID,Size M,12.84,4,UPS® Ground
+Kansas City,Indianapolis,IN,Size M,8.69,3,UPS® Ground
+Kansas City,Knoxville,TN,Size M,10.84,3,UPS® Ground
+Kansas City,Reno,NV,Size M,12.84,4,UPS® Ground
+Kansas City,Rochester,NY,Size M,10.84,4,UPS® Ground
+Kansas City,Bismarck,ND,Size M,10.84,3,UPS® Ground
+Kansas City,Columbia,MO,Size M,7.79,2,UPS® Ground
+Kansas City,Franklin,TN,Size M,10.84,3,UPS® Ground
+Kansas City,Los Angeles,CA,Size M,13.84,4,UPS® Ground
+Kansas City,Mesa,AZ,Size M,12.84,4,UPS® Ground
+Kansas City,Milwaukee,WI,Size M,8.69,3,UPS® Ground
+Kansas City,Abbeville,LA,Size M,10.84,3,UPS® Ground
+Kansas City,Abbot,ME,Size M,12.84,5,UPS® Ground
+Kansas City,Abingdon,MD,Size M,10.84,3,UPS® Ground
+Kansas City,Accord,NY,Size M,10.84,,UPS® Ground
+Kansas City,Acton,CA,Size M,12.84,4,UPS® Ground
+Kansas City,Acton,MA,Size M,12.84,4,UPS® Ground
+Kansas City,Acton,ME,Size M,12.84,,UPS® Ground
+Kansas City,Acworth,GA,Size M,10.84,3,UPS® Ground
+Kansas City,Ada,MI,Size M,8.69,,UPS® Ground
+Kansas City,Ada,OK,Size M,8.69,3,UPS® Ground
+Kansas City,Adams,MA,Size M,12.84,4,UPS® Ground
+Kansas City,Adams Run,SC,Size M,10.84,,UPS® Ground
+Kansas City,Adamsville,TN,Size M,8.69,,UPS® Ground
+Kansas City,Adel,GA,Size M,10.84,3,UPS® Ground
+Kansas City,Adirondack,NY,Size M,12.84,,UPS® Ground
+Kansas City,Adrian,MO,Size M,7.79,,UPS® Ground
+Kansas City,Advance,NC,Size M,10.84,3,UPS® Ground
+Kansas City,Affton,MO,Size M,8.69,2,UPS® Ground
+Kansas City,Afton,NY,Size M,12.84,,UPS® Ground
+Kansas City,Ahwahnee,CA,Size M,12.84,,UPS® Ground
+Kansas City,Alabaster,AL,Size M,8.69,3,UPS® Ground
+Kansas City,Alamo,CA,Size M,13.84,,UPS® Ground
+Kansas City,Alapaha,GA,Size M,10.84,,UPS® Ground
+Kansas City,Alba,TX,Size M,8.69,,UPS® Ground
+St. Louis,Brooklyn,NY,Size M,10.84,4,UPS® Ground
+St. Louis,Houston,TX,Size M,10.84,3,UPS® Ground
+St. Louis,Phoenix,AZ,Size M,13.84,4,UPS® Ground
+St. Louis,San Antonio,TX,Size M,10.84,3,UPS® Ground
+St. Louis,Chicago,IL,Size M,8.69,2,UPS® Ground
+St. Louis,Austin,TX,Size M,10.84,3,UPS® Ground
+St. Louis,Charlotte,NC,Size M,8.69,3,UPS® Ground
+St. Louis,New York,NY,Size M,10.84,4,UPS® Ground
+St. Louis,Atlanta,GA,Size M,8.69,3,UPS® Ground
+St. Louis,Orlando,FL,Size M,10.84,4,UPS® Ground
+St. Louis,Las Vegas,NV,Size M,13.84,4,UPS® Ground
+St. Louis,Colorado Springs,CO,Size M,10.84,3,UPS® Ground
+St. Louis,Marble Falls,TX,Size M,10.84,3,UPS® Ground
+St. Louis,San Diego,CA,Size M,13.84,4,UPS® Ground
+St. Louis,Tampa,FL,Size M,10.84,4,UPS® Ground
+St. Louis,Jacksonville,FL,Size M,10.84,4,UPS® Ground
+St. Louis,Louisville,KY,Size M,8.24,3,UPS® Ground
+St. Louis,Marietta,GA,Size M,8.69,3,UPS® Ground
+St. Louis,Raleigh,NC,Size M,10.84,3,UPS® Ground
+St. Louis,Fort Worth,TX,Size M,10.84,3,UPS® Ground
+St. Louis,Oklahoma City,OK,Size M,8.69,3,UPS® Ground
+St. Louis,Chesapeake,VA,Size M,10.84,3,UPS® Ground
+St. Louis,Dallas,TX,Size M,8.69,3,UPS® Ground
+St. Louis,Denver,CO,Size M,10.84,3,UPS® Ground
+St. Louis,Miami,FL,Size M,12.84,4,UPS® Ground
+St. Louis,Omaha,NE,Size M,8.69,3,UPS® Ground
+St. Louis,Pittsburgh,PA,Size M,8.69,3,UPS® Ground
+St. Louis,Portland,OR,Size M,13.84,4,UPS® Ground
+St. Louis,San Francisco,CA,Size M,13.84,5,UPS® Ground
+St. Louis,San Jose,CA,Size M,13.84,5,UPS® Ground
+St. Louis,Tucson,AZ,Size M,12.84,4,UPS® Ground
+St. Louis,Virginia Beach,VA,Size M,10.84,3,UPS® Ground
+St. Louis,Albuquerque,NM,Size M,10.84,4,UPS® Ground
+St. Louis,Canton,GA,Size M,8.69,3,UPS® Ground
+St. Louis,Gilbert,AZ,Size M,13.84,4,UPS® Ground
+St. Louis,Kansas City,MO,Size M,8.24,2,UPS® Ground
+St. Louis,Nashville,TN,Size M,8.24,2,UPS® Ground
+St. Louis,Saint Louis,MO,Size M,7.79,1,UPS® Ground
+St. Louis,Seattle,WA,Size M,13.84,5,UPS® Ground
+St. Louis,Boise,ID,Size M,12.84,4,UPS® Ground
+St. Louis,Indianapolis,IN,Size M,8.24,1,UPS® Ground
+St. Louis,Knoxville,TN,Size M,8.69,3,UPS® Ground
+St. Louis,Reno,NV,Size M,13.84,4,UPS® Ground
+St. Louis,Rochester,NY,Size M,10.84,4,UPS® Ground
+St. Louis,Bismarck,ND,Size M,10.84,4,UPS® Ground
+St. Louis,Columbia,MO,Size M,7.79,2,UPS® Ground
+St. Louis,Franklin,TN,Size M,8.24,2,UPS® Ground
+St. Louis,Los Angeles,CA,Size M,13.84,4,UPS® Ground
+St. Louis,Mesa,AZ,Size M,13.84,4,UPS® Ground
+St. Louis,Milwaukee,WI,Size M,8.69,3,UPS® Ground
+St. Louis,Abbeville,LA,Size M,8.69,3,UPS® Ground
+St. Louis,Abbot,ME,Size M,12.84,5,UPS® Ground
+St. Louis,Abingdon,MD,Size M,10.84,4,UPS® Ground
+St. Louis,Accord,NY,Size M,10.84,,UPS® Ground
+St. Louis,Acton,CA,Size M,13.84,4,UPS® Ground
+St. Louis,Acton,MA,Size M,12.84,4,UPS® Ground
+St. Louis,Acton,ME,Size M,12.84,,UPS® Ground
+St. Louis,Acworth,GA,Size M,8.69,3,UPS® Ground
+St. Louis,Ada,MI,Size M,8.69,,UPS® Ground
+St. Louis,Ada,OK,Size M,8.69,3,UPS® Ground
+St. Louis,Adams,MA,Size M,10.84,4,UPS® Ground
+St. Louis,Adams Run,SC,Size M,10.84,,UPS® Ground
+St. Louis,Adamsville,TN,Size M,8.24,,UPS® Ground
+St. Louis,Adel,GA,Size M,10.84,3,UPS® Ground
+St. Louis,Adirondack,NY,Size M,10.84,,UPS® Ground
+St. Louis,Adrian,MO,Size M,8.24,,UPS® Ground
+St. Louis,Advance,NC,Size M,8.69,3,UPS® Ground
+St. Louis,Affton,MO,Size M,7.79,1,UPS® Ground
+St. Louis,Afton,NY,Size M,10.84,,UPS® Ground
+St. Louis,Ahwahnee,CA,Size M,13.84,,UPS® Ground
+St. Louis,Alabaster,AL,Size M,8.69,3,UPS® Ground
+St. Louis,Alamo,CA,Size M,13.84,,UPS® Ground
+St. Louis,Alapaha,GA,Size M,10.84,,UPS® Ground
+St. Louis,Alba,TX,Size M,8.69,,UPS® Ground
+Indianapolis,Brooklyn,NY,Size M,12.84,3,UPS® Ground
+Indianapolis,Houston,TX,Size M,10.84,4,UPS® Ground
+Indianapolis,Phoenix,AZ,Size M,13.84,4,UPS® Ground
+Indianapolis,San Antonio,TX,Size M,12.84,4,UPS® Ground
+Indianapolis,Chicago,IL,Size M,8.24,2,UPS® Ground
+Indianapolis,Austin,TX,Size M,12.84,3,UPS® Ground
+Indianapolis,Charlotte,NC,Size M,8.69,3,UPS® Ground
+Indianapolis,New York,NY,Size M,10.84,3,UPS® Ground
+Indianapolis,Atlanta,GA,Size M,8.69,3,UPS® Ground
+Indianapolis,Orlando,FL,Size M,10.84,3,UPS® Ground
+Indianapolis,Las Vegas,NV,Size M,13.84,4,UPS® Ground
+Indianapolis,Colorado Springs,CO,Size M,10.84,3,UPS® Ground
+Indianapolis,Marble Falls,TX,Size M,12.84,3,UPS® Ground
+Indianapolis,San Diego,CA,Size M,13.84,4,UPS® Ground
+Indianapolis,Tampa,FL,Size M,10.84,3,UPS® Ground
+Indianapolis,Jacksonville,FL,Size M,10.84,3,UPS® Ground
+Indianapolis,Louisville,KY,Size M,7.79,2,UPS® Ground
+Indianapolis,Marietta,GA,Size M,10.84,3,UPS® Ground
+Indianapolis,Raleigh,NC,Size M,8.69,3,UPS® Ground
+Indianapolis,Fort Worth,TX,Size M,10.84,3,UPS® Ground
+Indianapolis,Oklahoma City,OK,Size M,10.84,3,UPS® Ground
+Indianapolis,Chesapeake,VA,Size M,8.69,3,UPS® Ground
+Indianapolis,Dallas,TX,Size M,10.84,3,UPS® Ground
+Indianapolis,Denver,CO,Size M,12.84,3,UPS® Ground
+Indianapolis,Miami,FL,Size M,12.84,4,UPS® Ground
+Indianapolis,Omaha,NE,Size M,8.69,3,UPS® Ground
+Indianapolis,Pittsburgh,PA,Size M,8.69,3,UPS® Ground
+Indianapolis,Portland,OR,Size M,14.84,4,UPS® Ground
+Indianapolis,San Francisco,CA,Size M,14.84,4,UPS® Ground
+Indianapolis,San Jose,CA,Size M,14.84,4,UPS® Ground
+Indianapolis,Tucson,AZ,Size M,13.84,4,UPS® Ground
+Indianapolis,Virginia Beach,VA,Size M,8.69,3,UPS® Ground
+Indianapolis,Albuquerque,NM,Size M,12.84,5,UPS® Ground
+Indianapolis,Canton,GA,Size M,8.69,3,UPS® Ground
+Indianapolis,Gilbert,AZ,Size M,13.84,4,UPS® Ground
+Indianapolis,Kansas City,MO,Size M,8.69,3,UPS® Ground
+Indianapolis,Nashville,TN,Size M,8.24,3,UPS® Ground
+Indianapolis,Saint Louis,MO,Size M,8.24,2,UPS® Ground
+Indianapolis,Seattle,WA,Size M,14.84,4,UPS® Ground
+Indianapolis,Boise,ID,Size M,13.84,4,UPS® Ground
+Indianapolis,Indianapolis,IN,Size M,7.79,1,UPS® Ground
+Indianapolis,Knoxville,TN,Size M,8.24,3,UPS® Ground
+Indianapolis,Reno,NV,Size M,13.84,4,UPS® Ground
+Indianapolis,Rochester,NY,Size M,8.69,3,UPS® Ground
+Indianapolis,Bismarck,ND,Size M,10.84,4,UPS® Ground
+Indianapolis,Columbia,MO,Size M,8.69,3,UPS® Ground
+Indianapolis,Franklin,TN,Size M,8.69,3,UPS® Ground
+Indianapolis,Los Angeles,CA,Size M,14.84,4,UPS® Ground
+Indianapolis,Mesa,AZ,Size M,13.84,4,UPS® Ground
+Indianapolis,Milwaukee,WI,Size M,8.24,3,UPS® Ground
+Indianapolis,Abbeville,LA,Size M,10.84,3,UPS® Ground
+Indianapolis,Abbot,ME,Size M,10.84,5,UPS® Ground
+Indianapolis,Abingdon,MD,Size M,8.69,3,UPS® Ground
+Indianapolis,Accord,NY,Size M,8.69,,UPS® Ground
+Indianapolis,Acton,CA,Size M,13.84,4,UPS® Ground
+Indianapolis,Acton,MA,Size M,10.84,4,UPS® Ground
+Indianapolis,Acton,ME,Size M,10.84,,UPS® Ground
+Indianapolis,Acworth,GA,Size M,8.69,3,UPS® Ground
+Indianapolis,Ada,MI,Size M,8.24,,UPS® Ground
+Indianapolis,Ada,OK,Size M,8.69,3,UPS® Ground
+Indianapolis,Adams,MA,Size M,10.84,3,UPS® Ground
+Indianapolis,Adams Run,SC,Size M,8.69,,UPS® Ground
+Indianapolis,Adamsville,TN,Size M,8.69,,UPS® Ground
+Indianapolis,Adel,GA,Size M,8.69,3,UPS® Ground
+Indianapolis,Adirondack,NY,Size M,10.84,,UPS® Ground
+Indianapolis,Adrian,MO,Size M,8.69,,UPS® Ground
+Indianapolis,Advance,NC,Size M,8.69,3,UPS® Ground
+Indianapolis,Affton,MO,Size M,8.24,2,UPS® Ground
+Indianapolis,Afton,NY,Size M,10.84,,UPS® Ground
+Indianapolis,Ahwahnee,CA,Size M,14.84,,UPS® Ground
+Indianapolis,Alabaster,AL,Size M,8.69,3,UPS® Ground
+Indianapolis,Alamo,CA,Size M,14.84,,UPS® Ground
+Indianapolis,Alapaha,GA,Size M,8.69,,UPS® Ground
+Indianapolis,Alba,TX,Size M,10.84,,UPS® Ground
+Cincinnati,Brooklyn,NY,Size M,8.69,3,UPS® Ground
+Cincinnati,Houston,TX,Size M,10.84,4,UPS® Ground
+Cincinnati,Phoenix,AZ,Size M,13.84,4,UPS® Ground
+Cincinnati,San Antonio,TX,Size M,13.84,4,UPS® Ground
+Cincinnati,Chicago,IL,Size M,8.24,2,UPS® Ground
+Cincinnati,Austin,TX,Size M,10.84,3,UPS® Ground
+Cincinnati,Charlotte,NC,Size M,8.69,3,UPS® Ground
+Cincinnati,New York,NY,Size M,8.69,3,UPS® Ground
+Cincinnati,Atlanta,GA,Size M,8.69,3,UPS® Ground
+Cincinnati,Orlando,FL,Size M,10.84,3,UPS® Ground
+Cincinnati,Las Vegas,NV,Size M,14.84,4,UPS® Ground
+Cincinnati,Colorado Springs,CO,Size M,12.84,3,UPS® Ground
+Cincinnati,Marble Falls,TX,Size M,10.84,3,UPS® Ground
+Cincinnati,San Diego,CA,Size M,14.84,4,UPS® Ground
+Cincinnati,Tampa,FL,Size M,10.84,3,UPS® Ground
+Cincinnati,Jacksonville,FL,Size M,10.84,3,UPS® Ground
+Cincinnati,Louisville,KY,Size M,7.79,2,UPS® Ground
+Cincinnati,Marietta,GA,Size M,8.69,3,UPS® Ground
+Cincinnati,Raleigh,NC,Size M,8.69,3,UPS® Ground
+Cincinnati,Fort Worth,TX,Size M,10.84,3,UPS® Ground
+Cincinnati,Oklahoma City,OK,Size M,10.84,3,UPS® Ground
+Cincinnati,Chesapeake,VA,Size M,8.69,3,UPS® Ground
+Cincinnati,Dallas,TX,Size M,10.84,3,UPS® Ground
+Cincinnati,Denver,CO,Size M,12.84,3,UPS® Ground
+Cincinnati,Miami,FL,Size M,10.84,3,UPS® Ground
+Cincinnati,Omaha,NE,Size M,10.84,3,UPS® Ground
+Cincinnati,Pittsburgh,PA,Size M,8.24,2,UPS® Ground
+Cincinnati,Portland,OR,Size M,14.84,4,UPS® Ground
+Cincinnati,San Francisco,CA,Size M,14.84,5,UPS® Ground
+Cincinnati,San Jose,CA,Size M,14.84,5,UPS® Ground
+Cincinnati,Tucson,AZ,Size M,13.84,4,UPS® Ground
+Cincinnati,Virginia Beach,VA,Size M,8.69,3,UPS® Ground
+Cincinnati,Albuquerque,NM,Size M,12.84,5,UPS® Ground
+Cincinnati,Canton,GA,Size M,8.69,3,UPS® Ground
+Cincinnati,Gilbert,AZ,Size M,13.84,4,UPS® Ground
+Cincinnati,Kansas City,MO,Size M,8.69,3,UPS® Ground
+Cincinnati,Nashville,TN,Size M,8.24,2,UPS® Ground
+Cincinnati,Saint Louis,MO,Size M,8.69,3,UPS® Ground
+Cincinnati,Seattle,WA,Size M,14.84,5,UPS® Ground
+Cincinnati,Boise,ID,Size M,13.84,4,UPS® Ground
+Cincinnati,Indianapolis,IN,Size M,7.79,2,UPS® Ground
+Cincinnati,Knoxville,TN,Size M,8.24,3,UPS® Ground
+Cincinnati,Reno,NV,Size M,14.84,4,UPS® Ground
+Cincinnati,Rochester,NY,Size M,8.69,3,UPS® Ground
+Cincinnati,Bismarck,ND,Size M,10.84,4,UPS® Ground
+Cincinnati,Columbia,MO,Size M,8.69,3,UPS® Ground
+Cincinnati,Franklin,TN,Size M,8.69,2,UPS® Ground
+Cincinnati,Los Angeles,CA,Size M,14.84,4,UPS® Ground
+Cincinnati,Mesa,AZ,Size M,13.84,4,UPS® Ground
+Cincinnati,Milwaukee,WI,Size M,8.69,3,UPS® Ground
+Cincinnati,Abbeville,LA,Size M,10.84,3,UPS® Ground
+Cincinnati,Abbot,ME,Size M,10.84,5,UPS® Ground
+Cincinnati,Abingdon,MD,Size M,8.69,3,UPS® Ground
+Cincinnati,Accord,NY,Size M,8.69,,UPS® Ground
+Cincinnati,Acton,CA,Size M,14.84,4,UPS® Ground
+Cincinnati,Acton,MA,Size M,10.84,3,UPS® Ground
+Cincinnati,Acton,ME,Size M,10.84,,UPS® Ground
+Cincinnati,Acworth,GA,Size M,8.69,3,UPS® Ground
+Cincinnati,Ada,MI,Size M,8.24,,UPS® Ground
+Cincinnati,Ada,OK,Size M,10.84,3,UPS® Ground
+Cincinnati,Adams,MA,Size M,10.84,3,UPS® Ground
+Cincinnati,Adams Run,SC,Size M,8.69,,UPS® Ground
+Cincinnati,Adamsville,TN,Size M,8.69,,UPS® Ground
+Cincinnati,Adel,GA,Size M,8.69,3,UPS® Ground
+Cincinnati,Adirondack,NY,Size M,10.84,,UPS® Ground
+Cincinnati,Adrian,MO,Size M,8.69,,UPS® Ground
+Cincinnati,Advance,NC,Size M,8.69,3,UPS® Ground
+Cincinnati,Affton,MO,Size M,8.69,3,UPS® Ground
+Cincinnati,Afton,NY,Size M,8.69,,UPS® Ground
+Cincinnati,Ahwahnee,CA,Size M,14.84,,UPS® Ground
+Cincinnati,Alabaster,AL,Size M,8.69,3,UPS® Ground
+Cincinnati,Alamo,CA,Size M,14.84,,UPS® Ground
+Cincinnati,Alapaha,GA,Size M,8.69,,UPS® Ground
+Cincinnati,Alba,TX,Size M,10.84,,UPS® Ground
+Louisville,Brooklyn,NY,Size M,10.84,3,UPS® Ground
+Louisville,Houston,TX,Size M,12.84,4,UPS® Ground
+Louisville,Phoenix,AZ,Size M,13.84,5,UPS® Ground
+Louisville,San Antonio,TX,Size M,12.84,4,UPS® Ground
+Louisville,Chicago,IL,Size M,8.69,2,UPS® Ground
+Louisville,Austin,TX,Size M,10.84,3,UPS® Ground
+Louisville,Charlotte,NC,Size M,8.69,3,UPS® Ground
+Louisville,New York,NY,Size M,10.84,3,UPS® Ground
+Louisville,Atlanta,GA,Size M,8.69,3,UPS® Ground
+Louisville,Orlando,FL,Size M,10.84,3,UPS® Ground
+Louisville,Las Vegas,NV,Size M,13.84,4,UPS® Ground
+Louisville,Colorado Springs,CO,Size M,12.84,3,UPS® Ground
+Louisville,Marble Falls,TX,Size M,10.84,3,UPS® Ground
+Louisville,San Diego,CA,Size M,13.84,5,UPS® Ground
+Louisville,Tampa,FL,Size M,10.84,3,UPS® Ground
+Louisville,Jacksonville,FL,Size M,8.69,3,UPS® Ground
+Louisville,Louisville,KY,Size M,7.79,1,UPS® Ground
+Louisville,Marietta,GA,Size M,8.69,3,UPS® Ground
+Louisville,Raleigh,NC,Size M,8.69,3,UPS® Ground
+Louisville,Fort Worth,TX,Size M,10.84,3,UPS® Ground
+Louisville,Oklahoma City,OK,Size M,10.84,3,UPS® Ground
+Louisville,Chesapeake,VA,Size M,8.69,3,UPS® Ground
+Louisville,Dallas,TX,Size M,10.84,3,UPS® Ground
+Louisville,Denver,CO,Size M,12.84,3,UPS® Ground
+Louisville,Miami,FL,Size M,12.84,3,UPS® Ground
+Louisville,Omaha,NE,Size M,10.84,3,UPS® Ground
+Louisville,Pittsburgh,PA,Size M,8.69,3,UPS® Ground
+Louisville,Portland,OR,Size M,14.84,4,UPS® Ground
+Louisville,San Francisco,CA,Size M,14.84,4,UPS® Ground
+Louisville,San Jose,CA,Size M,14.84,4,UPS® Ground
+Louisville,Tucson,AZ,Size M,13.84,5,UPS® Ground
+Louisville,Virginia Beach,VA,Size M,8.69,3,UPS® Ground
+Louisville,Albuquerque,NM,Size M,12.84,5,UPS® Ground
+Louisville,Canton,GA,Size M,8.69,3,UPS® Ground
+Louisville,Gilbert,AZ,Size M,13.84,5,UPS® Ground
+Louisville,Kansas City,MO,Size M,8.69,3,UPS® Ground
+Louisville,Nashville,TN,Size M,8.24,2,UPS® Ground
+Louisville,Saint Louis,MO,Size M,8.24,3,UPS® Ground
+Louisville,Seattle,WA,Size M,14.84,5,UPS® Ground
+Louisville,Boise,ID,Size M,13.84,4,UPS® Ground
+Louisville,Indianapolis,IN,Size M,7.79,2,UPS® Ground
+Louisville,Knoxville,TN,Size M,8.24,2,UPS® Ground
+Louisville,Reno,NV,Size M,14.84,4,UPS® Ground
+Louisville,Rochester,NY,Size M,8.69,3,UPS® Ground
+Louisville,Bismarck,ND,Size M,10.84,4,UPS® Ground
+Louisville,Columbia,MO,Size M,8.69,3,UPS® Ground
+Louisville,Franklin,TN,Size M,8.24,2,UPS® Ground
+Louisville,Los Angeles,CA,Size M,14.84,5,UPS® Ground
+Louisville,Mesa,AZ,Size M,13.84,5,UPS® Ground
+Louisville,Milwaukee,WI,Size M,8.69,3,UPS® Ground
+Louisville,Abbeville,LA,Size M,10.84,3,UPS® Ground
+Louisville,Abbot,ME,Size M,10.84,5,UPS® Ground
+Louisville,Abingdon,MD,Size M,8.69,3,UPS® Ground
+Louisville,Accord,NY,Size M,10.84,,UPS® Ground
+Louisville,Acton,CA,Size M,13.84,5,UPS® Ground
+Louisville,Acton,MA,Size M,10.84,4,UPS® Ground
+Louisville,Acton,ME,Size M,10.84,,UPS® Ground
+Louisville,Acworth,GA,Size M,8.69,3,UPS® Ground
+Louisville,Ada,MI,Size M,8.69,,UPS® Ground
+Louisville,Ada,OK,Size M,10.84,3,UPS® Ground
+Louisville,Adams,MA,Size M,10.84,4,UPS® Ground
+Louisville,Adams Run,SC,Size M,8.69,,UPS® Ground
+Louisville,Adamsville,TN,Size M,8.24,,UPS® Ground
+Louisville,Adel,GA,Size M,8.69,3,UPS® Ground
+Louisville,Adirondack,NY,Size M,10.84,,UPS® Ground
+Louisville,Adrian,MO,Size M,8.69,3,UPS® Ground
+Louisville,Advance,NC,Size M,8.69,3,UPS® Ground
+Louisville,Affton,MO,Size M,8.24,3,UPS® Ground
+Louisville,Afton,NY,Size M,10.84,,UPS® Ground
+Louisville,Ahwahnee,CA,Size M,14.84,,UPS® Ground
+Louisville,Alabaster,AL,Size M,8.69,2,UPS® Ground
+Louisville,Alamo,CA,Size M,14.84,,UPS® Ground
+Louisville,Alapaha,GA,Size M,8.69,,UPS® Ground
+Louisville,Alba,TX,Size M,10.84,,UPS® Ground
+Memphis,Brooklyn,NY,Size M,10.84,3,UPS® Ground
+Memphis,Houston,TX,Size M,10.84,3,UPS® Ground
+Memphis,Phoenix,AZ,Size M,13.84,4,UPS® Ground
+Memphis,San Antonio,TX,Size M,10.84,3,UPS® Ground
+Memphis,Chicago,IL,Size M,10.84,3,UPS® Ground
+Memphis,Austin,TX,Size M,10.84,3,UPS® Ground
+Memphis,Charlotte,NC,Size M,8.69,3,UPS® Ground
+Memphis,New York,NY,Size M,10.84,3,UPS® Ground
+Memphis,Atlanta,GA,Size M,10.84,3,UPS® Ground
+Memphis,Orlando,FL,Size M,10.84,3,UPS® Ground
+Memphis,Las Vegas,NV,Size M,13.84,5,UPS® Ground
+Memphis,Colorado Springs,CO,Size M,10.84,3,UPS® Ground
+Memphis,Marble Falls,TX,Size M,10.84,3,UPS® Ground
+Memphis,San Diego,CA,Size M,13.84,4,UPS® Ground
+Memphis,Tampa,FL,Size M,10.84,3,UPS® Ground
+Memphis,Jacksonville,FL,Size M,8.69,3,UPS® Ground
+Memphis,Louisville,KY,Size M,8.69,3,UPS® Ground
+Memphis,Marietta,GA,Size M,10.84,3,UPS® Ground
+Memphis,Raleigh,NC,Size M,10.84,3,UPS® Ground
+Memphis,Fort Worth,TX,Size M,10.84,3,UPS® Ground
+Memphis,Oklahoma City,OK,Size M,8.69,3,UPS® Ground
+Memphis,Chesapeake,VA,Size M,10.84,3,UPS® Ground
+Memphis,Dallas,TX,Size M,10.84,3,UPS® Ground
+Memphis,Denver,CO,Size M,12.84,3,UPS® Ground
+Memphis,Miami,FL,Size M,12.84,3,UPS® Ground
+Memphis,Omaha,NE,Size M,8.69,3,UPS® Ground
+Memphis,Pittsburgh,PA,Size M,10.84,3,UPS® Ground
+Memphis,Portland,OR,Size M,14.84,5,UPS® Ground
+Memphis,San Francisco,CA,Size M,14.84,4,UPS® Ground
+Memphis,San Jose,CA,Size M,13.84,4,UPS® Ground
+Memphis,Tucson,AZ,Size M,12.84,4,UPS® Ground
+Memphis,Virginia Beach,VA,Size M,10.84,3,UPS® Ground
+Memphis,Albuquerque,NM,Size M,10.84,4,UPS® Ground
+Memphis,Canton,GA,Size M,8.69,3,UPS® Ground
+Memphis,Gilbert,AZ,Size M,13.84,4,UPS® Ground
+Memphis,Kansas City,MO,Size M,8.69,3,UPS® Ground
+Memphis,Nashville,TN,Size M,8.24,2,UPS® Ground
+Memphis,Saint Louis,MO,Size M,8.24,2,UPS® Ground
+Memphis,Seattle,WA,Size M,14.84,5,UPS® Ground
+Memphis,Boise,ID,Size M,13.84,5,UPS® Ground
+Memphis,Indianapolis,IN,Size M,8.69,3,UPS® Ground
+Memphis,Knoxville,TN,Size M,8.69,2,UPS® Ground
+Memphis,Reno,NV,Size M,13.84,5,UPS® Ground
+Memphis,Rochester,NY,Size M,10.84,3,UPS® Ground
+Memphis,Bismarck,ND,Size M,10.84,4,UPS® Ground
+Memphis,Columbia,MO,Size M,8.69,3,UPS® Ground
+Memphis,Franklin,TN,Size M,8.24,2,UPS® Ground
+Memphis,Los Angeles,CA,Size M,13.84,4,UPS® Ground
+Memphis,Mesa,AZ,Size M,13.84,4,UPS® Ground
+Memphis,Milwaukee,WI,Size M,8.69,3,UPS® Ground
+Memphis,Abbeville,LA,Size M,8.69,3,UPS® Ground
+Memphis,Abbot,ME,Size M,12.84,5,UPS® Ground
+Memphis,Abingdon,MD,Size M,10.84,3,UPS® Ground
+Memphis,Accord,NY,Size M,10.84,,UPS® Ground
+Memphis,Acton,CA,Size M,13.84,4,UPS® Ground
+Memphis,Acton,MA,Size M,12.84,4,UPS® Ground
+Memphis,Acton,ME,Size M,12.84,,UPS® Ground
+Memphis,Acworth,GA,Size M,8.69,3,UPS® Ground
+Memphis,Ada,MI,Size M,10.84,,UPS® Ground
+Memphis,Ada,OK,Size M,8.69,3,UPS® Ground
+Memphis,Adams,MA,Size M,12.84,4,UPS® Ground
+Memphis,Adams Run,SC,Size M,8.69,,UPS® Ground
+Memphis,Adamsville,TN,Size M,7.79,,UPS® Ground
+Memphis,Adel,GA,Size M,8.69,3,UPS® Ground
+Memphis,Adirondack,NY,Size M,12.84,,UPS® Ground
+Memphis,Adrian,MO,Size M,8.69,,UPS® Ground
+Memphis,Advance,NC,Size M,8.69,3,UPS® Ground
+Memphis,Affton,MO,Size M,8.24,2,UPS® Ground
+Memphis,Afton,NY,Size M,10.84,,UPS® Ground
+Memphis,Ahwahnee,CA,Size M,13.84,,UPS® Ground
+Memphis,Alabaster,AL,Size M,8.24,2,UPS® Ground
+Memphis,Alamo,CA,Size M,14.84,,UPS® Ground
+Memphis,Alapaha,GA,Size M,8.69,,UPS® Ground
+Memphis,Alba,TX,Size M,8.69,,UPS® Ground
+Nashville,Brooklyn,NY,Size M,10.84,3,UPS® Ground
+Nashville,Houston,TX,Size M,10.84,3,UPS® Ground
+Nashville,Phoenix,AZ,Size M,13.84,5,UPS® Ground
+Nashville,San Antonio,TX,Size M,10.84,3,UPS® Ground
+Nashville,Chicago,IL,Size M,8.69,3,UPS® Ground
+Nashville,Austin,TX,Size M,10.84,3,UPS® Ground
+Nashville,Charlotte,NC,Size M,8.69,3,UPS® Ground
+Nashville,New York,NY,Size M,10.84,3,UPS® Ground
+Nashville,Atlanta,GA,Size M,8.24,3,UPS® Ground
+Nashville,Orlando,FL,Size M,10.84,3,UPS® Ground
+Nashville,Las Vegas,NV,Size M,13.84,4,UPS® Ground
+Nashville,Colorado Springs,CO,Size M,10.84,4,UPS® Ground
+Nashville,Marble Falls,TX,Size M,10.84,3,UPS® Ground
+Nashville,San Diego,CA,Size M,13.84,4,UPS® Ground
+Nashville,Tampa,FL,Size M,10.84,3,UPS® Ground
+Nashville,Jacksonville,FL,Size M,8.69,3,UPS® Ground
+Nashville,Louisville,KY,Size M,8.24,2,UPS® Ground
+Nashville,Marietta,GA,Size M,8.24,3,UPS® Ground
+Nashville,Raleigh,NC,Size M,8.69,3,UPS® Ground
+Nashville,Fort Worth,TX,Size M,10.84,3,UPS® Ground
+Nashville,Oklahoma City,OK,Size M,8.69,3,UPS® Ground
+Nashville,Chesapeake,VA,Size M,8.69,3,UPS® Ground
+Nashville,Dallas,TX,Size M,10.84,3,UPS® Ground
+Nashville,Denver,CO,Size M,12.84,4,UPS® Ground
+Nashville,Miami,FL,Size M,10.84,3,UPS® Ground
+Nashville,Omaha,NE,Size M,10.84,4,UPS® Ground
+Nashville,Pittsburgh,PA,Size M,8.69,3,UPS® Ground
+Nashville,Portland,OR,Size M,14.84,5,UPS® Ground
+Nashville,San Francisco,CA,Size M,14.84,5,UPS® Ground
+Nashville,San Jose,CA,Size M,14.84,5,UPS® Ground
+Nashville,Tucson,AZ,Size M,13.84,5,UPS® Ground
+Nashville,Virginia Beach,VA,Size M,8.69,3,UPS® Ground
+Nashville,Albuquerque,NM,Size M,12.84,4,UPS® Ground
+Nashville,Canton,GA,Size M,8.24,3,UPS® Ground
+Nashville,Gilbert,AZ,Size M,13.84,5,UPS® Ground
+Nashville,Kansas City,MO,Size M,8.69,3,UPS® Ground
+Nashville,Nashville,TN,Size M,7.79,1,UPS® Ground
+Nashville,Saint Louis,MO,Size M,8.24,2,UPS® Ground
+Nashville,Seattle,WA,Size M,14.84,6,UPS® Ground
+Nashville,Boise,ID,Size M,13.84,4,UPS® Ground
+Nashville,Indianapolis,IN,Size M,8.24,3,UPS® Ground
+Nashville,Knoxville,TN,Size M,8.24,2,UPS® Ground
+Nashville,Reno,NV,Size M,14.84,5,UPS® Ground
+Nashville,Rochester,NY,Size M,10.84,3,UPS® Ground
+Nashville,Bismarck,ND,Size M,12.84,4,UPS® Ground
+Nashville,Columbia,MO,Size M,8.69,3,UPS® Ground
+Nashville,Franklin,TN,Size M,7.79,1,UPS® Ground
+Nashville,Los Angeles,CA,Size M,13.84,4,UPS® Ground
+Nashville,Mesa,AZ,Size M,13.84,5,UPS® Ground
+Nashville,Milwaukee,WI,Size M,8.69,3,UPS® Ground
+Nashville,Abbeville,LA,Size M,8.69,3,UPS® Ground
+Nashville,Abbot,ME,Size M,12.84,3,UPS® Ground
+Nashville,Abingdon,MD,Size M,10.84,3,UPS® Ground
+Nashville,Accord,NY,Size M,10.84,,UPS® Ground
+Nashville,Acton,CA,Size M,13.84,4,UPS® Ground
+Nashville,Acton,MA,Size M,10.84,3,UPS® Ground
+Nashville,Acton,ME,Size M,12.84,,UPS® Ground
+Nashville,Acworth,GA,Size M,8.24,3,UPS® Ground
+Nashville,Ada,MI,Size M,8.69,,UPS® Ground
+Nashville,Ada,OK,Size M,8.69,3,UPS® Ground
+Nashville,Adams,MA,Size M,10.84,3,UPS® Ground
+Nashville,Adams Run,SC,Size M,8.69,,UPS® Ground
+Nashville,Adamsville,TN,Size M,7.79,,UPS® Ground
+Nashville,Adel,GA,Size M,8.69,3,UPS® Ground
+Nashville,Adirondack,NY,Size M,10.84,,UPS® Ground
+Nashville,Adrian,MO,Size M,8.69,,UPS® Ground
+Nashville,Advance,NC,Size M,8.69,3,UPS® Ground
+Nashville,Affton,MO,Size M,8.24,2,UPS® Ground
+Nashville,Afton,NY,Size M,10.84,,UPS® Ground
+Nashville,Ahwahnee,CA,Size M,13.84,,UPS® Ground
+Nashville,Alabaster,AL,Size M,7.79,2,UPS® Ground
+Nashville,Alamo,CA,Size M,14.84,,UPS® Ground
+Nashville,Alapaha,GA,Size M,8.69,,UPS® Ground
+Nashville,Alba,TX,Size M,8.69,,UPS® Ground
+Birmingham,Brooklyn,NY,Size M,10.84,3,UPS® Ground
+Birmingham,Houston,TX,Size M,8.69,4,UPS® Ground
+Birmingham,Phoenix,AZ,Size M,13.84,5,UPS® Ground
+Birmingham,San Antonio,TX,Size M,10.84,4,UPS® Ground
+Birmingham,Chicago,IL,Size M,8.69,3,UPS® Ground
+Birmingham,Austin,TX,Size M,10.84,3,UPS® Ground
+Birmingham,Charlotte,NC,Size M,8.69,3,UPS® Ground
+Birmingham,New York,NY,Size M,10.84,3,UPS® Ground
+Birmingham,Atlanta,GA,Size M,7.79,2,UPS® Ground
+Birmingham,Orlando,FL,Size M,8.69,3,UPS® Ground
+Birmingham,Las Vegas,NV,Size M,13.84,4,UPS® Ground
+Birmingham,Colorado Springs,CO,Size M,12.84,4,UPS® Ground
+Birmingham,Marble Falls,TX,Size M,10.84,3,UPS® Ground
+Birmingham,San Diego,CA,Size M,13.84,4,UPS® Ground
+Birmingham,Tampa,FL,Size M,8.69,3,UPS® Ground
+Birmingham,Jacksonville,FL,Size M,8.69,3,UPS® Ground
+Birmingham,Louisville,KY,Size M,8.69,3,UPS® Ground
+Birmingham,Marietta,GA,Size M,8.24,2,UPS® Ground
+Birmingham,Raleigh,NC,Size M,8.69,3,UPS® Ground
+Birmingham,Fort Worth,TX,Size M,8.86,3,UPS® Ground
+Birmingham,Oklahoma City,OK,Size M,10.84,3,UPS® Ground
+Birmingham,Chesapeake,VA,Size M,10.84,3,UPS® Ground
+Birmingham,Dallas,TX,Size M,10.84,3,UPS® Ground
+Birmingham,Denver,CO,Size M,10.4,4,UPS® Ground
+Birmingham,Miami,FL,Size M,10.84,3,UPS® Ground
+Birmingham,Omaha,NE,Size M,8.86,4,UPS® Ground
+Birmingham,Pittsburgh,PA,Size M,10.84,3,UPS® Ground
+Birmingham,Portland,OR,Size M,14.84,5,UPS® Ground
+Birmingham,San Francisco,CA,Size M,14.84,5,UPS® Ground
+Birmingham,San Jose,CA,Size M,14.84,5,UPS® Ground
+Birmingham,Tucson,AZ,Size M,12.84,5,UPS® Ground
+Birmingham,Virginia Beach,VA,Size M,10.84,3,UPS® Ground
+Birmingham,Albuquerque,NM,Size M,12.84,4,UPS® Ground
+Birmingham,Canton,GA,Size M,7.79,2,UPS® Ground
+Birmingham,Gilbert,AZ,Size M,13.84,5,UPS® Ground
+Birmingham,Kansas City,MO,Size M,8.69,3,UPS® Ground
+Birmingham,Nashville,TN,Size M,8.24,2,UPS® Ground
+Birmingham,Saint Louis,MO,Size M,8.69,3,UPS® Ground
+Birmingham,Seattle,WA,Size M,14.84,6,UPS® Ground
+Birmingham,Boise,ID,Size M,13.84,4,UPS® Ground
+Birmingham,Indianapolis,IN,Size M,8.69,3,UPS® Ground
+Birmingham,Knoxville,TN,Size M,8.24,2,UPS® Ground
+Birmingham,Reno,NV,Size M,14.84,5,UPS® Ground
+Birmingham,Rochester,NY,Size M,10.84,3,UPS® Ground
+Birmingham,Bismarck,ND,Size M,12.84,4,UPS® Ground
+Birmingham,Columbia,MO,Size M,8.69,3,UPS® Ground
+Birmingham,Franklin,TN,Size M,8.24,2,UPS® Ground
+Birmingham,Los Angeles,CA,Size M,14.84,4,UPS® Ground
+Birmingham,Mesa,AZ,Size M,13.84,5,UPS® Ground
+Birmingham,Milwaukee,WI,Size M,10.84,3,UPS® Ground
+Birmingham,Abbeville,LA,Size M,8.69,3,UPS® Ground
+Birmingham,Abbot,ME,Size M,12.84,5,UPS® Ground
+Birmingham,Abingdon,MD,Size M,8.86,3,UPS® Ground
+Birmingham,Accord,NY,Size M,8.86,,UPS® Ground
+Birmingham,Acton,CA,Size M,13.84,4,UPS® Ground
+Birmingham,Acton,MA,Size M,10.4,4,UPS® Ground
+Birmingham,Acton,ME,Size M,10.4,,UPS® Ground
+Birmingham,Acworth,GA,Size M,7.79,2,UPS® Ground
+Birmingham,Ada,MI,Size M,10.84,,UPS® Ground
+Birmingham,Ada,OK,Size M,8.69,3,UPS® Ground
+Birmingham,Adams,MA,Size M,8.86,4,UPS® Ground
+Birmingham,Adams Run,SC,Size M,8.69,,UPS® Ground
+Birmingham,Adamsville,TN,Size M,8.24,,UPS® Ground
+Birmingham,Adel,GA,Size M,8.24,2,UPS® Ground
+Birmingham,Adirondack,NY,Size M,10.84,,UPS® Ground
+Birmingham,Adrian,MO,Size M,8.69,,UPS® Ground
+Birmingham,Advance,NC,Size M,8.69,3,UPS® Ground
+Birmingham,Affton,MO,Size M,8.69,3,UPS® Ground
+Birmingham,Afton,NY,Size M,10.84,,UPS® Ground
+Birmingham,Ahwahnee,CA,Size M,14.84,,UPS® Ground
+Birmingham,Alabaster,AL,Size M,7.79,2,UPS® Ground
+Birmingham,Alamo,CA,Size M,12.06,,UPS® Ground
+Birmingham,Alapaha,GA,Size M,8.24,,UPS® Ground
+Birmingham,Alba,TX,Size M,8.69,,UPS® Ground
+Minneapolis,Brooklyn,NY,Size M,10.4,3,UPS® Ground
+Minneapolis,Houston,TX,Size M,12.84,4,UPS® Ground
+Minneapolis,Phoenix,AZ,Size M,11.0,4,UPS® Ground
+Minneapolis,San Antonio,TX,Size M,10.4,4,UPS® Ground
+Minneapolis,Chicago,IL,Size M,8.69,2,UPS® Ground
+Minneapolis,Austin,TX,Size M,12.84,3,UPS® Ground
+Minneapolis,Charlotte,NC,Size M,10.84,3,UPS® Ground
+Minneapolis,New York,NY,Size M,12.84,3,UPS® Ground
+Minneapolis,Atlanta,GA,Size M,10.84,4,UPS® Ground
+Minneapolis,Orlando,FL,Size M,10.4,4,UPS® Ground
+Minneapolis,Las Vegas,NV,Size M,13.84,4,UPS® Ground
+Minneapolis,Colorado Springs,CO,Size M,10.84,3,UPS® Ground
+Minneapolis,Marble Falls,TX,Size M,12.84,3,UPS® Ground
+Minneapolis,San Diego,CA,Size M,13.84,4,UPS® Ground
+Minneapolis,Tampa,FL,Size M,12.84,4,UPS® Ground
+Minneapolis,Jacksonville,FL,Size M,12.84,4,UPS® Ground
+Minneapolis,Louisville,KY,Size M,10.84,2,UPS® Ground
+Minneapolis,Marietta,GA,Size M,10.84,4,UPS® Ground
+Minneapolis,Raleigh,NC,Size M,10.84,3,UPS® Ground
+Minneapolis,Fort Worth,TX,Size M,10.84,3,UPS® Ground
+Minneapolis,Oklahoma City,OK,Size M,10.84,3,UPS® Ground
+Minneapolis,Chesapeake,VA,Size M,12.84,3,UPS® Ground
+Minneapolis,Dallas,TX,Size M,10.84,3,UPS® Ground
+Minneapolis,Denver,CO,Size M,10.84,3,UPS® Ground
+Minneapolis,Miami,FL,Size M,11.0,4,UPS® Ground
+Minneapolis,Omaha,NE,Size M,8.24,3,UPS® Ground
+Minneapolis,Pittsburgh,PA,Size M,10.84,3,UPS® Ground
+Minneapolis,Portland,OR,Size M,13.84,5,UPS® Ground
+Minneapolis,San Francisco,CA,Size M,13.84,4,UPS® Ground
+Minneapolis,San Jose,CA,Size M,13.84,4,UPS® Ground
+Minneapolis,Tucson,AZ,Size M,12.84,4,UPS® Ground
+Minneapolis,Virginia Beach,VA,Size M,10.4,3,UPS® Ground
+Minneapolis,Albuquerque,NM,Size M,10.84,4,UPS® Ground
+Minneapolis,Canton,GA,Size M,10.84,4,UPS® Ground
+Minneapolis,Gilbert,AZ,Size M,11.0,4,UPS® Ground
+Minneapolis,Kansas City,MO,Size M,8.69,3,UPS® Ground
+Minneapolis,Nashville,TN,Size M,8.86,3,UPS® Ground
+Minneapolis,Saint Louis,MO,Size M,8.69,3,UPS® Ground
+Minneapolis,Seattle,WA,Size M,13.84,5,UPS® Ground
+Minneapolis,Boise,ID,Size M,10.4,4,UPS® Ground
+Minneapolis,Indianapolis,IN,Size M,8.69,2,UPS® Ground
+Minneapolis,Knoxville,TN,Size M,8.86,3,UPS® Ground
+Minneapolis,Reno,NV,Size M,12.84,4,UPS® Ground
+Minneapolis,Rochester,NY,Size M,10.84,3,UPS® Ground
+Minneapolis,Bismarck,ND,Size M,8.69,2,UPS® Ground
+Minneapolis,Columbia,MO,Size M,8.69,3,UPS® Ground
+Minneapolis,Franklin,TN,Size M,8.86,3,UPS® Ground
+Minneapolis,Los Angeles,CA,Size M,13.84,4,UPS® Ground
+Minneapolis,Mesa,AZ,Size M,11.0,4,UPS® Ground
+Minneapolis,Milwaukee,WI,Size M,8.24,2,UPS® Ground
+Minneapolis,Abbeville,LA,Size M,10.4,4,UPS® Ground
+Minneapolis,Abbot,ME,Size M,10.4,5,UPS® Ground
+Minneapolis,Abingdon,MD,Size M,10.84,3,UPS® Ground
+Minneapolis,Accord,NY,Size M,10.84,,UPS® Ground
+Minneapolis,Acton,CA,Size M,13.84,4,UPS® Ground
+Minneapolis,Acton,MA,Size M,10.4,4,UPS® Ground
+Minneapolis,Acton,ME,Size M,10.4,,UPS® Ground
+Minneapolis,Acworth,GA,Size M,10.84,4,UPS® Ground
+Minneapolis,Ada,MI,Size M,8.69,,UPS® Ground
+Minneapolis,Ada,OK,Size M,8.86,3,UPS® Ground
+Minneapolis,Adams,MA,Size M,10.4,4,UPS® Ground
+Minneapolis,Adams Run,SC,Size M,12.84,,UPS® Ground
+Minneapolis,Adamsville,TN,Size M,10.84,,UPS® Ground
+Minneapolis,Adel,GA,Size M,12.84,4,UPS® Ground
+Minneapolis,Adirondack,NY,Size M,8.86,,UPS® Ground
+Minneapolis,Adrian,MO,Size M,8.69,,UPS® Ground
+Minneapolis,Advance,NC,Size M,10.84,3,UPS® Ground
+Minneapolis,Affton,MO,Size M,8.69,3,UPS® Ground
+Minneapolis,Afton,NY,Size M,10.84,,UPS® Ground
+Minneapolis,Ahwahnee,CA,Size M,13.84,,UPS® Ground
+Minneapolis,Alabaster,AL,Size M,8.86,3,UPS® Ground
+Minneapolis,Alamo,CA,Size M,13.84,,UPS® Ground
+Minneapolis,Alapaha,GA,Size M,12.84,,UPS® Ground
+Minneapolis,Alba,TX,Size M,10.84,,UPS® Ground
+Detroit,Brooklyn,NY,Size M,8.69,3,UPS® Ground
+Detroit,Houston,TX,Size M,11.0,4,UPS® Ground
+Detroit,Phoenix,AZ,Size M,14.84,4,UPS® Ground
+Detroit,San Antonio,TX,Size M,12.84,4,UPS® Ground
+Detroit,Chicago,IL,Size M,8.69,2,UPS® Ground
+Detroit,Austin,TX,Size M,12.84,3,UPS® Ground
+Detroit,Charlotte,NC,Size M,8.69,3,UPS® Ground
+Detroit,New York,NY,Size M,8.69,3,UPS® Ground
+Detroit,Atlanta,GA,Size M,10.84,3,UPS® Ground
+Detroit,Orlando,FL,Size M,12.84,4,UPS® Ground
+Detroit,Las Vegas,NV,Size M,12.06,4,UPS® Ground
+Detroit,Colorado Springs,CO,Size M,10.4,4,UPS® Ground
+Detroit,Marble Falls,TX,Size M,10.4,3,UPS® Ground
+Detroit,San Diego,CA,Size M,12.06,4,UPS® Ground
+Detroit,Tampa,FL,Size M,8.77,4,UPS® Ground
+Detroit,Jacksonville,FL,Size M,8.86,4,UPS® Ground
+Detroit,Louisville,KY,Size M,8.69,3,UPS® Ground
+Detroit,Marietta,GA,Size M,8.86,3,UPS® Ground
+Detroit,Raleigh,NC,Size M,8.69,3,UPS® Ground
+Detroit,Fort Worth,TX,Size M,10.4,3,UPS® Ground
+Detroit,Oklahoma City,OK,Size M,8.86,4,UPS® Ground
+Detroit,Chesapeake,VA,Size M,8.69,3,UPS® Ground
+Detroit,Dallas,TX,Size M,10.4,3,UPS® Ground
+Detroit,Denver,CO,Size M,10.4,4,UPS® Ground
+Detroit,Miami,FL,Size M,11.0,4,UPS® Ground
+Detroit,Omaha,NE,Size M,8.86,3,UPS® Ground
+Detroit,Pittsburgh,PA,Size M,8.24,3,UPS® Ground
+Detroit,Portland,OR,Size M,12.06,4,UPS® Ground
+Detroit,San Francisco,CA,Size M,11.97,5,UPS® Ground
+Detroit,San Jose,CA,Size M,12.06,5,UPS® Ground
+Detroit,Tucson,AZ,Size M,11.0,4,UPS® Ground
+Detroit,Virginia Beach,VA,Size M,8.69,3,UPS® Ground
+Detroit,Albuquerque,NM,Size M,10.4,5,UPS® Ground
+Detroit,Canton,GA,Size M,8.86,3,UPS® Ground
+Detroit,Gilbert,AZ,Size M,12.06,4,UPS® Ground
+Detroit,Kansas City,MO,Size M,8.86,4,UPS® Ground
+Detroit,Nashville,TN,Size M,8.69,3,UPS® Ground
+Detroit,Saint Louis,MO,Size M,8.69,3,UPS® Ground
+Detroit,Seattle,WA,Size M,12.06,5,UPS® Ground
+Detroit,Boise,ID,Size M,11.0,4,UPS® Ground
+Detroit,Indianapolis,IN,Size M,8.24,3,UPS® Ground
+Detroit,Knoxville,TN,Size M,8.69,3,UPS® Ground
+Detroit,Reno,NV,Size M,12.06,4,UPS® Ground
+Detroit,Rochester,NY,Size M,8.24,3,UPS® Ground
+Detroit,Bismarck,ND,Size M,8.86,4,UPS® Ground
+Detroit,Columbia,MO,Size M,8.69,3,UPS® Ground
+Detroit,Franklin,TN,Size M,8.69,3,UPS® Ground
+Detroit,Los Angeles,CA,Size M,11.97,4,UPS® Ground
+Detroit,Mesa,AZ,Size M,12.06,4,UPS® Ground
+Detroit,Milwaukee,WI,Size M,8.24,3,UPS® Ground
+Detroit,Abbeville,LA,Size M,8.86,4,UPS® Ground
+Detroit,Abbot,ME,Size M,8.86,5,UPS® Ground
+Detroit,Abingdon,MD,Size M,8.69,3,UPS® Ground
+Detroit,Accord,NY,Size M,8.69,,UPS® Ground
+Detroit,Acton,CA,Size M,12.06,4,UPS® Ground
+Detroit,Acton,MA,Size M,8.86,4,UPS® Ground
+Detroit,Acton,ME,Size M,8.86,,UPS® Ground
+Detroit,Acworth,GA,Size M,8.86,3,UPS® Ground
+Detroit,Ada,MI,Size M,7.79,,UPS® Ground
+Detroit,Ada,OK,Size M,8.86,4,UPS® Ground
+Detroit,Adams,MA,Size M,8.69,4,UPS® Ground
+Detroit,Adams Run,SC,Size M,8.86,,UPS® Ground
+Detroit,Adamsville,TN,Size M,8.69,,UPS® Ground
+Detroit,Adel,GA,Size M,8.86,3,UPS® Ground
+Detroit,Adirondack,NY,Size M,8.69,,UPS® Ground
+Detroit,Adrian,MO,Size M,8.86,,UPS® Ground
+Detroit,Advance,NC,Size M,8.69,3,UPS® Ground
+Detroit,Affton,MO,Size M,8.69,3,UPS® Ground
+Detroit,Afton,NY,Size M,8.69,,UPS® Ground
+Detroit,Ahwahnee,CA,Size M,12.06,,UPS® Ground
+Detroit,Alabaster,AL,Size M,8.86,3,UPS® Ground
+Detroit,Alamo,CA,Size M,12.06,,UPS® Ground
+Detroit,Alapaha,GA,Size M,8.86,,UPS® Ground
+Detroit,Alba,TX,Size M,8.86,,UPS® Ground
+Cleveland,Brooklyn,NY,Size M,8.69,3,UPS® Ground
+Cleveland,Houston,TX,Size M,10.4,4,UPS® Ground
+Cleveland,Phoenix,AZ,Size M,12.06,5,UPS® Ground
+Cleveland,San Antonio,TX,Size M,10.4,4,UPS® Ground
+Cleveland,Chicago,IL,Size M,8.69,2,UPS® Ground
+Cleveland,Austin,TX,Size M,10.4,3,UPS® Ground
+Cleveland,Charlotte,NC,Size M,8.69,3,UPS® Ground
+Cleveland,New York,NY,Size M,8.69,3,UPS® Ground
+Cleveland,Atlanta,GA,Size M,8.86,3,UPS® Ground
+Cleveland,Orlando,FL,Size M,8.86,3,UPS® Ground
+Cleveland,Las Vegas,NV,Size M,12.06,4,UPS® Ground
+Cleveland,Colorado Springs,CO,Size M,10.4,4,UPS® Ground
+Cleveland,Marble Falls,TX,Size M,10.4,3,UPS® Ground
+Cleveland,San Diego,CA,Size M,12.06,4,UPS® Ground
+Cleveland,Tampa,FL,Size M,8.77,3,UPS® Ground
+Cleveland,Jacksonville,FL,Size M,8.86,3,UPS® Ground
+Cleveland,Louisville,KY,Size M,8.69,2,UPS® Ground
+Cleveland,Marietta,GA,Size M,8.86,3,UPS® Ground
+Cleveland,Raleigh,NC,Size M,8.69,3,UPS® Ground
+Cleveland,Fort Worth,TX,Size M,10.4,3,UPS® Ground
+Cleveland,Oklahoma City,OK,Size M,8.86,4,UPS® Ground
+Cleveland,Chesapeake,VA,Size M,8.69,3,UPS® Ground
+Cleveland,Dallas,TX,Size M,10.4,3,UPS® Ground
+Cleveland,Denver,CO,Size M,10.4,4,UPS® Ground
+Cleveland,Miami,FL,Size M,11.0,3,UPS® Ground
+Cleveland,Omaha,NE,Size M,8.86,3,UPS® Ground
+Cleveland,Pittsburgh,PA,Size M,7.79,2,UPS® Ground
+Cleveland,Portland,OR,Size M,12.06,4,UPS® Ground
+Cleveland,San Francisco,CA,Size M,11.97,5,UPS® Ground
+Cleveland,San Jose,CA,Size M,12.06,5,UPS® Ground
+Cleveland,Tucson,AZ,Size M,11.0,5,UPS® Ground
+Cleveland,Virginia Beach,VA,Size M,8.69,3,UPS® Ground
+Cleveland,Albuquerque,NM,Size M,11.0,5,UPS® Ground
+Cleveland,Canton,GA,Size M,8.86,3,UPS® Ground
+Cleveland,Gilbert,AZ,Size M,12.06,5,UPS® Ground
+Cleveland,Kansas City,MO,Size M,8.86,3,UPS® Ground
+Cleveland,Nashville,TN,Size M,8.69,3,UPS® Ground
+Cleveland,Saint Louis,MO,Size M,8.69,3,UPS® Ground
+Cleveland,Seattle,WA,Size M,12.06,5,UPS® Ground
+Cleveland,Boise,ID,Size M,11.0,4,UPS® Ground
+Cleveland,Indianapolis,IN,Size M,8.69,2,UPS® Ground
+Cleveland,Knoxville,TN,Size M,8.69,3,UPS® Ground
+Cleveland,Reno,NV,Size M,12.06,4,UPS® Ground
+Cleveland,Rochester,NY,Size M,8.69,3,UPS® Ground
+Cleveland,Bismarck,ND,Size M,10.4,4,UPS® Ground
+Cleveland,Columbia,MO,Size M,8.69,3,UPS® Ground
+Cleveland,Franklin,TN,Size M,8.69,3,UPS® Ground
+Cleveland,Los Angeles,CA,Size M,11.97,4,UPS® Ground
+Cleveland,Mesa,AZ,Size M,12.06,5,UPS® Ground
+Cleveland,Milwaukee,WI,Size M,8.69,3,UPS® Ground
+Cleveland,Abbeville,LA,Size M,8.86,4,UPS® Ground
+Cleveland,Abbot,ME,Size M,8.86,3,UPS® Ground
+Cleveland,Abingdon,MD,Size M,8.69,3,UPS® Ground
+Cleveland,Accord,NY,Size M,8.69,,UPS® Ground
+Cleveland,Acton,CA,Size M,12.06,4,UPS® Ground
+Cleveland,Acton,MA,Size M,8.69,3,UPS® Ground
+Cleveland,Acton,ME,Size M,8.86,,UPS® Ground
+Cleveland,Acworth,GA,Size M,8.86,3,UPS® Ground
+Cleveland,Ada,MI,Size M,8.24,,UPS® Ground
+Cleveland,Ada,OK,Size M,8.86,4,UPS® Ground
+Cleveland,Adams,MA,Size M,8.69,3,UPS® Ground
+Cleveland,Adams Run,SC,Size M,8.86,,UPS® Ground
+Cleveland,Adamsville,TN,Size M,8.69,,UPS® Ground
+Cleveland,Adel,GA,Size M,8.86,3,UPS® Ground
+Cleveland,Adirondack,NY,Size M,8.69,,UPS® Ground
+Cleveland,Adrian,MO,Size M,8.86,,UPS® Ground
+Cleveland,Advance,NC,Size M,8.69,3,UPS® Ground
+Cleveland,Affton,MO,Size M,8.69,3,UPS® Ground
+Cleveland,Afton,NY,Size M,8.69,,UPS® Ground
+Cleveland,Ahwahnee,CA,Size M,12.06,,UPS® Ground
+Cleveland,Alabaster,AL,Size M,8.69,3,UPS® Ground
+Cleveland,Alamo,CA,Size M,12.06,,UPS® Ground
+Cleveland,Alapaha,GA,Size M,8.86,,UPS® Ground
+Cleveland,Alba,TX,Size M,8.86,,UPS® Ground
+Philadelphia,Brooklyn,NY,Size M,7.79,1,UPS® Ground
+Philadelphia,Houston,TX,Size M,10.4,4,UPS® Ground
+Philadelphia,Phoenix,AZ,Size M,12.06,4,UPS® Ground
+Philadelphia,San Antonio,TX,Size M,11.0,4,UPS® Ground
+Philadelphia,Chicago,IL,Size M,8.86,3,UPS® Ground
+Philadelphia,Austin,TX,Size M,11.0,4,UPS® Ground
+Philadelphia,Charlotte,NC,Size M,8.69,3,UPS® Ground
+Philadelphia,New York,NY,Size M,7.79,1,UPS® Ground
+Philadelphia,Atlanta,GA,Size M,8.86,3,UPS® Ground
+Philadelphia,Orlando,FL,Size M,8.86,3,UPS® Ground
+Philadelphia,Las Vegas,NV,Size M,12.06,4,UPS® Ground
+Philadelphia,Colorado Springs,CO,Size M,11.0,4,UPS® Ground
+Philadelphia,Marble Falls,TX,Size M,11.0,4,UPS® Ground
+Philadelphia,San Diego,CA,Size M,12.06,5,UPS® Ground
+Philadelphia,Tampa,FL,Size M,8.77,3,UPS® Ground
+Philadelphia,Jacksonville,FL,Size M,8.86,3,UPS® Ground
+Philadelphia,Louisville,KY,Size M,8.69,3,UPS® Ground
+Philadelphia,Marietta,GA,Size M,8.86,3,UPS® Ground
+Philadelphia,Raleigh,NC,Size M,8.69,3,UPS® Ground
+Philadelphia,Fort Worth,TX,Size M,10.4,4,UPS® Ground
+Philadelphia,Oklahoma City,OK,Size M,10.4,4,UPS® Ground
+Philadelphia,Chesapeake,VA,Size M,8.24,1,UPS® Ground
+Philadelphia,Dallas,TX,Size M,10.4,4,UPS® Ground
+Philadelphia,Denver,CO,Size M,11.0,4,UPS® Ground
+Philadelphia,Miami,FL,Size M,10.4,3,UPS® Ground
+Philadelphia,Omaha,NE,Size M,10.4,3,UPS® Ground
+Philadelphia,Pittsburgh,PA,Size M,8.24,2,UPS® Ground
+Philadelphia,Portland,OR,Size M,12.06,5,UPS® Ground
+Philadelphia,San Francisco,CA,Size M,11.97,5,UPS® Ground
+Philadelphia,San Jose,CA,Size M,12.06,5,UPS® Ground
+Philadelphia,Tucson,AZ,Size M,12.06,4,UPS® Ground
+Philadelphia,Virginia Beach,VA,Size M,8.24,1,UPS® Ground
+Philadelphia,Albuquerque,NM,Size M,11.0,5,UPS® Ground
+Philadelphia,Canton,GA,Size M,8.86,3,UPS® Ground
+Philadelphia,Gilbert,AZ,Size M,12.06,4,UPS® Ground
+Philadelphia,Kansas City,MO,Size M,10.4,4,UPS® Ground
+Philadelphia,Nashville,TN,Size M,8.86,3,UPS® Ground
+Philadelphia,Saint Louis,MO,Size M,8.86,3,UPS® Ground
+Philadelphia,Seattle,WA,Size M,12.06,5,UPS® Ground
+Philadelphia,Boise,ID,Size M,12.06,4,UPS® Ground
+Philadelphia,Indianapolis,IN,Size M,8.86,3,UPS® Ground
+Philadelphia,Knoxville,TN,Size M,8.69,3,UPS® Ground
+Philadelphia,Reno,NV,Size M,12.06,4,UPS® Ground
+Philadelphia,Rochester,NY,Size M,8.24,3,UPS® Ground
+Philadelphia,Bismarck,ND,Size M,10.4,5,UPS® Ground
+Philadelphia,Columbia,MO,Size M,8.86,4,UPS® Ground
+Philadelphia,Franklin,TN,Size M,8.86,3,UPS® Ground
+Philadelphia,Los Angeles,CA,Size M,11.97,5,UPS® Ground
+Philadelphia,Mesa,AZ,Size M,12.06,4,UPS® Ground
+Philadelphia,Milwaukee,WI,Size M,8.86,3,UPS® Ground
+Philadelphia,Abbeville,LA,Size M,10.4,4,UPS® Ground
+Philadelphia,Abbot,ME,Size M,8.69,3,UPS® Ground
+Philadelphia,Abingdon,MD,Size M,7.79,1,UPS® Ground
+Philadelphia,Accord,NY,Size M,8.24,,UPS® Ground
+Philadelphia,Acton,CA,Size M,12.06,5,UPS® Ground
+Philadelphia,Acton,MA,Size M,8.24,3,UPS® Ground
+Philadelphia,Acton,ME,Size M,8.69,,UPS® Ground
+Philadelphia,Acworth,GA,Size M,8.86,3,UPS® Ground
+Philadelphia,Ada,MI,Size M,8.69,,UPS® Ground
+Philadelphia,Ada,OK,Size M,10.4,4,UPS® Ground
+Philadelphia,Adams,MA,Size M,8.24,3,UPS® Ground
+Philadelphia,Adams Run,SC,Size M,8.69,,UPS® Ground
+Philadelphia,Adamsville,TN,Size M,8.86,,UPS® Ground
+Philadelphia,Adel,GA,Size M,8.86,3,UPS® Ground
+Philadelphia,Adirondack,NY,Size M,8.24,,UPS® Ground
+Philadelphia,Adrian,MO,Size M,10.4,,UPS® Ground
+Philadelphia,Advance,NC,Size M,8.69,3,UPS® Ground
+Philadelphia,Affton,MO,Size M,8.86,3,UPS® Ground
+Philadelphia,Afton,NY,Size M,8.24,,UPS® Ground
+Philadelphia,Ahwahnee,CA,Size M,12.06,,UPS® Ground
+Philadelphia,Alabaster,AL,Size M,8.86,3,UPS® Ground
+Philadelphia,Alamo,CA,Size M,12.06,,UPS® Ground
+Philadelphia,Alapaha,GA,Size M,8.86,,UPS® Ground
+Philadelphia,Alba,TX,Size M,10.4,,UPS® Ground
+Allentown,Brooklyn,NY,Size M,7.79,2,UPS® Ground
+Allentown,Houston,TX,Size M,10.4,5,UPS® Ground
+Allentown,Phoenix,AZ,Size M,12.06,4,UPS® Ground
+Allentown,San Antonio,TX,Size M,11.0,4,UPS® Ground
+Allentown,Chicago,IL,Size M,8.86,3,UPS® Ground
+Allentown,Austin,TX,Size M,11.0,4,UPS® Ground
+Allentown,Charlotte,NC,Size M,8.69,3,UPS® Ground
+Allentown,New York,NY,Size M,8.24,2,UPS® Ground
+Allentown,Atlanta,GA,Size M,8.86,3,UPS® Ground
+Allentown,Orlando,FL,Size M,8.86,4,UPS® Ground
+Allentown,Las Vegas,NV,Size M,12.06,5,UPS® Ground
+Allentown,Colorado Springs,CO,Size M,11.0,4,UPS® Ground
+Allentown,Marble Falls,TX,Size M,11.0,4,UPS® Ground
+Allentown,San Diego,CA,Size M,12.06,5,UPS® Ground
+Allentown,Tampa,FL,Size M,8.77,4,UPS® Ground
+Allentown,Jacksonville,FL,Size M,8.86,4,UPS® Ground
+Allentown,Louisville,KY,Size M,8.69,3,UPS® Ground
+Allentown,Marietta,GA,Size M,8.86,3,UPS® Ground
+Allentown,Raleigh,NC,Size M,8.69,3,UPS® Ground
+Allentown,Fort Worth,TX,Size M,10.4,4,UPS® Ground
+Allentown,Oklahoma City,OK,Size M,10.4,4,UPS® Ground
+Allentown,Chesapeake,VA,Size M,8.24,2,UPS® Ground
+Allentown,Dallas,TX,Size M,10.4,4,UPS® Ground
+Allentown,Denver,CO,Size M,11.0,4,UPS® Ground
+Allentown,Miami,FL,Size M,11.0,4,UPS® Ground
+Allentown,Omaha,NE,Size M,10.4,3,UPS® Ground
+Allentown,Pittsburgh,PA,Size M,8.24,3,UPS® Ground
+Allentown,Portland,OR,Size M,12.06,5,UPS® Ground
+Allentown,San Francisco,CA,Size M,11.97,6,UPS® Ground
+Allentown,San Jose,CA,Size M,12.06,6,UPS® Ground
+Allentown,Tucson,AZ,Size M,12.06,4,UPS® Ground
+Allentown,Virginia Beach,VA,Size M,8.24,2,UPS® Ground
+Allentown,Albuquerque,NM,Size M,11.0,4,UPS® Ground
+Allentown,Canton,GA,Size M,8.86,3,UPS® Ground
+Allentown,Gilbert,AZ,Size M,12.06,4,UPS® Ground
+Allentown,Kansas City,MO,Size M,10.4,4,UPS® Ground
+Allentown,Nashville,TN,Size M,8.86,3,UPS® Ground
+Allentown,Saint Louis,MO,Size M,8.86,3,UPS® Ground
+Allentown,Seattle,WA,Size M,12.06,6,UPS® Ground
+Allentown,Boise,ID,Size M,12.06,4,UPS® Ground
+Allentown,Indianapolis,IN,Size M,8.69,3,UPS® Ground
+Allentown,Knoxville,TN,Size M,8.69,3,UPS® Ground
+Allentown,Reno,NV,Size M,12.06,4,UPS® Ground
+Allentown,Rochester,NY,Size M,8.24,3,UPS® Ground
+Allentown,Bismarck,ND,Size M,10.4,5,UPS® Ground
+Allentown,Columbia,MO,Size M,8.86,4,UPS® Ground
+Allentown,Franklin,TN,Size M,8.86,3,UPS® Ground
+Allentown,Los Angeles,CA,Size M,11.97,5,UPS® Ground
+Allentown,Mesa,AZ,Size M,12.06,4,UPS® Ground
+Allentown,Milwaukee,WI,Size M,8.86,3,UPS® Ground
+Allentown,Abbeville,LA,Size M,10.4,4,UPS® Ground
+Allentown,Abbot,ME,Size M,8.69,3,UPS® Ground
+Allentown,Abingdon,MD,Size M,7.79,2,UPS® Ground
+Allentown,Accord,NY,Size M,7.79,,UPS® Ground
+Allentown,Acton,CA,Size M,12.06,5,UPS® Ground
+Allentown,Acton,MA,Size M,8.24,3,UPS® Ground
+Allentown,Acton,ME,Size M,8.69,,UPS® Ground
+Allentown,Acworth,GA,Size M,8.86,3,UPS® Ground
+Allentown,Ada,MI,Size M,8.69,,UPS® Ground
+Allentown,Ada,OK,Size M,10.4,4,UPS® Ground
+Allentown,Adams,MA,Size M,8.24,3,UPS® Ground
+Allentown,Adams Run,SC,Size M,8.69,,UPS® Ground
+Allentown,Adamsville,TN,Size M,8.86,,UPS® Ground
+Allentown,Adel,GA,Size M,8.86,3,UPS® Ground
+Allentown,Adirondack,NY,Size M,8.24,,UPS® Ground
+Allentown,Adrian,MO,Size M,10.4,,UPS® Ground
+Allentown,Advance,NC,Size M,8.69,3,UPS® Ground
+Allentown,Affton,MO,Size M,8.86,3,UPS® Ground
+Allentown,Afton,NY,Size M,7.79,,UPS® Ground
+Allentown,Ahwahnee,CA,Size M,12.06,,UPS® Ground
+Allentown,Alabaster,AL,Size M,8.86,3,UPS® Ground
+Allentown,Alamo,CA,Size M,12.06,,UPS® Ground
+Allentown,Alapaha,GA,Size M,8.86,,UPS® Ground
+Allentown,Alba,TX,Size M,10.4,,UPS® Ground
+Harrisburg,Brooklyn,NY,Size M,7.79,2,UPS® Ground
+Harrisburg,Houston,TX,Size M,10.4,4,UPS® Ground
+Harrisburg,Phoenix,AZ,Size M,12.06,4,UPS® Ground
+Harrisburg,San Antonio,TX,Size M,11.0,4,UPS® Ground
+Harrisburg,Chicago,IL,Size M,8.86,3,UPS® Ground
+Harrisburg,Austin,TX,Size M,10.4,4,UPS® Ground
+Harrisburg,Charlotte,NC,Size M,8.69,3,UPS® Ground
+Harrisburg,New York,NY,Size M,7.79,2,UPS® Ground
+Harrisburg,Atlanta,GA,Size M,8.86,3,UPS® Ground
+Harrisburg,Orlando,FL,Size M,8.86,3,UPS® Ground
+Harrisburg,Las Vegas,NV,Size M,12.06,4,UPS® Ground
+Harrisburg,Colorado Springs,CO,Size M,11.0,4,UPS® Ground
+Harrisburg,Marble Falls,TX,Size M,10.4,4,UPS® Ground
+Harrisburg,San Diego,CA,Size M,12.06,5,UPS® Ground
+Harrisburg,Tampa,FL,Size M,8.77,3,UPS® Ground
+Harrisburg,Jacksonville,FL,Size M,8.86,3,UPS® Ground
+Harrisburg,Louisville,KY,Size M,8.69,3,UPS® Ground
+Harrisburg,Marietta,GA,Size M,8.86,3,UPS® Ground
+Harrisburg,Raleigh,NC,Size M,8.69,3,UPS® Ground
+Harrisburg,Fort Worth,TX,Size M,10.4,4,UPS® Ground
+Harrisburg,Oklahoma City,OK,Size M,10.4,4,UPS® Ground
+Harrisburg,Chesapeake,VA,Size M,8.24,2,UPS® Ground
+Harrisburg,Dallas,TX,Size M,10.4,4,UPS® Ground
+Harrisburg,Denver,CO,Size M,11.0,4,UPS® Ground
+Harrisburg,Miami,FL,Size M,8.86,3,UPS® Ground
+Harrisburg,Omaha,NE,Size M,10.4,3,UPS® Ground
+Harrisburg,Pittsburgh,PA,Size M,8.24,2,UPS® Ground
+Harrisburg,Portland,OR,Size M,12.06,5,UPS® Ground
+Harrisburg,San Francisco,CA,Size M,11.97,5,UPS® Ground
+Harrisburg,San Jose,CA,Size M,12.06,5,UPS® Ground
+Harrisburg,Tucson,AZ,Size M,12.06,4,UPS® Ground
+Harrisburg,Virginia Beach,VA,Size M,8.24,2,UPS® Ground
+Harrisburg,Albuquerque,NM,Size M,11.0,5,UPS® Ground
+Harrisburg,Canton,GA,Size M,8.69,3,UPS® Ground
+Harrisburg,Gilbert,AZ,Size M,12.06,4,UPS® Ground
+Harrisburg,Kansas City,MO,Size M,8.86,4,UPS® Ground
+Harrisburg,Nashville,TN,Size M,8.86,3,UPS® Ground
+Harrisburg,Saint Louis,MO,Size M,8.86,3,UPS® Ground
+Harrisburg,Seattle,WA,Size M,12.06,5,UPS® Ground
+Harrisburg,Boise,ID,Size M,12.06,4,UPS® Ground
+Harrisburg,Indianapolis,IN,Size M,8.69,3,UPS® Ground
+Harrisburg,Knoxville,TN,Size M,8.69,3,UPS® Ground
+Harrisburg,Reno,NV,Size M,12.06,4,UPS® Ground
+Harrisburg,Rochester,NY,Size M,8.24,3,UPS® Ground
+Harrisburg,Bismarck,ND,Size M,10.4,5,UPS® Ground
+Harrisburg,Columbia,MO,Size M,8.86,3,UPS® Ground
+Harrisburg,Franklin,TN,Size M,8.69,3,UPS® Ground
+Harrisburg,Los Angeles,CA,Size M,11.97,5,UPS® Ground
+Harrisburg,Mesa,AZ,Size M,12.06,4,UPS® Ground
+Harrisburg,Milwaukee,WI,Size M,8.86,3,UPS® Ground
+Harrisburg,Abbeville,LA,Size M,10.4,4,UPS® Ground
+Harrisburg,Abbot,ME,Size M,8.69,3,UPS® Ground
+Harrisburg,Abingdon,MD,Size M,7.79,2,UPS® Ground
+Harrisburg,Accord,NY,Size M,8.24,,UPS® Ground
+Harrisburg,Acton,CA,Size M,12.06,5,UPS® Ground
+Harrisburg,Acton,MA,Size M,8.24,3,UPS® Ground
+Harrisburg,Acton,ME,Size M,8.69,,UPS® Ground
+Harrisburg,Acworth,GA,Size M,8.69,3,UPS® Ground
+Harrisburg,Ada,MI,Size M,8.69,,UPS® Ground
+Harrisburg,Ada,OK,Size M,10.4,4,UPS® Ground
+Harrisburg,Adams,MA,Size M,8.24,3,UPS® Ground
+Harrisburg,Adams Run,SC,Size M,8.69,,UPS® Ground
+Harrisburg,Adamsville,TN,Size M,8.86,,UPS® Ground
+Harrisburg,Adel,GA,Size M,8.86,3,UPS® Ground
+Harrisburg,Adirondack,NY,Size M,8.24,,UPS® Ground
+Harrisburg,Adrian,MO,Size M,8.86,,UPS® Ground
+Harrisburg,Advance,NC,Size M,8.69,3,UPS® Ground
+Harrisburg,Affton,MO,Size M,8.86,3,UPS® Ground
+Harrisburg,Afton,NY,Size M,8.24,,UPS® Ground
+Harrisburg,Ahwahnee,CA,Size M,12.06,,UPS® Ground
+Harrisburg,Alabaster,AL,Size M,8.86,3,UPS® Ground
+Harrisburg,Alamo,CA,Size M,12.06,,UPS® Ground
+Harrisburg,Alapaha,GA,Size M,8.86,,UPS® Ground
+Harrisburg,Alba,TX,Size M,10.4,,UPS® Ground
+Newark,Brooklyn,NY,Size M,7.79,1,UPS® Ground
+Newark,Houston,TX,Size M,11.0,4,UPS® Ground
+Newark,Phoenix,AZ,Size M,12.06,4,UPS® Ground
+Newark,San Antonio,TX,Size M,11.0,4,UPS® Ground
+Newark,Chicago,IL,Size M,8.86,3,UPS® Ground
+Newark,Austin,TX,Size M,11.0,4,UPS® Ground
+Newark,Charlotte,NC,Size M,8.69,3,UPS® Ground
+Newark,New York,NY,Size M,7.79,1,UPS® Ground
+Newark,Atlanta,GA,Size M,8.86,3,UPS® Ground
+Newark,Orlando,FL,Size M,8.86,4,UPS® Ground
+Newark,Las Vegas,NV,Size M,12.06,5,UPS® Ground
+Newark,Colorado Springs,CO,Size M,11.0,4,UPS® Ground
+Newark,Marble Falls,TX,Size M,11.0,4,UPS® Ground
+Newark,San Diego,CA,Size M,12.06,5,UPS® Ground
+Newark,Tampa,FL,Size M,8.77,4,UPS® Ground
+Newark,Jacksonville,FL,Size M,8.86,4,UPS® Ground
+Newark,Louisville,KY,Size M,8.86,3,UPS® Ground
+Newark,Marietta,GA,Size M,8.86,3,UPS® Ground
+Newark,Raleigh,NC,Size M,8.69,3,UPS® Ground
+Newark,Fort Worth,TX,Size M,10.4,4,UPS® Ground
+Newark,Oklahoma City,OK,Size M,10.4,4,UPS® Ground
+Newark,Chesapeake,VA,Size M,8.24,3,UPS® Ground
+Newark,Dallas,TX,Size M,10.4,4,UPS® Ground
+Newark,Denver,CO,Size M,11.0,4,UPS® Ground
+Newark,Miami,FL,Size M,10.4,4,UPS® Ground
+Newark,Omaha,NE,Size M,10.4,4,UPS® Ground
+Newark,Pittsburgh,PA,Size M,8.69,3,UPS® Ground
+Newark,Portland,OR,Size M,12.06,5,UPS® Ground
+Newark,San Francisco,CA,Size M,11.97,5,UPS® Ground
+Newark,San Jose,CA,Size M,12.06,5,UPS® Ground
+Newark,Tucson,AZ,Size M,12.06,4,UPS® Ground
+Newark,Virginia Beach,VA,Size M,8.69,3,UPS® Ground
+Newark,Albuquerque,NM,Size M,11.0,4,UPS® Ground
+Newark,Canton,GA,Size M,8.86,3,UPS® Ground
+Newark,Gilbert,AZ,Size M,12.06,4,UPS® Ground
+Newark,Kansas City,MO,Size M,10.4,4,UPS® Ground
+Newark,Nashville,TN,Size M,8.86,3,UPS® Ground
+Newark,Saint Louis,MO,Size M,8.86,3,UPS® Ground
+Newark,Seattle,WA,Size M,12.06,6,UPS® Ground
+Newark,Boise,ID,Size M,12.06,5,UPS® Ground
+Newark,Indianapolis,IN,Size M,8.86,3,UPS® Ground
+Newark,Knoxville,TN,Size M,8.86,3,UPS® Ground
+Newark,Reno,NV,Size M,12.06,4,UPS® Ground
+Newark,Rochester,NY,Size M,8.24,3,UPS® Ground
+Newark,Bismarck,ND,Size M,10.4,5,UPS® Ground
+Newark,Columbia,MO,Size M,8.86,3,UPS® Ground
+Newark,Franklin,TN,Size M,8.86,3,UPS® Ground
+Newark,Los Angeles,CA,Size M,11.97,5,UPS® Ground
+Newark,Mesa,AZ,Size M,12.06,4,UPS® Ground
+Newark,Milwaukee,WI,Size M,8.86,4,UPS® Ground
+Newark,Abbeville,LA,Size M,10.4,4,UPS® Ground
+Newark,Abbot,ME,Size M,8.69,3,UPS® Ground
+Newark,Abingdon,MD,Size M,7.79,2,UPS® Ground
+Newark,Accord,NY,Size M,7.79,,UPS® Ground
+Newark,Acton,CA,Size M,12.06,5,UPS® Ground
+Newark,Acton,MA,Size M,8.24,2,UPS® Ground
+Newark,Acton,ME,Size M,8.69,,UPS® Ground
+Newark,Acworth,GA,Size M,8.86,3,UPS® Ground
+Newark,Ada,MI,Size M,8.86,,UPS® Ground
+Newark,Ada,OK,Size M,10.4,4,UPS® Ground
+Newark,Adams,MA,Size M,7.79,2,UPS® Ground
+Newark,Adams Run,SC,Size M,8.86,,UPS® Ground
+Newark,Adamsville,TN,Size M,8.86,,UPS® Ground
+Newark,Adel,GA,Size M,8.86,3,UPS® Ground
+Newark,Adirondack,NY,Size M,8.24,,UPS® Ground
+Newark,Adrian,MO,Size M,10.4,,UPS® Ground
+Newark,Advance,NC,Size M,8.69,3,UPS® Ground
+Newark,Affton,MO,Size M,8.86,3,UPS® Ground
+Newark,Afton,NY,Size M,7.79,,UPS® Ground
+Newark,Ahwahnee,CA,Size M,12.06,,UPS® Ground
+Newark,Alabaster,AL,Size M,8.86,4,UPS® Ground
+Newark,Alamo,CA,Size M,12.06,,UPS® Ground
+Newark,Alapaha,GA,Size M,8.86,,UPS® Ground
+Newark,Alba,TX,Size M,10.4,,UPS® Ground
+New York,Brooklyn,NY,Size M,7.79,1,UPS® Ground
+New York,Houston,TX,Size M,11.0,4,UPS® Ground
+New York,Phoenix,AZ,Size M,12.06,4,UPS® Ground
+New York,San Antonio,TX,Size M,11.0,4,UPS® Ground
+New York,Chicago,IL,Size M,8.86,3,UPS® Ground
+New York,Austin,TX,Size M,11.0,4,UPS® Ground
+New York,Charlotte,NC,Size M,8.69,3,UPS® Ground
+New York,New York,NY,Size M,7.79,1,UPS® Ground
+New York,Atlanta,GA,Size M,8.86,3,UPS® Ground
+New York,Orlando,FL,Size M,8.86,4,UPS® Ground
+New York,Las Vegas,NV,Size M,12.06,5,UPS® Ground
+New York,Colorado Springs,CO,Size M,11.0,4,UPS® Ground
+New York,Marble Falls,TX,Size M,11.0,5,UPS® Ground
+New York,San Diego,CA,Size M,12.06,5,UPS® Ground
+New York,Tampa,FL,Size M,8.77,4,UPS® Ground
+New York,Jacksonville,FL,Size M,8.86,4,UPS® Ground
+New York,Louisville,KY,Size M,8.86,3,UPS® Ground
+New York,Marietta,GA,Size M,8.86,3,UPS® Ground
+New York,Raleigh,NC,Size M,8.69,3,UPS® Ground
+New York,Fort Worth,TX,Size M,11.0,4,UPS® Ground
+New York,Oklahoma City,OK,Size M,10.4,5,UPS® Ground
+New York,Chesapeake,VA,Size M,8.69,3,UPS® Ground
+New York,Dallas,TX,Size M,11.0,4,UPS® Ground
+New York,Denver,CO,Size M,11.0,4,UPS® Ground
+New York,Miami,FL,Size M,10.4,4,UPS® Ground
+New York,Omaha,NE,Size M,10.4,4,UPS® Ground
+New York,Pittsburgh,PA,Size M,8.69,3,UPS® Ground
+New York,Portland,OR,Size M,12.06,5,UPS® Ground
+New York,San Francisco,CA,Size M,11.97,6,UPS® Ground
+New York,San Jose,CA,Size M,12.06,6,UPS® Ground
+New York,Tucson,AZ,Size M,12.06,4,UPS® Ground
+New York,Virginia Beach,VA,Size M,8.69,3,UPS® Ground
+New York,Albuquerque,NM,Size M,11.0,4,UPS® Ground
+New York,Canton,GA,Size M,8.86,3,UPS® Ground
+New York,Gilbert,AZ,Size M,12.06,4,UPS® Ground
+New York,Kansas City,MO,Size M,10.4,4,UPS® Ground
+New York,Nashville,TN,Size M,8.86,3,UPS® Ground
+New York,Saint Louis,MO,Size M,8.86,4,UPS® Ground
+New York,Seattle,WA,Size M,12.06,5,UPS® Ground
+New York,Boise,ID,Size M,12.06,5,UPS® Ground
+New York,Indianapolis,IN,Size M,8.86,3,UPS® Ground
+New York,Knoxville,TN,Size M,8.86,3,UPS® Ground
+New York,Reno,NV,Size M,12.06,5,UPS® Ground
+New York,Rochester,NY,Size M,8.24,3,UPS® Ground
+New York,Bismarck,ND,Size M,10.4,5,UPS® Ground
+New York,Columbia,MO,Size M,8.86,3,UPS® Ground
+New York,Franklin,TN,Size M,8.86,3,UPS® Ground
+New York,Los Angeles,CA,Size M,11.97,5,UPS® Ground
+New York,Mesa,AZ,Size M,12.06,4,UPS® Ground
+New York,Milwaukee,WI,Size M,8.86,4,UPS® Ground
+New York,Abbeville,LA,Size M,10.4,4,UPS® Ground
+New York,Abbot,ME,Size M,8.69,3,UPS® Ground
+New York,Abingdon,MD,Size M,8.24,2,UPS® Ground
+New York,Accord,NY,Size M,7.79,,UPS® Ground
+New York,Acton,CA,Size M,12.06,5,UPS® Ground
+New York,Acton,MA,Size M,8.24,2,UPS® Ground
+New York,Acton,ME,Size M,8.24,,UPS® Ground
+New York,Acworth,GA,Size M,8.86,3,UPS® Ground
+New York,Ada,MI,Size M,8.86,,UPS® Ground
+New York,Ada,OK,Size M,10.4,4,UPS® Ground
+New York,Adams,MA,Size M,7.79,2,UPS® Ground
+New York,Adams Run,SC,Size M,8.86,,UPS® Ground
+New York,Adamsville,TN,Size M,8.86,,UPS® Ground
+New York,Adel,GA,Size M,8.86,3,UPS® Ground
+New York,Adirondack,NY,Size M,8.24,,UPS® Ground
+New York,Adrian,MO,Size M,10.4,,UPS® Ground
+New York,Advance,NC,Size M,8.69,3,UPS® Ground
+New York,Affton,MO,Size M,8.86,4,UPS® Ground
+New York,Afton,NY,Size M,7.79,,UPS® Ground
+New York,Ahwahnee,CA,Size M,12.06,,UPS® Ground
+New York,Alabaster,AL,Size M,8.86,4,UPS® Ground
+New York,Alamo,CA,Size M,12.06,,UPS® Ground
+New York,Alapaha,GA,Size M,8.86,,UPS® Ground
+New York,Alba,TX,Size M,10.4,,UPS® Ground
+Boston,Brooklyn,NY,Size M,8.24,2,UPS® Ground
+Boston,Houston,TX,Size M,11.0,4,UPS® Ground
+Boston,Phoenix,AZ,Size M,12.06,5,UPS® Ground
+Boston,San Antonio,TX,Size M,11.0,5,UPS® Ground
+Boston,Chicago,IL,Size M,8.86,3,UPS® Ground
+Boston,Austin,TX,Size M,11.0,4,UPS® Ground
+Boston,Charlotte,NC,Size M,8.86,3,UPS® Ground
+Boston,New York,NY,Size M,8.24,2,UPS® Ground
+Boston,Atlanta,GA,Size M,8.86,4,UPS® Ground
+Boston,Orlando,FL,Size M,10.4,4,UPS® Ground
+Boston,Las Vegas,NV,Size M,12.06,5,UPS® Ground
+Boston,Colorado Springs,CO,Size M,11.0,4,UPS® Ground
+Boston,Marble Falls,TX,Size M,11.0,5,UPS® Ground
+Boston,San Diego,CA,Size M,12.06,5,UPS® Ground
+Boston,Tampa,FL,Size M,10.31,4,UPS® Ground
+Boston,Jacksonville,FL,Size M,10.4,4,UPS® Ground
+Boston,Louisville,KY,Size M,8.86,3,UPS® Ground
+Boston,Marietta,GA,Size M,8.86,4,UPS® Ground
+Boston,Raleigh,NC,Size M,8.86,3,UPS® Ground
+Boston,Fort Worth,TX,Size M,11.0,4,UPS® Ground
+Boston,Oklahoma City,OK,Size M,11.0,4,UPS® Ground
+Boston,Chesapeake,VA,Size M,8.69,3,UPS® Ground
+Boston,Dallas,TX,Size M,11.0,4,UPS® Ground
+Boston,Denver,CO,Size M,11.0,4,UPS® Ground
+Boston,Miami,FL,Size M,11.0,4,UPS® Ground
+Boston,Omaha,NE,Size M,10.4,4,UPS® Ground
+Boston,Pittsburgh,PA,Size M,8.69,3,UPS® Ground
+Boston,Portland,OR,Size M,12.06,5,UPS® Ground
+Boston,San Francisco,CA,Size M,11.97,6,UPS® Ground
+Boston,San Jose,CA,Size M,12.06,6,UPS® Ground
+Boston,Tucson,AZ,Size M,12.06,5,UPS® Ground
+Boston,Virginia Beach,VA,Size M,8.69,3,UPS® Ground
+Boston,Albuquerque,NM,Size M,12.06,6,UPS® Ground
+Boston,Canton,GA,Size M,8.86,4,UPS® Ground
+Boston,Gilbert,AZ,Size M,12.06,5,UPS® Ground
+Boston,Kansas City,MO,Size M,10.4,4,UPS® Ground
+Boston,Nashville,TN,Size M,8.86,4,UPS® Ground
+Boston,Saint Louis,MO,Size M,10.4,4,UPS® Ground
+Boston,Seattle,WA,Size M,12.06,5,UPS® Ground
+Boston,Boise,ID,Size M,12.06,5,UPS® Ground
+Boston,Indianapolis,IN,Size M,8.86,3,UPS® Ground
+Boston,Knoxville,TN,Size M,8.86,4,UPS® Ground
+Boston,Reno,NV,Size M,12.06,5,UPS® Ground
+Boston,Rochester,NY,Size M,8.69,3,UPS® Ground
+Boston,Bismarck,ND,Size M,11.0,5,UPS® Ground
+Boston,Columbia,MO,Size M,10.4,4,UPS® Ground
+Boston,Franklin,TN,Size M,8.86,4,UPS® Ground
+Boston,Los Angeles,CA,Size M,11.97,5,UPS® Ground
+Boston,Mesa,AZ,Size M,12.06,5,UPS® Ground
+Boston,Milwaukee,WI,Size M,8.86,4,UPS® Ground
+Boston,Abbeville,LA,Size M,11.0,5,UPS® Ground
+Boston,Abbot,ME,Size M,8.24,1,UPS® Ground
+Boston,Abingdon,MD,Size M,8.69,3,UPS® Ground
+Boston,Accord,NY,Size M,8.24,,UPS® Ground
+Boston,Acton,CA,Size M,12.06,5,UPS® Ground
+Boston,Acton,MA,Size M,7.79,1,UPS® Ground
+Boston,Acton,ME,Size M,7.79,,UPS® Ground
+Boston,Acworth,GA,Size M,8.86,4,UPS® Ground
+Boston,Ada,MI,Size M,8.86,,UPS® Ground
+Boston,Ada,OK,Size M,11.0,4,UPS® Ground
+Boston,Adams,MA,Size M,7.79,1,UPS® Ground
+Boston,Adams Run,SC,Size M,8.86,,UPS® Ground
+Boston,Adamsville,TN,Size M,10.4,,UPS® Ground
+Boston,Adel,GA,Size M,10.4,4,UPS® Ground
+Boston,Adirondack,NY,Size M,8.24,,UPS® Ground
+Boston,Adrian,MO,Size M,10.4,,UPS® Ground
+Boston,Advance,NC,Size M,8.86,3,UPS® Ground
+Boston,Affton,MO,Size M,10.4,4,UPS® Ground
+Boston,Afton,NY,Size M,8.24,,UPS® Ground
+Boston,Ahwahnee,CA,Size M,12.06,,UPS® Ground
+Boston,Alabaster,AL,Size M,10.4,4,UPS® Ground
+Boston,Alamo,CA,Size M,12.06,,UPS® Ground
+Boston,Alapaha,GA,Size M,10.4,,UPS® Ground
+Boston,Alba,TX,Size M,11.0,,UPS® Ground
+Baltimore,Brooklyn,NY,Size M,8.24,2,UPS® Ground
+Baltimore,Houston,TX,Size M,11.0,4,UPS® Ground
+Baltimore,Phoenix,AZ,Size M,12.06,4,UPS® Ground
+Baltimore,San Antonio,TX,Size M,11.0,5,UPS® Ground
+Baltimore,Chicago,IL,Size M,8.86,3,UPS® Ground
+Baltimore,Austin,TX,Size M,10.4,5,UPS® Ground
+Baltimore,Charlotte,NC,Size M,8.69,3,UPS® Ground
+Baltimore,New York,NY,Size M,8.24,2,UPS® Ground
+Baltimore,Atlanta,GA,Size M,8.86,3,UPS® Ground
+Baltimore,Orlando,FL,Size M,8.86,3,UPS® Ground
+Baltimore,Las Vegas,NV,Size M,12.06,5,UPS® Ground
+Baltimore,Colorado Springs,CO,Size M,11.0,4,UPS® Ground
+Baltimore,Marble Falls,TX,Size M,10.4,5,UPS® Ground
+Baltimore,San Diego,CA,Size M,12.06,5,UPS® Ground
+Baltimore,Tampa,FL,Size M,8.77,3,UPS® Ground
+Baltimore,Jacksonville,FL,Size M,8.86,3,UPS® Ground
+Baltimore,Louisville,KY,Size M,8.69,3,UPS® Ground
+Baltimore,Marietta,GA,Size M,8.86,3,UPS® Ground
+Baltimore,Raleigh,NC,Size M,8.24,2,UPS® Ground
+Baltimore,Fort Worth,TX,Size M,11.0,4,UPS® Ground
+Baltimore,Oklahoma City,OK,Size M,10.4,5,UPS® Ground
+Baltimore,Chesapeake,VA,Size M,8.24,1,UPS® Ground
+Baltimore,Dallas,TX,Size M,10.4,4,UPS® Ground
+Baltimore,Denver,CO,Size M,11.0,4,UPS® Ground
+Baltimore,Miami,FL,Size M,10.4,3,UPS® Ground
+Baltimore,Omaha,NE,Size M,10.4,4,UPS® Ground
+Baltimore,Pittsburgh,PA,Size M,8.24,3,UPS® Ground
+Baltimore,Portland,OR,Size M,12.06,5,UPS® Ground
+Baltimore,San Francisco,CA,Size M,11.97,5,UPS® Ground
+Baltimore,San Jose,CA,Size M,12.06,5,UPS® Ground
+Baltimore,Tucson,AZ,Size M,12.06,4,UPS® Ground
+Baltimore,Virginia Beach,VA,Size M,8.24,1,UPS® Ground
+Baltimore,Albuquerque,NM,Size M,11.0,6,UPS® Ground
+Baltimore,Canton,GA,Size M,8.86,3,UPS® Ground
+Baltimore,Gilbert,AZ,Size M,12.06,4,UPS® Ground
+Baltimore,Kansas City,MO,Size M,8.86,4,UPS® Ground
+Baltimore,Nashville,TN,Size M,8.86,3,UPS® Ground
+Baltimore,Saint Louis,MO,Size M,8.86,4,UPS® Ground
+Baltimore,Seattle,WA,Size M,12.06,5,UPS® Ground
+Baltimore,Boise,ID,Size M,12.06,5,UPS® Ground
+Baltimore,Indianapolis,IN,Size M,8.69,3,UPS® Ground
+Baltimore,Knoxville,TN,Size M,8.69,3,UPS® Ground
+Baltimore,Reno,NV,Size M,12.06,5,UPS® Ground
+Baltimore,Rochester,NY,Size M,8.24,3,UPS® Ground
+Baltimore,Bismarck,ND,Size M,10.4,6,UPS® Ground
+Baltimore,Columbia,MO,Size M,8.86,4,UPS® Ground
+Baltimore,Franklin,TN,Size M,8.86,3,UPS® Ground
+Baltimore,Los Angeles,CA,Size M,11.97,5,UPS® Ground
+Baltimore,Mesa,AZ,Size M,12.06,4,UPS® Ground
+Baltimore,Milwaukee,WI,Size M,8.86,4,UPS® Ground
+Baltimore,Abbeville,LA,Size M,10.4,4,UPS® Ground
+Baltimore,Abbot,ME,Size M,8.69,3,UPS® Ground
+Baltimore,Abingdon,MD,Size M,7.79,1,UPS® Ground
+Baltimore,Accord,NY,Size M,8.24,,UPS® Ground
+Baltimore,Acton,CA,Size M,12.06,5,UPS® Ground
+Baltimore,Acton,MA,Size M,8.69,3,UPS® Ground
+Baltimore,Acton,ME,Size M,8.69,,UPS® Ground
+Baltimore,Acworth,GA,Size M,8.86,3,UPS® Ground
+Baltimore,Ada,MI,Size M,8.69,,UPS® Ground
+Baltimore,Ada,OK,Size M,10.4,5,UPS® Ground
+Baltimore,Adams,MA,Size M,8.24,3,UPS® Ground
+Baltimore,Adams Run,SC,Size M,8.69,,UPS® Ground
+Baltimore,Adamsville,TN,Size M,8.86,,UPS® Ground
+Baltimore,Adel,GA,Size M,8.86,3,UPS® Ground
+Baltimore,Adirondack,NY,Size M,8.69,,UPS® Ground
+Baltimore,Adrian,MO,Size M,8.86,,UPS® Ground
+Baltimore,Advance,NC,Size M,8.24,3,UPS® Ground
+Baltimore,Affton,MO,Size M,8.86,4,UPS® Ground
+Baltimore,Afton,NY,Size M,8.24,,UPS® Ground
+Baltimore,Ahwahnee,CA,Size M,12.06,,UPS® Ground
+Baltimore,Alabaster,AL,Size M,8.86,3,UPS® Ground
+Baltimore,Alamo,CA,Size M,12.06,,UPS® Ground
+Baltimore,Alapaha,GA,Size M,8.86,,UPS® Ground
+Baltimore,Alba,TX,Size M,10.4,,UPS® Ground
+Washington,Brooklyn,NY,Size M,8.24,2,UPS® Ground
+Washington,Houston,TX,Size M,10.4,4,UPS® Ground
+Washington,Phoenix,AZ,Size M,12.06,4,UPS® Ground
+Washington,San Antonio,TX,Size M,10.4,5,UPS® Ground
+Washington,Chicago,IL,Size M,8.69,3,UPS® Ground
+Washington,Austin,TX,Size M,10.4,5,UPS® Ground
+Washington,Charlotte,NC,Size M,8.69,3,UPS® Ground
+Washington,New York,NY,Size M,8.24,2,UPS® Ground
+Washington,Atlanta,GA,Size M,8.69,3,UPS® Ground
+Washington,Orlando,FL,Size M,8.86,3,UPS® Ground
+Washington,Las Vegas,NV,Size M,12.06,5,UPS® Ground
+Washington,Colorado Springs,CO,Size M,11.0,4,UPS® Ground
+Washington,Marble Falls,TX,Size M,10.4,5,UPS® Ground
+Washington,San Diego,CA,Size M,12.06,5,UPS® Ground
+Washington,Tampa,FL,Size M,8.77,3,UPS® Ground
+Washington,Jacksonville,FL,Size M,8.86,3,UPS® Ground
+Washington,Louisville,KY,Size M,8.69,3,UPS® Ground
+Washington,Marietta,GA,Size M,8.69,3,UPS® Ground
+Washington,Raleigh,NC,Size M,8.24,2,UPS® Ground
+Washington,Fort Worth,TX,Size M,10.4,4,UPS® Ground
+Washington,Oklahoma City,OK,Size M,10.4,5,UPS® Ground
+Washington,Chesapeake,VA,Size M,7.79,1,UPS® Ground
+Washington,Dallas,TX,Size M,10.4,4,UPS® Ground
+Washington,Denver,CO,Size M,11.0,4,UPS® Ground
+Washington,Miami,FL,Size M,8.86,3,UPS® Ground
+Washington,Omaha,NE,Size M,10.4,4,UPS® Ground
+Washington,Pittsburgh,PA,Size M,8.24,3,UPS® Ground
+Washington,Portland,OR,Size M,12.06,5,UPS® Ground
+Washington,San Francisco,CA,Size M,11.97,5,UPS® Ground
+Washington,San Jose,CA,Size M,12.06,5,UPS® Ground
+Washington,Tucson,AZ,Size M,12.06,4,UPS® Ground
+Washington,Virginia Beach,VA,Size M,8.24,1,UPS® Ground
+Washington,Albuquerque,NM,Size M,11.0,6,UPS® Ground
+Washington,Canton,GA,Size M,8.69,3,UPS® Ground
+Washington,Gilbert,AZ,Size M,12.06,4,UPS® Ground
+Washington,Kansas City,MO,Size M,8.86,4,UPS® Ground
+Washington,Nashville,TN,Size M,8.69,3,UPS® Ground
+Washington,Saint Louis,MO,Size M,8.86,4,UPS® Ground
+Washington,Seattle,WA,Size M,12.06,5,UPS® Ground
+Washington,Boise,ID,Size M,12.06,5,UPS® Ground
+Washington,Indianapolis,IN,Size M,8.69,3,UPS® Ground
+Washington,Knoxville,TN,Size M,8.69,3,UPS® Ground
+Washington,Reno,NV,Size M,12.06,5,UPS® Ground
+Washington,Rochester,NY,Size M,8.24,3,UPS® Ground
+Washington,Bismarck,ND,Size M,10.4,6,UPS® Ground
+Washington,Columbia,MO,Size M,8.86,4,UPS® Ground
+Washington,Franklin,TN,Size M,8.86,3,UPS® Ground
+Washington,Los Angeles,CA,Size M,11.97,5,UPS® Ground
+Washington,Mesa,AZ,Size M,12.06,4,UPS® Ground
+Washington,Milwaukee,WI,Size M,8.86,4,UPS® Ground
+Washington,Abbeville,LA,Size M,10.4,4,UPS® Ground
+Washington,Abbot,ME,Size M,8.69,3,UPS® Ground
+Washington,Abingdon,MD,Size M,7.79,1,UPS® Ground
+Washington,Accord,NY,Size M,8.24,,UPS® Ground
+Washington,Acton,CA,Size M,12.06,5,UPS® Ground
+Washington,Acton,MA,Size M,8.69,3,UPS® Ground
+Washington,Acton,ME,Size M,8.69,,UPS® Ground
+Washington,Acworth,GA,Size M,8.69,3,UPS® Ground
+Washington,Ada,MI,Size M,8.69,,UPS® Ground
+Washington,Ada,OK,Size M,10.4,5,UPS® Ground
+Washington,Adams,MA,Size M,8.24,3,UPS® Ground
+Washington,Adams Run,SC,Size M,8.69,,UPS® Ground
+Washington,Adamsville,TN,Size M,8.86,,UPS® Ground
+Washington,Adel,GA,Size M,8.86,3,UPS® Ground
+Washington,Adirondack,NY,Size M,8.69,,UPS® Ground
+Washington,Adrian,MO,Size M,8.86,,UPS® Ground
+Washington,Advance,NC,Size M,8.24,3,UPS® Ground
+Washington,Affton,MO,Size M,8.86,4,UPS® Ground
+Washington,Afton,NY,Size M,8.24,,UPS® Ground
+Washington,Ahwahnee,CA,Size M,12.06,,UPS® Ground
+Washington,Alabaster,AL,Size M,8.86,3,UPS® Ground
+Washington,Alamo,CA,Size M,12.06,,UPS® Ground
+Washington,Alapaha,GA,Size M,8.86,,UPS® Ground
+Washington,Alba,TX,Size M,10.4,,UPS® Ground
+Charlotte,Brooklyn,NY,Size M,8.69,3,UPS® Ground
+Charlotte,Houston,TX,Size M,8.86,4,UPS® Ground
+Charlotte,Phoenix,AZ,Size M,11.0,4,UPS® Ground
+Charlotte,San Antonio,TX,Size M,10.4,4,UPS® Ground
+Charlotte,Chicago,IL,Size M,8.86,3,UPS® Ground
+Charlotte,Austin,TX,Size M,10.4,4,UPS® Ground
+Charlotte,Charlotte,NC,Size M,7.79,1,UPS® Ground
+Charlotte,New York,NY,Size M,8.69,3,UPS® Ground
+Charlotte,Atlanta,GA,Size M,8.69,3,UPS® Ground
+Charlotte,Orlando,FL,Size M,8.69,3,UPS® Ground
+Charlotte,Las Vegas,NV,Size M,12.06,4,UPS® Ground
+Charlotte,Colorado Springs,CO,Size M,10.4,4,UPS® Ground
+Charlotte,Marble Falls,TX,Size M,10.4,4,UPS® Ground
+Charlotte,San Diego,CA,Size M,12.06,5,UPS® Ground
+Charlotte,Tampa,FL,Size M,7.91,3,UPS® Ground
+Charlotte,Jacksonville,FL,Size M,8.69,3,UPS® Ground
+Charlotte,Louisville,KY,Size M,8.69,3,UPS® Ground
+Charlotte,Marietta,GA,Size M,8.69,3,UPS® Ground
+Charlotte,Raleigh,NC,Size M,7.79,1,UPS® Ground
+Charlotte,Fort Worth,TX,Size M,8.86,4,UPS® Ground
+Charlotte,Oklahoma City,OK,Size M,8.86,4,UPS® Ground
+Charlotte,Chesapeake,VA,Size M,8.24,1,UPS® Ground
+Charlotte,Dallas,TX,Size M,8.86,4,UPS® Ground
+Charlotte,Denver,CO,Size M,10.4,4,UPS® Ground
+Charlotte,Miami,FL,Size M,8.86,3,UPS® Ground
+Charlotte,Omaha,NE,Size M,8.86,4,UPS® Ground
+Charlotte,Pittsburgh,PA,Size M,8.69,3,UPS® Ground
+Charlotte,Portland,OR,Size M,12.06,5,UPS® Ground
+Charlotte,San Francisco,CA,Size M,11.97,5,UPS® Ground
+Charlotte,San Jose,CA,Size M,12.06,5,UPS® Ground
+Charlotte,Tucson,AZ,Size M,11.0,4,UPS® Ground
+Charlotte,Virginia Beach,VA,Size M,8.24,1,UPS® Ground
+Charlotte,Albuquerque,NM,Size M,11.0,5,UPS® Ground
+Charlotte,Canton,GA,Size M,8.69,3,UPS® Ground
+Charlotte,Gilbert,AZ,Size M,11.0,4,UPS® Ground
+Charlotte,Kansas City,MO,Size M,8.86,4,UPS® Ground
+Charlotte,Nashville,TN,Size M,8.69,3,UPS® Ground
+Charlotte,Saint Louis,MO,Size M,8.69,3,UPS® Ground
+Charlotte,Seattle,WA,Size M,12.06,6,UPS® Ground
+Charlotte,Boise,ID,Size M,12.06,4,UPS® Ground
+Charlotte,Indianapolis,IN,Size M,8.69,3,UPS® Ground
+Charlotte,Knoxville,TN,Size M,8.24,3,UPS® Ground
+Charlotte,Reno,NV,Size M,12.06,4,UPS® Ground
+Charlotte,Rochester,NY,Size M,8.69,4,UPS® Ground
+Charlotte,Bismarck,ND,Size M,10.4,5,UPS® Ground
+Charlotte,Columbia,MO,Size M,8.69,3,UPS® Ground
+Charlotte,Franklin,TN,Size M,8.69,3,UPS® Ground
+Charlotte,Los Angeles,CA,Size M,11.97,5,UPS® Ground
+Charlotte,Mesa,AZ,Size M,11.0,4,UPS® Ground
+Charlotte,Milwaukee,WI,Size M,8.86,3,UPS® Ground
+Charlotte,Abbeville,LA,Size M,8.86,3,UPS® Ground
+Charlotte,Abbot,ME,Size M,8.86,3,UPS® Ground
+Charlotte,Abingdon,MD,Size M,8.69,3,UPS® Ground
+Charlotte,Accord,NY,Size M,8.69,,UPS® Ground
+Charlotte,Acton,CA,Size M,12.06,5,UPS® Ground
+Charlotte,Acton,MA,Size M,8.86,3,UPS® Ground
+Charlotte,Acton,ME,Size M,8.86,,UPS® Ground
+Charlotte,Acworth,GA,Size M,8.69,3,UPS® Ground
+Charlotte,Ada,MI,Size M,8.86,,UPS® Ground
+Charlotte,Ada,OK,Size M,8.86,4,UPS® Ground
+Charlotte,Adams,MA,Size M,8.86,3,UPS® Ground
+Charlotte,Adams Run,SC,Size M,8.24,,UPS® Ground
+Charlotte,Adamsville,TN,Size M,8.69,,UPS® Ground
+Charlotte,Adel,GA,Size M,8.69,3,UPS® Ground
+Charlotte,Adirondack,NY,Size M,8.86,,UPS® Ground
+Charlotte,Adrian,MO,Size M,8.86,,UPS® Ground
+Charlotte,Advance,NC,Size M,7.79,1,UPS® Ground
+Charlotte,Affton,MO,Size M,8.69,3,UPS® Ground
+Charlotte,Afton,NY,Size M,8.69,,UPS® Ground
+Charlotte,Ahwahnee,CA,Size M,12.06,,UPS® Ground
+Charlotte,Alabaster,AL,Size M,8.69,3,UPS® Ground
+Charlotte,Alamo,CA,Size M,12.06,,UPS® Ground
+Charlotte,Alapaha,GA,Size M,8.69,,UPS® Ground
+Charlotte,Alba,TX,Size M,8.86,,UPS® Ground
+Raleigh,Brooklyn,NY,Size M,8.69,3,UPS® Ground
+Raleigh,Houston,TX,Size M,10.4,4,UPS® Ground
+Raleigh,Phoenix,AZ,Size M,12.06,5,UPS® Ground
+Raleigh,San Antonio,TX,Size M,10.4,4,UPS® Ground
+Raleigh,Chicago,IL,Size M,8.86,3,UPS® Ground
+Raleigh,Austin,TX,Size M,10.4,4,UPS® Ground
+Raleigh,Charlotte,NC,Size M,7.79,1,UPS® Ground
+Raleigh,New York,NY,Size M,8.69,3,UPS® Ground
+Raleigh,Atlanta,GA,Size M,8.69,3,UPS® Ground
+Raleigh,Orlando,FL,Size M,8.69,3,UPS® Ground
+Raleigh,Las Vegas,NV,Size M,12.06,5,UPS® Ground
+Raleigh,Colorado Springs,CO,Size M,11.0,5,UPS® Ground
+Raleigh,Marble Falls,TX,Size M,10.4,4,UPS® Ground
+Raleigh,San Diego,CA,Size M,12.06,5,UPS® Ground
+Raleigh,Tampa,FL,Size M,7.91,3,UPS® Ground
+Raleigh,Jacksonville,FL,Size M,8.69,3,UPS® Ground
+Raleigh,Louisville,KY,Size M,8.69,3,UPS® Ground
+Raleigh,Marietta,GA,Size M,8.69,3,UPS® Ground
+Raleigh,Raleigh,NC,Size M,7.79,1,UPS® Ground
+Raleigh,Fort Worth,TX,Size M,10.4,4,UPS® Ground
+Raleigh,Oklahoma City,OK,Size M,10.4,4,UPS® Ground
+Raleigh,Chesapeake,VA,Size M,8.24,2,UPS® Ground
+Raleigh,Dallas,TX,Size M,10.4,4,UPS® Ground
+Raleigh,Denver,CO,Size M,11.0,5,UPS® Ground
+Raleigh,Miami,FL,Size M,8.86,3,UPS® Ground
+Raleigh,Omaha,NE,Size M,10.4,4,UPS® Ground
+Raleigh,Pittsburgh,PA,Size M,8.69,3,UPS® Ground
+Raleigh,Portland,OR,Size M,12.06,5,UPS® Ground
+Raleigh,San Francisco,CA,Size M,11.97,6,UPS® Ground
+Raleigh,San Jose,CA,Size M,12.06,6,UPS® Ground
+Raleigh,Tucson,AZ,Size M,12.06,5,UPS® Ground
+Raleigh,Virginia Beach,VA,Size M,8.24,2,UPS® Ground
+Raleigh,Albuquerque,NM,Size M,11.0,5,UPS® Ground
+Raleigh,Canton,GA,Size M,8.69,3,UPS® Ground
+Raleigh,Gilbert,AZ,Size M,12.06,5,UPS® Ground
+Raleigh,Kansas City,MO,Size M,8.86,4,UPS® Ground
+Raleigh,Nashville,TN,Size M,8.69,3,UPS® Ground
+Raleigh,Saint Louis,MO,Size M,8.86,3,UPS® Ground
+Raleigh,Seattle,WA,Size M,12.06,6,UPS® Ground
+Raleigh,Boise,ID,Size M,12.06,5,UPS® Ground
+Raleigh,Indianapolis,IN,Size M,8.69,3,UPS® Ground
+Raleigh,Knoxville,TN,Size M,8.24,3,UPS® Ground
+Raleigh,Reno,NV,Size M,12.06,5,UPS® Ground
+Raleigh,Rochester,NY,Size M,8.69,4,UPS® Ground
+Raleigh,Bismarck,ND,Size M,10.4,5,UPS® Ground
+Raleigh,Columbia,MO,Size M,8.86,3,UPS® Ground
+Raleigh,Franklin,TN,Size M,8.69,3,UPS® Ground
+Raleigh,Los Angeles,CA,Size M,11.97,5,UPS® Ground
+Raleigh,Mesa,AZ,Size M,12.06,5,UPS® Ground
+Raleigh,Milwaukee,WI,Size M,8.86,3,UPS® Ground
+Raleigh,Abbeville,LA,Size M,8.86,3,UPS® Ground
+Raleigh,Abbot,ME,Size M,8.86,5,UPS® Ground
+Raleigh,Abingdon,MD,Size M,8.24,3,UPS® Ground
+Raleigh,Accord,NY,Size M,8.69,,UPS® Ground
+Raleigh,Acton,CA,Size M,12.06,5,UPS® Ground
+Raleigh,Acton,MA,Size M,8.69,3,UPS® Ground
+Raleigh,Acton,ME,Size M,8.86,,UPS® Ground
+Raleigh,Acworth,GA,Size M,8.69,3,UPS® Ground
+Raleigh,Ada,MI,Size M,8.69,,UPS® Ground
+Raleigh,Ada,OK,Size M,8.86,4,UPS® Ground
+Raleigh,Adams,MA,Size M,8.69,3,UPS® Ground
+Raleigh,Adams Run,SC,Size M,8.24,,UPS® Ground
+Raleigh,Adamsville,TN,Size M,8.69,,UPS® Ground
+Raleigh,Adel,GA,Size M,8.69,3,UPS® Ground
+Raleigh,Adirondack,NY,Size M,8.69,,UPS® Ground
+Raleigh,Adrian,MO,Size M,8.86,,UPS® Ground
+Raleigh,Advance,NC,Size M,7.79,1,UPS® Ground
+Raleigh,Affton,MO,Size M,8.86,3,UPS® Ground
+Raleigh,Afton,NY,Size M,8.69,,UPS® Ground
+Raleigh,Ahwahnee,CA,Size M,12.06,,UPS® Ground
+Raleigh,Alabaster,AL,Size M,8.69,3,UPS® Ground
+Raleigh,Alamo,CA,Size M,12.06,,UPS® Ground
+Raleigh,Alapaha,GA,Size M,8.69,,UPS® Ground
+Raleigh,Alba,TX,Size M,8.86,,UPS® Ground
+Jacksonville,Brooklyn,NY,Size M,8.86,3,UPS® Ground
+Jacksonville,Houston,TX,Size M,8.86,4,UPS® Ground
+Jacksonville,Phoenix,AZ,Size M,11.0,4,UPS® Ground
+Jacksonville,San Antonio,TX,Size M,10.4,3,UPS® Ground
+Jacksonville,Chicago,IL,Size M,8.86,3,UPS® Ground
+Jacksonville,Austin,TX,Size M,8.86,3,UPS® Ground
+Jacksonville,Charlotte,NC,Size M,8.69,3,UPS® Ground
+Jacksonville,New York,NY,Size M,8.86,3,UPS® Ground
+Jacksonville,Atlanta,GA,Size M,8.69,2,UPS® Ground
+Jacksonville,Orlando,FL,Size M,8.24,1,UPS® Ground
+Jacksonville,Las Vegas,NV,Size M,12.06,5,UPS® Ground
+Jacksonville,Colorado Springs,CO,Size M,11.0,4,UPS® Ground
+Jacksonville,Marble Falls,TX,Size M,8.86,3,UPS® Ground
+Jacksonville,San Diego,CA,Size M,12.06,5,UPS® Ground
+Jacksonville,Tampa,FL,Size M,7.4,1,UPS® Ground
+Jacksonville,Jacksonville,FL,Size M,7.79,1,UPS® Ground
+Jacksonville,Louisville,KY,Size M,8.69,3,UPS® Ground
+Jacksonville,Marietta,GA,Size M,8.69,2,UPS® Ground
+Jacksonville,Raleigh,NC,Size M,8.69,3,UPS® Ground
+Jacksonville,Fort Worth,TX,Size M,8.86,4,UPS® Ground
+Jacksonville,Oklahoma City,OK,Size M,8.86,3,UPS® Ground
+Jacksonville,Chesapeake,VA,Size M,8.69,3,UPS® Ground
+Jacksonville,Dallas,TX,Size M,8.86,4,UPS® Ground
+Jacksonville,Denver,CO,Size M,11.0,4,UPS® Ground
+Jacksonville,Miami,FL,Size M,8.69,1,UPS® Ground
+Jacksonville,Omaha,NE,Size M,10.4,3,UPS® Ground
+Jacksonville,Pittsburgh,PA,Size M,8.86,3,UPS® Ground
+Jacksonville,Portland,OR,Size M,12.06,5,UPS® Ground
+Jacksonville,San Francisco,CA,Size M,11.97,5,UPS® Ground
+Jacksonville,San Jose,CA,Size M,12.06,5,UPS® Ground
+Jacksonville,Tucson,AZ,Size M,11.0,4,UPS® Ground
+Jacksonville,Virginia Beach,VA,Size M,8.69,3,UPS® Ground
+Jacksonville,Albuquerque,NM,Size M,11.0,5,UPS® Ground
+Jacksonville,Canton,GA,Size M,8.69,3,UPS® Ground
+Jacksonville,Gilbert,AZ,Size M,11.0,4,UPS® Ground
+Jacksonville,Kansas City,MO,Size M,8.86,3,UPS® Ground
+Jacksonville,Nashville,TN,Size M,8.69,3,UPS® Ground
+Jacksonville,Saint Louis,MO,Size M,8.86,3,UPS® Ground
+Jacksonville,Seattle,WA,Size M,12.06,5,UPS® Ground
+Jacksonville,Boise,ID,Size M,12.06,7,UPS® Ground
+Jacksonville,Indianapolis,IN,Size M,8.86,4,UPS® Ground
+Jacksonville,Knoxville,TN,Size M,8.69,3,UPS® Ground
+Jacksonville,Reno,NV,Size M,12.06,5,UPS® Ground
+Jacksonville,Rochester,NY,Size M,8.86,4,UPS® Ground
+Jacksonville,Bismarck,ND,Size M,11.0,5,UPS® Ground
+Jacksonville,Columbia,MO,Size M,8.86,3,UPS® Ground
+Jacksonville,Franklin,TN,Size M,8.69,3,UPS® Ground
+Jacksonville,Los Angeles,CA,Size M,11.97,5,UPS® Ground
+Jacksonville,Mesa,AZ,Size M,11.0,4,UPS® Ground
+Jacksonville,Milwaukee,WI,Size M,8.86,4,UPS® Ground
+Jacksonville,Abbeville,LA,Size M,8.69,3,UPS® Ground
+Jacksonville,Abbot,ME,Size M,10.4,5,UPS® Ground
+Jacksonville,Abingdon,MD,Size M,8.86,3,UPS® Ground
+Jacksonville,Accord,NY,Size M,8.86,,UPS® Ground
+Jacksonville,Acton,CA,Size M,12.06,5,UPS® Ground
+Jacksonville,Acton,MA,Size M,10.4,4,UPS® Ground
+Jacksonville,Acton,ME,Size M,10.4,,UPS® Ground
+Jacksonville,Acworth,GA,Size M,8.69,2,UPS® Ground
+Jacksonville,Ada,MI,Size M,8.86,,UPS® Ground
+Jacksonville,Ada,OK,Size M,8.86,3,UPS® Ground
+Jacksonville,Adams,MA,Size M,8.86,4,UPS® Ground
+Jacksonville,Adams Run,SC,Size M,8.24,,UPS® Ground
+Jacksonville,Adamsville,TN,Size M,8.69,,UPS® Ground
+Jacksonville,Adel,GA,Size M,7.79,1,UPS® Ground
+Jacksonville,Adirondack,NY,Size M,10.4,,UPS® Ground
+Jacksonville,Adrian,MO,Size M,8.86,,UPS® Ground
+Jacksonville,Advance,NC,Size M,8.69,3,UPS® Ground
+Jacksonville,Affton,MO,Size M,8.86,3,UPS® Ground
+Jacksonville,Afton,NY,Size M,8.86,,UPS® Ground
+Jacksonville,Ahwahnee,CA,Size M,12.06,,UPS® Ground
+Jacksonville,Alabaster,AL,Size M,8.69,3,UPS® Ground
+Jacksonville,Alamo,CA,Size M,12.06,,UPS® Ground
+Jacksonville,Alapaha,GA,Size M,7.79,,UPS® Ground
+Jacksonville,Alba,TX,Size M,8.86,,UPS® Ground
+Tampa,Brooklyn,NY,Size M,10.4,4,UPS® Ground
+Tampa,Houston,TX,Size M,8.86,4,UPS® Ground
+Tampa,Phoenix,AZ,Size M,11.0,4,UPS® Ground
+Tampa,San Antonio,TX,Size M,10.4,3,UPS® Ground
+Tampa,Chicago,IL,Size M,10.4,3,UPS® Ground
+Tampa,Austin,TX,Size M,8.86,3,UPS® Ground
+Tampa,Charlotte,NC,Size M,8.69,3,UPS® Ground
+Tampa,New York,NY,Size M,8.86,3,UPS® Ground
+Tampa,Atlanta,GA,Size M,8.69,2,UPS® Ground
+Tampa,Orlando,FL,Size M,7.79,1,UPS® Ground
+Tampa,Las Vegas,NV,Size M,12.06,5,UPS® Ground
+Tampa,Colorado Springs,CO,Size M,11.0,4,UPS® Ground
+Tampa,Marble Falls,TX,Size M,8.86,3,UPS® Ground
+Tampa,San Diego,CA,Size M,12.06,5,UPS® Ground
+Tampa,Tampa,FL,Size M,7.26,1,UPS® Ground
+Tampa,Jacksonville,FL,Size M,8.24,1,UPS® Ground
+Tampa,Louisville,KY,Size M,8.86,3,UPS® Ground
+Tampa,Marietta,GA,Size M,8.69,2,UPS® Ground
+Tampa,Raleigh,NC,Size M,8.69,3,UPS® Ground
+Tampa,Fort Worth,TX,Size M,8.86,4,UPS® Ground
+Tampa,Oklahoma City,OK,Size M,10.4,3,UPS® Ground
+Tampa,Chesapeake,VA,Size M,8.86,3,UPS® Ground
+Tampa,Dallas,TX,Size M,8.86,4,UPS® Ground
+Tampa,Denver,CO,Size M,11.0,4,UPS® Ground
+Tampa,Miami,FL,Size M,8.24,1,UPS® Ground
+Tampa,Omaha,NE,Size M,10.4,4,UPS® Ground
+Tampa,Pittsburgh,PA,Size M,8.86,3,UPS® Ground
+Tampa,Portland,OR,Size M,12.06,5,UPS® Ground
+Tampa,San Francisco,CA,Size M,11.97,5,UPS® Ground
+Tampa,San Jose,CA,Size M,12.06,5,UPS® Ground
+Tampa,Tucson,AZ,Size M,11.0,4,UPS® Ground
+Tampa,Virginia Beach,VA,Size M,8.86,3,UPS® Ground
+Tampa,Albuquerque,NM,Size M,11.0,5,UPS® Ground
+Tampa,Canton,GA,Size M,8.69,3,UPS® Ground
+Tampa,Gilbert,AZ,Size M,11.0,4,UPS® Ground
+Tampa,Kansas City,MO,Size M,10.4,4,UPS® Ground
+Tampa,Nashville,TN,Size M,8.86,3,UPS® Ground
+Tampa,Saint Louis,MO,Size M,8.86,4,UPS® Ground
+Tampa,Seattle,WA,Size M,12.06,5,UPS® Ground
+Tampa,Boise,ID,Size M,12.06,7,UPS® Ground
+Tampa,Indianapolis,IN,Size M,8.86,4,UPS® Ground
+Tampa,Knoxville,TN,Size M,8.69,3,UPS® Ground
+Tampa,Reno,NV,Size M,12.06,5,UPS® Ground
+Tampa,Rochester,NY,Size M,10.4,4,UPS® Ground
+Tampa,Bismarck,ND,Size M,11.0,5,UPS® Ground
+Tampa,Columbia,MO,Size M,8.86,4,UPS® Ground
+Tampa,Franklin,TN,Size M,8.86,3,UPS® Ground
+Tampa,Los Angeles,CA,Size M,11.97,5,UPS® Ground
+Tampa,Mesa,AZ,Size M,11.0,4,UPS® Ground
+Tampa,Milwaukee,WI,Size M,10.4,4,UPS® Ground
+Tampa,Abbeville,LA,Size M,8.86,3,UPS® Ground
+Tampa,Abbot,ME,Size M,10.4,5,UPS® Ground
+Tampa,Abingdon,MD,Size M,8.86,4,UPS® Ground
+Tampa,Accord,NY,Size M,10.4,,UPS® Ground
+Tampa,Acton,CA,Size M,12.06,5,UPS® Ground
+Tampa,Acton,MA,Size M,10.4,4,UPS® Ground
+Tampa,Acton,ME,Size M,10.4,,UPS® Ground
+Tampa,Acworth,GA,Size M,8.69,2,UPS® Ground
+Tampa,Ada,MI,Size M,10.4,,UPS® Ground
+Tampa,Ada,OK,Size M,8.86,3,UPS® Ground
+Tampa,Adams,MA,Size M,10.4,4,UPS® Ground
+Tampa,Adams Run,SC,Size M,8.69,,UPS® Ground
+Tampa,Adamsville,TN,Size M,8.86,,UPS® Ground
+Tampa,Adel,GA,Size M,8.24,1,UPS® Ground
+Tampa,Adirondack,NY,Size M,10.4,,UPS® Ground
+Tampa,Adrian,MO,Size M,8.86,,UPS® Ground
+Tampa,Advance,NC,Size M,8.69,3,UPS® Ground
+Tampa,Affton,MO,Size M,8.86,4,UPS® Ground
+Tampa,Afton,NY,Size M,10.4,,UPS® Ground
+Tampa,Ahwahnee,CA,Size M,12.06,,UPS® Ground
+Tampa,Alabaster,AL,Size M,8.69,3,UPS® Ground
+Tampa,Alamo,CA,Size M,12.06,,UPS® Ground
+Tampa,Alapaha,GA,Size M,8.24,,UPS® Ground
+Tampa,Alba,TX,Size M,8.86,,UPS® Ground
+Miami,Brooklyn,NY,Size M,10.4,4,UPS® Ground
+Miami,Houston,TX,Size M,8.86,4,UPS® Ground
+Miami,Phoenix,AZ,Size M,12.06,4,UPS® Ground
+Miami,San Antonio,TX,Size M,10.4,4,UPS® Ground
+Miami,Chicago,IL,Size M,10.4,4,UPS® Ground
+Miami,Austin,TX,Size M,10.4,4,UPS® Ground
+Miami,Charlotte,NC,Size M,8.86,3,UPS® Ground
+Miami,New York,NY,Size M,10.4,4,UPS® Ground
+Miami,Atlanta,GA,Size M,8.86,3,UPS® Ground
+Miami,Orlando,FL,Size M,8.69,2,UPS® Ground
+Miami,Las Vegas,NV,Size M,12.06,5,UPS® Ground
+Miami,Colorado Springs,CO,Size M,11.0,4,UPS® Ground
+Miami,Marble Falls,TX,Size M,10.4,4,UPS® Ground
+Miami,San Diego,CA,Size M,12.06,5,UPS® Ground
+Miami,Tampa,FL,Size M,7.4,2,UPS® Ground
+Miami,Jacksonville,FL,Size M,8.69,2,UPS® Ground
+Miami,Louisville,KY,Size M,8.86,3,UPS® Ground
+Miami,Marietta,GA,Size M,8.86,3,UPS® Ground
+Miami,Raleigh,NC,Size M,8.86,3,UPS® Ground
+Miami,Fort Worth,TX,Size M,10.4,4,UPS® Ground
+Miami,Oklahoma City,OK,Size M,10.4,4,UPS® Ground
+Miami,Chesapeake,VA,Size M,8.86,3,UPS® Ground
+Miami,Dallas,TX,Size M,11.0,4,UPS® Ground
+Miami,Denver,CO,Size M,11.0,4,UPS® Ground
+Miami,Miami,FL,Size M,7.79,1,UPS® Ground
+Miami,Omaha,NE,Size M,10.4,4,UPS® Ground
+Miami,Pittsburgh,PA,Size M,10.4,3,UPS® Ground
+Miami,Portland,OR,Size M,12.06,5,UPS® Ground
+Miami,San Francisco,CA,Size M,11.97,5,UPS® Ground
+Miami,San Jose,CA,Size M,12.06,5,UPS® Ground
+Miami,Tucson,AZ,Size M,12.06,4,UPS® Ground
+Miami,Virginia Beach,VA,Size M,8.86,3,UPS® Ground
+Miami,Albuquerque,NM,Size M,11.0,5,UPS® Ground
+Miami,Canton,GA,Size M,8.86,3,UPS® Ground
+Miami,Gilbert,AZ,Size M,12.06,4,UPS® Ground
+Miami,Kansas City,MO,Size M,10.4,4,UPS® Ground
+Miami,Nashville,TN,Size M,8.86,3,UPS® Ground
+Miami,Saint Louis,MO,Size M,10.4,4,UPS® Ground
+Miami,Seattle,WA,Size M,12.06,5,UPS® Ground
+Miami,Boise,ID,Size M,12.06,6,UPS® Ground
+Miami,Indianapolis,IN,Size M,11.0,4,UPS® Ground
+Miami,Knoxville,TN,Size M,8.86,3,UPS® Ground
+Miami,Reno,NV,Size M,12.06,5,UPS® Ground
+Miami,Rochester,NY,Size M,10.4,4,UPS® Ground
+Miami,Bismarck,ND,Size M,12.06,5,UPS® Ground
+Miami,Columbia,MO,Size M,10.4,4,UPS® Ground
+Miami,Franklin,TN,Size M,8.86,3,UPS® Ground
+Miami,Los Angeles,CA,Size M,11.97,5,UPS® Ground
+Miami,Mesa,AZ,Size M,12.06,4,UPS® Ground
+Miami,Milwaukee,WI,Size M,10.4,4,UPS® Ground
+Miami,Abbeville,LA,Size M,8.86,4,UPS® Ground
+Miami,Abbot,ME,Size M,11.0,5,UPS® Ground
+Miami,Abingdon,MD,Size M,8.86,4,UPS® Ground
+Miami,Accord,NY,Size M,10.4,,UPS® Ground
+Miami,Acton,CA,Size M,12.06,5,UPS® Ground
+Miami,Acton,MA,Size M,10.4,4,UPS® Ground
+Miami,Acton,ME,Size M,10.4,,UPS® Ground
+Miami,Acworth,GA,Size M,8.86,3,UPS® Ground
+Miami,Ada,MI,Size M,10.4,,UPS® Ground
+Miami,Ada,OK,Size M,10.4,4,UPS® Ground
+Miami,Adams,MA,Size M,10.4,4,UPS® Ground
+Miami,Adams Run,SC,Size M,8.69,,UPS® Ground
+Miami,Adamsville,TN,Size M,8.86,,UPS® Ground
+Miami,Adel,GA,Size M,8.69,3,UPS® Ground
+Miami,Adirondack,NY,Size M,10.4,,UPS® Ground
+Miami,Adrian,MO,Size M,10.4,,UPS® Ground
+Miami,Advance,NC,Size M,8.86,3,UPS® Ground
+Miami,Affton,MO,Size M,10.4,4,UPS® Ground
+Miami,Afton,NY,Size M,10.4,,UPS® Ground
+Miami,Ahwahnee,CA,Size M,12.06,,UPS® Ground
+Miami,Alabaster,AL,Size M,8.86,3,UPS® Ground
+Miami,Alamo,CA,Size M,12.06,,UPS® Ground
+Miami,Alapaha,GA,Size M,8.69,,UPS® Ground
+Miami,Alba,TX,Size M,10.4,,UPS® Ground
