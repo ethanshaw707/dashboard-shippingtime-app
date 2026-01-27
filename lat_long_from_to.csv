@@ -1,0 +1,210 @@
+direction,name,city,state,postal_code,lat,lng
+FROM,Fulfillment - Ontario,Ontario,CA,91761,34.0633,-117.6509
+FROM,Fulfillment - Oklahoma City,Oklahoma City,OK,73102,35.4676,-97.5164
+FROM,Fulfillment - Stockton,Stockton,CA,95202,37.9577,-121.2908
+FROM,Fulfillment - Austin,Austin,TX,78701,30.2672,-97.7431
+FROM,Fulfillment - Atlanta,Atlanta,GA,30318,33.749,-84.388
+FROM,Fulfillment - Columbus,Columbus,OH,43215,39.9612,-82.9988
+FROM,Fulfillment - Philadelphia,Philadelphia,PA,19107,39.9526,-75.1652
+FROM,Fulfillment - Dallas,Dallas,TX,75201,32.7767,-96.797
+FROM,Fulfillment - Jacksonville,Jacksonville,FL,32202,30.3322,-81.6557
+FROM,Fulfillment - Chicago,Chicago,IL,60601,41.8781,-87.6298
+FROM,Fulfillment - Denver,Denver,CO,80202,39.7392,-104.9903
+FROM,Fulfillment - Portland,Portland,OR,97204,45.5152,-122.6784
+FROM,Fulfillment - Boston,Boston,MA,02108,42.3601,-71.0589
+FROM,Fulfillment - Boise,Boise,ID,83702,43.615,-116.2023
+FROM,Indianapolis Fulfillment,Indianapolis,IN,46241,39.7400,-86.2800
+FROM,Phoenix Fulfillment,Phoenix,AZ,85020,33.5917,-112.0439
+FROM,Saint Louis Fulfillment,Saint Louis,MO,63103,38.6208,-90.2116
+FROM,Harrisburg Fulfillment,Harrisburg,PA,17103,40.2824,-76.8810
+FROM,Louisville Fulfillment,Louisville,KY,40245,38.2900,-85.5100
+FROM,Nashville Fulfillment,Nashville,TN,37211,36.0851,-86.6908
+TO,Brooklyn,Brooklyn,NY,11217,40.6782,-73.9442
+TO,Phoenix,Phoenix,AZ,85004,33.4484,-112.074
+TO,Houston,Houston,TX,77002,29.7604,-95.3698
+TO,San Antonio,San Antonio,TX,78205,29.4241,-98.4936
+TO,Jacksonville,Jacksonville,FL,32202,30.3322,-81.6557
+TO,Chicago,Chicago,IL,60601,41.8781,-87.6298
+TO,Dallas,Dallas,TX,75201,32.7767,-96.797
+TO,Wilmington,Wilmington,DE,19801,39.7447,-75.5484
+TO,Austin,Austin,TX,78704,30.2672,-97.7431
+TO,Canton,Canton,OH,44702,40.7989,-81.3784
+TO,Charlotte,Charlotte,NC,28202,35.2271,-80.8431
+TO,New York,New York,NY,10001,40.7128,-74.006
+TO,Atlanta,Atlanta,GA,30303,33.749,-84.388
+TO,Franklin,Franklin,TN,37064,35.9251,-86.8689
+TO,Lexington,Lexington,KY,40507,38.0406,-84.5037
+TO,Orlando,Orlando,FL,32801,28.5383,-81.3792
+TO,Rochester,Rochester,NY,14604,43.1566,-77.6088
+TO,Las Vegas,Las Vegas,NV,89109,36.1699,-115.1398
+TO,Louisville,Louisville,KY,40202,38.2527,-85.7585
+TO,Marietta,Marietta,GA,30060,33.9526,-84.5499
+TO,Colorado Springs,Colorado Springs,CO,80903,38.8339,-104.8214
+TO,Columbus,Columbus,OH,43215,39.9612,-82.9988
+TO,Marble Falls,Marble Falls,TX,78654,30.5782,-98.2728
+TO,Tampa,Tampa,FL,33606,27.9506,-82.4572
+TO,San Diego,San Diego,CA,92101,32.7157,-117.1611
+TO,Columbia,Columbia,SC,29201,34.0007,-81.0348
+TO,Greenville,Greenville,SC,29601,34.8526,-82.394
+TO,Lebanon,Lebanon,TN,37087,36.2081,-86.2911
+TO,Salem,Salem,OR,97301,44.9429,-123.0351
+TO,Cleveland,Cleveland,OH,44114,41.4993,-81.6944
+TO,Denver,Denver,CO,80202,39.7392,-104.9903
+TO,Omaha,Omaha,NE,68102,41.2565,-95.9345
+TO,Portland,Portland,OR,97205,45.5152,-122.6784
+TO,Raleigh,Raleigh,NC,27601,35.7796,-78.6382
+TO,Richmond,Richmond,VA,23219,37.5407,-77.436
+TO,Jackson,Jackson,MS,39201,32.2988,-90.1848
+TO,Albany,Albany,NY,12207,42.6526,-73.7562
+TO,Fort Worth,Fort Worth,TX,76164,32.7555,-97.3308
+TO,Oklahoma City,Oklahoma City,OK,73102,35.4676,-97.5164
+TO,Chesapeake,Chesapeake,VA,23320,36.7682,-76.2875
+TO,Miami,Miami,FL,33131,25.7617,-80.1918
+TO,Milford,Milford,CT,06460,41.2223,-73.0565
+TO,Pittsburgh,Pittsburgh,PA,15222,40.4406,-79.9959
+TO,San Francisco,San Francisco,CA,94103,37.7749,-122.4194
+TO,San Jose,San Jose,CA,95112,37.3382,-121.8863
+TO,Tucson,Tucson,AZ,85701,32.2226,-110.9747
+TO,Virginia Beach,Virginia Beach,VA,23451,36.8529,-75.978
+TO,Albuquerque,Albuquerque,NM,87102,35.0844,-106.6504
+TO,Gilbert,Gilbert,AZ,85233,33.3528,-111.789
+TO,Springfield,Springfield,IL,62701,39.7817,-89.6501
+TO,Alexandria,Alexandria,VA,22314,38.8048,-77.0469
+TO,Kansas City,Kansas City,MO,64106,39.0997,-94.5786
+TO,Knoxville,Knoxville,TN,37902,35.9606,-83.9207
+TO,Lakewood,Lakewood,CO,80226,39.7047,-105.0814
+TO,Nashville,Nashville,TN,37203,36.1627,-86.7816
+TO,Saint Louis,Saint Louis,MO,63101,38.627,-90.1994
+TO,Seattle,Seattle,WA,98101,47.6062,-122.3321
+TO,Arlington,Arlington,TX,76010,32.7357,-97.1081
+TO,Aurora,Aurora,CO,80012,39.7294,-104.8319
+TO,Boise,Boise,ID,83702,43.6150,-116.2023
+TO,Indianapolis,Indianapolis,IN,46204,39.7684,-86.1581
+TO,Naples,Naples,CO,81137,37.1925,-105.9878
+TO,Reno,Reno,NV,89501,39.5296,-119.8138
+TO,Riverside,Riverside,CA,92522,33.9806,-117.3755
+TO,Bismarck,Bismarck,ND,58501,46.8083,-100.7837
+TO,Fresno,Fresno,TX,77545,29.5388,-95.4602
+TO,Lincoln,Lincoln,RI,02865,41.9215,-71.4723
+TO,Los Angeles,Los Angeles,CA,90012,34.0537,-118.2428
+TO,Mansfield,Mansfield,MA,02048,42.0334,-71.2189
+TO,Milwaukee,Milwaukee,WI,53202,43.0389,-87.9065
+TO,Madison,Madison,IN,47250,38.7359,-85.3799
+TO,Mesa,Mesa,AZ,85201,33.4152,-111.8315
+TO,Monroe,Monroe,NC,28112,34.9854,-80.5495
+TO,Philadelphia,Philadelphia,PA,19107,39.9526,-75.1652
+TO,Staten Island,Staten Island,NY,10301,40.5795,-74.1502
+TO,Washington,Washington,DC,20004,38.8951,-77.0364
+TO,Baltimore,Baltimore,MD,21202,39.2904,-76.6122
+TO,Decatur,Decatur,IL,62523,39.8403,-88.9548
+TO,Durham,Durham,NC,27701,35.9940,-78.8986
+TO,Fayetteville,Fayetteville,AR,72701,36.0822,-94.1719
+TO,Glendale,Glendale,AZ,85301,33.5387,-112.1860
+TO,Midland,Midland,GA,31820,32.5674,-84.8430
+TO,Scottsdale,Scottsdale,AZ,85251,33.4942,-111.9261
+TO,Woodstock,Woodstock,GA,30188,34.1015,-84.5194
+TO,Chandler,Chandler,AZ,85225,33.3062,-111.8413
+TO,Cincinnati,Cincinnati,OH,45202,39.1031,-84.5120
+TO,Covington,Covington,LA,70433,30.4755,-90.1009
+TO,Fort Myers,Fort Myers,FL,33901,26.6406,-81.8723
+TO,Greensboro,Greensboro,NC,27401,36.0726,-79.7920
+TO,Henderson,Henderson,TX,75652,32.1532,-94.7994
+TO,Hamilton,Hamilton,MI,49419,42.6514,-86.0053
+TO,Lewisburg,Lewisburg,PA,17837,40.9645,-76.8844
+TO,Littleton,Littleton,CO,80120,39.6133,-105.0166
+TO,Mount Pleasant,Mount Pleasant,SC,29464,32.8323,-79.8284
+TO,Pasadena,Pasadena,MD,21122,39.1073,-76.5716
+TO,Plano,Plano,TX,75074,33.0198,-96.6989
+TO,Sanford,Sanford,NC,27330,35.4799,-79.1803
+TO,Wayne,Wayne,ME,04284,44.3487,-70.0662
+TO,Ashland,Ashland,PA,17921,40.7818,-76.3458
+TO,Burlington,Burlington,WI,53105,42.6786,-88.2762
+TO,Centerville,Centerville,IA,52544,40.7347,-92.8741
+TO,Clayton,Clayton,NC,27520,35.6507,-78.4564
+TO,Encinitas,Encinitas,CA,92024,33.0369,-117.2919
+TO,Fort Collins,Fort Collins,CO,80521,40.5853,-105.0844
+TO,Golden,Golden,CO,80401,39.7555,-105.2211
+TO,Hudson,Hudson,NC,28638,35.8460,-81.4920
+TO,Katy,Katy,TX,77493,29.7858,-95.8244
+TO,Lancaster,Lancaster,SC,29720,34.7204,-80.7709
+TO,Newark,Newark,NJ,07102,40.7357,-74.1724
+TO,Parker,Parker,CO,80138,39.5186,-104.7614
+TO,Plymouth,Plymouth,MA,02360,41.9584,-70.6673
+TO,Rancho Cucamonga,Rancho Cucamonga,CA,91730,34.1064,-117.5931
+TO,Rockville,Rockville,MD,20850,39.0839,-77.1528
+TO,Sacramento,Sacramento,CA,95814,38.5816,-121.4944
+TO,Tallahassee,Tallahassee,FL,32301,30.4383,-84.2807
+TO,The Villages,The Villages,FL,32162,28.9270,-82.0038
+TO,Westfield,Westfield,IN,46074,40.0428,-86.1275
+TO,Waterloo,Waterloo,IA,50703,42.4928,-92.3426
+TO,West Chester,West Chester,PA,19380,39.9607,-75.6055
+TO,Bend,Bend,OR,97703,44.0582,-121.3153
+TO,Amarillo,Amarillo,TX,79101,35.2219,-101.8313
+TO,Auburn,Auburn,MA,01501,42.1945,-71.8356
+TO,Bakersfield,Bakersfield,CA,93301,35.3733,-119.0187
+TO,Boca Raton,Boca Raton,FL,33432,26.3683,-80.1289
+TO,Benton,Benton,LA,71006,32.6940,-93.7410
+TO,Bradenton,Bradenton,FL,34205,27.4989,-82.5748
+TO,Dayton,Dayton,OH,45402,39.7589,-84.1916
+TO,Duluth,Duluth,MN,55802,46.7867,-92.1005
+TO,Englewood,Englewood,CO,80110,39.6478,-104.9878
+TO,Fort Wayne,Fort Wayne,IN,46802,41.0793,-85.1394
+TO,Frederick,Frederick,MD,21701,39.4143,-77.4105
+TO,Fredericksburg,Fredericksburg,VA,22401,38.3032,-77.4605
+TO,Gainesville,Gainesville,FL,32601,29.6516,-82.3248
+TO,Grand Rapids,Grand Rapids,MI,49503,42.9634,-85.6681
+TO,Green Bay,Green Bay,WI,54301,44.5133,-88.0133
+TO,Morgantown,Morgantown,WV,26505,39.6295,-79.9559
+TO,Pensacola,Pensacola,FL,32502,30.4213,-87.2169
+TO,Princeton,Princeton,MA,01541,42.4501,-71.8756
+TO,Peoria,Peoria,AZ,85345,33.5806,-112.2374
+TO,Saint Paul,Saint Paul,MN,55102,44.9537,-93.0900
+TO,Savannah,Savannah,GA,31401,32.0809,-81.0912
+TO,Seaford,Seaford,NY,11783,40.6659,-73.4882
+TO,Seymour,Seymour,IN,47274,38.9592,-85.8903
+TO,Spokane,Spokane,WA,99201,47.6588,-117.4260
+TO,Windsor,Windsor,CO,80550,40.4775,-104.9014
+TO,Winston-Salem,Winston-Salem,NC,27101,36.0999,-80.2442
+TO,Worcester,Worcester,MA,01608,42.2626,-71.8023
+TO,York,York,PA,17401,39.9626,-76.7277
+TO,Antioch,Antioch,TN,37013,36.0600,-86.6720
+TO,Athens,Athens,GA,30601,33.9519,-83.3576
+TO,Corona,Corona,CA,92882,33.8753,-117.5664
+TO,Fairfield,Fairfield,CA,94533,38.2494,-122.0399
+TO,Germantown,Germantown,MD,20876,39.1732,-77.2717
+TO,Hillsboro,Hillsboro,OR,97123,45.5229,-122.9898
+TO,Hope Mills,Hope Mills,NC,28348,34.9704,-78.9442
+TO,Hendersonville,Hendersonville,NC,28792,35.3187,-82.4609
+TO,Holly Springs,Holly Springs,MS,38635,34.7676,-89.4489
+TO,Homer,Homer,AK,99603,59.6425,-151.5483
+TO,Laurel,Laurel,MD,20707,39.0993,-76.8483
+TO,Long Beach,Long Beach,CA,90802,33.7701,-118.1937
+TO,Manteca,Manteca,CA,95337,37.7974,-121.2161
+TO,Maryville,Maryville,TN,37801,35.7565,-83.9705
+TO,Magnolia,Magnolia,MS,39652,31.1432,-90.4584
+TO,Memphis,Memphis,TN,38103,35.1495,-90.0490
+TO,Milton,Milton,MA,02186,42.2495,-71.0662
+TO,Montgomery,Montgomery,TX,77356,30.3883,-95.6963
+TO,Myrtle Beach,Myrtle Beach,SC,29577,33.6891,-78.8867
+TO,New Market,New Market,AL,35761,34.9104,-86.4278
+TO,Ocala,Ocala,FL,34471,29.1872,-82.1401
+TO,Olathe,Olathe,KS,66061,38.8814,-94.8191
+TO,Oxford,Oxford,MI,48371,42.8248,-83.2647
+TO,Palm Beach Gardens,Palm Beach Gardens,FL,33410,26.8234,-80.1387
+TO,Roseville,Roseville,CA,95678,38.7521,-121.2880
+TO,Roswell,Roswell,GA,30075,34.0232,-84.3616
+TO,Rockwall,Rockwall,TX,75087,32.9312,-96.4597
+TO,Spring,Spring,TX,77373,30.0799,-95.4172
+TO,Salisbury,Salisbury,MA,01952,42.8418,-70.8615
+TO,Santa Rosa,Santa Rosa,CA,95404,38.4405,-122.7144
+TO,Sarasota,Sarasota,FL,34236,27.3364,-82.5307
+TO,Vancouver,Vancouver,WA,98660,45.6387,-122.6615
+TO,Westminster,Westminster,MD,21157,39.5754,-76.9958
+TO,Canton,Canton,GA,30114,34.2368,-84.4908
+TO,Columbia,Columbia,MO,65201,38.9517,-92.3341
+TO,Naples,Naples,FL,34102,26.1420,-81.7948
+TO,Fresno,Fresno,CA,93721,36.7378,-119.7871
+TO,Cleveland,Cleveland,TN,37311,35.1595,-84.8766
+TO,Henderson,Henderson,NV,89015,36.0395,-114.9817
+TO,Lincoln,Lincoln,NE,68508,40.8136,-96.7026
+TO,Wilmington,Wilmington,NC,28401,34.2257,-77.9447

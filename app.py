@@ -3,6 +3,7 @@ import pandas as pd
 import altair as alt
 import streamlit as st
 import polars as pl
+import pydeck as pdk
 from pathlib import Path
 from itertools import combinations
 
@@ -26,58 +27,252 @@ EXCLUDED_CITIES = {
     "Alapaha",
     "Alba",
 }
-DESTINATION_WEIGHTS = {
-    "New York, NY": 8.0,
-    "Brooklyn, NY": 6.0,
-    "Los Angeles, CA": 6.0,
-    "Chicago, IL": 6.0,
-    "Houston, TX": 5.0,
-    "Atlanta, GA": 5.0,
-    "Phoenix, AZ": 4.0,
-    "Dallas, TX": 4.0,
-    "San Francisco, CA": 4.0,
-    "Miami, FL": 3.0,
-    "Seattle, WA": 3.0,
-    "Denver, CO": 3.0,
-    "San Diego, CA": 3.0,
-    "Austin, TX": 1.6,
-    "San Jose, CA": 1.6,
-    "San Antonio, TX": 1.4,
-    "Charlotte, NC": 1.3,
-    "Orlando, FL": 1.2,
-    "Las Vegas, NV": 1.2,
-    "Nashville, TN": 1.2,
-    "Tampa, FL": 1.1,
-    "Raleigh, NC": 1.1,
-    "Portland, OR": 1.1,
-    "Jacksonville, FL": 1.0,
-    "Knoxville, TN": 1.0,
-    "Louisville, KY": 1.0,
-    "Kansas City, MO": 1.0,
-    "Saint Louis, MO": 1.0,
-    "Indianapolis, IN": 1.0,
-    "Albuquerque, NM": 0.9,
-    "Fort Worth, TX": 0.9,
-    "Oklahoma City, OK": 0.8,
-    "Colorado Springs, CO": 0.7,
-    "Pittsburgh, PA": 0.7,
-    "Tucson, AZ": 0.7,
-    "Reno, NV": 0.6,
-    "Boise, ID": 0.6,
-    "Mesa, AZ": 0.6,
-    "Omaha, NE": 0.6,
-    "Milwaukee, WI": 0.6,
-    "Virginia Beach, VA": 0.6,
-    "Gilbert, AZ": 0.5,
-    "Rochester, NY": 0.5,
-    "Columbia, MO": 0.5,
-    "Chesapeake, VA": 0.5,
-    "Marietta, GA": 0.5,
-    "Canton, GA": 0.4,
-    "Franklin, TN": 0.4,
-    "Marble Falls, TX": 0.3,
-    "Bismarck, ND": 0.3,
+STATE_COUNTS = {
+    "CA": 832,
+    "TX": 759,
+    "FL": 573,
+    "NY": 555,
+    "PA": 440,
+    "NC": 400,
+    "OH": 386,
+    "GA": 357,
+    "IL": 334,
+    "VA": 317,
+    "NJ": 309,
+    "MI": 300,
+    "CO": 268,
+    "MA": 266,
+    "TN": 266,
+    "WI": 230,
+    "IN": 211,
+    "WA": 210,
+    "AZ": 207,
+    "MO": 205,
+    "MD": 200,
+    "MN": 180,
+    "OR": 154,
+    "SC": 150,
+    "CT": 132,
+    "OK": 132,
+    "AL": 129,
+    "KY": 128,
+    "LA": 102,
+    "IA": 96,
+    "ID": 96,
+    "AR": 93,
+    "KS": 85,
+    "UT": 82,
+    "NH": 75,
+    "WV": 75,
+    "ME": 72,
+    "NV": 70,
+    "NE": 62,
+    "MS": 57,
+    "NM": 53,
+    "MT": 50,
+    "ND": 49,
+    "RI": 47,
+    "DE": 44,
+    "VT": 32,
+    "WY": 30,
+    "AK": 29,
+    "HI": 21,
+    "SD": 21,
+    "DC": 10,
+    "AE": 2,
+    "AP": 2,
 }
+V3_CITY_COUNTS = {
+    "brooklyn, ny": 39,
+    "phoenix, az": 37,
+    "houston, tx": 38,
+    "san antonio, tx": 33,
+    "jacksonville, fl": 21,
+    "chicago, il": 28,
+    "dallas, tx": 17,
+    "wilmington, de": 7,
+    "wilmington, nc": 8,
+    "austin, tx": 26,
+    "canton, oh": 4,
+    "canton, ga": 15,
+    "charlotte, nc": 26,
+    "new york, ny": 25,
+    "atlanta, ga": 24,
+    "franklin, tn": 13,
+    "lexington, ky": 11,
+    "orlando, fl": 24,
+    "rochester, ny": 14,
+    "las vegas, nv": 23,
+    "louisville, ky": 19,
+    "marietta, ga": 19,
+    "colorado springs, co": 22,
+    "columbus, oh": 9,
+    "marble falls, tx": 22,
+    "tampa, fl": 22,
+    "san diego, ca": 22,
+    "columbia, sc": 3,
+    "columbia, mo": 13,
+    "greenville, sc": 4,
+    "lebanon, tn": 8,
+    "salem, or": 11,
+    "cleveland, oh": 2,
+    "cleveland, tn": 11,
+    "denver, co": 17,
+    "omaha, ne": 17,
+    "portland, or": 17,
+    "raleigh, nc": 19,
+    "richmond, va": 7,
+    "jackson, ms": 1,
+    "albany, ny": 11,
+    "fort worth, tx": 18,
+    "oklahoma city, ok": 18,
+    "chesapeake, va": 17,
+    "miami, fl": 17,
+    "milford, ct": 4,
+    "pittsburgh, pa": 17,
+    "san francisco, ca": 17,
+    "san jose, ca": 17,
+    "tucson, az": 17,
+    "virginia beach, va": 17,
+    "albuquerque, nm": 16,
+    "gilbert, az": 15,
+    "springfield, il": 5,
+    "alexandria, va": 12,
+    "kansas city, mo": 15,
+    "knoxville, tn": 14,
+    "lakewood, co": 6,
+    "nashville, tn": 15,
+    "saint louis, mo": 15,
+    "seattle, wa": 15,
+    "arlington, tx": 5,
+    "aurora, co": 9,
+    "boise, id": 14,
+    "indianapolis, in": 14,
+    "naples, fl": 13,
+    "reno, nv": 14,
+    "riverside, ca": 13,
+    "bismarck, nd": 13,
+    "fresno, tx": 1,
+    "fresno, ca": 12,
+    "lincoln, ri": 1,
+    "lincoln, ne": 8,
+    "los angeles, ca": 13,
+    "mansfield, ma": 2,
+    "milwaukee, wi": 13,
+    "madison, in": 1,
+    "mesa, az": 13,
+    "monroe, nc": 4,
+    "philadelphia, pa": 13,
+    "staten island, ny": 13,
+    "washington, dc": 10,
+    "baltimore, md": 11,
+    "decatur, il": 2,
+    "durham, nc": 10,
+    "fayetteville, ar": 4,
+    "glendale, az": 7,
+    "midland, ga": 6,
+    "scottsdale, az": 12,
+    "woodstock, ga": 6,
+    "chandler, az": 8,
+    "cincinnati, oh": 11,
+    "covington, la": 3,
+    "fort myers, fl": 11,
+    "greensboro, nc": 10,
+    "henderson, tx": 2,
+    "henderson, nv": 8,
+    "hamilton, mi": 1,
+    "lewisburg, pa": 10,
+    "littleton, co": 10,
+    "mount pleasant, sc": 7,
+    "pasadena, md": 3,
+    "plano, tx": 11,
+    "sanford, nc": 4,
+    "wayne, me": 2,
+    "ashland, pa": 2,
+    "burlington, wi": 1,
+    "centerville, ia": 1,
+    "clayton, nc": 4,
+    "encinitas, ca": 10,
+    "fort collins, co": 10,
+    "golden, co": 9,
+    "hudson, nc": 2,
+    "katy, tx": 10,
+    "lancaster, sc": 1,
+    "newark, nj": 3,
+    "parker, co": 9,
+    "plymouth, ma": 1,
+    "rancho cucamonga, ca": 10,
+    "rockville, md": 8,
+    "sacramento, ca": 10,
+    "tallahassee, fl": 10,
+    "the villages, fl": 10,
+    "westfield, in": 6,
+    "waterloo, ia": 1,
+    "west chester, pa": 7,
+    "bend, or": 10,
+    "amarillo, tx": 9,
+    "auburn, ma": 2,
+    "bakersfield, ca": 9,
+    "boca raton, fl": 9,
+    "benton, la": 4,
+    "bradenton, fl": 9,
+    "dayton, oh": 7,
+    "duluth, mn": 7,
+    "englewood, co": 6,
+    "fort wayne, in": 9,
+    "frederick, md": 8,
+    "fredericksburg, va": 7,
+    "gainesville, fl": 4,
+    "grand rapids, mi": 9,
+    "green bay, wi": 9,
+    "morgantown, wv": 8,
+    "pensacola, fl": 9,
+    "princeton, ma": 1,
+    "peoria, az": 6,
+    "saint paul, mn": 9,
+    "savannah, ga": 8,
+    "seaford, ny": 5,
+    "seymour, in": 3,
+    "spokane, wa": 9,
+    "windsor, co": 3,
+    "winston-salem, nc": 0,
+    "worcester, ma": 9,
+    "york, pa": 5,
+    "antioch, tn": 2,
+    "athens, ga": 3,
+    "corona, ca": 8,
+    "fairfield, ca": 3,
+    "germantown, md": 6,
+    "hillsboro, or": 4,
+    "hope mills, nc": 8,
+    "hendersonville, nc": 4,
+    "holly springs, ms": 2,
+    "homer, ak": 5,
+    "laurel, md": 6,
+    "long beach, ca": 7,
+    "manteca, ca": 8,
+    "maryville, tn": 7,
+    "magnolia, ms": 2,
+    "memphis, tn": 8,
+    "milton, ma": 1,
+    "montgomery, tx": 5,
+    "myrtle beach, sc": 8,
+    "new market, al": 4,
+    "ocala, fl": 8,
+    "olathe, ks": 8,
+    "oxford, mi": 4,
+    "palm beach gardens, fl": 8,
+    "roseville, ca": 7,
+    "roswell, ga": 7,
+    "rockwall, tx": 8,
+    "spring, tx": 8,
+    "salisbury, ma": 2,
+    "santa rosa, ca": 8,
+    "sarasota, fl": 8,
+    "vancouver, wa": 8,
+    "westminster, md": 5,
+}
+DESTINATION_WEIGHTS = {}
 DEFAULT_DEST_WEIGHT = 1.0
 
 
@@ -129,6 +324,52 @@ def nearest_bin(value: float, bins: np.ndarray) -> float:
     return float(bins[idx])
 
 
+def initial_destination_weights(df: pd.DataFrame, state_counts: dict) -> dict:
+    total = sum(state_counts.values())
+    if total <= 0 or df.empty:
+        return {}
+    state_pct = {state: count / total * 100.0 for state, count in state_counts.items()}
+    city_counts = df.groupby("ToState")["ToCity"].nunique()
+    weights = {}
+    unique_rows = df[["ToCity", "ToState"]].drop_duplicates()
+    for _, row in unique_rows.iterrows():
+        state = row["ToState"]
+        city = row["ToCity"]
+        dest = f"{city}, {state}"
+        if state in state_pct and city_counts.get(state, 0) > 0:
+            weights[dest] = state_pct[state] / city_counts[state]
+        else:
+            weights[dest] = DEFAULT_DEST_WEIGHT
+    return weights
+
+
+def initial_destination_weights_by_city(df: pd.DataFrame, city_counts: dict) -> dict:
+    if df.empty:
+        return {}
+    cities_in_df = {
+        f"{str(row['ToCity']).strip().casefold()}, {str(row['ToState']).strip().casefold()}"
+        for _, row in df[["ToCity", "ToState"]].dropna().drop_duplicates().iterrows()
+    }
+    city_counts_filtered = {city: count for city, count in city_counts.items() if city in cities_in_df}
+    total = sum(city_counts_filtered.values())
+    if total <= 0:
+        return {}
+    city_pct = {city: count / total * 100.0 for city, count in city_counts_filtered.items()}
+    city_dest_counts = df.groupby(["ToCity", "ToState"])["Destination"].nunique()
+    weights = {}
+    unique_rows = df[["ToCity", "ToState", "Destination"]].drop_duplicates()
+    for _, row in unique_rows.iterrows():
+        city = str(row["ToCity"]).strip()
+        state = str(row["ToState"]).strip()
+        dest = str(row["Destination"]).strip()
+        key = f"{city.casefold()}, {state.casefold()}"
+        if key in city_pct and city_dest_counts.get((city, state), 0) > 0:
+            weights[dest] = city_pct[key] / city_dest_counts[(city, state)]
+        else:
+            weights[dest] = DEFAULT_DEST_WEIGHT
+    return weights
+
+
 def add_weighted_score(df: pd.DataFrame, cost_weight: float) -> pd.DataFrame:
     df = df.copy()
     df["CostNorm"] = minmax(df["Cost"])
@@ -152,6 +393,789 @@ def destination_weights(destinations, weight_map: dict) -> dict:
 
 def _dict_to_items(weight_map: dict) -> tuple:
     return tuple(sorted(weight_map.items()))
+
+def render_top_combos(
+    df: pd.DataFrame,
+    origin_list: list,
+    dest_in_view: list,
+    dest_weights: dict,
+    build_cost_weight: float,
+    avg_cost: float,
+    avg_time: float,
+    major_weight_map: dict,
+    key_prefix: str,
+    show_day_percentages: bool = False,
+    max_k: int = 10,
+) -> None:
+    st.markdown("Recommended starting two (synergy pairs)")
+    show_key = f"{key_prefix}_show_top_combos"
+    if show_key not in st.session_state:
+        st.session_state[show_key] = False
+    if st.button("Clear combo cache", key=f"{key_prefix}_clear_combo_cache"):
+        compute_pair_df_cached.clear()
+        compute_top_k_combos_cached.clear()
+        compute_top_k_combos_with_required_cached.clear()
+        st.caption("Combo cache cleared.")
+    if st.button("Compute top combos", key=f"{key_prefix}_compute_top_combos"):
+        st.session_state[show_key] = True
+
+    if not st.session_state[show_key]:
+        st.caption('Top combos are hidden until you click "Compute top combos".')
+        return
+
+    dest_weights_items = _dict_to_items(dest_weights)
+    cost_mat, time_mat = build_origin_destination_matrices(
+        df,
+        tuple(origin_list),
+        tuple(dest_in_view),
+    )
+    weights_vec = np.array([dest_weights.get(dest, 0.0) for dest in dest_in_view], dtype=float)
+    if weights_vec.sum() == 0:
+        weights_vec = np.ones(len(dest_in_view), dtype=float)
+
+    def combo_avg_cost_time(combo_indices):
+        best_cost = np.nanmin(cost_mat[combo_indices, :], axis=0)
+        best_time = np.nanmin(time_mat[combo_indices, :], axis=0)
+        valid_mask = ~np.isnan(best_cost) & ~np.isnan(best_time)
+        if not valid_mask.any():
+            return float("nan"), float("nan")
+        weights = weights_vec[valid_mask]
+        if weights.sum() == 0:
+            weights = np.ones(len(weights), dtype=float)
+        avg_cost_local = float(np.sum(best_cost[valid_mask] * weights) / weights.sum())
+        avg_time_local = float(np.sum(best_time[valid_mask] * weights) / weights.sum())
+        return avg_cost_local, avg_time_local
+
+    def combo_weighted_total(combo_indices):
+        avg_cost_local, avg_time_local = combo_avg_cost_time(combo_indices)
+        if not np.isfinite(avg_cost_local) or not np.isfinite(avg_time_local):
+            return float("nan"), avg_cost_local, avg_time_local
+        weighted_total = build_cost_weight * avg_cost_local + (1 - build_cost_weight) * avg_time_local
+        return weighted_total, avg_cost_local, avg_time_local
+
+    def best_combo_indices(k_size: int):
+        best_combo = None
+        best_weighted = float("inf")
+        for combo in combinations(range(len(origin_list)), k_size):
+            weighted_total, _, _ = combo_weighted_total(list(combo))
+            if np.isfinite(weighted_total) and weighted_total < best_weighted:
+                best_weighted = weighted_total
+                best_combo = list(combo)
+        return best_combo
+
+    def combo_time_improvements(combo_indices, prev_indices):
+        if not prev_indices:
+            return 0, 0
+        best_time = np.nanmin(time_mat[combo_indices, :], axis=0)
+        prev_time = np.nanmin(time_mat[prev_indices, :], axis=0)
+        valid = ~np.isnan(best_time) & ~np.isnan(prev_time)
+        if not valid.any():
+            return 0, 0
+        three_to_two = np.sum((prev_time[valid] > 2.0) & (best_time[valid] <= 2.0) & (best_time[valid] > 1.0))
+        two_to_one = np.sum((prev_time[valid] > 1.0) & (best_time[valid] <= 1.0))
+        return int(three_to_two), int(two_to_one)
+
+    def combo_improved_cities(prev_indices, combo_indices):
+        if not prev_indices:
+            return []
+        prev_time = np.nanmin(time_mat[prev_indices, :], axis=0)
+        best_time = np.nanmin(time_mat[combo_indices, :], axis=0)
+        improved = []
+        for i, (p, b) in enumerate(zip(prev_time, best_time)):
+            if np.isfinite(p) and np.isfinite(b) and b < p:
+                improved.append(dest_in_view[i])
+        return improved
+
+    def combo_not_covered(combo_indices, threshold: float):
+        best_time = np.nanmin(time_mat[combo_indices, :], axis=0)
+        not_covered = []
+        for i, t in enumerate(best_time):
+            if np.isfinite(t) and t > threshold:
+                not_covered.append(dest_in_view[i])
+        return not_covered
+
+    def format_not_covered(destinations):
+        if not destinations:
+            return "None"
+        parts = []
+        for dest in destinations:
+            weight = dest_weights.get(dest, 0.0) * 100.0
+            parts.append(f"{dest} ({weight:.1f}%)")
+        return ", ".join(parts)
+
+    def combo_day_percentages(combo_indices):
+        best_time = np.nanmin(time_mat[combo_indices, :], axis=0)
+        valid = np.isfinite(best_time)
+        total = int(np.sum(valid))
+        if total == 0:
+            return 0.0, 0.0
+        one_day = float(np.sum(best_time[valid] <= 1.0))
+        two_day = float(np.sum(best_time[valid] <= 2.0))
+        return one_day / total * 100.0, two_day / total * 100.0
+
+    def expand_from_best(prev_list, k_size):
+        if not prev_list:
+            return []
+        best_name = prev_list[0][0]
+        best_origins = best_name.split(" + ")
+        if len(best_origins) != k_size - 1:
+            return []
+        results = []
+        for origin in origin_list:
+            if origin in best_origins:
+                continue
+            combo = best_origins + [origin]
+            combo_indices = [origin_list.index(name) for name in combo]
+            weighted_total, _, _ = combo_weighted_total(combo_indices)
+            if np.isfinite(weighted_total):
+                results.append((" + ".join(combo), weighted_total))
+        results.sort(key=lambda x: x[1])
+        if len(results) <= 5:
+            return results
+        cutoff = results[4][1]
+        return [row for row in results if row[1] <= cutoff]
+
+    pair_df = compute_pair_df_cached(
+        df,
+        tuple(origin_list),
+        tuple(dest_in_view),
+        build_cost_weight,
+        _dict_to_items(dest_weights),
+        _dict_to_items(major_weight_map),
+    )
+
+    if not pair_df.empty:
+        best_value = float(pair_df["WeightedTotal"].iloc[0])
+        tied_pairs = pair_df[pair_df["WeightedTotal"] == best_value]["Pair"].tolist()
+        if len(tied_pairs) > 5:
+            top_pairs = pair_df[pair_df["WeightedTotal"] == best_value][["Pair", "WeightedTotal"]].copy()
+        else:
+            top_pairs = pair_df.head(5)[["Pair", "WeightedTotal"]].copy()
+        pair_labels = [f"{row['Pair']} ({row['WeightedTotal']:.2f})" for _, row in top_pairs.iterrows()]
+        selected_pair = st.selectbox(
+            "Top 5 pairs (weighted)",
+            pair_labels,
+            index=0,
+            key=f"{key_prefix}_top5_pairs",
+        )
+        selected_pair_name = selected_pair.rsplit(" (", 1)[0]
+        selected_row = pair_df[pair_df["Pair"] == selected_pair_name].iloc[0]
+        combo_indices = [origin_list.index(name) for name in selected_pair_name.split(" + ")]
+        combo_avg_cost, combo_avg_time = combo_avg_cost_time(combo_indices)
+        cost_delta = avg_cost - combo_avg_cost if np.isfinite(combo_avg_cost) else float("nan")
+        time_delta = avg_time - combo_avg_time if np.isfinite(combo_avg_time) else float("nan")
+        prev_combo = best_combo_indices(1)
+        if prev_combo:
+            prev_cost, prev_time = combo_avg_cost_time(prev_combo)
+            prev_cost_delta = prev_cost - combo_avg_cost
+            prev_time_delta = prev_time - combo_avg_time
+        else:
+            prev_cost_delta = float("nan")
+            prev_time_delta = float("nan")
+        move_3_to_2, move_2_to_1 = combo_time_improvements(combo_indices, prev_combo or [])
+        st.caption(
+            f"Weighted total: {selected_row['WeightedTotal']:.2f} - Avg cost: {combo_avg_cost:.2f} "
+            f"(delta {cost_delta:.2f}) - Avg time: {combo_avg_time:.2f} (delta {time_delta:.2f}) - "
+            f"Major coverage: {selected_row['MajorCoveragePct']:.1f}%"
+        )
+        st.caption(f"Delta vs best 1 origin: cost {prev_cost_delta:.2f}, time {prev_time_delta:.2f}")
+        st.caption(f"Moves 3->2 day: {move_3_to_2} - Moves 2->1 day: {move_2_to_1}")
+        pair_improved = combo_improved_cities(prev_combo or [], combo_indices)
+        st.selectbox(
+            "Improved destinations vs best 1 origin (pair)",
+            pair_improved or ["None"],
+            key=f"{key_prefix}_pair_no1_day",
+        )
+        if show_day_percentages:
+            pct_1, pct_2 = combo_day_percentages(combo_indices)
+            st.caption(f"1-day coverage: {pct_1:.1f}% | 2-day coverage: {pct_2:.1f}%")
+            not_one_day = combo_not_covered(combo_indices, 1.0)
+            not_two_day = combo_not_covered(combo_indices, 2.0)
+            st.caption(f"Not covered in 1 day: {format_not_covered(not_one_day)}")
+            st.caption(f"Not covered in 2 days: {format_not_covered(not_two_day)}")
+    else:
+        st.caption("Not enough origins to calculate pairs.")
+
+    st.markdown("Top 5 trios")
+    trio_list = (
+        compute_top_k_combos_cached(
+            df,
+            tuple(origin_list),
+            tuple(dest_in_view),
+            3,
+            build_cost_weight,
+            dest_weights_items,
+        ) if len(origin_list) >= 3 else []
+    )
+    if trio_list:
+        trio_labels = [f"{name} ({value:.2f})" for name, value in trio_list]
+        selected_trio = st.selectbox(
+            "Top 5 trios (weighted)",
+            trio_labels,
+            index=0,
+            key=f"{key_prefix}_top5_trios",
+        )
+        trio_name = selected_trio.rsplit(" (", 1)[0]
+        trio_indices = [origin_list.index(name) for name in trio_name.split(" + ")]
+        trio_avg_cost, trio_avg_time = combo_avg_cost_time(trio_indices)
+        prev_combo = best_combo_indices(2)
+        if prev_combo:
+            prev_cost, prev_time = combo_avg_cost_time(prev_combo)
+            prev_cost_delta = prev_cost - trio_avg_cost
+            prev_time_delta = prev_time - trio_avg_time
+        else:
+            prev_cost_delta = float("nan")
+            prev_time_delta = float("nan")
+        move_3_to_2, move_2_to_1 = combo_time_improvements(trio_indices, prev_combo or [])
+        st.caption(
+            f"Avg cost: {trio_avg_cost:.2f} (delta {avg_cost - trio_avg_cost:.2f}) - "
+            f"Avg time: {trio_avg_time:.2f} (delta {avg_time - trio_avg_time:.2f})"
+        )
+        st.caption(f"Delta vs best 2 origins: cost {prev_cost_delta:.2f}, time {prev_time_delta:.2f}")
+        st.caption(f"Moves 3->2 day: {move_3_to_2} - Moves 2->1 day: {move_2_to_1}")
+        trio_improved = combo_improved_cities(prev_combo or [], trio_indices)
+        st.selectbox(
+            "Improved destinations vs best 2 origins (trio)",
+            trio_improved or ["None"],
+            key=f"{key_prefix}_trio_no1_day",
+        )
+        if show_day_percentages:
+            pct_1, pct_2 = combo_day_percentages(trio_indices)
+            st.caption(f"1-day coverage: {pct_1:.1f}% | 2-day coverage: {pct_2:.1f}%")
+            not_one_day = combo_not_covered(trio_indices, 1.0)
+            not_two_day = combo_not_covered(trio_indices, 2.0)
+            st.caption(f"Not covered in 1 day: {format_not_covered(not_one_day)}")
+            st.caption(f"Not covered in 2 days: {format_not_covered(not_two_day)}")
+    else:
+        st.caption("Not enough origins to calculate trios.")
+
+    st.markdown("Top 5 quads")
+    quad_list = (
+        compute_top_k_combos_cached(
+            df,
+            tuple(origin_list),
+            tuple(dest_in_view),
+            4,
+            build_cost_weight,
+            dest_weights_items,
+        ) if len(origin_list) >= 4 else []
+    )
+    if quad_list:
+        quad_labels = [f"{name} ({value:.2f})" for name, value in quad_list]
+        selected_quad = st.selectbox(
+            "Top 5 quads (weighted)",
+            quad_labels,
+            index=0,
+            key=f"{key_prefix}_top5_quads",
+        )
+        quad_name = selected_quad.rsplit(" (", 1)[0]
+        quad_indices = [origin_list.index(name) for name in quad_name.split(" + ")]
+        quad_avg_cost, quad_avg_time = combo_avg_cost_time(quad_indices)
+        prev_combo = best_combo_indices(3)
+        if prev_combo:
+            prev_cost, prev_time = combo_avg_cost_time(prev_combo)
+            prev_cost_delta = prev_cost - quad_avg_cost
+            prev_time_delta = prev_time - quad_avg_time
+        else:
+            prev_cost_delta = float("nan")
+            prev_time_delta = float("nan")
+        move_3_to_2, move_2_to_1 = combo_time_improvements(quad_indices, prev_combo or [])
+        st.caption(
+            f"Avg cost: {quad_avg_cost:.2f} (delta {avg_cost - quad_avg_cost:.2f}) - "
+            f"Avg time: {quad_avg_time:.2f} (delta {avg_time - quad_avg_time:.2f})"
+        )
+        st.caption(f"Delta vs best 3 origins: cost {prev_cost_delta:.2f}, time {prev_time_delta:.2f}")
+        st.caption(f"Moves 3->2 day: {move_3_to_2} - Moves 2->1 day: {move_2_to_1}")
+        quad_improved = combo_improved_cities(prev_combo or [], quad_indices)
+        st.selectbox(
+            "Improved destinations vs best 3 origins (quad)",
+            quad_improved or ["None"],
+            key=f"{key_prefix}_quad_no1_day",
+        )
+        if show_day_percentages:
+            pct_1, pct_2 = combo_day_percentages(quad_indices)
+            st.caption(f"1-day coverage: {pct_1:.1f}% | 2-day coverage: {pct_2:.1f}%")
+            not_one_day = combo_not_covered(quad_indices, 1.0)
+            not_two_day = combo_not_covered(quad_indices, 2.0)
+            st.caption(f"Not covered in 1 day: {format_not_covered(not_one_day)}")
+            st.caption(f"Not covered in 2 days: {format_not_covered(not_two_day)}")
+    else:
+        st.caption("Not enough origins to calculate quads.")
+
+    st.markdown("Top 5 (5 locations)")
+    five_list = (
+        compute_top_k_combos_cached(
+            df,
+            tuple(origin_list),
+            tuple(dest_in_view),
+            5,
+            build_cost_weight,
+            dest_weights_items,
+        ) if len(origin_list) >= 5 else []
+    )
+    common_origins = []
+    if five_list:
+        five_labels = [f"{name} ({value:.2f})" for name, value in five_list]
+        selected_five = st.selectbox(
+            "Top 5 (5 locations) (weighted)",
+            five_labels,
+            index=0,
+            key=f"{key_prefix}_top5_fives",
+        )
+        five_name = selected_five.rsplit(" (", 1)[0]
+        five_indices = [origin_list.index(name) for name in five_name.split(" + ")]
+        five_avg_cost, five_avg_time = combo_avg_cost_time(five_indices)
+        prev_combo = best_combo_indices(4)
+        if prev_combo:
+            prev_cost, prev_time = combo_avg_cost_time(prev_combo)
+            prev_cost_delta = prev_cost - five_avg_cost
+            prev_time_delta = prev_time - five_avg_time
+        else:
+            prev_cost_delta = float("nan")
+            prev_time_delta = float("nan")
+        move_3_to_2, move_2_to_1 = combo_time_improvements(five_indices, prev_combo or [])
+        st.caption(
+            f"Avg cost: {five_avg_cost:.2f} (delta {avg_cost - five_avg_cost:.2f}) - "
+            f"Avg time: {five_avg_time:.2f} (delta {avg_time - five_avg_time:.2f})"
+        )
+        st.caption(f"Delta vs best 4 origins: cost {prev_cost_delta:.2f}, time {prev_time_delta:.2f}")
+        st.caption(f"Moves 3->2 day: {move_3_to_2} - Moves 2->1 day: {move_2_to_1}")
+        five_origin_sets = [set(name.split(" + ")) for name, _ in five_list]
+        common_origins = sorted(set.intersection(*five_origin_sets)) if five_origin_sets else []
+        if common_origins:
+            st.caption(f"Auto-included origins for 6/7: {', '.join(common_origins)}")
+        five_improved = combo_improved_cities(prev_combo or [], five_indices)
+        st.selectbox(
+            "Improved destinations vs best 4 origins (5 locations)",
+            five_improved or ["None"],
+            key=f"{key_prefix}_five_no1_day",
+        )
+        if show_day_percentages:
+            pct_1, pct_2 = combo_day_percentages(five_indices)
+            st.caption(f"1-day coverage: {pct_1:.1f}% | 2-day coverage: {pct_2:.1f}%")
+            not_one_day = combo_not_covered(five_indices, 1.0)
+            not_two_day = combo_not_covered(five_indices, 2.0)
+            st.caption(f"Not covered in 1 day: {format_not_covered(not_one_day)}")
+            st.caption(f"Not covered in 2 days: {format_not_covered(not_two_day)}")
+    else:
+        st.caption("Not enough origins to calculate 5-location combos.")
+
+    st.markdown("Top 5 (6 locations)")
+    required_origins = tuple(common_origins) if common_origins else tuple()
+    six_list = (
+        compute_top_k_combos_with_required_cached(
+            df,
+            tuple(origin_list),
+            tuple(dest_in_view),
+            required_origins,
+            6,
+            build_cost_weight,
+            dest_weights_items,
+        ) if len(origin_list) >= 6 else []
+    )
+    common_origins6 = []
+    if six_list:
+        six_labels = [f"{name} ({value:.2f})" for name, value in six_list]
+        selected_six = st.selectbox(
+            "Top 5 (6 locations) (weighted)",
+            six_labels,
+            index=0,
+            key=f"{key_prefix}_top5_sixes",
+        )
+        six_name = selected_six.rsplit(" (", 1)[0]
+        six_indices = [origin_list.index(name) for name in six_name.split(" + ")]
+        six_avg_cost, six_avg_time = combo_avg_cost_time(six_indices)
+        prev_combo = best_combo_indices(5)
+        if prev_combo:
+            prev_cost, prev_time = combo_avg_cost_time(prev_combo)
+            prev_cost_delta = prev_cost - six_avg_cost
+            prev_time_delta = prev_time - six_avg_time
+        else:
+            prev_cost_delta = float("nan")
+            prev_time_delta = float("nan")
+        move_3_to_2, move_2_to_1 = combo_time_improvements(six_indices, prev_combo or [])
+        st.caption(
+            f"Avg cost: {six_avg_cost:.2f} (delta {avg_cost - six_avg_cost:.2f}) - "
+            f"Avg time: {six_avg_time:.2f} (delta {avg_time - six_avg_time:.2f})"
+        )
+        st.caption(f"Delta vs best 5 origins: cost {prev_cost_delta:.2f}, time {prev_time_delta:.2f}")
+        st.caption(f"Moves 3->2 day: {move_3_to_2} - Moves 2->1 day: {move_2_to_1}")
+        six_origin_sets = [set(name.split(" + ")) for name, _ in six_list]
+        common_origins6 = sorted(set.intersection(*six_origin_sets)) if six_origin_sets else []
+        if common_origins6:
+            st.caption(f"Auto-included origins for 7/8: {', '.join(common_origins6)}")
+        six_improved = combo_improved_cities(prev_combo or [], six_indices)
+        st.selectbox(
+            "Improved destinations vs best 5 origins (6 locations)",
+            six_improved or ["None"],
+            key=f"{key_prefix}_six_no1_day",
+        )
+        if show_day_percentages:
+            pct_1, pct_2 = combo_day_percentages(six_indices)
+            st.caption(f"1-day coverage: {pct_1:.1f}% | 2-day coverage: {pct_2:.1f}%")
+            not_one_day = combo_not_covered(six_indices, 1.0)
+            not_two_day = combo_not_covered(six_indices, 2.0)
+            st.caption(f"Not covered in 1 day: {format_not_covered(not_one_day)}")
+            st.caption(f"Not covered in 2 days: {format_not_covered(not_two_day)}")
+    else:
+        st.caption("Not enough origins to calculate 6-location combos.")
+
+    st.markdown("Top 5 (7 locations)")
+    seven_list = (expand_from_best(six_list, 7) if len(origin_list) >= 7 else [])
+    if seven_list:
+        seven_labels = [f"{name} ({value:.2f})" for name, value in seven_list]
+        selected_seven = st.selectbox(
+            "Top 5 (7 locations) (weighted)",
+            seven_labels,
+            index=0,
+            key=f"{key_prefix}_top5_sevens",
+        )
+        seven_name = selected_seven.rsplit(" (", 1)[0]
+        seven_indices = [origin_list.index(name) for name in seven_name.split(" + ")]
+        seven_avg_cost, seven_avg_time = combo_avg_cost_time(seven_indices)
+        prev_combo = best_combo_indices(6)
+        if prev_combo:
+            prev_cost, prev_time = combo_avg_cost_time(prev_combo)
+            prev_cost_delta = prev_cost - seven_avg_cost
+            prev_time_delta = prev_time - seven_avg_time
+        else:
+            prev_cost_delta = float("nan")
+            prev_time_delta = float("nan")
+        move_3_to_2, move_2_to_1 = combo_time_improvements(seven_indices, prev_combo or [])
+        st.caption(
+            f"Avg cost: {seven_avg_cost:.2f} (delta {avg_cost - seven_avg_cost:.2f}) - "
+            f"Avg time: {seven_avg_time:.2f} (delta {avg_time - seven_avg_time:.2f})"
+        )
+        st.caption(f"Delta vs best 6 origins: cost {prev_cost_delta:.2f}, time {prev_time_delta:.2f}")
+        st.caption(f"Moves 3->2 day: {move_3_to_2} - Moves 2->1 day: {move_2_to_1}")
+        seven_improved = combo_improved_cities(prev_combo or [], seven_indices)
+        st.selectbox(
+            "Improved destinations vs best 6 origins (7 locations)",
+            seven_improved or ["None"],
+            key=f"{key_prefix}_seven_no1_day",
+        )
+        if show_day_percentages:
+            pct_1, pct_2 = combo_day_percentages(seven_indices)
+            st.caption(f"1-day coverage: {pct_1:.1f}% | 2-day coverage: {pct_2:.1f}%")
+            not_one_day = combo_not_covered(seven_indices, 1.0)
+            not_two_day = combo_not_covered(seven_indices, 2.0)
+            st.caption(f"Not covered in 1 day: {format_not_covered(not_one_day)}")
+            st.caption(f"Not covered in 2 days: {format_not_covered(not_two_day)}")
+    else:
+        st.caption("Not enough origins to calculate 7-location combos.")
+
+    st.markdown("Top 5 (8 locations)")
+    eight_list = (expand_from_best(seven_list, 8) if len(origin_list) >= 8 else [])
+    if eight_list:
+        eight_labels = [f"{name} ({value:.2f})" for name, value in eight_list]
+        selected_eight = st.selectbox(
+            "Top 5 (8 locations) (weighted)",
+            eight_labels,
+            index=0,
+            key=f"{key_prefix}_top5_eights",
+        )
+        eight_name = selected_eight.rsplit(" (", 1)[0]
+        eight_indices = [origin_list.index(name) for name in eight_name.split(" + ")]
+        eight_avg_cost, eight_avg_time = combo_avg_cost_time(eight_indices)
+        prev_combo = best_combo_indices(7)
+        if prev_combo:
+            prev_cost, prev_time = combo_avg_cost_time(prev_combo)
+            prev_cost_delta = prev_cost - eight_avg_cost
+            prev_time_delta = prev_time - eight_avg_time
+        else:
+            prev_cost_delta = float("nan")
+            prev_time_delta = float("nan")
+        move_3_to_2, move_2_to_1 = combo_time_improvements(eight_indices, prev_combo or [])
+        st.caption(
+            f"Avg cost: {eight_avg_cost:.2f} (delta {avg_cost - eight_avg_cost:.2f}) - "
+            f"Avg time: {eight_avg_time:.2f} (delta {avg_time - eight_avg_time:.2f})"
+        )
+        st.caption(f"Delta vs best 7 origins: cost {prev_cost_delta:.2f}, time {prev_time_delta:.2f}")
+        st.caption(f"Moves 3->2 day: {move_3_to_2} - Moves 2->1 day: {move_2_to_1}")
+        eight_improved = combo_improved_cities(prev_combo or [], eight_indices)
+        st.selectbox(
+            "Improved destinations vs best 7 origins (8 locations)",
+            eight_improved or ["None"],
+            key=f"{key_prefix}_eight_no1_day",
+        )
+        if show_day_percentages:
+            pct_1, pct_2 = combo_day_percentages(eight_indices)
+            st.caption(f"1-day coverage: {pct_1:.1f}% | 2-day coverage: {pct_2:.1f}%")
+            not_one_day = combo_not_covered(eight_indices, 1.0)
+            not_two_day = combo_not_covered(eight_indices, 2.0)
+            st.caption(f"Not covered in 1 day: {format_not_covered(not_one_day)}")
+            st.caption(f"Not covered in 2 days: {format_not_covered(not_two_day)}")
+    else:
+        st.caption("Not enough origins to calculate 8-location combos.")
+
+    st.markdown("Top 5 (9 locations)")
+    nine_list = (expand_from_best(eight_list, 9) if len(origin_list) >= 9 else [])
+    if nine_list:
+        nine_labels = [f"{name} ({value:.2f})" for name, value in nine_list]
+        selected_nine = st.selectbox(
+            "Top 5 (9 locations) (weighted)",
+            nine_labels,
+            index=0,
+            key=f"{key_prefix}_top5_nines",
+        )
+        nine_name = selected_nine.rsplit(" (", 1)[0]
+        nine_indices = [origin_list.index(name) for name in nine_name.split(" + ")]
+        nine_avg_cost, nine_avg_time = combo_avg_cost_time(nine_indices)
+        prev_combo = best_combo_indices(8)
+        if prev_combo:
+            prev_cost, prev_time = combo_avg_cost_time(prev_combo)
+            prev_cost_delta = prev_cost - nine_avg_cost
+            prev_time_delta = prev_time - nine_avg_time
+        else:
+            prev_cost_delta = float("nan")
+            prev_time_delta = float("nan")
+        move_3_to_2, move_2_to_1 = combo_time_improvements(nine_indices, prev_combo or [])
+        st.caption(
+            f"Avg cost: {nine_avg_cost:.2f} (delta {avg_cost - nine_avg_cost:.2f}) - "
+            f"Avg time: {nine_avg_time:.2f} (delta {avg_time - nine_avg_time:.2f})"
+        )
+        st.caption(f"Delta vs best 8 origins: cost {prev_cost_delta:.2f}, time {prev_time_delta:.2f}")
+        st.caption(f"Moves 3->2 day: {move_3_to_2} - Moves 2->1 day: {move_2_to_1}")
+        nine_improved = combo_improved_cities(prev_combo or [], nine_indices)
+        st.selectbox(
+            "Improved destinations vs best 8 origins (9 locations)",
+            nine_improved or ["None"],
+            key=f"{key_prefix}_nine_no1_day",
+        )
+        if show_day_percentages:
+            pct_1, pct_2 = combo_day_percentages(nine_indices)
+            st.caption(f"1-day coverage: {pct_1:.1f}% | 2-day coverage: {pct_2:.1f}%")
+            not_one_day = combo_not_covered(nine_indices, 1.0)
+            not_two_day = combo_not_covered(nine_indices, 2.0)
+            st.caption(f"Not covered in 1 day: {format_not_covered(not_one_day)}")
+            st.caption(f"Not covered in 2 days: {format_not_covered(not_two_day)}")
+    else:
+        st.caption("Not enough origins to calculate 9-location combos.")
+
+    if max_k >= 10:
+        st.markdown("Top 5 (10 locations)")
+        ten_list = (expand_from_best(nine_list, 10) if len(origin_list) >= 10 else [])
+        if ten_list:
+            ten_labels = [f"{name} ({value:.2f})" for name, value in ten_list]
+            selected_ten = st.selectbox(
+                "Top 5 (10 locations) (weighted)",
+                ten_labels,
+                index=0,
+                key=f"{key_prefix}_top5_tens",
+            )
+            ten_name = selected_ten.rsplit(" (", 1)[0]
+            ten_indices = [origin_list.index(name) for name in ten_name.split(" + ")]
+            ten_avg_cost, ten_avg_time = combo_avg_cost_time(ten_indices)
+            prev_combo = best_combo_indices(9)
+            if prev_combo:
+                prev_cost, prev_time = combo_avg_cost_time(prev_combo)
+                prev_cost_delta = prev_cost - ten_avg_cost
+                prev_time_delta = prev_time - ten_avg_time
+            else:
+                prev_cost_delta = float("nan")
+                prev_time_delta = float("nan")
+            move_3_to_2, move_2_to_1 = combo_time_improvements(ten_indices, prev_combo or [])
+            st.caption(
+                f"Avg cost: {ten_avg_cost:.2f} (delta {avg_cost - ten_avg_cost:.2f}) - "
+                f"Avg time: {ten_avg_time:.2f} (delta {avg_time - ten_avg_time:.2f})"
+            )
+            st.caption(f"Delta vs best 9 origins: cost {prev_cost_delta:.2f}, time {prev_time_delta:.2f}")
+            st.caption(f"Moves 3->2 day: {move_3_to_2} - Moves 2->1 day: {move_2_to_1}")
+            ten_improved = combo_improved_cities(prev_combo or [], ten_indices)
+            st.selectbox(
+                "Improved destinations vs best 9 origins (10 locations)",
+                ten_improved or ["None"],
+                key=f"{key_prefix}_ten_no1_day",
+            )
+            if show_day_percentages:
+                pct_1, pct_2 = combo_day_percentages(ten_indices)
+                st.caption(f"1-day coverage: {pct_1:.1f}% | 2-day coverage: {pct_2:.1f}%")
+                not_one_day = combo_not_covered(ten_indices, 1.0)
+                not_two_day = combo_not_covered(ten_indices, 2.0)
+                st.caption(f"Not covered in 1 day: {format_not_covered(not_one_day)}")
+                st.caption(f"Not covered in 2 days: {format_not_covered(not_two_day)}")
+        else:
+            st.caption("Not enough origins to calculate 10-location combos.")
+
+    if max_k >= 11:
+        st.markdown("Top 5 (11 locations)")
+        eleven_list = (expand_from_best(ten_list, 11) if len(origin_list) >= 11 else [])
+        if eleven_list:
+            eleven_labels = [f"{name} ({value:.2f})" for name, value in eleven_list]
+            selected_eleven = st.selectbox(
+                "Top 5 (11 locations) (weighted)",
+                eleven_labels,
+                index=0,
+                key=f"{key_prefix}_top5_elevens",
+            )
+            eleven_name = selected_eleven.rsplit(" (", 1)[0]
+            eleven_indices = [origin_list.index(name) for name in eleven_name.split(" + ")]
+            eleven_avg_cost, eleven_avg_time = combo_avg_cost_time(eleven_indices)
+            prev_combo = best_combo_indices(10)
+            if prev_combo:
+                prev_cost, prev_time = combo_avg_cost_time(prev_combo)
+                prev_cost_delta = prev_cost - eleven_avg_cost
+                prev_time_delta = prev_time - eleven_avg_time
+            else:
+                prev_cost_delta = float("nan")
+                prev_time_delta = float("nan")
+            move_3_to_2, move_2_to_1 = combo_time_improvements(eleven_indices, prev_combo or [])
+            st.caption(
+                f"Avg cost: {eleven_avg_cost:.2f} (delta {avg_cost - eleven_avg_cost:.2f}) - "
+                f"Avg time: {eleven_avg_time:.2f} (delta {avg_time - eleven_avg_time:.2f})"
+            )
+            st.caption(f"Delta vs best 10 origins: cost {prev_cost_delta:.2f}, time {prev_time_delta:.2f}")
+            st.caption(f"Moves 3->2 day: {move_3_to_2} - Moves 2->1 day: {move_2_to_1}")
+            eleven_improved = combo_improved_cities(prev_combo or [], eleven_indices)
+            st.selectbox(
+                "Improved destinations vs best 10 origins (11 locations)",
+                eleven_improved or ["None"],
+                key=f"{key_prefix}_eleven_no1_day",
+            )
+            if show_day_percentages:
+                pct_1, pct_2 = combo_day_percentages(eleven_indices)
+                st.caption(f"1-day coverage: {pct_1:.1f}% | 2-day coverage: {pct_2:.1f}%")
+                not_one_day = combo_not_covered(eleven_indices, 1.0)
+                not_two_day = combo_not_covered(eleven_indices, 2.0)
+                st.caption(f"Not covered in 1 day: {format_not_covered(not_one_day)}")
+                st.caption(f"Not covered in 2 days: {format_not_covered(not_two_day)}")
+        else:
+            st.caption("Not enough origins to calculate 11-location combos.")
+
+    if max_k >= 12:
+        st.markdown("Top 5 (12 locations)")
+        twelve_list = (expand_from_best(eleven_list, 12) if len(origin_list) >= 12 else [])
+        if twelve_list:
+            twelve_labels = [f"{name} ({value:.2f})" for name, value in twelve_list]
+            selected_twelve = st.selectbox(
+                "Top 5 (12 locations) (weighted)",
+                twelve_labels,
+                index=0,
+                key=f"{key_prefix}_top5_twelves",
+            )
+            twelve_name = selected_twelve.rsplit(" (", 1)[0]
+            twelve_indices = [origin_list.index(name) for name in twelve_name.split(" + ")]
+            twelve_avg_cost, twelve_avg_time = combo_avg_cost_time(twelve_indices)
+            prev_combo = best_combo_indices(11)
+            if prev_combo:
+                prev_cost, prev_time = combo_avg_cost_time(prev_combo)
+                prev_cost_delta = prev_cost - twelve_avg_cost
+                prev_time_delta = prev_time - twelve_avg_time
+            else:
+                prev_cost_delta = float("nan")
+                prev_time_delta = float("nan")
+            move_3_to_2, move_2_to_1 = combo_time_improvements(twelve_indices, prev_combo or [])
+            st.caption(
+                f"Avg cost: {twelve_avg_cost:.2f} (delta {avg_cost - twelve_avg_cost:.2f}) - "
+                f"Avg time: {twelve_avg_time:.2f} (delta {avg_time - twelve_avg_time:.2f})"
+            )
+            st.caption(f"Delta vs best 11 origins: cost {prev_cost_delta:.2f}, time {prev_time_delta:.2f}")
+            st.caption(f"Moves 3->2 day: {move_3_to_2} - Moves 2->1 day: {move_2_to_1}")
+            twelve_improved = combo_improved_cities(prev_combo or [], twelve_indices)
+            st.selectbox(
+                "Improved destinations vs best 11 origins (12 locations)",
+                twelve_improved or ["None"],
+                key=f"{key_prefix}_twelve_no1_day",
+            )
+            if show_day_percentages:
+                pct_1, pct_2 = combo_day_percentages(twelve_indices)
+                st.caption(f"1-day coverage: {pct_1:.1f}% | 2-day coverage: {pct_2:.1f}%")
+                not_one_day = combo_not_covered(twelve_indices, 1.0)
+                not_two_day = combo_not_covered(twelve_indices, 2.0)
+                st.caption(f"Not covered in 1 day: {format_not_covered(not_one_day)}")
+                st.caption(f"Not covered in 2 days: {format_not_covered(not_two_day)}")
+        else:
+            st.caption("Not enough origins to calculate 12-location combos.")
+
+    if max_k >= 13:
+        st.markdown("Top 5 (13 locations)")
+        thirteen_list = (expand_from_best(twelve_list, 13) if len(origin_list) >= 13 else [])
+        if thirteen_list:
+            thirteen_labels = [f"{name} ({value:.2f})" for name, value in thirteen_list]
+            selected_thirteen = st.selectbox(
+                "Top 5 (13 locations) (weighted)",
+                thirteen_labels,
+                index=0,
+                key=f"{key_prefix}_top5_thirteens",
+            )
+            thirteen_name = selected_thirteen.rsplit(" (", 1)[0]
+            thirteen_indices = [origin_list.index(name) for name in thirteen_name.split(" + ")]
+            thirteen_avg_cost, thirteen_avg_time = combo_avg_cost_time(thirteen_indices)
+            prev_combo = best_combo_indices(12)
+            if prev_combo:
+                prev_cost, prev_time = combo_avg_cost_time(prev_combo)
+                prev_cost_delta = prev_cost - thirteen_avg_cost
+                prev_time_delta = prev_time - thirteen_avg_time
+            else:
+                prev_cost_delta = float("nan")
+                prev_time_delta = float("nan")
+            move_3_to_2, move_2_to_1 = combo_time_improvements(thirteen_indices, prev_combo or [])
+            st.caption(
+                f"Avg cost: {thirteen_avg_cost:.2f} (delta {avg_cost - thirteen_avg_cost:.2f}) - "
+                f"Avg time: {thirteen_avg_time:.2f} (delta {avg_time - thirteen_avg_time:.2f})"
+            )
+            st.caption(f"Delta vs best 12 origins: cost {prev_cost_delta:.2f}, time {prev_time_delta:.2f}")
+            st.caption(f"Moves 3->2 day: {move_3_to_2} - Moves 2->1 day: {move_2_to_1}")
+            thirteen_improved = combo_improved_cities(prev_combo or [], thirteen_indices)
+            st.selectbox(
+                "Improved destinations vs best 12 origins (13 locations)",
+                thirteen_improved or ["None"],
+                key=f"{key_prefix}_thirteen_no1_day",
+            )
+            if show_day_percentages:
+                pct_1, pct_2 = combo_day_percentages(thirteen_indices)
+                st.caption(f"1-day coverage: {pct_1:.1f}% | 2-day coverage: {pct_2:.1f}%")
+                not_one_day = combo_not_covered(thirteen_indices, 1.0)
+                not_two_day = combo_not_covered(thirteen_indices, 2.0)
+                st.caption(f"Not covered in 1 day: {format_not_covered(not_one_day)}")
+                st.caption(f"Not covered in 2 days: {format_not_covered(not_two_day)}")
+        else:
+            st.caption("Not enough origins to calculate 13-location combos.")
+
+    if max_k >= 14:
+        st.markdown("Top 5 (14 locations)")
+        fourteen_list = (expand_from_best(thirteen_list, 14) if len(origin_list) >= 14 else [])
+        if fourteen_list:
+            fourteen_labels = [f"{name} ({value:.2f})" for name, value in fourteen_list]
+            selected_fourteen = st.selectbox(
+                "Top 5 (14 locations) (weighted)",
+                fourteen_labels,
+                index=0,
+                key=f"{key_prefix}_top5_fourteens",
+            )
+            fourteen_name = selected_fourteen.rsplit(" (", 1)[0]
+            fourteen_indices = [origin_list.index(name) for name in fourteen_name.split(" + ")]
+            fourteen_avg_cost, fourteen_avg_time = combo_avg_cost_time(fourteen_indices)
+            prev_combo = best_combo_indices(13)
+            if prev_combo:
+                prev_cost, prev_time = combo_avg_cost_time(prev_combo)
+                prev_cost_delta = prev_cost - fourteen_avg_cost
+                prev_time_delta = prev_time - fourteen_avg_time
+            else:
+                prev_cost_delta = float("nan")
+                prev_time_delta = float("nan")
+            move_3_to_2, move_2_to_1 = combo_time_improvements(fourteen_indices, prev_combo or [])
+            st.caption(
+                f"Avg cost: {fourteen_avg_cost:.2f} (delta {avg_cost - fourteen_avg_cost:.2f}) - "
+                f"Avg time: {fourteen_avg_time:.2f} (delta {avg_time - fourteen_avg_time:.2f})"
+            )
+            st.caption(f"Delta vs best 13 origins: cost {prev_cost_delta:.2f}, time {prev_time_delta:.2f}")
+            st.caption(f"Moves 3->2 day: {move_3_to_2} - Moves 2->1 day: {move_2_to_1}")
+            fourteen_improved = combo_improved_cities(prev_combo or [], fourteen_indices)
+            st.selectbox(
+                "Improved destinations vs best 13 origins (14 locations)",
+                fourteen_improved or ["None"],
+                key=f"{key_prefix}_fourteen_no1_day",
+            )
+            if show_day_percentages:
+                pct_1, pct_2 = combo_day_percentages(fourteen_indices)
+                st.caption(f"1-day coverage: {pct_1:.1f}% | 2-day coverage: {pct_2:.1f}%")
+                not_one_day = combo_not_covered(fourteen_indices, 1.0)
+                not_two_day = combo_not_covered(fourteen_indices, 2.0)
+                st.caption(f"Not covered in 1 day: {format_not_covered(not_one_day)}")
+                st.caption(f"Not covered in 2 days: {format_not_covered(not_two_day)}")
+        else:
+            st.caption("Not enough origins to calculate 14-location combos.")
 
 
 @st.cache_data
@@ -522,7 +1546,9 @@ def greedy_savings_per_sign(
 
 st.set_page_config(page_title="Shipping Cost Dashboard", layout="wide")
 st.title("Shipping Cost Dashboard")
-tab_dashboard, tab_regionals = st.tabs(["Dashboard", "Shipping Summary Regionals"])
+tab_dashboard, tab_regionals, tab_regionals_v3 = st.tabs(
+    ["Dashboard", "Shipping Summary Regionals", "Shipping Summary Regionals v3"]
+)
 
 with tab_dashboard:
 
@@ -567,8 +1593,9 @@ with tab_dashboard:
         baseline_origin = effective_baseline
 
     dest_in_view = sorted(df["Destination"].unique())
-    if "destination_weights" not in st.session_state:
-        st.session_state.destination_weights = {**DESTINATION_WEIGHTS}
+    if st.session_state.get("destination_weights_version") != "state_counts_v1":
+        st.session_state.destination_weights = initial_destination_weights(df_raw, STATE_COUNTS)
+        st.session_state.destination_weights_version = "state_counts_v1"
     st.sidebar.markdown("Destination weights")
     selected_dest = st.sidebar.selectbox(
         "Edit destination weight",
@@ -829,7 +1856,12 @@ with tab_dashboard:
             if not built_origins:
                 built_origins = [baseline]
             dest_in_view = sorted(size_df["Destination"].unique())
-            dest_weights_size = destination_weights(dest_in_view, DESTINATION_WEIGHTS)
+            base_weights = (
+                st.session_state.destination_weights
+                if "destination_weights" in st.session_state
+                else initial_destination_weights(size_df, STATE_COUNTS)
+            )
+            dest_weights_size = destination_weights(dest_in_view, base_weights)
             baseline_cost_by_dest = size_df[size_df["FromAddress"] == baseline].groupby(
                 "Destination",
                 as_index=False,
@@ -1023,351 +2055,17 @@ with tab_dashboard:
     with st.expander("Show filtered data"):
         st.dataframe(df, use_container_width=True)
 
-    st.markdown("Recommended starting two (synergy pairs)")
-    if "show_top_combos" not in st.session_state:
-        st.session_state.show_top_combos = False
-    if st.button("Compute top combos", key="compute_top_combos"):
-        st.session_state.show_top_combos = True
-    
-    if st.session_state.show_top_combos:
-        dest_weights_items = _dict_to_items(dest_weights)
-        cost_mat, time_mat = build_origin_destination_matrices(
-            df,
-            tuple(origin_list),
-            tuple(dest_in_view),
-        )
-        weights_vec = np.array([dest_weights.get(dest, 0.0) for dest in dest_in_view], dtype=float)
-        if weights_vec.sum() == 0:
-            weights_vec = np.ones(len(dest_in_view), dtype=float)
-    
-        def combo_avg_cost_time(combo_indices):
-            best_cost = np.nanmin(cost_mat[combo_indices, :], axis=0)
-            best_time = np.nanmin(time_mat[combo_indices, :], axis=0)
-            valid_mask = ~np.isnan(best_cost) & ~np.isnan(best_time)
-            if not valid_mask.any():
-                return float("nan"), float("nan")
-            weights = weights_vec[valid_mask]
-            if weights.sum() == 0:
-                weights = np.ones(len(weights), dtype=float)
-            avg_cost = float(np.sum(best_cost[valid_mask] * weights) / weights.sum())
-            avg_time = float(np.sum(best_time[valid_mask] * weights) / weights.sum())
-            return avg_cost, avg_time
-    
-        def combo_weighted_total(combo_indices):
-            avg_cost, avg_time = combo_avg_cost_time(combo_indices)
-            if not np.isfinite(avg_cost) or not np.isfinite(avg_time):
-                return float("nan"), avg_cost, avg_time
-            weighted_total = build_cost_weight * avg_cost + (1 - build_cost_weight) * avg_time
-            return weighted_total, avg_cost, avg_time
-    
-        def best_combo_indices(k_size: int):
-            best_combo = None
-            best_weighted = float("inf")
-            for combo in combinations(range(len(origin_list)), k_size):
-                weighted_total, _, _ = combo_weighted_total(list(combo))
-                if np.isfinite(weighted_total) and weighted_total < best_weighted:
-                    best_weighted = weighted_total
-                    best_combo = list(combo)
-            return best_combo
-    
-        def combo_time_improvements(combo_indices, prev_indices):
-            if not prev_indices:
-                return 0, 0
-            best_time = np.nanmin(time_mat[combo_indices, :], axis=0)
-            prev_time = np.nanmin(time_mat[prev_indices, :], axis=0)
-            valid = ~np.isnan(best_time) & ~np.isnan(prev_time)
-            if not valid.any():
-                return 0, 0
-            three_to_two = np.sum((prev_time[valid] > 2.0) & (best_time[valid] <= 2.0) & (best_time[valid] > 1.0))
-            two_to_one = np.sum((prev_time[valid] > 1.0) & (best_time[valid] <= 1.0))
-            return int(three_to_two), int(two_to_one)
-    
-        def combo_improved_cities(prev_indices, combo_indices):
-            if not prev_indices:
-                return []
-            prev_time = np.nanmin(time_mat[prev_indices, :], axis=0)
-            best_time = np.nanmin(time_mat[combo_indices, :], axis=0)
-            improved = []
-            for i, (p, b) in enumerate(zip(prev_time, best_time)):
-                if np.isfinite(p) and np.isfinite(b) and b < p:
-                    improved.append(dest_in_view[i])
-            return improved
-
-        def expand_from_best(prev_list, k_size):
-            if not prev_list:
-                return []
-            best_name = prev_list[0][0]
-            best_origins = best_name.split(" + ")
-            if len(best_origins) != k_size - 1:
-                return []
-            results = []
-            for origin in origin_list:
-                if origin in best_origins:
-                    continue
-                combo = best_origins + [origin]
-                combo_indices = [origin_list.index(name) for name in combo]
-                weighted_total, _, _ = combo_weighted_total(combo_indices)
-                if np.isfinite(weighted_total):
-                    results.append((" + ".join(combo), weighted_total))
-            results.sort(key=lambda x: x[1])
-            if len(results) <= 5:
-                return results
-            cutoff = results[4][1]
-            return [row for row in results if row[1] <= cutoff]
-    
-        pair_df = compute_pair_df_cached(
-            df,
-            tuple(origin_list),
-            tuple(dest_in_view),
-            build_cost_weight,
-            _dict_to_items(dest_weights),
-            _dict_to_items(major_weight_map),
-        )
-    
-        if not pair_df.empty:
-            best_value = float(pair_df["WeightedTotal"].iloc[0])
-            tied_pairs = pair_df[pair_df["WeightedTotal"] == best_value]["Pair"].tolist()
-            if len(tied_pairs) > 5:
-                top_pairs = pair_df[pair_df["WeightedTotal"] == best_value][["Pair", "WeightedTotal"]].copy()
-            else:
-                top_pairs = pair_df.head(5)[["Pair", "WeightedTotal"]].copy()
-            pair_labels = [f"{row['Pair']} ({row['WeightedTotal']:.2f})" for _, row in top_pairs.iterrows()]
-            selected_pair = st.selectbox("Top 5 pairs (weighted)", pair_labels, index=0, key="top5_pairs")
-            selected_pair_name = selected_pair.rsplit(" (", 1)[0]
-            selected_row = pair_df[pair_df["Pair"] == selected_pair_name].iloc[0]
-            combo_indices = [origin_list.index(name) for name in selected_pair_name.split(" + ")]
-            combo_avg_cost, combo_avg_time = combo_avg_cost_time(combo_indices)
-            cost_delta = avg_cost - combo_avg_cost if np.isfinite(combo_avg_cost) else float("nan")
-            time_delta = avg_time - combo_avg_time if np.isfinite(combo_avg_time) else float("nan")
-            prev_combo = best_combo_indices(1)
-            if prev_combo:
-                prev_cost, prev_time = combo_avg_cost_time(prev_combo)
-                prev_cost_delta = prev_cost - combo_avg_cost
-                prev_time_delta = prev_time - combo_avg_time
-            else:
-                prev_cost_delta = float("nan")
-                prev_time_delta = float("nan")
-            move_3_to_2, move_2_to_1 = combo_time_improvements(combo_indices, prev_combo or [])
-            st.caption(f"Weighted total: {selected_row['WeightedTotal']:.2f} - Avg cost: {combo_avg_cost:.2f} (delta {cost_delta:.2f}) - Avg time: {combo_avg_time:.2f} (delta {time_delta:.2f}) - Major coverage: {selected_row['MajorCoveragePct']:.1f}%")
-            st.caption(f"Delta vs best 1 origin: cost {prev_cost_delta:.2f}, time {prev_time_delta:.2f}")
-            st.caption(f"Moves 3->2 day: {move_3_to_2} - Moves 2->1 day: {move_2_to_1}")
-            pair_improved = combo_improved_cities(prev_combo or [], combo_indices)
-            st.selectbox("Improved destinations vs best 1 origin (pair)", pair_improved or ["None"], key="pair_no1_day")
-        else:
-            st.caption("Not enough origins to calculate pairs.")
-    
-        st.markdown("Top 5 trios")
-        trio_list = (compute_top_k_combos_cached(df, tuple(origin_list), tuple(dest_in_view), 3, build_cost_weight, dest_weights_items) if len(origin_list) >= 3 else [])
-        if trio_list:
-            trio_labels = [f"{name} ({value:.2f})" for name, value in trio_list]
-            selected_trio = st.selectbox("Top 5 trios (weighted)", trio_labels, index=0, key="top5_trios")
-            trio_name = selected_trio.rsplit(" (", 1)[0]
-            trio_indices = [origin_list.index(name) for name in trio_name.split(" + ")]
-            trio_avg_cost, trio_avg_time = combo_avg_cost_time(trio_indices)
-            prev_combo = best_combo_indices(2)
-            if prev_combo:
-                prev_cost, prev_time = combo_avg_cost_time(prev_combo)
-                prev_cost_delta = prev_cost - trio_avg_cost
-                prev_time_delta = prev_time - trio_avg_time
-            else:
-                prev_cost_delta = float("nan")
-                prev_time_delta = float("nan")
-            move_3_to_2, move_2_to_1 = combo_time_improvements(trio_indices, prev_combo or [])
-            st.caption(f"Avg cost: {trio_avg_cost:.2f} (delta {avg_cost - trio_avg_cost:.2f}) - Avg time: {trio_avg_time:.2f} (delta {avg_time - trio_avg_time:.2f})")
-            st.caption(f"Delta vs best 2 origins: cost {prev_cost_delta:.2f}, time {prev_time_delta:.2f}")
-            st.caption(f"Moves 3->2 day: {move_3_to_2} - Moves 2->1 day: {move_2_to_1}")
-            trio_improved = combo_improved_cities(prev_combo or [], trio_indices)
-            st.selectbox("Improved destinations vs best 2 origins (trio)", trio_improved or ["None"], key="trio_no1_day")
-        else:
-            st.caption("Not enough origins to calculate trios.")
-    
-        st.markdown("Top 5 quads")
-        quad_list = (compute_top_k_combos_cached(df, tuple(origin_list), tuple(dest_in_view), 4, build_cost_weight, dest_weights_items) if len(origin_list) >= 4 else [])
-        if quad_list:
-            quad_labels = [f"{name} ({value:.2f})" for name, value in quad_list]
-            selected_quad = st.selectbox("Top 5 quads (weighted)", quad_labels, index=0, key="top5_quads")
-            quad_name = selected_quad.rsplit(" (", 1)[0]
-            quad_indices = [origin_list.index(name) for name in quad_name.split(" + ")]
-            quad_avg_cost, quad_avg_time = combo_avg_cost_time(quad_indices)
-            prev_combo = best_combo_indices(3)
-            if prev_combo:
-                prev_cost, prev_time = combo_avg_cost_time(prev_combo)
-                prev_cost_delta = prev_cost - quad_avg_cost
-                prev_time_delta = prev_time - quad_avg_time
-            else:
-                prev_cost_delta = float("nan")
-                prev_time_delta = float("nan")
-            move_3_to_2, move_2_to_1 = combo_time_improvements(quad_indices, prev_combo or [])
-            st.caption(f"Avg cost: {quad_avg_cost:.2f} (delta {avg_cost - quad_avg_cost:.2f}) - Avg time: {quad_avg_time:.2f} (delta {avg_time - quad_avg_time:.2f})")
-            st.caption(f"Delta vs best 3 origins: cost {prev_cost_delta:.2f}, time {prev_time_delta:.2f}")
-            st.caption(f"Moves 3->2 day: {move_3_to_2} - Moves 2->1 day: {move_2_to_1}")
-            quad_improved = combo_improved_cities(prev_combo or [], quad_indices)
-            st.selectbox("Improved destinations vs best 3 origins (quad)", quad_improved or ["None"], key="quad_no1_day")
-        else:
-            st.caption("Not enough origins to calculate quads.")
-    
-        st.markdown("Top 5 (5 locations)")
-        five_list = (compute_top_k_combos_cached(df, tuple(origin_list), tuple(dest_in_view), 5, build_cost_weight, dest_weights_items) if len(origin_list) >= 5 else [])
-        common_origins = []
-        if five_list:
-            five_labels = [f"{name} ({value:.2f})" for name, value in five_list]
-            selected_five = st.selectbox("Top 5 (5 locations) (weighted)", five_labels, index=0, key="top5_fives")
-            five_name = selected_five.rsplit(" (", 1)[0]
-            five_indices = [origin_list.index(name) for name in five_name.split(" + ")]
-            five_avg_cost, five_avg_time = combo_avg_cost_time(five_indices)
-            prev_combo = best_combo_indices(4)
-            if prev_combo:
-                prev_cost, prev_time = combo_avg_cost_time(prev_combo)
-                prev_cost_delta = prev_cost - five_avg_cost
-                prev_time_delta = prev_time - five_avg_time
-            else:
-                prev_cost_delta = float("nan")
-                prev_time_delta = float("nan")
-            move_3_to_2, move_2_to_1 = combo_time_improvements(five_indices, prev_combo or [])
-            st.caption(f"Avg cost: {five_avg_cost:.2f} (delta {avg_cost - five_avg_cost:.2f}) - Avg time: {five_avg_time:.2f} (delta {avg_time - five_avg_time:.2f})")
-            st.caption(f"Delta vs best 4 origins: cost {prev_cost_delta:.2f}, time {prev_time_delta:.2f}")
-            st.caption(f"Moves 3->2 day: {move_3_to_2} - Moves 2->1 day: {move_2_to_1}")
-            five_origin_sets = [set(name.split(" + ")) for name, _ in five_list]
-            common_origins = sorted(set.intersection(*five_origin_sets)) if five_origin_sets else []
-            if common_origins:
-                st.caption(f"Auto-included origins for 6/7: {', '.join(common_origins)}")
-            five_improved = combo_improved_cities(prev_combo or [], five_indices)
-            st.selectbox("Improved destinations vs best 4 origins (5 locations)", five_improved or ["None"], key="five_no1_day")
-        else:
-            st.caption("Not enough origins to calculate 5-location combos.")
-    
-        st.markdown("Top 5 (6 locations)")
-        required_origins = tuple(common_origins) if common_origins else tuple()
-        six_list = (compute_top_k_combos_with_required_cached(df, tuple(origin_list), tuple(dest_in_view), required_origins, 6, build_cost_weight, dest_weights_items) if len(origin_list) >= 6 else [])
-        common_origins6 = []
-        if six_list:
-            six_labels = [f"{name} ({value:.2f})" for name, value in six_list]
-            selected_six = st.selectbox("Top 5 (6 locations) (weighted)", six_labels, index=0, key="top5_sixes")
-            six_name = selected_six.rsplit(" (", 1)[0]
-            six_indices = [origin_list.index(name) for name in six_name.split(" + ")]
-            six_avg_cost, six_avg_time = combo_avg_cost_time(six_indices)
-            prev_combo = best_combo_indices(5)
-            if prev_combo:
-                prev_cost, prev_time = combo_avg_cost_time(prev_combo)
-                prev_cost_delta = prev_cost - six_avg_cost
-                prev_time_delta = prev_time - six_avg_time
-            else:
-                prev_cost_delta = float("nan")
-                prev_time_delta = float("nan")
-            move_3_to_2, move_2_to_1 = combo_time_improvements(six_indices, prev_combo or [])
-            st.caption(f"Avg cost: {six_avg_cost:.2f} (delta {avg_cost - six_avg_cost:.2f}) - Avg time: {six_avg_time:.2f} (delta {avg_time - six_avg_time:.2f})")
-            st.caption(f"Delta vs best 5 origins: cost {prev_cost_delta:.2f}, time {prev_time_delta:.2f}")
-            st.caption(f"Moves 3->2 day: {move_3_to_2} - Moves 2->1 day: {move_2_to_1}")
-            six_origin_sets = [set(name.split(" + ")) for name, _ in six_list]
-            common_origins6 = sorted(set.intersection(*six_origin_sets)) if six_origin_sets else []
-            if common_origins6:
-                st.caption(f"Auto-included origins for 7/8: {', '.join(common_origins6)}")
-            six_improved = combo_improved_cities(prev_combo or [], six_indices)
-            st.selectbox("Improved destinations vs best 5 origins (6 locations)", six_improved or ["None"], key="six_no1_day")
-        else:
-            st.caption("Not enough origins to calculate 6-location combos.")
-    
-        st.markdown("Top 5 (7 locations)")
-        seven_list = (expand_from_best(six_list, 7) if len(origin_list) >= 7 else [])
-        if seven_list:
-            seven_labels = [f"{name} ({value:.2f})" for name, value in seven_list]
-            selected_seven = st.selectbox("Top 5 (7 locations) (weighted)", seven_labels, index=0, key="top5_sevens")
-            seven_name = selected_seven.rsplit(" (", 1)[0]
-            seven_indices = [origin_list.index(name) for name in seven_name.split(" + ")]
-            seven_avg_cost, seven_avg_time = combo_avg_cost_time(seven_indices)
-            prev_combo = best_combo_indices(6)
-            if prev_combo:
-                prev_cost, prev_time = combo_avg_cost_time(prev_combo)
-                prev_cost_delta = prev_cost - seven_avg_cost
-                prev_time_delta = prev_time - seven_avg_time
-            else:
-                prev_cost_delta = float("nan")
-                prev_time_delta = float("nan")
-            move_3_to_2, move_2_to_1 = combo_time_improvements(seven_indices, prev_combo or [])
-            st.caption(f"Avg cost: {seven_avg_cost:.2f} (delta {avg_cost - seven_avg_cost:.2f}) - Avg time: {seven_avg_time:.2f} (delta {avg_time - seven_avg_time:.2f})")
-            st.caption(f"Delta vs best 6 origins: cost {prev_cost_delta:.2f}, time {prev_time_delta:.2f}")
-            st.caption(f"Moves 3->2 day: {move_3_to_2} - Moves 2->1 day: {move_2_to_1}")
-            seven_improved = combo_improved_cities(prev_combo or [], seven_indices)
-            st.selectbox("Improved destinations vs best 6 origins (7 locations)", seven_improved or ["None"], key="seven_no1_day")
-        else:
-            st.caption("Not enough origins to calculate 7-location combos.")
-    
-        st.markdown("Top 5 (8 locations)")
-        eight_list = (expand_from_best(seven_list, 8) if len(origin_list) >= 8 else [])
-        if eight_list:
-            eight_labels = [f"{name} ({value:.2f})" for name, value in eight_list]
-            selected_eight = st.selectbox("Top 5 (8 locations) (weighted)", eight_labels, index=0, key="top5_eights")
-            eight_name = selected_eight.rsplit(" (", 1)[0]
-            eight_indices = [origin_list.index(name) for name in eight_name.split(" + ")]
-            eight_avg_cost, eight_avg_time = combo_avg_cost_time(eight_indices)
-            prev_combo = best_combo_indices(7)
-            if prev_combo:
-                prev_cost, prev_time = combo_avg_cost_time(prev_combo)
-                prev_cost_delta = prev_cost - eight_avg_cost
-                prev_time_delta = prev_time - eight_avg_time
-            else:
-                prev_cost_delta = float("nan")
-                prev_time_delta = float("nan")
-            move_3_to_2, move_2_to_1 = combo_time_improvements(eight_indices, prev_combo or [])
-            st.caption(f"Avg cost: {eight_avg_cost:.2f} (delta {avg_cost - eight_avg_cost:.2f}) - Avg time: {eight_avg_time:.2f} (delta {avg_time - eight_avg_time:.2f})")
-            st.caption(f"Delta vs best 7 origins: cost {prev_cost_delta:.2f}, time {prev_time_delta:.2f}")
-            st.caption(f"Moves 3->2 day: {move_3_to_2} - Moves 2->1 day: {move_2_to_1}")
-            eight_improved = combo_improved_cities(prev_combo or [], eight_indices)
-            st.selectbox("Improved destinations vs best 7 origins (8 locations)", eight_improved or ["None"], key="eight_no1_day")
-        else:
-            st.caption("Not enough origins to calculate 8-location combos.")
-    
-        st.markdown("Top 5 (9 locations)")
-        nine_list = (expand_from_best(eight_list, 9) if len(origin_list) >= 9 else [])
-        if nine_list:
-            nine_labels = [f"{name} ({value:.2f})" for name, value in nine_list]
-            selected_nine = st.selectbox("Top 5 (9 locations) (weighted)", nine_labels, index=0, key="top5_nines")
-            nine_name = selected_nine.rsplit(" (", 1)[0]
-            nine_indices = [origin_list.index(name) for name in nine_name.split(" + ")]
-            nine_avg_cost, nine_avg_time = combo_avg_cost_time(nine_indices)
-            prev_combo = best_combo_indices(8)
-            if prev_combo:
-                prev_cost, prev_time = combo_avg_cost_time(prev_combo)
-                prev_cost_delta = prev_cost - nine_avg_cost
-                prev_time_delta = prev_time - nine_avg_time
-            else:
-                prev_cost_delta = float("nan")
-                prev_time_delta = float("nan")
-            move_3_to_2, move_2_to_1 = combo_time_improvements(nine_indices, prev_combo or [])
-            st.caption(f"Avg cost: {nine_avg_cost:.2f} (delta {avg_cost - nine_avg_cost:.2f}) - Avg time: {nine_avg_time:.2f} (delta {avg_time - nine_avg_time:.2f})")
-            st.caption(f"Delta vs best 8 origins: cost {prev_cost_delta:.2f}, time {prev_time_delta:.2f}")
-            st.caption(f"Moves 3->2 day: {move_3_to_2} - Moves 2->1 day: {move_2_to_1}")
-            nine_improved = combo_improved_cities(prev_combo or [], nine_indices)
-            st.selectbox("Improved destinations vs best 8 origins (9 locations)", nine_improved or ["None"], key="nine_no1_day")
-        else:
-            st.caption("Not enough origins to calculate 9-location combos.")
-    
-        st.markdown("Top 5 (10 locations)")
-        ten_list = (expand_from_best(nine_list, 10) if len(origin_list) >= 10 else [])
-        if ten_list:
-            ten_labels = [f"{name} ({value:.2f})" for name, value in ten_list]
-            selected_ten = st.selectbox("Top 5 (10 locations) (weighted)", ten_labels, index=0, key="top5_tens")
-            ten_name = selected_ten.rsplit(" (", 1)[0]
-            ten_indices = [origin_list.index(name) for name in ten_name.split(" + ")]
-            ten_avg_cost, ten_avg_time = combo_avg_cost_time(ten_indices)
-            prev_combo = best_combo_indices(9)
-            if prev_combo:
-                prev_cost, prev_time = combo_avg_cost_time(prev_combo)
-                prev_cost_delta = prev_cost - ten_avg_cost
-                prev_time_delta = prev_time - ten_avg_time
-            else:
-                prev_cost_delta = float("nan")
-                prev_time_delta = float("nan")
-            move_3_to_2, move_2_to_1 = combo_time_improvements(ten_indices, prev_combo or [])
-            st.caption(f"Avg cost: {ten_avg_cost:.2f} (delta {avg_cost - ten_avg_cost:.2f}) - Avg time: {ten_avg_time:.2f} (delta {avg_time - ten_avg_time:.2f})")
-            st.caption(f"Delta vs best 9 origins: cost {prev_cost_delta:.2f}, time {prev_time_delta:.2f}")
-            st.caption(f"Moves 3->2 day: {move_3_to_2} - Moves 2->1 day: {move_2_to_1}")
-            ten_improved = combo_improved_cities(prev_combo or [], ten_indices)
-            st.selectbox("Improved destinations vs best 9 origins (10 locations)", ten_improved or ["None"], key="ten_no1_day")
-        else:
-            st.caption("Not enough origins to calculate 10-location combos.")
-    else:
-        st.caption('Top combos are hidden until you click "Compute top combos".')
+    render_top_combos(
+        df,
+        origin_list,
+        dest_in_view,
+        dest_weights,
+        build_cost_weight,
+        avg_cost,
+        avg_time,
+        major_weight_map,
+        "main",
+    )
     
 
     st.markdown("Final origin rankings")
@@ -1412,7 +2110,11 @@ with tab_regionals:
                 st.markdown("Build a network (regionals)")
                 regional_origins = sorted(regionals_df["FromAddress"].unique())
                 regional_destinations = sorted(regionals_df["Destination"].unique())
-                regional_weights_map = st.session_state.destination_weights if "destination_weights" in st.session_state else DESTINATION_WEIGHTS
+                regional_weights_map = (
+                    st.session_state.destination_weights
+                    if "destination_weights" in st.session_state
+                    else initial_destination_weights(regionals_df, STATE_COUNTS)
+                )
                 regional_dest_weights = destination_weights(regional_destinations, regional_weights_map)
                 regional_built = st.multiselect(
                     "Included origins (regionals)",
@@ -1497,3 +2199,283 @@ with tab_regionals:
                     st.dataframe(subset, use_container_width=True)
     else:
         st.info("shipping_summary_regionals.csv not found in the app folder.")
+
+with tab_regionals_v3:
+    st.subheader("Shipping Summary Regionals v3")
+    st.caption("Top combos for the regional v3 data (page3.csv).")
+    regionals_v3_path = Path("page3.csv")
+    if regionals_v3_path.exists():
+        regionals_v3_df = load_data(str(regionals_v3_path))
+        if regionals_v3_df.empty:
+            st.info("No data available in page3.csv.")
+        else:
+            st.metric("Rows", f"{len(regionals_v3_df):,}")
+            st.markdown("Data sanity checks")
+            null_counts = regionals_v3_df.isna().sum()
+            nulls_df = (
+                null_counts[null_counts > 0]
+                .sort_values(ascending=False)
+                .rename("NullCount")
+                .reset_index()
+                .rename(columns={"index": "Column"})
+            )
+            if nulls_df.empty:
+                st.caption("Null values: none")
+            else:
+                st.dataframe(nulls_df, use_container_width=True)
+
+            unique_from = sorted(regionals_v3_df["FromAddress"].unique())
+            unique_to = sorted(regionals_v3_df["Destination"].unique())
+            total_possible_pairs = len(unique_from) * len(unique_to)
+            actual_pairs = regionals_v3_df[["FromAddress", "Destination"]].drop_duplicates()
+            missing_pairs = total_possible_pairs - len(actual_pairs)
+            coverage_pct = (len(actual_pairs) / total_possible_pairs * 100.0) if total_possible_pairs else 0.0
+            st.caption(
+                f"From/To coverage: {len(actual_pairs):,} of {total_possible_pairs:,} "
+                f"pairs ({coverage_pct:.1f}%), missing {missing_pairs:,}"
+            )
+            if missing_pairs == 0:
+                st.caption("All FromAddress entries have routes to all Destination entries.")
+            else:
+                missing_from = [
+                    from_city
+                    for from_city in unique_from
+                    if len(actual_pairs[actual_pairs["FromAddress"] == from_city]) != len(unique_to)
+                ]
+                if missing_from:
+                    st.caption(f"From cities missing destinations: {len(missing_from)}")
+                    st.selectbox(
+                        "Example FromAddress missing destinations",
+                        missing_from,
+                        index=0,
+                        key="v3_missing_from_example",
+                    )
+                    selected_missing_from = st.selectbox(
+                        "Show missing destinations for",
+                        missing_from,
+                        index=0,
+                        key="v3_missing_from_detail",
+                    )
+                    present = set(
+                        actual_pairs[actual_pairs["FromAddress"] == selected_missing_from]["Destination"]
+                    )
+                    missing_destinations = [dest for dest in unique_to if dest not in present]
+                    st.selectbox(
+                        "Missing destinations for selected FromAddress",
+                        missing_destinations or ["None"],
+                        key="v3_missing_from_destinations",
+                    )
+                else:
+                    st.caption("From cities missing destinations: 0")
+
+            duplicates = regionals_v3_df.duplicated(
+                subset=["FromAddress", "ToCity", "ToState", "PackageSize", "Service"],
+                keep=False,
+            )
+            dup_count = int(duplicates.sum())
+            st.caption(f"Duplicate rows (same from/to/size/service): {dup_count:,}")
+
+            lat_long_path = Path("lat_long_from_to.csv")
+            if lat_long_path.exists():
+                lat_long_df = pd.read_csv(lat_long_path)
+                lat_long_df["direction"] = lat_long_df["direction"].astype(str).str.upper()
+                lat_long_df["city_key"] = (
+                    lat_long_df["city"].astype(str).str.strip().str.casefold()
+                    + "||"
+                    + lat_long_df["state"].astype(str).str.strip().str.casefold()
+                )
+                from_keys = set(lat_long_df[lat_long_df["direction"] == "FROM"]["city_key"])
+                map_points = lat_long_df.dropna(subset=["lat", "lng"]).copy()
+                map_points["direction"] = np.where(
+                    map_points["city_key"].isin(from_keys),
+                    "FROM",
+                    map_points["direction"],
+                )
+                if not map_points.empty:
+                    st.markdown("Origin vs destination map")
+                    map_points["color"] = np.where(
+                        map_points["direction"] == "FROM",
+                        "FROM",
+                        "TO",
+                    )
+                    color_map = {
+                        "FROM": [27, 124, 212, 180],
+                        "TO": [217, 83, 79, 180],
+                    }
+                    map_points["color_rgba"] = map_points["color"].map(color_map)
+                    view_state = pdk.ViewState(
+                        latitude=float(map_points["lat"].mean()),
+                        longitude=float(map_points["lng"].mean()),
+                        zoom=3.5,
+                    )
+                    scatter = pdk.Layer(
+                        "ScatterplotLayer",
+                        data=map_points,
+                        get_position="[lng, lat]",
+                        get_fill_color="color_rgba",
+                        get_radius=35000,
+                        pickable=True,
+                    )
+                    st.pydeck_chart(
+                        pdk.Deck(
+                            layers=[scatter],
+                            initial_view_state=view_state,
+                            tooltip={"text": "{direction} - {name}\n{city}, {state} {postal_code}"},
+                        )
+                    )
+                else:
+                    st.caption("No valid lat/long rows found in lat_long_from_to.csv.")
+            else:
+                st.caption("lat_long_from_to.csv not found for the map.")
+            origin_list_all_v3 = sorted(regionals_v3_df["FromAddress"].unique())
+            if not origin_list_all_v3:
+                st.info("No origins available in shipping_summary_regionals_v3.csv.")
+            else:
+                default_baseline_v3 = (
+                    "Indianapolis" if "Indianapolis" in origin_list_all_v3 else origin_list_all_v3[0]
+                )
+                baseline_origin_v3 = st.selectbox(
+                    "Baseline origin (v3)",
+                    origin_list_all_v3,
+                    index=origin_list_all_v3.index(default_baseline_v3),
+                    key="v3_baseline_origin",
+                )
+                cost_weight_v3 = st.slider(
+                    "Cost weight (Time weight = 1 - Cost) (v3)",
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.05,
+                    key="v3_cost_weight",
+                )
+                build_cost_weight_v3 = cost_weight_v3
+
+                dest_in_view_v3 = sorted(regionals_v3_df["Destination"].unique())
+                if st.session_state.get("destination_weights_v3_version") != "city_counts_v1":
+                    st.session_state.destination_weights_v3 = initial_destination_weights_by_city(
+                        regionals_v3_df,
+                        V3_CITY_COUNTS,
+                    )
+                    st.session_state.destination_weights_v3_version = "city_counts_v1"
+
+                st.markdown("Destination weights (v3)")
+                selected_dest_v3 = st.selectbox(
+                    "Edit destination weight (v3)",
+                    dest_in_view_v3,
+                    index=0,
+                    key="v3_dest_weight_select",
+                )
+                current_weight_v3 = float(
+                    st.session_state.destination_weights_v3.get(selected_dest_v3, DEFAULT_DEST_WEIGHT)
+                )
+                new_weight_v3 = st.number_input(
+                    "Weight (v3)",
+                    min_value=0.0,
+                    value=current_weight_v3,
+                    step=0.5,
+                    format="%.2f",
+                    key="v3_dest_weight_value",
+                )
+                st.session_state.destination_weights_v3[selected_dest_v3] = float(new_weight_v3)
+                dest_weights_v3 = destination_weights(
+                    dest_in_view_v3,
+                    st.session_state.destination_weights_v3,
+                )
+
+                avg_time_by_origin_v3 = (
+                    regionals_v3_df.groupby(["FromAddress", "Destination"], as_index=False)
+                    .agg(AvgTime=("ShippingTimeDays", "mean"))
+                )
+                avg_time_by_origin_v3["Weight"] = avg_time_by_origin_v3["Destination"].map(
+                    dest_weights_v3
+                ).fillna(0.0)
+                weighted_avg_time_by_origin_v3 = (
+                    avg_time_by_origin_v3.groupby("FromAddress")
+                    .apply(lambda g: weighted_mean(g["AvgTime"].to_numpy(), g["Weight"].to_numpy()))
+                    .reset_index(name="WeightedAvgTime")
+                )
+                if not weighted_avg_time_by_origin_v3.empty:
+                    best_time_origin = weighted_avg_time_by_origin_v3.sort_values(
+                        "WeightedAvgTime"
+                    ).iloc[0]
+                    st.metric(
+                        "Best origin by weighted avg time (page3)",
+                        best_time_origin["FromAddress"],
+                        f"{best_time_origin['WeightedAvgTime']:.2f} days",
+                    )
+
+                if baseline_origin_v3 not in regionals_v3_df["FromAddress"].unique():
+                    baseline_origin_v3 = origin_list_all_v3[0]
+
+                baseline_time_by_dest_v3 = regionals_v3_df[
+                    regionals_v3_df["FromAddress"] == baseline_origin_v3
+                ].groupby("Destination", as_index=False).agg(AvgTime=("ShippingTimeDays", "mean"))
+                baseline_time_by_dest_v3["Weight"] = baseline_time_by_dest_v3["Destination"].map(
+                    dest_weights_v3
+                ).fillna(0.0)
+                avg_time_v3 = weighted_mean(
+                    baseline_time_by_dest_v3["AvgTime"].to_numpy(),
+                    baseline_time_by_dest_v3["Weight"].to_numpy(),
+                )
+                baseline_cost_by_dest_v3 = regionals_v3_df[
+                    regionals_v3_df["FromAddress"] == baseline_origin_v3
+                ].groupby("Destination", as_index=False).agg(AvgCost=("Cost", "mean"))
+                baseline_cost_by_dest_v3["Weight"] = baseline_cost_by_dest_v3["Destination"].map(
+                    dest_weights_v3
+                ).fillna(0.0)
+                avg_cost_v3 = weighted_mean(
+                    baseline_cost_by_dest_v3["AvgCost"].to_numpy(),
+                    baseline_cost_by_dest_v3["Weight"].to_numpy(),
+                )
+
+                one_day_origins_v3 = sorted(
+                    regionals_v3_df[regionals_v3_df["ShippingTimeDays"] <= 1.0][
+                        "FromAddress"
+                    ].unique().tolist()
+                )
+                avg_time_by_origin_v3 = regionals_v3_df.groupby("FromAddress", as_index=False).agg(
+                    AvgTime=("ShippingTimeDays", "mean")
+                )
+                baseline_avg_time_v3 = float(
+                    avg_time_by_origin_v3[
+                        avg_time_by_origin_v3["FromAddress"] == baseline_origin_v3
+                    ]["AvgTime"].iloc[0]
+                ) if baseline_origin_v3 in avg_time_by_origin_v3["FromAddress"].values else float("nan")
+                avg_time_by_origin_v3["TimeReductionVsBaseline"] = (
+                    baseline_avg_time_v3 - avg_time_by_origin_v3["AvgTime"]
+                )
+                top_time_reducers_v3 = (
+                    avg_time_by_origin_v3.sort_values("TimeReductionVsBaseline", ascending=False)
+                    .head(10)["FromAddress"]
+                    .tolist()
+                )
+                origin_candidates_v3 = sorted(
+                    {baseline_origin_v3} | set(one_day_origins_v3) | set(top_time_reducers_v3)
+                )
+                origin_list_v3 = [o for o in origin_candidates_v3 if o in origin_list_all_v3]
+
+                major_destinations_v3 = [
+                    dest
+                    for dest in dest_in_view_v3
+                    if float(st.session_state.destination_weights_v3.get(dest, DEFAULT_DEST_WEIGHT)) > 1.0
+                ]
+                major_weight_map_v3 = {
+                    dest: float(st.session_state.destination_weights_v3.get(dest, DEFAULT_DEST_WEIGHT))
+                    for dest in major_destinations_v3
+                }
+
+                render_top_combos(
+                    regionals_v3_df,
+                    origin_list_v3,
+                    dest_in_view_v3,
+                    dest_weights_v3,
+                    build_cost_weight_v3,
+                    avg_cost_v3,
+                    avg_time_v3,
+                    major_weight_map_v3,
+                    "regionals_v3",
+                    show_day_percentages=True,
+                    max_k=14,
+                )
+    else:
+        st.info("page3.csv not found in the app folder.")
