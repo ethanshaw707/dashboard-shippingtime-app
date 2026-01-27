@@ -1,0 +1,3151 @@
+FromAddress,ToCity,ToState,PackageSize,Cost,ShippingTimeDays,Service
+Atlanta,Allentown,PA,Size S,7.45,2,UPS® Ground
+Atlanta,Allentown,PA,Size M,8.86,2,UPS® Ground
+Atlanta,Allentown,PA,Size L,14.1,2,UPS® Ground
+Atlanta,Princeton,NJ,Size S,7.36,2,UPS® Ground
+Atlanta,Princeton,NJ,Size M,8.77,2,UPS® Ground
+Atlanta,Princeton,NJ,Size L,14.1,2,UPS® Ground
+Atlanta,New Haven,CT,Size S,7.36,2,UPS® Ground
+Atlanta,New Haven,CT,Size M,8.77,2,UPS® Ground
+Atlanta,New Haven,CT,Size L,14.1,2,UPS® Ground
+Atlanta,Providence,RI,Size S,7.45,2,UPS® Ground
+Atlanta,Providence,RI,Size M,8.86,2,UPS® Ground
+Atlanta,Providence,RI,Size L,14.1,2,UPS® Ground
+Atlanta,Burlington,VT,Size S,7.36,2,UPS® Ground
+Atlanta,Burlington,VT,Size M,8.77,2,UPS® Ground
+Atlanta,Burlington,VT,Size L,14.1,2,UPS® Ground
+Atlanta,Concord,NH,Size S,7.36,2,UPS® Ground
+Atlanta,Concord,NH,Size M,8.77,2,UPS® Ground
+Atlanta,Concord,NH,Size L,14.1,2,UPS® Ground
+Atlanta,Ithaca,NY,Size S,7.36,2,UPS® Ground
+Atlanta,Ithaca,NY,Size M,8.77,2,UPS® Ground
+Atlanta,Ithaca,NY,Size L,14.1,2,UPS® Ground
+Atlanta,Springfield,MA,Size S,7.36,2,UPS® Ground
+Atlanta,Springfield,MA,Size M,8.77,2,UPS® Ground
+Atlanta,Springfield,MA,Size L,14.1,2,UPS® Ground
+Atlanta,Bangor,ME,Size S,8.36,2,UPS® Ground
+Atlanta,Bangor,ME,Size M,10.31,2,UPS® Ground
+Atlanta,Bangor,ME,Size L,15.29,2,UPS® Ground
+Atlanta,Greenville,SC,Size S,6.09,1,UPS® Ground
+Atlanta,Greenville,SC,Size M,7.26,1,UPS® Ground
+Atlanta,Greenville,SC,Size L,8.94,1,UPS® Ground
+Atlanta,Savannah,GA,Size S,6.56,1,UPS® Ground
+Atlanta,Savannah,GA,Size M,8.24,1,UPS® Ground
+Atlanta,Savannah,GA,Size L,9.94,1,UPS® Ground
+Atlanta,Huntsville,AL,Size S,6.48,1,UPS® Ground
+Atlanta,Huntsville,AL,Size M,7.79,1,UPS® Ground
+Atlanta,Huntsville,AL,Size L,8.94,1,UPS® Ground
+Atlanta,Gulfport,MS,Size S,6.69,2,UPS® Ground
+Atlanta,Gulfport,MS,Size M,8.69,2,UPS® Ground
+Atlanta,Gulfport,MS,Size L,10.54,2,UPS® Ground
+Atlanta,Chattanooga,TN,Size S,6.09,1,UPS® Ground
+Atlanta,Chattanooga,TN,Size M,7.26,1,UPS® Ground
+Atlanta,Chattanooga,TN,Size L,8.94,1,UPS® Ground
+Atlanta,Asheville,NC,Size S,6.39,2,UPS® Ground
+Atlanta,Asheville,NC,Size M,7.4,2,UPS® Ground
+Atlanta,Asheville,NC,Size L,9.94,2,UPS® Ground
+Atlanta,Tallahassee,FL,Size S,6.39,2,UPS® Ground
+Atlanta,Tallahassee,FL,Size M,7.4,2,UPS® Ground
+Atlanta,Tallahassee,FL,Size L,9.94,2,UPS® Ground
+Atlanta,Roanoke,VA,Size S,6.52,2,UPS® Ground
+Atlanta,Roanoke,VA,Size M,7.91,2,UPS® Ground
+Atlanta,Roanoke,VA,Size L,10.54,2,UPS® Ground
+Atlanta,Morgantown,WV,Size S,6.52,2,UPS® Ground
+Atlanta,Morgantown,WV,Size M,7.91,2,UPS® Ground
+Atlanta,Morgantown,WV,Size L,10.54,2,UPS® Ground
+Atlanta,Toledo,OH,Size S,6.69,2,UPS® Ground
+Atlanta,Toledo,OH,Size M,8.69,2,UPS® Ground
+Atlanta,Toledo,OH,Size L,10.54,2,UPS® Ground
+Atlanta,Lansing,MI,Size S,7.45,2,UPS® Ground
+Atlanta,Lansing,MI,Size M,8.86,2,UPS® Ground
+Atlanta,Lansing,MI,Size L,14.1,2,UPS® Ground
+Atlanta,Des Moines,IA,Size S,7.36,2,UPS® Ground
+Atlanta,Des Moines,IA,Size M,8.77,2,UPS® Ground
+Atlanta,Des Moines,IA,Size L,14.1,2,UPS® Ground
+Atlanta,Duluth,MN,Size S,7.45,2,UPS® Ground
+Atlanta,Duluth,MN,Size M,8.86,2,UPS® Ground
+Atlanta,Duluth,MN,Size L,14.1,2,UPS® Ground
+Atlanta,Peoria,IL,Size S,6.52,2,UPS® Ground
+Atlanta,Peoria,IL,Size M,7.91,2,UPS® Ground
+Atlanta,Peoria,IL,Size L,10.54,2,UPS® Ground
+Atlanta,Green Bay,WI,Size S,7.36,2,UPS® Ground
+Atlanta,Green Bay,WI,Size M,8.77,2,UPS® Ground
+Atlanta,Green Bay,WI,Size L,14.1,2,UPS® Ground
+Atlanta,Sioux Falls,SD,Size S,7.36,3,UPS® Ground
+Atlanta,Sioux Falls,SD,Size M,8.77,3,UPS® Ground
+Atlanta,Sioux Falls,SD,Size L,14.1,3,UPS® Ground
+Atlanta,Wichita,KS,Size S,7.36,2,UPS® Ground
+Atlanta,Wichita,KS,Size M,8.77,2,UPS® Ground
+Atlanta,Wichita,KS,Size L,14.1,2,UPS® Ground
+Atlanta,Bloomington,IN,Size S,6.52,2,UPS® Ground
+Atlanta,Bloomington,IN,Size M,7.91,2,UPS® Ground
+Atlanta,Bloomington,IN,Size L,10.54,2,UPS® Ground
+Atlanta,Athens,OH,Size S,6.69,2,UPS® Ground
+Atlanta,Athens,OH,Size M,8.69,2,UPS® Ground
+Atlanta,Athens,OH,Size L,10.54,2,UPS® Ground
+Atlanta,Lubbock,TX,Size S,7.45,2,UPS® Ground
+Atlanta,Lubbock,TX,Size M,8.86,2,UPS® Ground
+Atlanta,Lubbock,TX,Size L,14.1,2,UPS® Ground
+Atlanta,Fayetteville,AR,Size S,6.52,2,UPS® Ground
+Atlanta,Fayetteville,AR,Size M,7.91,2,UPS® Ground
+Atlanta,Fayetteville,AR,Size L,10.54,2,UPS® Ground
+Atlanta,Santa Fe,NM,Size S,8.45,3,UPS® Ground
+Atlanta,Santa Fe,NM,Size M,10.4,3,UPS® Ground
+Atlanta,Santa Fe,NM,Size L,15.29,3,UPS® Ground
+Atlanta,Fort Collins,CO,Size S,8.36,3,UPS® Ground
+Atlanta,Fort Collins,CO,Size M,10.31,3,UPS® Ground
+Atlanta,Fort Collins,CO,Size L,15.29,3,UPS® Ground
+Atlanta,Provo,UT,Size S,8.62,3,UPS® Ground
+Atlanta,Provo,UT,Size M,10.91,3,UPS® Ground
+Atlanta,Provo,UT,Size L,16.29,3,UPS® Ground
+Atlanta,Bozeman,MT,Size S,8.71,3,UPS® Ground
+Atlanta,Bozeman,MT,Size M,11.0,3,UPS® Ground
+Atlanta,Bozeman,MT,Size L,16.29,3,UPS® Ground
+Atlanta,Cheyenne,WY,Size S,8.45,3,UPS® Ground
+Atlanta,Cheyenne,WY,Size M,10.4,3,UPS® Ground
+Atlanta,Cheyenne,WY,Size L,15.29,3,UPS® Ground
+Atlanta,Norman,OK,Size S,7.36,2,UPS® Ground
+Atlanta,Norman,OK,Size M,8.77,2,UPS® Ground
+Atlanta,Norman,OK,Size L,14.1,2,UPS® Ground
+Atlanta,Santa Barbara,CA,Size S,9.25,3,UPS® Ground
+Atlanta,Santa Barbara,CA,Size M,12.06,3,UPS® Ground
+Atlanta,Santa Barbara,CA,Size L,17.29,3,UPS® Ground
+Atlanta,Palo Alto,CA,Size S,9.16,4,UPS® Ground
+Atlanta,Palo Alto,CA,Size M,11.97,4,UPS® Ground
+Atlanta,Palo Alto,CA,Size L,17.29,4,UPS® Ground
+Atlanta,Santa Cruz,CA,Size S,9.16,4,UPS® Ground
+Atlanta,Santa Cruz,CA,Size M,11.97,4,UPS® Ground
+Atlanta,Santa Cruz,CA,Size L,17.29,4,UPS® Ground
+Atlanta,Eugene,OR,Size S,9.16,5,UPS® Ground
+Atlanta,Eugene,OR,Size M,11.97,5,UPS® Ground
+Atlanta,Eugene,OR,Size L,17.29,5,UPS® Ground
+Atlanta,Bend,OR,Size S,9.16,4,UPS® Ground
+Atlanta,Bend,OR,Size M,11.97,4,UPS® Ground
+Atlanta,Bend,OR,Size L,17.29,4,UPS® Ground
+Atlanta,Bellingham,WA,Size S,9.25,4,UPS® Ground
+Atlanta,Bellingham,WA,Size M,12.06,4,UPS® Ground
+Atlanta,Bellingham,WA,Size L,17.29,4,UPS® Ground
+Atlanta,Olympia,WA,Size S,9.16,4,UPS® Ground
+Atlanta,Olympia,WA,Size M,11.97,4,UPS® Ground
+Atlanta,Olympia,WA,Size L,17.29,4,UPS® Ground
+Atlanta,Idaho Falls,ID,Size S,8.62,3,UPS® Ground
+Atlanta,Idaho Falls,ID,Size M,10.91,3,UPS® Ground
+Atlanta,Idaho Falls,ID,Size L,16.29,3,UPS® Ground
+Atlanta,Carson City,NV,Size S,9.16,4,UPS® Ground
+Atlanta,Carson City,NV,Size M,11.97,4,UPS® Ground
+Atlanta,Carson City,NV,Size L,17.29,4,UPS® Ground
+Atlanta,Flagstaff,AZ,Size S,8.62,3,UPS® Ground
+Atlanta,Flagstaff,AZ,Size M,10.91,3,UPS® Ground
+Atlanta,Flagstaff,AZ,Size L,16.29,3,UPS® Ground
+Atlanta,Redding,CA,Size S,9.25,4,UPS® Ground
+Atlanta,Redding,CA,Size M,12.06,4,UPS® Ground
+Atlanta,Redding,CA,Size L,17.29,4,UPS® Ground
+Atlanta,Hilo,HI,Size S,47.24,5,UPS® Ground
+Atlanta,Hilo,HI,Size M,53.22,5,UPS® Ground
+Atlanta,Hilo,HI,Size L,62.23,5,UPS® Ground
+Atlanta,Fairbanks,AK,Size S,30.87,3,UPS® Ground
+Atlanta,Fairbanks,AK,Size M,36.99,3,UPS® Ground
+Atlanta,Fairbanks,AK,Size L,46.14,3,UPS® Ground
+Atlanta,Monterey,CA,Size S,9.16,4,UPS® Ground
+Atlanta,Monterey,CA,Size M,11.97,4,UPS® Ground
+Atlanta,Monterey,CA,Size L,17.29,4,UPS® Ground
+Columbus,Allentown,PA,Size S,6.69,2,UPS® Ground
+Columbus,Allentown,PA,Size M,8.69,2,UPS® Ground
+Columbus,Allentown,PA,Size L,10.54,2,UPS® Ground
+Columbus,Princeton,NJ,Size S,6.52,2,UPS® Ground
+Columbus,Princeton,NJ,Size M,7.91,2,UPS® Ground
+Columbus,Princeton,NJ,Size L,10.54,2,UPS® Ground
+Columbus,New Haven,CT,Size S,6.52,2,UPS® Ground
+Columbus,New Haven,CT,Size M,7.91,2,UPS® Ground
+Columbus,New Haven,CT,Size L,10.54,2,UPS® Ground
+Columbus,Providence,RI,Size S,7.45,2,UPS® Ground
+Columbus,Providence,RI,Size M,8.86,2,UPS® Ground
+Columbus,Providence,RI,Size L,14.1,2,UPS® Ground
+Columbus,Burlington,VT,Size S,6.52,2,UPS® Ground
+Columbus,Burlington,VT,Size M,7.91,2,UPS® Ground
+Columbus,Burlington,VT,Size L,10.54,2,UPS® Ground
+Columbus,Concord,NH,Size S,7.36,2,UPS® Ground
+Columbus,Concord,NH,Size M,8.77,2,UPS® Ground
+Columbus,Concord,NH,Size L,14.1,2,UPS® Ground
+Columbus,Ithaca,NY,Size S,6.52,2,UPS® Ground
+Columbus,Ithaca,NY,Size M,7.91,2,UPS® Ground
+Columbus,Ithaca,NY,Size L,10.54,2,UPS® Ground
+Columbus,Springfield,MA,Size S,7.36,2,UPS® Ground
+Columbus,Springfield,MA,Size M,8.77,2,UPS® Ground
+Columbus,Springfield,MA,Size L,14.1,2,UPS® Ground
+Columbus,Bangor,ME,Size S,7.36,2,UPS® Ground
+Columbus,Bangor,ME,Size M,8.77,2,UPS® Ground
+Columbus,Bangor,ME,Size L,14.1,2,UPS® Ground
+Columbus,Greenville,SC,Size S,6.52,2,UPS® Ground
+Columbus,Greenville,SC,Size M,7.91,2,UPS® Ground
+Columbus,Greenville,SC,Size L,10.54,2,UPS® Ground
+Columbus,Savannah,GA,Size S,6.69,2,UPS® Ground
+Columbus,Savannah,GA,Size M,8.69,2,UPS® Ground
+Columbus,Savannah,GA,Size L,10.54,2,UPS® Ground
+Columbus,Huntsville,AL,Size S,6.69,2,UPS® Ground
+Columbus,Huntsville,AL,Size M,8.69,2,UPS® Ground
+Columbus,Huntsville,AL,Size L,10.54,2,UPS® Ground
+Columbus,Gulfport,MS,Size S,7.45,3,UPS® Ground
+Columbus,Gulfport,MS,Size M,8.86,3,UPS® Ground
+Columbus,Gulfport,MS,Size L,14.1,3,UPS® Ground
+Columbus,Chattanooga,TN,Size S,6.52,2,UPS® Ground
+Columbus,Chattanooga,TN,Size M,7.91,2,UPS® Ground
+Columbus,Chattanooga,TN,Size L,10.54,2,UPS® Ground
+Columbus,Asheville,NC,Size S,6.52,2,UPS® Ground
+Columbus,Asheville,NC,Size M,7.91,2,UPS® Ground
+Columbus,Asheville,NC,Size L,10.54,2,UPS® Ground
+Columbus,Tallahassee,FL,Size S,7.36,2,UPS® Ground
+Columbus,Tallahassee,FL,Size M,8.77,2,UPS® Ground
+Columbus,Tallahassee,FL,Size L,14.1,2,UPS® Ground
+Columbus,Roanoke,VA,Size S,6.39,2,UPS® Ground
+Columbus,Roanoke,VA,Size M,7.4,2,UPS® Ground
+Columbus,Roanoke,VA,Size L,9.94,2,UPS® Ground
+Columbus,Morgantown,WV,Size S,6.39,2,UPS® Ground
+Columbus,Morgantown,WV,Size M,7.4,2,UPS® Ground
+Columbus,Morgantown,WV,Size L,9.94,2,UPS® Ground
+Columbus,Toledo,OH,Size S,6.48,1,UPS® Ground
+Columbus,Toledo,OH,Size M,7.79,1,UPS® Ground
+Columbus,Toledo,OH,Size L,8.94,1,UPS® Ground
+Columbus,Lansing,MI,Size S,6.56,1,UPS® Ground
+Columbus,Lansing,MI,Size M,8.24,1,UPS® Ground
+Columbus,Lansing,MI,Size L,9.94,1,UPS® Ground
+Columbus,Des Moines,IA,Size S,6.52,2,UPS® Ground
+Columbus,Des Moines,IA,Size M,7.91,2,UPS® Ground
+Columbus,Des Moines,IA,Size L,10.54,2,UPS® Ground
+Columbus,Duluth,MN,Size S,7.45,2,UPS® Ground
+Columbus,Duluth,MN,Size M,8.86,2,UPS® Ground
+Columbus,Duluth,MN,Size L,14.1,2,UPS® Ground
+Columbus,Peoria,IL,Size S,6.52,2,UPS® Ground
+Columbus,Peoria,IL,Size M,7.91,2,UPS® Ground
+Columbus,Peoria,IL,Size L,10.54,2,UPS® Ground
+Columbus,Green Bay,WI,Size S,6.52,2,UPS® Ground
+Columbus,Green Bay,WI,Size M,7.91,2,UPS® Ground
+Columbus,Green Bay,WI,Size L,10.54,2,UPS® Ground
+Columbus,Sioux Falls,SD,Size S,7.36,3,UPS® Ground
+Columbus,Sioux Falls,SD,Size M,8.77,3,UPS® Ground
+Columbus,Sioux Falls,SD,Size L,14.1,3,UPS® Ground
+Columbus,Wichita,KS,Size S,7.36,2,UPS® Ground
+Columbus,Wichita,KS,Size M,8.77,2,UPS® Ground
+Columbus,Wichita,KS,Size L,14.1,2,UPS® Ground
+Columbus,Bloomington,IN,Size S,6.39,1,UPS® Ground
+Columbus,Bloomington,IN,Size M,7.4,1,UPS® Ground
+Columbus,Bloomington,IN,Size L,9.94,1,UPS® Ground
+Columbus,Athens,OH,Size S,6.48,1,UPS® Ground
+Columbus,Athens,OH,Size M,7.79,1,UPS® Ground
+Columbus,Athens,OH,Size L,8.94,1,UPS® Ground
+Columbus,Lubbock,TX,Size S,8.45,3,UPS® Ground
+Columbus,Lubbock,TX,Size M,10.4,3,UPS® Ground
+Columbus,Lubbock,TX,Size L,15.29,3,UPS® Ground
+Columbus,Fayetteville,AR,Size S,7.36,3,UPS® Ground
+Columbus,Fayetteville,AR,Size M,8.77,3,UPS® Ground
+Columbus,Fayetteville,AR,Size L,14.1,3,UPS® Ground
+Columbus,Santa Fe,NM,Size S,8.45,4,UPS® Ground
+Columbus,Santa Fe,NM,Size M,10.4,4,UPS® Ground
+Columbus,Santa Fe,NM,Size L,15.29,4,UPS® Ground
+Columbus,Fort Collins,CO,Size S,8.36,3,UPS® Ground
+Columbus,Fort Collins,CO,Size M,10.31,3,UPS® Ground
+Columbus,Fort Collins,CO,Size L,15.29,3,UPS® Ground
+Columbus,Provo,UT,Size S,8.62,3,UPS® Ground
+Columbus,Provo,UT,Size M,10.91,3,UPS® Ground
+Columbus,Provo,UT,Size L,16.29,3,UPS® Ground
+Columbus,Bozeman,MT,Size S,8.71,3,UPS® Ground
+Columbus,Bozeman,MT,Size M,11.0,3,UPS® Ground
+Columbus,Bozeman,MT,Size L,16.29,3,UPS® Ground
+Columbus,Cheyenne,WY,Size S,8.45,3,UPS® Ground
+Columbus,Cheyenne,WY,Size M,10.4,3,UPS® Ground
+Columbus,Cheyenne,WY,Size L,15.29,3,UPS® Ground
+Columbus,Norman,OK,Size S,7.36,3,UPS® Ground
+Columbus,Norman,OK,Size M,8.77,3,UPS® Ground
+Columbus,Norman,OK,Size L,14.1,3,UPS® Ground
+Columbus,Santa Barbara,CA,Size S,9.25,3,UPS® Ground
+Columbus,Santa Barbara,CA,Size M,12.06,3,UPS® Ground
+Columbus,Santa Barbara,CA,Size L,17.29,3,UPS® Ground
+Columbus,Palo Alto,CA,Size S,9.16,4,UPS® Ground
+Columbus,Palo Alto,CA,Size M,11.97,4,UPS® Ground
+Columbus,Palo Alto,CA,Size L,17.29,4,UPS® Ground
+Columbus,Santa Cruz,CA,Size S,9.16,4,UPS® Ground
+Columbus,Santa Cruz,CA,Size M,11.97,4,UPS® Ground
+Columbus,Santa Cruz,CA,Size L,17.29,4,UPS® Ground
+Columbus,Eugene,OR,Size S,9.16,4,UPS® Ground
+Columbus,Eugene,OR,Size M,11.97,4,UPS® Ground
+Columbus,Eugene,OR,Size L,17.29,4,UPS® Ground
+Columbus,Bend,OR,Size S,9.16,4,UPS® Ground
+Columbus,Bend,OR,Size M,11.97,4,UPS® Ground
+Columbus,Bend,OR,Size L,17.29,4,UPS® Ground
+Columbus,Bellingham,WA,Size S,9.25,4,UPS® Ground
+Columbus,Bellingham,WA,Size M,12.06,4,UPS® Ground
+Columbus,Bellingham,WA,Size L,17.29,4,UPS® Ground
+Columbus,Olympia,WA,Size S,9.16,4,UPS® Ground
+Columbus,Olympia,WA,Size M,11.97,4,UPS® Ground
+Columbus,Olympia,WA,Size L,17.29,4,UPS® Ground
+Columbus,Idaho Falls,ID,Size S,8.62,3,UPS® Ground
+Columbus,Idaho Falls,ID,Size M,10.91,3,UPS® Ground
+Columbus,Idaho Falls,ID,Size L,16.29,3,UPS® Ground
+Columbus,Carson City,NV,Size S,9.16,3,UPS® Ground
+Columbus,Carson City,NV,Size M,11.97,3,UPS® Ground
+Columbus,Carson City,NV,Size L,17.29,3,UPS® Ground
+Columbus,Flagstaff,AZ,Size S,8.62,4,UPS® Ground
+Columbus,Flagstaff,AZ,Size M,10.91,4,UPS® Ground
+Columbus,Flagstaff,AZ,Size L,16.29,4,UPS® Ground
+Columbus,Redding,CA,Size S,9.25,4,UPS® Ground
+Columbus,Redding,CA,Size M,12.06,4,UPS® Ground
+Columbus,Redding,CA,Size L,17.29,4,UPS® Ground
+Columbus,Hilo,HI,Size S,47.24,5,UPS® Ground
+Columbus,Hilo,HI,Size M,53.22,5,UPS® Ground
+Columbus,Hilo,HI,Size L,62.23,5,UPS® Ground
+Columbus,Fairbanks,AK,Size S,30.87,3,UPS® Ground
+Columbus,Fairbanks,AK,Size M,36.99,3,UPS® Ground
+Columbus,Fairbanks,AK,Size L,46.14,3,UPS® Ground
+Columbus,Monterey,CA,Size S,9.16,4,UPS® Ground
+Columbus,Monterey,CA,Size M,11.97,4,UPS® Ground
+Columbus,Monterey,CA,Size L,17.29,4,UPS® Ground
+Denver,Allentown,PA,Size S,8.71,3,UPS® Ground
+Denver,Allentown,PA,Size M,11.0,3,UPS® Ground
+Denver,Allentown,PA,Size L,16.29,3,UPS® Ground
+Denver,Princeton,NJ,Size S,8.62,3,UPS® Ground
+Denver,Princeton,NJ,Size M,10.91,3,UPS® Ground
+Denver,Princeton,NJ,Size L,16.29,3,UPS® Ground
+Denver,New Haven,CT,Size S,8.62,3,UPS® Ground
+Denver,New Haven,CT,Size M,10.91,3,UPS® Ground
+Denver,New Haven,CT,Size L,16.29,3,UPS® Ground
+Denver,Providence,RI,Size S,8.71,3,UPS® Ground
+Denver,Providence,RI,Size M,11.0,3,UPS® Ground
+Denver,Providence,RI,Size L,16.29,3,UPS® Ground
+Denver,Burlington,VT,Size S,8.62,3,UPS® Ground
+Denver,Burlington,VT,Size M,10.91,3,UPS® Ground
+Denver,Burlington,VT,Size L,16.29,3,UPS® Ground
+Denver,Concord,NH,Size S,8.62,3,UPS® Ground
+Denver,Concord,NH,Size M,10.91,3,UPS® Ground
+Denver,Concord,NH,Size L,16.29,3,UPS® Ground
+Denver,Ithaca,NY,Size S,8.62,3,UPS® Ground
+Denver,Ithaca,NY,Size M,10.91,3,UPS® Ground
+Denver,Ithaca,NY,Size L,16.29,3,UPS® Ground
+Denver,Springfield,MA,Size S,8.62,3,UPS® Ground
+Denver,Springfield,MA,Size M,10.91,3,UPS® Ground
+Denver,Springfield,MA,Size L,16.29,3,UPS® Ground
+Denver,Bangor,ME,Size S,9.16,3,UPS® Ground
+Denver,Bangor,ME,Size M,11.97,3,UPS® Ground
+Denver,Bangor,ME,Size L,17.29,3,UPS® Ground
+Denver,Greenville,SC,Size S,8.36,3,UPS® Ground
+Denver,Greenville,SC,Size M,10.31,3,UPS® Ground
+Denver,Greenville,SC,Size L,15.29,3,UPS® Ground
+Denver,Savannah,GA,Size S,8.45,3,UPS® Ground
+Denver,Savannah,GA,Size M,10.4,3,UPS® Ground
+Denver,Savannah,GA,Size L,15.29,3,UPS® Ground
+Denver,Huntsville,AL,Size S,8.45,3,UPS® Ground
+Denver,Huntsville,AL,Size M,10.4,3,UPS® Ground
+Denver,Huntsville,AL,Size L,15.29,3,UPS® Ground
+Denver,Gulfport,MS,Size S,8.45,3,UPS® Ground
+Denver,Gulfport,MS,Size M,10.4,3,UPS® Ground
+Denver,Gulfport,MS,Size L,15.29,3,UPS® Ground
+Denver,Chattanooga,TN,Size S,8.36,3,UPS® Ground
+Denver,Chattanooga,TN,Size M,10.31,3,UPS® Ground
+Denver,Chattanooga,TN,Size L,15.29,3,UPS® Ground
+Denver,Asheville,NC,Size S,8.36,3,UPS® Ground
+Denver,Asheville,NC,Size M,10.31,3,UPS® Ground
+Denver,Asheville,NC,Size L,15.29,3,UPS® Ground
+Denver,Tallahassee,FL,Size S,8.36,3,UPS® Ground
+Denver,Tallahassee,FL,Size M,10.31,3,UPS® Ground
+Denver,Tallahassee,FL,Size L,15.29,3,UPS® Ground
+Denver,Roanoke,VA,Size S,8.36,3,UPS® Ground
+Denver,Roanoke,VA,Size M,10.31,3,UPS® Ground
+Denver,Roanoke,VA,Size L,15.29,3,UPS® Ground
+Denver,Morgantown,WV,Size S,8.36,3,UPS® Ground
+Denver,Morgantown,WV,Size M,10.31,3,UPS® Ground
+Denver,Morgantown,WV,Size L,15.29,3,UPS® Ground
+Denver,Toledo,OH,Size S,8.45,3,UPS® Ground
+Denver,Toledo,OH,Size M,10.4,3,UPS® Ground
+Denver,Toledo,OH,Size L,15.29,3,UPS® Ground
+Denver,Lansing,MI,Size S,8.45,3,UPS® Ground
+Denver,Lansing,MI,Size M,10.4,3,UPS® Ground
+Denver,Lansing,MI,Size L,15.29,3,UPS® Ground
+Denver,Des Moines,IA,Size S,7.36,2,UPS® Ground
+Denver,Des Moines,IA,Size M,8.77,2,UPS® Ground
+Denver,Des Moines,IA,Size L,14.1,2,UPS® Ground
+Denver,Duluth,MN,Size S,7.45,3,UPS® Ground
+Denver,Duluth,MN,Size M,8.86,3,UPS® Ground
+Denver,Duluth,MN,Size L,14.1,3,UPS® Ground
+Denver,Peoria,IL,Size S,7.36,2,UPS® Ground
+Denver,Peoria,IL,Size M,8.77,2,UPS® Ground
+Denver,Peoria,IL,Size L,14.1,2,UPS® Ground
+Denver,Green Bay,WI,Size S,7.36,3,UPS® Ground
+Denver,Green Bay,WI,Size M,8.77,3,UPS® Ground
+Denver,Green Bay,WI,Size L,14.1,3,UPS® Ground
+Denver,Sioux Falls,SD,Size S,6.52,2,UPS® Ground
+Denver,Sioux Falls,SD,Size M,7.91,2,UPS® Ground
+Denver,Sioux Falls,SD,Size L,10.54,2,UPS® Ground
+Denver,Wichita,KS,Size S,6.52,2,UPS® Ground
+Denver,Wichita,KS,Size M,7.91,2,UPS® Ground
+Denver,Wichita,KS,Size L,10.54,2,UPS® Ground
+Denver,Bloomington,IN,Size S,7.36,3,UPS® Ground
+Denver,Bloomington,IN,Size M,8.77,3,UPS® Ground
+Denver,Bloomington,IN,Size L,14.1,3,UPS® Ground
+Denver,Athens,OH,Size S,8.45,3,UPS® Ground
+Denver,Athens,OH,Size M,10.4,3,UPS® Ground
+Denver,Athens,OH,Size L,15.29,3,UPS® Ground
+Denver,Lubbock,TX,Size S,6.69,2,UPS® Ground
+Denver,Lubbock,TX,Size M,8.69,2,UPS® Ground
+Denver,Lubbock,TX,Size L,10.54,2,UPS® Ground
+Denver,Fayetteville,AR,Size S,7.36,3,UPS® Ground
+Denver,Fayetteville,AR,Size M,8.77,3,UPS® Ground
+Denver,Fayetteville,AR,Size L,14.1,3,UPS® Ground
+Denver,Santa Fe,NM,Size S,6.69,2,UPS® Ground
+Denver,Santa Fe,NM,Size M,8.69,2,UPS® Ground
+Denver,Santa Fe,NM,Size L,10.54,2,UPS® Ground
+Denver,Fort Collins,CO,Size S,6.09,1,UPS® Ground
+Denver,Fort Collins,CO,Size M,7.26,1,UPS® Ground
+Denver,Fort Collins,CO,Size L,8.94,1,UPS® Ground
+Denver,Provo,UT,Size S,6.52,2,UPS® Ground
+Denver,Provo,UT,Size M,7.91,2,UPS® Ground
+Denver,Provo,UT,Size L,10.54,2,UPS® Ground
+Denver,Bozeman,MT,Size S,7.45,2,UPS® Ground
+Denver,Bozeman,MT,Size M,8.86,2,UPS® Ground
+Denver,Bozeman,MT,Size L,14.1,2,UPS® Ground
+Denver,Cheyenne,WY,Size S,6.48,1,UPS® Ground
+Denver,Cheyenne,WY,Size M,7.79,1,UPS® Ground
+Denver,Cheyenne,WY,Size L,8.94,1,UPS® Ground
+Denver,Norman,OK,Size S,6.52,2,UPS® Ground
+Denver,Norman,OK,Size M,7.91,2,UPS® Ground
+Denver,Norman,OK,Size L,10.54,2,UPS® Ground
+Denver,Santa Barbara,CA,Size S,7.45,2,UPS® Ground
+Denver,Santa Barbara,CA,Size M,8.86,2,UPS® Ground
+Denver,Santa Barbara,CA,Size L,14.1,2,UPS® Ground
+Denver,Palo Alto,CA,Size S,7.36,2,UPS® Ground
+Denver,Palo Alto,CA,Size M,8.77,2,UPS® Ground
+Denver,Palo Alto,CA,Size L,14.1,2,UPS® Ground
+Denver,Santa Cruz,CA,Size S,7.36,2,UPS® Ground
+Denver,Santa Cruz,CA,Size M,8.77,2,UPS® Ground
+Denver,Santa Cruz,CA,Size L,14.1,2,UPS® Ground
+Denver,Eugene,OR,Size S,7.36,3,UPS® Ground
+Denver,Eugene,OR,Size M,8.77,3,UPS® Ground
+Denver,Eugene,OR,Size L,14.1,3,UPS® Ground
+Denver,Bend,OR,Size S,7.36,3,UPS® Ground
+Denver,Bend,OR,Size M,8.77,3,UPS® Ground
+Denver,Bend,OR,Size L,14.1,3,UPS® Ground
+Denver,Bellingham,WA,Size S,8.45,3,UPS® Ground
+Denver,Bellingham,WA,Size M,10.4,3,UPS® Ground
+Denver,Bellingham,WA,Size L,15.29,3,UPS® Ground
+Denver,Olympia,WA,Size S,8.36,3,UPS® Ground
+Denver,Olympia,WA,Size M,10.31,3,UPS® Ground
+Denver,Olympia,WA,Size L,15.29,3,UPS® Ground
+Denver,Idaho Falls,ID,Size S,7.36,2,UPS® Ground
+Denver,Idaho Falls,ID,Size M,8.77,2,UPS® Ground
+Denver,Idaho Falls,ID,Size L,14.1,2,UPS® Ground
+Denver,Carson City,NV,Size S,7.36,2,UPS® Ground
+Denver,Carson City,NV,Size M,8.77,2,UPS® Ground
+Denver,Carson City,NV,Size L,14.1,2,UPS® Ground
+Denver,Flagstaff,AZ,Size S,6.52,2,UPS® Ground
+Denver,Flagstaff,AZ,Size M,7.91,2,UPS® Ground
+Denver,Flagstaff,AZ,Size L,10.54,2,UPS® Ground
+Denver,Redding,CA,Size S,7.45,2,UPS® Ground
+Denver,Redding,CA,Size M,8.86,2,UPS® Ground
+Denver,Redding,CA,Size L,14.1,2,UPS® Ground
+Denver,Hilo,HI,Size S,47.24,3,UPS® Ground
+Denver,Hilo,HI,Size M,53.22,3,UPS® Ground
+Denver,Hilo,HI,Size L,62.23,3,UPS® Ground
+Denver,Fairbanks,AK,Size S,30.87,4,UPS® Ground
+Denver,Fairbanks,AK,Size M,36.99,4,UPS® Ground
+Denver,Fairbanks,AK,Size L,46.14,4,UPS® Ground
+Denver,Monterey,CA,Size S,7.36,2,UPS® Ground
+Denver,Monterey,CA,Size M,8.77,2,UPS® Ground
+Denver,Monterey,CA,Size L,14.1,2,UPS® Ground
+Chicago,Allentown,PA,Size S,7.45,2,UPS® Ground
+Chicago,Allentown,PA,Size M,8.86,2,UPS® Ground
+Chicago,Allentown,PA,Size L,14.1,2,UPS® Ground
+Chicago,Princeton,NJ,Size S,7.36,2,UPS® Ground
+Chicago,Princeton,NJ,Size M,8.77,2,UPS® Ground
+Chicago,Princeton,NJ,Size L,14.1,2,UPS® Ground
+Chicago,New Haven,CT,Size S,7.36,2,UPS® Ground
+Chicago,New Haven,CT,Size M,8.77,2,UPS® Ground
+Chicago,New Haven,CT,Size L,14.1,2,UPS® Ground
+Chicago,Providence,RI,Size S,7.45,3,UPS® Ground
+Chicago,Providence,RI,Size M,8.86,3,UPS® Ground
+Chicago,Providence,RI,Size L,14.1,3,UPS® Ground
+Chicago,Burlington,VT,Size S,7.36,3,UPS® Ground
+Chicago,Burlington,VT,Size M,8.77,3,UPS® Ground
+Chicago,Burlington,VT,Size L,14.1,3,UPS® Ground
+Chicago,Concord,NH,Size S,7.36,3,UPS® Ground
+Chicago,Concord,NH,Size M,8.77,3,UPS® Ground
+Chicago,Concord,NH,Size L,14.1,3,UPS® Ground
+Chicago,Ithaca,NY,Size S,6.52,2,UPS® Ground
+Chicago,Ithaca,NY,Size M,7.91,2,UPS® Ground
+Chicago,Ithaca,NY,Size L,10.54,2,UPS® Ground
+Chicago,Springfield,MA,Size S,7.36,3,UPS® Ground
+Chicago,Springfield,MA,Size M,8.77,3,UPS® Ground
+Chicago,Springfield,MA,Size L,14.1,3,UPS® Ground
+Chicago,Bangor,ME,Size S,7.36,3,UPS® Ground
+Chicago,Bangor,ME,Size M,8.77,3,UPS® Ground
+Chicago,Bangor,ME,Size L,14.1,3,UPS® Ground
+Chicago,Greenville,SC,Size S,6.52,2,UPS® Ground
+Chicago,Greenville,SC,Size M,7.91,2,UPS® Ground
+Chicago,Greenville,SC,Size L,10.54,2,UPS® Ground
+Chicago,Savannah,GA,Size S,7.45,2,UPS® Ground
+Chicago,Savannah,GA,Size M,8.86,2,UPS® Ground
+Chicago,Savannah,GA,Size L,14.1,2,UPS® Ground
+Chicago,Huntsville,AL,Size S,6.69,2,UPS® Ground
+Chicago,Huntsville,AL,Size M,8.69,2,UPS® Ground
+Chicago,Huntsville,AL,Size L,10.54,2,UPS® Ground
+Chicago,Gulfport,MS,Size S,7.45,3,UPS® Ground
+Chicago,Gulfport,MS,Size M,8.86,3,UPS® Ground
+Chicago,Gulfport,MS,Size L,14.1,3,UPS® Ground
+Chicago,Chattanooga,TN,Size S,6.52,2,UPS® Ground
+Chicago,Chattanooga,TN,Size M,7.91,2,UPS® Ground
+Chicago,Chattanooga,TN,Size L,10.54,2,UPS® Ground
+Chicago,Asheville,NC,Size S,6.52,2,UPS® Ground
+Chicago,Asheville,NC,Size M,7.91,2,UPS® Ground
+Chicago,Asheville,NC,Size L,10.54,2,UPS® Ground
+Chicago,Tallahassee,FL,Size S,7.36,2,UPS® Ground
+Chicago,Tallahassee,FL,Size M,8.77,2,UPS® Ground
+Chicago,Tallahassee,FL,Size L,14.1,2,UPS® Ground
+Chicago,Roanoke,VA,Size S,6.52,2,UPS® Ground
+Chicago,Roanoke,VA,Size M,7.91,2,UPS® Ground
+Chicago,Roanoke,VA,Size L,10.54,2,UPS® Ground
+Chicago,Morgantown,WV,Size S,6.52,2,UPS® Ground
+Chicago,Morgantown,WV,Size M,7.91,2,UPS® Ground
+Chicago,Morgantown,WV,Size L,10.54,2,UPS® Ground
+Chicago,Toledo,OH,Size S,6.56,1,UPS® Ground
+Chicago,Toledo,OH,Size M,8.24,1,UPS® Ground
+Chicago,Toledo,OH,Size L,9.94,1,UPS® Ground
+Chicago,Lansing,MI,Size S,6.56,1,UPS® Ground
+Chicago,Lansing,MI,Size M,8.24,1,UPS® Ground
+Chicago,Lansing,MI,Size L,9.94,1,UPS® Ground
+Chicago,Des Moines,IA,Size S,6.52,1,UPS® Ground
+Chicago,Des Moines,IA,Size M,7.91,1,UPS® Ground
+Chicago,Des Moines,IA,Size L,10.54,1,UPS® Ground
+Chicago,Duluth,MN,Size S,6.69,2,UPS® Ground
+Chicago,Duluth,MN,Size M,8.69,2,UPS® Ground
+Chicago,Duluth,MN,Size L,10.54,2,UPS® Ground
+Chicago,Peoria,IL,Size S,6.09,1,UPS® Ground
+Chicago,Peoria,IL,Size M,7.26,1,UPS® Ground
+Chicago,Peoria,IL,Size L,8.94,1,UPS® Ground
+Chicago,Green Bay,WI,Size S,6.39,1,UPS® Ground
+Chicago,Green Bay,WI,Size M,7.4,1,UPS® Ground
+Chicago,Green Bay,WI,Size L,9.94,1,UPS® Ground
+Chicago,Sioux Falls,SD,Size S,6.52,2,UPS® Ground
+Chicago,Sioux Falls,SD,Size M,7.91,2,UPS® Ground
+Chicago,Sioux Falls,SD,Size L,10.54,2,UPS® Ground
+Chicago,Wichita,KS,Size S,6.52,2,UPS® Ground
+Chicago,Wichita,KS,Size M,7.91,2,UPS® Ground
+Chicago,Wichita,KS,Size L,10.54,2,UPS® Ground
+Chicago,Bloomington,IN,Size S,6.39,2,UPS® Ground
+Chicago,Bloomington,IN,Size M,7.4,2,UPS® Ground
+Chicago,Bloomington,IN,Size L,9.94,2,UPS® Ground
+Chicago,Athens,OH,Size S,6.69,2,UPS® Ground
+Chicago,Athens,OH,Size M,8.69,2,UPS® Ground
+Chicago,Athens,OH,Size L,10.54,2,UPS® Ground
+Chicago,Lubbock,TX,Size S,7.45,3,UPS® Ground
+Chicago,Lubbock,TX,Size M,8.86,3,UPS® Ground
+Chicago,Lubbock,TX,Size L,14.1,3,UPS® Ground
+Chicago,Fayetteville,AR,Size S,6.52,2,UPS® Ground
+Chicago,Fayetteville,AR,Size M,7.91,2,UPS® Ground
+Chicago,Fayetteville,AR,Size L,10.54,2,UPS® Ground
+Chicago,Santa Fe,NM,Size S,8.45,4,UPS® Ground
+Chicago,Santa Fe,NM,Size M,10.4,4,UPS® Ground
+Chicago,Santa Fe,NM,Size L,15.29,4,UPS® Ground
+Chicago,Fort Collins,CO,Size S,7.36,3,UPS® Ground
+Chicago,Fort Collins,CO,Size M,8.77,3,UPS® Ground
+Chicago,Fort Collins,CO,Size L,14.1,3,UPS® Ground
+Chicago,Provo,UT,Size S,8.36,3,UPS® Ground
+Chicago,Provo,UT,Size M,10.31,3,UPS® Ground
+Chicago,Provo,UT,Size L,15.29,3,UPS® Ground
+Chicago,Bozeman,MT,Size S,8.45,3,UPS® Ground
+Chicago,Bozeman,MT,Size M,10.4,3,UPS® Ground
+Chicago,Bozeman,MT,Size L,15.29,3,UPS® Ground
+Chicago,Cheyenne,WY,Size S,7.45,2,UPS® Ground
+Chicago,Cheyenne,WY,Size M,8.86,2,UPS® Ground
+Chicago,Cheyenne,WY,Size L,14.1,2,UPS® Ground
+Chicago,Norman,OK,Size S,7.36,2,UPS® Ground
+Chicago,Norman,OK,Size M,8.77,2,UPS® Ground
+Chicago,Norman,OK,Size L,14.1,2,UPS® Ground
+Chicago,Santa Barbara,CA,Size S,9.25,3,UPS® Ground
+Chicago,Santa Barbara,CA,Size M,12.06,3,UPS® Ground
+Chicago,Santa Barbara,CA,Size L,17.29,3,UPS® Ground
+Chicago,Palo Alto,CA,Size S,9.16,4,UPS® Ground
+Chicago,Palo Alto,CA,Size M,11.97,4,UPS® Ground
+Chicago,Palo Alto,CA,Size L,17.29,4,UPS® Ground
+Chicago,Santa Cruz,CA,Size S,9.16,4,UPS® Ground
+Chicago,Santa Cruz,CA,Size M,11.97,4,UPS® Ground
+Chicago,Santa Cruz,CA,Size L,17.29,4,UPS® Ground
+Chicago,Eugene,OR,Size S,8.62,4,UPS® Ground
+Chicago,Eugene,OR,Size M,10.91,4,UPS® Ground
+Chicago,Eugene,OR,Size L,16.29,4,UPS® Ground
+Chicago,Bend,OR,Size S,8.62,4,UPS® Ground
+Chicago,Bend,OR,Size M,10.91,4,UPS® Ground
+Chicago,Bend,OR,Size L,16.29,4,UPS® Ground
+Chicago,Bellingham,WA,Size S,8.71,4,UPS® Ground
+Chicago,Bellingham,WA,Size M,11.0,4,UPS® Ground
+Chicago,Bellingham,WA,Size L,16.29,4,UPS® Ground
+Chicago,Olympia,WA,Size S,8.62,4,UPS® Ground
+Chicago,Olympia,WA,Size M,10.91,4,UPS® Ground
+Chicago,Olympia,WA,Size L,16.29,4,UPS® Ground
+Chicago,Idaho Falls,ID,Size S,8.36,3,UPS® Ground
+Chicago,Idaho Falls,ID,Size M,10.31,3,UPS® Ground
+Chicago,Idaho Falls,ID,Size L,15.29,3,UPS® Ground
+Chicago,Carson City,NV,Size S,8.62,3,UPS® Ground
+Chicago,Carson City,NV,Size M,10.91,3,UPS® Ground
+Chicago,Carson City,NV,Size L,16.29,3,UPS® Ground
+Chicago,Flagstaff,AZ,Size S,8.36,3,UPS® Ground
+Chicago,Flagstaff,AZ,Size M,10.31,3,UPS® Ground
+Chicago,Flagstaff,AZ,Size L,15.29,3,UPS® Ground
+Chicago,Redding,CA,Size S,8.71,4,UPS® Ground
+Chicago,Redding,CA,Size M,11.0,4,UPS® Ground
+Chicago,Redding,CA,Size L,16.29,4,UPS® Ground
+Chicago,Hilo,HI,Size S,47.24,5,UPS® Ground
+Chicago,Hilo,HI,Size M,53.22,5,UPS® Ground
+Chicago,Hilo,HI,Size L,62.23,5,UPS® Ground
+Chicago,Fairbanks,AK,Size S,30.87,4,UPS® Ground
+Chicago,Fairbanks,AK,Size M,36.99,4,UPS® Ground
+Chicago,Fairbanks,AK,Size L,46.14,4,UPS® Ground
+Chicago,Monterey,CA,Size S,9.16,4,UPS® Ground
+Chicago,Monterey,CA,Size M,11.97,4,UPS® Ground
+Chicago,Monterey,CA,Size L,17.29,4,UPS® Ground
+Atlanta,Scranton,PA,Size S,7.36,2,UPS® Ground
+Atlanta,Scranton,PA,Size M,8.77,2,UPS® Ground
+Atlanta,Scranton,PA,Size L,14.1,2,UPS® Ground
+Atlanta,Syracuse,NY,Size S,7.36,2,UPS® Ground
+Atlanta,Syracuse,NY,Size M,8.77,2,UPS® Ground
+Atlanta,Syracuse,NY,Size L,14.1,2,UPS® Ground
+Atlanta,Morristown,NJ,Size S,7.36,2,UPS® Ground
+Atlanta,Morristown,NJ,Size M,8.77,2,UPS® Ground
+Atlanta,Morristown,NJ,Size L,14.1,2,UPS® Ground
+Atlanta,Lowell,MA,Size S,7.36,2,UPS® Ground
+Atlanta,Lowell,MA,Size M,8.77,2,UPS® Ground
+Atlanta,Lowell,MA,Size L,14.1,2,UPS® Ground
+Atlanta,Stamford,CT,Size S,7.45,2,UPS® Ground
+Atlanta,Stamford,CT,Size M,8.86,2,UPS® Ground
+Atlanta,Stamford,CT,Size L,14.1,2,UPS® Ground
+Atlanta,Warwick,RI,Size S,7.36,2,UPS® Ground
+Atlanta,Warwick,RI,Size M,8.77,2,UPS® Ground
+Atlanta,Warwick,RI,Size L,14.1,2,UPS® Ground
+Atlanta,Keene,NH,Size S,7.36,2,UPS® Ground
+Atlanta,Keene,NH,Size M,8.77,2,UPS® Ground
+Atlanta,Keene,NH,Size L,14.1,2,UPS® Ground
+Atlanta,Rutland,VT,Size S,7.45,2,UPS® Ground
+Atlanta,Rutland,VT,Size M,8.86,2,UPS® Ground
+Atlanta,Rutland,VT,Size L,14.1,2,UPS® Ground
+Atlanta,Augusta,ME,Size S,7.45,2,UPS® Ground
+Atlanta,Augusta,ME,Size M,8.86,2,UPS® Ground
+Atlanta,Augusta,ME,Size L,14.1,2,UPS® Ground
+Atlanta,Poughkeepsie,NY,Size S,7.36,2,UPS® Ground
+Atlanta,Poughkeepsie,NY,Size M,8.77,2,UPS® Ground
+Atlanta,Poughkeepsie,NY,Size L,14.1,2,UPS® Ground
+Atlanta,Lancaster,PA,Size S,7.36,2,UPS® Ground
+Atlanta,Lancaster,PA,Size M,8.77,2,UPS® Ground
+Atlanta,Lancaster,PA,Size L,14.1,2,UPS® Ground
+Atlanta,Worcester,MA,Size S,7.36,2,UPS® Ground
+Atlanta,Worcester,MA,Size M,8.77,2,UPS® Ground
+Atlanta,Worcester,MA,Size L,14.1,2,UPS® Ground
+Atlanta,Hackensack,NJ,Size S,7.36,2,UPS® Ground
+Atlanta,Hackensack,NJ,Size M,8.77,2,UPS® Ground
+Atlanta,Hackensack,NJ,Size L,14.1,2,UPS® Ground
+Atlanta,Kingston,NY,Size S,7.36,2,UPS® Ground
+Atlanta,Kingston,NY,Size M,8.77,2,UPS® Ground
+Atlanta,Kingston,NY,Size L,14.1,2,UPS® Ground
+Atlanta,Norwich,CT,Size S,7.45,2,UPS® Ground
+Atlanta,Norwich,CT,Size M,8.86,2,UPS® Ground
+Atlanta,Norwich,CT,Size L,14.1,2,UPS® Ground
+Atlanta,Erie,PA,Size S,7.45,2,UPS® Ground
+Atlanta,Erie,PA,Size M,8.86,2,UPS® Ground
+Atlanta,Erie,PA,Size L,14.1,2,UPS® Ground
+Atlanta,Pittsfield,MA,Size S,7.36,2,UPS® Ground
+Atlanta,Pittsfield,MA,Size M,8.77,2,UPS® Ground
+Atlanta,Pittsfield,MA,Size L,14.1,2,UPS® Ground
+Atlanta,Elmira,NY,Size S,7.36,2,UPS® Ground
+Atlanta,Elmira,NY,Size M,8.77,2,UPS® Ground
+Atlanta,Elmira,NY,Size L,14.1,2,UPS® Ground
+Atlanta,Toms River,NJ,Size S,7.36,2,UPS® Ground
+Atlanta,Toms River,NJ,Size M,8.77,2,UPS® Ground
+Atlanta,Toms River,NJ,Size L,14.1,2,UPS® Ground
+Atlanta,Reading,PA,Size S,7.45,2,UPS® Ground
+Atlanta,Reading,PA,Size M,8.86,2,UPS® Ground
+Atlanta,Reading,PA,Size L,14.1,2,UPS® Ground
+Atlanta,Columbia,SC,Size S,6.39,1,UPS® Ground
+Atlanta,Columbia,SC,Size M,7.4,1,UPS® Ground
+Atlanta,Columbia,SC,Size L,9.94,1,UPS® Ground
+Atlanta,Rome,GA,Size S,6.09,1,UPS® Ground
+Atlanta,Rome,GA,Size M,7.26,1,UPS® Ground
+Atlanta,Rome,GA,Size L,8.94,1,UPS® Ground
+Atlanta,Decatur,AL,Size S,6.56,1,UPS® Ground
+Atlanta,Decatur,AL,Size M,8.24,1,UPS® Ground
+Atlanta,Decatur,AL,Size L,9.94,1,UPS® Ground
+Atlanta,Pensacola,FL,Size S,6.39,1,UPS® Ground
+Atlanta,Pensacola,FL,Size M,7.4,1,UPS® Ground
+Atlanta,Pensacola,FL,Size L,9.94,1,UPS® Ground
+Atlanta,Wilson,NC,Size S,6.69,2,UPS® Ground
+Atlanta,Wilson,NC,Size M,8.69,2,UPS® Ground
+Atlanta,Wilson,NC,Size L,10.54,2,UPS® Ground
+Atlanta,Cookeville,TN,Size S,6.56,2,UPS® Ground
+Atlanta,Cookeville,TN,Size M,8.24,2,UPS® Ground
+Atlanta,Cookeville,TN,Size L,9.94,2,UPS® Ground
+Atlanta,Hattiesburg,MS,Size S,6.69,2,UPS® Ground
+Atlanta,Hattiesburg,MS,Size M,8.69,2,UPS® Ground
+Atlanta,Hattiesburg,MS,Size L,10.54,2,UPS® Ground
+Atlanta,Statesboro,GA,Size S,6.56,1,UPS® Ground
+Atlanta,Statesboro,GA,Size M,8.24,1,UPS® Ground
+Atlanta,Statesboro,GA,Size L,9.94,1,UPS® Ground
+Atlanta,Fredericksburg,VA,Size S,6.52,2,UPS® Ground
+Atlanta,Fredericksburg,VA,Size M,7.91,2,UPS® Ground
+Atlanta,Fredericksburg,VA,Size L,10.54,2,UPS® Ground
+Atlanta,Gainesville,FL,Size S,6.69,2,UPS® Ground
+Atlanta,Gainesville,FL,Size M,8.69,2,UPS® Ground
+Atlanta,Gainesville,FL,Size L,10.54,2,UPS® Ground
+Atlanta,Hickory,NC,Size S,6.56,2,UPS® Ground
+Atlanta,Hickory,NC,Size M,8.24,2,UPS® Ground
+Atlanta,Hickory,NC,Size L,9.94,2,UPS® Ground
+Atlanta,Cleveland,TN,Size S,6.48,1,UPS® Ground
+Atlanta,Cleveland,TN,Size M,7.79,1,UPS® Ground
+Atlanta,Cleveland,TN,Size L,8.94,1,UPS® Ground
+Atlanta,Dothan,AL,Size S,6.56,1,UPS® Ground
+Atlanta,Dothan,AL,Size M,8.24,1,UPS® Ground
+Atlanta,Dothan,AL,Size L,9.94,1,UPS® Ground
+Atlanta,Florence,SC,Size S,6.52,2,UPS® Ground
+Atlanta,Florence,SC,Size M,7.91,2,UPS® Ground
+Atlanta,Florence,SC,Size L,10.54,2,UPS® Ground
+Atlanta,Valdosta,GA,Size S,6.39,1,UPS® Ground
+Atlanta,Valdosta,GA,Size M,7.4,1,UPS® Ground
+Atlanta,Valdosta,GA,Size L,9.94,1,UPS® Ground
+Atlanta,Danville,VA,Size S,6.52,2,UPS® Ground
+Atlanta,Danville,VA,Size M,7.91,2,UPS® Ground
+Atlanta,Danville,VA,Size L,10.54,2,UPS® Ground
+Atlanta,Ocala,FL,Size S,6.52,2,UPS® Ground
+Atlanta,Ocala,FL,Size M,7.91,2,UPS® Ground
+Atlanta,Ocala,FL,Size L,10.54,2,UPS® Ground
+Atlanta,New Bern,NC,Size S,6.69,2,UPS® Ground
+Atlanta,New Bern,NC,Size M,8.69,2,UPS® Ground
+Atlanta,New Bern,NC,Size L,10.54,2,UPS® Ground
+Atlanta,Johnson City,TN,Size S,6.56,2,UPS® Ground
+Atlanta,Johnson City,TN,Size M,8.24,2,UPS® Ground
+Atlanta,Johnson City,TN,Size L,9.94,2,UPS® Ground
+Atlanta,Meridian,MS,Size S,6.39,1,UPS® Ground
+Atlanta,Meridian,MS,Size M,7.4,1,UPS® Ground
+Atlanta,Meridian,MS,Size L,9.94,1,UPS® Ground
+Atlanta,Findlay,OH,Size S,6.69,2,UPS® Ground
+Atlanta,Findlay,OH,Size M,8.69,2,UPS® Ground
+Atlanta,Findlay,OH,Size L,10.54,2,UPS® Ground
+Atlanta,Bay City,MI,Size S,7.36,2,UPS® Ground
+Atlanta,Bay City,MI,Size M,8.77,2,UPS® Ground
+Atlanta,Bay City,MI,Size L,14.1,2,UPS® Ground
+Atlanta,Champaign,IL,Size S,6.52,2,UPS® Ground
+Atlanta,Champaign,IL,Size M,7.91,2,UPS® Ground
+Atlanta,Champaign,IL,Size L,10.54,2,UPS® Ground
+Atlanta,Cedar Rapids,IA,Size S,6.52,2,UPS® Ground
+Atlanta,Cedar Rapids,IA,Size M,7.91,2,UPS® Ground
+Atlanta,Cedar Rapids,IA,Size L,10.54,2,UPS® Ground
+Atlanta,Mankato,MN,Size S,7.45,2,UPS® Ground
+Atlanta,Mankato,MN,Size M,8.86,2,UPS® Ground
+Atlanta,Mankato,MN,Size L,14.1,2,UPS® Ground
+Atlanta,Eau Claire,WI,Size S,7.45,3,UPS® Ground
+Atlanta,Eau Claire,WI,Size M,8.86,3,UPS® Ground
+Atlanta,Eau Claire,WI,Size L,14.1,3,UPS® Ground
+Atlanta,Jefferson City,MO,Size S,6.52,2,UPS® Ground
+Atlanta,Jefferson City,MO,Size M,7.91,2,UPS® Ground
+Atlanta,Jefferson City,MO,Size L,10.54,2,UPS® Ground
+Atlanta,Muncie,IN,Size S,6.52,2,UPS® Ground
+Atlanta,Muncie,IN,Size M,7.91,2,UPS® Ground
+Atlanta,Muncie,IN,Size L,10.54,2,UPS® Ground
+Atlanta,Brookings,SD,Size S,7.36,3,UPS® Ground
+Atlanta,Brookings,SD,Size M,8.77,3,UPS® Ground
+Atlanta,Brookings,SD,Size L,14.1,3,UPS® Ground
+Atlanta,Salina,KS,Size S,7.36,2,UPS® Ground
+Atlanta,Salina,KS,Size M,8.77,2,UPS® Ground
+Atlanta,Salina,KS,Size L,14.1,2,UPS® Ground
+Atlanta,Sandusky,OH,Size S,6.52,2,UPS® Ground
+Atlanta,Sandusky,OH,Size M,7.91,2,UPS® Ground
+Atlanta,Sandusky,OH,Size L,10.54,2,UPS® Ground
+Atlanta,Saginaw,MI,Size S,7.36,2,UPS® Ground
+Atlanta,Saginaw,MI,Size M,8.77,2,UPS® Ground
+Atlanta,Saginaw,MI,Size L,14.1,2,UPS® Ground
+Atlanta,Rockford,IL,Size S,7.45,2,UPS® Ground
+Atlanta,Rockford,IL,Size M,8.86,2,UPS® Ground
+Atlanta,Rockford,IL,Size L,14.1,2,UPS® Ground
+Atlanta,Dubuque,IA,Size S,7.36,2,UPS® Ground
+Atlanta,Dubuque,IA,Size M,8.77,2,UPS® Ground
+Atlanta,Dubuque,IA,Size L,14.1,2,UPS® Ground
+Atlanta,Winona,MN,Size S,7.36,2,UPS® Ground
+Atlanta,Winona,MN,Size M,8.77,2,UPS® Ground
+Atlanta,Winona,MN,Size L,14.1,2,UPS® Ground
+Atlanta,La Crosse,WI,Size S,7.36,2,UPS® Ground
+Atlanta,La Crosse,WI,Size M,8.77,2,UPS® Ground
+Atlanta,La Crosse,WI,Size L,14.1,2,UPS® Ground
+Atlanta,Joplin,MO,Size S,7.36,2,UPS® Ground
+Atlanta,Joplin,MO,Size M,8.77,2,UPS® Ground
+Atlanta,Joplin,MO,Size L,14.1,2,UPS® Ground
+Atlanta,Kokomo,IN,Size S,6.52,2,UPS® Ground
+Atlanta,Kokomo,IN,Size M,7.91,2,UPS® Ground
+Atlanta,Kokomo,IN,Size L,10.54,2,UPS® Ground
+Atlanta,Hutchinson,KS,Size S,7.45,2,UPS® Ground
+Atlanta,Hutchinson,KS,Size M,8.86,2,UPS® Ground
+Atlanta,Hutchinson,KS,Size L,14.1,2,UPS® Ground
+Atlanta,Grand Island,NE,Size S,7.45,3,UPS® Ground
+Atlanta,Grand Island,NE,Size M,8.86,3,UPS® Ground
+Atlanta,Grand Island,NE,Size L,14.1,3,UPS® Ground
+Atlanta,Amarillo,TX,Size S,7.36,2,UPS® Ground
+Atlanta,Amarillo,TX,Size M,8.77,2,UPS® Ground
+Atlanta,Amarillo,TX,Size L,14.1,2,UPS® Ground
+Atlanta,San Angelo,TX,Size S,7.36,2,UPS® Ground
+Atlanta,San Angelo,TX,Size M,8.77,2,UPS® Ground
+Atlanta,San Angelo,TX,Size L,14.1,2,UPS® Ground
+Atlanta,Hot Springs,AR,Size S,6.52,2,UPS® Ground
+Atlanta,Hot Springs,AR,Size M,7.91,2,UPS® Ground
+Atlanta,Hot Springs,AR,Size L,10.54,2,UPS® Ground
+Atlanta,Las Cruces,NM,Size S,8.45,3,UPS® Ground
+Atlanta,Las Cruces,NM,Size M,10.4,3,UPS® Ground
+Atlanta,Las Cruces,NM,Size L,15.29,3,UPS® Ground
+Atlanta,Pueblo,CO,Size S,8.45,3,UPS® Ground
+Atlanta,Pueblo,CO,Size M,10.4,3,UPS® Ground
+Atlanta,Pueblo,CO,Size L,15.29,3,UPS® Ground
+Atlanta,Logan,UT,Size S,8.62,3,UPS® Ground
+Atlanta,Logan,UT,Size M,10.91,3,UPS® Ground
+Atlanta,Logan,UT,Size L,16.29,3,UPS® Ground
+Atlanta,Great Falls,MT,Size S,8.71,3,UPS® Ground
+Atlanta,Great Falls,MT,Size M,11.0,3,UPS® Ground
+Atlanta,Great Falls,MT,Size L,16.29,3,UPS® Ground
+Atlanta,Laramie,WY,Size S,8.36,3,UPS® Ground
+Atlanta,Laramie,WY,Size M,10.31,3,UPS® Ground
+Atlanta,Laramie,WY,Size L,15.29,3,UPS® Ground
+Atlanta,Stillwater,OK,Size S,7.45,2,UPS® Ground
+Atlanta,Stillwater,OK,Size M,8.86,2,UPS® Ground
+Atlanta,Stillwater,OK,Size L,14.1,2,UPS® Ground
+Atlanta,Temple,TX,Size S,7.45,2,UPS® Ground
+Atlanta,Temple,TX,Size M,8.86,2,UPS® Ground
+Atlanta,Temple,TX,Size L,14.1,2,UPS® Ground
+Atlanta,Jonesboro,AR,Size S,6.52,2,UPS® Ground
+Atlanta,Jonesboro,AR,Size M,7.91,2,UPS® Ground
+Atlanta,Jonesboro,AR,Size L,10.54,2,UPS® Ground
+Atlanta,Greeley,CO,Size S,8.36,3,UPS® Ground
+Atlanta,Greeley,CO,Size M,10.31,3,UPS® Ground
+Atlanta,Greeley,CO,Size L,15.29,3,UPS® Ground
+Atlanta,Ogden,UT,Size S,8.62,3,UPS® Ground
+Atlanta,Ogden,UT,Size M,10.91,3,UPS® Ground
+Atlanta,Ogden,UT,Size L,16.29,3,UPS® Ground
+Atlanta,Helena,MT,Size S,8.62,3,UPS® Ground
+Atlanta,Helena,MT,Size M,10.91,3,UPS® Ground
+Atlanta,Helena,MT,Size L,16.29,3,UPS® Ground
+Atlanta,Rock Springs,WY,Size S,8.62,4,UPS® Ground
+Atlanta,Rock Springs,WY,Size M,10.91,4,UPS® Ground
+Atlanta,Rock Springs,WY,Size L,16.29,4,UPS® Ground
+Atlanta,Enid,OK,Size S,7.45,2,UPS® Ground
+Atlanta,Enid,OK,Size M,8.86,2,UPS® Ground
+Atlanta,Enid,OK,Size L,14.1,2,UPS® Ground
+Atlanta,Brownsville,TX,Size S,7.36,3,UPS® Ground
+Atlanta,Brownsville,TX,Size M,8.77,3,UPS® Ground
+Atlanta,Brownsville,TX,Size L,14.1,3,UPS® Ground
+Atlanta,Loveland,CO,Size S,8.45,3,UPS® Ground
+Atlanta,Loveland,CO,Size M,10.4,3,UPS® Ground
+Atlanta,Loveland,CO,Size L,15.29,3,UPS® Ground
+Atlanta,Moab,UT,Size S,8.62,4,UPS® Ground
+Atlanta,Moab,UT,Size M,10.91,4,UPS® Ground
+Atlanta,Moab,UT,Size L,16.29,4,UPS® Ground
+Atlanta,Roswell,NM,Size S,8.36,3,UPS® Ground
+Atlanta,Roswell,NM,Size M,10.31,3,UPS® Ground
+Atlanta,Roswell,NM,Size L,15.29,3,UPS® Ground
+Atlanta,Ventura,CA,Size S,9.16,3,UPS® Ground
+Atlanta,Ventura,CA,Size M,11.97,3,UPS® Ground
+Atlanta,Ventura,CA,Size L,17.29,3,UPS® Ground
+Atlanta,Redwood City,CA,Size S,9.25,4,UPS® Ground
+Atlanta,Redwood City,CA,Size M,12.06,4,UPS® Ground
+Atlanta,Redwood City,CA,Size L,17.29,4,UPS® Ground
+Atlanta,Davis,CA,Size S,9.16,4,UPS® Ground
+Atlanta,Davis,CA,Size M,11.97,4,UPS® Ground
+Atlanta,Davis,CA,Size L,17.29,4,UPS® Ground
+Atlanta,Corvallis,OR,Size S,9.16,4,UPS® Ground
+Atlanta,Corvallis,OR,Size M,11.97,4,UPS® Ground
+Atlanta,Corvallis,OR,Size L,17.29,4,UPS® Ground
+Atlanta,Medford,OR,Size S,9.16,6,UPS® Ground
+Atlanta,Medford,OR,Size M,11.97,6,UPS® Ground
+Atlanta,Medford,OR,Size L,17.29,6,UPS® Ground
+Atlanta,Yakima,WA,Size S,9.25,4,UPS® Ground
+Atlanta,Yakima,WA,Size M,12.06,4,UPS® Ground
+Atlanta,Yakima,WA,Size L,17.29,4,UPS® Ground
+Atlanta,Wenatchee,WA,Size S,9.16,4,UPS® Ground
+Atlanta,Wenatchee,WA,Size M,11.97,4,UPS® Ground
+Atlanta,Wenatchee,WA,Size L,17.29,4,UPS® Ground
+Atlanta,Twin Falls,ID,Size S,8.71,3,UPS® Ground
+Atlanta,Twin Falls,ID,Size M,11.0,3,UPS® Ground
+Atlanta,Twin Falls,ID,Size L,16.29,3,UPS® Ground
+Atlanta,Elko,NV,Size S,8.71,5,UPS® Ground
+Atlanta,Elko,NV,Size M,11.0,5,UPS® Ground
+Atlanta,Elko,NV,Size L,16.29,5,UPS® Ground
+Atlanta,Yuma,AZ,Size S,8.71,3,UPS® Ground
+Atlanta,Yuma,AZ,Size M,11.0,3,UPS® Ground
+Atlanta,Yuma,AZ,Size L,16.29,3,UPS® Ground
+Atlanta,San Luis Obispo,CA,Size S,9.25,3,UPS® Ground
+Atlanta,San Luis Obispo,CA,Size M,12.06,3,UPS® Ground
+Atlanta,San Luis Obispo,CA,Size L,17.29,3,UPS® Ground
+Atlanta,Fresno,CA,Size S,9.16,4,UPS® Ground
+Atlanta,Fresno,CA,Size M,11.97,4,UPS® Ground
+Atlanta,Fresno,CA,Size L,17.29,4,UPS® Ground
+Atlanta,Ashland,OR,Size S,9.16,6,UPS® Ground
+Atlanta,Ashland,OR,Size M,11.97,6,UPS® Ground
+Atlanta,Ashland,OR,Size L,17.29,6,UPS® Ground
+Atlanta,Port Angeles,WA,Size S,9.16,4,UPS® Ground
+Atlanta,Port Angeles,WA,Size M,11.97,4,UPS® Ground
+Atlanta,Port Angeles,WA,Size L,17.29,4,UPS® Ground
+Atlanta,Pocatello,ID,Size S,8.62,3,UPS® Ground
+Atlanta,Pocatello,ID,Size M,10.91,3,UPS® Ground
+Atlanta,Pocatello,ID,Size L,16.29,3,UPS® Ground
+Atlanta,Fallon,NV,Size S,9.25,4,UPS® Ground
+Atlanta,Fallon,NV,Size M,12.06,4,UPS® Ground
+Atlanta,Fallon,NV,Size L,17.29,4,UPS® Ground
+Atlanta,Prescott,AZ,Size S,8.62,3,UPS® Ground
+Atlanta,Prescott,AZ,Size M,10.91,3,UPS® Ground
+Atlanta,Prescott,AZ,Size L,16.29,3,UPS® Ground
+Atlanta,Ukiah,CA,Size S,9.25,4,UPS® Ground
+Atlanta,Ukiah,CA,Size M,12.06,4,UPS® Ground
+Atlanta,Ukiah,CA,Size L,17.29,4,UPS® Ground
+Atlanta,Grants Pass,OR,Size S,9.25,6,UPS® Ground
+Atlanta,Grants Pass,OR,Size M,12.06,6,UPS® Ground
+Atlanta,Grants Pass,OR,Size L,17.29,6,UPS® Ground
+Atlanta,Centralia,WA,Size S,9.25,4,UPS® Ground
+Atlanta,Centralia,WA,Size M,12.06,4,UPS® Ground
+Atlanta,Centralia,WA,Size L,17.29,4,UPS® Ground
+Columbus,Scranton,PA,Size S,6.52,2,UPS® Ground
+Columbus,Scranton,PA,Size M,7.91,2,UPS® Ground
+Columbus,Scranton,PA,Size L,10.54,2,UPS® Ground
+Columbus,Syracuse,NY,Size S,6.52,2,UPS® Ground
+Columbus,Syracuse,NY,Size M,7.91,2,UPS® Ground
+Columbus,Syracuse,NY,Size L,10.54,2,UPS® Ground
+Columbus,Morristown,NJ,Size S,6.52,2,UPS® Ground
+Columbus,Morristown,NJ,Size M,7.91,2,UPS® Ground
+Columbus,Morristown,NJ,Size L,10.54,2,UPS® Ground
+Columbus,Lowell,MA,Size S,7.36,2,UPS® Ground
+Columbus,Lowell,MA,Size M,8.77,2,UPS® Ground
+Columbus,Lowell,MA,Size L,14.1,2,UPS® Ground
+Columbus,Stamford,CT,Size S,6.69,2,UPS® Ground
+Columbus,Stamford,CT,Size M,8.69,2,UPS® Ground
+Columbus,Stamford,CT,Size L,10.54,2,UPS® Ground
+Columbus,Warwick,RI,Size S,7.36,2,UPS® Ground
+Columbus,Warwick,RI,Size M,8.77,2,UPS® Ground
+Columbus,Warwick,RI,Size L,14.1,2,UPS® Ground
+Columbus,Keene,NH,Size S,6.52,2,UPS® Ground
+Columbus,Keene,NH,Size M,7.91,2,UPS® Ground
+Columbus,Keene,NH,Size L,10.54,2,UPS® Ground
+Columbus,Rutland,VT,Size S,6.69,2,UPS® Ground
+Columbus,Rutland,VT,Size M,8.69,2,UPS® Ground
+Columbus,Rutland,VT,Size L,10.54,2,UPS® Ground
+Columbus,Augusta,ME,Size S,7.45,2,UPS® Ground
+Columbus,Augusta,ME,Size M,8.86,2,UPS® Ground
+Columbus,Augusta,ME,Size L,14.1,2,UPS® Ground
+Columbus,Poughkeepsie,NY,Size S,6.52,2,UPS® Ground
+Columbus,Poughkeepsie,NY,Size M,7.91,2,UPS® Ground
+Columbus,Poughkeepsie,NY,Size L,10.54,2,UPS® Ground
+Columbus,Lancaster,PA,Size S,6.52,2,UPS® Ground
+Columbus,Lancaster,PA,Size M,7.91,2,UPS® Ground
+Columbus,Lancaster,PA,Size L,10.54,2,UPS® Ground
+Columbus,Worcester,MA,Size S,7.36,2,UPS® Ground
+Columbus,Worcester,MA,Size M,8.77,2,UPS® Ground
+Columbus,Worcester,MA,Size L,14.1,2,UPS® Ground
+Columbus,Hackensack,NJ,Size S,6.52,2,UPS® Ground
+Columbus,Hackensack,NJ,Size M,8.69,2,UPS® Ground
+Columbus,Hackensack,NJ,Size L,10.54,2,UPS® Ground
+Columbus,Kingston,NY,Size S,6.52,2,UPS® Ground
+Columbus,Kingston,NY,Size M,7.91,2,UPS® Ground
+Columbus,Kingston,NY,Size L,10.54,2,UPS® Ground
+Columbus,Norwich,CT,Size S,6.69,2,UPS® Ground
+Columbus,Norwich,CT,Size M,8.69,2,UPS® Ground
+Columbus,Norwich,CT,Size L,10.54,2,UPS® Ground
+Columbus,Erie,PA,Size S,6.56,2,UPS® Ground
+Columbus,Erie,PA,Size M,8.24,2,UPS® Ground
+Columbus,Erie,PA,Size L,9.94,2,UPS® Ground
+Columbus,Pittsfield,MA,Size S,6.52,2,UPS® Ground
+Columbus,Pittsfield,MA,Size M,7.91,2,UPS® Ground
+Columbus,Pittsfield,MA,Size L,10.54,2,UPS® Ground
+Columbus,Elmira,NY,Size S,6.52,2,UPS® Ground
+Columbus,Elmira,NY,Size M,7.91,2,UPS® Ground
+Columbus,Elmira,NY,Size L,10.54,2,UPS® Ground
+Columbus,Toms River,NJ,Size S,6.52,2,UPS® Ground
+Columbus,Toms River,NJ,Size M,7.91,2,UPS® Ground
+Columbus,Toms River,NJ,Size L,10.54,2,UPS® Ground
+Columbus,Reading,PA,Size S,6.69,2,UPS® Ground
+Columbus,Reading,PA,Size M,8.69,2,UPS® Ground
+Columbus,Reading,PA,Size L,10.54,2,UPS® Ground
+Columbus,Columbia,SC,Size S,6.52,2,UPS® Ground
+Columbus,Columbia,SC,Size M,7.91,2,UPS® Ground
+Columbus,Columbia,SC,Size L,10.54,2,UPS® Ground
+Columbus,Rome,GA,Size S,6.52,2,UPS® Ground
+Columbus,Rome,GA,Size M,7.91,2,UPS® Ground
+Columbus,Rome,GA,Size L,10.54,2,UPS® Ground
+Columbus,Decatur,AL,Size S,6.69,2,UPS® Ground
+Columbus,Decatur,AL,Size M,8.69,2,UPS® Ground
+Columbus,Decatur,AL,Size L,10.54,2,UPS® Ground
+Columbus,Pensacola,FL,Size S,7.36,2,UPS® Ground
+Columbus,Pensacola,FL,Size M,8.77,2,UPS® Ground
+Columbus,Pensacola,FL,Size L,14.1,2,UPS® Ground
+Columbus,Wilson,NC,Size S,6.69,2,UPS® Ground
+Columbus,Wilson,NC,Size M,8.69,2,UPS® Ground
+Columbus,Wilson,NC,Size L,10.54,2,UPS® Ground
+Columbus,Cookeville,TN,Size S,6.56,2,UPS® Ground
+Columbus,Cookeville,TN,Size M,8.24,2,UPS® Ground
+Columbus,Cookeville,TN,Size L,9.94,2,UPS® Ground
+Columbus,Hattiesburg,MS,Size S,7.45,2,UPS® Ground
+Columbus,Hattiesburg,MS,Size M,8.86,2,UPS® Ground
+Columbus,Hattiesburg,MS,Size L,14.1,2,UPS® Ground
+Columbus,Statesboro,GA,Size S,6.69,2,UPS® Ground
+Columbus,Statesboro,GA,Size M,8.69,2,UPS® Ground
+Columbus,Statesboro,GA,Size L,10.54,2,UPS® Ground
+Columbus,Fredericksburg,VA,Size S,6.52,2,UPS® Ground
+Columbus,Fredericksburg,VA,Size M,7.91,2,UPS® Ground
+Columbus,Fredericksburg,VA,Size L,10.54,2,UPS® Ground
+Columbus,Gainesville,FL,Size S,7.45,2,UPS® Ground
+Columbus,Gainesville,FL,Size M,8.86,2,UPS® Ground
+Columbus,Gainesville,FL,Size L,14.1,2,UPS® Ground
+Columbus,Hickory,NC,Size S,6.69,2,UPS® Ground
+Columbus,Hickory,NC,Size M,8.69,2,UPS® Ground
+Columbus,Hickory,NC,Size L,10.54,2,UPS® Ground
+Columbus,Cleveland,TN,Size S,6.69,2,UPS® Ground
+Columbus,Cleveland,TN,Size M,8.69,2,UPS® Ground
+Columbus,Cleveland,TN,Size L,10.54,2,UPS® Ground
+Columbus,Dothan,AL,Size S,7.45,2,UPS® Ground
+Columbus,Dothan,AL,Size M,8.86,2,UPS® Ground
+Columbus,Dothan,AL,Size L,14.1,2,UPS® Ground
+Columbus,Florence,SC,Size S,6.52,2,UPS® Ground
+Columbus,Florence,SC,Size M,7.91,2,UPS® Ground
+Columbus,Florence,SC,Size L,10.54,2,UPS® Ground
+Columbus,Valdosta,GA,Size S,6.52,2,UPS® Ground
+Columbus,Valdosta,GA,Size M,7.91,2,UPS® Ground
+Columbus,Valdosta,GA,Size L,10.54,2,UPS® Ground
+Columbus,Danville,VA,Size S,6.39,2,UPS® Ground
+Columbus,Danville,VA,Size M,7.4,2,UPS® Ground
+Columbus,Danville,VA,Size L,9.94,2,UPS® Ground
+Columbus,Ocala,FL,Size S,7.36,2,UPS® Ground
+Columbus,Ocala,FL,Size M,8.77,2,UPS® Ground
+Columbus,Ocala,FL,Size L,14.1,2,UPS® Ground
+Columbus,New Bern,NC,Size S,6.69,2,UPS® Ground
+Columbus,New Bern,NC,Size M,8.69,2,UPS® Ground
+Columbus,New Bern,NC,Size L,10.54,2,UPS® Ground
+Columbus,Johnson City,TN,Size S,6.56,2,UPS® Ground
+Columbus,Johnson City,TN,Size M,8.24,2,UPS® Ground
+Columbus,Johnson City,TN,Size L,9.94,2,UPS® Ground
+Columbus,Meridian,MS,Size S,7.36,2,UPS® Ground
+Columbus,Meridian,MS,Size M,8.77,2,UPS® Ground
+Columbus,Meridian,MS,Size L,14.1,2,UPS® Ground
+Columbus,Findlay,OH,Size S,6.48,1,UPS® Ground
+Columbus,Findlay,OH,Size M,7.79,1,UPS® Ground
+Columbus,Findlay,OH,Size L,8.94,1,UPS® Ground
+Columbus,Bay City,MI,Size S,6.52,1,UPS® Ground
+Columbus,Bay City,MI,Size M,7.91,1,UPS® Ground
+Columbus,Bay City,MI,Size L,10.54,1,UPS® Ground
+Columbus,Champaign,IL,Size S,6.39,2,UPS® Ground
+Columbus,Champaign,IL,Size M,7.4,2,UPS® Ground
+Columbus,Champaign,IL,Size L,9.94,2,UPS® Ground
+Columbus,Cedar Rapids,IA,Size S,6.52,2,UPS® Ground
+Columbus,Cedar Rapids,IA,Size M,7.91,2,UPS® Ground
+Columbus,Cedar Rapids,IA,Size L,10.54,2,UPS® Ground
+Columbus,Mankato,MN,Size S,7.45,2,UPS® Ground
+Columbus,Mankato,MN,Size M,8.86,2,UPS® Ground
+Columbus,Mankato,MN,Size L,14.1,2,UPS® Ground
+Columbus,Eau Claire,WI,Size S,6.69,2,UPS® Ground
+Columbus,Eau Claire,WI,Size M,8.69,2,UPS® Ground
+Columbus,Eau Claire,WI,Size L,10.54,2,UPS® Ground
+Columbus,Jefferson City,MO,Size S,6.52,2,UPS® Ground
+Columbus,Jefferson City,MO,Size M,7.91,2,UPS® Ground
+Columbus,Jefferson City,MO,Size L,10.54,2,UPS® Ground
+Columbus,Muncie,IN,Size S,6.09,1,UPS® Ground
+Columbus,Muncie,IN,Size M,7.26,1,UPS® Ground
+Columbus,Muncie,IN,Size L,8.94,1,UPS® Ground
+Columbus,Brookings,SD,Size S,7.36,3,UPS® Ground
+Columbus,Brookings,SD,Size M,8.77,3,UPS® Ground
+Columbus,Brookings,SD,Size L,14.1,3,UPS® Ground
+Columbus,Salina,KS,Size S,7.36,2,UPS® Ground
+Columbus,Salina,KS,Size M,8.77,2,UPS® Ground
+Columbus,Salina,KS,Size L,14.1,2,UPS® Ground
+Columbus,Sandusky,OH,Size S,6.09,1,UPS® Ground
+Columbus,Sandusky,OH,Size M,7.26,1,UPS® Ground
+Columbus,Sandusky,OH,Size L,8.94,1,UPS® Ground
+Columbus,Saginaw,MI,Size S,6.39,1,UPS® Ground
+Columbus,Saginaw,MI,Size M,7.4,1,UPS® Ground
+Columbus,Saginaw,MI,Size L,9.94,1,UPS® Ground
+Columbus,Rockford,IL,Size S,6.69,2,UPS® Ground
+Columbus,Rockford,IL,Size M,8.69,2,UPS® Ground
+Columbus,Rockford,IL,Size L,10.54,2,UPS® Ground
+Columbus,Dubuque,IA,Size S,6.52,2,UPS® Ground
+Columbus,Dubuque,IA,Size M,7.91,2,UPS® Ground
+Columbus,Dubuque,IA,Size L,10.54,2,UPS® Ground
+Columbus,Winona,MN,Size S,6.52,2,UPS® Ground
+Columbus,Winona,MN,Size M,7.91,2,UPS® Ground
+Columbus,Winona,MN,Size L,10.54,2,UPS® Ground
+Columbus,La Crosse,WI,Size S,6.52,2,UPS® Ground
+Columbus,La Crosse,WI,Size M,7.91,2,UPS® Ground
+Columbus,La Crosse,WI,Size L,10.54,2,UPS® Ground
+Columbus,Joplin,MO,Size S,7.36,2,UPS® Ground
+Columbus,Joplin,MO,Size M,8.77,2,UPS® Ground
+Columbus,Joplin,MO,Size L,14.1,2,UPS® Ground
+Columbus,Kokomo,IN,Size S,6.39,1,UPS® Ground
+Columbus,Kokomo,IN,Size M,7.4,1,UPS® Ground
+Columbus,Kokomo,IN,Size L,9.94,1,UPS® Ground
+Columbus,Hutchinson,KS,Size S,7.45,2,UPS® Ground
+Columbus,Hutchinson,KS,Size M,8.86,2,UPS® Ground
+Columbus,Hutchinson,KS,Size L,14.1,2,UPS® Ground
+Columbus,Grand Island,NE,Size S,7.45,3,UPS® Ground
+Columbus,Grand Island,NE,Size M,8.86,3,UPS® Ground
+Columbus,Grand Island,NE,Size L,14.1,3,UPS® Ground
+Columbus,Amarillo,TX,Size S,8.36,3,UPS® Ground
+Columbus,Amarillo,TX,Size M,10.31,3,UPS® Ground
+Columbus,Amarillo,TX,Size L,15.29,3,UPS® Ground
+Columbus,San Angelo,TX,Size S,8.36,3,UPS® Ground
+Columbus,San Angelo,TX,Size M,10.31,3,UPS® Ground
+Columbus,San Angelo,TX,Size L,15.29,3,UPS® Ground
+Columbus,Hot Springs,AR,Size S,7.36,3,UPS® Ground
+Columbus,Hot Springs,AR,Size M,8.77,3,UPS® Ground
+Columbus,Hot Springs,AR,Size L,14.1,3,UPS® Ground
+Columbus,Las Cruces,NM,Size S,8.45,4,UPS® Ground
+Columbus,Las Cruces,NM,Size M,10.4,4,UPS® Ground
+Columbus,Las Cruces,NM,Size L,15.29,4,UPS® Ground
+Columbus,Pueblo,CO,Size S,8.45,3,UPS® Ground
+Columbus,Pueblo,CO,Size M,10.4,3,UPS® Ground
+Columbus,Pueblo,CO,Size L,15.29,3,UPS® Ground
+Columbus,Logan,UT,Size S,8.62,3,UPS® Ground
+Columbus,Logan,UT,Size M,10.91,3,UPS® Ground
+Columbus,Logan,UT,Size L,16.29,3,UPS® Ground
+Columbus,Great Falls,MT,Size S,8.71,3,UPS® Ground
+Columbus,Great Falls,MT,Size M,11.0,3,UPS® Ground
+Columbus,Great Falls,MT,Size L,16.29,3,UPS® Ground
+Columbus,Laramie,WY,Size S,8.36,3,UPS® Ground
+Columbus,Laramie,WY,Size M,10.31,3,UPS® Ground
+Columbus,Laramie,WY,Size L,15.29,3,UPS® Ground
+Columbus,Stillwater,OK,Size S,7.45,3,UPS® Ground
+Columbus,Stillwater,OK,Size M,8.86,3,UPS® Ground
+Columbus,Stillwater,OK,Size L,14.1,3,UPS® Ground
+Columbus,Temple,TX,Size S,8.45,2,UPS® Ground
+Columbus,Temple,TX,Size M,10.4,2,UPS® Ground
+Columbus,Temple,TX,Size L,15.29,2,UPS® Ground
+Columbus,Jonesboro,AR,Size S,6.52,3,UPS® Ground
+Columbus,Jonesboro,AR,Size M,7.91,3,UPS® Ground
+Columbus,Jonesboro,AR,Size L,10.54,3,UPS® Ground
+Columbus,Greeley,CO,Size S,8.36,3,UPS® Ground
+Columbus,Greeley,CO,Size M,10.31,3,UPS® Ground
+Columbus,Greeley,CO,Size L,15.29,3,UPS® Ground
+Columbus,Ogden,UT,Size S,8.62,3,UPS® Ground
+Columbus,Ogden,UT,Size M,10.91,3,UPS® Ground
+Columbus,Ogden,UT,Size L,16.29,3,UPS® Ground
+Columbus,Helena,MT,Size S,8.62,3,UPS® Ground
+Columbus,Helena,MT,Size M,10.91,3,UPS® Ground
+Columbus,Helena,MT,Size L,16.29,3,UPS® Ground
+Columbus,Rock Springs,WY,Size S,8.36,4,UPS® Ground
+Columbus,Rock Springs,WY,Size M,10.31,4,UPS® Ground
+Columbus,Rock Springs,WY,Size L,15.29,4,UPS® Ground
+Columbus,Enid,OK,Size S,7.45,3,UPS® Ground
+Columbus,Enid,OK,Size M,8.86,3,UPS® Ground
+Columbus,Enid,OK,Size L,14.1,3,UPS® Ground
+Columbus,Brownsville,TX,Size S,8.62,3,UPS® Ground
+Columbus,Brownsville,TX,Size M,10.91,3,UPS® Ground
+Columbus,Brownsville,TX,Size L,16.29,3,UPS® Ground
+Columbus,Loveland,CO,Size S,8.45,3,UPS® Ground
+Columbus,Loveland,CO,Size M,10.4,3,UPS® Ground
+Columbus,Loveland,CO,Size L,15.29,3,UPS® Ground
+Columbus,Moab,UT,Size S,8.62,4,UPS® Ground
+Columbus,Moab,UT,Size M,10.91,4,UPS® Ground
+Columbus,Moab,UT,Size L,16.29,4,UPS® Ground
+Columbus,Roswell,NM,Size S,8.36,4,UPS® Ground
+Columbus,Roswell,NM,Size M,10.31,4,UPS® Ground
+Columbus,Roswell,NM,Size L,15.29,4,UPS® Ground
+Columbus,Ventura,CA,Size S,9.16,3,UPS® Ground
+Columbus,Ventura,CA,Size M,11.97,3,UPS® Ground
+Columbus,Ventura,CA,Size L,17.29,3,UPS® Ground
+Columbus,Redwood City,CA,Size S,9.25,4,UPS® Ground
+Columbus,Redwood City,CA,Size M,12.06,4,UPS® Ground
+Columbus,Redwood City,CA,Size L,17.29,4,UPS® Ground
+Columbus,Davis,CA,Size S,9.16,4,UPS® Ground
+Columbus,Davis,CA,Size M,11.97,4,UPS® Ground
+Columbus,Davis,CA,Size L,17.29,4,UPS® Ground
+Columbus,Corvallis,OR,Size S,9.16,4,UPS® Ground
+Columbus,Corvallis,OR,Size M,11.97,4,UPS® Ground
+Columbus,Corvallis,OR,Size L,17.29,4,UPS® Ground
+Columbus,Medford,OR,Size S,9.16,5,UPS® Ground
+Columbus,Medford,OR,Size M,11.97,5,UPS® Ground
+Columbus,Medford,OR,Size L,17.29,5,UPS® Ground
+Columbus,Yakima,WA,Size S,9.25,4,UPS® Ground
+Columbus,Yakima,WA,Size M,12.06,4,UPS® Ground
+Columbus,Yakima,WA,Size L,17.29,4,UPS® Ground
+Columbus,Wenatchee,WA,Size S,9.16,5,UPS® Ground
+Columbus,Wenatchee,WA,Size M,11.97,5,UPS® Ground
+Columbus,Wenatchee,WA,Size L,17.29,5,UPS® Ground
+Columbus,Twin Falls,ID,Size S,8.71,4,UPS® Ground
+Columbus,Twin Falls,ID,Size M,11.0,4,UPS® Ground
+Columbus,Twin Falls,ID,Size L,16.29,4,UPS® Ground
+Columbus,Elko,NV,Size S,8.71,4,UPS® Ground
+Columbus,Elko,NV,Size M,11.0,4,UPS® Ground
+Columbus,Elko,NV,Size L,16.29,4,UPS® Ground
+Columbus,Yuma,AZ,Size S,8.71,4,UPS® Ground
+Columbus,Yuma,AZ,Size M,11.0,4,UPS® Ground
+Columbus,Yuma,AZ,Size L,16.29,4,UPS® Ground
+Columbus,San Luis Obispo,CA,Size S,9.25,3,UPS® Ground
+Columbus,San Luis Obispo,CA,Size M,12.06,3,UPS® Ground
+Columbus,San Luis Obispo,CA,Size L,17.29,3,UPS® Ground
+Columbus,Fresno,CA,Size S,9.16,4,UPS® Ground
+Columbus,Fresno,CA,Size M,11.97,4,UPS® Ground
+Columbus,Fresno,CA,Size L,17.29,4,UPS® Ground
+Columbus,Ashland,OR,Size S,9.16,5,UPS® Ground
+Columbus,Ashland,OR,Size M,11.97,5,UPS® Ground
+Columbus,Ashland,OR,Size L,17.29,5,UPS® Ground
+Columbus,Port Angeles,WA,Size S,9.16,4,UPS® Ground
+Columbus,Port Angeles,WA,Size M,11.97,4,UPS® Ground
+Columbus,Port Angeles,WA,Size L,17.29,4,UPS® Ground
+Columbus,Pocatello,ID,Size S,8.62,4,UPS® Ground
+Columbus,Pocatello,ID,Size M,10.91,4,UPS® Ground
+Columbus,Pocatello,ID,Size L,16.29,4,UPS® Ground
+Columbus,Fallon,NV,Size S,9.25,3,UPS® Ground
+Columbus,Fallon,NV,Size M,12.06,3,UPS® Ground
+Columbus,Fallon,NV,Size L,17.29,3,UPS® Ground
+Columbus,Prescott,AZ,Size S,8.62,4,UPS® Ground
+Columbus,Prescott,AZ,Size M,10.91,4,UPS® Ground
+Columbus,Prescott,AZ,Size L,16.29,4,UPS® Ground
+Columbus,Ukiah,CA,Size S,9.25,4,UPS® Ground
+Columbus,Ukiah,CA,Size M,12.06,4,UPS® Ground
+Columbus,Ukiah,CA,Size L,17.29,4,UPS® Ground
+Columbus,Grants Pass,OR,Size S,9.25,5,UPS® Ground
+Columbus,Grants Pass,OR,Size M,12.06,5,UPS® Ground
+Columbus,Grants Pass,OR,Size L,17.29,5,UPS® Ground
+Columbus,Centralia,WA,Size S,9.25,4,UPS® Ground
+Columbus,Centralia,WA,Size M,12.06,4,UPS® Ground
+Columbus,Centralia,WA,Size L,17.29,4,UPS® Ground
+Denver,Scranton,PA,Size S,8.62,3,UPS® Ground
+Denver,Scranton,PA,Size M,10.91,3,UPS® Ground
+Denver,Scranton,PA,Size L,16.29,3,UPS® Ground
+Denver,Syracuse,NY,Size S,8.62,3,UPS® Ground
+Denver,Syracuse,NY,Size M,10.91,3,UPS® Ground
+Denver,Syracuse,NY,Size L,16.29,3,UPS® Ground
+Denver,Morristown,NJ,Size S,8.62,3,UPS® Ground
+Denver,Morristown,NJ,Size M,10.91,3,UPS® Ground
+Denver,Morristown,NJ,Size L,16.29,3,UPS® Ground
+Denver,Lowell,MA,Size S,8.62,3,UPS® Ground
+Denver,Lowell,MA,Size M,10.91,3,UPS® Ground
+Denver,Lowell,MA,Size L,16.29,3,UPS® Ground
+Denver,Stamford,CT,Size S,8.71,3,UPS® Ground
+Denver,Stamford,CT,Size M,11.0,3,UPS® Ground
+Denver,Stamford,CT,Size L,16.29,3,UPS® Ground
+Denver,Warwick,RI,Size S,8.62,3,UPS® Ground
+Denver,Warwick,RI,Size M,10.91,3,UPS® Ground
+Denver,Warwick,RI,Size L,16.29,3,UPS® Ground
+Denver,Keene,NH,Size S,8.62,3,UPS® Ground
+Denver,Keene,NH,Size M,10.91,3,UPS® Ground
+Denver,Keene,NH,Size L,16.29,3,UPS® Ground
+Denver,Rutland,VT,Size S,8.71,3,UPS® Ground
+Denver,Rutland,VT,Size M,11.0,3,UPS® Ground
+Denver,Rutland,VT,Size L,16.29,3,UPS® Ground
+Denver,Augusta,ME,Size S,8.71,3,UPS® Ground
+Denver,Augusta,ME,Size M,11.0,3,UPS® Ground
+Denver,Augusta,ME,Size L,16.29,3,UPS® Ground
+Denver,Poughkeepsie,NY,Size S,8.62,3,UPS® Ground
+Denver,Poughkeepsie,NY,Size M,10.91,3,UPS® Ground
+Denver,Poughkeepsie,NY,Size L,16.29,3,UPS® Ground
+Denver,Lancaster,PA,Size S,8.62,3,UPS® Ground
+Denver,Lancaster,PA,Size M,10.91,3,UPS® Ground
+Denver,Lancaster,PA,Size L,16.29,3,UPS® Ground
+Denver,Worcester,MA,Size S,8.62,3,UPS® Ground
+Denver,Worcester,MA,Size M,10.91,3,UPS® Ground
+Denver,Worcester,MA,Size L,16.29,3,UPS® Ground
+Denver,Hackensack,NJ,Size S,8.62,3,UPS® Ground
+Denver,Hackensack,NJ,Size M,10.91,3,UPS® Ground
+Denver,Hackensack,NJ,Size L,16.29,3,UPS® Ground
+Denver,Kingston,NY,Size S,8.62,3,UPS® Ground
+Denver,Kingston,NY,Size M,10.91,3,UPS® Ground
+Denver,Kingston,NY,Size L,16.29,3,UPS® Ground
+Denver,Norwich,CT,Size S,8.71,3,UPS® Ground
+Denver,Norwich,CT,Size M,11.0,3,UPS® Ground
+Denver,Norwich,CT,Size L,16.29,3,UPS® Ground
+Denver,Erie,PA,Size S,8.45,3,UPS® Ground
+Denver,Erie,PA,Size M,10.4,3,UPS® Ground
+Denver,Erie,PA,Size L,15.29,3,UPS® Ground
+Denver,Pittsfield,MA,Size S,8.62,3,UPS® Ground
+Denver,Pittsfield,MA,Size M,10.91,3,UPS® Ground
+Denver,Pittsfield,MA,Size L,16.29,3,UPS® Ground
+Denver,Elmira,NY,Size S,8.62,3,UPS® Ground
+Denver,Elmira,NY,Size M,10.91,3,UPS® Ground
+Denver,Elmira,NY,Size L,16.29,3,UPS® Ground
+Denver,Toms River,NJ,Size S,8.62,3,UPS® Ground
+Denver,Toms River,NJ,Size M,10.91,3,UPS® Ground
+Denver,Toms River,NJ,Size L,16.29,3,UPS® Ground
+Denver,Reading,PA,Size S,8.71,3,UPS® Ground
+Denver,Reading,PA,Size M,11.0,3,UPS® Ground
+Denver,Reading,PA,Size L,16.29,3,UPS® Ground
+Denver,Columbia,SC,Size S,8.36,3,UPS® Ground
+Denver,Columbia,SC,Size M,10.31,3,UPS® Ground
+Denver,Columbia,SC,Size L,15.29,3,UPS® Ground
+Denver,Rome,GA,Size S,8.36,3,UPS® Ground
+Denver,Rome,GA,Size M,10.31,3,UPS® Ground
+Denver,Rome,GA,Size L,15.29,3,UPS® Ground
+Denver,Decatur,AL,Size S,8.45,3,UPS® Ground
+Denver,Decatur,AL,Size M,10.4,3,UPS® Ground
+Denver,Decatur,AL,Size L,15.29,3,UPS® Ground
+Denver,Pensacola,FL,Size S,8.36,3,UPS® Ground
+Denver,Pensacola,FL,Size M,10.31,3,UPS® Ground
+Denver,Pensacola,FL,Size L,15.29,3,UPS® Ground
+Denver,Wilson,NC,Size S,8.71,3,UPS® Ground
+Denver,Wilson,NC,Size M,11.0,3,UPS® Ground
+Denver,Wilson,NC,Size L,16.29,3,UPS® Ground
+Denver,Cookeville,TN,Size S,8.45,3,UPS® Ground
+Denver,Cookeville,TN,Size M,10.4,3,UPS® Ground
+Denver,Cookeville,TN,Size L,15.29,3,UPS® Ground
+Denver,Hattiesburg,MS,Size S,8.45,3,UPS® Ground
+Denver,Hattiesburg,MS,Size M,10.4,3,UPS® Ground
+Denver,Hattiesburg,MS,Size L,15.29,3,UPS® Ground
+Denver,Statesboro,GA,Size S,8.45,3,UPS® Ground
+Denver,Statesboro,GA,Size M,10.4,3,UPS® Ground
+Denver,Statesboro,GA,Size L,15.29,3,UPS® Ground
+Denver,Fredericksburg,VA,Size S,8.62,3,UPS® Ground
+Denver,Fredericksburg,VA,Size M,10.91,3,UPS® Ground
+Denver,Fredericksburg,VA,Size L,16.29,3,UPS® Ground
+Denver,Gainesville,FL,Size S,8.71,3,UPS® Ground
+Denver,Gainesville,FL,Size M,11.0,3,UPS® Ground
+Denver,Gainesville,FL,Size L,16.29,3,UPS® Ground
+Denver,Hickory,NC,Size S,8.45,3,UPS® Ground
+Denver,Hickory,NC,Size M,10.4,3,UPS® Ground
+Denver,Hickory,NC,Size L,15.29,3,UPS® Ground
+Denver,Cleveland,TN,Size S,8.45,3,UPS® Ground
+Denver,Cleveland,TN,Size M,10.4,3,UPS® Ground
+Denver,Cleveland,TN,Size L,15.29,3,UPS® Ground
+Denver,Dothan,AL,Size S,8.45,3,UPS® Ground
+Denver,Dothan,AL,Size M,10.4,3,UPS® Ground
+Denver,Dothan,AL,Size L,15.29,3,UPS® Ground
+Denver,Florence,SC,Size S,8.62,3,UPS® Ground
+Denver,Florence,SC,Size M,10.91,3,UPS® Ground
+Denver,Florence,SC,Size L,16.29,3,UPS® Ground
+Denver,Valdosta,GA,Size S,8.36,3,UPS® Ground
+Denver,Valdosta,GA,Size M,10.31,3,UPS® Ground
+Denver,Valdosta,GA,Size L,15.29,3,UPS® Ground
+Denver,Danville,VA,Size S,8.62,3,UPS® Ground
+Denver,Danville,VA,Size M,10.91,3,UPS® Ground
+Denver,Danville,VA,Size L,16.29,3,UPS® Ground
+Denver,Ocala,FL,Size S,8.62,3,UPS® Ground
+Denver,Ocala,FL,Size M,10.91,3,UPS® Ground
+Denver,Ocala,FL,Size L,16.29,3,UPS® Ground
+Denver,New Bern,NC,Size S,8.71,3,UPS® Ground
+Denver,New Bern,NC,Size M,11.0,3,UPS® Ground
+Denver,New Bern,NC,Size L,16.29,3,UPS® Ground
+Denver,Johnson City,TN,Size S,8.45,3,UPS® Ground
+Denver,Johnson City,TN,Size M,10.4,3,UPS® Ground
+Denver,Johnson City,TN,Size L,15.29,3,UPS® Ground
+Denver,Meridian,MS,Size S,8.36,3,UPS® Ground
+Denver,Meridian,MS,Size M,10.31,3,UPS® Ground
+Denver,Meridian,MS,Size L,15.29,3,UPS® Ground
+Denver,Findlay,OH,Size S,8.45,3,UPS® Ground
+Denver,Findlay,OH,Size M,10.4,3,UPS® Ground
+Denver,Findlay,OH,Size L,15.29,3,UPS® Ground
+Denver,Bay City,MI,Size S,8.36,3,UPS® Ground
+Denver,Bay City,MI,Size M,10.31,3,UPS® Ground
+Denver,Bay City,MI,Size L,15.29,3,UPS® Ground
+Denver,Champaign,IL,Size S,7.36,2,UPS® Ground
+Denver,Champaign,IL,Size M,8.77,2,UPS® Ground
+Denver,Champaign,IL,Size L,14.1,2,UPS® Ground
+Denver,Cedar Rapids,IA,Size S,7.36,2,UPS® Ground
+Denver,Cedar Rapids,IA,Size M,8.77,2,UPS® Ground
+Denver,Cedar Rapids,IA,Size L,14.1,2,UPS® Ground
+Denver,Mankato,MN,Size S,7.45,3,UPS® Ground
+Denver,Mankato,MN,Size M,8.86,3,UPS® Ground
+Denver,Mankato,MN,Size L,14.1,3,UPS® Ground
+Denver,Eau Claire,WI,Size S,7.45,3,UPS® Ground
+Denver,Eau Claire,WI,Size M,8.86,3,UPS® Ground
+Denver,Eau Claire,WI,Size L,14.1,3,UPS® Ground
+Denver,Jefferson City,MO,Size S,7.36,2,UPS® Ground
+Denver,Jefferson City,MO,Size M,8.77,2,UPS® Ground
+Denver,Jefferson City,MO,Size L,14.1,2,UPS® Ground
+Denver,Muncie,IN,Size S,7.36,3,UPS® Ground
+Denver,Muncie,IN,Size M,8.77,3,UPS® Ground
+Denver,Muncie,IN,Size L,14.1,3,UPS® Ground
+Denver,Brookings,SD,Size S,6.52,2,UPS® Ground
+Denver,Brookings,SD,Size M,7.91,2,UPS® Ground
+Denver,Brookings,SD,Size L,10.54,2,UPS® Ground
+Denver,Salina,KS,Size S,6.52,2,UPS® Ground
+Denver,Salina,KS,Size M,7.91,2,UPS® Ground
+Denver,Salina,KS,Size L,10.54,2,UPS® Ground
+Denver,Sandusky,OH,Size S,8.36,3,UPS® Ground
+Denver,Sandusky,OH,Size M,10.31,3,UPS® Ground
+Denver,Sandusky,OH,Size L,15.29,3,UPS® Ground
+Denver,Saginaw,MI,Size S,8.36,3,UPS® Ground
+Denver,Saginaw,MI,Size M,10.31,3,UPS® Ground
+Denver,Saginaw,MI,Size L,15.29,3,UPS® Ground
+Denver,Rockford,IL,Size S,7.45,2,UPS® Ground
+Denver,Rockford,IL,Size M,8.86,2,UPS® Ground
+Denver,Rockford,IL,Size L,14.1,2,UPS® Ground
+Denver,Dubuque,IA,Size S,7.36,2,UPS® Ground
+Denver,Dubuque,IA,Size M,8.77,2,UPS® Ground
+Denver,Dubuque,IA,Size L,14.1,2,UPS® Ground
+Denver,Winona,MN,Size S,7.36,3,UPS® Ground
+Denver,Winona,MN,Size M,8.77,3,UPS® Ground
+Denver,Winona,MN,Size L,14.1,3,UPS® Ground
+Denver,La Crosse,WI,Size S,7.36,3,UPS® Ground
+Denver,La Crosse,WI,Size M,8.77,3,UPS® Ground
+Denver,La Crosse,WI,Size L,14.1,3,UPS® Ground
+Denver,Joplin,MO,Size S,7.36,2,UPS® Ground
+Denver,Joplin,MO,Size M,8.77,2,UPS® Ground
+Denver,Joplin,MO,Size L,14.1,2,UPS® Ground
+Denver,Kokomo,IN,Size S,7.36,2,UPS® Ground
+Denver,Kokomo,IN,Size M,8.77,2,UPS® Ground
+Denver,Kokomo,IN,Size L,14.1,2,UPS® Ground
+Denver,Hutchinson,KS,Size S,6.69,2,UPS® Ground
+Denver,Hutchinson,KS,Size M,8.69,2,UPS® Ground
+Denver,Hutchinson,KS,Size L,10.54,2,UPS® Ground
+Denver,Grand Island,NE,Size S,6.69,2,UPS® Ground
+Denver,Grand Island,NE,Size M,8.69,2,UPS® Ground
+Denver,Grand Island,NE,Size L,10.54,2,UPS® Ground
+Denver,Amarillo,TX,Size S,6.52,2,UPS® Ground
+Denver,Amarillo,TX,Size M,7.91,2,UPS® Ground
+Denver,Amarillo,TX,Size L,10.54,2,UPS® Ground
+Denver,San Angelo,TX,Size S,7.36,2,UPS® Ground
+Denver,San Angelo,TX,Size M,8.77,2,UPS® Ground
+Denver,San Angelo,TX,Size L,14.1,2,UPS® Ground
+Denver,Hot Springs,AR,Size S,7.36,3,UPS® Ground
+Denver,Hot Springs,AR,Size M,8.77,3,UPS® Ground
+Denver,Hot Springs,AR,Size L,14.1,3,UPS® Ground
+Denver,Las Cruces,NM,Size S,6.69,2,UPS® Ground
+Denver,Las Cruces,NM,Size M,8.69,2,UPS® Ground
+Denver,Las Cruces,NM,Size L,10.54,2,UPS® Ground
+Denver,Pueblo,CO,Size S,6.48,1,UPS® Ground
+Denver,Pueblo,CO,Size M,7.79,1,UPS® Ground
+Denver,Pueblo,CO,Size L,8.94,1,UPS® Ground
+Denver,Logan,UT,Size S,6.52,2,UPS® Ground
+Denver,Logan,UT,Size M,7.91,2,UPS® Ground
+Denver,Logan,UT,Size L,10.54,2,UPS® Ground
+Denver,Great Falls,MT,Size S,7.45,2,UPS® Ground
+Denver,Great Falls,MT,Size M,8.86,2,UPS® Ground
+Denver,Great Falls,MT,Size L,14.1,2,UPS® Ground
+Denver,Laramie,WY,Size S,6.09,1,UPS® Ground
+Denver,Laramie,WY,Size M,7.26,1,UPS® Ground
+Denver,Laramie,WY,Size L,8.94,1,UPS® Ground
+Denver,Stillwater,OK,Size S,6.69,2,UPS® Ground
+Denver,Stillwater,OK,Size M,8.69,2,UPS® Ground
+Denver,Stillwater,OK,Size L,10.54,2,UPS® Ground
+Denver,Temple,TX,Size S,7.45,2,UPS® Ground
+Denver,Temple,TX,Size M,8.86,2,UPS® Ground
+Denver,Temple,TX,Size L,14.1,2,UPS® Ground
+Denver,Jonesboro,AR,Size S,7.36,3,UPS® Ground
+Denver,Jonesboro,AR,Size M,8.77,3,UPS® Ground
+Denver,Jonesboro,AR,Size L,14.1,3,UPS® Ground
+Denver,Greeley,CO,Size S,6.09,1,UPS® Ground
+Denver,Greeley,CO,Size M,7.26,1,UPS® Ground
+Denver,Greeley,CO,Size L,8.94,1,UPS® Ground
+Denver,Ogden,UT,Size S,6.52,2,UPS® Ground
+Denver,Ogden,UT,Size M,7.91,2,UPS® Ground
+Denver,Ogden,UT,Size L,10.54,2,UPS® Ground
+Denver,Helena,MT,Size S,6.52,2,UPS® Ground
+Denver,Helena,MT,Size M,7.91,2,UPS® Ground
+Denver,Helena,MT,Size L,10.54,2,UPS® Ground
+Denver,Rock Springs,WY,Size S,6.52,2,UPS® Ground
+Denver,Rock Springs,WY,Size M,7.91,2,UPS® Ground
+Denver,Rock Springs,WY,Size L,10.54,2,UPS® Ground
+Denver,Enid,OK,Size S,6.69,2,UPS® Ground
+Denver,Enid,OK,Size M,8.69,2,UPS® Ground
+Denver,Enid,OK,Size L,10.54,2,UPS® Ground
+Denver,Brownsville,TX,Size S,8.36,3,UPS® Ground
+Denver,Brownsville,TX,Size M,10.31,3,UPS® Ground
+Denver,Brownsville,TX,Size L,15.29,3,UPS® Ground
+Denver,Loveland,CO,Size S,6.48,1,UPS® Ground
+Denver,Loveland,CO,Size M,7.79,1,UPS® Ground
+Denver,Loveland,CO,Size L,8.94,1,UPS® Ground
+Denver,Moab,UT,Size S,6.52,2,UPS® Ground
+Denver,Moab,UT,Size M,7.91,2,UPS® Ground
+Denver,Moab,UT,Size L,10.54,2,UPS® Ground
+Denver,Roswell,NM,Size S,6.52,2,UPS® Ground
+Denver,Roswell,NM,Size M,7.91,2,UPS® Ground
+Denver,Roswell,NM,Size L,10.54,2,UPS® Ground
+Denver,Ventura,CA,Size S,7.36,2,UPS® Ground
+Denver,Ventura,CA,Size M,8.77,2,UPS® Ground
+Denver,Ventura,CA,Size L,14.1,2,UPS® Ground
+Denver,Redwood City,CA,Size S,7.45,2,UPS® Ground
+Denver,Redwood City,CA,Size M,8.86,2,UPS® Ground
+Denver,Redwood City,CA,Size L,14.1,2,UPS® Ground
+Denver,Davis,CA,Size S,7.36,2,UPS® Ground
+Denver,Davis,CA,Size M,8.77,2,UPS® Ground
+Denver,Davis,CA,Size L,14.1,2,UPS® Ground
+Denver,Corvallis,OR,Size S,7.36,3,UPS® Ground
+Denver,Corvallis,OR,Size M,8.77,3,UPS® Ground
+Denver,Corvallis,OR,Size L,14.1,3,UPS® Ground
+Denver,Medford,OR,Size S,7.36,3,UPS® Ground
+Denver,Medford,OR,Size M,8.77,3,UPS® Ground
+Denver,Medford,OR,Size L,14.1,3,UPS® Ground
+Denver,Yakima,WA,Size S,7.45,2,UPS® Ground
+Denver,Yakima,WA,Size M,8.86,2,UPS® Ground
+Denver,Yakima,WA,Size L,14.1,2,UPS® Ground
+Denver,Wenatchee,WA,Size S,7.36,2,UPS® Ground
+Denver,Wenatchee,WA,Size M,8.77,2,UPS® Ground
+Denver,Wenatchee,WA,Size L,14.1,2,UPS® Ground
+Denver,Twin Falls,ID,Size S,7.45,2,UPS® Ground
+Denver,Twin Falls,ID,Size M,8.86,2,UPS® Ground
+Denver,Twin Falls,ID,Size L,14.1,2,UPS® Ground
+Denver,Elko,NV,Size S,6.69,2,UPS® Ground
+Denver,Elko,NV,Size M,8.69,2,UPS® Ground
+Denver,Elko,NV,Size L,10.54,2,UPS® Ground
+Denver,Yuma,AZ,Size S,7.45,2,UPS® Ground
+Denver,Yuma,AZ,Size M,8.86,2,UPS® Ground
+Denver,Yuma,AZ,Size L,14.1,2,UPS® Ground
+Denver,San Luis Obispo,CA,Size S,7.45,2,UPS® Ground
+Denver,San Luis Obispo,CA,Size M,8.86,2,UPS® Ground
+Denver,San Luis Obispo,CA,Size L,14.1,2,UPS® Ground
+Denver,Fresno,CA,Size S,7.36,2,UPS® Ground
+Denver,Fresno,CA,Size M,8.77,2,UPS® Ground
+Denver,Fresno,CA,Size L,14.1,2,UPS® Ground
+Denver,Ashland,OR,Size S,7.36,3,UPS® Ground
+Denver,Ashland,OR,Size M,8.77,3,UPS® Ground
+Denver,Ashland,OR,Size L,14.1,3,UPS® Ground
+Denver,Port Angeles,WA,Size S,8.36,3,UPS® Ground
+Denver,Port Angeles,WA,Size M,10.31,3,UPS® Ground
+Denver,Port Angeles,WA,Size L,15.29,3,UPS® Ground
+Denver,Pocatello,ID,Size S,6.52,2,UPS® Ground
+Denver,Pocatello,ID,Size M,7.91,2,UPS® Ground
+Denver,Pocatello,ID,Size L,10.54,2,UPS® Ground
+Denver,Fallon,NV,Size S,7.45,2,UPS® Ground
+Denver,Fallon,NV,Size M,8.86,2,UPS® Ground
+Denver,Fallon,NV,Size L,14.1,2,UPS® Ground
+Denver,Prescott,AZ,Size S,6.52,2,UPS® Ground
+Denver,Prescott,AZ,Size M,7.91,2,UPS® Ground
+Denver,Prescott,AZ,Size L,10.54,2,UPS® Ground
+Denver,Ukiah,CA,Size S,7.45,2,UPS® Ground
+Denver,Ukiah,CA,Size M,8.86,2,UPS® Ground
+Denver,Ukiah,CA,Size L,14.1,2,UPS® Ground
+Denver,Grants Pass,OR,Size S,7.45,3,UPS® Ground
+Denver,Grants Pass,OR,Size M,8.86,3,UPS® Ground
+Denver,Grants Pass,OR,Size L,14.1,3,UPS® Ground
+Denver,Centralia,WA,Size S,8.45,3,UPS® Ground
+Denver,Centralia,WA,Size M,10.4,3,UPS® Ground
+Denver,Centralia,WA,Size L,15.29,3,UPS® Ground
+Chicago,Scranton,PA,Size S,7.36,2,UPS® Ground
+Chicago,Scranton,PA,Size M,8.77,2,UPS® Ground
+Chicago,Scranton,PA,Size L,14.1,2,UPS® Ground
+Chicago,Syracuse,NY,Size S,6.52,2,UPS® Ground
+Chicago,Syracuse,NY,Size M,7.91,2,UPS® Ground
+Chicago,Syracuse,NY,Size L,10.54,2,UPS® Ground
+Chicago,Morristown,NJ,Size S,7.36,2,UPS® Ground
+Chicago,Morristown,NJ,Size M,8.77,2,UPS® Ground
+Chicago,Morristown,NJ,Size L,14.1,2,UPS® Ground
+Chicago,Lowell,MA,Size S,7.36,3,UPS® Ground
+Chicago,Lowell,MA,Size M,8.77,3,UPS® Ground
+Chicago,Lowell,MA,Size L,14.1,3,UPS® Ground
+Chicago,Stamford,CT,Size S,7.45,2,UPS® Ground
+Chicago,Stamford,CT,Size M,8.86,2,UPS® Ground
+Chicago,Stamford,CT,Size L,14.1,2,UPS® Ground
+Chicago,Warwick,RI,Size S,7.36,3,UPS® Ground
+Chicago,Warwick,RI,Size M,8.77,3,UPS® Ground
+Chicago,Warwick,RI,Size L,14.1,3,UPS® Ground
+Chicago,Keene,NH,Size S,7.36,3,UPS® Ground
+Chicago,Keene,NH,Size M,8.77,3,UPS® Ground
+Chicago,Keene,NH,Size L,14.1,3,UPS® Ground
+Chicago,Rutland,VT,Size S,7.45,3,UPS® Ground
+Chicago,Rutland,VT,Size M,8.86,3,UPS® Ground
+Chicago,Rutland,VT,Size L,14.1,3,UPS® Ground
+Chicago,Augusta,ME,Size S,7.45,3,UPS® Ground
+Chicago,Augusta,ME,Size M,8.86,3,UPS® Ground
+Chicago,Augusta,ME,Size L,14.1,3,UPS® Ground
+Chicago,Poughkeepsie,NY,Size S,7.36,3,UPS® Ground
+Chicago,Poughkeepsie,NY,Size M,8.77,3,UPS® Ground
+Chicago,Poughkeepsie,NY,Size L,14.1,3,UPS® Ground
+Chicago,Lancaster,PA,Size S,7.36,2,UPS® Ground
+Chicago,Lancaster,PA,Size M,8.77,2,UPS® Ground
+Chicago,Lancaster,PA,Size L,14.1,2,UPS® Ground
+Chicago,Worcester,MA,Size S,7.36,3,UPS® Ground
+Chicago,Worcester,MA,Size M,8.77,3,UPS® Ground
+Chicago,Worcester,MA,Size L,14.1,3,UPS® Ground
+Chicago,Hackensack,NJ,Size S,7.36,2,UPS® Ground
+Chicago,Hackensack,NJ,Size M,8.77,2,UPS® Ground
+Chicago,Hackensack,NJ,Size L,14.1,2,UPS® Ground
+Chicago,Kingston,NY,Size S,7.36,3,UPS® Ground
+Chicago,Kingston,NY,Size M,8.77,3,UPS® Ground
+Chicago,Kingston,NY,Size L,14.1,3,UPS® Ground
+Chicago,Norwich,CT,Size S,7.45,2,UPS® Ground
+Chicago,Norwich,CT,Size M,8.86,2,UPS® Ground
+Chicago,Norwich,CT,Size L,14.1,2,UPS® Ground
+Chicago,Erie,PA,Size S,6.69,2,UPS® Ground
+Chicago,Erie,PA,Size M,8.69,2,UPS® Ground
+Chicago,Erie,PA,Size L,10.54,2,UPS® Ground
+Chicago,Pittsfield,MA,Size S,7.36,3,UPS® Ground
+Chicago,Pittsfield,MA,Size M,8.77,3,UPS® Ground
+Chicago,Pittsfield,MA,Size L,14.1,3,UPS® Ground
+Chicago,Elmira,NY,Size S,6.52,2,UPS® Ground
+Chicago,Elmira,NY,Size M,7.91,2,UPS® Ground
+Chicago,Elmira,NY,Size L,10.54,2,UPS® Ground
+Chicago,Toms River,NJ,Size S,7.36,2,UPS® Ground
+Chicago,Toms River,NJ,Size M,8.77,2,UPS® Ground
+Chicago,Toms River,NJ,Size L,14.1,2,UPS® Ground
+Chicago,Reading,PA,Size S,7.45,2,UPS® Ground
+Chicago,Reading,PA,Size M,8.86,2,UPS® Ground
+Chicago,Reading,PA,Size L,14.1,2,UPS® Ground
+Chicago,Columbia,SC,Size S,7.36,2,UPS® Ground
+Chicago,Columbia,SC,Size M,8.77,2,UPS® Ground
+Chicago,Columbia,SC,Size L,14.1,2,UPS® Ground
+Chicago,Rome,GA,Size S,7.36,2,UPS® Ground
+Chicago,Rome,GA,Size M,8.77,2,UPS® Ground
+Chicago,Rome,GA,Size L,14.1,2,UPS® Ground
+Chicago,Decatur,AL,Size S,6.69,2,UPS® Ground
+Chicago,Decatur,AL,Size M,8.69,2,UPS® Ground
+Chicago,Decatur,AL,Size L,10.54,2,UPS® Ground
+Chicago,Pensacola,FL,Size S,7.36,2,UPS® Ground
+Chicago,Pensacola,FL,Size M,8.77,2,UPS® Ground
+Chicago,Pensacola,FL,Size L,14.1,2,UPS® Ground
+Chicago,Wilson,NC,Size S,7.45,2,UPS® Ground
+Chicago,Wilson,NC,Size M,8.86,2,UPS® Ground
+Chicago,Wilson,NC,Size L,14.1,2,UPS® Ground
+Chicago,Cookeville,TN,Size S,6.69,2,UPS® Ground
+Chicago,Cookeville,TN,Size M,8.69,2,UPS® Ground
+Chicago,Cookeville,TN,Size L,10.54,2,UPS® Ground
+Chicago,Hattiesburg,MS,Size S,7.45,2,UPS® Ground
+Chicago,Hattiesburg,MS,Size M,8.86,2,UPS® Ground
+Chicago,Hattiesburg,MS,Size L,14.1,2,UPS® Ground
+Chicago,Statesboro,GA,Size S,7.45,2,UPS® Ground
+Chicago,Statesboro,GA,Size M,8.86,2,UPS® Ground
+Chicago,Statesboro,GA,Size L,14.1,2,UPS® Ground
+Chicago,Fredericksburg,VA,Size S,7.36,3,UPS® Ground
+Chicago,Fredericksburg,VA,Size M,8.77,3,UPS® Ground
+Chicago,Fredericksburg,VA,Size L,14.1,3,UPS® Ground
+Chicago,Gainesville,FL,Size S,7.45,2,UPS® Ground
+Chicago,Gainesville,FL,Size M,8.86,2,UPS® Ground
+Chicago,Gainesville,FL,Size L,14.1,2,UPS® Ground
+Chicago,Hickory,NC,Size S,6.69,2,UPS® Ground
+Chicago,Hickory,NC,Size M,8.69,2,UPS® Ground
+Chicago,Hickory,NC,Size L,10.54,2,UPS® Ground
+Chicago,Cleveland,TN,Size S,6.69,2,UPS® Ground
+Chicago,Cleveland,TN,Size M,8.69,2,UPS® Ground
+Chicago,Cleveland,TN,Size L,10.54,2,UPS® Ground
+Chicago,Dothan,AL,Size S,7.45,2,UPS® Ground
+Chicago,Dothan,AL,Size M,8.86,2,UPS® Ground
+Chicago,Dothan,AL,Size L,14.1,2,UPS® Ground
+Chicago,Florence,SC,Size S,7.36,2,UPS® Ground
+Chicago,Florence,SC,Size M,8.77,2,UPS® Ground
+Chicago,Florence,SC,Size L,14.1,2,UPS® Ground
+Chicago,Valdosta,GA,Size S,7.36,2,UPS® Ground
+Chicago,Valdosta,GA,Size M,8.77,2,UPS® Ground
+Chicago,Valdosta,GA,Size L,14.1,2,UPS® Ground
+Chicago,Danville,VA,Size S,6.52,2,UPS® Ground
+Chicago,Danville,VA,Size M,7.91,2,UPS® Ground
+Chicago,Danville,VA,Size L,10.54,2,UPS® Ground
+Chicago,Ocala,FL,Size S,7.36,2,UPS® Ground
+Chicago,Ocala,FL,Size M,8.77,2,UPS® Ground
+Chicago,Ocala,FL,Size L,14.1,2,UPS® Ground
+Chicago,New Bern,NC,Size S,7.45,3,UPS® Ground
+Chicago,New Bern,NC,Size M,8.86,3,UPS® Ground
+Chicago,New Bern,NC,Size L,14.1,3,UPS® Ground
+Chicago,Johnson City,TN,Size S,6.69,2,UPS® Ground
+Chicago,Johnson City,TN,Size M,8.69,2,UPS® Ground
+Chicago,Johnson City,TN,Size L,10.54,2,UPS® Ground
+Chicago,Meridian,MS,Size S,7.36,2,UPS® Ground
+Chicago,Meridian,MS,Size M,8.77,2,UPS® Ground
+Chicago,Meridian,MS,Size L,14.1,2,UPS® Ground
+Chicago,Findlay,OH,Size S,6.56,2,UPS® Ground
+Chicago,Findlay,OH,Size M,8.24,2,UPS® Ground
+Chicago,Findlay,OH,Size L,9.94,2,UPS® Ground
+Chicago,Bay City,MI,Size S,6.39,1,UPS® Ground
+Chicago,Bay City,MI,Size M,7.4,1,UPS® Ground
+Chicago,Bay City,MI,Size L,9.94,1,UPS® Ground
+Chicago,Champaign,IL,Size S,6.09,1,UPS® Ground
+Chicago,Champaign,IL,Size M,7.26,1,UPS® Ground
+Chicago,Champaign,IL,Size L,8.94,1,UPS® Ground
+Chicago,Cedar Rapids,IA,Size S,6.39,1,UPS® Ground
+Chicago,Cedar Rapids,IA,Size M,7.4,1,UPS® Ground
+Chicago,Cedar Rapids,IA,Size L,9.94,1,UPS® Ground
+Chicago,Mankato,MN,Size S,6.69,2,UPS® Ground
+Chicago,Mankato,MN,Size M,8.69,2,UPS® Ground
+Chicago,Mankato,MN,Size L,10.54,2,UPS® Ground
+Chicago,Eau Claire,WI,Size S,6.56,2,UPS® Ground
+Chicago,Eau Claire,WI,Size M,8.24,2,UPS® Ground
+Chicago,Eau Claire,WI,Size L,9.94,2,UPS® Ground
+Chicago,Jefferson City,MO,Size S,6.52,2,UPS® Ground
+Chicago,Jefferson City,MO,Size M,7.91,2,UPS® Ground
+Chicago,Jefferson City,MO,Size L,10.54,2,UPS® Ground
+Chicago,Muncie,IN,Size S,6.39,2,UPS® Ground
+Chicago,Muncie,IN,Size M,7.4,2,UPS® Ground
+Chicago,Muncie,IN,Size L,9.94,2,UPS® Ground
+Chicago,Brookings,SD,Size S,6.52,3,UPS® Ground
+Chicago,Brookings,SD,Size M,7.91,3,UPS® Ground
+Chicago,Brookings,SD,Size L,10.54,3,UPS® Ground
+Chicago,Salina,KS,Size S,6.52,2,UPS® Ground
+Chicago,Salina,KS,Size M,7.91,2,UPS® Ground
+Chicago,Salina,KS,Size L,10.54,2,UPS® Ground
+Chicago,Sandusky,OH,Size S,6.39,2,UPS® Ground
+Chicago,Sandusky,OH,Size M,7.4,2,UPS® Ground
+Chicago,Sandusky,OH,Size L,9.94,2,UPS® Ground
+Chicago,Saginaw,MI,Size S,6.39,1,UPS® Ground
+Chicago,Saginaw,MI,Size M,7.4,1,UPS® Ground
+Chicago,Saginaw,MI,Size L,9.94,1,UPS® Ground
+Chicago,Rockford,IL,Size S,6.48,1,UPS® Ground
+Chicago,Rockford,IL,Size M,7.79,1,UPS® Ground
+Chicago,Rockford,IL,Size L,8.94,1,UPS® Ground
+Chicago,Dubuque,IA,Size S,6.39,1,UPS® Ground
+Chicago,Dubuque,IA,Size M,7.4,1,UPS® Ground
+Chicago,Dubuque,IA,Size L,9.94,1,UPS® Ground
+Chicago,Winona,MN,Size S,6.39,2,UPS® Ground
+Chicago,Winona,MN,Size M,7.4,2,UPS® Ground
+Chicago,Winona,MN,Size L,9.94,2,UPS® Ground
+Chicago,La Crosse,WI,Size S,6.39,1,UPS® Ground
+Chicago,La Crosse,WI,Size M,7.4,1,UPS® Ground
+Chicago,La Crosse,WI,Size L,9.94,1,UPS® Ground
+Chicago,Joplin,MO,Size S,6.52,2,UPS® Ground
+Chicago,Joplin,MO,Size M,7.91,2,UPS® Ground
+Chicago,Joplin,MO,Size L,10.54,2,UPS® Ground
+Chicago,Kokomo,IN,Size S,6.09,1,UPS® Ground
+Chicago,Kokomo,IN,Size M,7.26,1,UPS® Ground
+Chicago,Kokomo,IN,Size L,8.94,1,UPS® Ground
+Chicago,Hutchinson,KS,Size S,6.69,2,UPS® Ground
+Chicago,Hutchinson,KS,Size M,8.69,2,UPS® Ground
+Chicago,Hutchinson,KS,Size L,10.54,2,UPS® Ground
+Chicago,Grand Island,NE,Size S,6.69,2,UPS® Ground
+Chicago,Grand Island,NE,Size M,8.69,2,UPS® Ground
+Chicago,Grand Island,NE,Size L,10.54,2,UPS® Ground
+Chicago,Amarillo,TX,Size S,7.36,4,UPS® Ground
+Chicago,Amarillo,TX,Size M,8.77,4,UPS® Ground
+Chicago,Amarillo,TX,Size L,14.1,4,UPS® Ground
+Chicago,San Angelo,TX,Size S,7.36,3,UPS® Ground
+Chicago,San Angelo,TX,Size M,8.77,3,UPS® Ground
+Chicago,San Angelo,TX,Size L,14.1,3,UPS® Ground
+Chicago,Hot Springs,AR,Size S,7.36,2,UPS® Ground
+Chicago,Hot Springs,AR,Size M,8.77,2,UPS® Ground
+Chicago,Hot Springs,AR,Size L,14.1,2,UPS® Ground
+Chicago,Las Cruces,NM,Size S,8.45,4,UPS® Ground
+Chicago,Las Cruces,NM,Size M,10.4,4,UPS® Ground
+Chicago,Las Cruces,NM,Size L,15.29,4,UPS® Ground
+Chicago,Pueblo,CO,Size S,7.45,2,UPS® Ground
+Chicago,Pueblo,CO,Size M,8.86,2,UPS® Ground
+Chicago,Pueblo,CO,Size L,14.1,2,UPS® Ground
+Chicago,Logan,UT,Size S,8.36,3,UPS® Ground
+Chicago,Logan,UT,Size M,10.31,3,UPS® Ground
+Chicago,Logan,UT,Size L,15.29,3,UPS® Ground
+Chicago,Great Falls,MT,Size S,8.45,3,UPS® Ground
+Chicago,Great Falls,MT,Size M,10.4,3,UPS® Ground
+Chicago,Great Falls,MT,Size L,15.29,3,UPS® Ground
+Chicago,Laramie,WY,Size S,7.36,2,UPS® Ground
+Chicago,Laramie,WY,Size M,8.77,2,UPS® Ground
+Chicago,Laramie,WY,Size L,14.1,2,UPS® Ground
+Chicago,Stillwater,OK,Size S,6.69,2,UPS® Ground
+Chicago,Stillwater,OK,Size M,8.69,2,UPS® Ground
+Chicago,Stillwater,OK,Size L,10.54,2,UPS® Ground
+Chicago,Temple,TX,Size S,7.45,2,UPS® Ground
+Chicago,Temple,TX,Size M,8.86,2,UPS® Ground
+Chicago,Temple,TX,Size L,14.1,2,UPS® Ground
+Chicago,Jonesboro,AR,Size S,6.52,2,UPS® Ground
+Chicago,Jonesboro,AR,Size M,7.91,2,UPS® Ground
+Chicago,Jonesboro,AR,Size L,10.54,2,UPS® Ground
+Chicago,Greeley,CO,Size S,7.36,2,UPS® Ground
+Chicago,Greeley,CO,Size M,8.77,2,UPS® Ground
+Chicago,Greeley,CO,Size L,14.1,2,UPS® Ground
+Chicago,Ogden,UT,Size S,8.36,3,UPS® Ground
+Chicago,Ogden,UT,Size M,10.31,3,UPS® Ground
+Chicago,Ogden,UT,Size L,15.29,3,UPS® Ground
+Chicago,Helena,MT,Size S,8.36,3,UPS® Ground
+Chicago,Helena,MT,Size M,10.31,3,UPS® Ground
+Chicago,Helena,MT,Size L,15.29,3,UPS® Ground
+Chicago,Rock Springs,WY,Size S,8.36,3,UPS® Ground
+Chicago,Rock Springs,WY,Size M,10.31,3,UPS® Ground
+Chicago,Rock Springs,WY,Size L,15.29,3,UPS® Ground
+Chicago,Enid,OK,Size S,7.45,2,UPS® Ground
+Chicago,Enid,OK,Size M,8.86,2,UPS® Ground
+Chicago,Enid,OK,Size L,14.1,2,UPS® Ground
+Chicago,Brownsville,TX,Size S,8.36,3,UPS® Ground
+Chicago,Brownsville,TX,Size M,10.31,3,UPS® Ground
+Chicago,Brownsville,TX,Size L,15.29,3,UPS® Ground
+Chicago,Loveland,CO,Size S,7.45,3,UPS® Ground
+Chicago,Loveland,CO,Size M,8.86,3,UPS® Ground
+Chicago,Loveland,CO,Size L,14.1,3,UPS® Ground
+Chicago,Moab,UT,Size S,8.36,4,UPS® Ground
+Chicago,Moab,UT,Size M,10.31,4,UPS® Ground
+Chicago,Moab,UT,Size L,15.29,4,UPS® Ground
+Chicago,Roswell,NM,Size S,8.36,4,UPS® Ground
+Chicago,Roswell,NM,Size M,10.31,4,UPS® Ground
+Chicago,Roswell,NM,Size L,15.29,4,UPS® Ground
+Chicago,Ventura,CA,Size S,8.62,3,UPS® Ground
+Chicago,Ventura,CA,Size M,10.91,3,UPS® Ground
+Chicago,Ventura,CA,Size L,16.29,3,UPS® Ground
+Chicago,Redwood City,CA,Size S,9.25,4,UPS® Ground
+Chicago,Redwood City,CA,Size M,12.06,4,UPS® Ground
+Chicago,Redwood City,CA,Size L,17.29,4,UPS® Ground
+Chicago,Davis,CA,Size S,8.62,4,UPS® Ground
+Chicago,Davis,CA,Size M,10.91,4,UPS® Ground
+Chicago,Davis,CA,Size L,16.29,4,UPS® Ground
+Chicago,Corvallis,OR,Size S,8.62,4,UPS® Ground
+Chicago,Corvallis,OR,Size M,10.91,4,UPS® Ground
+Chicago,Corvallis,OR,Size L,16.29,4,UPS® Ground
+Chicago,Medford,OR,Size S,9.16,5,UPS® Ground
+Chicago,Medford,OR,Size M,11.97,5,UPS® Ground
+Chicago,Medford,OR,Size L,17.29,5,UPS® Ground
+Chicago,Yakima,WA,Size S,8.71,4,UPS® Ground
+Chicago,Yakima,WA,Size M,11.0,4,UPS® Ground
+Chicago,Yakima,WA,Size L,16.29,4,UPS® Ground
+Chicago,Wenatchee,WA,Size S,8.62,5,UPS® Ground
+Chicago,Wenatchee,WA,Size M,10.91,5,UPS® Ground
+Chicago,Wenatchee,WA,Size L,16.29,5,UPS® Ground
+Chicago,Twin Falls,ID,Size S,8.45,4,UPS® Ground
+Chicago,Twin Falls,ID,Size M,10.4,4,UPS® Ground
+Chicago,Twin Falls,ID,Size L,15.29,4,UPS® Ground
+Chicago,Elko,NV,Size S,8.71,4,UPS® Ground
+Chicago,Elko,NV,Size M,11.0,4,UPS® Ground
+Chicago,Elko,NV,Size L,16.29,4,UPS® Ground
+Chicago,Yuma,AZ,Size S,8.71,3,UPS® Ground
+Chicago,Yuma,AZ,Size M,11.0,3,UPS® Ground
+Chicago,Yuma,AZ,Size L,16.29,3,UPS® Ground
+Chicago,San Luis Obispo,CA,Size S,9.25,4,UPS® Ground
+Chicago,San Luis Obispo,CA,Size M,12.06,4,UPS® Ground
+Chicago,San Luis Obispo,CA,Size L,17.29,4,UPS® Ground
+Chicago,Fresno,CA,Size S,8.62,4,UPS® Ground
+Chicago,Fresno,CA,Size M,10.91,4,UPS® Ground
+Chicago,Fresno,CA,Size L,16.29,4,UPS® Ground
+Chicago,Ashland,OR,Size S,9.16,5,UPS® Ground
+Chicago,Ashland,OR,Size M,11.97,5,UPS® Ground
+Chicago,Ashland,OR,Size L,17.29,5,UPS® Ground
+Chicago,Port Angeles,WA,Size S,8.62,4,UPS® Ground
+Chicago,Port Angeles,WA,Size M,10.91,4,UPS® Ground
+Chicago,Port Angeles,WA,Size L,16.29,4,UPS® Ground
+Chicago,Pocatello,ID,Size S,8.36,4,UPS® Ground
+Chicago,Pocatello,ID,Size M,10.31,4,UPS® Ground
+Chicago,Pocatello,ID,Size L,15.29,4,UPS® Ground
+Chicago,Fallon,NV,Size S,8.71,3,UPS® Ground
+Chicago,Fallon,NV,Size M,11.0,3,UPS® Ground
+Chicago,Fallon,NV,Size L,16.29,3,UPS® Ground
+Chicago,Prescott,AZ,Size S,8.36,3,UPS® Ground
+Chicago,Prescott,AZ,Size M,10.31,3,UPS® Ground
+Chicago,Prescott,AZ,Size L,15.29,3,UPS® Ground
+Chicago,Ukiah,CA,Size S,9.25,4,UPS® Ground
+Chicago,Ukiah,CA,Size M,12.06,4,UPS® Ground
+Chicago,Ukiah,CA,Size L,17.29,4,UPS® Ground
+Chicago,Grants Pass,OR,Size S,9.25,5,UPS® Ground
+Chicago,Grants Pass,OR,Size M,12.06,5,UPS® Ground
+Chicago,Grants Pass,OR,Size L,17.29,5,UPS® Ground
+Chicago,Centralia,WA,Size S,8.71,4,UPS® Ground
+Chicago,Centralia,WA,Size M,11.0,4,UPS® Ground
+Chicago,Centralia,WA,Size L,16.29,4,UPS® Ground
+Dallas,Scranton,PA,Size S,8.36,3,UPS® Ground
+Dallas,Scranton,PA,Size M,10.31,3,UPS® Ground
+Dallas,Scranton,PA,Size L,15.29,3,UPS® Ground
+Dallas,Syracuse,NY,Size S,8.36,4,UPS® Ground
+Dallas,Syracuse,NY,Size M,10.31,4,UPS® Ground
+Dallas,Syracuse,NY,Size L,15.29,4,UPS® Ground
+Dallas,Morristown,NJ,Size S,8.36,3,UPS® Ground
+Dallas,Morristown,NJ,Size M,10.31,3,UPS® Ground
+Dallas,Morristown,NJ,Size L,15.29,3,UPS® Ground
+Dallas,Lowell,MA,Size S,8.62,3,UPS® Ground
+Dallas,Lowell,MA,Size M,10.91,3,UPS® Ground
+Dallas,Lowell,MA,Size L,16.29,3,UPS® Ground
+Dallas,Stamford,CT,Size S,8.71,3,UPS® Ground
+Dallas,Stamford,CT,Size M,11.0,3,UPS® Ground
+Dallas,Stamford,CT,Size L,16.29,3,UPS® Ground
+Dallas,Warwick,RI,Size S,8.62,3,UPS® Ground
+Dallas,Warwick,RI,Size M,10.91,3,UPS® Ground
+Dallas,Warwick,RI,Size L,16.29,3,UPS® Ground
+Dallas,Keene,NH,Size S,8.62,3,UPS® Ground
+Dallas,Keene,NH,Size M,10.91,3,UPS® Ground
+Dallas,Keene,NH,Size L,16.29,3,UPS® Ground
+Dallas,Rutland,VT,Size S,8.71,3,UPS® Ground
+Dallas,Rutland,VT,Size M,11.0,3,UPS® Ground
+Dallas,Rutland,VT,Size L,16.29,3,UPS® Ground
+Dallas,Augusta,ME,Size S,8.71,3,UPS® Ground
+Dallas,Augusta,ME,Size M,11.0,3,UPS® Ground
+Dallas,Augusta,ME,Size L,16.29,3,UPS® Ground
+Dallas,Poughkeepsie,NY,Size S,8.36,5,UPS® Ground
+Dallas,Poughkeepsie,NY,Size M,10.31,5,UPS® Ground
+Dallas,Poughkeepsie,NY,Size L,15.29,5,UPS® Ground
+Dallas,Lancaster,PA,Size S,8.36,3,UPS® Ground
+Dallas,Lancaster,PA,Size M,10.31,3,UPS® Ground
+Dallas,Lancaster,PA,Size L,15.29,3,UPS® Ground
+Dallas,Worcester,MA,Size S,8.62,3,UPS® Ground
+Dallas,Worcester,MA,Size M,10.91,3,UPS® Ground
+Dallas,Worcester,MA,Size L,16.29,3,UPS® Ground
+Dallas,Hackensack,NJ,Size S,8.36,3,UPS® Ground
+Dallas,Hackensack,NJ,Size M,10.31,3,UPS® Ground
+Dallas,Hackensack,NJ,Size L,15.29,3,UPS® Ground
+Dallas,Kingston,NY,Size S,8.36,5,UPS® Ground
+Dallas,Kingston,NY,Size M,10.31,5,UPS® Ground
+Dallas,Kingston,NY,Size L,15.29,5,UPS® Ground
+Dallas,Norwich,CT,Size S,8.71,3,UPS® Ground
+Dallas,Norwich,CT,Size M,11.0,3,UPS® Ground
+Dallas,Norwich,CT,Size L,16.29,3,UPS® Ground
+Dallas,Erie,PA,Size S,8.45,3,UPS® Ground
+Dallas,Erie,PA,Size M,10.4,3,UPS® Ground
+Dallas,Erie,PA,Size L,15.29,3,UPS® Ground
+Dallas,Pittsfield,MA,Size S,8.36,3,UPS® Ground
+Dallas,Pittsfield,MA,Size M,10.31,3,UPS® Ground
+Dallas,Pittsfield,MA,Size L,15.29,3,UPS® Ground
+Dallas,Elmira,NY,Size S,8.36,4,UPS® Ground
+Dallas,Elmira,NY,Size M,10.31,4,UPS® Ground
+Dallas,Elmira,NY,Size L,15.29,4,UPS® Ground
+Dallas,Toms River,NJ,Size S,8.36,3,UPS® Ground
+Dallas,Toms River,NJ,Size M,10.31,3,UPS® Ground
+Dallas,Toms River,NJ,Size L,15.29,3,UPS® Ground
+Dallas,Reading,PA,Size S,8.45,3,UPS® Ground
+Dallas,Reading,PA,Size M,10.4,3,UPS® Ground
+Dallas,Reading,PA,Size L,15.29,3,UPS® Ground
+Dallas,Columbia,SC,Size S,7.36,2,UPS® Ground
+Dallas,Columbia,SC,Size M,8.77,2,UPS® Ground
+Dallas,Columbia,SC,Size L,14.1,2,UPS® Ground
+Dallas,Rome,GA,Size S,7.36,2,UPS® Ground
+Dallas,Rome,GA,Size M,8.77,2,UPS® Ground
+Dallas,Rome,GA,Size L,14.1,2,UPS® Ground
+Dallas,Decatur,AL,Size S,6.69,2,UPS® Ground
+Dallas,Decatur,AL,Size M,8.69,2,UPS® Ground
+Dallas,Decatur,AL,Size L,10.54,2,UPS® Ground
+Dallas,Pensacola,FL,Size S,7.36,2,UPS® Ground
+Dallas,Pensacola,FL,Size M,8.77,2,UPS® Ground
+Dallas,Pensacola,FL,Size L,14.1,2,UPS® Ground
+Dallas,Wilson,NC,Size S,8.45,3,UPS® Ground
+Dallas,Wilson,NC,Size M,10.4,3,UPS® Ground
+Dallas,Wilson,NC,Size L,15.29,3,UPS® Ground
+Dallas,Cookeville,TN,Size S,7.45,2,UPS® Ground
+Dallas,Cookeville,TN,Size M,8.86,2,UPS® Ground
+Dallas,Cookeville,TN,Size L,14.1,2,UPS® Ground
+Dallas,Hattiesburg,MS,Size S,6.69,2,UPS® Ground
+Dallas,Hattiesburg,MS,Size M,8.69,2,UPS® Ground
+Dallas,Hattiesburg,MS,Size L,10.54,2,UPS® Ground
+Dallas,Statesboro,GA,Size S,7.45,2,UPS® Ground
+Dallas,Statesboro,GA,Size M,8.86,2,UPS® Ground
+Dallas,Statesboro,GA,Size L,14.1,2,UPS® Ground
+Dallas,Fredericksburg,VA,Size S,8.36,3,UPS® Ground
+Dallas,Fredericksburg,VA,Size M,10.31,3,UPS® Ground
+Dallas,Fredericksburg,VA,Size L,15.29,3,UPS® Ground
+Dallas,Gainesville,FL,Size S,7.45,2,UPS® Ground
+Dallas,Gainesville,FL,Size M,8.86,2,UPS® Ground
+Dallas,Gainesville,FL,Size L,14.1,2,UPS® Ground
+Dallas,Hickory,NC,Size S,7.45,3,UPS® Ground
+Dallas,Hickory,NC,Size M,8.86,3,UPS® Ground
+Dallas,Hickory,NC,Size L,14.1,3,UPS® Ground
+Dallas,Cleveland,TN,Size S,6.69,2,UPS® Ground
+Dallas,Cleveland,TN,Size M,8.69,2,UPS® Ground
+Dallas,Cleveland,TN,Size L,10.54,2,UPS® Ground
+Dallas,Dothan,AL,Size S,7.45,2,UPS® Ground
+Dallas,Dothan,AL,Size M,8.86,2,UPS® Ground
+Dallas,Dothan,AL,Size L,14.1,2,UPS® Ground
+Dallas,Florence,SC,Size S,8.36,2,UPS® Ground
+Dallas,Florence,SC,Size M,10.31,2,UPS® Ground
+Dallas,Florence,SC,Size L,15.29,2,UPS® Ground
+Dallas,Valdosta,GA,Size S,7.36,2,UPS® Ground
+Dallas,Valdosta,GA,Size M,8.77,2,UPS® Ground
+Dallas,Valdosta,GA,Size L,14.1,2,UPS® Ground
+Dallas,Danville,VA,Size S,8.36,3,UPS® Ground
+Dallas,Danville,VA,Size M,10.31,3,UPS® Ground
+Dallas,Danville,VA,Size L,15.29,3,UPS® Ground
+Dallas,Ocala,FL,Size S,7.36,2,UPS® Ground
+Dallas,Ocala,FL,Size M,8.77,2,UPS® Ground
+Dallas,Ocala,FL,Size L,14.1,2,UPS® Ground
+Dallas,New Bern,NC,Size S,8.45,3,UPS® Ground
+Dallas,New Bern,NC,Size M,10.4,3,UPS® Ground
+Dallas,New Bern,NC,Size L,15.29,3,UPS® Ground
+Dallas,Johnson City,TN,Size S,7.45,2,UPS® Ground
+Dallas,Johnson City,TN,Size M,8.86,2,UPS® Ground
+Dallas,Johnson City,TN,Size L,14.1,2,UPS® Ground
+Dallas,Meridian,MS,Size S,6.52,2,UPS® Ground
+Dallas,Meridian,MS,Size M,7.91,2,UPS® Ground
+Dallas,Meridian,MS,Size L,10.54,2,UPS® Ground
+Dallas,Findlay,OH,Size S,7.45,3,UPS® Ground
+Dallas,Findlay,OH,Size M,8.86,3,UPS® Ground
+Dallas,Findlay,OH,Size L,14.1,3,UPS® Ground
+Dallas,Bay City,MI,Size S,8.36,3,UPS® Ground
+Dallas,Bay City,MI,Size M,10.31,3,UPS® Ground
+Dallas,Bay City,MI,Size L,15.29,3,UPS® Ground
+Dallas,Champaign,IL,Size S,7.36,2,UPS® Ground
+Dallas,Champaign,IL,Size M,8.77,2,UPS® Ground
+Dallas,Champaign,IL,Size L,14.1,2,UPS® Ground
+Dallas,Cedar Rapids,IA,Size S,7.36,2,UPS® Ground
+Dallas,Cedar Rapids,IA,Size M,8.77,2,UPS® Ground
+Dallas,Cedar Rapids,IA,Size L,14.1,2,UPS® Ground
+Dallas,Mankato,MN,Size S,7.45,2,UPS® Ground
+Dallas,Mankato,MN,Size M,8.86,2,UPS® Ground
+Dallas,Mankato,MN,Size L,14.1,2,UPS® Ground
+Dallas,Eau Claire,WI,Size S,7.45,2,UPS® Ground
+Dallas,Eau Claire,WI,Size M,8.86,2,UPS® Ground
+Dallas,Eau Claire,WI,Size L,14.1,2,UPS® Ground
+Dallas,Jefferson City,MO,Size S,6.52,2,UPS® Ground
+Dallas,Jefferson City,MO,Size M,7.91,2,UPS® Ground
+Dallas,Jefferson City,MO,Size L,10.54,2,UPS® Ground
+Dallas,Muncie,IN,Size S,7.36,3,UPS® Ground
+Dallas,Muncie,IN,Size M,8.77,3,UPS® Ground
+Dallas,Muncie,IN,Size L,14.1,3,UPS® Ground
+Dallas,Brookings,SD,Size S,7.36,3,UPS® Ground
+Dallas,Brookings,SD,Size M,8.77,3,UPS® Ground
+Dallas,Brookings,SD,Size L,14.1,3,UPS® Ground
+Dallas,Salina,KS,Size S,6.52,2,UPS® Ground
+Dallas,Salina,KS,Size M,7.91,2,UPS® Ground
+Dallas,Salina,KS,Size L,10.54,2,UPS® Ground
+Dallas,Sandusky,OH,Size S,7.36,3,UPS® Ground
+Dallas,Sandusky,OH,Size M,8.77,3,UPS® Ground
+Dallas,Sandusky,OH,Size L,14.1,3,UPS® Ground
+Dallas,Saginaw,MI,Size S,8.36,3,UPS® Ground
+Dallas,Saginaw,MI,Size M,10.31,3,UPS® Ground
+Dallas,Saginaw,MI,Size L,15.29,3,UPS® Ground
+Dallas,Rockford,IL,Size S,7.45,2,UPS® Ground
+Dallas,Rockford,IL,Size M,8.86,2,UPS® Ground
+Dallas,Rockford,IL,Size L,14.1,2,UPS® Ground
+Dallas,Dubuque,IA,Size S,7.36,2,UPS® Ground
+Dallas,Dubuque,IA,Size M,8.77,2,UPS® Ground
+Dallas,Dubuque,IA,Size L,14.1,2,UPS® Ground
+Dallas,Winona,MN,Size S,7.36,2,UPS® Ground
+Dallas,Winona,MN,Size M,8.77,2,UPS® Ground
+Dallas,Winona,MN,Size L,14.1,2,UPS® Ground
+Dallas,La Crosse,WI,Size S,7.36,3,UPS® Ground
+Dallas,La Crosse,WI,Size M,8.77,3,UPS® Ground
+Dallas,La Crosse,WI,Size L,14.1,3,UPS® Ground
+Dallas,Joplin,MO,Size S,6.52,2,UPS® Ground
+Dallas,Joplin,MO,Size M,7.91,2,UPS® Ground
+Dallas,Joplin,MO,Size L,10.54,2,UPS® Ground
+Dallas,Kokomo,IN,Size S,7.36,3,UPS® Ground
+Dallas,Kokomo,IN,Size M,8.77,3,UPS® Ground
+Dallas,Kokomo,IN,Size L,14.1,3,UPS® Ground
+Dallas,Hutchinson,KS,Size S,6.69,2,UPS® Ground
+Dallas,Hutchinson,KS,Size M,8.69,2,UPS® Ground
+Dallas,Hutchinson,KS,Size L,10.54,2,UPS® Ground
+Dallas,Grand Island,NE,Size S,7.45,2,UPS® Ground
+Dallas,Grand Island,NE,Size M,8.86,2,UPS® Ground
+Dallas,Grand Island,NE,Size L,14.1,2,UPS® Ground
+Dallas,Amarillo,TX,Size S,6.52,2,UPS® Ground
+Dallas,Amarillo,TX,Size M,7.91,2,UPS® Ground
+Dallas,Amarillo,TX,Size L,10.54,2,UPS® Ground
+Dallas,San Angelo,TX,Size S,6.39,1,UPS® Ground
+Dallas,San Angelo,TX,Size M,7.4,1,UPS® Ground
+Dallas,San Angelo,TX,Size L,9.94,1,UPS® Ground
+Dallas,Hot Springs,AR,Size S,6.39,2,UPS® Ground
+Dallas,Hot Springs,AR,Size M,7.4,2,UPS® Ground
+Dallas,Hot Springs,AR,Size L,9.94,2,UPS® Ground
+Dallas,Las Cruces,NM,Size S,7.45,2,UPS® Ground
+Dallas,Las Cruces,NM,Size M,8.86,2,UPS® Ground
+Dallas,Las Cruces,NM,Size L,14.1,2,UPS® Ground
+Dallas,Pueblo,CO,Size S,6.69,2,UPS® Ground
+Dallas,Pueblo,CO,Size M,8.69,2,UPS® Ground
+Dallas,Pueblo,CO,Size L,10.54,2,UPS® Ground
+Dallas,Logan,UT,Size S,8.36,3,UPS® Ground
+Dallas,Logan,UT,Size M,10.31,3,UPS® Ground
+Dallas,Logan,UT,Size L,15.29,3,UPS® Ground
+Dallas,Great Falls,MT,Size S,8.45,3,UPS® Ground
+Dallas,Great Falls,MT,Size M,10.4,3,UPS® Ground
+Dallas,Great Falls,MT,Size L,15.29,3,UPS® Ground
+Dallas,Laramie,WY,Size S,7.36,2,UPS® Ground
+Dallas,Laramie,WY,Size M,8.77,2,UPS® Ground
+Dallas,Laramie,WY,Size L,14.1,2,UPS® Ground
+Dallas,Stillwater,OK,Size S,6.56,2,UPS® Ground
+Dallas,Stillwater,OK,Size M,8.24,2,UPS® Ground
+Dallas,Stillwater,OK,Size L,9.94,2,UPS® Ground
+Dallas,Temple,TX,Size S,6.48,1,UPS® Ground
+Dallas,Temple,TX,Size M,7.79,1,UPS® Ground
+Dallas,Temple,TX,Size L,8.94,1,UPS® Ground
+Dallas,Jonesboro,AR,Size S,6.52,2,UPS® Ground
+Dallas,Jonesboro,AR,Size M,7.91,2,UPS® Ground
+Dallas,Jonesboro,AR,Size L,10.54,2,UPS® Ground
+Dallas,Greeley,CO,Size S,7.36,2,UPS® Ground
+Dallas,Greeley,CO,Size M,8.77,2,UPS® Ground
+Dallas,Greeley,CO,Size L,14.1,2,UPS® Ground
+Dallas,Ogden,UT,Size S,8.36,3,UPS® Ground
+Dallas,Ogden,UT,Size M,10.31,3,UPS® Ground
+Dallas,Ogden,UT,Size L,15.29,3,UPS® Ground
+Dallas,Helena,MT,Size S,8.36,3,UPS® Ground
+Dallas,Helena,MT,Size M,10.31,3,UPS® Ground
+Dallas,Helena,MT,Size L,15.29,3,UPS® Ground
+Dallas,Rock Springs,WY,Size S,7.36,3,UPS® Ground
+Dallas,Rock Springs,WY,Size M,8.77,3,UPS® Ground
+Dallas,Rock Springs,WY,Size L,14.1,3,UPS® Ground
+Dallas,Enid,OK,Size S,6.56,2,UPS® Ground
+Dallas,Enid,OK,Size M,8.24,2,UPS® Ground
+Dallas,Enid,OK,Size L,9.94,2,UPS® Ground
+Dallas,Brownsville,TX,Size S,6.52,2,UPS® Ground
+Dallas,Brownsville,TX,Size M,7.91,2,UPS® Ground
+Dallas,Brownsville,TX,Size L,10.54,2,UPS® Ground
+Dallas,Loveland,CO,Size S,7.45,2,UPS® Ground
+Dallas,Loveland,CO,Size M,8.86,2,UPS® Ground
+Dallas,Loveland,CO,Size L,14.1,2,UPS® Ground
+Dallas,Moab,UT,Size S,7.36,4,UPS® Ground
+Dallas,Moab,UT,Size M,8.77,4,UPS® Ground
+Dallas,Moab,UT,Size L,14.1,4,UPS® Ground
+Dallas,Roswell,NM,Size S,6.52,2,UPS® Ground
+Dallas,Roswell,NM,Size M,7.91,2,UPS® Ground
+Dallas,Roswell,NM,Size L,10.54,2,UPS® Ground
+Dallas,Ventura,CA,Size S,8.36,3,UPS® Ground
+Dallas,Ventura,CA,Size M,10.31,3,UPS® Ground
+Dallas,Ventura,CA,Size L,15.29,3,UPS® Ground
+Dallas,Redwood City,CA,Size S,8.71,3,UPS® Ground
+Dallas,Redwood City,CA,Size M,11.0,3,UPS® Ground
+Dallas,Redwood City,CA,Size L,16.29,3,UPS® Ground
+Dallas,Davis,CA,Size S,8.62,3,UPS® Ground
+Dallas,Davis,CA,Size M,10.91,3,UPS® Ground
+Dallas,Davis,CA,Size L,16.29,3,UPS® Ground
+Dallas,Corvallis,OR,Size S,8.62,4,UPS® Ground
+Dallas,Corvallis,OR,Size M,10.91,4,UPS® Ground
+Dallas,Corvallis,OR,Size L,16.29,4,UPS® Ground
+Dallas,Medford,OR,Size S,8.62,4,UPS® Ground
+Dallas,Medford,OR,Size M,10.91,4,UPS® Ground
+Dallas,Medford,OR,Size L,16.29,4,UPS® Ground
+Dallas,Yakima,WA,Size S,8.71,4,UPS® Ground
+Dallas,Yakima,WA,Size M,11.0,4,UPS® Ground
+Dallas,Yakima,WA,Size L,16.29,4,UPS® Ground
+Dallas,Wenatchee,WA,Size S,8.62,5,UPS® Ground
+Dallas,Wenatchee,WA,Size M,10.91,5,UPS® Ground
+Dallas,Wenatchee,WA,Size L,16.29,5,UPS® Ground
+Dallas,Twin Falls,ID,Size S,8.45,3,UPS® Ground
+Dallas,Twin Falls,ID,Size M,10.4,3,UPS® Ground
+Dallas,Twin Falls,ID,Size L,15.29,3,UPS® Ground
+Dallas,Elko,NV,Size S,8.45,3,UPS® Ground
+Dallas,Elko,NV,Size M,10.4,3,UPS® Ground
+Dallas,Elko,NV,Size L,15.29,3,UPS® Ground
+Dallas,Yuma,AZ,Size S,8.45,3,UPS® Ground
+Dallas,Yuma,AZ,Size M,10.4,3,UPS® Ground
+Dallas,Yuma,AZ,Size L,15.29,3,UPS® Ground
+Dallas,San Luis Obispo,CA,Size S,8.45,3,UPS® Ground
+Dallas,San Luis Obispo,CA,Size M,10.4,3,UPS® Ground
+Dallas,San Luis Obispo,CA,Size L,15.29,3,UPS® Ground
+Dallas,Fresno,CA,Size S,8.36,3,UPS® Ground
+Dallas,Fresno,CA,Size M,10.31,3,UPS® Ground
+Dallas,Fresno,CA,Size L,15.29,3,UPS® Ground
+Dallas,Ashland,OR,Size S,8.62,4,UPS® Ground
+Dallas,Ashland,OR,Size M,10.91,4,UPS® Ground
+Dallas,Ashland,OR,Size L,16.29,4,UPS® Ground
+Dallas,Port Angeles,WA,Size S,8.62,4,UPS® Ground
+Dallas,Port Angeles,WA,Size M,10.91,4,UPS® Ground
+Dallas,Port Angeles,WA,Size L,16.29,4,UPS® Ground
+Dallas,Pocatello,ID,Size S,8.36,3,UPS® Ground
+Dallas,Pocatello,ID,Size M,10.31,3,UPS® Ground
+Dallas,Pocatello,ID,Size L,15.29,3,UPS® Ground
+Dallas,Fallon,NV,Size S,8.45,4,UPS® Ground
+Dallas,Fallon,NV,Size M,10.4,4,UPS® Ground
+Dallas,Fallon,NV,Size L,15.29,4,UPS® Ground
+Dallas,Prescott,AZ,Size S,7.36,3,UPS® Ground
+Dallas,Prescott,AZ,Size M,8.77,3,UPS® Ground
+Dallas,Prescott,AZ,Size L,14.1,3,UPS® Ground
+Dallas,Ukiah,CA,Size S,8.71,3,UPS® Ground
+Dallas,Ukiah,CA,Size M,11.0,3,UPS® Ground
+Dallas,Ukiah,CA,Size L,16.29,3,UPS® Ground
+Dallas,Grants Pass,OR,Size S,8.71,4,UPS® Ground
+Dallas,Grants Pass,OR,Size M,11.0,4,UPS® Ground
+Dallas,Grants Pass,OR,Size L,16.29,4,UPS® Ground
+Dallas,Centralia,WA,Size S,8.71,4,UPS® Ground
+Dallas,Centralia,WA,Size M,11.0,4,UPS® Ground
+Dallas,Centralia,WA,Size L,16.29,4,UPS® Ground
+Dallas,Allentown,PA,Size S,8.45,3,UPS® Ground
+Dallas,Allentown,PA,Size M,10.4,3,UPS® Ground
+Dallas,Allentown,PA,Size L,15.29,3,UPS® Ground
+Dallas,Princeton,NJ,Size S,8.36,3,UPS® Ground
+Dallas,Princeton,NJ,Size M,10.31,3,UPS® Ground
+Dallas,Princeton,NJ,Size L,15.29,3,UPS® Ground
+Dallas,New Haven,CT,Size S,8.62,3,UPS® Ground
+Dallas,New Haven,CT,Size M,10.91,3,UPS® Ground
+Dallas,New Haven,CT,Size L,16.29,3,UPS® Ground
+Dallas,Providence,RI,Size S,8.71,3,UPS® Ground
+Dallas,Providence,RI,Size M,11.0,3,UPS® Ground
+Dallas,Providence,RI,Size L,16.29,3,UPS® Ground
+Dallas,Burlington,VT,Size S,8.62,3,UPS® Ground
+Dallas,Burlington,VT,Size M,10.91,3,UPS® Ground
+Dallas,Burlington,VT,Size L,16.29,3,UPS® Ground
+Dallas,Concord,NH,Size S,8.62,3,UPS® Ground
+Dallas,Concord,NH,Size M,10.91,3,UPS® Ground
+Dallas,Concord,NH,Size L,16.29,3,UPS® Ground
+Dallas,Ithaca,NY,Size S,8.36,4,UPS® Ground
+Dallas,Ithaca,NY,Size M,10.31,4,UPS® Ground
+Dallas,Ithaca,NY,Size L,15.29,4,UPS® Ground
+Dallas,Springfield,MA,Size S,8.62,3,UPS® Ground
+Dallas,Springfield,MA,Size M,10.91,3,UPS® Ground
+Dallas,Springfield,MA,Size L,16.29,3,UPS® Ground
+Dallas,Bangor,ME,Size S,8.62,3,UPS® Ground
+Dallas,Bangor,ME,Size M,10.91,3,UPS® Ground
+Dallas,Bangor,ME,Size L,16.29,3,UPS® Ground
+Dallas,Greenville,SC,Size S,7.36,2,UPS® Ground
+Dallas,Greenville,SC,Size M,8.77,2,UPS® Ground
+Dallas,Greenville,SC,Size L,14.1,2,UPS® Ground
+Dallas,Savannah,GA,Size S,7.45,2,UPS® Ground
+Dallas,Savannah,GA,Size M,8.86,2,UPS® Ground
+Dallas,Savannah,GA,Size L,14.1,2,UPS® Ground
+Dallas,Huntsville,AL,Size S,6.69,2,UPS® Ground
+Dallas,Huntsville,AL,Size M,8.69,2,UPS® Ground
+Dallas,Huntsville,AL,Size L,10.54,2,UPS® Ground
+Dallas,Gulfport,MS,Size S,6.69,2,UPS® Ground
+Dallas,Gulfport,MS,Size M,8.69,2,UPS® Ground
+Dallas,Gulfport,MS,Size L,10.54,2,UPS® Ground
+Dallas,Chattanooga,TN,Size S,7.36,2,UPS® Ground
+Dallas,Chattanooga,TN,Size M,8.77,2,UPS® Ground
+Dallas,Chattanooga,TN,Size L,14.1,2,UPS® Ground
+Dallas,Asheville,NC,Size S,7.36,3,UPS® Ground
+Dallas,Asheville,NC,Size M,8.77,3,UPS® Ground
+Dallas,Asheville,NC,Size L,14.1,3,UPS® Ground
+Dallas,Tallahassee,FL,Size S,7.36,2,UPS® Ground
+Dallas,Tallahassee,FL,Size M,8.77,2,UPS® Ground
+Dallas,Tallahassee,FL,Size L,14.1,2,UPS® Ground
+Dallas,Roanoke,VA,Size S,7.36,3,UPS® Ground
+Dallas,Roanoke,VA,Size M,8.77,3,UPS® Ground
+Dallas,Roanoke,VA,Size L,14.1,3,UPS® Ground
+Dallas,Morgantown,WV,Size S,8.36,3,UPS® Ground
+Dallas,Morgantown,WV,Size M,10.31,3,UPS® Ground
+Dallas,Morgantown,WV,Size L,15.29,3,UPS® Ground
+Dallas,Toledo,OH,Size S,7.45,3,UPS® Ground
+Dallas,Toledo,OH,Size M,8.86,3,UPS® Ground
+Dallas,Toledo,OH,Size L,14.1,3,UPS® Ground
+Dallas,Lansing,MI,Size S,7.45,3,UPS® Ground
+Dallas,Lansing,MI,Size M,8.86,3,UPS® Ground
+Dallas,Lansing,MI,Size L,14.1,3,UPS® Ground
+Dallas,Des Moines,IA,Size S,7.36,2,UPS® Ground
+Dallas,Des Moines,IA,Size M,8.77,2,UPS® Ground
+Dallas,Des Moines,IA,Size L,14.1,2,UPS® Ground
+Dallas,Duluth,MN,Size S,8.45,2,UPS® Ground
+Dallas,Duluth,MN,Size M,10.4,2,UPS® Ground
+Dallas,Duluth,MN,Size L,15.29,2,UPS® Ground
+Dallas,Peoria,IL,Size S,7.36,2,UPS® Ground
+Dallas,Peoria,IL,Size M,8.77,2,UPS® Ground
+Dallas,Peoria,IL,Size L,14.1,2,UPS® Ground
+Dallas,Green Bay,WI,Size S,7.36,3,UPS® Ground
+Dallas,Green Bay,WI,Size M,8.77,3,UPS® Ground
+Dallas,Green Bay,WI,Size L,14.1,3,UPS® Ground
+Dallas,Sioux Falls,SD,Size S,7.36,3,UPS® Ground
+Dallas,Sioux Falls,SD,Size M,8.77,3,UPS® Ground
+Dallas,Sioux Falls,SD,Size L,14.1,3,UPS® Ground
+Dallas,Wichita,KS,Size S,6.52,1,UPS® Ground
+Dallas,Wichita,KS,Size M,7.91,1,UPS® Ground
+Dallas,Wichita,KS,Size L,10.54,1,UPS® Ground
+Dallas,Bloomington,IN,Size S,7.36,3,UPS® Ground
+Dallas,Bloomington,IN,Size M,8.77,3,UPS® Ground
+Dallas,Bloomington,IN,Size L,14.1,3,UPS® Ground
+Dallas,Athens,OH,Size S,7.45,3,UPS® Ground
+Dallas,Athens,OH,Size M,8.86,3,UPS® Ground
+Dallas,Athens,OH,Size L,14.1,3,UPS® Ground
+Dallas,Lubbock,TX,Size S,6.56,1,UPS® Ground
+Dallas,Lubbock,TX,Size M,8.24,1,UPS® Ground
+Dallas,Lubbock,TX,Size L,9.94,1,UPS® Ground
+Dallas,Fayetteville,AR,Size S,6.52,2,UPS® Ground
+Dallas,Fayetteville,AR,Size M,7.91,2,UPS® Ground
+Dallas,Fayetteville,AR,Size L,10.54,2,UPS® Ground
+Dallas,Santa Fe,NM,Size S,7.45,2,UPS® Ground
+Dallas,Santa Fe,NM,Size M,8.86,2,UPS® Ground
+Dallas,Santa Fe,NM,Size L,14.1,2,UPS® Ground
+Dallas,Fort Collins,CO,Size S,7.36,2,UPS® Ground
+Dallas,Fort Collins,CO,Size M,8.77,2,UPS® Ground
+Dallas,Fort Collins,CO,Size L,14.1,2,UPS® Ground
+Dallas,Provo,UT,Size S,7.36,3,UPS® Ground
+Dallas,Provo,UT,Size M,8.77,3,UPS® Ground
+Dallas,Provo,UT,Size L,14.1,3,UPS® Ground
+Dallas,Bozeman,MT,Size S,8.45,3,UPS® Ground
+Dallas,Bozeman,MT,Size M,10.4,3,UPS® Ground
+Dallas,Bozeman,MT,Size L,15.29,3,UPS® Ground
+Dallas,Cheyenne,WY,Size S,7.45,2,UPS® Ground
+Dallas,Cheyenne,WY,Size M,8.86,2,UPS® Ground
+Dallas,Cheyenne,WY,Size L,14.1,2,UPS® Ground
+Dallas,Norman,OK,Size S,6.39,1,UPS® Ground
+Dallas,Norman,OK,Size M,7.4,1,UPS® Ground
+Dallas,Norman,OK,Size L,9.94,1,UPS® Ground
+Dallas,Santa Barbara,CA,Size S,8.45,3,UPS® Ground
+Dallas,Santa Barbara,CA,Size M,10.4,3,UPS® Ground
+Dallas,Santa Barbara,CA,Size L,15.29,3,UPS® Ground
+Dallas,Palo Alto,CA,Size S,8.62,3,UPS® Ground
+Dallas,Palo Alto,CA,Size M,10.91,3,UPS® Ground
+Dallas,Palo Alto,CA,Size L,16.29,3,UPS® Ground
+Dallas,Santa Cruz,CA,Size S,8.62,3,UPS® Ground
+Dallas,Santa Cruz,CA,Size M,10.91,3,UPS® Ground
+Dallas,Santa Cruz,CA,Size L,16.29,3,UPS® Ground
+Dallas,Eugene,OR,Size S,8.62,4,UPS® Ground
+Dallas,Eugene,OR,Size M,10.91,4,UPS® Ground
+Dallas,Eugene,OR,Size L,16.29,4,UPS® Ground
+Dallas,Bend,OR,Size S,8.62,4,UPS® Ground
+Dallas,Bend,OR,Size M,10.91,4,UPS® Ground
+Dallas,Bend,OR,Size L,16.29,4,UPS® Ground
+Dallas,Bellingham,WA,Size S,8.71,4,UPS® Ground
+Dallas,Bellingham,WA,Size M,11.0,4,UPS® Ground
+Dallas,Bellingham,WA,Size L,16.29,4,UPS® Ground
+Dallas,Olympia,WA,Size S,8.62,4,UPS® Ground
+Dallas,Olympia,WA,Size M,10.91,4,UPS® Ground
+Dallas,Olympia,WA,Size L,16.29,4,UPS® Ground
+Dallas,Idaho Falls,ID,Size S,8.36,3,UPS® Ground
+Dallas,Idaho Falls,ID,Size M,10.31,3,UPS® Ground
+Dallas,Idaho Falls,ID,Size L,15.29,3,UPS® Ground
+Dallas,Carson City,NV,Size S,8.36,4,UPS® Ground
+Dallas,Carson City,NV,Size M,10.31,4,UPS® Ground
+Dallas,Carson City,NV,Size L,15.29,4,UPS® Ground
+Dallas,Flagstaff,AZ,Size S,7.36,3,UPS® Ground
+Dallas,Flagstaff,AZ,Size M,8.77,3,UPS® Ground
+Dallas,Flagstaff,AZ,Size L,14.1,3,UPS® Ground
+Dallas,Redding,CA,Size S,8.71,3,UPS® Ground
+Dallas,Redding,CA,Size M,11.0,3,UPS® Ground
+Dallas,Redding,CA,Size L,16.29,3,UPS® Ground
+Dallas,Hilo,HI,Size S,47.24,4,UPS® Ground
+Dallas,Hilo,HI,Size M,53.22,4,UPS® Ground
+Dallas,Hilo,HI,Size L,62.23,4,UPS® Ground
+Dallas,Fairbanks,AK,Size S,30.87,4,UPS® Ground
+Dallas,Fairbanks,AK,Size M,36.99,4,UPS® Ground
+Dallas,Fairbanks,AK,Size L,46.14,4,UPS® Ground
+Dallas,Monterey,CA,Size S,8.62,3,UPS® Ground
+Dallas,Monterey,CA,Size M,10.91,3,UPS® Ground
+Dallas,Monterey,CA,Size L,16.29,3,UPS® Ground
+Philadelphia,Scranton,PA,Size S,6.09,1,UPS® Ground
+Philadelphia,Scranton,PA,Size M,7.26,1,UPS® Ground
+Philadelphia,Scranton,PA,Size L,8.94,1,UPS® Ground
+Philadelphia,Syracuse,NY,Size S,6.39,2,UPS® Ground
+Philadelphia,Syracuse,NY,Size M,7.4,2,UPS® Ground
+Philadelphia,Syracuse,NY,Size L,9.94,2,UPS® Ground
+Philadelphia,Morristown,NJ,Size S,6.09,1,UPS® Ground
+Philadelphia,Morristown,NJ,Size M,7.26,1,UPS® Ground
+Philadelphia,Morristown,NJ,Size L,8.94,1,UPS® Ground
+Philadelphia,Lowell,MA,Size S,6.39,2,UPS® Ground
+Philadelphia,Lowell,MA,Size M,7.4,2,UPS® Ground
+Philadelphia,Lowell,MA,Size L,9.94,2,UPS® Ground
+Philadelphia,Stamford,CT,Size S,6.48,1,UPS® Ground
+Philadelphia,Stamford,CT,Size M,7.79,1,UPS® Ground
+Philadelphia,Stamford,CT,Size L,8.94,1,UPS® Ground
+Philadelphia,Warwick,RI,Size S,6.39,2,UPS® Ground
+Philadelphia,Warwick,RI,Size M,7.4,2,UPS® Ground
+Philadelphia,Warwick,RI,Size L,9.94,2,UPS® Ground
+Philadelphia,Keene,NH,Size S,6.39,2,UPS® Ground
+Philadelphia,Keene,NH,Size M,7.4,2,UPS® Ground
+Philadelphia,Keene,NH,Size L,9.94,2,UPS® Ground
+Philadelphia,Rutland,VT,Size S,6.56,2,UPS® Ground
+Philadelphia,Rutland,VT,Size M,8.24,2,UPS® Ground
+Philadelphia,Rutland,VT,Size L,9.94,2,UPS® Ground
+Philadelphia,Augusta,ME,Size S,6.69,2,UPS® Ground
+Philadelphia,Augusta,ME,Size M,8.69,2,UPS® Ground
+Philadelphia,Augusta,ME,Size L,10.54,2,UPS® Ground
+Philadelphia,Poughkeepsie,NY,Size S,6.09,1,UPS® Ground
+Philadelphia,Poughkeepsie,NY,Size M,7.26,1,UPS® Ground
+Philadelphia,Poughkeepsie,NY,Size L,8.94,1,UPS® Ground
+Philadelphia,Lancaster,PA,Size S,6.09,1,UPS® Ground
+Philadelphia,Lancaster,PA,Size M,7.26,1,UPS® Ground
+Philadelphia,Lancaster,PA,Size L,8.94,1,UPS® Ground
+Philadelphia,Worcester,MA,Size S,6.39,2,UPS® Ground
+Philadelphia,Worcester,MA,Size M,7.4,2,UPS® Ground
+Philadelphia,Worcester,MA,Size L,9.94,2,UPS® Ground
+Philadelphia,Hackensack,NJ,Size S,6.09,1,UPS® Ground
+Philadelphia,Hackensack,NJ,Size M,7.26,1,UPS® Ground
+Philadelphia,Hackensack,NJ,Size L,8.94,1,UPS® Ground
+Philadelphia,Kingston,NY,Size S,6.39,1,UPS® Ground
+Philadelphia,Kingston,NY,Size M,7.4,1,UPS® Ground
+Philadelphia,Kingston,NY,Size L,9.94,1,UPS® Ground
+Philadelphia,Norwich,CT,Size S,6.56,1,UPS® Ground
+Philadelphia,Norwich,CT,Size M,8.24,1,UPS® Ground
+Philadelphia,Norwich,CT,Size L,9.94,1,UPS® Ground
+Philadelphia,Erie,PA,Size S,6.56,2,UPS® Ground
+Philadelphia,Erie,PA,Size M,8.24,2,UPS® Ground
+Philadelphia,Erie,PA,Size L,9.94,2,UPS® Ground
+Philadelphia,Pittsfield,MA,Size S,6.39,2,UPS® Ground
+Philadelphia,Pittsfield,MA,Size M,7.4,2,UPS® Ground
+Philadelphia,Pittsfield,MA,Size L,9.94,2,UPS® Ground
+Philadelphia,Elmira,NY,Size S,6.39,2,UPS® Ground
+Philadelphia,Elmira,NY,Size M,7.4,2,UPS® Ground
+Philadelphia,Elmira,NY,Size L,9.94,2,UPS® Ground
+Philadelphia,Toms River,NJ,Size S,6.09,1,UPS® Ground
+Philadelphia,Toms River,NJ,Size M,7.26,1,UPS® Ground
+Philadelphia,Toms River,NJ,Size L,8.94,1,UPS® Ground
+Philadelphia,Reading,PA,Size S,6.48,1,UPS® Ground
+Philadelphia,Reading,PA,Size M,7.79,1,UPS® Ground
+Philadelphia,Reading,PA,Size L,8.94,1,UPS® Ground
+Philadelphia,Columbia,SC,Size S,6.52,2,UPS® Ground
+Philadelphia,Columbia,SC,Size M,7.91,2,UPS® Ground
+Philadelphia,Columbia,SC,Size L,10.54,2,UPS® Ground
+Philadelphia,Rome,GA,Size S,7.36,2,UPS® Ground
+Philadelphia,Rome,GA,Size M,8.77,2,UPS® Ground
+Philadelphia,Rome,GA,Size L,14.1,2,UPS® Ground
+Philadelphia,Decatur,AL,Size S,7.45,2,UPS® Ground
+Philadelphia,Decatur,AL,Size M,8.86,2,UPS® Ground
+Philadelphia,Decatur,AL,Size L,14.1,2,UPS® Ground
+Philadelphia,Pensacola,FL,Size S,7.36,2,UPS® Ground
+Philadelphia,Pensacola,FL,Size M,8.77,2,UPS® Ground
+Philadelphia,Pensacola,FL,Size L,14.1,2,UPS® Ground
+Philadelphia,Wilson,NC,Size S,6.69,2,UPS® Ground
+Philadelphia,Wilson,NC,Size M,8.69,2,UPS® Ground
+Philadelphia,Wilson,NC,Size L,10.54,2,UPS® Ground
+Philadelphia,Cookeville,TN,Size S,7.45,2,UPS® Ground
+Philadelphia,Cookeville,TN,Size M,8.86,2,UPS® Ground
+Philadelphia,Cookeville,TN,Size L,14.1,2,UPS® Ground
+Philadelphia,Hattiesburg,MS,Size S,7.45,3,UPS® Ground
+Philadelphia,Hattiesburg,MS,Size M,8.86,3,UPS® Ground
+Philadelphia,Hattiesburg,MS,Size L,14.1,3,UPS® Ground
+Philadelphia,Statesboro,GA,Size S,7.45,2,UPS® Ground
+Philadelphia,Statesboro,GA,Size M,8.86,2,UPS® Ground
+Philadelphia,Statesboro,GA,Size L,14.1,2,UPS® Ground
+Philadelphia,Fredericksburg,VA,Size S,6.39,1,UPS® Ground
+Philadelphia,Fredericksburg,VA,Size M,7.4,1,UPS® Ground
+Philadelphia,Fredericksburg,VA,Size L,9.94,1,UPS® Ground
+Philadelphia,Gainesville,FL,Size S,7.45,2,UPS® Ground
+Philadelphia,Gainesville,FL,Size M,8.86,2,UPS® Ground
+Philadelphia,Gainesville,FL,Size L,14.1,2,UPS® Ground
+Philadelphia,Hickory,NC,Size S,6.69,2,UPS® Ground
+Philadelphia,Hickory,NC,Size M,8.69,2,UPS® Ground
+Philadelphia,Hickory,NC,Size L,10.54,2,UPS® Ground
+Philadelphia,Cleveland,TN,Size S,7.45,2,UPS® Ground
+Philadelphia,Cleveland,TN,Size M,8.86,2,UPS® Ground
+Philadelphia,Cleveland,TN,Size L,14.1,2,UPS® Ground
+Philadelphia,Dothan,AL,Size S,7.45,2,UPS® Ground
+Philadelphia,Dothan,AL,Size M,8.86,2,UPS® Ground
+Philadelphia,Dothan,AL,Size L,14.1,2,UPS® Ground
+Philadelphia,Florence,SC,Size S,6.52,2,UPS® Ground
+Philadelphia,Florence,SC,Size M,7.91,2,UPS® Ground
+Philadelphia,Florence,SC,Size L,10.54,2,UPS® Ground
+Philadelphia,Valdosta,GA,Size S,7.36,2,UPS® Ground
+Philadelphia,Valdosta,GA,Size M,8.77,2,UPS® Ground
+Philadelphia,Valdosta,GA,Size L,14.1,2,UPS® Ground
+Philadelphia,Danville,VA,Size S,6.39,2,UPS® Ground
+Philadelphia,Danville,VA,Size M,7.4,2,UPS® Ground
+Philadelphia,Danville,VA,Size L,9.94,2,UPS® Ground
+Philadelphia,Ocala,FL,Size S,7.36,2,UPS® Ground
+Philadelphia,Ocala,FL,Size M,8.77,2,UPS® Ground
+Philadelphia,Ocala,FL,Size L,14.1,2,UPS® Ground
+Philadelphia,New Bern,NC,Size S,6.69,2,UPS® Ground
+Philadelphia,New Bern,NC,Size M,8.69,2,UPS® Ground
+Philadelphia,New Bern,NC,Size L,10.54,2,UPS® Ground
+Philadelphia,Johnson City,TN,Size S,6.69,2,UPS® Ground
+Philadelphia,Johnson City,TN,Size M,8.69,2,UPS® Ground
+Philadelphia,Johnson City,TN,Size L,10.54,2,UPS® Ground
+Philadelphia,Meridian,MS,Size S,7.36,3,UPS® Ground
+Philadelphia,Meridian,MS,Size M,8.77,3,UPS® Ground
+Philadelphia,Meridian,MS,Size L,14.1,3,UPS® Ground
+Philadelphia,Findlay,OH,Size S,6.69,2,UPS® Ground
+Philadelphia,Findlay,OH,Size M,8.69,2,UPS® Ground
+Philadelphia,Findlay,OH,Size L,10.54,2,UPS® Ground
+Philadelphia,Bay City,MI,Size S,6.52,2,UPS® Ground
+Philadelphia,Bay City,MI,Size M,7.91,2,UPS® Ground
+Philadelphia,Bay City,MI,Size L,10.54,2,UPS® Ground
+Philadelphia,Champaign,IL,Size S,7.36,2,UPS® Ground
+Philadelphia,Champaign,IL,Size M,8.77,2,UPS® Ground
+Philadelphia,Champaign,IL,Size L,14.1,2,UPS® Ground
+Philadelphia,Cedar Rapids,IA,Size S,7.36,2,UPS® Ground
+Philadelphia,Cedar Rapids,IA,Size M,8.77,2,UPS® Ground
+Philadelphia,Cedar Rapids,IA,Size L,14.1,2,UPS® Ground
+Philadelphia,Mankato,MN,Size S,8.45,2,UPS® Ground
+Philadelphia,Mankato,MN,Size M,10.4,2,UPS® Ground
+Philadelphia,Mankato,MN,Size L,15.29,2,UPS® Ground
+Philadelphia,Eau Claire,WI,Size S,7.45,2,UPS® Ground
+Philadelphia,Eau Claire,WI,Size M,8.86,2,UPS® Ground
+Philadelphia,Eau Claire,WI,Size L,14.1,2,UPS® Ground
+Philadelphia,Jefferson City,MO,Size S,7.36,3,UPS® Ground
+Philadelphia,Jefferson City,MO,Size M,8.77,3,UPS® Ground
+Philadelphia,Jefferson City,MO,Size L,14.1,3,UPS® Ground
+Philadelphia,Muncie,IN,Size S,6.52,2,UPS® Ground
+Philadelphia,Muncie,IN,Size M,7.91,2,UPS® Ground
+Philadelphia,Muncie,IN,Size L,10.54,2,UPS® Ground
+Philadelphia,Brookings,SD,Size S,8.36,3,UPS® Ground
+Philadelphia,Brookings,SD,Size M,10.31,3,UPS® Ground
+Philadelphia,Brookings,SD,Size L,15.29,3,UPS® Ground
+Philadelphia,Salina,KS,Size S,8.36,3,UPS® Ground
+Philadelphia,Salina,KS,Size M,10.31,3,UPS® Ground
+Philadelphia,Salina,KS,Size L,15.29,3,UPS® Ground
+Philadelphia,Sandusky,OH,Size S,6.52,2,UPS® Ground
+Philadelphia,Sandusky,OH,Size M,7.91,2,UPS® Ground
+Philadelphia,Sandusky,OH,Size L,10.54,2,UPS® Ground
+Philadelphia,Saginaw,MI,Size S,6.52,2,UPS® Ground
+Philadelphia,Saginaw,MI,Size M,7.91,2,UPS® Ground
+Philadelphia,Saginaw,MI,Size L,10.54,2,UPS® Ground
+Philadelphia,Rockford,IL,Size S,7.45,2,UPS® Ground
+Philadelphia,Rockford,IL,Size M,8.86,2,UPS® Ground
+Philadelphia,Rockford,IL,Size L,14.1,2,UPS® Ground
+Philadelphia,Dubuque,IA,Size S,7.36,2,UPS® Ground
+Philadelphia,Dubuque,IA,Size M,8.77,2,UPS® Ground
+Philadelphia,Dubuque,IA,Size L,14.1,2,UPS® Ground
+Philadelphia,Winona,MN,Size S,7.36,2,UPS® Ground
+Philadelphia,Winona,MN,Size M,8.77,2,UPS® Ground
+Philadelphia,Winona,MN,Size L,14.1,2,UPS® Ground
+Philadelphia,La Crosse,WI,Size S,7.36,2,UPS® Ground
+Philadelphia,La Crosse,WI,Size M,8.77,2,UPS® Ground
+Philadelphia,La Crosse,WI,Size L,14.1,2,UPS® Ground
+Philadelphia,Joplin,MO,Size S,8.36,3,UPS® Ground
+Philadelphia,Joplin,MO,Size M,10.31,3,UPS® Ground
+Philadelphia,Joplin,MO,Size L,15.29,3,UPS® Ground
+Philadelphia,Kokomo,IN,Size S,6.52,2,UPS® Ground
+Philadelphia,Kokomo,IN,Size M,7.91,2,UPS® Ground
+Philadelphia,Kokomo,IN,Size L,10.54,2,UPS® Ground
+Philadelphia,Hutchinson,KS,Size S,8.45,3,UPS® Ground
+Philadelphia,Hutchinson,KS,Size M,10.4,3,UPS® Ground
+Philadelphia,Hutchinson,KS,Size L,15.29,3,UPS® Ground
+Philadelphia,Grand Island,NE,Size S,8.45,3,UPS® Ground
+Philadelphia,Grand Island,NE,Size M,10.4,3,UPS® Ground
+Philadelphia,Grand Island,NE,Size L,15.29,3,UPS® Ground
+Philadelphia,Amarillo,TX,Size S,8.62,4,UPS® Ground
+Philadelphia,Amarillo,TX,Size M,10.91,4,UPS® Ground
+Philadelphia,Amarillo,TX,Size L,16.29,4,UPS® Ground
+Philadelphia,San Angelo,TX,Size S,8.62,3,UPS® Ground
+Philadelphia,San Angelo,TX,Size M,10.91,3,UPS® Ground
+Philadelphia,San Angelo,TX,Size L,16.29,3,UPS® Ground
+Philadelphia,Hot Springs,AR,Size S,8.36,3,UPS® Ground
+Philadelphia,Hot Springs,AR,Size M,10.31,3,UPS® Ground
+Philadelphia,Hot Springs,AR,Size L,15.29,3,UPS® Ground
+Philadelphia,Las Cruces,NM,Size S,9.25,4,UPS® Ground
+Philadelphia,Las Cruces,NM,Size M,12.06,4,UPS® Ground
+Philadelphia,Las Cruces,NM,Size L,17.29,4,UPS® Ground
+Philadelphia,Pueblo,CO,Size S,8.71,3,UPS® Ground
+Philadelphia,Pueblo,CO,Size M,11.0,3,UPS® Ground
+Philadelphia,Pueblo,CO,Size L,16.29,3,UPS® Ground
+Philadelphia,Logan,UT,Size S,9.16,3,UPS® Ground
+Philadelphia,Logan,UT,Size M,11.97,3,UPS® Ground
+Philadelphia,Logan,UT,Size L,17.29,3,UPS® Ground
+Philadelphia,Great Falls,MT,Size S,9.25,3,UPS® Ground
+Philadelphia,Great Falls,MT,Size M,12.06,3,UPS® Ground
+Philadelphia,Great Falls,MT,Size L,17.29,3,UPS® Ground
+Philadelphia,Laramie,WY,Size S,8.62,3,UPS® Ground
+Philadelphia,Laramie,WY,Size M,10.91,3,UPS® Ground
+Philadelphia,Laramie,WY,Size L,16.29,3,UPS® Ground
+Philadelphia,Stillwater,OK,Size S,8.45,3,UPS® Ground
+Philadelphia,Stillwater,OK,Size M,10.4,3,UPS® Ground
+Philadelphia,Stillwater,OK,Size L,15.29,3,UPS® Ground
+Philadelphia,Temple,TX,Size S,8.71,3,UPS® Ground
+Philadelphia,Temple,TX,Size M,11.0,3,UPS® Ground
+Philadelphia,Temple,TX,Size L,16.29,3,UPS® Ground
+Philadelphia,Jonesboro,AR,Size S,7.36,3,UPS® Ground
+Philadelphia,Jonesboro,AR,Size M,8.77,3,UPS® Ground
+Philadelphia,Jonesboro,AR,Size L,14.1,3,UPS® Ground
+Philadelphia,Greeley,CO,Size S,8.62,3,UPS® Ground
+Philadelphia,Greeley,CO,Size M,10.91,3,UPS® Ground
+Philadelphia,Greeley,CO,Size L,16.29,3,UPS® Ground
+Philadelphia,Ogden,UT,Size S,9.16,3,UPS® Ground
+Philadelphia,Ogden,UT,Size M,11.97,3,UPS® Ground
+Philadelphia,Ogden,UT,Size L,17.29,3,UPS® Ground
+Philadelphia,Helena,MT,Size S,9.16,3,UPS® Ground
+Philadelphia,Helena,MT,Size M,11.97,3,UPS® Ground
+Philadelphia,Helena,MT,Size L,17.29,3,UPS® Ground
+Philadelphia,Rock Springs,WY,Size S,8.62,4,UPS® Ground
+Philadelphia,Rock Springs,WY,Size M,10.91,4,UPS® Ground
+Philadelphia,Rock Springs,WY,Size L,16.29,4,UPS® Ground
+Philadelphia,Enid,OK,Size S,8.45,3,UPS® Ground
+Philadelphia,Enid,OK,Size M,10.4,3,UPS® Ground
+Philadelphia,Enid,OK,Size L,15.29,3,UPS® Ground
+Philadelphia,Brownsville,TX,Size S,8.62,3,UPS® Ground
+Philadelphia,Brownsville,TX,Size M,10.91,3,UPS® Ground
+Philadelphia,Brownsville,TX,Size L,16.29,3,UPS® Ground
+Philadelphia,Loveland,CO,Size S,8.71,3,UPS® Ground
+Philadelphia,Loveland,CO,Size M,11.0,3,UPS® Ground
+Philadelphia,Loveland,CO,Size L,16.29,3,UPS® Ground
+Philadelphia,Moab,UT,Size S,9.16,4,UPS® Ground
+Philadelphia,Moab,UT,Size M,11.97,4,UPS® Ground
+Philadelphia,Moab,UT,Size L,17.29,4,UPS® Ground
+Philadelphia,Roswell,NM,Size S,8.62,4,UPS® Ground
+Philadelphia,Roswell,NM,Size M,10.91,4,UPS® Ground
+Philadelphia,Roswell,NM,Size L,16.29,4,UPS® Ground
+Philadelphia,Ventura,CA,Size S,9.16,4,UPS® Ground
+Philadelphia,Ventura,CA,Size M,11.97,4,UPS® Ground
+Philadelphia,Ventura,CA,Size L,17.29,4,UPS® Ground
+Philadelphia,Redwood City,CA,Size S,9.25,4,UPS® Ground
+Philadelphia,Redwood City,CA,Size M,12.06,4,UPS® Ground
+Philadelphia,Redwood City,CA,Size L,17.29,4,UPS® Ground
+Philadelphia,Davis,CA,Size S,9.16,4,UPS® Ground
+Philadelphia,Davis,CA,Size M,11.97,4,UPS® Ground
+Philadelphia,Davis,CA,Size L,17.29,4,UPS® Ground
+Philadelphia,Corvallis,OR,Size S,9.16,4,UPS® Ground
+Philadelphia,Corvallis,OR,Size M,11.97,4,UPS® Ground
+Philadelphia,Corvallis,OR,Size L,17.29,4,UPS® Ground
+Philadelphia,Medford,OR,Size S,9.16,5,UPS® Ground
+Philadelphia,Medford,OR,Size M,11.97,5,UPS® Ground
+Philadelphia,Medford,OR,Size L,17.29,5,UPS® Ground
+Philadelphia,Yakima,WA,Size S,9.25,4,UPS® Ground
+Philadelphia,Yakima,WA,Size M,12.06,4,UPS® Ground
+Philadelphia,Yakima,WA,Size L,17.29,4,UPS® Ground
+Philadelphia,Wenatchee,WA,Size S,9.16,4,UPS® Ground
+Philadelphia,Wenatchee,WA,Size M,11.97,4,UPS® Ground
+Philadelphia,Wenatchee,WA,Size L,17.29,4,UPS® Ground
+Philadelphia,Twin Falls,ID,Size S,9.25,4,UPS® Ground
+Philadelphia,Twin Falls,ID,Size M,12.06,4,UPS® Ground
+Philadelphia,Twin Falls,ID,Size L,17.29,4,UPS® Ground
+Philadelphia,Elko,NV,Size S,9.25,4,UPS® Ground
+Philadelphia,Elko,NV,Size M,12.06,4,UPS® Ground
+Philadelphia,Elko,NV,Size L,17.29,4,UPS® Ground
+Philadelphia,Yuma,AZ,Size S,9.25,3,UPS® Ground
+Philadelphia,Yuma,AZ,Size M,12.06,3,UPS® Ground
+Philadelphia,Yuma,AZ,Size L,17.29,3,UPS® Ground
+Philadelphia,San Luis Obispo,CA,Size S,9.25,4,UPS® Ground
+Philadelphia,San Luis Obispo,CA,Size M,12.06,4,UPS® Ground
+Philadelphia,San Luis Obispo,CA,Size L,17.29,4,UPS® Ground
+Philadelphia,Fresno,CA,Size S,9.16,4,UPS® Ground
+Philadelphia,Fresno,CA,Size M,11.97,4,UPS® Ground
+Philadelphia,Fresno,CA,Size L,17.29,4,UPS® Ground
+Philadelphia,Ashland,OR,Size S,9.16,5,UPS® Ground
+Philadelphia,Ashland,OR,Size M,11.97,5,UPS® Ground
+Philadelphia,Ashland,OR,Size L,17.29,5,UPS® Ground
+Philadelphia,Port Angeles,WA,Size S,9.16,4,UPS® Ground
+Philadelphia,Port Angeles,WA,Size M,11.97,4,UPS® Ground
+Philadelphia,Port Angeles,WA,Size L,17.29,4,UPS® Ground
+Philadelphia,Pocatello,ID,Size S,9.16,4,UPS® Ground
+Philadelphia,Pocatello,ID,Size M,11.97,4,UPS® Ground
+Philadelphia,Pocatello,ID,Size L,17.29,4,UPS® Ground
+Philadelphia,Fallon,NV,Size S,9.25,3,UPS® Ground
+Philadelphia,Fallon,NV,Size M,12.06,3,UPS® Ground
+Philadelphia,Fallon,NV,Size L,17.29,3,UPS® Ground
+Philadelphia,Prescott,AZ,Size S,9.16,3,UPS® Ground
+Philadelphia,Prescott,AZ,Size M,11.97,3,UPS® Ground
+Philadelphia,Prescott,AZ,Size L,17.29,3,UPS® Ground
+Philadelphia,Ukiah,CA,Size S,9.25,4,UPS® Ground
+Philadelphia,Ukiah,CA,Size M,12.06,4,UPS® Ground
+Philadelphia,Ukiah,CA,Size L,17.29,4,UPS® Ground
+Philadelphia,Grants Pass,OR,Size S,9.25,5,UPS® Ground
+Philadelphia,Grants Pass,OR,Size M,12.06,5,UPS® Ground
+Philadelphia,Grants Pass,OR,Size L,17.29,5,UPS® Ground
+Philadelphia,Centralia,WA,Size S,9.25,4,UPS® Ground
+Philadelphia,Centralia,WA,Size M,12.06,4,UPS® Ground
+Philadelphia,Centralia,WA,Size L,17.29,4,UPS® Ground
+Philadelphia,Allentown,PA,Size S,6.48,1,UPS® Ground
+Philadelphia,Allentown,PA,Size M,7.79,1,UPS® Ground
+Philadelphia,Allentown,PA,Size L,8.94,1,UPS® Ground
+Philadelphia,Princeton,NJ,Size S,6.09,1,UPS® Ground
+Philadelphia,Princeton,NJ,Size M,7.26,1,UPS® Ground
+Philadelphia,Princeton,NJ,Size L,8.94,1,UPS® Ground
+Philadelphia,New Haven,CT,Size S,6.09,1,UPS® Ground
+Philadelphia,New Haven,CT,Size M,7.26,1,UPS® Ground
+Philadelphia,New Haven,CT,Size L,8.94,1,UPS® Ground
+Philadelphia,Providence,RI,Size S,6.56,2,UPS® Ground
+Philadelphia,Providence,RI,Size M,8.24,2,UPS® Ground
+Philadelphia,Providence,RI,Size L,9.94,2,UPS® Ground
+Philadelphia,Burlington,VT,Size S,6.52,2,UPS® Ground
+Philadelphia,Burlington,VT,Size M,7.91,2,UPS® Ground
+Philadelphia,Burlington,VT,Size L,10.54,2,UPS® Ground
+Philadelphia,Concord,NH,Size S,6.39,2,UPS® Ground
+Philadelphia,Concord,NH,Size M,7.4,2,UPS® Ground
+Philadelphia,Concord,NH,Size L,9.94,2,UPS® Ground
+Philadelphia,Ithaca,NY,Size S,6.39,2,UPS® Ground
+Philadelphia,Ithaca,NY,Size M,7.4,2,UPS® Ground
+Philadelphia,Ithaca,NY,Size L,9.94,2,UPS® Ground
+Philadelphia,Springfield,MA,Size S,6.39,2,UPS® Ground
+Philadelphia,Springfield,MA,Size M,7.4,2,UPS® Ground
+Philadelphia,Springfield,MA,Size L,9.94,2,UPS® Ground
+Philadelphia,Bangor,ME,Size S,6.52,2,UPS® Ground
+Philadelphia,Bangor,ME,Size M,7.91,2,UPS® Ground
+Philadelphia,Bangor,ME,Size L,10.54,2,UPS® Ground
+Philadelphia,Greenville,SC,Size S,6.52,2,UPS® Ground
+Philadelphia,Greenville,SC,Size M,7.91,2,UPS® Ground
+Philadelphia,Greenville,SC,Size L,10.54,2,UPS® Ground
+Philadelphia,Savannah,GA,Size S,7.45,2,UPS® Ground
+Philadelphia,Savannah,GA,Size M,8.86,2,UPS® Ground
+Philadelphia,Savannah,GA,Size L,14.1,2,UPS® Ground
+Philadelphia,Huntsville,AL,Size S,7.45,2,UPS® Ground
+Philadelphia,Huntsville,AL,Size M,8.86,2,UPS® Ground
+Philadelphia,Huntsville,AL,Size L,14.1,2,UPS® Ground
+Philadelphia,Gulfport,MS,Size S,8.45,3,UPS® Ground
+Philadelphia,Gulfport,MS,Size M,10.4,3,UPS® Ground
+Philadelphia,Gulfport,MS,Size L,15.29,3,UPS® Ground
+Philadelphia,Chattanooga,TN,Size S,7.36,2,UPS® Ground
+Philadelphia,Chattanooga,TN,Size M,8.77,2,UPS® Ground
+Philadelphia,Chattanooga,TN,Size L,14.1,2,UPS® Ground
+Philadelphia,Asheville,NC,Size S,6.52,2,UPS® Ground
+Philadelphia,Asheville,NC,Size M,7.91,2,UPS® Ground
+Philadelphia,Asheville,NC,Size L,10.54,2,UPS® Ground
+Philadelphia,Tallahassee,FL,Size S,7.36,2,UPS® Ground
+Philadelphia,Tallahassee,FL,Size M,8.77,2,UPS® Ground
+Philadelphia,Tallahassee,FL,Size L,14.1,2,UPS® Ground
+Philadelphia,Roanoke,VA,Size S,6.52,2,UPS® Ground
+Philadelphia,Roanoke,VA,Size M,7.91,2,UPS® Ground
+Philadelphia,Roanoke,VA,Size L,10.54,2,UPS® Ground
+Philadelphia,Morgantown,WV,Size S,6.52,2,UPS® Ground
+Philadelphia,Morgantown,WV,Size M,7.91,2,UPS® Ground
+Philadelphia,Morgantown,WV,Size L,10.54,2,UPS® Ground
+Philadelphia,Toledo,OH,Size S,6.69,2,UPS® Ground
+Philadelphia,Toledo,OH,Size M,8.69,2,UPS® Ground
+Philadelphia,Toledo,OH,Size L,10.54,2,UPS® Ground
+Philadelphia,Lansing,MI,Size S,6.69,2,UPS® Ground
+Philadelphia,Lansing,MI,Size M,8.69,2,UPS® Ground
+Philadelphia,Lansing,MI,Size L,10.54,2,UPS® Ground
+Philadelphia,Des Moines,IA,Size S,7.36,2,UPS® Ground
+Philadelphia,Des Moines,IA,Size M,8.77,2,UPS® Ground
+Philadelphia,Des Moines,IA,Size L,14.1,2,UPS® Ground
+Philadelphia,Duluth,MN,Size S,7.45,2,UPS® Ground
+Philadelphia,Duluth,MN,Size M,8.86,2,UPS® Ground
+Philadelphia,Duluth,MN,Size L,14.1,2,UPS® Ground
+Philadelphia,Peoria,IL,Size S,7.36,2,UPS® Ground
+Philadelphia,Peoria,IL,Size M,8.77,2,UPS® Ground
+Philadelphia,Peoria,IL,Size L,14.1,2,UPS® Ground
+Philadelphia,Green Bay,WI,Size S,7.36,2,UPS® Ground
+Philadelphia,Green Bay,WI,Size M,8.77,2,UPS® Ground
+Philadelphia,Green Bay,WI,Size L,14.1,2,UPS® Ground
+Philadelphia,Sioux Falls,SD,Size S,8.36,4,UPS® Ground
+Philadelphia,Sioux Falls,SD,Size M,10.31,4,UPS® Ground
+Philadelphia,Sioux Falls,SD,Size L,15.29,4,UPS® Ground
+Philadelphia,Wichita,KS,Size S,8.36,3,UPS® Ground
+Philadelphia,Wichita,KS,Size M,10.31,3,UPS® Ground
+Philadelphia,Wichita,KS,Size L,15.29,3,UPS® Ground
+Philadelphia,Bloomington,IN,Size S,7.36,2,UPS® Ground
+Philadelphia,Bloomington,IN,Size M,8.77,2,UPS® Ground
+Philadelphia,Bloomington,IN,Size L,14.1,2,UPS® Ground
+Philadelphia,Athens,OH,Size S,6.69,2,UPS® Ground
+Philadelphia,Athens,OH,Size M,8.69,2,UPS® Ground
+Philadelphia,Athens,OH,Size L,10.54,2,UPS® Ground
+Philadelphia,Lubbock,TX,Size S,8.71,3,UPS® Ground
+Philadelphia,Lubbock,TX,Size M,11.0,3,UPS® Ground
+Philadelphia,Lubbock,TX,Size L,16.29,3,UPS® Ground
+Philadelphia,Fayetteville,AR,Size S,8.36,3,UPS® Ground
+Philadelphia,Fayetteville,AR,Size M,10.31,3,UPS® Ground
+Philadelphia,Fayetteville,AR,Size L,15.29,3,UPS® Ground
+Philadelphia,Santa Fe,NM,Size S,8.71,4,UPS® Ground
+Philadelphia,Santa Fe,NM,Size M,11.0,4,UPS® Ground
+Philadelphia,Santa Fe,NM,Size L,16.29,4,UPS® Ground
+Philadelphia,Fort Collins,CO,Size S,8.62,3,UPS® Ground
+Philadelphia,Fort Collins,CO,Size M,10.91,3,UPS® Ground
+Philadelphia,Fort Collins,CO,Size L,16.29,3,UPS® Ground
+Philadelphia,Provo,UT,Size S,9.16,3,UPS® Ground
+Philadelphia,Provo,UT,Size M,11.97,3,UPS® Ground
+Philadelphia,Provo,UT,Size L,17.29,3,UPS® Ground
+Philadelphia,Bozeman,MT,Size S,9.25,3,UPS® Ground
+Philadelphia,Bozeman,MT,Size M,12.06,3,UPS® Ground
+Philadelphia,Bozeman,MT,Size L,17.29,3,UPS® Ground
+Philadelphia,Cheyenne,WY,Size S,8.71,3,UPS® Ground
+Philadelphia,Cheyenne,WY,Size M,11.0,3,UPS® Ground
+Philadelphia,Cheyenne,WY,Size L,16.29,3,UPS® Ground
+Philadelphia,Norman,OK,Size S,8.36,3,UPS® Ground
+Philadelphia,Norman,OK,Size M,10.31,3,UPS® Ground
+Philadelphia,Norman,OK,Size L,15.29,3,UPS® Ground
+Philadelphia,Santa Barbara,CA,Size S,9.25,4,UPS® Ground
+Philadelphia,Santa Barbara,CA,Size M,12.06,4,UPS® Ground
+Philadelphia,Santa Barbara,CA,Size L,17.29,4,UPS® Ground
+Philadelphia,Palo Alto,CA,Size S,9.16,4,UPS® Ground
+Philadelphia,Palo Alto,CA,Size M,11.97,4,UPS® Ground
+Philadelphia,Palo Alto,CA,Size L,17.29,4,UPS® Ground
+Philadelphia,Santa Cruz,CA,Size S,9.16,4,UPS® Ground
+Philadelphia,Santa Cruz,CA,Size M,11.97,4,UPS® Ground
+Philadelphia,Santa Cruz,CA,Size L,17.29,4,UPS® Ground
+Philadelphia,Eugene,OR,Size S,9.16,4,UPS® Ground
+Philadelphia,Eugene,OR,Size M,11.97,4,UPS® Ground
+Philadelphia,Eugene,OR,Size L,17.29,4,UPS® Ground
+Philadelphia,Bend,OR,Size S,9.16,4,UPS® Ground
+Philadelphia,Bend,OR,Size M,11.97,4,UPS® Ground
+Philadelphia,Bend,OR,Size L,17.29,4,UPS® Ground
+Philadelphia,Bellingham,WA,Size S,9.25,4,UPS® Ground
+Philadelphia,Bellingham,WA,Size M,12.06,4,UPS® Ground
+Philadelphia,Bellingham,WA,Size L,17.29,4,UPS® Ground
+Philadelphia,Olympia,WA,Size S,9.16,4,UPS® Ground
+Philadelphia,Olympia,WA,Size M,11.97,4,UPS® Ground
+Philadelphia,Olympia,WA,Size L,17.29,4,UPS® Ground
+Philadelphia,Idaho Falls,ID,Size S,9.16,3,UPS® Ground
+Philadelphia,Idaho Falls,ID,Size M,11.97,3,UPS® Ground
+Philadelphia,Idaho Falls,ID,Size L,17.29,3,UPS® Ground
+Philadelphia,Carson City,NV,Size S,9.16,3,UPS® Ground
+Philadelphia,Carson City,NV,Size M,11.97,3,UPS® Ground
+Philadelphia,Carson City,NV,Size L,17.29,3,UPS® Ground
+Philadelphia,Flagstaff,AZ,Size S,9.16,3,UPS® Ground
+Philadelphia,Flagstaff,AZ,Size M,11.97,3,UPS® Ground
+Philadelphia,Flagstaff,AZ,Size L,17.29,3,UPS® Ground
+Philadelphia,Redding,CA,Size S,9.25,4,UPS® Ground
+Philadelphia,Redding,CA,Size M,12.06,4,UPS® Ground
+Philadelphia,Redding,CA,Size L,17.29,4,UPS® Ground
+Philadelphia,Hilo,HI,Size S,47.24,5,UPS® Ground
+Philadelphia,Hilo,HI,Size M,53.22,5,UPS® Ground
+Philadelphia,Hilo,HI,Size L,62.23,5,UPS® Ground
+Philadelphia,Fairbanks,AK,Size S,30.87,4,UPS® Ground
+Philadelphia,Fairbanks,AK,Size M,36.99,4,UPS® Ground
+Philadelphia,Fairbanks,AK,Size L,46.14,4,UPS® Ground
+Philadelphia,Monterey,CA,Size S,9.16,4,UPS® Ground
+Philadelphia,Monterey,CA,Size M,11.97,4,UPS® Ground
+Philadelphia,Monterey,CA,Size L,17.29,4,UPS® Ground
+San Diego,Scranton,PA,Size S,9.16,4,UPS® Ground
+San Diego,Scranton,PA,Size M,11.97,4,UPS® Ground
+San Diego,Scranton,PA,Size L,17.29,4,UPS® Ground
+San Diego,Syracuse,NY,Size S,9.16,4,UPS® Ground
+San Diego,Syracuse,NY,Size M,11.97,4,UPS® Ground
+San Diego,Syracuse,NY,Size L,17.29,4,UPS® Ground
+San Diego,Morristown,NJ,Size S,9.16,4,UPS® Ground
+San Diego,Morristown,NJ,Size M,11.97,4,UPS® Ground
+San Diego,Morristown,NJ,Size L,17.29,4,UPS® Ground
+San Diego,Lowell,MA,Size S,9.16,4,UPS® Ground
+San Diego,Lowell,MA,Size M,11.97,4,UPS® Ground
+San Diego,Lowell,MA,Size L,17.29,4,UPS® Ground
+San Diego,Stamford,CT,Size S,9.25,4,UPS® Ground
+San Diego,Stamford,CT,Size M,12.06,4,UPS® Ground
+San Diego,Stamford,CT,Size L,17.29,4,UPS® Ground
+San Diego,Warwick,RI,Size S,9.16,4,UPS® Ground
+San Diego,Warwick,RI,Size M,11.97,4,UPS® Ground
+San Diego,Warwick,RI,Size L,17.29,4,UPS® Ground
+San Diego,Keene,NH,Size S,9.16,5,UPS® Ground
+San Diego,Keene,NH,Size M,11.97,5,UPS® Ground
+San Diego,Keene,NH,Size L,17.29,5,UPS® Ground
+San Diego,Rutland,VT,Size S,9.25,5,UPS® Ground
+San Diego,Rutland,VT,Size M,12.06,5,UPS® Ground
+San Diego,Rutland,VT,Size L,17.29,5,UPS® Ground
+San Diego,Augusta,ME,Size S,9.25,5,UPS® Ground
+San Diego,Augusta,ME,Size M,12.06,5,UPS® Ground
+San Diego,Augusta,ME,Size L,17.29,5,UPS® Ground
+San Diego,Poughkeepsie,NY,Size S,9.16,4,UPS® Ground
+San Diego,Poughkeepsie,NY,Size M,11.97,4,UPS® Ground
+San Diego,Poughkeepsie,NY,Size L,17.29,4,UPS® Ground
+San Diego,Lancaster,PA,Size S,9.16,4,UPS® Ground
+San Diego,Lancaster,PA,Size M,11.97,4,UPS® Ground
+San Diego,Lancaster,PA,Size L,17.29,4,UPS® Ground
+San Diego,Worcester,MA,Size S,9.16,4,UPS® Ground
+San Diego,Worcester,MA,Size M,11.97,4,UPS® Ground
+San Diego,Worcester,MA,Size L,17.29,4,UPS® Ground
+San Diego,Hackensack,NJ,Size S,9.16,4,UPS® Ground
+San Diego,Hackensack,NJ,Size M,11.97,4,UPS® Ground
+San Diego,Hackensack,NJ,Size L,17.29,4,UPS® Ground
+San Diego,Kingston,NY,Size S,9.16,4,UPS® Ground
+San Diego,Kingston,NY,Size M,11.97,4,UPS® Ground
+San Diego,Kingston,NY,Size L,17.29,4,UPS® Ground
+San Diego,Norwich,CT,Size S,9.25,4,UPS® Ground
+San Diego,Norwich,CT,Size M,12.06,4,UPS® Ground
+San Diego,Norwich,CT,Size L,17.29,4,UPS® Ground
+San Diego,Erie,PA,Size S,9.25,4,UPS® Ground
+San Diego,Erie,PA,Size M,12.06,4,UPS® Ground
+San Diego,Erie,PA,Size L,17.29,4,UPS® Ground
+San Diego,Pittsfield,MA,Size S,9.16,4,UPS® Ground
+San Diego,Pittsfield,MA,Size M,11.97,4,UPS® Ground
+San Diego,Pittsfield,MA,Size L,17.29,4,UPS® Ground
+San Diego,Elmira,NY,Size S,9.16,4,UPS® Ground
+San Diego,Elmira,NY,Size M,11.97,4,UPS® Ground
+San Diego,Elmira,NY,Size L,17.29,4,UPS® Ground
+San Diego,Toms River,NJ,Size S,9.16,4,UPS® Ground
+San Diego,Toms River,NJ,Size M,11.97,4,UPS® Ground
+San Diego,Toms River,NJ,Size L,17.29,4,UPS® Ground
+San Diego,Reading,PA,Size S,9.25,4,UPS® Ground
+San Diego,Reading,PA,Size M,12.06,4,UPS® Ground
+San Diego,Reading,PA,Size L,17.29,4,UPS® Ground
+San Diego,Columbia,SC,Size S,9.16,4,UPS® Ground
+San Diego,Columbia,SC,Size M,11.97,4,UPS® Ground
+San Diego,Columbia,SC,Size L,17.29,4,UPS® Ground
+San Diego,Rome,GA,Size S,9.16,4,UPS® Ground
+San Diego,Rome,GA,Size M,11.97,4,UPS® Ground
+San Diego,Rome,GA,Size L,17.29,4,UPS® Ground
+San Diego,Decatur,AL,Size S,8.71,4,UPS® Ground
+San Diego,Decatur,AL,Size M,11.0,4,UPS® Ground
+San Diego,Decatur,AL,Size L,16.29,4,UPS® Ground
+San Diego,Pensacola,FL,Size S,9.16,4,UPS® Ground
+San Diego,Pensacola,FL,Size M,11.97,4,UPS® Ground
+San Diego,Pensacola,FL,Size L,17.29,4,UPS® Ground
+San Diego,Wilson,NC,Size S,9.25,4,UPS® Ground
+San Diego,Wilson,NC,Size M,12.06,4,UPS® Ground
+San Diego,Wilson,NC,Size L,17.29,4,UPS® Ground
+San Diego,Cookeville,TN,Size S,9.25,4,UPS® Ground
+San Diego,Cookeville,TN,Size M,12.06,4,UPS® Ground
+San Diego,Cookeville,TN,Size L,17.29,4,UPS® Ground
+San Diego,Hattiesburg,MS,Size S,8.71,4,UPS® Ground
+San Diego,Hattiesburg,MS,Size M,11.0,4,UPS® Ground
+San Diego,Hattiesburg,MS,Size L,16.29,4,UPS® Ground
+San Diego,Statesboro,GA,Size S,9.25,4,UPS® Ground
+San Diego,Statesboro,GA,Size M,12.06,4,UPS® Ground
+San Diego,Statesboro,GA,Size L,17.29,4,UPS® Ground
+San Diego,Fredericksburg,VA,Size S,9.16,4,UPS® Ground
+San Diego,Fredericksburg,VA,Size M,11.97,4,UPS® Ground
+San Diego,Fredericksburg,VA,Size L,17.29,4,UPS® Ground
+San Diego,Gainesville,FL,Size S,9.25,4,UPS® Ground
+San Diego,Gainesville,FL,Size M,12.06,4,UPS® Ground
+San Diego,Gainesville,FL,Size L,17.29,4,UPS® Ground
+San Diego,Hickory,NC,Size S,9.25,4,UPS® Ground
+San Diego,Hickory,NC,Size M,12.06,4,UPS® Ground
+San Diego,Hickory,NC,Size L,17.29,4,UPS® Ground
+San Diego,Cleveland,TN,Size S,9.25,4,UPS® Ground
+San Diego,Cleveland,TN,Size M,12.06,4,UPS® Ground
+San Diego,Cleveland,TN,Size L,17.29,4,UPS® Ground
+San Diego,Dothan,AL,Size S,9.25,4,UPS® Ground
+San Diego,Dothan,AL,Size M,12.06,4,UPS® Ground
+San Diego,Dothan,AL,Size L,17.29,4,UPS® Ground
+San Diego,Florence,SC,Size S,9.16,4,UPS® Ground
+San Diego,Florence,SC,Size M,11.97,4,UPS® Ground
+San Diego,Florence,SC,Size L,17.29,4,UPS® Ground
+San Diego,Valdosta,GA,Size S,9.16,4,UPS® Ground
+San Diego,Valdosta,GA,Size M,11.97,4,UPS® Ground
+San Diego,Valdosta,GA,Size L,17.29,4,UPS® Ground
+San Diego,Danville,VA,Size S,9.16,5,UPS® Ground
+San Diego,Danville,VA,Size M,11.97,5,UPS® Ground
+San Diego,Danville,VA,Size L,17.29,5,UPS® Ground
+San Diego,Ocala,FL,Size S,9.16,4,UPS® Ground
+San Diego,Ocala,FL,Size M,11.97,4,UPS® Ground
+San Diego,Ocala,FL,Size L,17.29,4,UPS® Ground
+San Diego,New Bern,NC,Size S,9.25,5,UPS® Ground
+San Diego,New Bern,NC,Size M,12.06,5,UPS® Ground
+San Diego,New Bern,NC,Size L,17.29,5,UPS® Ground
+San Diego,Johnson City,TN,Size S,9.25,4,UPS® Ground
+San Diego,Johnson City,TN,Size M,12.06,4,UPS® Ground
+San Diego,Johnson City,TN,Size L,17.29,4,UPS® Ground
+San Diego,Meridian,MS,Size S,8.62,4,UPS® Ground
+San Diego,Meridian,MS,Size M,10.91,4,UPS® Ground
+San Diego,Meridian,MS,Size L,16.29,4,UPS® Ground
+San Diego,Findlay,OH,Size S,9.25,4,UPS® Ground
+San Diego,Findlay,OH,Size M,12.06,4,UPS® Ground
+San Diego,Findlay,OH,Size L,17.29,4,UPS® Ground
+San Diego,Bay City,MI,Size S,9.16,4,UPS® Ground
+San Diego,Bay City,MI,Size M,11.97,4,UPS® Ground
+San Diego,Bay City,MI,Size L,17.29,4,UPS® Ground
+San Diego,Champaign,IL,Size S,8.62,4,UPS® Ground
+San Diego,Champaign,IL,Size M,10.91,4,UPS® Ground
+San Diego,Champaign,IL,Size L,16.29,4,UPS® Ground
+San Diego,Cedar Rapids,IA,Size S,8.62,4,UPS® Ground
+San Diego,Cedar Rapids,IA,Size M,10.91,4,UPS® Ground
+San Diego,Cedar Rapids,IA,Size L,16.29,4,UPS® Ground
+San Diego,Mankato,MN,Size S,8.71,4,UPS® Ground
+San Diego,Mankato,MN,Size M,11.0,4,UPS® Ground
+San Diego,Mankato,MN,Size L,16.29,4,UPS® Ground
+San Diego,Eau Claire,WI,Size S,8.71,4,UPS® Ground
+San Diego,Eau Claire,WI,Size M,11.0,4,UPS® Ground
+San Diego,Eau Claire,WI,Size L,16.29,4,UPS® Ground
+San Diego,Jefferson City,MO,Size S,8.62,4,UPS® Ground
+San Diego,Jefferson City,MO,Size M,10.91,4,UPS® Ground
+San Diego,Jefferson City,MO,Size L,16.29,4,UPS® Ground
+San Diego,Muncie,IN,Size S,9.16,4,UPS® Ground
+San Diego,Muncie,IN,Size M,11.97,4,UPS® Ground
+San Diego,Muncie,IN,Size L,17.29,4,UPS® Ground
+San Diego,Brookings,SD,Size S,8.36,4,UPS® Ground
+San Diego,Brookings,SD,Size M,10.31,4,UPS® Ground
+San Diego,Brookings,SD,Size L,15.29,4,UPS® Ground
+San Diego,Salina,KS,Size S,8.36,4,UPS® Ground
+San Diego,Salina,KS,Size M,10.31,4,UPS® Ground
+San Diego,Salina,KS,Size L,15.29,4,UPS® Ground
+San Diego,Sandusky,OH,Size S,9.16,4,UPS® Ground
+San Diego,Sandusky,OH,Size M,11.97,4,UPS® Ground
+San Diego,Sandusky,OH,Size L,17.29,4,UPS® Ground
+San Diego,Saginaw,MI,Size S,9.16,4,UPS® Ground
+San Diego,Saginaw,MI,Size M,11.97,4,UPS® Ground
+San Diego,Saginaw,MI,Size L,17.29,4,UPS® Ground
+San Diego,Rockford,IL,Size S,8.71,4,UPS® Ground
+San Diego,Rockford,IL,Size M,11.0,4,UPS® Ground
+San Diego,Rockford,IL,Size L,16.29,4,UPS® Ground
+San Diego,Dubuque,IA,Size S,8.62,4,UPS® Ground
+San Diego,Dubuque,IA,Size M,10.91,4,UPS® Ground
+San Diego,Dubuque,IA,Size L,16.29,4,UPS® Ground
+San Diego,Winona,MN,Size S,8.62,4,UPS® Ground
+San Diego,Winona,MN,Size M,10.91,4,UPS® Ground
+San Diego,Winona,MN,Size L,16.29,4,UPS® Ground
+San Diego,La Crosse,WI,Size S,8.62,4,UPS® Ground
+San Diego,La Crosse,WI,Size M,10.91,4,UPS® Ground
+San Diego,La Crosse,WI,Size L,16.29,4,UPS® Ground
+San Diego,Joplin,MO,Size S,8.36,4,UPS® Ground
+San Diego,Joplin,MO,Size M,10.31,4,UPS® Ground
+San Diego,Joplin,MO,Size L,15.29,4,UPS® Ground
+San Diego,Kokomo,IN,Size S,8.62,4,UPS® Ground
+San Diego,Kokomo,IN,Size M,10.91,4,UPS® Ground
+San Diego,Kokomo,IN,Size L,16.29,4,UPS® Ground
+San Diego,Hutchinson,KS,Size S,8.45,4,UPS® Ground
+San Diego,Hutchinson,KS,Size M,10.4,4,UPS® Ground
+San Diego,Hutchinson,KS,Size L,15.29,4,UPS® Ground
+San Diego,Grand Island,NE,Size S,8.45,3,UPS® Ground
+San Diego,Grand Island,NE,Size M,10.4,3,UPS® Ground
+San Diego,Grand Island,NE,Size L,15.29,3,UPS® Ground
+San Diego,Amarillo,TX,Size S,7.36,3,UPS® Ground
+San Diego,Amarillo,TX,Size M,8.77,3,UPS® Ground
+San Diego,Amarillo,TX,Size L,14.1,3,UPS® Ground
+San Diego,San Angelo,TX,Size S,7.36,4,UPS® Ground
+San Diego,San Angelo,TX,Size M,8.77,4,UPS® Ground
+San Diego,San Angelo,TX,Size L,14.1,4,UPS® Ground
+San Diego,Hot Springs,AR,Size S,8.36,4,UPS® Ground
+San Diego,Hot Springs,AR,Size M,10.31,4,UPS® Ground
+San Diego,Hot Springs,AR,Size L,15.29,4,UPS® Ground
+San Diego,Las Cruces,NM,Size S,6.69,3,UPS® Ground
+San Diego,Las Cruces,NM,Size M,8.69,3,UPS® Ground
+San Diego,Las Cruces,NM,Size L,10.54,3,UPS® Ground
+San Diego,Pueblo,CO,Size S,7.45,3,UPS® Ground
+San Diego,Pueblo,CO,Size M,8.86,3,UPS® Ground
+San Diego,Pueblo,CO,Size L,14.1,3,UPS® Ground
+San Diego,Logan,UT,Size S,7.36,2,UPS® Ground
+San Diego,Logan,UT,Size M,8.77,2,UPS® Ground
+San Diego,Logan,UT,Size L,14.1,2,UPS® Ground
+San Diego,Great Falls,MT,Size S,8.45,3,UPS® Ground
+San Diego,Great Falls,MT,Size M,10.4,3,UPS® Ground
+San Diego,Great Falls,MT,Size L,15.29,3,UPS® Ground
+San Diego,Laramie,WY,Size S,7.36,3,UPS® Ground
+San Diego,Laramie,WY,Size M,8.77,3,UPS® Ground
+San Diego,Laramie,WY,Size L,14.1,3,UPS® Ground
+San Diego,Stillwater,OK,Size S,8.45,3,UPS® Ground
+San Diego,Stillwater,OK,Size M,10.4,3,UPS® Ground
+San Diego,Stillwater,OK,Size L,15.29,3,UPS® Ground
+San Diego,Temple,TX,Size S,8.45,3,UPS® Ground
+San Diego,Temple,TX,Size M,10.4,3,UPS® Ground
+San Diego,Temple,TX,Size L,15.29,3,UPS® Ground
+San Diego,Jonesboro,AR,Size S,8.62,4,UPS® Ground
+San Diego,Jonesboro,AR,Size M,10.91,4,UPS® Ground
+San Diego,Jonesboro,AR,Size L,16.29,4,UPS® Ground
+San Diego,Greeley,CO,Size S,7.36,3,UPS® Ground
+San Diego,Greeley,CO,Size M,8.77,3,UPS® Ground
+San Diego,Greeley,CO,Size L,14.1,3,UPS® Ground
+San Diego,Ogden,UT,Size S,7.36,2,UPS® Ground
+San Diego,Ogden,UT,Size M,8.77,2,UPS® Ground
+San Diego,Ogden,UT,Size L,14.1,2,UPS® Ground
+San Diego,Helena,MT,Size S,7.36,3,UPS® Ground
+San Diego,Helena,MT,Size M,8.77,3,UPS® Ground
+San Diego,Helena,MT,Size L,14.1,3,UPS® Ground
+San Diego,Rock Springs,WY,Size S,7.36,2,UPS® Ground
+San Diego,Rock Springs,WY,Size M,8.77,2,UPS® Ground
+San Diego,Rock Springs,WY,Size L,14.1,2,UPS® Ground
+San Diego,Enid,OK,Size S,8.45,3,UPS® Ground
+San Diego,Enid,OK,Size M,10.4,3,UPS® Ground
+San Diego,Enid,OK,Size L,15.29,3,UPS® Ground
+San Diego,Brownsville,TX,Size S,8.36,4,UPS® Ground
+San Diego,Brownsville,TX,Size M,10.31,4,UPS® Ground
+San Diego,Brownsville,TX,Size L,15.29,4,UPS® Ground
+San Diego,Loveland,CO,Size S,7.45,3,UPS® Ground
+San Diego,Loveland,CO,Size M,8.86,3,UPS® Ground
+San Diego,Loveland,CO,Size L,14.1,3,UPS® Ground
+San Diego,Moab,UT,Size S,6.52,3,UPS® Ground
+San Diego,Moab,UT,Size M,7.91,3,UPS® Ground
+San Diego,Moab,UT,Size L,10.54,3,UPS® Ground
+San Diego,Roswell,NM,Size S,7.36,3,UPS® Ground
+San Diego,Roswell,NM,Size M,8.77,3,UPS® Ground
+San Diego,Roswell,NM,Size L,14.1,3,UPS® Ground
+San Diego,Ventura,CA,Size S,6.39,1,UPS® Ground
+San Diego,Ventura,CA,Size M,7.4,1,UPS® Ground
+San Diego,Ventura,CA,Size L,9.94,1,UPS® Ground
+San Diego,Redwood City,CA,Size S,6.69,2,UPS® Ground
+San Diego,Redwood City,CA,Size M,8.69,2,UPS® Ground
+San Diego,Redwood City,CA,Size L,10.54,2,UPS® Ground
+San Diego,Davis,CA,Size S,6.52,2,UPS® Ground
+San Diego,Davis,CA,Size M,7.91,2,UPS® Ground
+San Diego,Davis,CA,Size L,10.54,2,UPS® Ground
+San Diego,Corvallis,OR,Size S,7.36,3,UPS® Ground
+San Diego,Corvallis,OR,Size M,8.77,3,UPS® Ground
+San Diego,Corvallis,OR,Size L,14.1,3,UPS® Ground
+San Diego,Medford,OR,Size S,7.36,3,UPS® Ground
+San Diego,Medford,OR,Size M,8.77,3,UPS® Ground
+San Diego,Medford,OR,Size L,14.1,3,UPS® Ground
+San Diego,Yakima,WA,Size S,7.45,3,UPS® Ground
+San Diego,Yakima,WA,Size M,8.86,3,UPS® Ground
+San Diego,Yakima,WA,Size L,14.1,3,UPS® Ground
+San Diego,Wenatchee,WA,Size S,8.36,3,UPS® Ground
+San Diego,Wenatchee,WA,Size M,10.31,3,UPS® Ground
+San Diego,Wenatchee,WA,Size L,15.29,3,UPS® Ground
+San Diego,Twin Falls,ID,Size S,7.45,2,UPS® Ground
+San Diego,Twin Falls,ID,Size M,8.86,2,UPS® Ground
+San Diego,Twin Falls,ID,Size L,14.1,2,UPS® Ground
+San Diego,Elko,NV,Size S,6.69,2,UPS® Ground
+San Diego,Elko,NV,Size M,8.69,2,UPS® Ground
+San Diego,Elko,NV,Size L,10.54,2,UPS® Ground
+San Diego,Yuma,AZ,Size S,6.56,2,UPS® Ground
+San Diego,Yuma,AZ,Size M,8.24,2,UPS® Ground
+San Diego,Yuma,AZ,Size L,9.94,2,UPS® Ground
+San Diego,San Luis Obispo,CA,Size S,6.56,1,UPS® Ground
+San Diego,San Luis Obispo,CA,Size M,8.24,1,UPS® Ground
+San Diego,San Luis Obispo,CA,Size L,9.94,1,UPS® Ground
+San Diego,Fresno,CA,Size S,6.52,2,UPS® Ground
+San Diego,Fresno,CA,Size M,7.91,2,UPS® Ground
+San Diego,Fresno,CA,Size L,10.54,2,UPS® Ground
+San Diego,Ashland,OR,Size S,7.36,3,UPS® Ground
+San Diego,Ashland,OR,Size M,8.77,3,UPS® Ground
+San Diego,Ashland,OR,Size L,14.1,3,UPS® Ground
+San Diego,Port Angeles,WA,Size S,8.36,3,UPS® Ground
+San Diego,Port Angeles,WA,Size M,10.31,3,UPS® Ground
+San Diego,Port Angeles,WA,Size L,15.29,3,UPS® Ground
+San Diego,Pocatello,ID,Size S,7.36,2,UPS® Ground
+San Diego,Pocatello,ID,Size M,8.77,2,UPS® Ground
+San Diego,Pocatello,ID,Size L,14.1,2,UPS® Ground
+San Diego,Fallon,NV,Size S,6.69,2,UPS® Ground
+San Diego,Fallon,NV,Size M,8.69,2,UPS® Ground
+San Diego,Fallon,NV,Size L,10.54,2,UPS® Ground
+San Diego,Prescott,AZ,Size S,6.39,2,UPS® Ground
+San Diego,Prescott,AZ,Size M,7.4,2,UPS® Ground
+San Diego,Prescott,AZ,Size L,9.94,2,UPS® Ground
+San Diego,Ukiah,CA,Size S,6.69,2,UPS® Ground
+San Diego,Ukiah,CA,Size M,8.69,2,UPS® Ground
+San Diego,Ukiah,CA,Size L,10.54,2,UPS® Ground
+San Diego,Grants Pass,OR,Size S,7.45,3,UPS® Ground
+San Diego,Grants Pass,OR,Size M,8.86,3,UPS® Ground
+San Diego,Grants Pass,OR,Size L,14.1,3,UPS® Ground
+San Diego,Centralia,WA,Size S,8.45,3,UPS® Ground
+San Diego,Centralia,WA,Size M,10.4,3,UPS® Ground
+San Diego,Centralia,WA,Size L,15.29,3,UPS® Ground
+San Diego,Allentown,PA,Size S,9.25,4,UPS® Ground
+San Diego,Allentown,PA,Size M,12.06,4,UPS® Ground
+San Diego,Allentown,PA,Size L,17.29,4,UPS® Ground
+San Diego,Princeton,NJ,Size S,9.16,4,UPS® Ground
+San Diego,Princeton,NJ,Size M,11.97,4,UPS® Ground
+San Diego,Princeton,NJ,Size L,17.29,4,UPS® Ground
+San Diego,New Haven,CT,Size S,9.16,4,UPS® Ground
+San Diego,New Haven,CT,Size M,11.97,4,UPS® Ground
+San Diego,New Haven,CT,Size L,17.29,4,UPS® Ground
+San Diego,Providence,RI,Size S,9.25,4,UPS® Ground
+San Diego,Providence,RI,Size M,12.06,4,UPS® Ground
+San Diego,Providence,RI,Size L,17.29,4,UPS® Ground
+San Diego,Burlington,VT,Size S,9.16,5,UPS® Ground
+San Diego,Burlington,VT,Size M,11.97,5,UPS® Ground
+San Diego,Burlington,VT,Size L,17.29,5,UPS® Ground
+San Diego,Concord,NH,Size S,9.16,5,UPS® Ground
+San Diego,Concord,NH,Size M,11.97,5,UPS® Ground
+San Diego,Concord,NH,Size L,17.29,5,UPS® Ground
+San Diego,Ithaca,NY,Size S,9.16,4,UPS® Ground
+San Diego,Ithaca,NY,Size M,11.97,4,UPS® Ground
+San Diego,Ithaca,NY,Size L,17.29,4,UPS® Ground
+San Diego,Springfield,MA,Size S,9.16,4,UPS® Ground
+San Diego,Springfield,MA,Size M,11.97,4,UPS® Ground
+San Diego,Springfield,MA,Size L,17.29,4,UPS® Ground
+San Diego,Bangor,ME,Size S,9.16,5,UPS® Ground
+San Diego,Bangor,ME,Size M,11.97,5,UPS® Ground
+San Diego,Bangor,ME,Size L,17.29,5,UPS® Ground
+San Diego,Greenville,SC,Size S,9.16,4,UPS® Ground
+San Diego,Greenville,SC,Size M,11.97,4,UPS® Ground
+San Diego,Greenville,SC,Size L,17.29,4,UPS® Ground
+San Diego,Savannah,GA,Size S,9.25,4,UPS® Ground
+San Diego,Savannah,GA,Size M,12.06,4,UPS® Ground
+San Diego,Savannah,GA,Size L,17.29,4,UPS® Ground
+San Diego,Huntsville,AL,Size S,8.71,4,UPS® Ground
+San Diego,Huntsville,AL,Size M,11.0,4,UPS® Ground
+San Diego,Huntsville,AL,Size L,16.29,4,UPS® Ground
+San Diego,Gulfport,MS,Size S,8.71,4,UPS® Ground
+San Diego,Gulfport,MS,Size M,11.0,4,UPS® Ground
+San Diego,Gulfport,MS,Size L,16.29,4,UPS® Ground
+San Diego,Chattanooga,TN,Size S,9.16,4,UPS® Ground
+San Diego,Chattanooga,TN,Size M,11.97,4,UPS® Ground
+San Diego,Chattanooga,TN,Size L,17.29,4,UPS® Ground
+San Diego,Asheville,NC,Size S,9.16,4,UPS® Ground
+San Diego,Asheville,NC,Size M,11.97,4,UPS® Ground
+San Diego,Asheville,NC,Size L,17.29,4,UPS® Ground
+San Diego,Tallahassee,FL,Size S,9.16,4,UPS® Ground
+San Diego,Tallahassee,FL,Size M,11.97,4,UPS® Ground
+San Diego,Tallahassee,FL,Size L,17.29,4,UPS® Ground
+San Diego,Roanoke,VA,Size S,9.16,4,UPS® Ground
+San Diego,Roanoke,VA,Size M,11.97,4,UPS® Ground
+San Diego,Roanoke,VA,Size L,17.29,4,UPS® Ground
+San Diego,Morgantown,WV,Size S,9.16,5,UPS® Ground
+San Diego,Morgantown,WV,Size M,11.97,5,UPS® Ground
+San Diego,Morgantown,WV,Size L,17.29,5,UPS® Ground
+San Diego,Toledo,OH,Size S,9.25,4,UPS® Ground
+San Diego,Toledo,OH,Size M,12.06,4,UPS® Ground
+San Diego,Toledo,OH,Size L,17.29,4,UPS® Ground
+San Diego,Lansing,MI,Size S,9.25,4,UPS® Ground
+San Diego,Lansing,MI,Size M,12.06,4,UPS® Ground
+San Diego,Lansing,MI,Size L,17.29,4,UPS® Ground
+San Diego,Des Moines,IA,Size S,8.62,4,UPS® Ground
+San Diego,Des Moines,IA,Size M,10.91,4,UPS® Ground
+San Diego,Des Moines,IA,Size L,16.29,4,UPS® Ground
+San Diego,Duluth,MN,Size S,8.71,4,UPS® Ground
+San Diego,Duluth,MN,Size M,11.0,4,UPS® Ground
+San Diego,Duluth,MN,Size L,16.29,4,UPS® Ground
+San Diego,Peoria,IL,Size S,8.62,4,UPS® Ground
+San Diego,Peoria,IL,Size M,10.91,4,UPS® Ground
+San Diego,Peoria,IL,Size L,16.29,4,UPS® Ground
+San Diego,Green Bay,WI,Size S,8.62,4,UPS® Ground
+San Diego,Green Bay,WI,Size M,10.91,4,UPS® Ground
+San Diego,Green Bay,WI,Size L,16.29,4,UPS® Ground
+San Diego,Sioux Falls,SD,Size S,8.36,4,UPS® Ground
+San Diego,Sioux Falls,SD,Size M,10.31,4,UPS® Ground
+San Diego,Sioux Falls,SD,Size L,15.29,4,UPS® Ground
+San Diego,Wichita,KS,Size S,8.36,4,UPS® Ground
+San Diego,Wichita,KS,Size M,10.31,4,UPS® Ground
+San Diego,Wichita,KS,Size L,15.29,4,UPS® Ground
+San Diego,Bloomington,IN,Size S,8.62,4,UPS® Ground
+San Diego,Bloomington,IN,Size M,10.91,4,UPS® Ground
+San Diego,Bloomington,IN,Size L,16.29,4,UPS® Ground
+San Diego,Athens,OH,Size S,9.25,4,UPS® Ground
+San Diego,Athens,OH,Size M,12.06,4,UPS® Ground
+San Diego,Athens,OH,Size L,17.29,4,UPS® Ground
+San Diego,Lubbock,TX,Size S,7.45,3,UPS® Ground
+San Diego,Lubbock,TX,Size M,8.86,3,UPS® Ground
+San Diego,Lubbock,TX,Size L,14.1,3,UPS® Ground
+San Diego,Fayetteville,AR,Size S,8.36,4,UPS® Ground
+San Diego,Fayetteville,AR,Size M,10.31,4,UPS® Ground
+San Diego,Fayetteville,AR,Size L,15.29,4,UPS® Ground
+San Diego,Santa Fe,NM,Size S,7.45,3,UPS® Ground
+San Diego,Santa Fe,NM,Size M,8.86,3,UPS® Ground
+San Diego,Santa Fe,NM,Size L,14.1,3,UPS® Ground
+San Diego,Fort Collins,CO,Size S,7.36,3,UPS® Ground
+San Diego,Fort Collins,CO,Size M,8.77,3,UPS® Ground
+San Diego,Fort Collins,CO,Size L,14.1,3,UPS® Ground
+San Diego,Provo,UT,Size S,6.52,2,UPS® Ground
+San Diego,Provo,UT,Size M,7.91,2,UPS® Ground
+San Diego,Provo,UT,Size L,10.54,2,UPS® Ground
+San Diego,Bozeman,MT,Size S,7.45,3,UPS® Ground
+San Diego,Bozeman,MT,Size M,8.86,3,UPS® Ground
+San Diego,Bozeman,MT,Size L,14.1,3,UPS® Ground
+San Diego,Cheyenne,WY,Size S,7.45,3,UPS® Ground
+San Diego,Cheyenne,WY,Size M,8.86,3,UPS® Ground
+San Diego,Cheyenne,WY,Size L,14.1,3,UPS® Ground
+San Diego,Norman,OK,Size S,8.36,3,UPS® Ground
+San Diego,Norman,OK,Size M,10.31,3,UPS® Ground
+San Diego,Norman,OK,Size L,15.29,3,UPS® Ground
+San Diego,Santa Barbara,CA,Size S,6.56,1,UPS® Ground
+San Diego,Santa Barbara,CA,Size M,8.24,1,UPS® Ground
+San Diego,Santa Barbara,CA,Size L,9.94,1,UPS® Ground
+San Diego,Palo Alto,CA,Size S,6.52,2,UPS® Ground
+San Diego,Palo Alto,CA,Size M,7.91,2,UPS® Ground
+San Diego,Palo Alto,CA,Size L,10.54,2,UPS® Ground
+San Diego,Santa Cruz,CA,Size S,6.52,2,UPS® Ground
+San Diego,Santa Cruz,CA,Size M,7.91,2,UPS® Ground
+San Diego,Santa Cruz,CA,Size L,10.54,2,UPS® Ground
+San Diego,Eugene,OR,Size S,7.36,3,UPS® Ground
+San Diego,Eugene,OR,Size M,8.77,3,UPS® Ground
+San Diego,Eugene,OR,Size L,14.1,3,UPS® Ground
+San Diego,Bend,OR,Size S,7.36,3,UPS® Ground
+San Diego,Bend,OR,Size M,8.77,3,UPS® Ground
+San Diego,Bend,OR,Size L,14.1,3,UPS® Ground
+San Diego,Bellingham,WA,Size S,8.45,3,UPS® Ground
+San Diego,Bellingham,WA,Size M,10.4,3,UPS® Ground
+San Diego,Bellingham,WA,Size L,15.29,3,UPS® Ground
+San Diego,Olympia,WA,Size S,8.36,3,UPS® Ground
+San Diego,Olympia,WA,Size M,10.31,3,UPS® Ground
+San Diego,Olympia,WA,Size L,15.29,3,UPS® Ground
+San Diego,Idaho Falls,ID,Size S,7.36,2,UPS® Ground
+San Diego,Idaho Falls,ID,Size M,8.77,2,UPS® Ground
+San Diego,Idaho Falls,ID,Size L,14.1,2,UPS® Ground
+San Diego,Carson City,NV,Size S,6.52,2,UPS® Ground
+San Diego,Carson City,NV,Size M,7.91,2,UPS® Ground
+San Diego,Carson City,NV,Size L,10.54,2,UPS® Ground
+San Diego,Flagstaff,AZ,Size S,6.52,2,UPS® Ground
+San Diego,Flagstaff,AZ,Size M,7.91,2,UPS® Ground
+San Diego,Flagstaff,AZ,Size L,10.54,2,UPS® Ground
+San Diego,Redding,CA,Size S,7.45,2,UPS® Ground
+San Diego,Redding,CA,Size M,8.86,2,UPS® Ground
+San Diego,Redding,CA,Size L,14.1,2,UPS® Ground
+San Diego,Hilo,HI,Size S,47.24,3,UPS® Ground
+San Diego,Hilo,HI,Size M,53.22,3,UPS® Ground
+San Diego,Hilo,HI,Size L,62.23,3,UPS® Ground
+San Diego,Fairbanks,AK,Size S,30.87,3,UPS® Ground
+San Diego,Fairbanks,AK,Size M,36.99,3,UPS® Ground
+San Diego,Fairbanks,AK,Size L,46.14,3,UPS® Ground
+San Diego,Monterey,CA,Size S,6.52,2,UPS® Ground
+San Diego,Monterey,CA,Size M,7.91,2,UPS® Ground
+San Diego,Monterey,CA,Size L,10.54,2,UPS® Ground
