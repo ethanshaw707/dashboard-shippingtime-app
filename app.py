@@ -482,6 +482,201 @@ V3_CITY_COUNTS = {
     "buford, ga": 5,
     "modesto, ca": 5,
     "winter park, fl": 5,
+    "antioch, il": 4,
+    "algonquin, il": 4,
+    "allen, tx": 4,
+    "ames, ia": 4,
+    "anaheim, ca": 4,
+    "aptos, ca": 4,
+    "astoria, ny": 4,
+    "bloomington, in": 4,
+    "bremerton, wa": 4,
+    "brunswick, oh": 4,
+    "burke, va": 4,
+    "bedford, in": 4,
+    "benton, la": 4,
+    "billings, mt": 4,
+    "birdsboro, pa": 4,
+    "bothell, wa": 4,
+    "bowie, md": 4,
+    "brentwood, tn": 4,
+    "bronx, ny": 4,
+    "brookfield, wi": 4,
+    "canton, oh": 4,
+    "celina, tx": 4,
+    "chapel hill, nc": 4,
+    "claremore, ok": 4,
+    "clovis, ca": 4,
+    "cocoa, fl": 4,
+    "callahan, fl": 4,
+    "carmel, in": 4,
+    "cedar park, tx": 4,
+    "centennial, co": 4,
+    "centerville, ma": 4,
+    "charleston, sc": 4,
+    "charlottesville, va": 4,
+    "clarkesville, ga": 4,
+    "clayton, nc": 4,
+    "clifton, nj": 4,
+    "collinsville, ok": 4,
+    "columbia, tn": 4,
+    "concord, nc": 4,
+    "cookeville, tn": 4,
+    "corpus christi, tx": 4,
+    "corrales, nm": 4,
+    "corydon, in": 4,
+    "cranston, ri": 4,
+    "dekalb, il": 4,
+    "delaware, oh": 4,
+    "delmar, ny": 4,
+    "des moines, ia": 4,
+    "dickson, tn": 4,
+    "downers grove, il": 4,
+    "dripping springs, tx": 4,
+    "eustis, fl": 4,
+    "east hampton, ny": 4,
+    "fenton, mo": 4,
+    "fayetteville, ar": 4,
+    "flower mound, tx": 4,
+    "franklin, oh": 4,
+    "friendswood, tx": 4,
+    "gainesville, fl": 4,
+    "glendale, ca": 4,
+    "greenville, sc": 4,
+    "greenville, mi": 4,
+    "gainesville, ga": 4,
+    "gaithersburg, md": 4,
+    "garner, nc": 4,
+    "gastonia, nc": 4,
+    "granada hills, ca": 4,
+    "granbury, tx": 4,
+    "griffin, ga": 4,
+    "harpers ferry, wv": 4,
+    "haverhill, ma": 4,
+    "hayward, ca": 4,
+    "herriman, ut": 4,
+    "hillsboro, or": 4,
+    "hoboken, nj": 4,
+    "huntley, il": 4,
+    "hagerstown, md": 4,
+    "hamilton, oh": 4,
+    "harrisburg, pa": 4,
+    "hendersonville, nc": 4,
+    "hendersonville, tn": 4,
+    "holland, mi": 4,
+    "indian trail, nc": 4,
+    "jersey city, nj": 4,
+    "johnstown, pa": 4,
+    "kalamazoo, mi": 4,
+    "keatchie, la": 4,
+    "kennewick, wa": 4,
+    "kingsport, tn": 4,
+    "lake elsinore, ca": 4,
+    "lebanon, oh": 4,
+    "little rock, ar": 4,
+    "livonia, mi": 4,
+    "los alamos, nm": 4,
+    "loveland, co": 4,
+    "la mesa, ca": 4,
+    "la quinta, ca": 4,
+    "lake oswego, or": 4,
+    "lake saint louis, mo": 4,
+    "lake in the hills, il": 4,
+    "lakeway, tx": 4,
+    "lancaster, ny": 4,
+    "leander, tx": 4,
+    "lees summit, mo": 4,
+    "lenoir, nc": 4,
+    "lewis center, oh": 4,
+    "lexington, in": 4,
+    "lodi, ca": 4,
+    "lynden, wa": 4,
+    "methuen, ma": 4,
+    "milford, ct": 4,
+    "mineola, tx": 4,
+    "missoula, mt": 4,
+    "mansfield, oh": 4,
+    "mcdonough, ga": 4,
+    "merritt island, fl": 4,
+    "midlothian, va": 4,
+    "millington, tn": 4,
+    "milton, fl": 4,
+    "moab, ut": 4,
+    "monroe, nc": 4,
+    "mooresville, in": 4,
+    "morganton, nc": 4,
+    "murfreesboro, tn": 4,
+    "newburgh, ny": 4,
+    "navarre, fl": 4,
+    "new market, al": 4,
+    "newnan, ga": 4,
+    "norman, ok": 4,
+    "novi, mi": 4,
+    "ormond beach, fl": 4,
+    "owensboro, ky": 4,
+    "oconto, wi": 4,
+    "old bridge, nj": 4,
+    "olympia, wa": 4,
+    "oregon city, or": 4,
+    "oxford, mi": 4,
+    "peachtree city, ga": 4,
+    "pleasanton, ca": 4,
+    "poughkeepsie, ny": 4,
+    "pagosa springs, co": 4,
+    "pasadena, ca": 4,
+    "pasadena, tx": 4,
+    "pasco, wa": 4,
+    "pawtucket, ri": 4,
+    "pembroke, ma": 4,
+    "perrysburg, oh": 4,
+    "plant city, fl": 4,
+    "port orchard, wa": 4,
+    "prescott valley, az": 4,
+    "princeton, nj": 4,
+    "quincy, ma": 4,
+    "redwood city, ca": 4,
+    "rohnert park, ca": 4,
+    "rigby, id": 4,
+    "ripon, wi": 4,
+    "rogers, ar": 4,
+    "rowlett, tx": 4,
+    "rydal, pa": 4,
+    "shepherdsville, ky": 4,
+    "shreveport, la": 4,
+    "stamford, ct": 4,
+    "salt lake city, ut": 4,
+    "sanford, nc": 4,
+    "santa ana, ca": 4,
+    "santa cruz, ca": 4,
+    "santa fe, nm": 4,
+    "sarver, pa": 4,
+    "schenectady, ny": 4,
+    "sierra vista, az": 4,
+    "silver spring, md": 4,
+    "south jordan, ut": 4,
+    "springfield, mo": 4,
+    "summerville, sc": 4,
+    "sumter, sc": 4,
+    "sun city, az": 4,
+    "syosset, ny": 4,
+    "taunton, ma": 4,
+    "texarkana, tx": 4,
+    "toledo, oh": 4,
+    "urbana, oh": 4,
+    "valparaiso, in": 4,
+    "waco, tx": 4,
+    "west lafayette, in": 4,
+    "winter garden, fl": 4,
+    "winter haven, fl": 4,
+    "wylie, tx": 4,
+    "waldorf, md": 4,
+    "wesley chapel, fl": 4,
+    "west palm beach, fl": 4,
+    "williamsburg, va": 4,
+    "woodbridge, va": 4,
+    "woodside, ca": 4,
+    "yorba linda, ca": 4,
+    "queens village, ny": 4,
 }
 DESTINATION_WEIGHTS = {}
 DEFAULT_DEST_WEIGHT = 1.0
@@ -2031,8 +2226,8 @@ def greedy_savings_per_sign(
 
 st.set_page_config(page_title="Shipping Cost Dashboard", layout="wide")
 st.title("Shipping Cost Dashboard")
-tab_dashboard, tab_regionals_v3 = st.tabs(
-    ["Dashboard", "Shipping Summary Regionals v3"]
+tab_dashboard, tab_regionals_v3, tab_weights = st.tabs(
+    ["Dashboard", "Shipping Summary Regionals v3", "Destination Weights"]
 )
 
 with tab_dashboard:
@@ -2647,54 +2842,79 @@ with tab_regionals_v3:
 
             lat_long_path = Path("lat_long_from_to.csv")
             if lat_long_path.exists():
-                lat_long_df = pd.read_csv(lat_long_path)
-                lat_long_df["direction"] = lat_long_df["direction"].astype(str).str.upper()
-                lat_long_df["city_key"] = (
-                    lat_long_df["city"].astype(str).str.strip().str.casefold()
-                    + "||"
-                    + lat_long_df["state"].astype(str).str.strip().str.casefold()
-                )
-                from_keys = set(lat_long_df[lat_long_df["direction"] == "FROM"]["city_key"])
-                map_points = lat_long_df.dropna(subset=["lat", "lng"]).copy()
-                map_points["direction"] = np.where(
-                    map_points["city_key"].isin(from_keys),
-                    "FROM",
-                    map_points["direction"],
-                )
-                if not map_points.empty:
-                    st.markdown("Origin vs destination map")
-                    map_points["color"] = np.where(
-                        map_points["direction"] == "FROM",
+                    lat_long_df = pd.read_csv(lat_long_path)
+                    lat_long_df["direction"] = lat_long_df["direction"].astype(str).str.upper()
+                    lat_long_df["city_key"] = (
+                        lat_long_df["city"].astype(str).str.strip().str.casefold()
+                        + "||"
+                        + lat_long_df["state"].astype(str).str.strip().str.casefold()
+                    )
+                    from_keys = set(lat_long_df[lat_long_df["direction"] == "FROM"]["city_key"])
+                    map_points = lat_long_df.dropna(subset=["lat", "lng"]).copy()
+                    map_points["direction"] = np.where(
+                        map_points["city_key"].isin(from_keys),
                         "FROM",
-                        "TO",
+                        map_points["direction"],
                     )
-                    color_map = {
-                        "FROM": [27, 124, 212, 180],
-                        "TO": [217, 83, 79, 180],
-                    }
-                    map_points["color_rgba"] = map_points["color"].map(color_map)
-                    view_state = pdk.ViewState(
-                        latitude=float(map_points["lat"].mean()),
-                        longitude=float(map_points["lng"].mean()),
-                        zoom=3.5,
-                    )
-                    scatter = pdk.Layer(
-                        "ScatterplotLayer",
-                        data=map_points,
-                        get_position="[lng, lat]",
-                        get_fill_color="color_rgba",
-                        get_radius=35000,
-                        pickable=True,
-                    )
-                    st.pydeck_chart(
-                        pdk.Deck(
-                            layers=[scatter],
-                            initial_view_state=view_state,
-                            tooltip={"text": "{direction} - {name}\n{city}, {state} {postal_code}"},
+                    if not map_points.empty:
+                        st.markdown("Origin vs destination map")
+                        weight_keys = set(V3_CITY_COUNTS.keys())
+                        map_points["weight_key"] = (
+                            map_points["city"].astype(str).str.strip().str.casefold()
+                            + ", "
+                            + map_points["state"].astype(str).str.strip().str.casefold()
                         )
-                    )
-                else:
-                    st.caption("No valid lat/long rows found in lat_long_from_to.csv.")
+                        map_points["weight_value"] = map_points["weight_key"].map(V3_CITY_COUNTS)
+                        to_mask = map_points["direction"] == "TO"
+                        to_weights = map_points.loc[to_mask, "weight_value"].dropna()
+                        if not to_weights.empty:
+                            min_w = float(to_weights.min())
+                            max_w = float(to_weights.max())
+                        else:
+                            min_w = max_w = 0.0
+
+                        def weight_to_color(val: float):
+                            if max_w <= min_w:
+                                return [217, 83, 79, 190]
+                            t = (val - min_w) / (max_w - min_w)
+                            r = int(255 * t + 245 * (1 - t))
+                            g = int(80 * t + 140 * (1 - t))
+                            b = int(60 * t + 60 * (1 - t))
+                            return [r, g, b, 190]
+
+                        def color_for_row(row):
+                            if row["direction"] == "FROM":
+                                return [27, 124, 212, 190]
+                            val = row.get("weight_value")
+                            if not np.isfinite(val):
+                                return [180, 180, 180, 150]
+                            return weight_to_color(float(val))
+
+                        map_points["color_rgba"] = map_points.apply(color_for_row, axis=1)
+                        view_state = pdk.ViewState(
+                            latitude=float(map_points["lat"].mean()),
+                            longitude=float(map_points["lng"].mean()),
+                            zoom=3.5,
+                        )
+                        scatter = pdk.Layer(
+                            "ScatterplotLayer",
+                            data=map_points,
+                            get_position="[lng, lat]",
+                            get_fill_color="color_rgba",
+                            get_radius=35000,
+                            pickable=True,
+                        )
+                        st.pydeck_chart(
+                            pdk.Deck(
+                                layers=[scatter],
+                                initial_view_state=view_state,
+                                tooltip={
+                                    "text": "{direction} - {name}\n{city}, {state} {postal_code}\nweight: {weight_value}"
+                                },
+                            )
+                        )
+                    else:
+                        st.caption("No valid lat/long rows found in lat_long_from_to.csv.")
             else:
                 st.caption("lat_long_from_to.csv not found for the map.")
             origin_list_all_v3 = sorted(regionals_v3_df["FromAddress"].unique())
@@ -2904,5 +3124,40 @@ with tab_regionals_v3:
                     max_k=20,
                     baseline_origin=baseline_origin_v3,
                 )
+    else:
+        st.info("page3.csv not found in the app folder.")
+
+with tab_weights:
+    st.subheader("Destination Weights (page3)")
+    page3_path = Path("page3.csv")
+    if page3_path.exists():
+        page3_df = load_data(str(page3_path))
+        if page3_df.empty:
+            st.info("No data available in page3.csv.")
+        else:
+            weights_rows = []
+            total_weight = sum(V3_CITY_COUNTS.values())
+            for _, row in (
+                page3_df[["ToCity", "ToState"]].dropna().drop_duplicates().iterrows()
+            ):
+                city = str(row["ToCity"]).strip()
+                state = str(row["ToState"]).strip()
+                key = f"{city.casefold()}, {state.casefold()}"
+                weight = V3_CITY_COUNTS.get(key, 0)
+                pct = (weight / total_weight * 100.0) if total_weight else 0.0
+                weights_rows.append(
+                    {
+                        "City": city,
+                        "State": state,
+                        "Weight": weight,
+                        "Percent": pct,
+                    }
+                )
+            weights_df = pd.DataFrame(weights_rows).sort_values(
+                ["Weight", "City", "State"],
+                ascending=[False, True, True],
+            )
+            st.metric("Destinations", f"{len(weights_df):,}")
+            st.dataframe(weights_df, use_container_width=True)
     else:
         st.info("page3.csv not found in the app folder.")
