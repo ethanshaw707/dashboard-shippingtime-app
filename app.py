@@ -2396,6 +2396,9 @@ with tab_dashboard:
         slower_destinations = []
         slowest_destinations = []
         built_best_time = pd.DataFrame(columns=["Destination", "BestTime"])
+        one_day_destinations = pd.DataFrame(columns=["Destination", "BestTime", "Weight"])
+        one_day_coverage_pct = 0.0
+        two_day_coverage_pct = 0.0
     else:
         built_best_time = built_subset.groupby("Destination", as_index=False).agg(BestTime=("ShippingTimeDays", "min"))
         built_best_time["Weight"] = built_best_time["Destination"].map(dest_weights).fillna(0.0)
@@ -2424,6 +2427,27 @@ with tab_dashboard:
             .sort_values()
             .tolist()
         )
+        one_day_destinations = built_best_time[built_best_time["BestTime"] <= 1.0].copy()
+        total_weight = float(built_best_time["Weight"].sum())
+        one_day_weight = float(one_day_destinations["Weight"].sum())
+        two_day_weight = float(
+            built_best_time[built_best_time["BestTime"] <= 2.0]["Weight"].sum()
+        )
+        one_day_coverage_pct = (one_day_weight / total_weight * 100.0) if total_weight else 0.0
+        two_day_coverage_pct = (two_day_weight / total_weight * 100.0) if total_weight else 0.0
+
+    coverage_col1, coverage_col2 = st.columns(2)
+    coverage_col1.metric("1-day coverage (weighted)", f"{one_day_coverage_pct:.1f}%")
+    coverage_col2.metric("2-day coverage (weighted)", f"{two_day_coverage_pct:.1f}%")
+    st.markdown("1-day shipping cities (built network)")
+    if one_day_destinations.empty:
+        st.caption("No destinations with 1-day shipping in the current built network.")
+    else:
+        one_day_display = one_day_destinations[["Destination", "Weight"]].sort_values(
+            ["Weight", "Destination"],
+            ascending=[False, True],
+        )
+        st.dataframe(one_day_display, use_container_width=True)
 
     st.markdown("Reduce costs suggested build")
     st.markdown("Reduce shipping times suggested build")
@@ -3008,6 +3032,18 @@ with tab_regionals_v3:
                     built_best_time_v3["Weight"] = built_best_time_v3["Destination"].map(
                         dest_weights_v3
                     ).fillna(0.0)
+                    one_day_v3 = built_best_time_v3[built_best_time_v3["BestTime"] <= 1.0].copy()
+                    total_weight_v3 = float(built_best_time_v3["Weight"].sum())
+                    one_day_weight_v3 = float(one_day_v3["Weight"].sum())
+                    two_day_weight_v3 = float(
+                        built_best_time_v3[built_best_time_v3["BestTime"] <= 2.0]["Weight"].sum()
+                    )
+                    one_day_coverage_v3 = (
+                        one_day_weight_v3 / total_weight_v3 * 100.0
+                    ) if total_weight_v3 else 0.0
+                    two_day_coverage_v3 = (
+                        two_day_weight_v3 / total_weight_v3 * 100.0
+                    ) if total_weight_v3 else 0.0
                     built_avg_time_v3 = weighted_mean(
                         built_best_time_v3["BestTime"].to_numpy(),
                         built_best_time_v3["Weight"].to_numpy(),
@@ -3025,6 +3061,24 @@ with tab_regionals_v3:
                     col_a, col_b = st.columns(2)
                     col_a.metric("Built network avg time (page3)", f"{built_avg_time_v3:.2f}")
                     col_b.metric("Built network avg cost (page3)", f"{built_avg_cost_v3:.2f}")
+                    coverage_col_a, coverage_col_b = st.columns(2)
+                    coverage_col_a.metric(
+                        "1-day coverage (weighted) (page3)",
+                        f"{one_day_coverage_v3:.1f}%",
+                    )
+                    coverage_col_b.metric(
+                        "2-day coverage (weighted) (page3)",
+                        f"{two_day_coverage_v3:.1f}%",
+                    )
+                    st.markdown("1-day shipping cities (page3)")
+                    if one_day_v3.empty:
+                        st.caption("No destinations with 1-day shipping in the page3 network.")
+                    else:
+                        one_day_v3_display = one_day_v3[["Destination", "Weight"]].sort_values(
+                            ["Weight", "Destination"],
+                            ascending=[False, True],
+                        )
+                        st.dataframe(one_day_v3_display, use_container_width=True)
                     slow_1_v3 = built_best_time_v3[built_best_time_v3["BestTime"] > 1.0][
                         "Destination"
                     ].sort_values().tolist()

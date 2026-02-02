@@ -20,6 +20,8 @@ FROM,Harrisburg Fulfillment,Harrisburg,PA,17103,40.2824,-76.8810
 FROM,Louisville Fulfillment,Louisville,KY,40245,38.2900,-85.5100
 FROM,Nashville Fulfillment,Nashville,TN,37211,36.0851,-86.6908
 FROM,Fulfillment - Greensboro,Greensboro,NC,27406,36.06871,-79.78289
+FROM,Spokane,Spokane,WA,,47.6588,-117.4260
+FROM,Troutdale,Troutdale,OR,,45.5393,-122.3873
 TO,Brooklyn,Brooklyn,NY,11217,40.6782,-73.9442
 TO,Phoenix,Phoenix,AZ,85004,33.4484,-112.074
 TO,Houston,Houston,TX,77002,29.7604,-95.3698
