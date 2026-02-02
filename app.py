@@ -803,6 +803,7 @@ def _dict_to_items(weight_map: dict) -> tuple:
 def render_top_combos(
     df: pd.DataFrame,
     origin_list: list,
+    full_origin_list: list | None,
     dest_in_view: list,
     dest_weights: dict,
     build_cost_weight: float,
@@ -813,6 +814,7 @@ def render_top_combos(
     show_day_percentages: bool = False,
     max_k: int = 10,
     baseline_origin: str | None = None,
+    required_origin: str | None = None,
 ) -> None:
     st.markdown("Recommended starting two (synergy pairs)")
     show_key = f"{key_prefix}_show_top_combos"
@@ -831,9 +833,23 @@ def render_top_combos(
         return
 
     dest_weights_items = _dict_to_items(dest_weights)
+    origin_list_local = list(origin_list)
+    small_origin_list = list(full_origin_list or origin_list_local)
+    if required_origin:
+        if required_origin in small_origin_list and required_origin not in origin_list_local:
+            origin_list_local.append(required_origin)
+        if required_origin not in small_origin_list:
+            small_origin_list.append(required_origin)
+    required_small = (required_origin,) if required_origin and required_origin in small_origin_list else tuple()
+    required_local = (required_origin,) if required_origin and required_origin in origin_list_local else tuple()
+    small_cost_mat, small_time_mat = build_origin_destination_matrices(
+        df,
+        tuple(small_origin_list),
+        tuple(dest_in_view),
+    )
     cost_mat, time_mat = build_origin_destination_matrices(
         df,
-        tuple(origin_list),
+        tuple(origin_list_local),
         tuple(dest_in_view),
     )
     weights_vec = np.array([dest_weights.get(dest, 0.0) for dest in dest_in_view], dtype=float)
@@ -860,10 +876,89 @@ def render_top_combos(
         weighted_total = build_cost_weight * avg_cost_local + (1 - build_cost_weight) * avg_time_local
         return weighted_total, avg_cost_local, avg_time_local
 
+    def small_combo_avg_cost_time(combo_indices):
+        best_cost = np.nanmin(small_cost_mat[combo_indices, :], axis=0)
+        best_time = np.nanmin(small_time_mat[combo_indices, :], axis=0)
+        valid_mask = ~np.isnan(best_cost) & ~np.isnan(best_time)
+        if not valid_mask.any():
+            return float("nan"), float("nan")
+        weights = weights_vec[valid_mask]
+        if weights.sum() == 0:
+            weights = np.ones(len(weights), dtype=float)
+        avg_cost_local = float(np.sum(best_cost[valid_mask] * weights) / weights.sum())
+        avg_time_local = float(np.sum(best_time[valid_mask] * weights) / weights.sum())
+        return avg_cost_local, avg_time_local
+
+    def small_best_combo_indices(k_size: int):
+        best_combo = None
+        best_weighted = float("inf")
+        if required_small and k_size < len(required_small):
+            return None
+        for combo in combinations(range(len(small_origin_list)), k_size):
+            if required_small:
+                required_idx = small_origin_list.index(required_small[0])
+                if required_idx not in combo:
+                    continue
+            avg_cost_local, avg_time_local = small_combo_avg_cost_time(list(combo))
+            if not np.isfinite(avg_cost_local) or not np.isfinite(avg_time_local):
+                continue
+            weighted_total = build_cost_weight * avg_cost_local + (1 - build_cost_weight) * avg_time_local
+            if weighted_total < best_weighted:
+                best_weighted = weighted_total
+                best_combo = list(combo)
+        return best_combo
+
+    def small_combo_time_improvements(combo_indices, prev_indices):
+        if not prev_indices:
+            return 0, 0
+        best_time = np.nanmin(small_time_mat[combo_indices, :], axis=0)
+        prev_time = np.nanmin(small_time_mat[prev_indices, :], axis=0)
+        valid = ~np.isnan(best_time) & ~np.isnan(prev_time)
+        if not valid.any():
+            return 0, 0
+        three_to_two = np.sum((prev_time[valid] > 2.0) & (best_time[valid] <= 2.0) & (best_time[valid] > 1.0))
+        two_to_one = np.sum((prev_time[valid] > 1.0) & (best_time[valid] <= 1.0))
+        return int(three_to_two), int(two_to_one)
+
+    def small_combo_improved_cities(prev_indices, combo_indices):
+        if not prev_indices:
+            return []
+        prev_time = np.nanmin(small_time_mat[prev_indices, :], axis=0)
+        best_time = np.nanmin(small_time_mat[combo_indices, :], axis=0)
+        improved = []
+        for i, (p, b) in enumerate(zip(prev_time, best_time)):
+            if np.isfinite(p) and np.isfinite(b) and b < p:
+                improved.append(dest_in_view[i])
+        return improved
+
+    def small_combo_not_covered(combo_indices, threshold: float):
+        best_time = np.nanmin(small_time_mat[combo_indices, :], axis=0)
+        not_covered = []
+        for i, t in enumerate(best_time):
+            if np.isfinite(t) and t > threshold:
+                not_covered.append(dest_in_view[i])
+        return not_covered
+
+    def small_combo_day_percentages(combo_indices):
+        best_time = np.nanmin(small_time_mat[combo_indices, :], axis=0)
+        valid = np.isfinite(best_time)
+        total = int(np.sum(valid))
+        if total == 0:
+            return 0.0, 0.0
+        one_day = float(np.sum(best_time[valid] <= 1.0))
+        two_day = float(np.sum(best_time[valid] <= 2.0))
+        return one_day / total * 100.0, two_day / total * 100.0
+
     def best_combo_indices(k_size: int):
         best_combo = None
         best_weighted = float("inf")
-        for combo in combinations(range(len(origin_list)), k_size):
+        if required_local and k_size < len(required_local):
+            return None
+        for combo in combinations(range(len(origin_list_local)), k_size):
+            if required_local:
+                required_idx = origin_list_local.index(required_local[0])
+                if required_idx not in combo:
+                    continue
             weighted_total, _, _ = combo_weighted_total(list(combo))
             if np.isfinite(weighted_total) and weighted_total < best_weighted:
                 best_weighted = weighted_total
@@ -928,11 +1023,11 @@ def render_top_combos(
         if len(best_origins) != k_size - 1:
             return []
         results = []
-        for origin in origin_list:
+        for origin in origin_list_local:
             if origin in best_origins:
                 continue
             combo = best_origins + [origin]
-            combo_indices = [origin_list.index(name) for name in combo]
+            combo_indices = [origin_list_local.index(name) for name in combo]
             weighted_total, _, _ = combo_weighted_total(combo_indices)
             if np.isfinite(weighted_total):
                 results.append((" + ".join(combo), weighted_total))
@@ -944,12 +1039,15 @@ def render_top_combos(
 
     pair_df = compute_pair_df_cached(
         df,
-        tuple(origin_list),
+        tuple(small_origin_list),
         tuple(dest_in_view),
         build_cost_weight,
         _dict_to_items(dest_weights),
         _dict_to_items(major_weight_map),
     )
+    if required_small:
+        required_name = required_small[0]
+        pair_df = pair_df[pair_df["Pair"].str.contains(required_name, regex=False)]
 
     if not pair_df.empty:
         best_value = float(pair_df["WeightedTotal"].iloc[0])
@@ -967,22 +1065,24 @@ def render_top_combos(
         )
         selected_pair_name = selected_pair.rsplit(" (", 1)[0]
         selected_row = pair_df[pair_df["Pair"] == selected_pair_name].iloc[0]
-        combo_indices = [origin_list.index(name) for name in selected_pair_name.split(" + ")]
-        combo_avg_cost, combo_avg_time = combo_avg_cost_time(combo_indices)
+        combo_indices = [small_origin_list.index(name) for name in selected_pair_name.split(" + ")]
+        combo_avg_cost, combo_avg_time = small_combo_avg_cost_time(combo_indices)
         cost_delta = avg_cost - combo_avg_cost if np.isfinite(combo_avg_cost) else float("nan")
         time_delta = avg_time - combo_avg_time if np.isfinite(combo_avg_time) else float("nan")
         baseline_indices = None
-        if baseline_origin and baseline_origin in origin_list:
-            baseline_indices = [origin_list.index(baseline_origin)]
-        prev_combo = baseline_indices or best_combo_indices(1)
+        if baseline_origin and baseline_origin in small_origin_list and (
+            not required_small or baseline_origin == required_small[0]
+        ):
+            baseline_indices = [small_origin_list.index(baseline_origin)]
+        prev_combo = baseline_indices or small_best_combo_indices(1)
         if prev_combo:
-            prev_cost, prev_time = combo_avg_cost_time(prev_combo)
+            prev_cost, prev_time = small_combo_avg_cost_time(prev_combo)
             prev_cost_delta = prev_cost - combo_avg_cost
             prev_time_delta = prev_time - combo_avg_time
         else:
             prev_cost_delta = float("nan")
             prev_time_delta = float("nan")
-        move_3_to_2, move_2_to_1 = combo_time_improvements(combo_indices, prev_combo or [])
+        move_3_to_2, move_2_to_1 = small_combo_time_improvements(combo_indices, prev_combo or [])
         st.caption(
             f"Weighted total: {selected_row['WeightedTotal']:.2f} - Avg cost: {combo_avg_cost:.2f} "
             f"(delta {cost_delta:.2f}) - Avg time: {combo_avg_time:.2f} (delta {time_delta:.2f}) - "
@@ -990,17 +1090,17 @@ def render_top_combos(
         )
         st.caption(f"Delta vs best 1 origin: cost {prev_cost_delta:.2f}, time {prev_time_delta:.2f}")
         st.caption(f"Moves 3->2 day: {move_3_to_2} - Moves 2->1 day: {move_2_to_1}")
-        pair_improved = combo_improved_cities(prev_combo or [], combo_indices)
+        pair_improved = small_combo_improved_cities(prev_combo or [], combo_indices)
         st.selectbox(
             "Improved destinations vs best 1 origin (pair)",
             pair_improved or ["None"],
             key=f"{key_prefix}_pair_no1_day",
         )
         if show_day_percentages:
-            pct_1, pct_2 = combo_day_percentages(combo_indices)
+            pct_1, pct_2 = small_combo_day_percentages(combo_indices)
             st.caption(f"1-day coverage: {pct_1:.1f}% | 2-day coverage: {pct_2:.1f}%")
-            not_one_day = combo_not_covered(combo_indices, 1.0)
-            not_two_day = combo_not_covered(combo_indices, 2.0)
+            not_one_day = small_combo_not_covered(combo_indices, 1.0)
+            not_two_day = small_combo_not_covered(combo_indices, 2.0)
             st.caption(f"Not covered in 1 day: {format_not_covered(not_one_day)}")
             st.caption(f"Not covered in 2 days: {format_not_covered(not_two_day)}")
     else:
@@ -1008,14 +1108,15 @@ def render_top_combos(
 
     st.markdown("Top 5 trios")
     trio_list = (
-        compute_top_k_combos_cached(
+        compute_top_k_combos_with_required_cached(
             df,
-            tuple(origin_list),
+            tuple(small_origin_list),
             tuple(dest_in_view),
+            required_small,
             3,
             build_cost_weight,
             dest_weights_items,
-        ) if len(origin_list) >= 3 else []
+        ) if len(small_origin_list) >= 3 else []
     )
     if trio_list:
         trio_labels = [f"{name} ({value:.2f})" for name, value in trio_list]
@@ -1026,34 +1127,34 @@ def render_top_combos(
             key=f"{key_prefix}_top5_trios",
         )
         trio_name = selected_trio.rsplit(" (", 1)[0]
-        trio_indices = [origin_list.index(name) for name in trio_name.split(" + ")]
-        trio_avg_cost, trio_avg_time = combo_avg_cost_time(trio_indices)
-        prev_combo = best_combo_indices(2)
+        trio_indices = [small_origin_list.index(name) for name in trio_name.split(" + ")]
+        trio_avg_cost, trio_avg_time = small_combo_avg_cost_time(trio_indices)
+        prev_combo = small_best_combo_indices(2)
         if prev_combo:
-            prev_cost, prev_time = combo_avg_cost_time(prev_combo)
+            prev_cost, prev_time = small_combo_avg_cost_time(prev_combo)
             prev_cost_delta = prev_cost - trio_avg_cost
             prev_time_delta = prev_time - trio_avg_time
         else:
             prev_cost_delta = float("nan")
             prev_time_delta = float("nan")
-        move_3_to_2, move_2_to_1 = combo_time_improvements(trio_indices, prev_combo or [])
+        move_3_to_2, move_2_to_1 = small_combo_time_improvements(trio_indices, prev_combo or [])
         st.caption(
             f"Avg cost: {trio_avg_cost:.2f} (delta {avg_cost - trio_avg_cost:.2f}) - "
             f"Avg time: {trio_avg_time:.2f} (delta {avg_time - trio_avg_time:.2f})"
         )
         st.caption(f"Delta vs best 2 origins: cost {prev_cost_delta:.2f}, time {prev_time_delta:.2f}")
         st.caption(f"Moves 3->2 day: {move_3_to_2} - Moves 2->1 day: {move_2_to_1}")
-        trio_improved = combo_improved_cities(prev_combo or [], trio_indices)
+        trio_improved = small_combo_improved_cities(prev_combo or [], trio_indices)
         st.selectbox(
             "Improved destinations vs best 2 origins (trio)",
             trio_improved or ["None"],
             key=f"{key_prefix}_trio_no1_day",
         )
         if show_day_percentages:
-            pct_1, pct_2 = combo_day_percentages(trio_indices)
+            pct_1, pct_2 = small_combo_day_percentages(trio_indices)
             st.caption(f"1-day coverage: {pct_1:.1f}% | 2-day coverage: {pct_2:.1f}%")
-            not_one_day = combo_not_covered(trio_indices, 1.0)
-            not_two_day = combo_not_covered(trio_indices, 2.0)
+            not_one_day = small_combo_not_covered(trio_indices, 1.0)
+            not_two_day = small_combo_not_covered(trio_indices, 2.0)
             st.caption(f"Not covered in 1 day: {format_not_covered(not_one_day)}")
             st.caption(f"Not covered in 2 days: {format_not_covered(not_two_day)}")
     else:
@@ -1061,14 +1162,15 @@ def render_top_combos(
 
     st.markdown("Top 5 quads")
     quad_list = (
-        compute_top_k_combos_cached(
+        compute_top_k_combos_with_required_cached(
             df,
-            tuple(origin_list),
+            tuple(origin_list_local),
             tuple(dest_in_view),
+            required_local,
             4,
             build_cost_weight,
             dest_weights_items,
-        ) if len(origin_list) >= 4 else []
+        ) if len(origin_list_local) >= 4 else []
     )
     if quad_list:
         quad_labels = [f"{name} ({value:.2f})" for name, value in quad_list]
@@ -1079,7 +1181,7 @@ def render_top_combos(
             key=f"{key_prefix}_top5_quads",
         )
         quad_name = selected_quad.rsplit(" (", 1)[0]
-        quad_indices = [origin_list.index(name) for name in quad_name.split(" + ")]
+        quad_indices = [origin_list_local.index(name) for name in quad_name.split(" + ")]
         quad_avg_cost, quad_avg_time = combo_avg_cost_time(quad_indices)
         prev_combo = best_combo_indices(3)
         if prev_combo:
@@ -1114,14 +1216,15 @@ def render_top_combos(
 
     st.markdown("Top 5 (5 locations)")
     five_list = (
-        compute_top_k_combos_cached(
+        compute_top_k_combos_with_required_cached(
             df,
-            tuple(origin_list),
+            tuple(origin_list_local),
             tuple(dest_in_view),
+            required_local,
             5,
             build_cost_weight,
             dest_weights_items,
-        ) if len(origin_list) >= 5 else []
+        ) if len(origin_list_local) >= 5 else []
     )
     common_origins = []
     if five_list:
@@ -1133,7 +1236,7 @@ def render_top_combos(
             key=f"{key_prefix}_top5_fives",
         )
         five_name = selected_five.rsplit(" (", 1)[0]
-        five_indices = [origin_list.index(name) for name in five_name.split(" + ")]
+        five_indices = [origin_list_local.index(name) for name in five_name.split(" + ")]
         five_avg_cost, five_avg_time = combo_avg_cost_time(five_indices)
         prev_combo = best_combo_indices(4)
         if prev_combo:
@@ -1172,16 +1275,18 @@ def render_top_combos(
 
     st.markdown("Top 5 (6 locations)")
     required_origins = tuple(common_origins) if common_origins else tuple()
+    if required_local and required_local[0] not in required_origins:
+        required_origins = required_origins + required_local
     six_list = (
         compute_top_k_combos_with_required_cached(
             df,
-            tuple(origin_list),
+            tuple(origin_list_local),
             tuple(dest_in_view),
             required_origins,
             6,
             build_cost_weight,
             dest_weights_items,
-        ) if len(origin_list) >= 6 else []
+        ) if len(origin_list_local) >= 6 else []
     )
     common_origins6 = []
     if six_list:
@@ -1193,7 +1298,7 @@ def render_top_combos(
             key=f"{key_prefix}_top5_sixes",
         )
         six_name = selected_six.rsplit(" (", 1)[0]
-        six_indices = [origin_list.index(name) for name in six_name.split(" + ")]
+        six_indices = [origin_list_local.index(name) for name in six_name.split(" + ")]
         six_avg_cost, six_avg_time = combo_avg_cost_time(six_indices)
         prev_combo = best_combo_indices(5)
         if prev_combo:
@@ -1231,7 +1336,7 @@ def render_top_combos(
         st.caption("Not enough origins to calculate 6-location combos.")
 
     st.markdown("Top 5 (7 locations)")
-    seven_list = (expand_from_best(six_list, 7) if len(origin_list) >= 7 else [])
+    seven_list = (expand_from_best(six_list, 7) if len(origin_list_local) >= 7 else [])
     if seven_list:
         seven_labels = [f"{name} ({value:.2f})" for name, value in seven_list]
         selected_seven = st.selectbox(
@@ -1241,7 +1346,7 @@ def render_top_combos(
             key=f"{key_prefix}_top5_sevens",
         )
         seven_name = selected_seven.rsplit(" (", 1)[0]
-        seven_indices = [origin_list.index(name) for name in seven_name.split(" + ")]
+        seven_indices = [origin_list_local.index(name) for name in seven_name.split(" + ")]
         seven_avg_cost, seven_avg_time = combo_avg_cost_time(seven_indices)
         prev_combo = best_combo_indices(6)
         if prev_combo:
@@ -1275,7 +1380,7 @@ def render_top_combos(
         st.caption("Not enough origins to calculate 7-location combos.")
 
     st.markdown("Top 5 (8 locations)")
-    eight_list = (expand_from_best(seven_list, 8) if len(origin_list) >= 8 else [])
+    eight_list = (expand_from_best(seven_list, 8) if len(origin_list_local) >= 8 else [])
     if eight_list:
         eight_labels = [f"{name} ({value:.2f})" for name, value in eight_list]
         selected_eight = st.selectbox(
@@ -1285,7 +1390,7 @@ def render_top_combos(
             key=f"{key_prefix}_top5_eights",
         )
         eight_name = selected_eight.rsplit(" (", 1)[0]
-        eight_indices = [origin_list.index(name) for name in eight_name.split(" + ")]
+        eight_indices = [origin_list_local.index(name) for name in eight_name.split(" + ")]
         eight_avg_cost, eight_avg_time = combo_avg_cost_time(eight_indices)
         prev_combo = best_combo_indices(7)
         if prev_combo:
@@ -1319,7 +1424,7 @@ def render_top_combos(
         st.caption("Not enough origins to calculate 8-location combos.")
 
     st.markdown("Top 5 (9 locations)")
-    nine_list = (expand_from_best(eight_list, 9) if len(origin_list) >= 9 else [])
+    nine_list = (expand_from_best(eight_list, 9) if len(origin_list_local) >= 9 else [])
     if nine_list:
         nine_labels = [f"{name} ({value:.2f})" for name, value in nine_list]
         selected_nine = st.selectbox(
@@ -1329,7 +1434,7 @@ def render_top_combos(
             key=f"{key_prefix}_top5_nines",
         )
         nine_name = selected_nine.rsplit(" (", 1)[0]
-        nine_indices = [origin_list.index(name) for name in nine_name.split(" + ")]
+        nine_indices = [origin_list_local.index(name) for name in nine_name.split(" + ")]
         nine_avg_cost, nine_avg_time = combo_avg_cost_time(nine_indices)
         prev_combo = best_combo_indices(8)
         if prev_combo:
@@ -1364,7 +1469,7 @@ def render_top_combos(
 
     if max_k >= 10:
         st.markdown("Top 5 (10 locations)")
-        ten_list = (expand_from_best(nine_list, 10) if len(origin_list) >= 10 else [])
+        ten_list = (expand_from_best(nine_list, 10) if len(origin_list_local) >= 10 else [])
         if ten_list:
             ten_labels = [f"{name} ({value:.2f})" for name, value in ten_list]
             selected_ten = st.selectbox(
@@ -1374,7 +1479,7 @@ def render_top_combos(
                 key=f"{key_prefix}_top5_tens",
             )
             ten_name = selected_ten.rsplit(" (", 1)[0]
-            ten_indices = [origin_list.index(name) for name in ten_name.split(" + ")]
+            ten_indices = [origin_list_local.index(name) for name in ten_name.split(" + ")]
             ten_avg_cost, ten_avg_time = combo_avg_cost_time(ten_indices)
             prev_combo = best_combo_indices(9)
             if prev_combo:
@@ -1401,15 +1506,18 @@ def render_top_combos(
                 pct_1, pct_2 = combo_day_percentages(ten_indices)
                 st.caption(f"1-day coverage: {pct_1:.1f}% | 2-day coverage: {pct_2:.1f}%")
                 not_one_day = combo_not_covered(ten_indices, 1.0)
+
                 not_two_day = combo_not_covered(ten_indices, 2.0)
+
                 st.caption(f"Not covered in 1 day: {format_not_covered(not_one_day)}")
+
                 st.caption(f"Not covered in 2 days: {format_not_covered(not_two_day)}")
         else:
             st.caption("Not enough origins to calculate 10-location combos.")
 
     if max_k >= 11:
         st.markdown("Top 5 (11 locations)")
-        eleven_list = (expand_from_best(ten_list, 11) if len(origin_list) >= 11 else [])
+        eleven_list = (expand_from_best(ten_list, 11) if len(origin_list_local) >= 11 else [])
         if eleven_list:
             eleven_labels = [f"{name} ({value:.2f})" for name, value in eleven_list]
             selected_eleven = st.selectbox(
@@ -1419,7 +1527,7 @@ def render_top_combos(
                 key=f"{key_prefix}_top5_elevens",
             )
             eleven_name = selected_eleven.rsplit(" (", 1)[0]
-            eleven_indices = [origin_list.index(name) for name in eleven_name.split(" + ")]
+            eleven_indices = [origin_list_local.index(name) for name in eleven_name.split(" + ")]
             eleven_avg_cost, eleven_avg_time = combo_avg_cost_time(eleven_indices)
             prev_combo = best_combo_indices(10)
             if prev_combo:
@@ -1446,15 +1554,18 @@ def render_top_combos(
                 pct_1, pct_2 = combo_day_percentages(eleven_indices)
                 st.caption(f"1-day coverage: {pct_1:.1f}% | 2-day coverage: {pct_2:.1f}%")
                 not_one_day = combo_not_covered(eleven_indices, 1.0)
+
                 not_two_day = combo_not_covered(eleven_indices, 2.0)
+
                 st.caption(f"Not covered in 1 day: {format_not_covered(not_one_day)}")
+
                 st.caption(f"Not covered in 2 days: {format_not_covered(not_two_day)}")
         else:
             st.caption("Not enough origins to calculate 11-location combos.")
 
     if max_k >= 12:
         st.markdown("Top 5 (12 locations)")
-        twelve_list = (expand_from_best(eleven_list, 12) if len(origin_list) >= 12 else [])
+        twelve_list = (expand_from_best(eleven_list, 12) if len(origin_list_local) >= 12 else [])
         if twelve_list:
             twelve_labels = [f"{name} ({value:.2f})" for name, value in twelve_list]
             selected_twelve = st.selectbox(
@@ -1464,7 +1575,7 @@ def render_top_combos(
                 key=f"{key_prefix}_top5_twelves",
             )
             twelve_name = selected_twelve.rsplit(" (", 1)[0]
-            twelve_indices = [origin_list.index(name) for name in twelve_name.split(" + ")]
+            twelve_indices = [origin_list_local.index(name) for name in twelve_name.split(" + ")]
             twelve_avg_cost, twelve_avg_time = combo_avg_cost_time(twelve_indices)
             prev_combo = best_combo_indices(11)
             if prev_combo:
@@ -1491,15 +1602,18 @@ def render_top_combos(
                 pct_1, pct_2 = combo_day_percentages(twelve_indices)
                 st.caption(f"1-day coverage: {pct_1:.1f}% | 2-day coverage: {pct_2:.1f}%")
                 not_one_day = combo_not_covered(twelve_indices, 1.0)
+
                 not_two_day = combo_not_covered(twelve_indices, 2.0)
+
                 st.caption(f"Not covered in 1 day: {format_not_covered(not_one_day)}")
+
                 st.caption(f"Not covered in 2 days: {format_not_covered(not_two_day)}")
         else:
             st.caption("Not enough origins to calculate 12-location combos.")
 
     if max_k >= 13:
         st.markdown("Top 5 (13 locations)")
-        thirteen_list = (expand_from_best(twelve_list, 13) if len(origin_list) >= 13 else [])
+        thirteen_list = (expand_from_best(twelve_list, 13) if len(origin_list_local) >= 13 else [])
         if thirteen_list:
             thirteen_labels = [f"{name} ({value:.2f})" for name, value in thirteen_list]
             selected_thirteen = st.selectbox(
@@ -1509,7 +1623,7 @@ def render_top_combos(
                 key=f"{key_prefix}_top5_thirteens",
             )
             thirteen_name = selected_thirteen.rsplit(" (", 1)[0]
-            thirteen_indices = [origin_list.index(name) for name in thirteen_name.split(" + ")]
+            thirteen_indices = [origin_list_local.index(name) for name in thirteen_name.split(" + ")]
             thirteen_avg_cost, thirteen_avg_time = combo_avg_cost_time(thirteen_indices)
             prev_combo = best_combo_indices(12)
             if prev_combo:
@@ -1536,15 +1650,18 @@ def render_top_combos(
                 pct_1, pct_2 = combo_day_percentages(thirteen_indices)
                 st.caption(f"1-day coverage: {pct_1:.1f}% | 2-day coverage: {pct_2:.1f}%")
                 not_one_day = combo_not_covered(thirteen_indices, 1.0)
+
                 not_two_day = combo_not_covered(thirteen_indices, 2.0)
+
                 st.caption(f"Not covered in 1 day: {format_not_covered(not_one_day)}")
+
                 st.caption(f"Not covered in 2 days: {format_not_covered(not_two_day)}")
         else:
             st.caption("Not enough origins to calculate 13-location combos.")
 
     if max_k >= 14:
         st.markdown("Top 5 (14 locations)")
-        fourteen_list = (expand_from_best(thirteen_list, 14) if len(origin_list) >= 14 else [])
+        fourteen_list = (expand_from_best(thirteen_list, 14) if len(origin_list_local) >= 14 else [])
         if fourteen_list:
             fourteen_labels = [f"{name} ({value:.2f})" for name, value in fourteen_list]
             selected_fourteen = st.selectbox(
@@ -1554,7 +1671,7 @@ def render_top_combos(
                 key=f"{key_prefix}_top5_fourteens",
             )
             fourteen_name = selected_fourteen.rsplit(" (", 1)[0]
-            fourteen_indices = [origin_list.index(name) for name in fourteen_name.split(" + ")]
+            fourteen_indices = [origin_list_local.index(name) for name in fourteen_name.split(" + ")]
             fourteen_avg_cost, fourteen_avg_time = combo_avg_cost_time(fourteen_indices)
             prev_combo = best_combo_indices(13)
             if prev_combo:
@@ -1581,15 +1698,18 @@ def render_top_combos(
                 pct_1, pct_2 = combo_day_percentages(fourteen_indices)
                 st.caption(f"1-day coverage: {pct_1:.1f}% | 2-day coverage: {pct_2:.1f}%")
                 not_one_day = combo_not_covered(fourteen_indices, 1.0)
+
                 not_two_day = combo_not_covered(fourteen_indices, 2.0)
+
                 st.caption(f"Not covered in 1 day: {format_not_covered(not_one_day)}")
+
                 st.caption(f"Not covered in 2 days: {format_not_covered(not_two_day)}")
         else:
             st.caption("Not enough origins to calculate 14-location combos.")
 
     if max_k >= 15:
         st.markdown("Top 5 (15 locations)")
-        fifteen_list = (expand_from_best(fourteen_list, 15) if len(origin_list) >= 15 else [])
+        fifteen_list = (expand_from_best(fourteen_list, 15) if len(origin_list_local) >= 15 else [])
         if fifteen_list:
             fifteen_labels = [f"{name} ({value:.2f})" for name, value in fifteen_list]
             selected_fifteen = st.selectbox(
@@ -1599,7 +1719,7 @@ def render_top_combos(
                 key=f"{key_prefix}_top5_fifteens",
             )
             fifteen_name = selected_fifteen.rsplit(" (", 1)[0]
-            fifteen_indices = [origin_list.index(name) for name in fifteen_name.split(" + ")]
+            fifteen_indices = [origin_list_local.index(name) for name in fifteen_name.split(" + ")]
             fifteen_avg_cost, fifteen_avg_time = combo_avg_cost_time(fifteen_indices)
             prev_combo = best_combo_indices(14)
             if prev_combo:
@@ -1626,15 +1746,18 @@ def render_top_combos(
                 pct_1, pct_2 = combo_day_percentages(fifteen_indices)
                 st.caption(f"1-day coverage: {pct_1:.1f}% | 2-day coverage: {pct_2:.1f}%")
                 not_one_day = combo_not_covered(fifteen_indices, 1.0)
+
                 not_two_day = combo_not_covered(fifteen_indices, 2.0)
+
                 st.caption(f"Not covered in 1 day: {format_not_covered(not_one_day)}")
+
                 st.caption(f"Not covered in 2 days: {format_not_covered(not_two_day)}")
         else:
             st.caption("Not enough origins to calculate 15-location combos.")
 
     if max_k >= 16:
         st.markdown("Top 5 (16 locations)")
-        sixteen_list = (expand_from_best(fifteen_list, 16) if len(origin_list) >= 16 else [])
+        sixteen_list = (expand_from_best(fifteen_list, 16) if len(origin_list_local) >= 16 else [])
         if sixteen_list:
             sixteen_labels = [f"{name} ({value:.2f})" for name, value in sixteen_list]
             selected_sixteen = st.selectbox(
@@ -1644,7 +1767,7 @@ def render_top_combos(
                 key=f"{key_prefix}_top5_sixteens",
             )
             sixteen_name = selected_sixteen.rsplit(" (", 1)[0]
-            sixteen_indices = [origin_list.index(name) for name in sixteen_name.split(" + ")]
+            sixteen_indices = [origin_list_local.index(name) for name in sixteen_name.split(" + ")]
             sixteen_avg_cost, sixteen_avg_time = combo_avg_cost_time(sixteen_indices)
             prev_combo = best_combo_indices(15)
             if prev_combo:
@@ -1671,15 +1794,18 @@ def render_top_combos(
                 pct_1, pct_2 = combo_day_percentages(sixteen_indices)
                 st.caption(f"1-day coverage: {pct_1:.1f}% | 2-day coverage: {pct_2:.1f}%")
                 not_one_day = combo_not_covered(sixteen_indices, 1.0)
+
                 not_two_day = combo_not_covered(sixteen_indices, 2.0)
+
                 st.caption(f"Not covered in 1 day: {format_not_covered(not_one_day)}")
+
                 st.caption(f"Not covered in 2 days: {format_not_covered(not_two_day)}")
         else:
             st.caption("Not enough origins to calculate 16-location combos.")
 
     if max_k >= 17:
         st.markdown("Top 5 (17 locations)")
-        seventeen_list = (expand_from_best(sixteen_list, 17) if len(origin_list) >= 17 else [])
+        seventeen_list = (expand_from_best(sixteen_list, 17) if len(origin_list_local) >= 17 else [])
         if seventeen_list:
             seventeen_labels = [f"{name} ({value:.2f})" for name, value in seventeen_list]
             selected_seventeen = st.selectbox(
@@ -1689,7 +1815,7 @@ def render_top_combos(
                 key=f"{key_prefix}_top5_seventeens",
             )
             seventeen_name = selected_seventeen.rsplit(" (", 1)[0]
-            seventeen_indices = [origin_list.index(name) for name in seventeen_name.split(" + ")]
+            seventeen_indices = [origin_list_local.index(name) for name in seventeen_name.split(" + ")]
             seventeen_avg_cost, seventeen_avg_time = combo_avg_cost_time(seventeen_indices)
             prev_combo = best_combo_indices(16)
             if prev_combo:
@@ -1716,15 +1842,18 @@ def render_top_combos(
                 pct_1, pct_2 = combo_day_percentages(seventeen_indices)
                 st.caption(f"1-day coverage: {pct_1:.1f}% | 2-day coverage: {pct_2:.1f}%")
                 not_one_day = combo_not_covered(seventeen_indices, 1.0)
+
                 not_two_day = combo_not_covered(seventeen_indices, 2.0)
+
                 st.caption(f"Not covered in 1 day: {format_not_covered(not_one_day)}")
+
                 st.caption(f"Not covered in 2 days: {format_not_covered(not_two_day)}")
         else:
             st.caption("Not enough origins to calculate 17-location combos.")
 
     if max_k >= 18:
         st.markdown("Top 5 (18 locations)")
-        eighteen_list = (expand_from_best(seventeen_list, 18) if len(origin_list) >= 18 else [])
+        eighteen_list = (expand_from_best(seventeen_list, 18) if len(origin_list_local) >= 18 else [])
         if eighteen_list:
             eighteen_labels = [f"{name} ({value:.2f})" for name, value in eighteen_list]
             selected_eighteen = st.selectbox(
@@ -1734,7 +1863,7 @@ def render_top_combos(
                 key=f"{key_prefix}_top5_eighteens",
             )
             eighteen_name = selected_eighteen.rsplit(" (", 1)[0]
-            eighteen_indices = [origin_list.index(name) for name in eighteen_name.split(" + ")]
+            eighteen_indices = [origin_list_local.index(name) for name in eighteen_name.split(" + ")]
             eighteen_avg_cost, eighteen_avg_time = combo_avg_cost_time(eighteen_indices)
             prev_combo = best_combo_indices(17)
             if prev_combo:
@@ -1761,15 +1890,18 @@ def render_top_combos(
                 pct_1, pct_2 = combo_day_percentages(eighteen_indices)
                 st.caption(f"1-day coverage: {pct_1:.1f}% | 2-day coverage: {pct_2:.1f}%")
                 not_one_day = combo_not_covered(eighteen_indices, 1.0)
+
                 not_two_day = combo_not_covered(eighteen_indices, 2.0)
+
                 st.caption(f"Not covered in 1 day: {format_not_covered(not_one_day)}")
+
                 st.caption(f"Not covered in 2 days: {format_not_covered(not_two_day)}")
         else:
             st.caption("Not enough origins to calculate 18-location combos.")
 
     if max_k >= 19:
         st.markdown("Top 5 (19 locations)")
-        nineteen_list = (expand_from_best(eighteen_list, 19) if len(origin_list) >= 19 else [])
+        nineteen_list = (expand_from_best(eighteen_list, 19) if len(origin_list_local) >= 19 else [])
         if nineteen_list:
             nineteen_labels = [f"{name} ({value:.2f})" for name, value in nineteen_list]
             selected_nineteen = st.selectbox(
@@ -1779,7 +1911,7 @@ def render_top_combos(
                 key=f"{key_prefix}_top5_nineteens",
             )
             nineteen_name = selected_nineteen.rsplit(" (", 1)[0]
-            nineteen_indices = [origin_list.index(name) for name in nineteen_name.split(" + ")]
+            nineteen_indices = [origin_list_local.index(name) for name in nineteen_name.split(" + ")]
             nineteen_avg_cost, nineteen_avg_time = combo_avg_cost_time(nineteen_indices)
             prev_combo = best_combo_indices(18)
             if prev_combo:
@@ -1806,15 +1938,18 @@ def render_top_combos(
                 pct_1, pct_2 = combo_day_percentages(nineteen_indices)
                 st.caption(f"1-day coverage: {pct_1:.1f}% | 2-day coverage: {pct_2:.1f}%")
                 not_one_day = combo_not_covered(nineteen_indices, 1.0)
+
                 not_two_day = combo_not_covered(nineteen_indices, 2.0)
+
                 st.caption(f"Not covered in 1 day: {format_not_covered(not_one_day)}")
+
                 st.caption(f"Not covered in 2 days: {format_not_covered(not_two_day)}")
         else:
             st.caption("Not enough origins to calculate 19-location combos.")
 
     if max_k >= 20:
         st.markdown("Top 5 (20 locations)")
-        twenty_list = (expand_from_best(nineteen_list, 20) if len(origin_list) >= 20 else [])
+        twenty_list = (expand_from_best(nineteen_list, 20) if len(origin_list_local) >= 20 else [])
         if twenty_list:
             twenty_labels = [f"{name} ({value:.2f})" for name, value in twenty_list]
             selected_twenty = st.selectbox(
@@ -1824,7 +1959,7 @@ def render_top_combos(
                 key=f"{key_prefix}_top5_twenties",
             )
             twenty_name = selected_twenty.rsplit(" (", 1)[0]
-            twenty_indices = [origin_list.index(name) for name in twenty_name.split(" + ")]
+            twenty_indices = [origin_list_local.index(name) for name in twenty_name.split(" + ")]
             twenty_avg_cost, twenty_avg_time = combo_avg_cost_time(twenty_indices)
             prev_combo = best_combo_indices(19)
             if prev_combo:
@@ -1851,8 +1986,11 @@ def render_top_combos(
                 pct_1, pct_2 = combo_day_percentages(twenty_indices)
                 st.caption(f"1-day coverage: {pct_1:.1f}% | 2-day coverage: {pct_2:.1f}%")
                 not_one_day = combo_not_covered(twenty_indices, 1.0)
+
                 not_two_day = combo_not_covered(twenty_indices, 2.0)
+
                 st.caption(f"Not covered in 1 day: {format_not_covered(not_one_day)}")
+
                 st.caption(f"Not covered in 2 days: {format_not_covered(not_two_day)}")
         else:
             st.caption("Not enough origins to calculate 20-location combos.")
@@ -2398,6 +2536,7 @@ with tab_dashboard:
         built_best_time = pd.DataFrame(columns=["Destination", "BestTime"])
         one_day_destinations = pd.DataFrame(columns=["Destination", "BestTime", "Weight"])
         two_day_destinations = pd.DataFrame(columns=["Destination", "BestTime", "Weight"])
+        three_day_destinations = pd.DataFrame(columns=["Destination", "BestTime", "Weight"])
         one_day_coverage_pct = 0.0
         two_day_coverage_pct = 0.0
     else:
@@ -2430,6 +2569,7 @@ with tab_dashboard:
         )
         one_day_destinations = built_best_time[built_best_time["BestTime"] <= 1.0].copy()
         two_day_destinations = built_best_time[built_best_time["BestTime"] <= 2.0].copy()
+        three_day_destinations = built_best_time[built_best_time["BestTime"] <= 3.0].copy()
         total_weight = float(built_best_time["Weight"].sum())
         one_day_weight = float(one_day_destinations["Weight"].sum())
         two_day_weight = float(two_day_destinations["Weight"].sum())
@@ -2457,6 +2597,15 @@ with tab_dashboard:
             ascending=[False, True],
         )
         st.dataframe(two_day_display, use_container_width=True)
+    st.markdown("3-day shipping cities (built network)")
+    if three_day_destinations.empty:
+        st.caption("No destinations with 3-day shipping in the current built network.")
+    else:
+        three_day_display = three_day_destinations[["Destination", "Weight"]].sort_values(
+            ["Weight", "Destination"],
+            ascending=[False, True],
+        )
+        st.dataframe(three_day_display, use_container_width=True)
 
     st.markdown("Reduce costs suggested build")
     st.markdown("Reduce shipping times suggested build")
@@ -2768,9 +2917,15 @@ with tab_dashboard:
     with st.expander("Show filtered data"):
         st.dataframe(df, use_container_width=True)
 
+    include_boise = st.checkbox(
+        "Include Boise in all combos",
+        value=False,
+        key="main_include_boise",
+    )
     render_top_combos(
         df,
         origin_list,
+        origin_list_all,
         dest_in_view,
         dest_weights,
         build_cost_weight,
@@ -2778,6 +2933,7 @@ with tab_dashboard:
         avg_time,
         major_weight_map,
         "main",
+        required_origin="Boise" if include_boise else None,
     )
     
 
@@ -3181,9 +3337,15 @@ with tab_regionals_v3:
                     for dest in major_destinations_v3
                 }
 
+                include_boise_v3 = st.checkbox(
+                    "Include Boise in all combos (page3)",
+                    value=False,
+                    key="v3_include_boise",
+                )
                 render_top_combos(
                     regionals_v3_df,
                     origin_list_v3,
+                    origin_list_all_v3,
                     dest_in_view_v3,
                     dest_weights_v3,
                     build_cost_weight_v3,
@@ -3194,6 +3356,7 @@ with tab_regionals_v3:
                     show_day_percentages=True,
                     max_k=20,
                     baseline_origin=baseline_origin_v3,
+                    required_origin="Boise" if include_boise_v3 else None,
                 )
     else:
         st.info("page3.csv not found in the app folder.")
