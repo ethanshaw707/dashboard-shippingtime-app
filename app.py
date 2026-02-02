@@ -2397,6 +2397,7 @@ with tab_dashboard:
         slowest_destinations = []
         built_best_time = pd.DataFrame(columns=["Destination", "BestTime"])
         one_day_destinations = pd.DataFrame(columns=["Destination", "BestTime", "Weight"])
+        two_day_destinations = pd.DataFrame(columns=["Destination", "BestTime", "Weight"])
         one_day_coverage_pct = 0.0
         two_day_coverage_pct = 0.0
     else:
@@ -2428,11 +2429,10 @@ with tab_dashboard:
             .tolist()
         )
         one_day_destinations = built_best_time[built_best_time["BestTime"] <= 1.0].copy()
+        two_day_destinations = built_best_time[built_best_time["BestTime"] <= 2.0].copy()
         total_weight = float(built_best_time["Weight"].sum())
         one_day_weight = float(one_day_destinations["Weight"].sum())
-        two_day_weight = float(
-            built_best_time[built_best_time["BestTime"] <= 2.0]["Weight"].sum()
-        )
+        two_day_weight = float(two_day_destinations["Weight"].sum())
         one_day_coverage_pct = (one_day_weight / total_weight * 100.0) if total_weight else 0.0
         two_day_coverage_pct = (two_day_weight / total_weight * 100.0) if total_weight else 0.0
 
@@ -2448,6 +2448,15 @@ with tab_dashboard:
             ascending=[False, True],
         )
         st.dataframe(one_day_display, use_container_width=True)
+    st.markdown("2-day shipping cities (built network)")
+    if two_day_destinations.empty:
+        st.caption("No destinations with 2-day shipping in the current built network.")
+    else:
+        two_day_display = two_day_destinations[["Destination", "Weight"]].sort_values(
+            ["Weight", "Destination"],
+            ascending=[False, True],
+        )
+        st.dataframe(two_day_display, use_container_width=True)
 
     st.markdown("Reduce costs suggested build")
     st.markdown("Reduce shipping times suggested build")
@@ -3033,11 +3042,10 @@ with tab_regionals_v3:
                         dest_weights_v3
                     ).fillna(0.0)
                     one_day_v3 = built_best_time_v3[built_best_time_v3["BestTime"] <= 1.0].copy()
+                    two_day_v3 = built_best_time_v3[built_best_time_v3["BestTime"] <= 2.0].copy()
                     total_weight_v3 = float(built_best_time_v3["Weight"].sum())
                     one_day_weight_v3 = float(one_day_v3["Weight"].sum())
-                    two_day_weight_v3 = float(
-                        built_best_time_v3[built_best_time_v3["BestTime"] <= 2.0]["Weight"].sum()
-                    )
+                    two_day_weight_v3 = float(two_day_v3["Weight"].sum())
                     one_day_coverage_v3 = (
                         one_day_weight_v3 / total_weight_v3 * 100.0
                     ) if total_weight_v3 else 0.0
@@ -3079,6 +3087,15 @@ with tab_regionals_v3:
                             ascending=[False, True],
                         )
                         st.dataframe(one_day_v3_display, use_container_width=True)
+                    st.markdown("2-day shipping cities (page3)")
+                    if two_day_v3.empty:
+                        st.caption("No destinations with 2-day shipping in the page3 network.")
+                    else:
+                        two_day_v3_display = two_day_v3[["Destination", "Weight"]].sort_values(
+                            ["Weight", "Destination"],
+                            ascending=[False, True],
+                        )
+                        st.dataframe(two_day_v3_display, use_container_width=True)
                     slow_1_v3 = built_best_time_v3[built_best_time_v3["BestTime"] > 1.0][
                         "Destination"
                     ].sort_values().tolist()
