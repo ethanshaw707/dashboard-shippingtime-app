@@ -16655,3 +16655,2304 @@ Hewitt,Woodbridge,VA,Size L,16.04,3,UPS® Ground
 Hewitt,Woodside,CA,Size L,17.1,3,UPS® Ground
 Hewitt,Yorba Linda,CA,Size L,16.04,3,UPS® Ground
 Hewitt,Queens Village,NY,Size L,17.1,3,UPS® Ground
+FromAddress,ToCity,ToState,PackageSize,Cost,ShippingTimeDays,Service
+Albuquerque,Brooklyn,NY,Size L,18.12,6,UPS® Ground
+Albuquerque,Phoenix,AZ,Size L,11.36,2,UPS® Ground
+Albuquerque,Houston,TX,Size L,14.74,2,UPS® Ground
+Albuquerque,San Antonio,TX,Size L,14.74,2,UPS® Ground
+Albuquerque,Jacksonville,FL,Size L,17.1,3,UPS® Ground
+Albuquerque,Chicago,IL,Size L,16.04,4,UPS® Ground
+Albuquerque,Dallas,TX,Size L,11.36,2,UPS® Ground
+Albuquerque,Wilmington,DE,Size L,17.1,4,UPS® Ground
+Albuquerque,Austin,TX,Size L,14.74,2,UPS® Ground
+Albuquerque,Canton,OH,Size L,17.1,5,UPS® Ground
+Albuquerque,Charlotte,NC,Size L,17.1,3,UPS® Ground
+Albuquerque,New York,NY,Size L,18.12,6,UPS® Ground
+Albuquerque,Atlanta,GA,Size L,16.04,3,UPS® Ground
+Albuquerque,Franklin,TN,Size L,16.04,3,UPS® Ground
+Albuquerque,Lexington,KY,Size L,16.04,4,UPS® Ground
+Albuquerque,Orlando,FL,Size L,17.1,3,UPS® Ground
+Albuquerque,Rochester,NY,Size L,17.1,5,UPS® Ground
+Albuquerque,Las Vegas,NV,Size L,11.36,2,UPS® Ground
+Albuquerque,Louisville,KY,Size L,16.04,4,UPS® Ground
+Albuquerque,Marietta,GA,Size L,16.04,3,UPS® Ground
+Albuquerque,Colorado Springs,CO,Size L,11.36,3,UPS® Ground
+Albuquerque,Columbus,OH,Size L,16.04,5,UPS® Ground
+Albuquerque,Marble Falls,TX,Size L,14.74,2,UPS® Ground
+Albuquerque,Tampa,FL,Size L,17.1,3,UPS® Ground
+Albuquerque,San Diego,CA,Size L,14.74,3,UPS® Ground
+Albuquerque,Columbia,SC,Size L,17.1,3,UPS® Ground
+Albuquerque,Greenville,SC,Size L,16.04,3,UPS® Ground
+Albuquerque,Lebanon,TN,Size L,16.04,3,UPS® Ground
+Albuquerque,Salem,OR,Size L,16.04,4,UPS® Ground
+Albuquerque,Cleveland,OH,Size L,17.1,5,UPS® Ground
+Albuquerque,Denver,CO,Size L,11.36,3,UPS® Ground
+Albuquerque,Omaha,NE,Size L,14.74,4,UPS® Ground
+Albuquerque,Portland,OR,Size L,16.04,4,UPS® Ground
+Albuquerque,Raleigh,NC,Size L,17.1,3,UPS® Ground
+Albuquerque,Richmond,VA,Size L,17.1,4,UPS® Ground
+Albuquerque,Jackson,MS,Size L,14.74,3,UPS® Ground
+Albuquerque,Albany,NY,Size L,18.12,5,UPS® Ground
+Albuquerque,Fort Worth,TX,Size L,11.36,2,UPS® Ground
+Albuquerque,Oklahoma City,OK,Size L,11.36,2,UPS® Ground
+Albuquerque,Chesapeake,VA,Size L,17.1,4,UPS® Ground
+Albuquerque,Miami,FL,Size L,17.1,4,UPS® Ground
+Albuquerque,Milford,CT,Size L,18.12,6,UPS® Ground
+Albuquerque,Pittsburgh,PA,Size L,17.1,5,UPS® Ground
+Albuquerque,San Francisco,CA,Size L,14.74,3,UPS® Ground
+Albuquerque,San Jose,CA,Size L,14.74,3,UPS® Ground
+Albuquerque,Tucson,AZ,Size L,11.36,2,UPS® Ground
+Albuquerque,Virginia Beach,VA,Size L,17.1,4,UPS® Ground
+Albuquerque,Albuquerque,NM,Size L,9.41,1,UPS® Ground
+Albuquerque,Gilbert,AZ,Size L,11.36,2,UPS® Ground
+Albuquerque,Springfield,IL,Size L,14.74,3,UPS® Ground
+Albuquerque,Alexandria,VA,Size L,17.1,4,UPS® Ground
+Albuquerque,Kansas City,MO,Size L,14.74,3,UPS® Ground
+Albuquerque,Knoxville,TN,Size L,16.04,3,UPS® Ground
+Albuquerque,Lakewood,CO,Size L,11.36,3,UPS® Ground
+Albuquerque,Nashville,TN,Size L,16.04,3,UPS® Ground
+Albuquerque,Saint Louis,MO,Size L,14.74,3,UPS® Ground
+Albuquerque,Seattle,WA,Size L,16.04,4,UPS® Ground
+Albuquerque,Arlington,TX,Size L,11.36,2,UPS® Ground
+Albuquerque,Aurora,CO,Size L,11.36,3,UPS® Ground
+Albuquerque,Boise,ID,Size L,14.74,4,UPS® Ground
+Albuquerque,Indianapolis,IN,Size L,16.04,5,UPS® Ground
+Albuquerque,Naples,CO,Size L,10.41,,UPS® Ground
+Albuquerque,Reno,NV,Size L,14.74,3,UPS® Ground
+Albuquerque,Riverside,CA,Size L,11.36,3,UPS® Ground
+Albuquerque,Bismarck,ND,Size L,14.74,5,UPS® Ground
+Albuquerque,Fresno,TX,Size L,14.74,2,UPS® Ground
+Albuquerque,Lincoln,RI,Size L,18.12,6,UPS® Ground
+Albuquerque,Los Angeles,CA,Size L,14.74,3,UPS® Ground
+Albuquerque,Mansfield,MA,Size L,18.12,6,UPS® Ground
+Albuquerque,Milwaukee,WI,Size L,16.04,4,UPS® Ground
+Albuquerque,Madison,IN,Size L,16.04,5,UPS® Ground
+Albuquerque,Mesa,AZ,Size L,11.36,2,UPS® Ground
+Albuquerque,Monroe,NC,Size L,17.1,3,UPS® Ground
+Albuquerque,Philadelphia,PA,Size L,17.1,5,UPS® Ground
+Albuquerque,Staten Island,NY,Size L,17.1,6,UPS® Ground
+Albuquerque,Washington,DC,Size L,17.1,4,UPS® Ground
+Albuquerque,Baltimore,MD,Size L,17.1,4,UPS® Ground
+Albuquerque,Decatur,IL,Size L,14.74,3,UPS® Ground
+Albuquerque,Durham,NC,Size L,17.1,3,UPS® Ground
+Albuquerque,Fayetteville,AR,Size L,14.74,2,UPS® Ground
+Albuquerque,Glendale,AZ,Size L,11.36,2,UPS® Ground
+Albuquerque,Midland,GA,Size L,16.04,3,UPS® Ground
+Albuquerque,Scottsdale,AZ,Size L,11.36,2,UPS® Ground
+Albuquerque,Woodstock,GA,Size L,16.04,3,UPS® Ground
+Albuquerque,Chandler,AZ,Size L,11.36,2,UPS® Ground
+Albuquerque,Cincinnati,OH,Size L,16.04,5,UPS® Ground
+Albuquerque,Covington,LA,Size L,16.04,3,UPS® Ground
+Albuquerque,Fort Myers,FL,Size L,17.1,4,UPS® Ground
+Albuquerque,Greensboro,NC,Size L,17.1,3,UPS® Ground
+Albuquerque,Henderson,TX,Size L,14.74,2,UPS® Ground
+Albuquerque,Hamilton,MI,Size L,16.04,4,UPS® Ground
+Albuquerque,Lewisburg,PA,Size L,17.1,5,UPS® Ground
+Albuquerque,Littleton,CO,Size L,11.36,3,UPS® Ground
+Albuquerque,Mount Pleasant,SC,Size L,17.1,3,UPS® Ground
+Albuquerque,Pasadena,MD,Size L,17.1,4,UPS® Ground
+Albuquerque,Plano,TX,Size L,11.36,2,UPS® Ground
+Albuquerque,Sanford,NC,Size L,17.1,3,UPS® Ground
+Albuquerque,Wayne,ME,Size L,18.12,6,UPS® Ground
+Albuquerque,Ashland,PA,Size L,17.1,5,UPS® Ground
+Albuquerque,Burlington,WI,Size L,16.04,4,UPS® Ground
+Albuquerque,Centerville,IA,Size L,14.74,3,UPS® Ground
+Albuquerque,Clayton,NC,Size L,17.1,3,UPS® Ground
+Albuquerque,Encinitas,CA,Size L,11.36,3,UPS® Ground
+Albuquerque,Fort Collins,CO,Size L,11.36,3,UPS® Ground
+Albuquerque,Golden,CO,Size L,11.36,3,UPS® Ground
+Albuquerque,Hudson,NC,Size L,17.1,3,UPS® Ground
+Albuquerque,Katy,TX,Size L,16.04,2,UPS® Ground
+Albuquerque,Lancaster,SC,Size L,17.1,3,UPS® Ground
+Albuquerque,Newark,NJ,Size L,17.1,6,UPS® Ground
+Albuquerque,Parker,CO,Size L,11.36,3,UPS® Ground
+Albuquerque,Plymouth,MA,Size L,18.12,6,UPS® Ground
+Albuquerque,Rancho Cucamonga,CA,Size L,14.74,3,UPS® Ground
+Albuquerque,Rockville,MD,Size L,17.1,4,UPS® Ground
+Albuquerque,Sacramento,CA,Size L,14.74,3,UPS® Ground
+Albuquerque,Tallahassee,FL,Size L,16.04,3,UPS® Ground
+Albuquerque,The Villages,FL,Size L,17.1,3,UPS® Ground
+Albuquerque,Westfield,IN,Size L,16.04,5,UPS® Ground
+Albuquerque,Waterloo,IA,Size L,14.74,3,UPS® Ground
+Albuquerque,West Chester,PA,Size L,17.1,5,UPS® Ground
+Albuquerque,Bend,OR,Size L,14.74,4,UPS® Ground
+Albuquerque,Amarillo,TX,Size L,10.41,1,UPS® Ground
+Albuquerque,Auburn,MA,Size L,18.12,6,UPS® Ground
+Albuquerque,Bakersfield,CA,Size L,14.74,3,UPS® Ground
+Albuquerque,Boca Raton,FL,Size L,17.1,4,UPS® Ground
+Albuquerque,Benton,LA,Size L,14.74,2,UPS® Ground
+Albuquerque,Bradenton,FL,Size L,17.1,4,UPS® Ground
+Albuquerque,Dayton,OH,Size L,16.04,5,UPS® Ground
+Albuquerque,Duluth,MN,Size L,16.04,4,UPS® Ground
+Albuquerque,Englewood,CO,Size L,11.36,3,UPS® Ground
+Albuquerque,Fort Wayne,IN,Size L,16.04,4,UPS® Ground
+Albuquerque,Frederick,MD,Size L,17.1,4,UPS® Ground
+Albuquerque,Fredericksburg,VA,Size L,17.1,4,UPS® Ground
+Albuquerque,Gainesville,FL,Size L,17.1,3,UPS® Ground
+Albuquerque,Grand Rapids,MI,Size L,16.04,4,UPS® Ground
+Albuquerque,Green Bay,WI,Size L,16.04,5,UPS® Ground
+Albuquerque,Morgantown,WV,Size L,17.1,4,UPS® Ground
+Albuquerque,Pensacola,FL,Size L,16.04,3,UPS® Ground
+Albuquerque,Princeton,MA,Size L,18.12,6,UPS® Ground
+Albuquerque,Peoria,AZ,Size L,11.36,2,UPS® Ground
+Albuquerque,Saint Paul,MN,Size L,14.74,4,UPS® Ground
+Albuquerque,Savannah,GA,Size L,17.1,3,UPS® Ground
+Albuquerque,Seaford,NY,Size L,18.12,6,UPS® Ground
+Albuquerque,Seymour,IN,Size L,16.04,5,UPS® Ground
+Albuquerque,Spokane,WA,Size L,16.04,4,UPS® Ground
+Albuquerque,Windsor,CO,Size L,11.36,3,UPS® Ground
+Albuquerque,Winston-Salem,NC,Size L,17.1,3,UPS® Ground
+Albuquerque,Worcester,MA,Size L,18.12,6,UPS® Ground
+Albuquerque,York,PA,Size L,17.1,5,UPS® Ground
+Albuquerque,Antioch,TN,Size L,16.04,3,UPS® Ground
+Albuquerque,Athens,GA,Size L,16.04,3,UPS® Ground
+Albuquerque,Corona,CA,Size L,14.74,3,UPS® Ground
+Albuquerque,Fairfield,CA,Size L,14.74,3,UPS® Ground
+Albuquerque,Germantown,MD,Size L,17.1,4,UPS® Ground
+Albuquerque,Hillsboro,OR,Size L,16.04,4,UPS® Ground
+Albuquerque,Hope Mills,NC,Size L,17.1,3,UPS® Ground
+Albuquerque,Hendersonville,NC,Size L,16.04,3,UPS® Ground
+Albuquerque,Holly Springs,MS,Size L,14.74,3,UPS® Ground
+Albuquerque,Homer,AK,Size L,46.14,5,UPS® Ground
+Albuquerque,Laurel,MD,Size L,17.1,4,UPS® Ground
+Albuquerque,Long Beach,CA,Size L,14.74,3,UPS® Ground
+Albuquerque,Manteca,CA,Size L,14.74,3,UPS® Ground
+Albuquerque,Maryville,TN,Size L,16.04,3,UPS® Ground
+Albuquerque,Magnolia,MS,Size L,14.74,3,UPS® Ground
+Albuquerque,Memphis,TN,Size L,14.74,3,UPS® Ground
+Albuquerque,Milton,MA,Size L,18.12,6,UPS® Ground
+Albuquerque,Montgomery,TX,Size L,14.74,2,UPS® Ground
+Albuquerque,Myrtle Beach,SC,Size L,17.1,3,UPS® Ground
+Albuquerque,New Market,AL,Size L,16.04,3,UPS® Ground
+Albuquerque,Ocala,FL,Size L,17.1,3,UPS® Ground
+Albuquerque,Olathe,KS,Size L,14.74,4,UPS® Ground
+Albuquerque,Oxford,MI,Size L,16.04,5,UPS® Ground
+Albuquerque,Palm Beach Gardens,FL,Size L,17.1,4,UPS® Ground
+Albuquerque,Roseville,CA,Size L,14.74,3,UPS® Ground
+Albuquerque,Roswell,GA,Size L,16.04,3,UPS® Ground
+Albuquerque,Rockwall,TX,Size L,11.36,2,UPS® Ground
+Albuquerque,Spring,TX,Size L,14.74,2,UPS® Ground
+Albuquerque,Salisbury,MA,Size L,18.12,6,UPS® Ground
+Albuquerque,Santa Rosa,CA,Size L,14.74,3,UPS® Ground
+Albuquerque,Sarasota,FL,Size L,17.1,4,UPS® Ground
+Albuquerque,Vancouver,WA,Size L,16.04,4,UPS® Ground
+Albuquerque,Westminster,MD,Size L,17.1,4,UPS® Ground
+Albuquerque,Canton,GA,Size L,16.04,3,UPS® Ground
+Albuquerque,Columbia,MO,Size L,14.74,3,UPS® Ground
+Albuquerque,Naples,FL,Size L,17.1,4,UPS® Ground
+Albuquerque,Fresno,CA,Size L,14.74,3,UPS® Ground
+Albuquerque,Cleveland,TN,Size L,16.04,3,UPS® Ground
+Albuquerque,Henderson,NV,Size L,11.36,2,UPS® Ground
+Albuquerque,Lincoln,NE,Size L,14.74,4,UPS® Ground
+Albuquerque,Wilmington,NC,Size L,17.1,3,UPS® Ground
+Albuquerque,Arvada,CO,Size L,11.36,3,UPS® Ground
+Albuquerque,Anchorage,AK,Size L,46.14,5,UPS® Ground
+Albuquerque,Birmingham,AL,Size L,16.04,3,UPS® Ground
+Albuquerque,Bozeman,MT,Size L,14.74,4,UPS® Ground
+Albuquerque,Conroe,TX,Size L,14.74,2,UPS® Ground
+Albuquerque,Carmel Valley,CA,Size L,14.74,3,UPS® Ground
+Albuquerque,Castle Rock,CO,Size L,11.36,3,UPS® Ground
+Albuquerque,Cedar Rapids,IA,Size L,14.74,3,UPS® Ground
+Albuquerque,Cooperstown,NY,Size L,17.1,5,UPS® Ground
+Albuquerque,Deland,FL,Size L,17.1,3,UPS® Ground
+Albuquerque,Fort Mill,SC,Size L,17.1,3,UPS® Ground
+Albuquerque,Fargo,ND,Size L,14.74,4,UPS® Ground
+Albuquerque,Glen Allen,VA,Size L,17.1,4,UPS® Ground
+Albuquerque,Grand Junction,CO,Size L,10.41,3,UPS® Ground
+Albuquerque,Highlands Ranch,CO,Size L,11.36,3,UPS® Ground
+Albuquerque,Joliet,IL,Size L,16.04,4,UPS® Ground
+Albuquerque,Kerrville,TX,Size L,14.74,2,UPS® Ground
+Albuquerque,Longmont,CO,Size L,11.36,3,UPS® Ground
+Albuquerque,Minneapolis,MN,Size L,14.74,4,UPS® Ground
+Albuquerque,Naperville,IL,Size L,16.04,4,UPS® Ground
+Albuquerque,Neosho,MO,Size L,14.74,3,UPS® Ground
+Albuquerque,Puyallup,WA,Size L,16.04,4,UPS® Ground
+Albuquerque,Queen Creek,AZ,Size L,11.36,2,UPS® Ground
+Albuquerque,Saline,MI,Size L,16.04,5,UPS® Ground
+Albuquerque,Sevierville,TN,Size L,16.04,3,UPS® Ground
+Albuquerque,Sterling Heights,MI,Size L,16.04,5,UPS® Ground
+Albuquerque,Thornton,CO,Size L,11.36,3,UPS® Ground
+Albuquerque,Ventura,CA,Size L,14.74,3,UPS® Ground
+Albuquerque,Wilmington,MA,Size L,18.12,6,UPS® Ground
+Albuquerque,Clermont,FL,Size L,17.1,3,UPS® Ground
+Albuquerque,Abilene,TX,Size L,11.36,2,UPS® Ground
+Albuquerque,Brick,NJ,Size L,18.12,6,UPS® Ground
+Albuquerque,Bentonville,AR,Size L,14.74,2,UPS® Ground
+Albuquerque,Bogart,GA,Size L,16.04,3,UPS® Ground
+Albuquerque,Boston,MA,Size L,18.12,6,UPS® Ground
+Albuquerque,Buffalo,NY,Size L,17.1,5,UPS® Ground
+Albuquerque,Cary,NC,Size L,17.1,3,UPS® Ground
+Albuquerque,Dallas,GA,Size L,16.04,3,UPS® Ground
+Albuquerque,Doylestown,PA,Size L,17.1,5,UPS® Ground
+Albuquerque,Eugene,OR,Size L,16.04,4,UPS® Ground
+Albuquerque,Edmond,OK,Size L,11.36,2,UPS® Ground
+Albuquerque,Forney,TX,Size L,14.74,2,UPS® Ground
+Albuquerque,Fuquay Varina,NC,Size L,17.1,3,UPS® Ground
+Albuquerque,Glendora,CA,Size L,14.74,3,UPS® Ground
+Albuquerque,Henrico,VA,Size L,17.1,4,UPS® Ground
+Albuquerque,Hockessin,DE,Size L,17.1,4,UPS® Ground
+Albuquerque,Holly Springs,NC,Size L,17.1,3,UPS® Ground
+Albuquerque,Irvine,CA,Size L,14.74,3,UPS® Ground
+Albuquerque,Lakeland,FL,Size L,17.1,3,UPS® Ground
+Albuquerque,Lawrence,KS,Size L,14.74,3,UPS® Ground
+Albuquerque,League City,TX,Size L,14.74,2,UPS® Ground
+Albuquerque,Mansfield,TX,Size L,11.36,2,UPS® Ground
+Albuquerque,Madison,WI,Size L,16.04,4,UPS® Ground
+Albuquerque,McKinney,TX,Size L,11.36,2,UPS® Ground
+Albuquerque,Mentor,OH,Size L,17.1,5,UPS® Ground
+Albuquerque,Mount Airy,MD,Size L,17.1,4,UPS® Ground
+Albuquerque,Norfolk,VA,Size L,17.1,4,UPS® Ground
+Albuquerque,Nampa,ID,Size L,14.74,4,UPS® Ground
+Albuquerque,Noblesville,IN,Size L,16.04,5,UPS® Ground
+Albuquerque,Orland Park,IL,Size L,16.04,4,UPS® Ground
+Albuquerque,Palm Harbor,FL,Size L,17.1,3,UPS® Ground
+Albuquerque,Petaluma,CA,Size L,14.74,3,UPS® Ground
+Albuquerque,Placentia,CA,Size L,14.74,3,UPS® Ground
+Albuquerque,Prescott,AZ,Size L,11.36,2,UPS® Ground
+Albuquerque,Richardson,TX,Size L,11.36,2,UPS® Ground
+Albuquerque,Roanoke,VA,Size L,17.1,4,UPS® Ground
+Albuquerque,Richmond,TX,Size L,16.04,2,UPS® Ground
+Albuquerque,Sanford,ME,Size L,18.12,6,UPS® Ground
+Albuquerque,Seminole,FL,Size L,17.1,3,UPS® Ground
+Albuquerque,Sheridan,WY,Size L,14.74,4,UPS® Ground
+Albuquerque,Sparks,NV,Size L,14.74,3,UPS® Ground
+Albuquerque,Traverse City,MI,Size L,16.04,5,UPS® Ground
+Albuquerque,Tulsa,OK,Size L,14.74,2,UPS® Ground
+Albuquerque,Wake Forest,NC,Size L,17.1,3,UPS® Ground
+Albuquerque,Waterloo,SC,Size L,16.04,3,UPS® Ground
+Albuquerque,Waukesha,WI,Size L,16.04,4,UPS® Ground
+Albuquerque,Wichita,KS,Size L,11.36,4,UPS® Ground
+Albuquerque,Winnsboro,TX,Size L,14.74,2,UPS® Ground
+Albuquerque,Woodbury,MN,Size L,14.74,4,UPS® Ground
+Albuquerque,Cumming,GA,Size L,16.04,3,UPS® Ground
+Albuquerque,Muskegon,MI,Size L,16.04,4,UPS® Ground
+Albuquerque,Akron,OH,Size L,16.04,5,UPS® Ground
+Albuquerque,Albany,OR,Size L,16.04,4,UPS® Ground
+Albuquerque,Alpharetta,GA,Size L,16.04,3,UPS® Ground
+Albuquerque,Asheville,NC,Size L,16.04,3,UPS® Ground
+Albuquerque,Bixby,OK,Size L,11.36,2,UPS® Ground
+Albuquerque,Boulder,CO,Size L,11.36,3,UPS® Ground
+Albuquerque,Bethlehem,PA,Size L,17.1,5,UPS® Ground
+Albuquerque,Brenham,TX,Size L,14.74,2,UPS® Ground
+Albuquerque,Broken Bow,OK,Size L,11.36,2,UPS® Ground
+Albuquerque,Cape Coral,FL,Size L,17.1,4,UPS® Ground
+Albuquerque,Chula Vista,CA,Size L,11.36,3,UPS® Ground
+Albuquerque,Crawfordville,FL,Size L,16.04,3,UPS® Ground
+Albuquerque,Cypress,TX,Size L,16.04,2,UPS® Ground
+Albuquerque,Clearwater,FL,Size L,17.1,3,UPS® Ground
+Albuquerque,Columbiana,AL,Size L,16.04,3,UPS® Ground
+Albuquerque,Columbus,GA,Size L,16.04,3,UPS® Ground
+Albuquerque,Commack,NY,Size L,18.12,6,UPS® Ground
+Albuquerque,Dublin,CA,Size L,14.74,3,UPS® Ground
+Albuquerque,Decatur,GA,Size L,16.04,3,UPS® Ground
+Albuquerque,Deltona,FL,Size L,17.1,3,UPS® Ground
+Albuquerque,Derry,NH,Size L,18.12,6,UPS® Ground
+Albuquerque,Douglassville,PA,Size L,17.1,5,UPS® Ground
+Albuquerque,Easton,PA,Size L,17.1,5,UPS® Ground
+Albuquerque,El Paso,TX,Size L,11.36,1,UPS® Ground
+Albuquerque,Escondido,CA,Size L,11.36,3,UPS® Ground
+Albuquerque,Fairport,NY,Size L,17.1,5,UPS® Ground
+Albuquerque,Flemington,NJ,Size L,17.1,6,UPS® Ground
+Albuquerque,Florence,SC,Size L,17.1,3,UPS® Ground
+Albuquerque,Fort Lauderdale,FL,Size L,17.1,4,UPS® Ground
+Albuquerque,Frisco,TX,Size L,11.36,2,UPS® Ground
+Albuquerque,Goodyear,AZ,Size L,11.36,2,UPS® Ground
+Albuquerque,Gays Mills,WI,Size L,14.74,6,UPS® Ground
+Albuquerque,Grafton,WI,Size L,16.04,4,UPS® Ground
+Albuquerque,Green Cove Springs,FL,Size L,17.1,3,UPS® Ground
+Albuquerque,Greensburg,PA,Size L,17.1,5,UPS® Ground
+Albuquerque,Honolulu,HI,Size L,46.14,4,UPS® Ground
+Albuquerque,Humble,TX,Size L,14.74,2,UPS® Ground
+Albuquerque,Huntington,NY,Size L,18.12,6,UPS® Ground
+Albuquerque,Idaho Falls,ID,Size L,14.74,3,UPS® Ground
+Albuquerque,Jackson,TN,Size L,14.74,3,UPS® Ground
+Albuquerque,Jacksonville,NC,Size L,17.1,3,UPS® Ground
+Albuquerque,Jenkintown,PA,Size L,17.1,5,UPS® Ground
+Albuquerque,Johnson City,TN,Size L,16.04,4,UPS® Ground
+Albuquerque,Kingwood,TX,Size L,14.74,2,UPS® Ground
+Albuquerque,Lansing,MI,Size L,16.04,5,UPS® Ground
+Albuquerque,Lapeer,MI,Size L,16.04,5,UPS® Ground
+Albuquerque,Lawrenceville,GA,Size L,16.04,3,UPS® Ground
+Albuquerque,Lexington,NC,Size L,17.1,3,UPS® Ground
+Albuquerque,Lubbock,TX,Size L,11.36,1,UPS® Ground
+Albuquerque,Medina,OH,Size L,17.1,5,UPS® Ground
+Albuquerque,Macomb,MI,Size L,16.04,5,UPS® Ground
+Albuquerque,Magnolia,TX,Size L,14.74,2,UPS® Ground
+Albuquerque,Martinsburg,WV,Size L,17.1,4,UPS® Ground
+Albuquerque,Meridian,ID,Size L,14.74,4,UPS® Ground
+Albuquerque,Mobile,AL,Size L,16.04,3,UPS® Ground
+Albuquerque,Morrison,CO,Size L,11.36,3,UPS® Ground
+Albuquerque,Napa,CA,Size L,14.74,3,UPS® Ground
+Albuquerque,New Braunfels,TX,Size L,14.74,2,UPS® Ground
+Albuquerque,New Lenox,IL,Size L,16.04,4,UPS® Ground
+Albuquerque,New Orleans,LA,Size L,16.04,3,UPS® Ground
+Albuquerque,Newark,DE,Size L,17.1,4,UPS® Ground
+Albuquerque,Oakland,CA,Size L,14.74,3,UPS® Ground
+Albuquerque,Owasso,OK,Size L,11.36,2,UPS® Ground
+Albuquerque,Overland Park,KS,Size L,14.74,4,UPS® Ground
+Albuquerque,Panama City,FL,Size L,16.04,3,UPS® Ground
+Albuquerque,Panama City Beach,FL,Size L,16.04,3,UPS® Ground
+Albuquerque,Patchogue,NY,Size L,18.12,6,UPS® Ground
+Albuquerque,Port Clinton,OH,Size L,16.04,5,UPS® Ground
+Albuquerque,Paducah,KY,Size L,14.74,3,UPS® Ground
+Albuquerque,Palmetto,FL,Size L,17.1,4,UPS® Ground
+Albuquerque,Pearland,TX,Size L,14.74,2,UPS® Ground
+Albuquerque,Pella,IA,Size L,14.74,3,UPS® Ground
+Albuquerque,Pittsford,NY,Size L,17.1,5,UPS® Ground
+Albuquerque,Port Orange,FL,Size L,17.1,3,UPS® Ground
+Albuquerque,Ravenna,OH,Size L,17.1,5,UPS® Ground
+Albuquerque,Roaming Shores,OH,Size L,17.1,5,UPS® Ground
+Albuquerque,Richmond Hill,GA,Size L,17.1,3,UPS® Ground
+Albuquerque,Riverview,FL,Size L,17.1,3,UPS® Ground
+Albuquerque,Rochester,MN,Size L,14.74,4,UPS® Ground
+Albuquerque,Round Rock,TX,Size L,14.74,2,UPS® Ground
+Albuquerque,Saint Petersburg,FL,Size L,17.1,3,UPS® Ground
+Albuquerque,San Leandro,CA,Size L,14.74,3,UPS® Ground
+Albuquerque,Southington,CT,Size L,18.12,6,UPS® Ground
+Albuquerque,Spartanburg,SC,Size L,16.04,3,UPS® Ground
+Albuquerque,Surprise,AZ,Size L,11.36,2,UPS® Ground
+Albuquerque,Santa Barbara,CA,Size L,14.74,3,UPS® Ground
+Albuquerque,Shelton,CT,Size L,18.12,6,UPS® Ground
+Albuquerque,Spring Branch,TX,Size L,14.74,2,UPS® Ground
+Albuquerque,St. Louis,MO,Size L,14.74,3,UPS® Ground
+Albuquerque,Stroudsburg,PA,Size L,17.1,5,UPS® Ground
+Albuquerque,Sunapee,NH,Size L,18.12,6,UPS® Ground
+Albuquerque,Swedesboro,NJ,Size L,17.1,5,UPS® Ground
+Albuquerque,Syracuse,NY,Size L,17.1,5,UPS® Ground
+Albuquerque,Tomball,TX,Size L,14.74,2,UPS® Ground
+Albuquerque,Topeka,KS,Size L,14.74,4,UPS® Ground
+Albuquerque,Tuscaloosa,AL,Size L,16.04,3,UPS® Ground
+Albuquerque,Terre Haute,IN,Size L,16.04,5,UPS® Ground
+Albuquerque,Tinley Park,IL,Size L,16.04,4,UPS® Ground
+Albuquerque,Toms River,NJ,Size L,18.12,6,UPS® Ground
+Albuquerque,Tulare,CA,Size L,14.74,3,UPS® Ground
+Albuquerque,Vienna,VA,Size L,17.1,4,UPS® Ground
+Albuquerque,Walnut Creek,CA,Size L,14.74,3,UPS® Ground
+Albuquerque,Wayne,NJ,Size L,17.1,6,UPS® Ground
+Albuquerque,Waynesboro,VA,Size L,17.1,4,UPS® Ground
+Albuquerque,West Sacramento,CA,Size L,14.74,3,UPS® Ground
+Albuquerque,Yuba City,CA,Size L,14.74,3,UPS® Ground
+Albuquerque,Zachary,LA,Size L,14.74,3,UPS® Ground
+Albuquerque,Buford,GA,Size L,16.04,3,UPS® Ground
+Albuquerque,Modesto,CA,Size L,14.74,3,UPS® Ground
+Albuquerque,Winter Park,FL,Size L,17.1,3,UPS® Ground
+Albuquerque,Antioch,IL,Size L,16.04,4,UPS® Ground
+Albuquerque,Algonquin,IL,Size L,16.04,4,UPS® Ground
+Albuquerque,Allen,TX,Size L,11.36,2,UPS® Ground
+Albuquerque,Ames,IA,Size L,14.74,3,UPS® Ground
+Albuquerque,Anaheim,CA,Size L,14.74,3,UPS® Ground
+Albuquerque,Aptos,CA,Size L,14.74,3,UPS® Ground
+Albuquerque,Astoria,NY,Size L,17.1,6,UPS® Ground
+Albuquerque,Bloomington,IN,Size L,16.04,5,UPS® Ground
+Albuquerque,Bremerton,WA,Size L,16.04,4,UPS® Ground
+Albuquerque,Brunswick,OH,Size L,17.1,5,UPS® Ground
+Albuquerque,Burke,VA,Size L,17.1,4,UPS® Ground
+Albuquerque,Bedford,IN,Size L,16.04,5,UPS® Ground
+Albuquerque,Benton,LA,Size L,14.74,2,UPS® Ground
+Albuquerque,Billings,MT,Size L,14.74,4,UPS® Ground
+Albuquerque,Birdsboro,PA,Size L,17.1,5,UPS® Ground
+Albuquerque,Bothell,WA,Size L,16.04,4,UPS® Ground
+Albuquerque,Bowie,MD,Size L,17.1,4,UPS® Ground
+Albuquerque,Brentwood,TN,Size L,16.04,3,UPS® Ground
+Albuquerque,Bronx,NY,Size L,18.12,6,UPS® Ground
+Albuquerque,Brookfield,WI,Size L,16.04,4,UPS® Ground
+Albuquerque,Canton,OH,Size L,17.1,5,UPS® Ground
+Albuquerque,Celina,TX,Size L,11.36,2,UPS® Ground
+Albuquerque,Chapel Hill,NC,Size L,17.1,3,UPS® Ground
+Albuquerque,Claremore,OK,Size L,11.36,2,UPS® Ground
+Albuquerque,Clovis,CA,Size L,14.74,3,UPS® Ground
+Albuquerque,Cocoa,FL,Size L,17.1,3,UPS® Ground
+Albuquerque,Callahan,FL,Size L,17.1,3,UPS® Ground
+Albuquerque,Carmel,IN,Size L,16.04,5,UPS® Ground
+Albuquerque,Cedar Park,TX,Size L,14.74,2,UPS® Ground
+Albuquerque,Centennial,CO,Size L,11.36,3,UPS® Ground
+Albuquerque,Centerville,MA,Size L,18.12,6,UPS® Ground
+Albuquerque,Charleston,SC,Size L,17.1,3,UPS® Ground
+Albuquerque,Charlottesville,VA,Size L,17.1,4,UPS® Ground
+Albuquerque,Clarkesville,GA,Size L,16.04,3,UPS® Ground
+Albuquerque,Clayton,NC,Size L,17.1,3,UPS® Ground
+Albuquerque,Clifton,NJ,Size L,18.12,6,UPS® Ground
+Albuquerque,Collinsville,OK,Size L,11.36,2,UPS® Ground
+Albuquerque,Columbia,TN,Size L,16.04,3,UPS® Ground
+Albuquerque,Concord,NC,Size L,17.1,3,UPS® Ground
+Albuquerque,Cookeville,TN,Size L,16.04,3,UPS® Ground
+Albuquerque,Corpus Christi,TX,Size L,14.74,2,UPS® Ground
+Albuquerque,Corrales,NM,Size L,9.41,1,UPS® Ground
+Albuquerque,Corydon,IN,Size L,16.04,5,UPS® Ground
+Albuquerque,Cranston,RI,Size L,18.12,6,UPS® Ground
+Albuquerque,Dekalb,IL,Size L,16.04,4,UPS® Ground
+Albuquerque,Delaware,OH,Size L,16.04,5,UPS® Ground
+Albuquerque,Delmar,NY,Size L,18.12,5,UPS® Ground
+Albuquerque,Des Moines,IA,Size L,14.74,3,UPS® Ground
+Albuquerque,Dickson,TN,Size L,16.04,3,UPS® Ground
+Albuquerque,Downers Grove,IL,Size L,16.04,4,UPS® Ground
+Albuquerque,Dripping Springs,TX,Size L,14.74,2,UPS® Ground
+Albuquerque,Eustis,FL,Size L,17.1,3,UPS® Ground
+Albuquerque,East Hampton,NY,Size L,18.12,6,UPS® Ground
+Albuquerque,Fenton,MO,Size L,14.74,3,UPS® Ground
+Albuquerque,Fayetteville,AR,Size L,14.74,2,UPS® Ground
+Albuquerque,Flower Mound,TX,Size L,11.36,2,UPS® Ground
+Albuquerque,Franklin,OH,Size L,16.04,5,UPS® Ground
+Albuquerque,Friendswood,TX,Size L,14.74,2,UPS® Ground
+Albuquerque,Gainesville,FL,Size L,17.1,3,UPS® Ground
+Albuquerque,Gainesville,GA,Size L,16.04,3,UPS® Ground
+Albuquerque,Glendale,CA,Size L,14.74,3,UPS® Ground
+Albuquerque,Greenville,SC,Size L,16.04,3,UPS® Ground
+Albuquerque,Greenville,MI,Size L,16.04,4,UPS® Ground
+Albuquerque,Gaithersburg,MD,Size L,17.1,4,UPS® Ground
+Albuquerque,Garner,NC,Size L,17.1,3,UPS® Ground
+Albuquerque,Gastonia,NC,Size L,17.1,3,UPS® Ground
+Albuquerque,Granada Hills,CA,Size L,14.74,3,UPS® Ground
+Albuquerque,Granbury,TX,Size L,11.36,2,UPS® Ground
+Albuquerque,Griffin,GA,Size L,16.04,3,UPS® Ground
+Albuquerque,Harpers Ferry,WV,Size L,17.1,4,UPS® Ground
+Albuquerque,Haverhill,MA,Size L,18.12,6,UPS® Ground
+Albuquerque,Hayward,CA,Size L,14.74,3,UPS® Ground
+Albuquerque,Herriman,UT,Size L,11.36,3,UPS® Ground
+Albuquerque,Hillsboro,OR,Size L,16.04,4,UPS® Ground
+Albuquerque,Hoboken,NJ,Size L,18.12,6,UPS® Ground
+Albuquerque,Huntley,IL,Size L,16.04,4,UPS® Ground
+Albuquerque,Hagerstown,MD,Size L,17.1,4,UPS® Ground
+Albuquerque,Hamilton,OH,Size L,16.04,5,UPS® Ground
+Albuquerque,Harrisburg,PA,Size L,17.1,5,UPS® Ground
+Albuquerque,Hendersonville,NC,Size L,16.04,3,UPS® Ground
+Albuquerque,Hendersonville,TN,Size L,16.04,3,UPS® Ground
+Albuquerque,Holland,MI,Size L,16.04,4,UPS® Ground
+Albuquerque,Indian Trail,NC,Size L,17.1,3,UPS® Ground
+Albuquerque,Jersey City,NJ,Size L,17.1,6,UPS® Ground
+Albuquerque,Johnstown,PA,Size L,17.1,5,UPS® Ground
+Albuquerque,Kalamazoo,MI,Size L,16.04,4,UPS® Ground
+Albuquerque,Keatchie,LA,Size L,14.74,3,UPS® Ground
+Albuquerque,Kennewick,WA,Size L,14.74,4,UPS® Ground
+Albuquerque,Kingsport,TN,Size L,16.04,4,UPS® Ground
+Albuquerque,Lake Elsinore,CA,Size L,11.36,3,UPS® Ground
+Albuquerque,Lebanon,OH,Size L,16.04,5,UPS® Ground
+Albuquerque,Little Rock,AR,Size L,14.74,2,UPS® Ground
+Albuquerque,Livonia,MI,Size L,16.04,5,UPS® Ground
+Albuquerque,Los Alamos,NM,Size L,9.41,1,UPS® Ground
+Albuquerque,Loveland,CO,Size L,11.36,3,UPS® Ground
+Albuquerque,La Mesa,CA,Size L,11.36,3,UPS® Ground
+Albuquerque,La Quinta,CA,Size L,11.36,3,UPS® Ground
+Albuquerque,Lake Oswego,OR,Size L,16.04,4,UPS® Ground
+Albuquerque,Lake Saint Louis,MO,Size L,14.74,3,UPS® Ground
+Albuquerque,Lake in the Hills,IL,Size L,16.04,4,UPS® Ground
+Albuquerque,Lakeway,TX,Size L,14.74,2,UPS® Ground
+Albuquerque,Lancaster,NY,Size L,17.1,5,UPS® Ground
+Albuquerque,Leander,TX,Size L,14.74,2,UPS® Ground
+Albuquerque,Lees Summit,MO,Size L,14.74,3,UPS® Ground
+Albuquerque,Lenoir,NC,Size L,17.1,3,UPS® Ground
+Albuquerque,Lewis Center,OH,Size L,16.04,5,UPS® Ground
+Albuquerque,Lexington,IN,Size L,16.04,5,UPS® Ground
+Albuquerque,Lodi,CA,Size L,14.74,3,UPS® Ground
+Albuquerque,Lynden,WA,Size L,16.04,4,UPS® Ground
+Albuquerque,Methuen,MA,Size L,18.12,6,UPS® Ground
+Albuquerque,Milford,CT,Size L,18.12,6,UPS® Ground
+Albuquerque,Mineola,TX,Size L,14.74,2,UPS® Ground
+Albuquerque,Missoula,MT,Size L,14.74,4,UPS® Ground
+Albuquerque,Mansfield,OH,Size L,16.04,5,UPS® Ground
+Albuquerque,McDonough,GA,Size L,16.04,3,UPS® Ground
+Albuquerque,Merritt Island,FL,Size L,17.1,3,UPS® Ground
+Albuquerque,Midlothian,VA,Size L,17.1,4,UPS® Ground
+Albuquerque,Millington,TN,Size L,14.74,3,UPS® Ground
+Albuquerque,Milton,FL,Size L,16.04,3,UPS® Ground
+Albuquerque,Moab,UT,Size L,11.36,4,UPS® Ground
+Albuquerque,Monroe,NC,Size L,17.1,3,UPS® Ground
+Albuquerque,Mooresville,IN,Size L,16.04,5,UPS® Ground
+Albuquerque,Morganton,NC,Size L,17.1,3,UPS® Ground
+Albuquerque,Murfreesboro,TN,Size L,16.04,3,UPS® Ground
+Albuquerque,Newburgh,NY,Size L,17.1,6,UPS® Ground
+Albuquerque,Navarre,FL,Size L,16.04,3,UPS® Ground
+Albuquerque,New Market,AL,Size L,16.04,3,UPS® Ground
+Albuquerque,Newnan,GA,Size L,16.04,3,UPS® Ground
+Albuquerque,Norman,OK,Size L,11.36,2,UPS® Ground
+Albuquerque,Novi,MI,Size L,16.04,5,UPS® Ground
+Albuquerque,Ormond Beach,FL,Size L,17.1,3,UPS® Ground
+Albuquerque,Owensboro,KY,Size L,16.04,3,UPS® Ground
+Albuquerque,Oconto,WI,Size L,16.04,5,UPS® Ground
+Albuquerque,Old Bridge,NJ,Size L,17.1,6,UPS® Ground
+Albuquerque,Olympia,WA,Size L,16.04,4,UPS® Ground
+Albuquerque,Oregon City,OR,Size L,16.04,4,UPS® Ground
+Albuquerque,Oxford,MI,Size L,16.04,5,UPS® Ground
+Albuquerque,Peachtree City,GA,Size L,16.04,3,UPS® Ground
+Albuquerque,Pleasanton,CA,Size L,14.74,3,UPS® Ground
+Albuquerque,Poughkeepsie,NY,Size L,18.12,6,UPS® Ground
+Albuquerque,Pagosa Springs,CO,Size L,10.41,2,UPS® Ground
+Albuquerque,Pasadena,CA,Size L,14.74,3,UPS® Ground
+Albuquerque,Pasadena,TX,Size L,14.74,2,UPS® Ground
+Albuquerque,Pasco,WA,Size L,14.74,4,UPS® Ground
+Albuquerque,Pawtucket,RI,Size L,18.12,6,UPS® Ground
+Albuquerque,Pembroke,MA,Size L,18.12,6,UPS® Ground
+Albuquerque,Perrysburg,OH,Size L,16.04,5,UPS® Ground
+Albuquerque,Plant City,FL,Size L,17.1,3,UPS® Ground
+Albuquerque,Port Orchard,WA,Size L,16.04,4,UPS® Ground
+Albuquerque,Prescott Valley,AZ,Size L,11.36,2,UPS® Ground
+Albuquerque,Princeton,NJ,Size L,17.1,6,UPS® Ground
+Albuquerque,Quincy,MA,Size L,18.12,6,UPS® Ground
+Albuquerque,Redwood City,CA,Size L,14.74,3,UPS® Ground
+Albuquerque,Rohnert Park,CA,Size L,14.74,3,UPS® Ground
+Albuquerque,Rigby,ID,Size L,14.74,4,UPS® Ground
+Albuquerque,Ripon,WI,Size L,16.04,4,UPS® Ground
+Albuquerque,Rogers,AR,Size L,14.74,2,UPS® Ground
+Albuquerque,Rowlett,TX,Size L,11.36,2,UPS® Ground
+Albuquerque,Rydal,PA,Size L,17.1,5,UPS® Ground
+Albuquerque,Shepherdsville,KY,Size L,16.04,4,UPS® Ground
+Albuquerque,Shreveport,LA,Size L,14.74,2,UPS® Ground
+Albuquerque,Stamford,CT,Size L,18.12,6,UPS® Ground
+Albuquerque,Salt Lake City,UT,Size L,11.36,3,UPS® Ground
+Albuquerque,Sanford,NC,Size L,17.1,3,UPS® Ground
+Albuquerque,Santa Ana,CA,Size L,14.74,3,UPS® Ground
+Albuquerque,Santa Cruz,CA,Size L,14.74,3,UPS® Ground
+Albuquerque,Santa Fe,NM,Size L,9.41,1,UPS® Ground
+Albuquerque,Sarver,PA,Size L,17.1,5,UPS® Ground
+Albuquerque,Schenectady,NY,Size L,18.12,5,UPS® Ground
+Albuquerque,Sierra Vista,AZ,Size L,11.36,2,UPS® Ground
+Albuquerque,Silver Spring,MD,Size L,17.1,4,UPS® Ground
+Albuquerque,South Jordan,UT,Size L,11.36,3,UPS® Ground
+Albuquerque,Springfield,MO,Size L,14.74,3,UPS® Ground
+Albuquerque,Summerville,SC,Size L,17.1,3,UPS® Ground
+Albuquerque,Sumter,SC,Size L,17.1,3,UPS® Ground
+Albuquerque,Sun City,AZ,Size L,11.36,2,UPS® Ground
+Albuquerque,Syosset,NY,Size L,18.12,6,UPS® Ground
+Albuquerque,Taunton,MA,Size L,18.12,6,UPS® Ground
+Albuquerque,Texarkana,TX,Size L,14.74,2,UPS® Ground
+Albuquerque,Toledo,OH,Size L,16.04,5,UPS® Ground
+Albuquerque,Urbana,OH,Size L,16.04,5,UPS® Ground
+Albuquerque,Valparaiso,IN,Size L,16.04,4,UPS® Ground
+Albuquerque,Waco,TX,Size L,14.74,2,UPS® Ground
+Albuquerque,West Lafayette,IN,Size L,16.04,4,UPS® Ground
+Albuquerque,Winter Garden,FL,Size L,17.1,3,UPS® Ground
+Albuquerque,Winter Haven,FL,Size L,17.1,3,UPS® Ground
+Albuquerque,Wylie,TX,Size L,11.36,2,UPS® Ground
+Albuquerque,Waldorf,MD,Size L,17.1,4,UPS® Ground
+Albuquerque,Wesley Chapel,FL,Size L,17.1,3,UPS® Ground
+Albuquerque,West Palm Beach,FL,Size L,17.1,4,UPS® Ground
+Albuquerque,Williamsburg,VA,Size L,17.1,4,UPS® Ground
+Albuquerque,Woodbridge,VA,Size L,17.1,4,UPS® Ground
+Albuquerque,Woodside,CA,Size L,14.74,3,UPS® Ground
+Albuquerque,Yorba Linda,CA,Size L,14.74,3,UPS® Ground
+Albuquerque,Queens Village,NY,Size L,18.12,6,UPS® Ground
+Kansas City,Brooklyn,NY,Size L,16.04,4,UPS® Ground
+Kansas City,Phoenix,AZ,Size L,17.1,4,UPS® Ground
+Kansas City,Houston,TX,Size L,16.04,3,UPS® Ground
+Kansas City,San Antonio,TX,Size L,14.74,3,UPS® Ground
+Kansas City,Jacksonville,FL,Size L,14.74,4,UPS® Ground
+Kansas City,Chicago,IL,Size L,11.36,3,UPS® Ground
+Kansas City,Dallas,TX,Size L,11.36,3,UPS® Ground
+Kansas City,Wilmington,DE,Size L,16.04,3,UPS® Ground
+Kansas City,Austin,TX,Size L,14.74,3,UPS® Ground
+Kansas City,Canton,OH,Size L,14.74,3,UPS® Ground
+Kansas City,Charlotte,NC,Size L,14.74,3,UPS® Ground
+Kansas City,New York,NY,Size L,16.04,4,UPS® Ground
+Kansas City,Atlanta,GA,Size L,14.74,3,UPS® Ground
+Kansas City,Franklin,TN,Size L,14.74,3,UPS® Ground
+Kansas City,Lexington,KY,Size L,11.36,3,UPS® Ground
+Kansas City,Orlando,FL,Size L,16.04,4,UPS® Ground
+Kansas City,Rochester,NY,Size L,14.74,4,UPS® Ground
+Kansas City,Las Vegas,NV,Size L,17.1,4,UPS® Ground
+Kansas City,Louisville,KY,Size L,11.36,3,UPS® Ground
+Kansas City,Marietta,GA,Size L,14.74,3,UPS® Ground
+Kansas City,Colorado Springs,CO,Size L,11.36,3,UPS® Ground
+Kansas City,Columbus,OH,Size L,14.74,3,UPS® Ground
+Kansas City,Marble Falls,TX,Size L,14.74,3,UPS® Ground
+Kansas City,Tampa,FL,Size L,16.04,4,UPS® Ground
+Kansas City,San Diego,CA,Size L,16.04,4,UPS® Ground
+Kansas City,Columbia,SC,Size L,14.74,3,UPS® Ground
+Kansas City,Greenville,SC,Size L,14.74,3,UPS® Ground
+Kansas City,Lebanon,TN,Size L,14.74,3,UPS® Ground
+Kansas City,Salem,OR,Size L,17.1,4,UPS® Ground
+Kansas City,Cleveland,OH,Size L,14.74,3,UPS® Ground
+Kansas City,Denver,CO,Size L,14.74,3,UPS® Ground
+Kansas City,Omaha,NE,Size L,10.41,2,UPS® Ground
+Kansas City,Portland,OR,Size L,17.1,4,UPS® Ground
+Kansas City,Raleigh,NC,Size L,14.74,3,UPS® Ground
+Kansas City,Richmond,VA,Size L,14.74,3,UPS® Ground
+Kansas City,Jackson,MS,Size L,11.36,3,UPS® Ground
+Kansas City,Albany,NY,Size L,16.04,4,UPS® Ground
+Kansas City,Fort Worth,TX,Size L,14.74,3,UPS® Ground
+Kansas City,Oklahoma City,OK,Size L,11.36,3,UPS® Ground
+Kansas City,Chesapeake,VA,Size L,16.04,3,UPS® Ground
+Kansas City,Miami,FL,Size L,17.1,4,UPS® Ground
+Kansas City,Milford,CT,Size L,16.04,4,UPS® Ground
+Kansas City,Pittsburgh,PA,Size L,14.74,3,UPS® Ground
+Kansas City,San Francisco,CA,Size L,17.1,4,UPS® Ground
+Kansas City,San Jose,CA,Size L,17.1,4,UPS® Ground
+Kansas City,Tucson,AZ,Size L,16.04,4,UPS® Ground
+Kansas City,Virginia Beach,VA,Size L,14.74,3,UPS® Ground
+Kansas City,Albuquerque,NM,Size L,14.74,3,UPS® Ground
+Kansas City,Gilbert,AZ,Size L,16.04,4,UPS® Ground
+Kansas City,Springfield,IL,Size L,10.41,3,UPS® Ground
+Kansas City,Alexandria,VA,Size L,14.74,3,UPS® Ground
+Kansas City,Kansas City,MO,Size L,9.41,1,UPS® Ground
+Kansas City,Knoxville,TN,Size L,14.74,3,UPS® Ground
+Kansas City,Lakewood,CO,Size L,14.74,3,UPS® Ground
+Kansas City,Nashville,TN,Size L,11.36,3,UPS® Ground
+Kansas City,Saint Louis,MO,Size L,11.36,2,UPS® Ground
+Kansas City,Seattle,WA,Size L,17.1,4,UPS® Ground
+Kansas City,Arlington,TX,Size L,11.36,3,UPS® Ground
+Kansas City,Aurora,CO,Size L,14.74,3,UPS® Ground
+Kansas City,Boise,ID,Size L,16.04,4,UPS® Ground
+Kansas City,Indianapolis,IN,Size L,11.36,3,UPS® Ground
+Kansas City,Naples,CO,Size L,11.36,,UPS® Ground
+Kansas City,Reno,NV,Size L,16.04,4,UPS® Ground
+Kansas City,Riverside,CA,Size L,16.04,4,UPS® Ground
+Kansas City,Bismarck,ND,Size L,14.74,3,UPS® Ground
+Kansas City,Fresno,TX,Size L,14.74,3,UPS® Ground
+Kansas City,Lincoln,RI,Size L,16.04,4,UPS® Ground
+Kansas City,Los Angeles,CA,Size L,17.1,4,UPS® Ground
+Kansas City,Mansfield,MA,Size L,16.04,4,UPS® Ground
+Kansas City,Milwaukee,WI,Size L,11.36,3,UPS® Ground
+Kansas City,Madison,IN,Size L,11.36,3,UPS® Ground
+Kansas City,Mesa,AZ,Size L,16.04,4,UPS® Ground
+Kansas City,Monroe,NC,Size L,14.74,3,UPS® Ground
+Kansas City,Philadelphia,PA,Size L,16.04,3,UPS® Ground
+Kansas City,Staten Island,NY,Size L,16.04,4,UPS® Ground
+Kansas City,Washington,DC,Size L,14.74,3,UPS® Ground
+Kansas City,Baltimore,MD,Size L,14.74,3,UPS® Ground
+Kansas City,Decatur,IL,Size L,10.41,3,UPS® Ground
+Kansas City,Durham,NC,Size L,14.74,3,UPS® Ground
+Kansas City,Fayetteville,AR,Size L,10.41,3,UPS® Ground
+Kansas City,Glendale,AZ,Size L,16.04,4,UPS® Ground
+Kansas City,Midland,GA,Size L,11.36,3,UPS® Ground
+Kansas City,Scottsdale,AZ,Size L,16.04,4,UPS® Ground
+Kansas City,Woodstock,GA,Size L,14.74,3,UPS® Ground
+Kansas City,Chandler,AZ,Size L,16.04,4,UPS® Ground
+Kansas City,Cincinnati,OH,Size L,11.36,3,UPS® Ground
+Kansas City,Covington,LA,Size L,14.74,3,UPS® Ground
+Kansas City,Fort Myers,FL,Size L,16.04,4,UPS® Ground
+Kansas City,Greensboro,NC,Size L,14.74,3,UPS® Ground
+Kansas City,Henderson,TX,Size L,11.36,3,UPS® Ground
+Kansas City,Hamilton,MI,Size L,11.36,3,UPS® Ground
+Kansas City,Lewisburg,PA,Size L,14.74,3,UPS® Ground
+Kansas City,Littleton,CO,Size L,11.36,3,UPS® Ground
+Kansas City,Mount Pleasant,SC,Size L,14.74,3,UPS® Ground
+Kansas City,Pasadena,MD,Size L,14.74,3,UPS® Ground
+Kansas City,Plano,TX,Size L,14.74,3,UPS® Ground
+Kansas City,Sanford,NC,Size L,14.74,3,UPS® Ground
+Kansas City,Wayne,ME,Size L,16.04,4,UPS® Ground
+Kansas City,Ashland,PA,Size L,14.74,3,UPS® Ground
+Kansas City,Burlington,WI,Size L,11.36,3,UPS® Ground
+Kansas City,Centerville,IA,Size L,10.41,2,UPS® Ground
+Kansas City,Clayton,NC,Size L,14.74,3,UPS® Ground
+Kansas City,Encinitas,CA,Size L,16.04,4,UPS® Ground
+Kansas City,Fort Collins,CO,Size L,11.36,3,UPS® Ground
+Kansas City,Golden,CO,Size L,14.74,3,UPS® Ground
+Kansas City,Hudson,NC,Size L,14.74,3,UPS® Ground
+Kansas City,Katy,TX,Size L,14.74,3,UPS® Ground
+Kansas City,Lancaster,SC,Size L,14.74,3,UPS® Ground
+Kansas City,Newark,NJ,Size L,16.04,4,UPS® Ground
+Kansas City,Parker,CO,Size L,11.36,3,UPS® Ground
+Kansas City,Plymouth,MA,Size L,16.04,4,UPS® Ground
+Kansas City,Rancho Cucamonga,CA,Size L,16.04,4,UPS® Ground
+Kansas City,Rockville,MD,Size L,14.74,3,UPS® Ground
+Kansas City,Sacramento,CA,Size L,17.1,4,UPS® Ground
+Kansas City,Tallahassee,FL,Size L,14.74,4,UPS® Ground
+Kansas City,The Villages,FL,Size L,14.74,4,UPS® Ground
+Kansas City,Westfield,IN,Size L,11.36,3,UPS® Ground
+Kansas City,Waterloo,IA,Size L,10.41,2,UPS® Ground
+Kansas City,West Chester,PA,Size L,16.04,3,UPS® Ground
+Kansas City,Bend,OR,Size L,16.04,4,UPS® Ground
+Kansas City,Amarillo,TX,Size L,11.36,4,UPS® Ground
+Kansas City,Auburn,MA,Size L,16.04,4,UPS® Ground
+Kansas City,Bakersfield,CA,Size L,16.04,4,UPS® Ground
+Kansas City,Boca Raton,FL,Size L,16.04,4,UPS® Ground
+Kansas City,Benton,LA,Size L,11.36,3,UPS® Ground
+Kansas City,Bradenton,FL,Size L,16.04,4,UPS® Ground
+Kansas City,Dayton,OH,Size L,11.36,3,UPS® Ground
+Kansas City,Duluth,MN,Size L,11.36,3,UPS® Ground
+Kansas City,Englewood,CO,Size L,11.36,3,UPS® Ground
+Kansas City,Fort Wayne,IN,Size L,11.36,3,UPS® Ground
+Kansas City,Frederick,MD,Size L,14.74,3,UPS® Ground
+Kansas City,Fredericksburg,VA,Size L,14.74,3,UPS® Ground
+Kansas City,Gainesville,FL,Size L,14.74,4,UPS® Ground
+Kansas City,Grand Rapids,MI,Size L,11.36,3,UPS® Ground
+Kansas City,Green Bay,WI,Size L,11.36,3,UPS® Ground
+Kansas City,Morgantown,WV,Size L,14.74,3,UPS® Ground
+Kansas City,Pensacola,FL,Size L,14.74,3,UPS® Ground
+Kansas City,Princeton,MA,Size L,16.04,4,UPS® Ground
+Kansas City,Peoria,AZ,Size L,16.04,4,UPS® Ground
+Kansas City,Saint Paul,MN,Size L,14.74,3,UPS® Ground
+Kansas City,Savannah,GA,Size L,14.74,4,UPS® Ground
+Kansas City,Seaford,NY,Size L,16.04,4,UPS® Ground
+Kansas City,Seymour,IN,Size L,11.36,3,UPS® Ground
+Kansas City,Spokane,WA,Size L,16.04,4,UPS® Ground
+Kansas City,Windsor,CO,Size L,11.36,3,UPS® Ground
+Kansas City,Winston-Salem,NC,Size L,14.74,3,UPS® Ground
+Kansas City,Worcester,MA,Size L,16.04,4,UPS® Ground
+Kansas City,York,PA,Size L,14.74,3,UPS® Ground
+Kansas City,Antioch,TN,Size L,14.74,3,UPS® Ground
+Kansas City,Athens,GA,Size L,14.74,3,UPS® Ground
+Kansas City,Corona,CA,Size L,16.04,4,UPS® Ground
+Kansas City,Fairfield,CA,Size L,17.1,4,UPS® Ground
+Kansas City,Germantown,MD,Size L,14.74,3,UPS® Ground
+Kansas City,Hillsboro,OR,Size L,17.1,4,UPS® Ground
+Kansas City,Hope Mills,NC,Size L,14.74,3,UPS® Ground
+Kansas City,Hendersonville,NC,Size L,14.74,3,UPS® Ground
+Kansas City,Holly Springs,MS,Size L,11.36,3,UPS® Ground
+Kansas City,Homer,AK,Size L,46.14,5,UPS® Ground
+Kansas City,Laurel,MD,Size L,14.74,3,UPS® Ground
+Kansas City,Long Beach,CA,Size L,16.04,4,UPS® Ground
+Kansas City,Manteca,CA,Size L,17.1,4,UPS® Ground
+Kansas City,Maryville,TN,Size L,14.74,3,UPS® Ground
+Kansas City,Magnolia,MS,Size L,11.36,3,UPS® Ground
+Kansas City,Memphis,TN,Size L,11.36,3,UPS® Ground
+Kansas City,Milton,MA,Size L,16.04,4,UPS® Ground
+Kansas City,Montgomery,TX,Size L,14.74,3,UPS® Ground
+Kansas City,Myrtle Beach,SC,Size L,14.74,3,UPS® Ground
+Kansas City,New Market,AL,Size L,11.36,3,UPS® Ground
+Kansas City,Ocala,FL,Size L,14.74,4,UPS® Ground
+Kansas City,Olathe,KS,Size L,9.41,1,UPS® Ground
+Kansas City,Oxford,MI,Size L,14.74,3,UPS® Ground
+Kansas City,Palm Beach Gardens,FL,Size L,16.04,4,UPS® Ground
+Kansas City,Roseville,CA,Size L,17.1,4,UPS® Ground
+Kansas City,Roswell,GA,Size L,14.74,3,UPS® Ground
+Kansas City,Rockwall,TX,Size L,14.74,3,UPS® Ground
+Kansas City,Spring,TX,Size L,14.74,3,UPS® Ground
+Kansas City,Salisbury,MA,Size L,16.04,4,UPS® Ground
+Kansas City,Santa Rosa,CA,Size L,17.1,4,UPS® Ground
+Kansas City,Sarasota,FL,Size L,16.04,4,UPS® Ground
+Kansas City,Vancouver,WA,Size L,17.1,4,UPS® Ground
+Kansas City,Westminster,MD,Size L,14.74,3,UPS® Ground
+Kansas City,Canton,GA,Size L,14.74,3,UPS® Ground
+Kansas City,Columbia,MO,Size L,9.41,2,UPS® Ground
+Kansas City,Naples,FL,Size L,16.04,4,UPS® Ground
+Kansas City,Fresno,CA,Size L,16.04,4,UPS® Ground
+Kansas City,Cleveland,TN,Size L,14.74,3,UPS® Ground
+Kansas City,Henderson,NV,Size L,16.04,4,UPS® Ground
+Kansas City,Lincoln,NE,Size L,10.41,2,UPS® Ground
+Kansas City,Wilmington,NC,Size L,14.74,3,UPS® Ground
+Kansas City,Arvada,CO,Size L,14.74,3,UPS® Ground
+Kansas City,Anchorage,AK,Size L,46.14,5,UPS® Ground
+Kansas City,Birmingham,AL,Size L,11.36,3,UPS® Ground
+Kansas City,Bozeman,MT,Size L,14.74,4,UPS® Ground
+Kansas City,Conroe,TX,Size L,14.74,3,UPS® Ground
+Kansas City,Carmel Valley,CA,Size L,16.04,4,UPS® Ground
+Kansas City,Castle Rock,CO,Size L,11.36,3,UPS® Ground
+Kansas City,Cedar Rapids,IA,Size L,10.41,2,UPS® Ground
+Kansas City,Cooperstown,NY,Size L,14.74,4,UPS® Ground
+Kansas City,Deland,FL,Size L,16.04,4,UPS® Ground
+Kansas City,Fort Mill,SC,Size L,14.74,3,UPS® Ground
+Kansas City,Fargo,ND,Size L,11.36,3,UPS® Ground
+Kansas City,Glen Allen,VA,Size L,14.74,3,UPS® Ground
+Kansas City,Grand Junction,CO,Size L,14.74,3,UPS® Ground
+Kansas City,Highlands Ranch,CO,Size L,11.36,3,UPS® Ground
+Kansas City,Joliet,IL,Size L,11.36,3,UPS® Ground
+Kansas City,Kerrville,TX,Size L,14.74,3,UPS® Ground
+Kansas City,Longmont,CO,Size L,11.36,3,UPS® Ground
+Kansas City,Minneapolis,MN,Size L,14.74,3,UPS® Ground
+Kansas City,Naperville,IL,Size L,11.36,3,UPS® Ground
+Kansas City,Neosho,MO,Size L,10.41,2,UPS® Ground
+Kansas City,Puyallup,WA,Size L,17.1,4,UPS® Ground
+Kansas City,Queen Creek,AZ,Size L,16.04,4,UPS® Ground
+Kansas City,Saline,MI,Size L,14.74,3,UPS® Ground
+Kansas City,Sevierville,TN,Size L,14.74,3,UPS® Ground
+Kansas City,Sterling Heights,MI,Size L,14.74,3,UPS® Ground
+Kansas City,Thornton,CO,Size L,14.74,3,UPS® Ground
+Kansas City,Ventura,CA,Size L,17.1,4,UPS® Ground
+Kansas City,Wilmington,MA,Size L,16.04,4,UPS® Ground
+Kansas City,Clermont,FL,Size L,16.04,4,UPS® Ground
+Kansas City,Abilene,TX,Size L,11.36,3,UPS® Ground
+Kansas City,Brick,NJ,Size L,16.04,4,UPS® Ground
+Kansas City,Bentonville,AR,Size L,10.41,3,UPS® Ground
+Kansas City,Bogart,GA,Size L,14.74,3,UPS® Ground
+Kansas City,Boston,MA,Size L,16.04,4,UPS® Ground
+Kansas City,Buffalo,NY,Size L,14.74,4,UPS® Ground
+Kansas City,Cary,NC,Size L,14.74,3,UPS® Ground
+Kansas City,Dallas,GA,Size L,14.74,3,UPS® Ground
+Kansas City,Doylestown,PA,Size L,16.04,3,UPS® Ground
+Kansas City,Eugene,OR,Size L,17.1,4,UPS® Ground
+Kansas City,Edmond,OK,Size L,11.36,3,UPS® Ground
+Kansas City,Forney,TX,Size L,11.36,3,UPS® Ground
+Kansas City,Fuquay Varina,NC,Size L,14.74,3,UPS® Ground
+Kansas City,Glendora,CA,Size L,16.04,4,UPS® Ground
+Kansas City,Henrico,VA,Size L,14.74,3,UPS® Ground
+Kansas City,Hockessin,DE,Size L,16.04,3,UPS® Ground
+Kansas City,Holly Springs,NC,Size L,14.74,3,UPS® Ground
+Kansas City,Irvine,CA,Size L,16.04,4,UPS® Ground
+Kansas City,Lakeland,FL,Size L,16.04,4,UPS® Ground
+Kansas City,Lawrence,KS,Size L,9.41,1,UPS® Ground
+Kansas City,League City,TX,Size L,14.74,3,UPS® Ground
+Kansas City,Mansfield,TX,Size L,11.36,3,UPS® Ground
+Kansas City,Madison,WI,Size L,11.36,3,UPS® Ground
+Kansas City,McKinney,TX,Size L,14.74,3,UPS® Ground
+Kansas City,Mentor,OH,Size L,14.74,3,UPS® Ground
+Kansas City,Mount Airy,MD,Size L,14.74,3,UPS® Ground
+Kansas City,Norfolk,VA,Size L,16.04,3,UPS® Ground
+Kansas City,Nampa,ID,Size L,16.04,4,UPS® Ground
+Kansas City,Noblesville,IN,Size L,11.36,3,UPS® Ground
+Kansas City,Orland Park,IL,Size L,11.36,3,UPS® Ground
+Kansas City,Palm Harbor,FL,Size L,16.04,4,UPS® Ground
+Kansas City,Petaluma,CA,Size L,17.1,4,UPS® Ground
+Kansas City,Placentia,CA,Size L,16.04,4,UPS® Ground
+Kansas City,Prescott,AZ,Size L,16.04,4,UPS® Ground
+Kansas City,Richardson,TX,Size L,14.74,3,UPS® Ground
+Kansas City,Roanoke,VA,Size L,14.74,3,UPS® Ground
+Kansas City,Richmond,TX,Size L,14.74,3,UPS® Ground
+Kansas City,Sanford,ME,Size L,16.04,4,UPS® Ground
+Kansas City,Seminole,FL,Size L,16.04,4,UPS® Ground
+Kansas City,Sheridan,WY,Size L,14.74,4,UPS® Ground
+Kansas City,Sparks,NV,Size L,16.04,4,UPS® Ground
+Kansas City,Traverse City,MI,Size L,11.36,3,UPS® Ground
+Kansas City,Tulsa,OK,Size L,10.41,2,UPS® Ground
+Kansas City,Wake Forest,NC,Size L,14.74,3,UPS® Ground
+Kansas City,Waterloo,SC,Size L,14.74,3,UPS® Ground
+Kansas City,Waukesha,WI,Size L,11.36,3,UPS® Ground
+Kansas City,Wichita,KS,Size L,10.41,1,UPS® Ground
+Kansas City,Winnsboro,TX,Size L,11.36,3,UPS® Ground
+Kansas City,Woodbury,MN,Size L,14.74,3,UPS® Ground
+Kansas City,Cumming,GA,Size L,14.74,3,UPS® Ground
+Kansas City,Muskegon,MI,Size L,11.36,3,UPS® Ground
+Kansas City,Akron,OH,Size L,14.74,3,UPS® Ground
+Kansas City,Albany,OR,Size L,17.1,4,UPS® Ground
+Kansas City,Alpharetta,GA,Size L,14.74,3,UPS® Ground
+Kansas City,Asheville,NC,Size L,14.74,3,UPS® Ground
+Kansas City,Bixby,OK,Size L,10.41,2,UPS® Ground
+Kansas City,Boulder,CO,Size L,11.36,3,UPS® Ground
+Kansas City,Bethlehem,PA,Size L,16.04,3,UPS® Ground
+Kansas City,Brenham,TX,Size L,11.36,3,UPS® Ground
+Kansas City,Broken Bow,OK,Size L,11.36,3,UPS® Ground
+Kansas City,Cape Coral,FL,Size L,16.04,4,UPS® Ground
+Kansas City,Chula Vista,CA,Size L,16.04,4,UPS® Ground
+Kansas City,Crawfordville,FL,Size L,14.74,4,UPS® Ground
+Kansas City,Cypress,TX,Size L,14.74,3,UPS® Ground
+Kansas City,Clearwater,FL,Size L,16.04,4,UPS® Ground
+Kansas City,Columbiana,AL,Size L,11.36,3,UPS® Ground
+Kansas City,Columbus,GA,Size L,14.74,3,UPS® Ground
+Kansas City,Commack,NY,Size L,16.04,4,UPS® Ground
+Kansas City,Dublin,CA,Size L,17.1,4,UPS® Ground
+Kansas City,Decatur,GA,Size L,14.74,3,UPS® Ground
+Kansas City,Deltona,FL,Size L,16.04,4,UPS® Ground
+Kansas City,Derry,NH,Size L,16.04,4,UPS® Ground
+Kansas City,Douglassville,PA,Size L,16.04,3,UPS® Ground
+Kansas City,Easton,PA,Size L,16.04,3,UPS® Ground
+Kansas City,El Paso,TX,Size L,14.74,3,UPS® Ground
+Kansas City,Escondido,CA,Size L,16.04,4,UPS® Ground
+Kansas City,Fairport,NY,Size L,14.74,4,UPS® Ground
+Kansas City,Flemington,NJ,Size L,16.04,4,UPS® Ground
+Kansas City,Florence,SC,Size L,14.74,3,UPS® Ground
+Kansas City,Fort Lauderdale,FL,Size L,16.04,4,UPS® Ground
+Kansas City,Frisco,TX,Size L,14.74,3,UPS® Ground
+Kansas City,Goodyear,AZ,Size L,16.04,4,UPS® Ground
+Kansas City,Gays Mills,WI,Size L,11.36,4,UPS® Ground
+Kansas City,Grafton,WI,Size L,11.36,3,UPS® Ground
+Kansas City,Green Cove Springs,FL,Size L,14.74,4,UPS® Ground
+Kansas City,Greensburg,PA,Size L,14.74,3,UPS® Ground
+Kansas City,Honolulu,HI,Size L,46.14,5,UPS® Ground
+Kansas City,Humble,TX,Size L,14.74,3,UPS® Ground
+Kansas City,Huntington,NY,Size L,16.04,4,UPS® Ground
+Kansas City,Idaho Falls,ID,Size L,14.74,4,UPS® Ground
+Kansas City,Jackson,TN,Size L,11.36,3,UPS® Ground
+Kansas City,Jacksonville,NC,Size L,16.04,4,UPS® Ground
+Kansas City,Jenkintown,PA,Size L,16.04,3,UPS® Ground
+Kansas City,Johnson City,TN,Size L,14.74,3,UPS® Ground
+Kansas City,Kingwood,TX,Size L,14.74,3,UPS® Ground
+Kansas City,Lansing,MI,Size L,14.74,3,UPS® Ground
+Kansas City,Lapeer,MI,Size L,14.74,3,UPS® Ground
+Kansas City,Lawrenceville,GA,Size L,14.74,3,UPS® Ground
+Kansas City,Lexington,NC,Size L,14.74,3,UPS® Ground
+Kansas City,Lubbock,TX,Size L,11.36,3,UPS® Ground
+Kansas City,Medina,OH,Size L,14.74,3,UPS® Ground
+Kansas City,Macomb,MI,Size L,14.74,3,UPS® Ground
+Kansas City,Magnolia,TX,Size L,14.74,3,UPS® Ground
+Kansas City,Martinsburg,WV,Size L,14.74,3,UPS® Ground
+Kansas City,Meridian,ID,Size L,16.04,4,UPS® Ground
+Kansas City,Mobile,AL,Size L,14.74,3,UPS® Ground
+Kansas City,Morrison,CO,Size L,14.74,3,UPS® Ground
+Kansas City,Napa,CA,Size L,17.1,4,UPS® Ground
+Kansas City,New Braunfels,TX,Size L,14.74,3,UPS® Ground
+Kansas City,New Lenox,IL,Size L,11.36,3,UPS® Ground
+Kansas City,New Orleans,LA,Size L,14.74,3,UPS® Ground
+Kansas City,Newark,DE,Size L,16.04,3,UPS® Ground
+Kansas City,Oakland,CA,Size L,17.1,4,UPS® Ground
+Kansas City,Owasso,OK,Size L,10.41,2,UPS® Ground
+Kansas City,Overland Park,KS,Size L,9.41,1,UPS® Ground
+Kansas City,Panama City,FL,Size L,14.74,3,UPS® Ground
+Kansas City,Panama City Beach,FL,Size L,14.74,3,UPS® Ground
+Kansas City,Patchogue,NY,Size L,16.04,4,UPS® Ground
+Kansas City,Port Clinton,OH,Size L,14.74,3,UPS® Ground
+Kansas City,Paducah,KY,Size L,11.36,3,UPS® Ground
+Kansas City,Palmetto,FL,Size L,16.04,4,UPS® Ground
+Kansas City,Pearland,TX,Size L,14.74,3,UPS® Ground
+Kansas City,Pella,IA,Size L,10.41,2,UPS® Ground
+Kansas City,Pittsford,NY,Size L,14.74,4,UPS® Ground
+Kansas City,Port Orange,FL,Size L,14.74,4,UPS® Ground
+Kansas City,Ravenna,OH,Size L,14.74,3,UPS® Ground
+Kansas City,Roaming Shores,OH,Size L,14.74,3,UPS® Ground
+Kansas City,Richmond Hill,GA,Size L,14.74,4,UPS® Ground
+Kansas City,Riverview,FL,Size L,16.04,4,UPS® Ground
+Kansas City,Rochester,MN,Size L,11.36,3,UPS® Ground
+Kansas City,Round Rock,TX,Size L,14.74,3,UPS® Ground
+Kansas City,Saint Petersburg,FL,Size L,16.04,4,UPS® Ground
+Kansas City,San Leandro,CA,Size L,17.1,4,UPS® Ground
+Kansas City,Southington,CT,Size L,16.04,4,UPS® Ground
+Kansas City,Spartanburg,SC,Size L,14.74,3,UPS® Ground
+Kansas City,Surprise,AZ,Size L,16.04,4,UPS® Ground
+Kansas City,Santa Barbara,CA,Size L,17.1,4,UPS® Ground
+Kansas City,Shelton,CT,Size L,16.04,4,UPS® Ground
+Kansas City,Spring Branch,TX,Size L,14.74,3,UPS® Ground
+Kansas City,St. Louis,MO,Size L,11.36,2,UPS® Ground
+Kansas City,Stroudsburg,PA,Size L,14.74,3,UPS® Ground
+Kansas City,Sunapee,NH,Size L,16.04,4,UPS® Ground
+Kansas City,Swedesboro,NJ,Size L,16.04,3,UPS® Ground
+Kansas City,Syracuse,NY,Size L,14.74,4,UPS® Ground
+Kansas City,Tomball,TX,Size L,14.74,3,UPS® Ground
+Kansas City,Topeka,KS,Size L,9.41,1,UPS® Ground
+Kansas City,Tuscaloosa,AL,Size L,11.36,3,UPS® Ground
+Kansas City,Terre Haute,IN,Size L,11.36,3,UPS® Ground
+Kansas City,Tinley Park,IL,Size L,11.36,3,UPS® Ground
+Kansas City,Toms River,NJ,Size L,16.04,4,UPS® Ground
+Kansas City,Tulare,CA,Size L,16.04,4,UPS® Ground
+Kansas City,Vienna,VA,Size L,14.74,3,UPS® Ground
+Kansas City,Walnut Creek,CA,Size L,17.1,4,UPS® Ground
+Kansas City,Wayne,NJ,Size L,16.04,4,UPS® Ground
+Kansas City,Waynesboro,VA,Size L,14.74,3,UPS® Ground
+Kansas City,West Sacramento,CA,Size L,17.1,4,UPS® Ground
+Kansas City,Yuba City,CA,Size L,17.1,4,UPS® Ground
+Kansas City,Zachary,LA,Size L,14.74,3,UPS® Ground
+Kansas City,Buford,GA,Size L,14.74,3,UPS® Ground
+Kansas City,Modesto,CA,Size L,17.1,4,UPS® Ground
+Kansas City,Winter Park,FL,Size L,16.04,4,UPS® Ground
+Kansas City,Antioch,IL,Size L,11.36,3,UPS® Ground
+Kansas City,Algonquin,IL,Size L,11.36,3,UPS® Ground
+Kansas City,Allen,TX,Size L,14.74,3,UPS® Ground
+Kansas City,Ames,IA,Size L,10.41,2,UPS® Ground
+Kansas City,Anaheim,CA,Size L,16.04,4,UPS® Ground
+Kansas City,Aptos,CA,Size L,17.1,4,UPS® Ground
+Kansas City,Astoria,NY,Size L,16.04,4,UPS® Ground
+Kansas City,Bloomington,IN,Size L,11.36,3,UPS® Ground
+Kansas City,Bremerton,WA,Size L,17.1,4,UPS® Ground
+Kansas City,Brunswick,OH,Size L,14.74,3,UPS® Ground
+Kansas City,Burke,VA,Size L,14.74,3,UPS® Ground
+Kansas City,Bedford,IN,Size L,11.36,3,UPS® Ground
+Kansas City,Benton,LA,Size L,11.36,3,UPS® Ground
+Kansas City,Billings,MT,Size L,14.74,4,UPS® Ground
+Kansas City,Birdsboro,PA,Size L,16.04,3,UPS® Ground
+Kansas City,Bothell,WA,Size L,17.1,4,UPS® Ground
+Kansas City,Bowie,MD,Size L,14.74,3,UPS® Ground
+Kansas City,Brentwood,TN,Size L,14.74,3,UPS® Ground
+Kansas City,Bronx,NY,Size L,16.04,4,UPS® Ground
+Kansas City,Brookfield,WI,Size L,11.36,3,UPS® Ground
+Kansas City,Canton,OH,Size L,14.74,3,UPS® Ground
+Kansas City,Celina,TX,Size L,14.74,3,UPS® Ground
+Kansas City,Chapel Hill,NC,Size L,14.74,3,UPS® Ground
+Kansas City,Claremore,OK,Size L,10.41,2,UPS® Ground
+Kansas City,Clovis,CA,Size L,16.04,4,UPS® Ground
+Kansas City,Cocoa,FL,Size L,16.04,4,UPS® Ground
+Kansas City,Callahan,FL,Size L,14.74,4,UPS® Ground
+Kansas City,Carmel,IN,Size L,11.36,3,UPS® Ground
+Kansas City,Cedar Park,TX,Size L,14.74,3,UPS® Ground
+Kansas City,Centennial,CO,Size L,11.36,3,UPS® Ground
+Kansas City,Centerville,MA,Size L,16.04,4,UPS® Ground
+Kansas City,Charleston,SC,Size L,14.74,3,UPS® Ground
+Kansas City,Charlottesville,VA,Size L,14.74,3,UPS® Ground
+Kansas City,Clarkesville,GA,Size L,14.74,3,UPS® Ground
+Kansas City,Clayton,NC,Size L,14.74,3,UPS® Ground
+Kansas City,Clifton,NJ,Size L,16.04,4,UPS® Ground
+Kansas City,Collinsville,OK,Size L,10.41,2,UPS® Ground
+Kansas City,Columbia,TN,Size L,11.36,3,UPS® Ground
+Kansas City,Concord,NC,Size L,14.74,3,UPS® Ground
+Kansas City,Cookeville,TN,Size L,11.36,3,UPS® Ground
+Kansas City,Corpus Christi,TX,Size L,14.74,3,UPS® Ground
+Kansas City,Corrales,NM,Size L,14.74,3,UPS® Ground
+Kansas City,Corydon,IN,Size L,11.36,3,UPS® Ground
+Kansas City,Cranston,RI,Size L,16.04,4,UPS® Ground
+Kansas City,Dekalb,IL,Size L,11.36,3,UPS® Ground
+Kansas City,Delaware,OH,Size L,14.74,3,UPS® Ground
+Kansas City,Delmar,NY,Size L,16.04,4,UPS® Ground
+Kansas City,Des Moines,IA,Size L,10.41,2,UPS® Ground
+Kansas City,Dickson,TN,Size L,14.74,3,UPS® Ground
+Kansas City,Downers Grove,IL,Size L,11.36,3,UPS® Ground
+Kansas City,Dripping Springs,TX,Size L,14.74,3,UPS® Ground
+Kansas City,Eustis,FL,Size L,16.04,4,UPS® Ground
+Kansas City,East Hampton,NY,Size L,16.04,4,UPS® Ground
+Kansas City,Fenton,MO,Size L,11.36,2,UPS® Ground
+Kansas City,Fayetteville,AR,Size L,10.41,3,UPS® Ground
+Kansas City,Flower Mound,TX,Size L,14.74,3,UPS® Ground
+Kansas City,Franklin,OH,Size L,11.36,3,UPS® Ground
+Kansas City,Friendswood,TX,Size L,14.74,3,UPS® Ground
+Kansas City,Gainesville,FL,Size L,14.74,4,UPS® Ground
+Kansas City,Gainesville,GA,Size L,14.74,3,UPS® Ground
+Kansas City,Glendale,CA,Size L,16.04,4,UPS® Ground
+Kansas City,Greenville,SC,Size L,14.74,3,UPS® Ground
+Kansas City,Greenville,MI,Size L,14.74,3,UPS® Ground
+Kansas City,Gaithersburg,MD,Size L,14.74,3,UPS® Ground
+Kansas City,Garner,NC,Size L,14.74,3,UPS® Ground
+Kansas City,Gastonia,NC,Size L,14.74,3,UPS® Ground
+Kansas City,Granada Hills,CA,Size L,16.04,4,UPS® Ground
+Kansas City,Granbury,TX,Size L,11.36,3,UPS® Ground
+Kansas City,Griffin,GA,Size L,14.74,3,UPS® Ground
+Kansas City,Harpers Ferry,WV,Size L,14.74,3,UPS® Ground
+Kansas City,Haverhill,MA,Size L,16.04,4,UPS® Ground
+Kansas City,Hayward,CA,Size L,17.1,4,UPS® Ground
+Kansas City,Herriman,UT,Size L,14.74,4,UPS® Ground
+Kansas City,Hillsboro,OR,Size L,17.1,4,UPS® Ground
+Kansas City,Hoboken,NJ,Size L,16.04,4,UPS® Ground
+Kansas City,Huntley,IL,Size L,11.36,3,UPS® Ground
+Kansas City,Hagerstown,MD,Size L,14.74,3,UPS® Ground
+Kansas City,Hamilton,OH,Size L,11.36,3,UPS® Ground
+Kansas City,Harrisburg,PA,Size L,14.74,3,UPS® Ground
+Kansas City,Hendersonville,NC,Size L,14.74,3,UPS® Ground
+Kansas City,Hendersonville,TN,Size L,14.74,3,UPS® Ground
+Kansas City,Holland,MI,Size L,11.36,3,UPS® Ground
+Kansas City,Indian Trail,NC,Size L,14.74,3,UPS® Ground
+Kansas City,Jersey City,NJ,Size L,16.04,4,UPS® Ground
+Kansas City,Johnstown,PA,Size L,14.74,3,UPS® Ground
+Kansas City,Kalamazoo,MI,Size L,11.36,3,UPS® Ground
+Kansas City,Keatchie,LA,Size L,11.36,3,UPS® Ground
+Kansas City,Kennewick,WA,Size L,16.04,4,UPS® Ground
+Kansas City,Kingsport,TN,Size L,14.74,3,UPS® Ground
+Kansas City,Lake Elsinore,CA,Size L,16.04,4,UPS® Ground
+Kansas City,Lebanon,OH,Size L,11.36,3,UPS® Ground
+Kansas City,Little Rock,AR,Size L,11.36,3,UPS® Ground
+Kansas City,Livonia,MI,Size L,14.74,3,UPS® Ground
+Kansas City,Los Alamos,NM,Size L,14.74,3,UPS® Ground
+Kansas City,Loveland,CO,Size L,11.36,3,UPS® Ground
+Kansas City,La Mesa,CA,Size L,16.04,4,UPS® Ground
+Kansas City,La Quinta,CA,Size L,16.04,4,UPS® Ground
+Kansas City,Lake Oswego,OR,Size L,17.1,4,UPS® Ground
+Kansas City,Lake Saint Louis,MO,Size L,11.36,2,UPS® Ground
+Kansas City,Lake in the Hills,IL,Size L,11.36,3,UPS® Ground
+Kansas City,Lakeway,TX,Size L,14.74,3,UPS® Ground
+Kansas City,Lancaster,NY,Size L,14.74,4,UPS® Ground
+Kansas City,Leander,TX,Size L,14.74,3,UPS® Ground
+Kansas City,Lees Summit,MO,Size L,9.41,1,UPS® Ground
+Kansas City,Lenoir,NC,Size L,14.74,3,UPS® Ground
+Kansas City,Lewis Center,OH,Size L,14.74,3,UPS® Ground
+Kansas City,Lexington,IN,Size L,11.36,3,UPS® Ground
+Kansas City,Lodi,CA,Size L,16.04,4,UPS® Ground
+Kansas City,Lynden,WA,Size L,17.1,4,UPS® Ground
+Kansas City,Methuen,MA,Size L,16.04,4,UPS® Ground
+Kansas City,Milford,CT,Size L,16.04,4,UPS® Ground
+Kansas City,Mineola,TX,Size L,11.36,3,UPS® Ground
+Kansas City,Missoula,MT,Size L,16.04,4,UPS® Ground
+Kansas City,Mansfield,OH,Size L,14.74,3,UPS® Ground
+Kansas City,McDonough,GA,Size L,14.74,3,UPS® Ground
+Kansas City,Merritt Island,FL,Size L,16.04,4,UPS® Ground
+Kansas City,Midlothian,VA,Size L,14.74,3,UPS® Ground
+Kansas City,Millington,TN,Size L,11.36,3,UPS® Ground
+Kansas City,Milton,FL,Size L,14.74,3,UPS® Ground
+Kansas City,Moab,UT,Size L,14.74,4,UPS® Ground
+Kansas City,Monroe,NC,Size L,14.74,3,UPS® Ground
+Kansas City,Mooresville,IN,Size L,11.36,3,UPS® Ground
+Kansas City,Morganton,NC,Size L,14.74,3,UPS® Ground
+Kansas City,Murfreesboro,TN,Size L,11.36,3,UPS® Ground
+Kansas City,Newburgh,NY,Size L,16.04,4,UPS® Ground
+Kansas City,Navarre,FL,Size L,14.74,3,UPS® Ground
+Kansas City,New Market,AL,Size L,11.36,3,UPS® Ground
+Kansas City,Newnan,GA,Size L,14.74,3,UPS® Ground
+Kansas City,Norman,OK,Size L,11.36,2,UPS® Ground
+Kansas City,Novi,MI,Size L,14.74,3,UPS® Ground
+Kansas City,Ormond Beach,FL,Size L,14.74,4,UPS® Ground
+Kansas City,Owensboro,KY,Size L,11.36,3,UPS® Ground
+Kansas City,Oconto,WI,Size L,11.36,3,UPS® Ground
+Kansas City,Old Bridge,NJ,Size L,16.04,4,UPS® Ground
+Kansas City,Olympia,WA,Size L,17.1,4,UPS® Ground
+Kansas City,Oregon City,OR,Size L,17.1,4,UPS® Ground
+Kansas City,Oxford,MI,Size L,14.74,3,UPS® Ground
+Kansas City,Peachtree City,GA,Size L,14.74,3,UPS® Ground
+Kansas City,Pleasanton,CA,Size L,17.1,4,UPS® Ground
+Kansas City,Poughkeepsie,NY,Size L,16.04,4,UPS® Ground
+Kansas City,Pagosa Springs,CO,Size L,11.36,3,UPS® Ground
+Kansas City,Pasadena,CA,Size L,16.04,4,UPS® Ground
+Kansas City,Pasadena,TX,Size L,14.74,3,UPS® Ground
+Kansas City,Pasco,WA,Size L,16.04,4,UPS® Ground
+Kansas City,Pawtucket,RI,Size L,16.04,4,UPS® Ground
+Kansas City,Pembroke,MA,Size L,16.04,4,UPS® Ground
+Kansas City,Perrysburg,OH,Size L,11.36,3,UPS® Ground
+Kansas City,Plant City,FL,Size L,16.04,4,UPS® Ground
+Kansas City,Port Orchard,WA,Size L,17.1,4,UPS® Ground
+Kansas City,Prescott Valley,AZ,Size L,16.04,4,UPS® Ground
+Kansas City,Princeton,NJ,Size L,16.04,4,UPS® Ground
+Kansas City,Quincy,MA,Size L,16.04,4,UPS® Ground
+Kansas City,Redwood City,CA,Size L,17.1,4,UPS® Ground
+Kansas City,Rohnert Park,CA,Size L,17.1,4,UPS® Ground
+Kansas City,Rigby,ID,Size L,14.74,5,UPS® Ground
+Kansas City,Ripon,WI,Size L,11.36,3,UPS® Ground
+Kansas City,Rogers,AR,Size L,10.41,3,UPS® Ground
+Kansas City,Rowlett,TX,Size L,14.74,3,UPS® Ground
+Kansas City,Rydal,PA,Size L,16.04,3,UPS® Ground
+Kansas City,Shepherdsville,KY,Size L,11.36,3,UPS® Ground
+Kansas City,Shreveport,LA,Size L,11.36,3,UPS® Ground
+Kansas City,Stamford,CT,Size L,16.04,4,UPS® Ground
+Kansas City,Salt Lake City,UT,Size L,14.74,4,UPS® Ground
+Kansas City,Sanford,NC,Size L,14.74,3,UPS® Ground
+Kansas City,Santa Ana,CA,Size L,16.04,4,UPS® Ground
+Kansas City,Santa Cruz,CA,Size L,17.1,4,UPS® Ground
+Kansas City,Santa Fe,NM,Size L,14.74,3,UPS® Ground
+Kansas City,Sarver,PA,Size L,14.74,3,UPS® Ground
+Kansas City,Schenectady,NY,Size L,16.04,4,UPS® Ground
+Kansas City,Sierra Vista,AZ,Size L,16.04,4,UPS® Ground
+Kansas City,Silver Spring,MD,Size L,14.74,3,UPS® Ground
+Kansas City,South Jordan,UT,Size L,14.74,4,UPS® Ground
+Kansas City,Springfield,MO,Size L,10.41,1,UPS® Ground
+Kansas City,Summerville,SC,Size L,14.74,3,UPS® Ground
+Kansas City,Sumter,SC,Size L,14.74,3,UPS® Ground
+Kansas City,Sun City,AZ,Size L,16.04,4,UPS® Ground
+Kansas City,Syosset,NY,Size L,16.04,4,UPS® Ground
+Kansas City,Taunton,MA,Size L,16.04,4,UPS® Ground
+Kansas City,Texarkana,TX,Size L,11.36,3,UPS® Ground
+Kansas City,Toledo,OH,Size L,14.74,3,UPS® Ground
+Kansas City,Urbana,OH,Size L,14.74,3,UPS® Ground
+Kansas City,Valparaiso,IN,Size L,11.36,3,UPS® Ground
+Kansas City,Waco,TX,Size L,11.36,3,UPS® Ground
+Kansas City,West Lafayette,IN,Size L,11.36,3,UPS® Ground
+Kansas City,Winter Garden,FL,Size L,16.04,4,UPS® Ground
+Kansas City,Winter Haven,FL,Size L,16.04,4,UPS® Ground
+Kansas City,Wylie,TX,Size L,14.74,3,UPS® Ground
+Kansas City,Waldorf,MD,Size L,14.74,3,UPS® Ground
+Kansas City,Wesley Chapel,FL,Size L,16.04,4,UPS® Ground
+Kansas City,West Palm Beach,FL,Size L,16.04,4,UPS® Ground
+Kansas City,Williamsburg,VA,Size L,14.74,3,UPS® Ground
+Kansas City,Woodbridge,VA,Size L,14.74,3,UPS® Ground
+Kansas City,Woodside,CA,Size L,17.1,4,UPS® Ground
+Kansas City,Yorba Linda,CA,Size L,16.04,4,UPS® Ground
+Kansas City,Queens Village,NY,Size L,16.04,4,UPS® Ground
+Billings,Brooklyn,NY,Size L,17.1,5,UPS® Ground
+Billings,Phoenix,AZ,Size L,14.74,3,UPS® Ground
+Billings,Houston,TX,Size L,16.04,3,UPS® Ground
+Billings,San Antonio,TX,Size L,16.04,3,UPS® Ground
+Billings,Jacksonville,FL,Size L,17.1,4,UPS® Ground
+Billings,Chicago,IL,Size L,16.04,3,UPS® Ground
+Billings,Dallas,TX,Size L,16.04,3,UPS® Ground
+Billings,Wilmington,DE,Size L,17.1,5,UPS® Ground
+Billings,Austin,TX,Size L,16.04,3,UPS® Ground
+Billings,Canton,OH,Size L,17.1,4,UPS® Ground
+Billings,Charlotte,NC,Size L,17.1,5,UPS® Ground
+Billings,New York,NY,Size L,17.1,5,UPS® Ground
+Billings,Atlanta,GA,Size L,17.1,4,UPS® Ground
+Billings,Franklin,TN,Size L,16.04,4,UPS® Ground
+Billings,Lexington,KY,Size L,16.04,4,UPS® Ground
+Billings,Orlando,FL,Size L,18.12,4,UPS® Ground
+Billings,Rochester,NY,Size L,17.1,5,UPS® Ground
+Billings,Las Vegas,NV,Size L,14.74,3,UPS® Ground
+Billings,Louisville,KY,Size L,16.04,4,UPS® Ground
+Billings,Marietta,GA,Size L,17.1,4,UPS® Ground
+Billings,Colorado Springs,CO,Size L,11.36,2,UPS® Ground
+Billings,Columbus,OH,Size L,16.04,4,UPS® Ground
+Billings,Marble Falls,TX,Size L,16.04,3,UPS® Ground
+Billings,Tampa,FL,Size L,18.12,4,UPS® Ground
+Billings,San Diego,CA,Size L,14.74,3,UPS® Ground
+Billings,Columbia,SC,Size L,17.1,5,UPS® Ground
+Billings,Greenville,SC,Size L,17.1,5,UPS® Ground
+Billings,Lebanon,TN,Size L,16.04,4,UPS® Ground
+Billings,Salem,OR,Size L,14.74,2,UPS® Ground
+Billings,Cleveland,OH,Size L,16.04,4,UPS® Ground
+Billings,Denver,CO,Size L,11.36,2,UPS® Ground
+Billings,Omaha,NE,Size L,14.74,3,UPS® Ground
+Billings,Portland,OR,Size L,14.74,2,UPS® Ground
+Billings,Raleigh,NC,Size L,17.1,5,UPS® Ground
+Billings,Richmond,VA,Size L,17.1,5,UPS® Ground
+Billings,Jackson,MS,Size L,16.04,4,UPS® Ground
+Billings,Albany,NY,Size L,17.1,5,UPS® Ground
+Billings,Fort Worth,TX,Size L,16.04,3,UPS® Ground
+Billings,Oklahoma City,OK,Size L,14.74,3,UPS® Ground
+Billings,Chesapeake,VA,Size L,17.1,5,UPS® Ground
+Billings,Miami,FL,Size L,18.12,4,UPS® Ground
+Billings,Milford,CT,Size L,18.12,5,UPS® Ground
+Billings,Pittsburgh,PA,Size L,17.1,4,UPS® Ground
+Billings,San Francisco,CA,Size L,14.74,3,UPS® Ground
+Billings,San Jose,CA,Size L,14.74,3,UPS® Ground
+Billings,Tucson,AZ,Size L,14.74,3,UPS® Ground
+Billings,Virginia Beach,VA,Size L,17.1,5,UPS® Ground
+Billings,Albuquerque,NM,Size L,14.74,3,UPS® Ground
+Billings,Gilbert,AZ,Size L,14.74,3,UPS® Ground
+Billings,Springfield,IL,Size L,16.04,3,UPS® Ground
+Billings,Alexandria,VA,Size L,17.1,5,UPS® Ground
+Billings,Kansas City,MO,Size L,14.74,3,UPS® Ground
+Billings,Knoxville,TN,Size L,17.1,4,UPS® Ground
+Billings,Lakewood,CO,Size L,11.36,2,UPS® Ground
+Billings,Nashville,TN,Size L,16.04,4,UPS® Ground
+Billings,Saint Louis,MO,Size L,16.04,3,UPS® Ground
+Billings,Seattle,WA,Size L,14.74,2,UPS® Ground
+Billings,Arlington,TX,Size L,16.04,3,UPS® Ground
+Billings,Aurora,CO,Size L,11.36,2,UPS® Ground
+Billings,Boise,ID,Size L,11.36,3,UPS® Ground
+Billings,Indianapolis,IN,Size L,16.04,4,UPS® Ground
+Billings,Naples,CO,Size L,11.36,,UPS® Ground
+Billings,Reno,NV,Size L,14.74,3,UPS® Ground
+Billings,Riverside,CA,Size L,14.74,3,UPS® Ground
+Billings,Bismarck,ND,Size L,11.36,2,UPS® Ground
+Billings,Fresno,TX,Size L,16.04,3,UPS® Ground
+Billings,Lincoln,RI,Size L,18.12,5,UPS® Ground
+Billings,Los Angeles,CA,Size L,14.74,3,UPS® Ground
+Billings,Mansfield,MA,Size L,18.12,5,UPS® Ground
+Billings,Milwaukee,WI,Size L,16.04,3,UPS® Ground
+Billings,Madison,IN,Size L,16.04,4,UPS® Ground
+Billings,Mesa,AZ,Size L,14.74,3,UPS® Ground
+Billings,Monroe,NC,Size L,17.1,5,UPS® Ground
+Billings,Philadelphia,PA,Size L,17.1,5,UPS® Ground
+Billings,Staten Island,NY,Size L,17.1,5,UPS® Ground
+Billings,Washington,DC,Size L,17.1,5,UPS® Ground
+Billings,Baltimore,MD,Size L,17.1,5,UPS® Ground
+Billings,Decatur,IL,Size L,16.04,4,UPS® Ground
+Billings,Durham,NC,Size L,17.1,5,UPS® Ground
+Billings,Fayetteville,AR,Size L,14.74,4,UPS® Ground
+Billings,Glendale,AZ,Size L,14.74,3,UPS® Ground
+Billings,Midland,GA,Size L,17.1,4,UPS® Ground
+Billings,Scottsdale,AZ,Size L,14.74,3,UPS® Ground
+Billings,Woodstock,GA,Size L,17.1,4,UPS® Ground
+Billings,Chandler,AZ,Size L,14.74,3,UPS® Ground
+Billings,Cincinnati,OH,Size L,16.04,4,UPS® Ground
+Billings,Covington,LA,Size L,17.1,4,UPS® Ground
+Billings,Fort Myers,FL,Size L,18.12,4,UPS® Ground
+Billings,Greensboro,NC,Size L,17.1,5,UPS® Ground
+Billings,Henderson,TX,Size L,16.04,3,UPS® Ground
+Billings,Hamilton,MI,Size L,16.04,4,UPS® Ground
+Billings,Lewisburg,PA,Size L,17.1,5,UPS® Ground
+Billings,Littleton,CO,Size L,11.36,2,UPS® Ground
+Billings,Mount Pleasant,SC,Size L,17.1,5,UPS® Ground
+Billings,Pasadena,MD,Size L,17.1,5,UPS® Ground
+Billings,Plano,TX,Size L,16.04,3,UPS® Ground
+Billings,Sanford,NC,Size L,17.1,5,UPS® Ground
+Billings,Wayne,ME,Size L,18.12,5,UPS® Ground
+Billings,Ashland,PA,Size L,17.1,5,UPS® Ground
+Billings,Burlington,WI,Size L,16.04,3,UPS® Ground
+Billings,Centerville,IA,Size L,14.74,3,UPS® Ground
+Billings,Clayton,NC,Size L,17.1,5,UPS® Ground
+Billings,Encinitas,CA,Size L,14.74,3,UPS® Ground
+Billings,Fort Collins,CO,Size L,11.36,2,UPS® Ground
+Billings,Golden,CO,Size L,11.36,2,UPS® Ground
+Billings,Hudson,NC,Size L,17.1,5,UPS® Ground
+Billings,Katy,TX,Size L,16.04,3,UPS® Ground
+Billings,Lancaster,SC,Size L,17.1,5,UPS® Ground
+Billings,Newark,NJ,Size L,17.1,5,UPS® Ground
+Billings,Parker,CO,Size L,11.36,2,UPS® Ground
+Billings,Plymouth,MA,Size L,18.12,5,UPS® Ground
+Billings,Rancho Cucamonga,CA,Size L,14.74,3,UPS® Ground
+Billings,Rockville,MD,Size L,17.1,5,UPS® Ground
+Billings,Sacramento,CA,Size L,14.74,3,UPS® Ground
+Billings,Tallahassee,FL,Size L,17.1,4,UPS® Ground
+Billings,The Villages,FL,Size L,17.1,4,UPS® Ground
+Billings,Westfield,IN,Size L,16.04,4,UPS® Ground
+Billings,Waterloo,IA,Size L,14.74,3,UPS® Ground
+Billings,West Chester,PA,Size L,17.1,5,UPS® Ground
+Billings,Bend,OR,Size L,14.74,2,UPS® Ground
+Billings,Amarillo,TX,Size L,14.74,3,UPS® Ground
+Billings,Auburn,MA,Size L,18.12,5,UPS® Ground
+Billings,Bakersfield,CA,Size L,14.74,3,UPS® Ground
+Billings,Boca Raton,FL,Size L,18.12,4,UPS® Ground
+Billings,Benton,LA,Size L,16.04,3,UPS® Ground
+Billings,Bradenton,FL,Size L,18.12,4,UPS® Ground
+Billings,Dayton,OH,Size L,16.04,4,UPS® Ground
+Billings,Duluth,MN,Size L,14.74,3,UPS® Ground
+Billings,Englewood,CO,Size L,11.36,2,UPS® Ground
+Billings,Fort Wayne,IN,Size L,16.04,3,UPS® Ground
+Billings,Frederick,MD,Size L,17.1,5,UPS® Ground
+Billings,Fredericksburg,VA,Size L,17.1,5,UPS® Ground
+Billings,Gainesville,FL,Size L,17.1,4,UPS® Ground
+Billings,Grand Rapids,MI,Size L,16.04,4,UPS® Ground
+Billings,Green Bay,WI,Size L,14.74,3,UPS® Ground
+Billings,Morgantown,WV,Size L,17.1,5,UPS® Ground
+Billings,Pensacola,FL,Size L,17.1,4,UPS® Ground
+Billings,Princeton,MA,Size L,18.12,5,UPS® Ground
+Billings,Peoria,AZ,Size L,14.74,3,UPS® Ground
+Billings,Saint Paul,MN,Size L,14.74,3,UPS® Ground
+Billings,Savannah,GA,Size L,17.1,4,UPS® Ground
+Billings,Seaford,NY,Size L,17.1,5,UPS® Ground
+Billings,Seymour,IN,Size L,16.04,4,UPS® Ground
+Billings,Spokane,WA,Size L,11.36,2,UPS® Ground
+Billings,Windsor,CO,Size L,11.36,2,UPS® Ground
+Billings,Winston-Salem,NC,Size L,17.1,5,UPS® Ground
+Billings,Worcester,MA,Size L,18.12,5,UPS® Ground
+Billings,York,PA,Size L,17.1,4,UPS® Ground
+Billings,Antioch,TN,Size L,16.04,4,UPS® Ground
+Billings,Athens,GA,Size L,17.1,4,UPS® Ground
+Billings,Corona,CA,Size L,14.74,3,UPS® Ground
+Billings,Fairfield,CA,Size L,14.74,3,UPS® Ground
+Billings,Germantown,MD,Size L,17.1,5,UPS® Ground
+Billings,Hillsboro,OR,Size L,14.74,2,UPS® Ground
+Billings,Hope Mills,NC,Size L,17.1,5,UPS® Ground
+Billings,Hendersonville,NC,Size L,17.1,5,UPS® Ground
+Billings,Holly Springs,MS,Size L,16.04,4,UPS® Ground
+Billings,Homer,AK,Size L,46.14,5,UPS® Ground
+Billings,Laurel,MD,Size L,17.1,5,UPS® Ground
+Billings,Long Beach,CA,Size L,14.74,3,UPS® Ground
+Billings,Manteca,CA,Size L,14.74,3,UPS® Ground
+Billings,Maryville,TN,Size L,17.1,4,UPS® Ground
+Billings,Magnolia,MS,Size L,16.04,4,UPS® Ground
+Billings,Memphis,TN,Size L,16.04,4,UPS® Ground
+Billings,Milton,MA,Size L,18.12,5,UPS® Ground
+Billings,Montgomery,TX,Size L,16.04,3,UPS® Ground
+Billings,Myrtle Beach,SC,Size L,17.1,5,UPS® Ground
+Billings,New Market,AL,Size L,16.04,4,UPS® Ground
+Billings,Ocala,FL,Size L,17.1,4,UPS® Ground
+Billings,Olathe,KS,Size L,14.74,3,UPS® Ground
+Billings,Oxford,MI,Size L,16.04,4,UPS® Ground
+Billings,Palm Beach Gardens,FL,Size L,18.12,4,UPS® Ground
+Billings,Roseville,CA,Size L,14.74,3,UPS® Ground
+Billings,Roswell,GA,Size L,17.1,4,UPS® Ground
+Billings,Rockwall,TX,Size L,16.04,3,UPS® Ground
+Billings,Spring,TX,Size L,16.04,3,UPS® Ground
+Billings,Salisbury,MA,Size L,18.12,5,UPS® Ground
+Billings,Santa Rosa,CA,Size L,14.74,3,UPS® Ground
+Billings,Sarasota,FL,Size L,18.12,4,UPS® Ground
+Billings,Vancouver,WA,Size L,14.74,2,UPS® Ground
+Billings,Westminster,MD,Size L,17.1,5,UPS® Ground
+Billings,Canton,GA,Size L,17.1,4,UPS® Ground
+Billings,Columbia,MO,Size L,14.74,3,UPS® Ground
+Billings,Naples,FL,Size L,18.12,4,UPS® Ground
+Billings,Fresno,CA,Size L,14.74,3,UPS® Ground
+Billings,Cleveland,TN,Size L,17.1,4,UPS® Ground
+Billings,Henderson,NV,Size L,14.74,3,UPS® Ground
+Billings,Lincoln,NE,Size L,14.74,3,UPS® Ground
+Billings,Wilmington,NC,Size L,17.1,5,UPS® Ground
+Billings,Arvada,CO,Size L,11.36,2,UPS® Ground
+Billings,Anchorage,AK,Size L,46.14,5,UPS® Ground
+Billings,Birmingham,AL,Size L,17.1,4,UPS® Ground
+Billings,Bozeman,MT,Size L,10.41,1,UPS® Ground
+Billings,Conroe,TX,Size L,16.04,3,UPS® Ground
+Billings,Carmel Valley,CA,Size L,14.74,3,UPS® Ground
+Billings,Castle Rock,CO,Size L,11.36,2,UPS® Ground
+Billings,Cedar Rapids,IA,Size L,14.74,3,UPS® Ground
+Billings,Cooperstown,NY,Size L,17.1,5,UPS® Ground
+Billings,Deland,FL,Size L,18.12,4,UPS® Ground
+Billings,Fort Mill,SC,Size L,17.1,5,UPS® Ground
+Billings,Fargo,ND,Size L,11.36,2,UPS® Ground
+Billings,Glen Allen,VA,Size L,17.1,5,UPS® Ground
+Billings,Grand Junction,CO,Size L,11.36,2,UPS® Ground
+Billings,Highlands Ranch,CO,Size L,11.36,2,UPS® Ground
+Billings,Joliet,IL,Size L,16.04,3,UPS® Ground
+Billings,Kerrville,TX,Size L,16.04,3,UPS® Ground
+Billings,Longmont,CO,Size L,11.36,2,UPS® Ground
+Billings,Minneapolis,MN,Size L,14.74,3,UPS® Ground
+Billings,Naperville,IL,Size L,16.04,3,UPS® Ground
+Billings,Neosho,MO,Size L,14.74,3,UPS® Ground
+Billings,Puyallup,WA,Size L,14.74,2,UPS® Ground
+Billings,Queen Creek,AZ,Size L,14.74,3,UPS® Ground
+Billings,Saline,MI,Size L,16.04,4,UPS® Ground
+Billings,Sevierville,TN,Size L,17.1,4,UPS® Ground
+Billings,Sterling Heights,MI,Size L,16.04,4,UPS® Ground
+Billings,Thornton,CO,Size L,11.36,2,UPS® Ground
+Billings,Ventura,CA,Size L,14.74,3,UPS® Ground
+Billings,Wilmington,MA,Size L,18.12,5,UPS® Ground
+Billings,Clermont,FL,Size L,18.12,4,UPS® Ground
+Billings,Abilene,TX,Size L,16.04,3,UPS® Ground
+Billings,Brick,NJ,Size L,17.1,5,UPS® Ground
+Billings,Bentonville,AR,Size L,14.74,4,UPS® Ground
+Billings,Bogart,GA,Size L,17.1,4,UPS® Ground
+Billings,Boston,MA,Size L,18.12,5,UPS® Ground
+Billings,Buffalo,NY,Size L,17.1,5,UPS® Ground
+Billings,Cary,NC,Size L,17.1,5,UPS® Ground
+Billings,Dallas,GA,Size L,17.1,4,UPS® Ground
+Billings,Doylestown,PA,Size L,17.1,5,UPS® Ground
+Billings,Eugene,OR,Size L,14.74,2,UPS® Ground
+Billings,Edmond,OK,Size L,14.74,3,UPS® Ground
+Billings,Forney,TX,Size L,16.04,3,UPS® Ground
+Billings,Fuquay Varina,NC,Size L,17.1,5,UPS® Ground
+Billings,Glendora,CA,Size L,14.74,3,UPS® Ground
+Billings,Henrico,VA,Size L,17.1,5,UPS® Ground
+Billings,Hockessin,DE,Size L,17.1,5,UPS® Ground
+Billings,Holly Springs,NC,Size L,17.1,5,UPS® Ground
+Billings,Irvine,CA,Size L,14.74,3,UPS® Ground
+Billings,Lakeland,FL,Size L,18.12,4,UPS® Ground
+Billings,Lawrence,KS,Size L,14.74,3,UPS® Ground
+Billings,League City,TX,Size L,16.04,3,UPS® Ground
+Billings,Mansfield,TX,Size L,16.04,3,UPS® Ground
+Billings,Madison,WI,Size L,14.74,3,UPS® Ground
+Billings,McKinney,TX,Size L,16.04,3,UPS® Ground
+Billings,Mentor,OH,Size L,16.04,4,UPS® Ground
+Billings,Mount Airy,MD,Size L,17.1,5,UPS® Ground
+Billings,Norfolk,VA,Size L,17.1,5,UPS® Ground
+Billings,Nampa,ID,Size L,11.36,3,UPS® Ground
+Billings,Noblesville,IN,Size L,16.04,4,UPS® Ground
+Billings,Orland Park,IL,Size L,16.04,3,UPS® Ground
+Billings,Palm Harbor,FL,Size L,18.12,4,UPS® Ground
+Billings,Petaluma,CA,Size L,14.74,3,UPS® Ground
+Billings,Placentia,CA,Size L,14.74,3,UPS® Ground
+Billings,Prescott,AZ,Size L,14.74,3,UPS® Ground
+Billings,Richardson,TX,Size L,16.04,3,UPS® Ground
+Billings,Roanoke,VA,Size L,17.1,4,UPS® Ground
+Billings,Richmond,TX,Size L,16.04,3,UPS® Ground
+Billings,Sanford,ME,Size L,18.12,5,UPS® Ground
+Billings,Seminole,FL,Size L,18.12,4,UPS® Ground
+Billings,Sheridan,WY,Size L,9.41,1,UPS® Ground
+Billings,Sparks,NV,Size L,11.36,3,UPS® Ground
+Billings,Traverse City,MI,Size L,16.04,4,UPS® Ground
+Billings,Tulsa,OK,Size L,14.74,3,UPS® Ground
+Billings,Wake Forest,NC,Size L,17.1,5,UPS® Ground
+Billings,Waterloo,SC,Size L,17.1,5,UPS® Ground
+Billings,Waukesha,WI,Size L,16.04,3,UPS® Ground
+Billings,Wichita,KS,Size L,14.74,3,UPS® Ground
+Billings,Winnsboro,TX,Size L,16.04,3,UPS® Ground
+Billings,Woodbury,MN,Size L,14.74,3,UPS® Ground
+Billings,Cumming,GA,Size L,17.1,4,UPS® Ground
+Billings,Muskegon,MI,Size L,16.04,4,UPS® Ground
+Billings,Akron,OH,Size L,16.04,4,UPS® Ground
+Billings,Albany,OR,Size L,14.74,2,UPS® Ground
+Billings,Alpharetta,GA,Size L,17.1,4,UPS® Ground
+Billings,Asheville,NC,Size L,17.1,5,UPS® Ground
+Billings,Bixby,OK,Size L,14.74,3,UPS® Ground
+Billings,Boulder,CO,Size L,11.36,2,UPS® Ground
+Billings,Bethlehem,PA,Size L,17.1,5,UPS® Ground
+Billings,Brenham,TX,Size L,16.04,3,UPS® Ground
+Billings,Broken Bow,OK,Size L,14.74,3,UPS® Ground
+Billings,Cape Coral,FL,Size L,18.12,4,UPS® Ground
+Billings,Chula Vista,CA,Size L,14.74,3,UPS® Ground
+Billings,Crawfordville,FL,Size L,17.1,4,UPS® Ground
+Billings,Cypress,TX,Size L,16.04,3,UPS® Ground
+Billings,Clearwater,FL,Size L,18.12,4,UPS® Ground
+Billings,Columbiana,AL,Size L,16.04,4,UPS® Ground
+Billings,Columbus,GA,Size L,17.1,4,UPS® Ground
+Billings,Commack,NY,Size L,17.1,5,UPS® Ground
+Billings,Dublin,CA,Size L,14.74,3,UPS® Ground
+Billings,Decatur,GA,Size L,17.1,4,UPS® Ground
+Billings,Deltona,FL,Size L,18.12,4,UPS® Ground
+Billings,Derry,NH,Size L,18.12,5,UPS® Ground
+Billings,Douglassville,PA,Size L,17.1,5,UPS® Ground
+Billings,Easton,PA,Size L,17.1,5,UPS® Ground
+Billings,El Paso,TX,Size L,14.74,3,UPS® Ground
+Billings,Escondido,CA,Size L,14.74,3,UPS® Ground
+Billings,Fairport,NY,Size L,17.1,5,UPS® Ground
+Billings,Flemington,NJ,Size L,17.1,5,UPS® Ground
+Billings,Florence,SC,Size L,17.1,5,UPS® Ground
+Billings,Fort Lauderdale,FL,Size L,18.12,4,UPS® Ground
+Billings,Frisco,TX,Size L,16.04,3,UPS® Ground
+Billings,Goodyear,AZ,Size L,14.74,3,UPS® Ground
+Billings,Gays Mills,WI,Size L,14.74,4,UPS® Ground
+Billings,Grafton,WI,Size L,16.04,3,UPS® Ground
+Billings,Green Cove Springs,FL,Size L,17.1,4,UPS® Ground
+Billings,Greensburg,PA,Size L,17.1,4,UPS® Ground
+Billings,Honolulu,HI,Size L,46.14,4,UPS® Ground
+Billings,Humble,TX,Size L,16.04,3,UPS® Ground
+Billings,Huntington,NY,Size L,17.1,5,UPS® Ground
+Billings,Idaho Falls,ID,Size L,10.41,2,UPS® Ground
+Billings,Jackson,TN,Size L,16.04,4,UPS® Ground
+Billings,Jacksonville,NC,Size L,17.1,5,UPS® Ground
+Billings,Jenkintown,PA,Size L,17.1,5,UPS® Ground
+Billings,Johnson City,TN,Size L,17.1,4,UPS® Ground
+Billings,Kingwood,TX,Size L,16.04,3,UPS® Ground
+Billings,Lansing,MI,Size L,16.04,4,UPS® Ground
+Billings,Lapeer,MI,Size L,16.04,4,UPS® Ground
+Billings,Lawrenceville,GA,Size L,17.1,4,UPS® Ground
+Billings,Lexington,NC,Size L,17.1,5,UPS® Ground
+Billings,Lubbock,TX,Size L,14.74,3,UPS® Ground
+Billings,Medina,OH,Size L,16.04,4,UPS® Ground
+Billings,Macomb,MI,Size L,16.04,4,UPS® Ground
+Billings,Magnolia,TX,Size L,16.04,3,UPS® Ground
+Billings,Martinsburg,WV,Size L,17.1,5,UPS® Ground
+Billings,Meridian,ID,Size L,11.36,3,UPS® Ground
+Billings,Mobile,AL,Size L,17.1,4,UPS® Ground
+Billings,Morrison,CO,Size L,11.36,2,UPS® Ground
+Billings,Napa,CA,Size L,14.74,3,UPS® Ground
+Billings,New Braunfels,TX,Size L,16.04,3,UPS® Ground
+Billings,New Lenox,IL,Size L,16.04,3,UPS® Ground
+Billings,New Orleans,LA,Size L,17.1,4,UPS® Ground
+Billings,Newark,DE,Size L,17.1,5,UPS® Ground
+Billings,Oakland,CA,Size L,14.74,3,UPS® Ground
+Billings,Owasso,OK,Size L,14.74,3,UPS® Ground
+Billings,Overland Park,KS,Size L,14.74,3,UPS® Ground
+Billings,Panama City,FL,Size L,17.1,4,UPS® Ground
+Billings,Panama City Beach,FL,Size L,17.1,4,UPS® Ground
+Billings,Patchogue,NY,Size L,17.1,5,UPS® Ground
+Billings,Port Clinton,OH,Size L,16.04,4,UPS® Ground
+Billings,Paducah,KY,Size L,16.04,4,UPS® Ground
+Billings,Palmetto,FL,Size L,18.12,4,UPS® Ground
+Billings,Pearland,TX,Size L,16.04,3,UPS® Ground
+Billings,Pella,IA,Size L,14.74,3,UPS® Ground
+Billings,Pittsford,NY,Size L,17.1,5,UPS® Ground
+Billings,Port Orange,FL,Size L,17.1,4,UPS® Ground
+Billings,Ravenna,OH,Size L,16.04,4,UPS® Ground
+Billings,Roaming Shores,OH,Size L,16.04,4,UPS® Ground
+Billings,Richmond Hill,GA,Size L,17.1,4,UPS® Ground
+Billings,Riverview,FL,Size L,18.12,4,UPS® Ground
+Billings,Rochester,MN,Size L,14.74,3,UPS® Ground
+Billings,Round Rock,TX,Size L,16.04,3,UPS® Ground
+Billings,Saint Petersburg,FL,Size L,18.12,4,UPS® Ground
+Billings,San Leandro,CA,Size L,14.74,3,UPS® Ground
+Billings,Southington,CT,Size L,18.12,5,UPS® Ground
+Billings,Spartanburg,SC,Size L,17.1,5,UPS® Ground
+Billings,Surprise,AZ,Size L,14.74,3,UPS® Ground
+Billings,Santa Barbara,CA,Size L,14.74,3,UPS® Ground
+Billings,Shelton,CT,Size L,18.12,5,UPS® Ground
+Billings,Spring Branch,TX,Size L,16.04,3,UPS® Ground
+Billings,St. Louis,MO,Size L,16.04,3,UPS® Ground
+Billings,Stroudsburg,PA,Size L,17.1,5,UPS® Ground
+Billings,Sunapee,NH,Size L,17.1,5,UPS® Ground
+Billings,Swedesboro,NJ,Size L,17.1,5,UPS® Ground
+Billings,Syracuse,NY,Size L,17.1,5,UPS® Ground
+Billings,Tomball,TX,Size L,16.04,3,UPS® Ground
+Billings,Topeka,KS,Size L,14.74,3,UPS® Ground
+Billings,Tuscaloosa,AL,Size L,16.04,4,UPS® Ground
+Billings,Terre Haute,IN,Size L,16.04,4,UPS® Ground
+Billings,Tinley Park,IL,Size L,16.04,3,UPS® Ground
+Billings,Toms River,NJ,Size L,17.1,5,UPS® Ground
+Billings,Tulare,CA,Size L,14.74,3,UPS® Ground
+Billings,Vienna,VA,Size L,17.1,4,UPS® Ground
+Billings,Walnut Creek,CA,Size L,14.74,3,UPS® Ground
+Billings,Wayne,NJ,Size L,17.1,5,UPS® Ground
+Billings,Waynesboro,VA,Size L,17.1,5,UPS® Ground
+Billings,West Sacramento,CA,Size L,14.74,3,UPS® Ground
+Billings,Yuba City,CA,Size L,14.74,3,UPS® Ground
+Billings,Zachary,LA,Size L,16.04,4,UPS® Ground
+Billings,Buford,GA,Size L,17.1,4,UPS® Ground
+Billings,Modesto,CA,Size L,14.74,3,UPS® Ground
+Billings,Winter Park,FL,Size L,18.12,4,UPS® Ground
+Billings,Antioch,IL,Size L,16.04,3,UPS® Ground
+Billings,Algonquin,IL,Size L,16.04,3,UPS® Ground
+Billings,Allen,TX,Size L,16.04,3,UPS® Ground
+Billings,Ames,IA,Size L,14.74,3,UPS® Ground
+Billings,Anaheim,CA,Size L,14.74,3,UPS® Ground
+Billings,Aptos,CA,Size L,14.74,3,UPS® Ground
+Billings,Astoria,NY,Size L,17.1,5,UPS® Ground
+Billings,Bloomington,IN,Size L,16.04,4,UPS® Ground
+Billings,Bremerton,WA,Size L,14.74,2,UPS® Ground
+Billings,Brunswick,OH,Size L,16.04,4,UPS® Ground
+Billings,Burke,VA,Size L,17.1,5,UPS® Ground
+Billings,Bedford,IN,Size L,16.04,4,UPS® Ground
+Billings,Benton,LA,Size L,16.04,3,UPS® Ground
+Billings,Billings,MT,Size L,9.41,1,UPS® Ground
+Billings,Birdsboro,PA,Size L,17.1,5,UPS® Ground
+Billings,Bothell,WA,Size L,14.74,2,UPS® Ground
+Billings,Bowie,MD,Size L,17.1,5,UPS® Ground
+Billings,Brentwood,TN,Size L,16.04,4,UPS® Ground
+Billings,Bronx,NY,Size L,17.1,5,UPS® Ground
+Billings,Brookfield,WI,Size L,16.04,3,UPS® Ground
+Billings,Canton,OH,Size L,17.1,4,UPS® Ground
+Billings,Celina,TX,Size L,16.04,3,UPS® Ground
+Billings,Chapel Hill,NC,Size L,17.1,5,UPS® Ground
+Billings,Claremore,OK,Size L,14.74,3,UPS® Ground
+Billings,Clovis,CA,Size L,14.74,3,UPS® Ground
+Billings,Cocoa,FL,Size L,18.12,4,UPS® Ground
+Billings,Callahan,FL,Size L,17.1,4,UPS® Ground
+Billings,Carmel,IN,Size L,16.04,4,UPS® Ground
+Billings,Cedar Park,TX,Size L,16.04,3,UPS® Ground
+Billings,Centennial,CO,Size L,11.36,2,UPS® Ground
+Billings,Centerville,MA,Size L,18.12,5,UPS® Ground
+Billings,Charleston,SC,Size L,17.1,5,UPS® Ground
+Billings,Charlottesville,VA,Size L,17.1,5,UPS® Ground
+Billings,Clarkesville,GA,Size L,17.1,4,UPS® Ground
+Billings,Clayton,NC,Size L,17.1,5,UPS® Ground
+Billings,Clifton,NJ,Size L,17.1,5,UPS® Ground
+Billings,Collinsville,OK,Size L,14.74,3,UPS® Ground
+Billings,Columbia,TN,Size L,16.04,4,UPS® Ground
+Billings,Concord,NC,Size L,17.1,5,UPS® Ground
+Billings,Cookeville,TN,Size L,16.04,4,UPS® Ground
+Billings,Corpus Christi,TX,Size L,16.04,3,UPS® Ground
+Billings,Corrales,NM,Size L,14.74,3,UPS® Ground
+Billings,Corydon,IN,Size L,16.04,4,UPS® Ground
+Billings,Cranston,RI,Size L,18.12,5,UPS® Ground
+Billings,Dekalb,IL,Size L,16.04,3,UPS® Ground
+Billings,Delaware,OH,Size L,16.04,4,UPS® Ground
+Billings,Delmar,NY,Size L,17.1,5,UPS® Ground
+Billings,Des Moines,IA,Size L,14.74,3,UPS® Ground
+Billings,Dickson,TN,Size L,16.04,4,UPS® Ground
+Billings,Downers Grove,IL,Size L,16.04,3,UPS® Ground
+Billings,Dripping Springs,TX,Size L,16.04,3,UPS® Ground
+Billings,Eustis,FL,Size L,18.12,4,UPS® Ground
+Billings,East Hampton,NY,Size L,18.12,5,UPS® Ground
+Billings,Fenton,MO,Size L,16.04,3,UPS® Ground
+Billings,Fayetteville,AR,Size L,14.74,4,UPS® Ground
+Billings,Flower Mound,TX,Size L,16.04,3,UPS® Ground
+Billings,Franklin,OH,Size L,16.04,4,UPS® Ground
+Billings,Friendswood,TX,Size L,16.04,3,UPS® Ground
+Billings,Gainesville,FL,Size L,17.1,4,UPS® Ground
+Billings,Gainesville,GA,Size L,17.1,4,UPS® Ground
+Billings,Glendale,CA,Size L,14.74,3,UPS® Ground
+Billings,Greenville,SC,Size L,17.1,5,UPS® Ground
+Billings,Greenville,MI,Size L,16.04,4,UPS® Ground
+Billings,Gaithersburg,MD,Size L,17.1,5,UPS® Ground
+Billings,Garner,NC,Size L,17.1,5,UPS® Ground
+Billings,Gastonia,NC,Size L,17.1,5,UPS® Ground
+Billings,Granada Hills,CA,Size L,14.74,3,UPS® Ground
+Billings,Granbury,TX,Size L,16.04,3,UPS® Ground
+Billings,Griffin,GA,Size L,17.1,4,UPS® Ground
+Billings,Harpers Ferry,WV,Size L,17.1,5,UPS® Ground
+Billings,Haverhill,MA,Size L,18.12,5,UPS® Ground
+Billings,Hayward,CA,Size L,14.74,3,UPS® Ground
+Billings,Herriman,UT,Size L,11.36,2,UPS® Ground
+Billings,Hillsboro,OR,Size L,14.74,2,UPS® Ground
+Billings,Hoboken,NJ,Size L,17.1,5,UPS® Ground
+Billings,Huntley,IL,Size L,16.04,3,UPS® Ground
+Billings,Hagerstown,MD,Size L,17.1,5,UPS® Ground
+Billings,Hamilton,OH,Size L,16.04,4,UPS® Ground
+Billings,Harrisburg,PA,Size L,17.1,4,UPS® Ground
+Billings,Hendersonville,NC,Size L,17.1,5,UPS® Ground
+Billings,Hendersonville,TN,Size L,16.04,4,UPS® Ground
+Billings,Holland,MI,Size L,16.04,4,UPS® Ground
+Billings,Indian Trail,NC,Size L,17.1,5,UPS® Ground
+Billings,Jersey City,NJ,Size L,17.1,5,UPS® Ground
+Billings,Johnstown,PA,Size L,17.1,4,UPS® Ground
+Billings,Kalamazoo,MI,Size L,16.04,4,UPS® Ground
+Billings,Keatchie,LA,Size L,16.04,4,UPS® Ground
+Billings,Kennewick,WA,Size L,11.36,2,UPS® Ground
+Billings,Kingsport,TN,Size L,17.1,4,UPS® Ground
+Billings,Lake Elsinore,CA,Size L,14.74,3,UPS® Ground
+Billings,Lebanon,OH,Size L,16.04,4,UPS® Ground
+Billings,Little Rock,AR,Size L,16.04,4,UPS® Ground
+Billings,Livonia,MI,Size L,16.04,4,UPS® Ground
+Billings,Los Alamos,NM,Size L,14.74,3,UPS® Ground
+Billings,Loveland,CO,Size L,11.36,2,UPS® Ground
+Billings,La Mesa,CA,Size L,14.74,3,UPS® Ground
+Billings,La Quinta,CA,Size L,14.74,3,UPS® Ground
+Billings,Lake Oswego,OR,Size L,14.74,2,UPS® Ground
+Billings,Lake Saint Louis,MO,Size L,14.74,3,UPS® Ground
+Billings,Lake in the Hills,IL,Size L,16.04,3,UPS® Ground
+Billings,Lakeway,TX,Size L,16.04,3,UPS® Ground
+Billings,Lancaster,NY,Size L,17.1,5,UPS® Ground
+Billings,Leander,TX,Size L,16.04,3,UPS® Ground
+Billings,Lees Summit,MO,Size L,14.74,3,UPS® Ground
+Billings,Lenoir,NC,Size L,17.1,5,UPS® Ground
+Billings,Lewis Center,OH,Size L,16.04,4,UPS® Ground
+Billings,Lexington,IN,Size L,16.04,4,UPS® Ground
+Billings,Lodi,CA,Size L,14.74,3,UPS® Ground
+Billings,Lynden,WA,Size L,14.74,2,UPS® Ground
+Billings,Methuen,MA,Size L,18.12,5,UPS® Ground
+Billings,Milford,CT,Size L,18.12,5,UPS® Ground
+Billings,Mineola,TX,Size L,16.04,3,UPS® Ground
+Billings,Missoula,MT,Size L,10.41,1,UPS® Ground
+Billings,Mansfield,OH,Size L,16.04,4,UPS® Ground
+Billings,McDonough,GA,Size L,17.1,4,UPS® Ground
+Billings,Merritt Island,FL,Size L,18.12,4,UPS® Ground
+Billings,Midlothian,VA,Size L,17.1,5,UPS® Ground
+Billings,Millington,TN,Size L,16.04,4,UPS® Ground
+Billings,Milton,FL,Size L,17.1,4,UPS® Ground
+Billings,Moab,UT,Size L,11.36,3,UPS® Ground
+Billings,Monroe,NC,Size L,17.1,5,UPS® Ground
+Billings,Mooresville,IN,Size L,16.04,4,UPS® Ground
+Billings,Morganton,NC,Size L,17.1,5,UPS® Ground
+Billings,Murfreesboro,TN,Size L,16.04,4,UPS® Ground
+Billings,Newburgh,NY,Size L,17.1,5,UPS® Ground
+Billings,Navarre,FL,Size L,17.1,4,UPS® Ground
+Billings,New Market,AL,Size L,16.04,4,UPS® Ground
+Billings,Newnan,GA,Size L,17.1,4,UPS® Ground
+Billings,Norman,OK,Size L,14.74,3,UPS® Ground
+Billings,Novi,MI,Size L,16.04,4,UPS® Ground
+Billings,Ormond Beach,FL,Size L,17.1,4,UPS® Ground
+Billings,Owensboro,KY,Size L,16.04,4,UPS® Ground
+Billings,Oconto,WI,Size L,14.74,3,UPS® Ground
+Billings,Old Bridge,NJ,Size L,17.1,5,UPS® Ground
+Billings,Olympia,WA,Size L,14.74,2,UPS® Ground
+Billings,Oregon City,OR,Size L,14.74,2,UPS® Ground
+Billings,Oxford,MI,Size L,16.04,4,UPS® Ground
+Billings,Peachtree City,GA,Size L,17.1,4,UPS® Ground
+Billings,Pleasanton,CA,Size L,14.74,3,UPS® Ground
+Billings,Poughkeepsie,NY,Size L,17.1,5,UPS® Ground
+Billings,Pagosa Springs,CO,Size L,11.36,2,UPS® Ground
+Billings,Pasadena,CA,Size L,14.74,3,UPS® Ground
+Billings,Pasadena,TX,Size L,16.04,3,UPS® Ground
+Billings,Pasco,WA,Size L,11.36,2,UPS® Ground
+Billings,Pawtucket,RI,Size L,18.12,5,UPS® Ground
+Billings,Pembroke,MA,Size L,18.12,5,UPS® Ground
+Billings,Perrysburg,OH,Size L,16.04,4,UPS® Ground
+Billings,Plant City,FL,Size L,18.12,4,UPS® Ground
+Billings,Port Orchard,WA,Size L,14.74,2,UPS® Ground
+Billings,Prescott Valley,AZ,Size L,14.74,3,UPS® Ground
+Billings,Princeton,NJ,Size L,17.1,5,UPS® Ground
+Billings,Quincy,MA,Size L,18.12,5,UPS® Ground
+Billings,Redwood City,CA,Size L,14.74,3,UPS® Ground
+Billings,Rohnert Park,CA,Size L,14.74,3,UPS® Ground
+Billings,Rigby,ID,Size L,10.41,3,UPS® Ground
+Billings,Ripon,WI,Size L,14.74,3,UPS® Ground
+Billings,Rogers,AR,Size L,14.74,4,UPS® Ground
+Billings,Rowlett,TX,Size L,16.04,3,UPS® Ground
+Billings,Rydal,PA,Size L,17.1,5,UPS® Ground
+Billings,Shepherdsville,KY,Size L,16.04,4,UPS® Ground
+Billings,Shreveport,LA,Size L,16.04,3,UPS® Ground
+Billings,Stamford,CT,Size L,17.1,5,UPS® Ground
+Billings,Salt Lake City,UT,Size L,11.36,2,UPS® Ground
+Billings,Sanford,NC,Size L,17.1,5,UPS® Ground
+Billings,Santa Ana,CA,Size L,14.74,3,UPS® Ground
+Billings,Santa Cruz,CA,Size L,14.74,3,UPS® Ground
+Billings,Santa Fe,NM,Size L,14.74,3,UPS® Ground
+Billings,Sarver,PA,Size L,17.1,4,UPS® Ground
+Billings,Schenectady,NY,Size L,17.1,5,UPS® Ground
+Billings,Sierra Vista,AZ,Size L,14.74,3,UPS® Ground
+Billings,Silver Spring,MD,Size L,17.1,5,UPS® Ground
+Billings,South Jordan,UT,Size L,11.36,2,UPS® Ground
+Billings,Springfield,MO,Size L,14.74,3,UPS® Ground
+Billings,Summerville,SC,Size L,17.1,5,UPS® Ground
+Billings,Sumter,SC,Size L,17.1,5,UPS® Ground
+Billings,Sun City,AZ,Size L,14.74,3,UPS® Ground
+Billings,Syosset,NY,Size L,17.1,5,UPS® Ground
+Billings,Taunton,MA,Size L,18.12,5,UPS® Ground
+Billings,Texarkana,TX,Size L,14.74,3,UPS® Ground
+Billings,Toledo,OH,Size L,16.04,4,UPS® Ground
+Billings,Urbana,OH,Size L,16.04,4,UPS® Ground
+Billings,Valparaiso,IN,Size L,16.04,3,UPS® Ground
+Billings,Waco,TX,Size L,16.04,3,UPS® Ground
+Billings,West Lafayette,IN,Size L,16.04,3,UPS® Ground
+Billings,Winter Garden,FL,Size L,18.12,4,UPS® Ground
+Billings,Winter Haven,FL,Size L,18.12,4,UPS® Ground
+Billings,Wylie,TX,Size L,16.04,3,UPS® Ground
+Billings,Waldorf,MD,Size L,17.1,5,UPS® Ground
+Billings,Wesley Chapel,FL,Size L,18.12,4,UPS® Ground
+Billings,West Palm Beach,FL,Size L,18.12,4,UPS® Ground
+Billings,Williamsburg,VA,Size L,17.1,5,UPS® Ground
+Billings,Woodbridge,VA,Size L,17.1,5,UPS® Ground
+Billings,Woodside,CA,Size L,14.74,3,UPS® Ground
+Billings,Yorba Linda,CA,Size L,14.74,3,UPS® Ground
+Billings,Queens Village,NY,Size L,17.1,5,UPS® Ground
+Minneapolis,Brooklyn,NY,Size L,16.04,3,UPS® Ground
+Minneapolis,Phoenix,AZ,Size L,17.1,4,UPS® Ground
+Minneapolis,Houston,TX,Size L,16.04,4,UPS® Ground
+Minneapolis,San Antonio,TX,Size L,16.04,4,UPS® Ground
+Minneapolis,Jacksonville,FL,Size L,16.04,4,UPS® Ground
+Minneapolis,Chicago,IL,Size L,11.36,2,UPS® Ground
+Minneapolis,Dallas,TX,Size L,14.74,3,UPS® Ground
+Minneapolis,Wilmington,DE,Size L,14.74,3,UPS® Ground
+Minneapolis,Austin,TX,Size L,16.04,3,UPS® Ground
+Minneapolis,Canton,OH,Size L,14.74,2,UPS® Ground
+Minneapolis,Charlotte,NC,Size L,14.74,3,UPS® Ground
+Minneapolis,New York,NY,Size L,16.04,3,UPS® Ground
+Minneapolis,Atlanta,GA,Size L,14.74,4,UPS® Ground
+Minneapolis,Franklin,TN,Size L,14.74,3,UPS® Ground
+Minneapolis,Lexington,KY,Size L,14.74,2,UPS® Ground
+Minneapolis,Orlando,FL,Size L,16.04,4,UPS® Ground
+Minneapolis,Rochester,NY,Size L,14.74,3,UPS® Ground
+Minneapolis,Las Vegas,NV,Size L,17.1,4,UPS® Ground
+Minneapolis,Louisville,KY,Size L,14.74,2,UPS® Ground
+Minneapolis,Marietta,GA,Size L,14.74,4,UPS® Ground
+Minneapolis,Colorado Springs,CO,Size L,14.74,3,UPS® Ground
+Minneapolis,Columbus,OH,Size L,14.74,2,UPS® Ground
+Minneapolis,Marble Falls,TX,Size L,16.04,3,UPS® Ground
+Minneapolis,Tampa,FL,Size L,16.04,4,UPS® Ground
+Minneapolis,San Diego,CA,Size L,17.1,4,UPS® Ground
+Minneapolis,Columbia,SC,Size L,16.04,3,UPS® Ground
+Minneapolis,Greenville,SC,Size L,14.74,3,UPS® Ground
+Minneapolis,Lebanon,TN,Size L,14.74,3,UPS® Ground
+Minneapolis,Salem,OR,Size L,17.1,5,UPS® Ground
+Minneapolis,Cleveland,OH,Size L,14.74,2,UPS® Ground
+Minneapolis,Denver,CO,Size L,14.74,3,UPS® Ground
+Minneapolis,Omaha,NE,Size L,10.41,3,UPS® Ground
+Minneapolis,Portland,OR,Size L,17.1,5,UPS® Ground
+Minneapolis,Raleigh,NC,Size L,14.74,3,UPS® Ground
+Minneapolis,Richmond,VA,Size L,14.74,3,UPS® Ground
+Minneapolis,Jackson,MS,Size L,14.74,2,UPS® Ground
+Minneapolis,Albany,NY,Size L,14.74,3,UPS® Ground
+Minneapolis,Fort Worth,TX,Size L,14.74,3,UPS® Ground
+Minneapolis,Oklahoma City,OK,Size L,14.74,3,UPS® Ground
+Minneapolis,Chesapeake,VA,Size L,16.04,3,UPS® Ground
+Minneapolis,Miami,FL,Size L,17.1,4,UPS® Ground
+Minneapolis,Milford,CT,Size L,16.04,3,UPS® Ground
+Minneapolis,Pittsburgh,PA,Size L,14.74,3,UPS® Ground
+Minneapolis,San Francisco,CA,Size L,17.1,4,UPS® Ground
+Minneapolis,San Jose,CA,Size L,17.1,4,UPS® Ground
+Minneapolis,Tucson,AZ,Size L,16.04,4,UPS® Ground
+Minneapolis,Virginia Beach,VA,Size L,16.04,3,UPS® Ground
+Minneapolis,Albuquerque,NM,Size L,14.74,4,UPS® Ground
+Minneapolis,Gilbert,AZ,Size L,17.1,4,UPS® Ground
+Minneapolis,Springfield,IL,Size L,11.36,2,UPS® Ground
+Minneapolis,Alexandria,VA,Size L,14.74,3,UPS® Ground
+Minneapolis,Kansas City,MO,Size L,11.36,3,UPS® Ground
+Minneapolis,Knoxville,TN,Size L,14.74,3,UPS® Ground
+Minneapolis,Lakewood,CO,Size L,14.74,3,UPS® Ground
+Minneapolis,Nashville,TN,Size L,14.74,3,UPS® Ground
+Minneapolis,Saint Louis,MO,Size L,11.36,3,UPS® Ground
+Minneapolis,Seattle,WA,Size L,17.1,5,UPS® Ground
+Minneapolis,Arlington,TX,Size L,14.74,3,UPS® Ground
+Minneapolis,Aurora,CO,Size L,14.74,3,UPS® Ground
+Minneapolis,Boise,ID,Size L,16.04,4,UPS® Ground
+Minneapolis,Indianapolis,IN,Size L,11.36,2,UPS® Ground
+Minneapolis,Naples,CO,Size L,14.74,,UPS® Ground
+Minneapolis,Reno,NV,Size L,16.04,4,UPS® Ground
+Minneapolis,Riverside,CA,Size L,17.1,4,UPS® Ground
+Minneapolis,Bismarck,ND,Size L,11.36,2,UPS® Ground
+Minneapolis,Fresno,TX,Size L,16.04,4,UPS® Ground
+Minneapolis,Lincoln,RI,Size L,16.04,4,UPS® Ground
+Minneapolis,Los Angeles,CA,Size L,17.1,4,UPS® Ground
+Minneapolis,Mansfield,MA,Size L,16.04,4,UPS® Ground
+Minneapolis,Milwaukee,WI,Size L,10.41,2,UPS® Ground
+Minneapolis,Madison,IN,Size L,11.36,2,UPS® Ground
+Minneapolis,Mesa,AZ,Size L,17.1,4,UPS® Ground
+Minneapolis,Monroe,NC,Size L,14.74,3,UPS® Ground
+Minneapolis,Philadelphia,PA,Size L,14.74,3,UPS® Ground
+Minneapolis,Staten Island,NY,Size L,16.04,3,UPS® Ground
+Minneapolis,Washington,DC,Size L,14.74,3,UPS® Ground
+Minneapolis,Baltimore,MD,Size L,14.74,3,UPS® Ground
+Minneapolis,Decatur,IL,Size L,11.36,2,UPS® Ground
+Minneapolis,Durham,NC,Size L,14.74,3,UPS® Ground
+Minneapolis,Fayetteville,AR,Size L,14.74,4,UPS® Ground
+Minneapolis,Glendale,AZ,Size L,17.1,4,UPS® Ground
+Minneapolis,Midland,GA,Size L,14.74,4,UPS® Ground
+Minneapolis,Scottsdale,AZ,Size L,17.1,4,UPS® Ground
+Minneapolis,Woodstock,GA,Size L,14.74,4,UPS® Ground
+Minneapolis,Chandler,AZ,Size L,17.1,4,UPS® Ground
+Minneapolis,Cincinnati,OH,Size L,14.74,2,UPS® Ground
+Minneapolis,Covington,LA,Size L,16.04,4,UPS® Ground
+Minneapolis,Fort Myers,FL,Size L,17.1,4,UPS® Ground
+Minneapolis,Greensboro,NC,Size L,14.74,3,UPS® Ground
+Minneapolis,Henderson,TX,Size L,14.74,3,UPS® Ground
+Minneapolis,Hamilton,MI,Size L,11.36,2,UPS® Ground
+Minneapolis,Lewisburg,PA,Size L,14.74,3,UPS® Ground
+Minneapolis,Littleton,CO,Size L,14.74,3,UPS® Ground
+Minneapolis,Mount Pleasant,SC,Size L,16.04,3,UPS® Ground
+Minneapolis,Pasadena,MD,Size L,14.74,3,UPS® Ground
+Minneapolis,Plano,TX,Size L,14.74,3,UPS® Ground
+Minneapolis,Sanford,NC,Size L,14.74,3,UPS® Ground
+Minneapolis,Wayne,ME,Size L,16.04,4,UPS® Ground
+Minneapolis,Ashland,PA,Size L,14.74,3,UPS® Ground
+Minneapolis,Burlington,WI,Size L,10.41,2,UPS® Ground
+Minneapolis,Centerville,IA,Size L,10.41,2,UPS® Ground
+Minneapolis,Clayton,NC,Size L,16.04,3,UPS® Ground
+Minneapolis,Encinitas,CA,Size L,17.1,4,UPS® Ground
+Minneapolis,Fort Collins,CO,Size L,14.74,3,UPS® Ground
+Minneapolis,Golden,CO,Size L,14.74,3,UPS® Ground
+Minneapolis,Hudson,NC,Size L,14.74,3,UPS® Ground
+Minneapolis,Katy,TX,Size L,16.04,4,UPS® Ground
+Minneapolis,Lancaster,SC,Size L,14.74,3,UPS® Ground
+Minneapolis,Newark,NJ,Size L,16.04,3,UPS® Ground
+Minneapolis,Parker,CO,Size L,14.74,3,UPS® Ground
+Minneapolis,Plymouth,MA,Size L,16.04,4,UPS® Ground
+Minneapolis,Rancho Cucamonga,CA,Size L,17.1,4,UPS® Ground
+Minneapolis,Rockville,MD,Size L,14.74,3,UPS® Ground
+Minneapolis,Sacramento,CA,Size L,17.1,4,UPS® Ground
+Minneapolis,Tallahassee,FL,Size L,16.04,4,UPS® Ground
+Minneapolis,The Villages,FL,Size L,16.04,4,UPS® Ground
+Minneapolis,Westfield,IN,Size L,11.36,2,UPS® Ground
+Minneapolis,Waterloo,IA,Size L,10.41,2,UPS® Ground
+Minneapolis,West Chester,PA,Size L,14.74,3,UPS® Ground
+Minneapolis,Bend,OR,Size L,16.04,5,UPS® Ground
+Minneapolis,Amarillo,TX,Size L,14.74,4,UPS® Ground
+Minneapolis,Auburn,MA,Size L,16.04,4,UPS® Ground
+Minneapolis,Bakersfield,CA,Size L,17.1,4,UPS® Ground
+Minneapolis,Boca Raton,FL,Size L,17.1,4,UPS® Ground
+Minneapolis,Benton,LA,Size L,14.74,4,UPS® Ground
+Minneapolis,Bradenton,FL,Size L,16.04,4,UPS® Ground
+Minneapolis,Dayton,OH,Size L,11.36,2,UPS® Ground
+Minneapolis,Duluth,MN,Size L,9.41,1,UPS® Ground
+Minneapolis,Englewood,CO,Size L,14.74,3,UPS® Ground
+Minneapolis,Fort Wayne,IN,Size L,11.36,2,UPS® Ground
+Minneapolis,Frederick,MD,Size L,14.74,3,UPS® Ground
+Minneapolis,Fredericksburg,VA,Size L,14.74,3,UPS® Ground
+Minneapolis,Gainesville,FL,Size L,16.04,4,UPS® Ground
+Minneapolis,Grand Rapids,MI,Size L,11.36,2,UPS® Ground
+Minneapolis,Green Bay,WI,Size L,10.41,2,UPS® Ground
+Minneapolis,Morgantown,WV,Size L,14.74,4,UPS® Ground
+Minneapolis,Pensacola,FL,Size L,16.04,4,UPS® Ground
+Minneapolis,Princeton,MA,Size L,16.04,4,UPS® Ground
+Minneapolis,Peoria,AZ,Size L,17.1,4,UPS® Ground
+Minneapolis,Saint Paul,MN,Size L,9.41,1,UPS® Ground
+Minneapolis,Savannah,GA,Size L,16.04,4,UPS® Ground
+Minneapolis,Seaford,NY,Size L,16.04,3,UPS® Ground
+Minneapolis,Seymour,IN,Size L,11.36,2,UPS® Ground
+Minneapolis,Spokane,WA,Size L,16.04,5,UPS® Ground
+Minneapolis,Windsor,CO,Size L,14.74,3,UPS® Ground
+Minneapolis,Winston-Salem,NC,Size L,14.74,3,UPS® Ground
+Minneapolis,Worcester,MA,Size L,16.04,4,UPS® Ground
+Minneapolis,York,PA,Size L,14.74,3,UPS® Ground
+Minneapolis,Antioch,TN,Size L,14.74,3,UPS® Ground
+Minneapolis,Athens,GA,Size L,14.74,4,UPS® Ground
+Minneapolis,Corona,CA,Size L,17.1,4,UPS® Ground
+Minneapolis,Fairfield,CA,Size L,17.1,4,UPS® Ground
+Minneapolis,Germantown,MD,Size L,14.74,3,UPS® Ground
+Minneapolis,Hillsboro,OR,Size L,17.1,5,UPS® Ground
+Minneapolis,Hope Mills,NC,Size L,16.04,3,UPS® Ground
+Minneapolis,Hendersonville,NC,Size L,14.74,3,UPS® Ground
+Minneapolis,Holly Springs,MS,Size L,14.74,3,UPS® Ground
+Minneapolis,Homer,AK,Size L,46.14,5,UPS® Ground
+Minneapolis,Laurel,MD,Size L,14.74,3,UPS® Ground
+Minneapolis,Long Beach,CA,Size L,17.1,4,UPS® Ground
+Minneapolis,Manteca,CA,Size L,17.1,4,UPS® Ground
+Minneapolis,Maryville,TN,Size L,14.74,3,UPS® Ground
+Minneapolis,Magnolia,MS,Size L,14.74,3,UPS® Ground
+Minneapolis,Memphis,TN,Size L,14.74,3,UPS® Ground
+Minneapolis,Milton,MA,Size L,16.04,4,UPS® Ground
+Minneapolis,Montgomery,TX,Size L,16.04,4,UPS® Ground
+Minneapolis,Myrtle Beach,SC,Size L,16.04,3,UPS® Ground
+Minneapolis,New Market,AL,Size L,14.74,3,UPS® Ground
+Minneapolis,Ocala,FL,Size L,16.04,4,UPS® Ground
+Minneapolis,Olathe,KS,Size L,11.36,3,UPS® Ground
+Minneapolis,Oxford,MI,Size L,11.36,2,UPS® Ground
+Minneapolis,Palm Beach Gardens,FL,Size L,17.1,4,UPS® Ground
+Minneapolis,Roseville,CA,Size L,17.1,4,UPS® Ground
+Minneapolis,Roswell,GA,Size L,14.74,4,UPS® Ground
+Minneapolis,Rockwall,TX,Size L,14.74,3,UPS® Ground
+Minneapolis,Spring,TX,Size L,16.04,4,UPS® Ground
+Minneapolis,Salisbury,MA,Size L,16.04,4,UPS® Ground
+Minneapolis,Santa Rosa,CA,Size L,17.1,4,UPS® Ground
+Minneapolis,Sarasota,FL,Size L,16.04,4,UPS® Ground
+Minneapolis,Vancouver,WA,Size L,16.04,5,UPS® Ground
+Minneapolis,Westminster,MD,Size L,14.74,3,UPS® Ground
+Minneapolis,Canton,GA,Size L,14.74,4,UPS® Ground
+Minneapolis,Columbia,MO,Size L,11.36,3,UPS® Ground
+Minneapolis,Naples,FL,Size L,17.1,4,UPS® Ground
+Minneapolis,Fresno,CA,Size L,17.1,4,UPS® Ground
+Minneapolis,Cleveland,TN,Size L,14.74,3,UPS® Ground
+Minneapolis,Henderson,NV,Size L,16.04,4,UPS® Ground
+Minneapolis,Lincoln,NE,Size L,11.36,3,UPS® Ground
+Minneapolis,Wilmington,NC,Size L,16.04,3,UPS® Ground
+Minneapolis,Arvada,CO,Size L,14.74,3,UPS® Ground
+Minneapolis,Anchorage,AK,Size L,46.14,5,UPS® Ground
+Minneapolis,Birmingham,AL,Size L,14.74,3,UPS® Ground
+Minneapolis,Bozeman,MT,Size L,14.74,2,UPS® Ground
+Minneapolis,Conroe,TX,Size L,16.04,4,UPS® Ground
+Minneapolis,Carmel Valley,CA,Size L,17.1,4,UPS® Ground
+Minneapolis,Castle Rock,CO,Size L,14.74,3,UPS® Ground
+Minneapolis,Cedar Rapids,IA,Size L,10.41,2,UPS® Ground
+Minneapolis,Cooperstown,NY,Size L,14.74,3,UPS® Ground
+Minneapolis,Deland,FL,Size L,16.04,4,UPS® Ground
+Minneapolis,Fort Mill,SC,Size L,14.74,3,UPS® Ground
+Minneapolis,Fargo,ND,Size L,10.41,2,UPS® Ground
+Minneapolis,Glen Allen,VA,Size L,14.74,3,UPS® Ground
+Minneapolis,Grand Junction,CO,Size L,14.74,4,UPS® Ground
+Minneapolis,Highlands Ranch,CO,Size L,14.74,3,UPS® Ground
+Minneapolis,Joliet,IL,Size L,11.36,2,UPS® Ground
+Minneapolis,Kerrville,TX,Size L,16.04,4,UPS® Ground
+Minneapolis,Longmont,CO,Size L,14.74,3,UPS® Ground
+Minneapolis,Minneapolis,MN,Size L,9.41,1,UPS® Ground
+Minneapolis,Naperville,IL,Size L,11.36,2,UPS® Ground
+Minneapolis,Neosho,MO,Size L,11.36,3,UPS® Ground
+Minneapolis,Puyallup,WA,Size L,17.1,5,UPS® Ground
+Minneapolis,Queen Creek,AZ,Size L,16.04,4,UPS® Ground
+Minneapolis,Saline,MI,Size L,11.36,2,UPS® Ground
+Minneapolis,Sevierville,TN,Size L,14.74,3,UPS® Ground
+Minneapolis,Sterling Heights,MI,Size L,11.36,2,UPS® Ground
+Minneapolis,Thornton,CO,Size L,14.74,3,UPS® Ground
+Minneapolis,Ventura,CA,Size L,17.1,4,UPS® Ground
+Minneapolis,Wilmington,MA,Size L,16.04,4,UPS® Ground
+Minneapolis,Clermont,FL,Size L,17.1,4,UPS® Ground
+Minneapolis,Abilene,TX,Size L,14.74,3,UPS® Ground
+Minneapolis,Brick,NJ,Size L,16.04,3,UPS® Ground
+Minneapolis,Bentonville,AR,Size L,14.74,4,UPS® Ground
+Minneapolis,Bogart,GA,Size L,14.74,4,UPS® Ground
+Minneapolis,Boston,MA,Size L,16.04,4,UPS® Ground
+Minneapolis,Buffalo,NY,Size L,14.74,3,UPS® Ground
+Minneapolis,Cary,NC,Size L,16.04,3,UPS® Ground
+Minneapolis,Dallas,GA,Size L,14.74,4,UPS® Ground
+Minneapolis,Doylestown,PA,Size L,14.74,3,UPS® Ground
+Minneapolis,Eugene,OR,Size L,17.1,5,UPS® Ground
+Minneapolis,Edmond,OK,Size L,14.74,3,UPS® Ground
+Minneapolis,Forney,TX,Size L,14.74,3,UPS® Ground
+Minneapolis,Fuquay Varina,NC,Size L,16.04,3,UPS® Ground
+Minneapolis,Glendora,CA,Size L,17.1,4,UPS® Ground
+Minneapolis,Henrico,VA,Size L,14.74,3,UPS® Ground
+Minneapolis,Hockessin,DE,Size L,14.74,3,UPS® Ground
+Minneapolis,Holly Springs,NC,Size L,16.04,3,UPS® Ground
+Minneapolis,Irvine,CA,Size L,17.1,4,UPS® Ground
+Minneapolis,Lakeland,FL,Size L,17.1,4,UPS® Ground
+Minneapolis,Lawrence,KS,Size L,11.36,3,UPS® Ground
+Minneapolis,League City,TX,Size L,16.04,4,UPS® Ground
+Minneapolis,Mansfield,TX,Size L,14.74,3,UPS® Ground
+Minneapolis,Madison,WI,Size L,10.41,2,UPS® Ground
+Minneapolis,McKinney,TX,Size L,,,
+Minneapolis,Mentor,OH,Size L,14.74,2,UPS® Ground
+Minneapolis,Mount Airy,MD,Size L,14.74,3,UPS® Ground
+Minneapolis,Norfolk,VA,Size L,16.04,3,UPS® Ground
+Minneapolis,Nampa,ID,Size L,16.04,4,UPS® Ground
+Minneapolis,Noblesville,IN,Size L,,,
+Minneapolis,Orland Park,IL,Size L,11.36,2,UPS® Ground
+Minneapolis,Palm Harbor,FL,Size L,16.04,4,UPS® Ground
+Minneapolis,Petaluma,CA,Size L,17.1,4,UPS® Ground
+Minneapolis,Placentia,CA,Size L,17.1,4,UPS® Ground
+Minneapolis,Prescott,AZ,Size L,16.04,4,UPS® Ground
+Minneapolis,Richardson,TX,Size L,14.74,3,UPS® Ground
+Minneapolis,Roanoke,VA,Size L,14.74,2,UPS® Ground
+Minneapolis,Richmond,TX,Size L,16.04,4,UPS® Ground
+Minneapolis,Sanford,ME,Size L,16.04,4,UPS® Ground
+Minneapolis,Seminole,FL,Size L,16.04,4,UPS® Ground
+Minneapolis,Sheridan,WY,Size L,14.74,3,UPS® Ground
+Minneapolis,Sparks,NV,Size L,16.04,4,UPS® Ground
+Minneapolis,Traverse City,MI,Size L,11.36,2,UPS® Ground
+Minneapolis,Tulsa,OK,Size L,14.74,3,UPS® Ground
+Minneapolis,Wake Forest,NC,Size L,16.04,3,UPS® Ground
+Minneapolis,Waterloo,SC,Size L,14.74,3,UPS® Ground
+Minneapolis,Waukesha,WI,Size L,10.41,2,UPS® Ground
+Minneapolis,Wichita,KS,Size L,11.36,3,UPS® Ground
+Minneapolis,Winnsboro,TX,Size L,14.74,3,UPS® Ground
+Minneapolis,Woodbury,MN,Size L,9.41,1,UPS® Ground
+Minneapolis,Cumming,GA,Size L,14.74,4,UPS® Ground
+Minneapolis,Muskegon,MI,Size L,11.36,2,UPS® Ground
+Minneapolis,Akron,OH,Size L,14.74,2,UPS® Ground
+Minneapolis,Albany,OR,Size L,17.1,5,UPS® Ground
+Minneapolis,Alpharetta,GA,Size L,14.74,4,UPS® Ground
+Minneapolis,Asheville,NC,Size L,14.74,3,UPS® Ground
+Minneapolis,Bixby,OK,Size L,14.74,3,UPS® Ground
+Minneapolis,Boulder,CO,Size L,14.74,3,UPS® Ground
+Minneapolis,Bethlehem,PA,Size L,14.74,3,UPS® Ground
+Minneapolis,Brenham,TX,Size L,16.04,4,UPS® Ground
+Minneapolis,Broken Bow,OK,Size L,14.74,3,UPS® Ground
+Minneapolis,Cape Coral,FL,Size L,17.1,4,UPS® Ground
+Minneapolis,Chula Vista,CA,Size L,17.1,4,UPS® Ground
+Minneapolis,Crawfordville,FL,Size L,16.04,4,UPS® Ground
+Minneapolis,Cypress,TX,Size L,16.04,4,UPS® Ground
+Minneapolis,Clearwater,FL,Size L,16.04,4,UPS® Ground
+Minneapolis,Columbiana,AL,Size L,14.74,3,UPS® Ground
+Minneapolis,Columbus,GA,Size L,14.74,4,UPS® Ground
+Minneapolis,Commack,NY,Size L,16.04,3,UPS® Ground
+Minneapolis,Dublin,CA,Size L,17.1,4,UPS® Ground
+Minneapolis,Decatur,GA,Size L,14.74,4,UPS® Ground
+Minneapolis,Deltona,FL,Size L,16.04,4,UPS® Ground
+Minneapolis,Derry,NH,Size L,16.04,4,UPS® Ground
+Minneapolis,Douglassville,PA,Size L,14.74,3,UPS® Ground
+Minneapolis,Easton,PA,Size L,14.74,3,UPS® Ground
+Minneapolis,El Paso,TX,Size L,16.04,4,UPS® Ground
+Minneapolis,Escondido,CA,Size L,17.1,4,UPS® Ground
+Minneapolis,Fairport,NY,Size L,14.74,3,UPS® Ground
+Minneapolis,Flemington,NJ,Size L,14.74,3,UPS® Ground
+Minneapolis,Florence,SC,Size L,16.04,3,UPS® Ground
+Minneapolis,Fort Lauderdale,FL,Size L,17.1,4,UPS® Ground
+Minneapolis,Frisco,TX,Size L,14.74,3,UPS® Ground
+Minneapolis,Goodyear,AZ,Size L,17.1,4,UPS® Ground
+Minneapolis,Gays Mills,WI,Size L,9.41,3,UPS® Ground
+Minneapolis,Grafton,WI,Size L,10.41,2,UPS® Ground
+Minneapolis,Green Cove Springs,FL,Size L,16.04,4,UPS® Ground
+Minneapolis,Greensburg,PA,Size L,14.74,3,UPS® Ground
+Minneapolis,Honolulu,HI,Size L,46.14,5,UPS® Ground
+Minneapolis,Humble,TX,Size L,16.04,4,UPS® Ground
+Minneapolis,Huntington,NY,Size L,16.04,3,UPS® Ground
+Minneapolis,Idaho Falls,ID,Size L,14.74,4,UPS® Ground
+Minneapolis,Jackson,TN,Size L,14.74,3,UPS® Ground
+Minneapolis,Jacksonville,NC,Size L,16.04,3,UPS® Ground
+Minneapolis,Jenkintown,PA,Size L,14.74,3,UPS® Ground
+Minneapolis,Johnson City,TN,Size L,14.74,3,UPS® Ground
+Minneapolis,Kingwood,TX,Size L,16.04,4,UPS® Ground
+Minneapolis,Lansing,MI,Size L,11.36,2,UPS® Ground
+Minneapolis,Lapeer,MI,Size L,11.36,2,UPS® Ground
+Minneapolis,Lawrenceville,GA,Size L,14.74,4,UPS® Ground
+Minneapolis,Lexington,NC,Size L,14.74,3,UPS® Ground
+Minneapolis,Lubbock,TX,Size L,14.74,4,UPS® Ground
+Minneapolis,Medina,OH,Size L,14.74,2,UPS® Ground
+Minneapolis,Macomb,MI,Size L,11.36,2,UPS® Ground
+Minneapolis,Magnolia,TX,Size L,16.04,4,UPS® Ground
+Minneapolis,Martinsburg,WV,Size L,14.74,4,UPS® Ground
+Minneapolis,Meridian,ID,Size L,16.04,4,UPS® Ground
+Minneapolis,Mobile,AL,Size L,16.04,3,UPS® Ground
+Minneapolis,Morrison,CO,Size L,14.74,3,UPS® Ground
+Minneapolis,Napa,CA,Size L,17.1,4,UPS® Ground
+Minneapolis,New Braunfels,TX,Size L,16.04,4,UPS® Ground
+Minneapolis,New Lenox,IL,Size L,11.36,2,UPS® Ground
+Minneapolis,New Orleans,LA,Size L,16.04,4,UPS® Ground
+Minneapolis,Newark,DE,Size L,14.74,3,UPS® Ground
+Minneapolis,Oakland,CA,Size L,17.1,4,UPS® Ground
+Minneapolis,Owasso,OK,Size L,14.74,3,UPS® Ground
+Minneapolis,Overland Park,KS,Size L,11.36,3,UPS® Ground
+Minneapolis,Panama City,FL,Size L,16.04,4,UPS® Ground
+Minneapolis,Panama City Beach,FL,Size L,16.04,4,UPS® Ground
+Minneapolis,Patchogue,NY,Size L,16.04,3,UPS® Ground
+Minneapolis,Port Clinton,OH,Size L,11.36,2,UPS® Ground
+Minneapolis,Paducah,KY,Size L,14.74,2,UPS® Ground
+Minneapolis,Palmetto,FL,Size L,16.04,4,UPS® Ground
+Minneapolis,Pearland,TX,Size L,16.04,4,UPS® Ground
+Minneapolis,Pella,IA,Size L,10.41,2,UPS® Ground
+Minneapolis,Pittsford,NY,Size L,14.74,3,UPS® Ground
+Minneapolis,Port Orange,FL,Size L,16.04,4,UPS® Ground
+Minneapolis,Ravenna,OH,Size L,14.74,2,UPS® Ground
+Minneapolis,Roaming Shores,OH,Size L,14.74,2,UPS® Ground
+Minneapolis,Richmond Hill,GA,Size L,16.04,4,UPS® Ground
+Minneapolis,Riverview,FL,Size L,16.04,4,UPS® Ground
+Minneapolis,Rochester,MN,Size L,9.41,1,UPS® Ground
+Minneapolis,Round Rock,TX,Size L,16.04,3,UPS® Ground
+Minneapolis,Saint Petersburg,FL,Size L,16.04,4,UPS® Ground
+Minneapolis,San Leandro,CA,Size L,17.1,4,UPS® Ground
+Minneapolis,Southington,CT,Size L,16.04,3,UPS® Ground
+Minneapolis,Spartanburg,SC,Size L,14.74,3,UPS® Ground
+Minneapolis,Surprise,AZ,Size L,17.1,4,UPS® Ground
+Minneapolis,Santa Barbara,CA,Size L,17.1,4,UPS® Ground
+Minneapolis,Shelton,CT,Size L,16.04,3,UPS® Ground
+Minneapolis,Spring Branch,TX,Size L,16.04,4,UPS® Ground
+Minneapolis,St. Louis,MO,Size L,11.36,3,UPS® Ground
+Minneapolis,Stroudsburg,PA,Size L,14.74,3,UPS® Ground
+Minneapolis,Sunapee,NH,Size L,16.04,4,UPS® Ground
+Minneapolis,Swedesboro,NJ,Size L,16.04,3,UPS® Ground
+Minneapolis,Syracuse,NY,Size L,14.74,3,UPS® Ground
+Minneapolis,Tomball,TX,Size L,16.04,4,UPS® Ground
+Minneapolis,Topeka,KS,Size L,11.36,3,UPS® Ground
+Minneapolis,Tuscaloosa,AL,Size L,14.74,3,UPS® Ground
+Minneapolis,Terre Haute,IN,Size L,11.36,2,UPS® Ground
+Minneapolis,Tinley Park,IL,Size L,11.36,2,UPS® Ground
+Minneapolis,Toms River,NJ,Size L,16.04,3,UPS® Ground
+Minneapolis,Tulare,CA,Size L,17.1,4,UPS® Ground
+Minneapolis,Vienna,VA,Size L,14.74,3,UPS® Ground
+Minneapolis,Walnut Creek,CA,Size L,17.1,4,UPS® Ground
+Minneapolis,Wayne,NJ,Size L,14.74,3,UPS® Ground
+Minneapolis,Waynesboro,VA,Size L,14.74,3,UPS® Ground
+Minneapolis,West Sacramento,CA,Size L,17.1,4,UPS® Ground
+Minneapolis,Yuba City,CA,Size L,17.1,4,UPS® Ground
+Minneapolis,Zachary,LA,Size L,14.74,4,UPS® Ground
+Minneapolis,Buford,GA,Size L,14.74,4,UPS® Ground
+Minneapolis,Modesto,CA,Size L,17.1,4,UPS® Ground
+Minneapolis,Winter Park,FL,Size L,16.04,4,UPS® Ground
+Minneapolis,Antioch,IL,Size L,11.36,2,UPS® Ground
+Minneapolis,Algonquin,IL,Size L,11.36,2,UPS® Ground
+Minneapolis,Allen,TX,Size L,14.74,3,UPS® Ground
+Minneapolis,Ames,IA,Size L,10.41,2,UPS® Ground
+Minneapolis,Anaheim,CA,Size L,17.1,4,UPS® Ground
+Minneapolis,Aptos,CA,Size L,17.1,4,UPS® Ground
+Minneapolis,Astoria,NY,Size L,16.04,3,UPS® Ground
+Minneapolis,Bloomington,IN,Size L,11.36,2,UPS® Ground
+Minneapolis,Bremerton,WA,Size L,17.1,5,UPS® Ground
+Minneapolis,Brunswick,OH,Size L,14.74,2,UPS® Ground
+Minneapolis,Burke,VA,Size L,14.74,3,UPS® Ground
+Minneapolis,Bedford,IN,Size L,11.36,2,UPS® Ground
+Minneapolis,Benton,LA,Size L,14.74,4,UPS® Ground
+Minneapolis,Billings,MT,Size L,14.74,2,UPS® Ground
+Minneapolis,Birdsboro,PA,Size L,14.74,3,UPS® Ground
+Minneapolis,Bothell,WA,Size L,16.04,5,UPS® Ground
+Minneapolis,Bowie,MD,Size L,14.74,3,UPS® Ground
+Minneapolis,Brentwood,TN,Size L,14.74,3,UPS® Ground
+Minneapolis,Bronx,NY,Size L,16.04,3,UPS® Ground
+Minneapolis,Brookfield,WI,Size L,10.41,2,UPS® Ground
+Minneapolis,Canton,OH,Size L,14.74,2,UPS® Ground
+Minneapolis,Celina,TX,Size L,14.74,3,UPS® Ground
+Minneapolis,Chapel Hill,NC,Size L,16.04,3,UPS® Ground
+Minneapolis,Claremore,OK,Size L,14.74,3,UPS® Ground
+Minneapolis,Clovis,CA,Size L,17.1,4,UPS® Ground
+Minneapolis,Cocoa,FL,Size L,17.1,4,UPS® Ground
+Minneapolis,Callahan,FL,Size L,16.04,4,UPS® Ground
+Minneapolis,Carmel,IN,Size L,11.36,2,UPS® Ground
+Minneapolis,Cedar Park,TX,Size L,16.04,3,UPS® Ground
+Minneapolis,Centennial,CO,Size L,14.74,3,UPS® Ground
+Minneapolis,Centerville,MA,Size L,16.04,4,UPS® Ground
+Minneapolis,Charleston,SC,Size L,16.04,3,UPS® Ground
+Minneapolis,Charlottesville,VA,Size L,14.74,3,UPS® Ground
+Minneapolis,Clarkesville,GA,Size L,14.74,4,UPS® Ground
+Minneapolis,Clayton,NC,Size L,16.04,3,UPS® Ground
+Minneapolis,Clifton,NJ,Size L,16.04,3,UPS® Ground
+Minneapolis,Collinsville,OK,Size L,14.74,3,UPS® Ground
+Minneapolis,Columbia,TN,Size L,14.74,3,UPS® Ground
+Minneapolis,Concord,NC,Size L,14.74,3,UPS® Ground
+Minneapolis,Cookeville,TN,Size L,14.74,3,UPS® Ground
+Minneapolis,Corpus Christi,TX,Size L,16.04,4,UPS® Ground
+Minneapolis,Corrales,NM,Size L,14.74,4,UPS® Ground
+Minneapolis,Corydon,IN,Size L,11.36,2,UPS® Ground
+Minneapolis,Cranston,RI,Size L,16.04,4,UPS® Ground
+Minneapolis,Dekalb,IL,Size L,11.36,3,UPS® Ground
+Minneapolis,Delaware,OH,Size L,14.74,2,UPS® Ground
+Minneapolis,Delmar,NY,Size L,14.74,3,UPS® Ground
+Minneapolis,Des Moines,IA,Size L,10.41,2,UPS® Ground
+Minneapolis,Dickson,TN,Size L,14.74,3,UPS® Ground
+Minneapolis,Downers Grove,IL,Size L,11.36,2,UPS® Ground
+Minneapolis,Dripping Springs,TX,Size L,16.04,3,UPS® Ground
+Minneapolis,Eustis,FL,Size L,16.04,4,UPS® Ground
+Minneapolis,East Hampton,NY,Size L,16.04,3,UPS® Ground
+Minneapolis,Fenton,MO,Size L,11.36,3,UPS® Ground
+Minneapolis,Fayetteville,AR,Size L,14.74,4,UPS® Ground
+Minneapolis,Flower Mound,TX,Size L,14.74,3,UPS® Ground
+Minneapolis,Franklin,OH,Size L,11.36,2,UPS® Ground
+Minneapolis,Friendswood,TX,Size L,16.04,4,UPS® Ground
+Minneapolis,Gainesville,FL,Size L,16.04,4,UPS® Ground
+Minneapolis,Gainesville,GA,Size L,14.74,4,UPS® Ground
+Minneapolis,Glendale,CA,Size L,17.1,4,UPS® Ground
+Minneapolis,Greenville,SC,Size L,14.74,3,UPS® Ground
+Minneapolis,Greenville,MI,Size L,11.36,2,UPS® Ground
+Minneapolis,Gaithersburg,MD,Size L,14.74,3,UPS® Ground
+Minneapolis,Garner,NC,Size L,16.04,3,UPS® Ground
+Minneapolis,Gastonia,NC,Size L,14.74,3,UPS® Ground
+Minneapolis,Granada Hills,CA,Size L,17.1,4,UPS® Ground
+Minneapolis,Granbury,TX,Size L,14.74,3,UPS® Ground
+Minneapolis,Griffin,GA,Size L,14.74,4,UPS® Ground
+Minneapolis,Harpers Ferry,WV,Size L,14.74,3,UPS® Ground
+Minneapolis,Haverhill,MA,Size L,16.04,4,UPS® Ground
+Minneapolis,Hayward,CA,Size L,17.1,4,UPS® Ground
+Minneapolis,Herriman,UT,Size L,14.74,4,UPS® Ground
+Minneapolis,Hillsboro,OR,Size L,17.1,5,UPS® Ground
+Minneapolis,Hoboken,NJ,Size L,16.04,3,UPS® Ground
+Minneapolis,Huntley,IL,Size L,11.36,2,UPS® Ground
+Minneapolis,Hagerstown,MD,Size L,14.74,3,UPS® Ground
+Minneapolis,Hamilton,OH,Size L,11.36,2,UPS® Ground
+Minneapolis,Harrisburg,PA,Size L,14.74,3,UPS® Ground
+Minneapolis,Hendersonville,NC,Size L,14.74,3,UPS® Ground
+Minneapolis,Hendersonville,TN,Size L,14.74,3,UPS® Ground
+Minneapolis,Holland,MI,Size L,11.36,2,UPS® Ground
+Minneapolis,Indian Trail,NC,Size L,14.74,3,UPS® Ground
+Minneapolis,Jersey City,NJ,Size L,16.04,3,UPS® Ground
+Minneapolis,Johnstown,PA,Size L,14.74,3,UPS® Ground
+Minneapolis,Kalamazoo,MI,Size L,11.36,2,UPS® Ground
+Minneapolis,Keatchie,LA,Size L,14.74,5,UPS® Ground
+Minneapolis,Kennewick,WA,Size L,16.04,5,UPS® Ground
+Minneapolis,Kingsport,TN,Size L,14.74,3,UPS® Ground
+Minneapolis,Lake Elsinore,CA,Size L,17.1,4,UPS® Ground
+Minneapolis,Lebanon,OH,Size L,11.36,2,UPS® Ground
+Minneapolis,Little Rock,AR,Size L,14.74,4,UPS® Ground
+Minneapolis,Livonia,MI,Size L,11.36,2,UPS® Ground
+Minneapolis,Los Alamos,NM,Size L,14.74,4,UPS® Ground
+Minneapolis,Loveland,CO,Size L,14.74,3,UPS® Ground
+Minneapolis,La Mesa,CA,Size L,17.1,4,UPS® Ground
+Minneapolis,La Quinta,CA,Size L,17.1,4,UPS® Ground
+Minneapolis,Lake Oswego,OR,Size L,16.04,5,UPS® Ground
+Minneapolis,Lake Saint Louis,MO,Size L,11.36,3,UPS® Ground
+Minneapolis,Lake in the Hills,IL,Size L,11.36,2,UPS® Ground
+Minneapolis,Lakeway,TX,Size L,16.04,4,UPS® Ground
+Minneapolis,Lancaster,NY,Size L,14.74,3,UPS® Ground
+Minneapolis,Leander,TX,Size L,16.04,3,UPS® Ground
+Minneapolis,Lees Summit,MO,Size L,11.36,3,UPS® Ground
+Minneapolis,Lenoir,NC,Size L,14.74,3,UPS® Ground
+Minneapolis,Lewis Center,OH,Size L,14.74,2,UPS® Ground
+Minneapolis,Lexington,IN,Size L,11.36,2,UPS® Ground
+Minneapolis,Lodi,CA,Size L,17.1,4,UPS® Ground
+Minneapolis,Lynden,WA,Size L,16.04,5,UPS® Ground
+Minneapolis,Methuen,MA,Size L,16.04,4,UPS® Ground
+Minneapolis,Milford,CT,Size L,16.04,3,UPS® Ground
+Minneapolis,Mineola,TX,Size L,14.74,3,UPS® Ground
+Minneapolis,Missoula,MT,Size L,16.04,2,UPS® Ground
+Minneapolis,Mansfield,OH,Size L,14.74,2,UPS® Ground
+Minneapolis,McDonough,GA,Size L,14.74,4,UPS® Ground
+Minneapolis,Merritt Island,FL,Size L,17.1,4,UPS® Ground
+Minneapolis,Midlothian,VA,Size L,14.74,3,UPS® Ground
+Minneapolis,Millington,TN,Size L,14.74,3,UPS® Ground
+Minneapolis,Milton,FL,Size L,16.04,4,UPS® Ground
+Minneapolis,Moab,UT,Size L,14.74,5,UPS® Ground
+Minneapolis,Monroe,NC,Size L,14.74,3,UPS® Ground
+Minneapolis,Mooresville,IN,Size L,11.36,2,UPS® Ground
+Minneapolis,Morganton,NC,Size L,14.74,3,UPS® Ground
+Minneapolis,Murfreesboro,TN,Size L,14.74,3,UPS® Ground
+Minneapolis,Newburgh,NY,Size L,16.04,3,UPS® Ground
+Minneapolis,Navarre,FL,Size L,16.04,4,UPS® Ground
+Minneapolis,New Market,AL,Size L,14.74,3,UPS® Ground
+Minneapolis,Newnan,GA,Size L,14.74,4,UPS® Ground
+Minneapolis,Norman,OK,Size L,14.74,3,UPS® Ground
+Minneapolis,Novi,MI,Size L,11.36,2,UPS® Ground
+Minneapolis,Ormond Beach,FL,Size L,16.04,4,UPS® Ground
+Minneapolis,Owensboro,KY,Size L,14.74,2,UPS® Ground
+Minneapolis,Oconto,WI,Size L,10.41,2,UPS® Ground
+Minneapolis,Old Bridge,NJ,Size L,14.74,3,UPS® Ground
+Minneapolis,Olympia,WA,Size L,17.1,5,UPS® Ground
+Minneapolis,Oregon City,OR,Size L,16.04,5,UPS® Ground
+Minneapolis,Oxford,MI,Size L,11.36,2,UPS® Ground
+Minneapolis,Peachtree City,GA,Size L,14.74,4,UPS® Ground
+Minneapolis,Pleasanton,CA,Size L,17.1,4,UPS® Ground
+Minneapolis,Poughkeepsie,NY,Size L,16.04,3,UPS® Ground
+Minneapolis,Pagosa Springs,CO,Size L,14.74,4,UPS® Ground
+Minneapolis,Pasadena,CA,Size L,17.1,4,UPS® Ground
+Minneapolis,Pasadena,TX,Size L,16.04,4,UPS® Ground
+Minneapolis,Pasco,WA,Size L,16.04,5,UPS® Ground
+Minneapolis,Pawtucket,RI,Size L,16.04,4,UPS® Ground
+Minneapolis,Pembroke,MA,Size L,16.04,4,UPS® Ground
+Minneapolis,Perrysburg,OH,Size L,11.36,2,UPS® Ground
+Minneapolis,Plant City,FL,Size L,16.04,4,UPS® Ground
+Minneapolis,Port Orchard,WA,Size L,17.1,5,UPS® Ground
+Minneapolis,Prescott Valley,AZ,Size L,16.04,4,UPS® Ground
+Minneapolis,Princeton,NJ,Size L,14.74,3,UPS® Ground
+Minneapolis,Quincy,MA,Size L,16.04,4,UPS® Ground
+Minneapolis,Redwood City,CA,Size L,17.1,4,UPS® Ground
+Minneapolis,Rohnert Park,CA,Size L,17.1,4,UPS® Ground
+Minneapolis,Rigby,ID,Size L,14.74,5,UPS® Ground
+Minneapolis,Ripon,WI,Size L,10.41,2,UPS® Ground
+Minneapolis,Rogers,AR,Size L,14.74,4,UPS® Ground
+Minneapolis,Rowlett,TX,Size L,14.74,3,UPS® Ground
+Minneapolis,Rydal,PA,Size L,14.74,3,UPS® Ground
+Minneapolis,Shepherdsville,KY,Size L,14.74,2,UPS® Ground
+Minneapolis,Shreveport,LA,Size L,14.74,4,UPS® Ground
+Minneapolis,Stamford,CT,Size L,16.04,3,UPS® Ground
+Minneapolis,Salt Lake City,UT,Size L,14.74,4,UPS® Ground
+Minneapolis,Sanford,NC,Size L,14.74,3,UPS® Ground
+Minneapolis,Santa Ana,CA,Size L,17.1,4,UPS® Ground
+Minneapolis,Santa Cruz,CA,Size L,17.1,4,UPS® Ground
+Minneapolis,Santa Fe,NM,Size L,14.74,4,UPS® Ground
+Minneapolis,Sarver,PA,Size L,14.74,3,UPS® Ground
+Minneapolis,Schenectady,NY,Size L,14.74,3,UPS® Ground
+Minneapolis,Sierra Vista,AZ,Size L,16.04,4,UPS® Ground
+Minneapolis,Silver Spring,MD,Size L,14.74,3,UPS® Ground
+Minneapolis,South Jordan,UT,Size L,14.74,4,UPS® Ground
+Minneapolis,Springfield,MO,Size L,11.36,3,UPS® Ground
+Minneapolis,Summerville,SC,Size L,16.04,3,UPS® Ground
+Minneapolis,Sumter,SC,Size L,16.04,3,UPS® Ground
+Minneapolis,Sun City,AZ,Size L,17.1,4,UPS® Ground
+Minneapolis,Syosset,NY,Size L,16.04,3,UPS® Ground
+Minneapolis,Taunton,MA,Size L,16.04,4,UPS® Ground
+Minneapolis,Texarkana,TX,Size L,14.74,3,UPS® Ground
+Minneapolis,Toledo,OH,Size L,11.36,2,UPS® Ground
+Minneapolis,Urbana,OH,Size L,14.74,2,UPS® Ground
+Minneapolis,Valparaiso,IN,Size L,11.36,2,UPS® Ground
+Minneapolis,Waco,TX,Size L,14.74,3,UPS® Ground
+Minneapolis,West Lafayette,IN,Size L,11.36,2,UPS® Ground
+Minneapolis,Winter Garden,FL,Size L,17.1,4,UPS® Ground
+Minneapolis,Winter Haven,FL,Size L,17.1,4,UPS® Ground
+Minneapolis,Wylie,TX,Size L,14.74,3,UPS® Ground
+Minneapolis,Waldorf,MD,Size L,14.74,3,UPS® Ground
+Minneapolis,Wesley Chapel,FL,Size L,16.04,4,UPS® Ground
+Minneapolis,West Palm Beach,FL,Size L,17.1,4,UPS® Ground
+Minneapolis,Williamsburg,VA,Size L,14.74,3,UPS® Ground
+Minneapolis,Woodbridge,VA,Size L,14.74,3,UPS® Ground
+Minneapolis,Woodside,CA,Size L,17.1,4,UPS® Ground
+Minneapolis,Yorba Linda,CA,Size L,17.1,4,UPS® Ground
+Minneapolis,Queens Village,NY,Size L,16.04,3,UPS® Ground

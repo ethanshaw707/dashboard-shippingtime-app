@@ -7,6 +7,8 @@ import pydeck as pdk
 from pathlib import Path
 from itertools import combinations
 
+from network_utils import compute_best_origin_map
+
 
 DATASETS = {
     "Small": "complete_shipping_data_size_s.csv",
@@ -697,6 +699,11 @@ def load_data(path: str, drop_missing: bool = True) -> pd.DataFrame:
     return df
 
 
+@st.cache_data
+def load_lat_long_data(path: str) -> pd.DataFrame:
+    return pd.read_csv(path)
+
+
 def minmax(series: pd.Series) -> pd.Series:
     if series.nunique() <= 1:
         return pd.Series(0.5, index=series.index)
@@ -736,44 +743,55 @@ def initial_destination_weights(df: pd.DataFrame, state_counts: dict) -> dict:
         return {}
     state_pct = {state: count / total * 100.0 for state, count in state_counts.items()}
     city_counts = df.groupby("ToState")["ToCity"].nunique()
-    weights = {}
-    unique_rows = df[["ToCity", "ToState"]].drop_duplicates()
-    for _, row in unique_rows.iterrows():
-        state = row["ToState"]
-        city = row["ToCity"]
-        dest = f"{city}, {state}"
-        if state in state_pct and city_counts.get(state, 0) > 0:
-            weights[dest] = state_pct[state] / city_counts[state]
-        else:
-            weights[dest] = DEFAULT_DEST_WEIGHT
-    return weights
+    unique_rows = df[["ToCity", "ToState"]].drop_duplicates().copy()
+    unique_rows["Destination"] = (
+        unique_rows["ToCity"].astype(str).str.strip()
+        + ", "
+        + unique_rows["ToState"].astype(str).str.strip()
+    )
+    unique_rows["StatePct"] = unique_rows["ToState"].map(state_pct)
+    unique_rows["CityCount"] = unique_rows["ToState"].map(city_counts)
+    valid = unique_rows["StatePct"].notna() & unique_rows["CityCount"].gt(0)
+    unique_rows["Weight"] = np.where(
+        valid,
+        unique_rows["StatePct"] / unique_rows["CityCount"],
+        DEFAULT_DEST_WEIGHT,
+    )
+    return dict(zip(unique_rows["Destination"], unique_rows["Weight"].astype(float)))
 
 
 def initial_destination_weights_by_city(df: pd.DataFrame, city_counts: dict) -> dict:
     if df.empty:
         return {}
-    cities_in_df = {
-        f"{str(row['ToCity']).strip().casefold()}, {str(row['ToState']).strip().casefold()}"
-        for _, row in df[["ToCity", "ToState"]].dropna().drop_duplicates().iterrows()
-    }
+    unique_rows = df[["ToCity", "ToState", "Destination"]].dropna(
+        subset=["ToCity", "ToState", "Destination"]
+    ).drop_duplicates().copy()
+    unique_rows["City"] = unique_rows["ToCity"].astype(str).str.strip()
+    unique_rows["State"] = unique_rows["ToState"].astype(str).str.strip()
+    unique_rows["Destination"] = unique_rows["Destination"].astype(str).str.strip()
+    unique_rows["CityKey"] = unique_rows["City"].str.casefold() + ", " + unique_rows["State"].str.casefold()
+
+    cities_in_df = set(unique_rows["CityKey"].unique())
     city_counts_filtered = {city: count for city, count in city_counts.items() if city in cities_in_df}
     total = sum(city_counts_filtered.values())
     if total <= 0:
         return {}
-    city_pct = {city: count / total * 100.0 for city, count in city_counts_filtered.items()}
-    city_dest_counts = df.groupby(["ToCity", "ToState"])["Destination"].nunique()
-    weights = {}
-    unique_rows = df[["ToCity", "ToState", "Destination"]].drop_duplicates()
-    for _, row in unique_rows.iterrows():
-        city = str(row["ToCity"]).strip()
-        state = str(row["ToState"]).strip()
-        dest = str(row["Destination"]).strip()
-        key = f"{city.casefold()}, {state.casefold()}"
-        if key in city_pct and city_dest_counts.get((city, state), 0) > 0:
-            weights[dest] = city_pct[key] / city_dest_counts[(city, state)]
-        else:
-            weights[dest] = DEFAULT_DEST_WEIGHT
-    return weights
+    city_pct = pd.Series(city_counts_filtered, dtype=float) / total * 100.0
+    city_dest_counts = (
+        unique_rows.groupby(["City", "State"])["Destination"]
+        .nunique()
+        .rename("CityDestCount")
+        .reset_index()
+    )
+    unique_rows = unique_rows.merge(city_dest_counts, on=["City", "State"], how="left")
+    unique_rows["CityPct"] = unique_rows["CityKey"].map(city_pct)
+    valid = unique_rows["CityPct"].notna() & unique_rows["CityDestCount"].gt(0)
+    unique_rows["Weight"] = np.where(
+        valid,
+        unique_rows["CityPct"] / unique_rows["CityDestCount"],
+        DEFAULT_DEST_WEIGHT,
+    )
+    return dict(zip(unique_rows["Destination"], unique_rows["Weight"].astype(float)))
 
 
 def add_weighted_score(df: pd.DataFrame, cost_weight: float) -> pd.DataFrame:
@@ -1015,6 +1033,13 @@ def render_top_combos(
         two_day = float(np.sum(best_time[valid] <= 2.0))
         return one_day / total * 100.0, two_day / total * 100.0
 
+    def combo_indices_from_list(combo_list):
+        if not combo_list:
+            return None
+        combo_name = combo_list[0][0]
+        combo_names = combo_name.split(" + ")
+        return [origin_list_local.index(name) for name in combo_names]
+
     def expand_from_best(prev_list, k_size):
         if not prev_list:
             return []
@@ -1022,6 +1047,8 @@ def render_top_combos(
         best_origins = best_name.split(" + ")
         if len(best_origins) != k_size - 1:
             return []
+        prev_indices = [origin_list_local.index(name) for name in best_origins]
+        prev_one_day_pct, _ = combo_day_percentages(prev_indices)
         results = []
         for origin in origin_list_local:
             if origin in best_origins:
@@ -1029,13 +1056,16 @@ def render_top_combos(
             combo = best_origins + [origin]
             combo_indices = [origin_list_local.index(name) for name in combo]
             weighted_total, _, _ = combo_weighted_total(combo_indices)
+            one_day_pct, _ = combo_day_percentages(combo_indices)
+            one_day_gain = one_day_pct - prev_one_day_pct
             if np.isfinite(weighted_total):
-                results.append((" + ".join(combo), weighted_total))
-        results.sort(key=lambda x: x[1])
+                # Primary ranking: largest 1-day coverage gain. Tiebreaker: lower weighted total.
+                results.append((" + ".join(combo), weighted_total, one_day_gain))
+        results.sort(key=lambda x: (-x[2], x[1], x[0]))
         if len(results) <= 5:
-            return results
-        cutoff = results[4][1]
-        return [row for row in results if row[1] <= cutoff]
+            return [(name, weighted_total) for name, weighted_total, _ in results]
+        top_results = results[:5]
+        return [(name, weighted_total) for name, weighted_total, _ in top_results]
 
     pair_df = compute_pair_df_cached(
         df,
@@ -1056,7 +1086,10 @@ def render_top_combos(
             top_pairs = pair_df[pair_df["WeightedTotal"] == best_value][["Pair", "WeightedTotal"]].copy()
         else:
             top_pairs = pair_df.head(5)[["Pair", "WeightedTotal"]].copy()
-        pair_labels = [f"{row['Pair']} ({row['WeightedTotal']:.2f})" for _, row in top_pairs.iterrows()]
+        pair_labels = [
+            f"{pair} ({weighted_total:.2f})"
+            for pair, weighted_total in zip(top_pairs["Pair"], top_pairs["WeightedTotal"])
+        ]
         selected_pair = st.selectbox(
             "Top 5 pairs (weighted)",
             pair_labels,
@@ -1336,6 +1369,7 @@ def render_top_combos(
         st.caption("Not enough origins to calculate 6-location combos.")
 
     st.markdown("Top 5 (7 locations)")
+    st.caption("From 7+ locations, candidates are ranked by the biggest increase in 1-day coverage (weighted total used as tiebreaker).")
     seven_list = (expand_from_best(six_list, 7) if len(origin_list_local) >= 7 else [])
     if seven_list:
         seven_labels = [f"{name} ({value:.2f})" for name, value in seven_list]
@@ -1348,7 +1382,7 @@ def render_top_combos(
         seven_name = selected_seven.rsplit(" (", 1)[0]
         seven_indices = [origin_list_local.index(name) for name in seven_name.split(" + ")]
         seven_avg_cost, seven_avg_time = combo_avg_cost_time(seven_indices)
-        prev_combo = best_combo_indices(6)
+        prev_combo = combo_indices_from_list(six_list)
         if prev_combo:
             prev_cost, prev_time = combo_avg_cost_time(prev_combo)
             prev_cost_delta = prev_cost - seven_avg_cost
@@ -1392,7 +1426,7 @@ def render_top_combos(
         eight_name = selected_eight.rsplit(" (", 1)[0]
         eight_indices = [origin_list_local.index(name) for name in eight_name.split(" + ")]
         eight_avg_cost, eight_avg_time = combo_avg_cost_time(eight_indices)
-        prev_combo = best_combo_indices(7)
+        prev_combo = combo_indices_from_list(seven_list)
         if prev_combo:
             prev_cost, prev_time = combo_avg_cost_time(prev_combo)
             prev_cost_delta = prev_cost - eight_avg_cost
@@ -1436,7 +1470,7 @@ def render_top_combos(
         nine_name = selected_nine.rsplit(" (", 1)[0]
         nine_indices = [origin_list_local.index(name) for name in nine_name.split(" + ")]
         nine_avg_cost, nine_avg_time = combo_avg_cost_time(nine_indices)
-        prev_combo = best_combo_indices(8)
+        prev_combo = combo_indices_from_list(eight_list)
         if prev_combo:
             prev_cost, prev_time = combo_avg_cost_time(prev_combo)
             prev_cost_delta = prev_cost - nine_avg_cost
@@ -1481,7 +1515,7 @@ def render_top_combos(
             ten_name = selected_ten.rsplit(" (", 1)[0]
             ten_indices = [origin_list_local.index(name) for name in ten_name.split(" + ")]
             ten_avg_cost, ten_avg_time = combo_avg_cost_time(ten_indices)
-            prev_combo = best_combo_indices(9)
+            prev_combo = combo_indices_from_list(nine_list)
             if prev_combo:
                 prev_cost, prev_time = combo_avg_cost_time(prev_combo)
                 prev_cost_delta = prev_cost - ten_avg_cost
@@ -1529,7 +1563,7 @@ def render_top_combos(
             eleven_name = selected_eleven.rsplit(" (", 1)[0]
             eleven_indices = [origin_list_local.index(name) for name in eleven_name.split(" + ")]
             eleven_avg_cost, eleven_avg_time = combo_avg_cost_time(eleven_indices)
-            prev_combo = best_combo_indices(10)
+            prev_combo = combo_indices_from_list(ten_list)
             if prev_combo:
                 prev_cost, prev_time = combo_avg_cost_time(prev_combo)
                 prev_cost_delta = prev_cost - eleven_avg_cost
@@ -1577,7 +1611,7 @@ def render_top_combos(
             twelve_name = selected_twelve.rsplit(" (", 1)[0]
             twelve_indices = [origin_list_local.index(name) for name in twelve_name.split(" + ")]
             twelve_avg_cost, twelve_avg_time = combo_avg_cost_time(twelve_indices)
-            prev_combo = best_combo_indices(11)
+            prev_combo = combo_indices_from_list(eleven_list)
             if prev_combo:
                 prev_cost, prev_time = combo_avg_cost_time(prev_combo)
                 prev_cost_delta = prev_cost - twelve_avg_cost
@@ -1625,7 +1659,7 @@ def render_top_combos(
             thirteen_name = selected_thirteen.rsplit(" (", 1)[0]
             thirteen_indices = [origin_list_local.index(name) for name in thirteen_name.split(" + ")]
             thirteen_avg_cost, thirteen_avg_time = combo_avg_cost_time(thirteen_indices)
-            prev_combo = best_combo_indices(12)
+            prev_combo = combo_indices_from_list(twelve_list)
             if prev_combo:
                 prev_cost, prev_time = combo_avg_cost_time(prev_combo)
                 prev_cost_delta = prev_cost - thirteen_avg_cost
@@ -1673,7 +1707,7 @@ def render_top_combos(
             fourteen_name = selected_fourteen.rsplit(" (", 1)[0]
             fourteen_indices = [origin_list_local.index(name) for name in fourteen_name.split(" + ")]
             fourteen_avg_cost, fourteen_avg_time = combo_avg_cost_time(fourteen_indices)
-            prev_combo = best_combo_indices(13)
+            prev_combo = combo_indices_from_list(thirteen_list)
             if prev_combo:
                 prev_cost, prev_time = combo_avg_cost_time(prev_combo)
                 prev_cost_delta = prev_cost - fourteen_avg_cost
@@ -1721,7 +1755,7 @@ def render_top_combos(
             fifteen_name = selected_fifteen.rsplit(" (", 1)[0]
             fifteen_indices = [origin_list_local.index(name) for name in fifteen_name.split(" + ")]
             fifteen_avg_cost, fifteen_avg_time = combo_avg_cost_time(fifteen_indices)
-            prev_combo = best_combo_indices(14)
+            prev_combo = combo_indices_from_list(fourteen_list)
             if prev_combo:
                 prev_cost, prev_time = combo_avg_cost_time(prev_combo)
                 prev_cost_delta = prev_cost - fifteen_avg_cost
@@ -1769,7 +1803,7 @@ def render_top_combos(
             sixteen_name = selected_sixteen.rsplit(" (", 1)[0]
             sixteen_indices = [origin_list_local.index(name) for name in sixteen_name.split(" + ")]
             sixteen_avg_cost, sixteen_avg_time = combo_avg_cost_time(sixteen_indices)
-            prev_combo = best_combo_indices(15)
+            prev_combo = combo_indices_from_list(fifteen_list)
             if prev_combo:
                 prev_cost, prev_time = combo_avg_cost_time(prev_combo)
                 prev_cost_delta = prev_cost - sixteen_avg_cost
@@ -1817,7 +1851,7 @@ def render_top_combos(
             seventeen_name = selected_seventeen.rsplit(" (", 1)[0]
             seventeen_indices = [origin_list_local.index(name) for name in seventeen_name.split(" + ")]
             seventeen_avg_cost, seventeen_avg_time = combo_avg_cost_time(seventeen_indices)
-            prev_combo = best_combo_indices(16)
+            prev_combo = combo_indices_from_list(sixteen_list)
             if prev_combo:
                 prev_cost, prev_time = combo_avg_cost_time(prev_combo)
                 prev_cost_delta = prev_cost - seventeen_avg_cost
@@ -1865,7 +1899,7 @@ def render_top_combos(
             eighteen_name = selected_eighteen.rsplit(" (", 1)[0]
             eighteen_indices = [origin_list_local.index(name) for name in eighteen_name.split(" + ")]
             eighteen_avg_cost, eighteen_avg_time = combo_avg_cost_time(eighteen_indices)
-            prev_combo = best_combo_indices(17)
+            prev_combo = combo_indices_from_list(seventeen_list)
             if prev_combo:
                 prev_cost, prev_time = combo_avg_cost_time(prev_combo)
                 prev_cost_delta = prev_cost - eighteen_avg_cost
@@ -1913,7 +1947,7 @@ def render_top_combos(
             nineteen_name = selected_nineteen.rsplit(" (", 1)[0]
             nineteen_indices = [origin_list_local.index(name) for name in nineteen_name.split(" + ")]
             nineteen_avg_cost, nineteen_avg_time = combo_avg_cost_time(nineteen_indices)
-            prev_combo = best_combo_indices(18)
+            prev_combo = combo_indices_from_list(eighteen_list)
             if prev_combo:
                 prev_cost, prev_time = combo_avg_cost_time(prev_combo)
                 prev_cost_delta = prev_cost - nineteen_avg_cost
@@ -1961,7 +1995,7 @@ def render_top_combos(
             twenty_name = selected_twenty.rsplit(" (", 1)[0]
             twenty_indices = [origin_list_local.index(name) for name in twenty_name.split(" + ")]
             twenty_avg_cost, twenty_avg_time = combo_avg_cost_time(twenty_indices)
-            prev_combo = best_combo_indices(19)
+            prev_combo = combo_indices_from_list(nineteen_list)
             if prev_combo:
                 prev_cost, prev_time = combo_avg_cost_time(prev_combo)
                 prev_cost_delta = prev_cost - twenty_avg_cost
@@ -2165,21 +2199,69 @@ def build_origin_destination_matrices(
 
 
 def weighted_origin_stats(savings_df: pd.DataFrame, dest_weights: dict) -> pd.DataFrame:
-    def compute(group: pd.DataFrame) -> pd.Series:
-        weights = group["Destination"].map(dest_weights).fillna(0.0).to_numpy()
+    if savings_df.empty:
+        return pd.DataFrame(
+            columns=[
+                "FromAddress",
+                "MeanSavingsPerSign",
+                "MedianSavingsPerSign",
+                "MeanTimeSavingsPerPlace",
+                "MedianTimeSavingsPerPlace",
+            ]
+        )
+    stats_df = savings_df.copy()
+    stats_df["Weight"] = stats_df["Destination"].map(dest_weights).fillna(0.0)
+    stats_df["WeightedSavings"] = stats_df["SavingsPerSign"] * stats_df["Weight"]
+    stats_df["WeightedTime"] = stats_df["TimeSavingsPerPlace"] * stats_df["Weight"]
+
+    means = stats_df.groupby("FromAddress", as_index=False).agg(
+        WeightSum=("Weight", "sum"),
+        WeightedSavingsSum=("WeightedSavings", "sum"),
+        WeightedTimeSum=("WeightedTime", "sum"),
+        FallbackMeanSavings=("SavingsPerSign", "mean"),
+        FallbackMeanTime=("TimeSavingsPerPlace", "mean"),
+    )
+    means["MeanSavingsPerSign"] = np.where(
+        means["WeightSum"] > 0,
+        means["WeightedSavingsSum"] / means["WeightSum"],
+        means["FallbackMeanSavings"],
+    )
+    means["MeanTimeSavingsPerPlace"] = np.where(
+        means["WeightSum"] > 0,
+        means["WeightedTimeSum"] / means["WeightSum"],
+        means["FallbackMeanTime"],
+    )
+
+    median_rows = []
+    for origin, group in stats_df.groupby("FromAddress", sort=False):
+        weights = group["Weight"].to_numpy()
         if weights.sum() == 0:
             weights = np.ones(len(group))
-        mean_savings = weighted_mean(group["SavingsPerSign"].to_numpy(), weights)
-        median_savings = weighted_median(group["SavingsPerSign"].to_numpy(), weights)
-        mean_time = weighted_mean(group["TimeSavingsPerPlace"].to_numpy(), weights)
-        median_time = weighted_median(group["TimeSavingsPerPlace"].to_numpy(), weights)
-        return pd.Series({
-            "MeanSavingsPerSign": mean_savings,
-            "MedianSavingsPerSign": median_savings,
-            "MeanTimeSavingsPerPlace": mean_time,
-            "MedianTimeSavingsPerPlace": median_time,
-        })
-    return savings_df.groupby("FromAddress").apply(compute).reset_index()
+        median_rows.append(
+            {
+                "FromAddress": origin,
+                "MedianSavingsPerSign": weighted_median(
+                    group["SavingsPerSign"].to_numpy(),
+                    weights,
+                ),
+                "MedianTimeSavingsPerPlace": weighted_median(
+                    group["TimeSavingsPerPlace"].to_numpy(),
+                    weights,
+                ),
+            }
+        )
+    medians = pd.DataFrame(median_rows)
+
+    merged = means.merge(medians, on="FromAddress", how="left")
+    return merged[
+        [
+            "FromAddress",
+            "MeanSavingsPerSign",
+            "MedianSavingsPerSign",
+            "MeanTimeSavingsPerPlace",
+            "MedianTimeSavingsPerPlace",
+        ]
+    ]
 
 
 def best_total(df: pd.DataFrame, origins, metric: str) -> float:
@@ -2364,598 +2446,9 @@ def greedy_savings_per_sign(
 
 st.set_page_config(page_title="Shipping Cost Dashboard", layout="wide")
 st.title("Shipping Cost Dashboard")
-tab_dashboard, tab_regionals_v3, tab_weights = st.tabs(
-    ["Dashboard", "Shipping Summary Regionals v3", "Destination Weights"]
+tab_regionals_v3, tab_weights = st.tabs(
+    ["Shipping Summary Regionals v3", "Destination Weights"]
 )
-
-with tab_dashboard:
-
-    dataset_name = st.sidebar.radio("Page", list(DATASETS.keys()), index=0)
-    data_path = Path(DATASETS[dataset_name])
-    df_raw = load_data(str(data_path))
-
-    cities = sorted(df_raw["ToCity"].unique())
-    origins = sorted(df_raw["FromAddress"].unique())
-
-    default_baseline = "Indianapolis" if "Indianapolis" in df_raw["FromAddress"].unique() else sorted(df_raw["FromAddress"].unique())[0]
-    baseline_origin = st.sidebar.selectbox("Baseline origin", sorted(df_raw["FromAddress"].unique()), index=sorted(df_raw["FromAddress"].unique()).index(default_baseline))
-
-    cost_weight = st.sidebar.slider("Cost weight (Time weight = 1 - Cost)", 0.0, 1.0, 0.0, 0.05)
-    signs_per_month = st.sidebar.number_input("Signs sold per month", min_value=0, value=500, step=50)
-    build_cost_weight = cost_weight
-    st.sidebar.markdown("Size mix (%)")
-    size_small_pct = st.sidebar.number_input("Small", min_value=0.0, max_value=100.0, value=45.0, step=1.0, format="%.2f")
-    size_medium_pct = st.sidebar.number_input("Medium", min_value=0.0, max_value=100.0, value=33.0, step=1.0, format="%.2f")
-    size_large_pct = st.sidebar.number_input("Large", min_value=0.0, max_value=100.0, value=22.0, step=1.0, format="%.2f")
-    size_mix_total = size_small_pct + size_medium_pct + size_large_pct
-    if size_mix_total <= 0:
-        size_mix = {"Small": 0.0, "Medium": 0.0, "Large": 0.0}
-    else:
-        size_mix = {
-            "Small": size_small_pct / size_mix_total,
-            "Medium": size_medium_pct / size_mix_total,
-            "Large": size_large_pct / size_mix_total,
-        }
-    if abs(size_mix_total - 100.0) > 0.5:
-        st.sidebar.caption("Size mix is normalized to 100%.")
-
-    df_filtered = apply_filters(df_raw, cities, origins)
-    if df_filtered.empty:
-        st.warning("No data matches the current filters.")
-        st.stop()
-
-    df = add_weighted_score(df_filtered, cost_weight)
-    if baseline_origin not in df["FromAddress"].unique():
-        effective_baseline = sorted(df["FromAddress"].unique())[0]
-        st.warning(f"Baseline origin '{baseline_origin}' is not in the filtered data. Using '{effective_baseline}' instead.")
-        baseline_origin = effective_baseline
-
-    dest_in_view = sorted(df["Destination"].unique())
-    if st.session_state.get("destination_weights_version") != "state_counts_v1":
-        st.session_state.destination_weights = initial_destination_weights(df_raw, STATE_COUNTS)
-        st.session_state.destination_weights_version = "state_counts_v1"
-    st.sidebar.markdown("Destination weights")
-    selected_dest = st.sidebar.selectbox(
-        "Edit destination weight",
-        dest_in_view,
-        index=0,
-        key="dest_weight_select",
-    )
-    current_weight = float(st.session_state.destination_weights.get(selected_dest, DEFAULT_DEST_WEIGHT))
-    new_weight = st.sidebar.number_input(
-        "Weight",
-        min_value=0.0,
-        value=current_weight,
-        step=0.5,
-        format="%.2f",
-        key="dest_weight_value",
-    )
-    st.session_state.destination_weights[selected_dest] = float(new_weight)
-    dest_weights = destination_weights(dest_in_view, st.session_state.destination_weights)
-    st.sidebar.caption(f"Custom weights applied across {len(dest_in_view)} destinations in view.")
-
-    st.subheader(f"{dataset_name} shipments")
-
-    best_time_by_dest = df.groupby("Destination", as_index=False).agg(BestTime=("ShippingTimeDays", "min"))
-    best_time_by_dest["Weight"] = best_time_by_dest["Destination"].map(dest_weights).fillna(0.0)
-    optimal_time_avg = weighted_mean(best_time_by_dest["BestTime"].to_numpy(), best_time_by_dest["Weight"].to_numpy())
-    baseline_time_by_dest = df[df["FromAddress"] == baseline_origin].groupby(
-        "Destination",
-        as_index=False,
-    ).agg(AvgTime=("ShippingTimeDays", "mean"))
-    baseline_time_by_dest["Weight"] = baseline_time_by_dest["Destination"].map(dest_weights).fillna(0.0)
-    avg_time = weighted_mean(
-        baseline_time_by_dest["AvgTime"].to_numpy(),
-        baseline_time_by_dest["Weight"].to_numpy(),
-    )
-    time_savings_pct = ((avg_time - optimal_time_avg) / avg_time * 100.0) if avg_time else 0.0
-    baseline_cost_by_dest = df[df["FromAddress"] == baseline_origin].groupby(
-        "Destination",
-        as_index=False,
-    ).agg(AvgCost=("Cost", "mean"))
-    baseline_cost_by_dest["Weight"] = baseline_cost_by_dest["Destination"].map(dest_weights).fillna(0.0)
-    avg_cost = weighted_mean(
-        baseline_cost_by_dest["AvgCost"].to_numpy(),
-        baseline_cost_by_dest["Weight"].to_numpy(),
-    )
-    best_cost_by_dest = df.groupby("Destination", as_index=False).agg(BestCost=("Cost", "min"))
-    best_cost_by_dest["Weight"] = best_cost_by_dest["Destination"].map(dest_weights).fillna(0.0)
-    optimal_cost_avg = weighted_mean(best_cost_by_dest["BestCost"].to_numpy(), best_cost_by_dest["Weight"].to_numpy())
-    cost_savings_pct = ((avg_cost - optimal_cost_avg) / avg_cost * 100.0) if avg_cost else 0.0
-
-    avg_by_origin = df.groupby("FromAddress", as_index=False).agg(
-        AvgCost=("Cost", "mean"),
-        AvgTime=("ShippingTimeDays", "mean"),
-        AvgWeighted=("WeightedScore", "mean"),
-        Destinations=("Destination", "nunique"),
-    )
-
-    col1, col2, col3, col4, col5, col6, col7, col8, col9 = st.columns(9)
-    col1.metric("Avg cost", f"{avg_cost:.2f}")
-    col2.metric("Avg shipping days", f"{avg_time:.2f}")
-    col3.metric("Optimal avg time", f"{optimal_time_avg:.2f}")
-    col4.metric("Optimal avg cost", f"{optimal_cost_avg:.2f}")
-    col5.metric("% time saved vs optimal", f"{time_savings_pct:.1f}%")
-    col6.metric("% cost saved vs optimal", f"{cost_savings_pct:.1f}%")
-    best_cost = avg_by_origin.sort_values("AvgCost").iloc[0]["FromAddress"]
-    best_time = avg_by_origin.sort_values("AvgTime").iloc[0]["FromAddress"]
-    best_weighted = avg_by_origin.sort_values("AvgWeighted").iloc[0]["FromAddress"]
-    col7.metric("Best origin (cost)", best_cost)
-    col8.metric("Best origin (time)", best_time)
-    col9.metric("Best origin (weighted)", best_weighted)
-
-    top3_cost = avg_by_origin.sort_values("AvgCost").head(3)["FromAddress"].tolist()
-    top3_time = avg_by_origin.sort_values("AvgTime").head(3)["FromAddress"].tolist()
-    top3_weighted = avg_by_origin.sort_values("AvgWeighted").head(3)["FromAddress"].tolist()
-
-    top_cols = st.columns(3)
-    top_cols[0].selectbox("Top 3 origins (cost)", top3_cost, index=0, key="top3_cost")
-    top_cols[1].selectbox("Top 3 origins (time)", top3_time, index=0, key="top3_time")
-    top_cols[2].selectbox("Top 3 origins (weighted)", top3_weighted, index=0, key="top3_weighted")
-
-    origin_list_all = sorted(df["FromAddress"].unique())
-    # Candidate origins for combos: baseline + (has any 1-day) OR (top 10 avg time reducers)
-    one_day_origins = sorted(
-        df[df["ShippingTimeDays"] <= 1.0]["FromAddress"].unique().tolist()
-    )
-    avg_time_by_origin = df.groupby("FromAddress", as_index=False).agg(AvgTime=("ShippingTimeDays", "mean"))
-    baseline_avg_time = float(
-        avg_time_by_origin[avg_time_by_origin["FromAddress"] == baseline_origin]["AvgTime"].iloc[0]
-    ) if baseline_origin in avg_time_by_origin["FromAddress"].values else float("nan")
-    avg_time_by_origin["TimeReductionVsBaseline"] = baseline_avg_time - avg_time_by_origin["AvgTime"]
-    top_time_reducers = (
-        avg_time_by_origin.sort_values("TimeReductionVsBaseline", ascending=False)
-        .head(10)["FromAddress"]
-        .tolist()
-    )
-    origin_candidates = sorted(
-        {baseline_origin} | set(one_day_origins) | set(top_time_reducers)
-    )
-    origin_list = [o for o in origin_candidates if o in origin_list_all]
-    major_destinations = [
-        dest for dest in dest_in_view
-        if float(st.session_state.destination_weights.get(dest, DEFAULT_DEST_WEIGHT)) > 1.0
-    ]
-    major_weight_map = {
-        dest: float(st.session_state.destination_weights.get(dest, DEFAULT_DEST_WEIGHT))
-        for dest in major_destinations
-    }
-    st.markdown("Built Network")
-    built_network_origins = st.multiselect(
-        "Included origins",
-        sorted(df["FromAddress"].unique()),
-        default=[],
-    )
-    built_subset = df[df["FromAddress"].isin(built_network_origins)]
-    if built_subset.empty:
-        built_optimal_time_avg = float("nan")
-        built_optimal_cost_avg = float("nan")
-        slow_destinations = []
-        slower_destinations = []
-        slowest_destinations = []
-        built_best_time = pd.DataFrame(columns=["Destination", "BestTime"])
-        one_day_destinations = pd.DataFrame(columns=["Destination", "BestTime", "Weight"])
-        two_day_destinations = pd.DataFrame(columns=["Destination", "BestTime", "Weight"])
-        three_day_destinations = pd.DataFrame(columns=["Destination", "BestTime", "Weight"])
-        one_day_coverage_pct = 0.0
-        two_day_coverage_pct = 0.0
-    else:
-        built_best_time = built_subset.groupby("Destination", as_index=False).agg(BestTime=("ShippingTimeDays", "min"))
-        built_best_time["Weight"] = built_best_time["Destination"].map(dest_weights).fillna(0.0)
-        built_optimal_time_avg = weighted_mean(
-            built_best_time["BestTime"].to_numpy(),
-            built_best_time["Weight"].to_numpy(),
-        )
-        built_best_cost = built_subset.groupby("Destination", as_index=False).agg(BestCost=("Cost", "min"))
-        built_best_cost["Weight"] = built_best_cost["Destination"].map(dest_weights).fillna(0.0)
-        built_optimal_cost_avg = weighted_mean(
-            built_best_cost["BestCost"].to_numpy(),
-            built_best_cost["Weight"].to_numpy(),
-        )
-        slow_destinations = (
-            built_best_time[built_best_time["BestTime"] > 1.0]["Destination"]
-            .sort_values()
-            .tolist()
-        )
-        slower_destinations = (
-            built_best_time[built_best_time["BestTime"] > 2.0]["Destination"]
-            .sort_values()
-            .tolist()
-        )
-        slowest_destinations = (
-            built_best_time[built_best_time["BestTime"] > 3.0]["Destination"]
-            .sort_values()
-            .tolist()
-        )
-        one_day_destinations = built_best_time[built_best_time["BestTime"] <= 1.0].copy()
-        two_day_destinations = built_best_time[built_best_time["BestTime"] == 2.0].copy()
-        three_day_destinations = built_best_time[built_best_time["BestTime"] == 3.0].copy()
-        total_weight = float(built_best_time["Weight"].sum())
-        one_day_weight = float(one_day_destinations["Weight"].sum())
-        two_day_weight = float(two_day_destinations["Weight"].sum())
-        two_day_coverage_weight = float(
-            built_best_time[built_best_time["BestTime"] <= 2.0]["Weight"].sum()
-        )
-        one_day_coverage_pct = (one_day_weight / total_weight * 100.0) if total_weight else 0.0
-        two_day_coverage_pct = (two_day_coverage_weight / total_weight * 100.0) if total_weight else 0.0
-
-    coverage_col1, coverage_col2 = st.columns(2)
-    coverage_col1.metric("1-day coverage (weighted)", f"{one_day_coverage_pct:.1f}%")
-    coverage_col2.metric("2-day coverage (weighted)", f"{two_day_coverage_pct:.1f}%")
-    st.markdown("1-day shipping cities (built network)")
-    if one_day_destinations.empty:
-        st.caption("No destinations with 1-day shipping in the current built network.")
-    else:
-        one_day_display = one_day_destinations[["Destination", "Weight"]].sort_values(
-            ["Weight", "Destination"],
-            ascending=[False, True],
-        )
-        st.dataframe(one_day_display, use_container_width=True)
-    st.markdown("2-day shipping cities (built network)")
-    if two_day_destinations.empty:
-        st.caption("No destinations with 2-day shipping in the current built network.")
-    else:
-        two_day_display = two_day_destinations[["Destination", "Weight"]].sort_values(
-            ["Weight", "Destination"],
-            ascending=[False, True],
-        )
-        st.dataframe(two_day_display, use_container_width=True)
-    st.markdown("3-day shipping cities (built network)")
-    if three_day_destinations.empty:
-        st.caption("No destinations with 3-day shipping in the current built network.")
-    else:
-        three_day_display = three_day_destinations[["Destination", "Weight"]].sort_values(
-            ["Weight", "Destination"],
-            ascending=[False, True],
-        )
-        st.dataframe(three_day_display, use_container_width=True)
-
-    st.markdown("Reduce costs suggested build")
-    st.markdown("Reduce shipping times suggested build")
-    available_origins = [o for o in origins if o not in built_network_origins]
-    if available_origins:
-        current_avg_cost = built_optimal_cost_avg
-        current_avg_time = built_optimal_time_avg
-        current_best_time = built_best_time.set_index("Destination")["BestTime"] if not built_best_time.empty else pd.Series(dtype=float)
-
-        best_cost_origin = None
-        best_cost_delta = -np.inf
-        best_cost_info = {}
-
-        best_time_origin = None
-        best_time_delta = -np.inf
-        best_time_info = {}
-
-        for origin in available_origins:
-            candidate_subset = df[df["FromAddress"].isin(built_network_origins + [origin])]
-            candidate_best_time = candidate_subset.groupby("Destination", as_index=False).agg(
-                BestTime=("ShippingTimeDays", "min")
-            )
-            candidate_best_time["Weight"] = candidate_best_time["Destination"].map(dest_weights).fillna(0.0)
-            candidate_avg_time = weighted_mean(
-                candidate_best_time["BestTime"].to_numpy(),
-                candidate_best_time["Weight"].to_numpy(),
-            )
-            candidate_best_cost = candidate_subset.groupby("Destination", as_index=False).agg(
-                BestCost=("Cost", "min")
-            )
-            candidate_best_cost["Weight"] = candidate_best_cost["Destination"].map(dest_weights).fillna(0.0)
-            candidate_avg_cost = weighted_mean(
-                candidate_best_cost["BestCost"].to_numpy(),
-                candidate_best_cost["Weight"].to_numpy(),
-            )
-
-            candidate_time_map = candidate_best_time.set_index("Destination")["BestTime"]
-            common_dest = candidate_time_map.index.union(current_best_time.index)
-            current_times = current_best_time.reindex(common_dest)
-            new_times = candidate_time_map.reindex(common_dest)
-            moved_3_to_2 = common_dest[(current_times > 2.0) & (new_times <= 2.0) & (new_times > 1.0)].tolist()
-            moved_2_to_1 = common_dest[(current_times > 1.0) & (new_times <= 1.0)].tolist()
-
-            cost_delta = (current_avg_cost - candidate_avg_cost) if np.isfinite(current_avg_cost) else -candidate_avg_cost
-            time_delta = (current_avg_time - candidate_avg_time) if np.isfinite(current_avg_time) else -candidate_avg_time
-
-            if cost_delta > best_cost_delta:
-                best_cost_delta = cost_delta
-                best_cost_origin = origin
-                best_cost_info = {
-                    "avg_cost": candidate_avg_cost,
-                    "avg_time": candidate_avg_time,
-                    "moved_3_to_2": moved_3_to_2,
-                    "moved_2_to_1": moved_2_to_1,
-                }
-            if time_delta > best_time_delta:
-                best_time_delta = time_delta
-                best_time_origin = origin
-                best_time_info = {
-                    "avg_cost": candidate_avg_cost,
-                    "avg_time": candidate_avg_time,
-                    "moved_3_to_2": moved_3_to_2,
-                    "moved_2_to_1": moved_2_to_1,
-                }
-
-        if best_cost_origin is not None:
-            st.caption(
-                f"Reduce costs suggested build: {best_cost_origin} "
-                f"(avg cost ↓ {best_cost_delta:.2f}, avg time {best_cost_info['avg_time']:.2f})"
-            )
-            st.caption(
-                f"3→2 day cities: {', '.join(best_cost_info['moved_3_to_2']) or 'None'}"
-            )
-            st.caption(
-                f"2→1 day cities: {', '.join(best_cost_info['moved_2_to_1']) or 'None'}"
-            )
-        else:
-            st.caption("Reduce costs suggested build: n/a")
-
-        if best_time_origin is not None:
-            st.caption(
-                f"Reduce shipping times suggested build: {best_time_origin} "
-                f"(avg time ↓ {best_time_delta:.2f}, avg cost {best_time_info['avg_cost']:.2f})"
-            )
-            st.caption(
-                f"3→2 day cities: {', '.join(best_time_info['moved_3_to_2']) or 'None'}"
-            )
-            st.caption(
-                f"2→1 day cities: {', '.join(best_time_info['moved_2_to_1']) or 'None'}"
-            )
-        else:
-            st.caption("Reduce shipping times suggested build: n/a")
-    else:
-        st.caption("Reduce costs suggested build: n/a")
-        st.caption("Reduce shipping times suggested build: n/a")
-
-    def size_mix_monthly_savings(size_mix: dict, signs_per_month: float) -> float:
-        total = 0.0
-        for size, share in size_mix.items():
-            if share <= 0:
-                continue
-            size_df = load_data(DATASETS[size])
-            if size_df.empty:
-                continue
-            origins = sorted(size_df["FromAddress"].unique())
-            if not origins:
-                continue
-            baseline = baseline_origin if baseline_origin in origins else origins[0]
-            built_origins = [o for o in built_network_origins if o in origins]
-            if not built_origins:
-                built_origins = [baseline]
-            dest_in_view = sorted(size_df["Destination"].unique())
-            base_weights = (
-                st.session_state.destination_weights
-                if "destination_weights" in st.session_state
-                else initial_destination_weights(size_df, STATE_COUNTS)
-            )
-            dest_weights_size = destination_weights(dest_in_view, base_weights)
-            baseline_cost_by_dest = size_df[size_df["FromAddress"] == baseline].groupby(
-                "Destination",
-                as_index=False,
-            ).agg(AvgCost=("Cost", "mean"))
-            baseline_cost_by_dest["Weight"] = baseline_cost_by_dest["Destination"].map(dest_weights_size).fillna(0.0)
-            baseline_avg_cost = weighted_mean(
-                baseline_cost_by_dest["AvgCost"].to_numpy(),
-                baseline_cost_by_dest["Weight"].to_numpy(),
-            )
-            built_subset_size = size_df[size_df["FromAddress"].isin(built_origins)]
-            if built_subset_size.empty:
-                continue
-            built_best_cost = built_subset_size.groupby("Destination", as_index=False).agg(BestCost=("Cost", "min"))
-            built_best_cost["Weight"] = built_best_cost["Destination"].map(dest_weights_size).fillna(0.0)
-            built_avg_cost = weighted_mean(
-                built_best_cost["BestCost"].to_numpy(),
-                built_best_cost["Weight"].to_numpy(),
-            )
-            if np.isfinite(baseline_avg_cost) and np.isfinite(built_avg_cost):
-                total += share * signs_per_month * (baseline_avg_cost - built_avg_cost)
-        return total
-
-    monthly_savings = size_mix_monthly_savings(size_mix, float(signs_per_month))
-    yearly_savings = monthly_savings * 12 if np.isfinite(monthly_savings) else float("nan")
-    col10, col11, col12, col13 = st.columns(4)
-    col10.metric("Built network avg time", f"{built_optimal_time_avg:.2f}" if np.isfinite(built_optimal_time_avg) else "n/a")
-    col11.metric("Built network avg cost", f"{built_optimal_cost_avg:.2f}" if np.isfinite(built_optimal_cost_avg) else "n/a")
-    col12.metric("Monthly savings (size mix)", f"{monthly_savings:,.2f}" if np.isfinite(monthly_savings) else "n/a")
-    col13.metric("Yearly savings (size mix)", f"{yearly_savings:,.2f}" if np.isfinite(yearly_savings) else "n/a")
-
-    st.markdown("Major City Score")
-    major_weight_map = st.session_state.destination_weights
-    major_destinations = [dest for dest in dest_in_view if float(major_weight_map.get(dest, DEFAULT_DEST_WEIGHT)) > 1.0]
-    if built_subset.empty or not major_destinations:
-        st.caption("Major City Score: n/a")
-    else:
-        major_weights = {
-            dest: float(major_weight_map.get(dest, DEFAULT_DEST_WEIGHT))
-            for dest in major_destinations
-        }
-        total_major_weight = sum(major_weights.values())
-        major_best = built_best_time[built_best_time["Destination"].isin(major_destinations)]
-        one_day_dest = major_best[major_best["BestTime"] <= 1.0]["Destination"].tolist()
-        one_day_weight = sum(major_weights.get(dest, 0.0) for dest in one_day_dest)
-        major_score = (one_day_weight / total_major_weight * 100.0) if total_major_weight else 0.0
-        st.caption(f"Major City Score: {major_score:.1f}% of weighted major destinations at 1-day shipping.")
-
-
-    st.markdown("Cities without 1-day shipping in built network")
-    if slow_destinations:
-        selected_slow_dest = st.selectbox(
-            "Destinations with best shipping time > 1 day",
-            slow_destinations,
-        )
-        selected_rows = built_subset[built_subset["Destination"] == selected_slow_dest]
-        if selected_rows.empty:
-            st.caption("No routes found for the selected destination in the built network.")
-        else:
-            best_row = selected_rows.sort_values(["ShippingTimeDays", "Cost"]).iloc[0]
-            st.caption(
-                f"Fastest from: {best_row['FromAddress']} - {best_row['ShippingTimeDays']:.2f} days"
-            )
-    else:
-        st.caption("All destinations have 1-day shipping in the current built network.")
-
-    st.markdown("Cities without 2-day shipping in built network")
-    if slower_destinations:
-        selected_slower_dest = st.selectbox(
-            "Destinations with best shipping time > 2 days",
-            slower_destinations,
-            key="slow_destinations_2day",
-        )
-        selected_rows = built_subset[built_subset["Destination"] == selected_slower_dest]
-        if selected_rows.empty:
-            st.caption("No routes found for the selected destination in the built network.")
-        else:
-            best_row = selected_rows.sort_values(["ShippingTimeDays", "Cost"]).iloc[0]
-            st.caption(
-                f"Fastest from: {best_row['FromAddress']} - {best_row['ShippingTimeDays']:.2f} days"
-            )
-    else:
-        st.caption("All destinations have 2-day shipping in the current built network.")
-
-    st.markdown("Cities without 3-day shipping in built network")
-    if slowest_destinations:
-        selected_slowest_dest = st.selectbox(
-            "Destinations with best shipping time > 3 days",
-            slowest_destinations,
-            key="slow_destinations_3day",
-        )
-        selected_rows = built_subset[built_subset["Destination"] == selected_slowest_dest]
-        if selected_rows.empty:
-            st.caption("No routes found for the selected destination in the built network.")
-        else:
-            best_row = selected_rows.sort_values(["ShippingTimeDays", "Cost"]).iloc[0]
-            st.caption(
-                f"Fastest from: {best_row['FromAddress']} - {best_row['ShippingTimeDays']:.2f} days"
-            )
-    else:
-        st.caption("All destinations have 3-day shipping in the current built network.")
-
-    st.markdown("---")
-
-    origin_count = avg_by_origin.shape[0]
-    bar_height = max(300, origin_count * 34)
-
-    max_scatter_cost = float(avg_by_origin["AvgCost"].max()) if not avg_by_origin.empty else 5.75
-    scatter = alt.Chart(avg_by_origin).mark_circle(size=140).encode(
-        x=alt.X("AvgCost:Q", title="Avg Cost", scale=alt.Scale(domain=[5.75, max_scatter_cost])),
-        y=alt.Y("AvgTime:Q", title="Avg Shipping Days"),
-        size=alt.Size("Destinations:Q", title="Destinations"),
-        color=alt.Color(
-            "FromAddress:N",
-            legend=alt.Legend(title="Origin", labelLimit=220),
-        ),
-        tooltip=["FromAddress", "AvgCost", "AvgTime", "Destinations"],
-    ).properties(height=320, title="Cost vs time by origin")
-
-    baseline_df = df[df["FromAddress"] == baseline_origin]
-    baseline_dest = baseline_df.groupby("Destination", as_index=False).agg(
-        BaselineCost=("Cost", "mean"),
-        BaselineTime=("ShippingTimeDays", "mean"),
-        BaselineWeighted=("WeightedScore", "mean"),
-    )
-    best_dest = df.groupby("Destination", as_index=False).agg(
-        BestCost=("Cost", "min"),
-        BestTime=("ShippingTimeDays", "min"),
-        BestWeighted=("WeightedScore", "min"),
-    )
-    savings = best_dest.merge(baseline_dest, on="Destination", how="left")
-    savings["CostSavings"] = savings["BaselineCost"] - savings["BestCost"]
-    savings["TimeSavings"] = savings["BaselineTime"] - savings["BestTime"]
-    savings["WeightedSavings"] = savings["BaselineWeighted"] - savings["BestWeighted"]
-
-    savings_signs = savings_vs_baseline(df, baseline_origin)
-    origin_savings = weighted_origin_stats(savings_signs, dest_weights)
-    origin_savings["MeanMonthlySavings"] = origin_savings["MeanSavingsPerSign"] * signs_per_month
-    origin_savings["MedianMonthlySavings"] = origin_savings["MedianSavingsPerSign"] * signs_per_month
-
-    bar_weighted = alt.Chart(avg_by_origin).mark_bar().encode(
-        x=alt.X("AvgWeighted:Q", title="Avg Weighted Score"),
-        y=alt.Y("FromAddress:N", sort="x", axis=alt.Axis(labelLimit=200)),
-        tooltip=["FromAddress", "AvgWeighted"],
-    ).properties(height=bar_height, title="Weighted score by origin (lower is better)")
-
-    returns_signs = greedy_savings_per_sign(df, baseline_origin, build_cost_weight, dest_weights)
-    st.caption("Cost vs time trade-off by origin. Points show the average cost and average time together.")
-    st.altair_chart(scatter, use_container_width=True)
-
-    st.caption("Weighted score by origin using the cost/time weight slider. Lower is better.")
-    st.altair_chart(bar_weighted, use_container_width=True)
-    metric_choice = st.selectbox(
-        "Diminishing returns metric",
-        ["Cost", "ShippingTimeDays", "WeightedScore"],
-    )
-    returns = greedy_diminishing_returns(df, baseline_origin, metric_choice)
-    line_returns = alt.Chart(returns).mark_line(point=True).encode(
-        x=alt.X("ShopCount:Q", title="Shop count (including baseline)"),
-        y=alt.Y("CumulativeSavings:Q", title=f"Cumulative savings ({metric_choice})"),
-        tooltip=["ShopCount", "AddedOrigin", "IncrementalSavings", "CumulativeSavings"],
-    ).properties(height=300, title="Diminishing returns as shops are added")
-    line_returns_labels = alt.Chart(returns).mark_text(dy=-10, color="white").encode(
-        x=alt.X("ShopCount:Q"),
-        y=alt.Y("CumulativeSavings:Q"),
-        text=alt.Text("AddedOrigin:N"),
-    )
-    line_returns = line_returns + line_returns_labels
-    st.caption("Diminishing returns using the selected metric. Each step adds the next best origin.")
-    st.altair_chart(line_returns, use_container_width=True)
-    st.caption("Per-origin savings per sign table vs Indianapolis, weighted by destination share and sorted by mean savings.")
-    if not returns_signs.empty:
-        st.subheader("Recommended shop build order (weighted cost/time and destination share)")
-        display_cols = [
-            "ShopCount",
-            "AddedOrigin",
-            "IncrementalSavingsPerSign_Mean",
-            "IncrementalSavingsPerSign_Median",
-            "IncrementalTimeSavingsPerPlace_Mean",
-            "IncrementalTimeSavingsPerPlace_Median",
-            "IncrementalWeightedSavings_Mean",
-            "IncrementalWeightedSavings_Median",
-            "CumulativeSavingsPerSign_Mean",
-            "CumulativeSavingsPerSign_Median",
-            "CumulativeTimeSavingsPerPlace_Mean",
-            "CumulativeTimeSavingsPerPlace_Median",
-            "CumulativeWeightedSavings_Mean",
-            "CumulativeWeightedSavings_Median",
-        ]
-        st.dataframe(returns_signs[display_cols].head(11), use_container_width=True)
-
-    with st.expander("Show filtered data"):
-        st.dataframe(df, use_container_width=True)
-
-    include_boise = st.checkbox(
-        "Include Boise in all combos",
-        value=False,
-        key="main_include_boise",
-    )
-    render_top_combos(
-        df,
-        origin_list,
-        origin_list_all,
-        dest_in_view,
-        dest_weights,
-        build_cost_weight,
-        avg_cost,
-        avg_time,
-        major_weight_map,
-        "main",
-        required_origin="Boise" if include_boise else None,
-    )
-    
-
-    st.markdown("Final origin rankings")
-    origin_rank = df.groupby("FromAddress", as_index=False).agg(
-        AvgWeighted=("WeightedScore", "mean"),
-        AvgCost=("Cost", "mean"),
-        AvgTime=("ShippingTimeDays", "mean"),
-        MinTime=("ShippingTimeDays", "min"),
-    )
-    origin_rank = origin_rank.sort_values(
-        ["AvgWeighted", "AvgTime", "AvgCost"],
-        ascending=[True, True, True],
-    ).reset_index(drop=True)
-    origin_rank["Rank"] = np.arange(1, len(origin_rank) + 1)
-    st.dataframe(
-        origin_rank[["Rank", "FromAddress", "AvgWeighted", "AvgCost", "AvgTime", "MinTime"]],
-        use_container_width=True,
-    )
 
 with tab_regionals_v3:
     st.subheader("Shipping Summary Regionals v3")
@@ -3034,7 +2527,7 @@ with tab_regionals_v3:
 
             lat_long_path = Path("lat_long_from_to.csv")
             if lat_long_path.exists():
-                    lat_long_df = pd.read_csv(lat_long_path)
+                    lat_long_df = load_lat_long_data(str(lat_long_path))
                     lat_long_df["direction"] = lat_long_df["direction"].astype(str).str.upper()
                     lat_long_df["city_key"] = (
                         lat_long_df["city"].astype(str).str.strip().str.casefold()
@@ -3144,12 +2637,19 @@ with tab_regionals_v3:
                     dest_in_view_v3,
                     st.session_state.destination_weights_v3,
                 )
-                missing_weight_keys = []
                 weight_keys = set(V3_CITY_COUNTS.keys())
-                for _, row in regionals_v3_df[["ToCity", "ToState"]].dropna().drop_duplicates().iterrows():
-                    key = f"{str(row['ToCity']).strip().casefold()}, {str(row['ToState']).strip().casefold()}"
-                    if key not in weight_keys:
-                        missing_weight_keys.append(f"{row['ToCity']}, {row['ToState']}")
+                unique_dest_v3 = regionals_v3_df[["ToCity", "ToState"]].dropna().drop_duplicates().copy()
+                unique_dest_v3["City"] = unique_dest_v3["ToCity"].astype(str).str.strip()
+                unique_dest_v3["State"] = unique_dest_v3["ToState"].astype(str).str.strip()
+                unique_dest_v3["WeightKey"] = (
+                    unique_dest_v3["City"].str.casefold() + ", " + unique_dest_v3["State"].str.casefold()
+                )
+                missing_weight_keys = (
+                    unique_dest_v3.loc[~unique_dest_v3["WeightKey"].isin(weight_keys), ["City", "State"]]
+                    .assign(MissingDestination=lambda d: d["City"] + ", " + d["State"])["MissingDestination"]
+                    .sort_values()
+                    .tolist()
+                )
                 if missing_weight_keys:
                     st.warning(
                         f"Missing weights for {len(missing_weight_keys)} destinations.",
@@ -3166,11 +2666,26 @@ with tab_regionals_v3:
                 avg_time_by_origin_v3["Weight"] = avg_time_by_origin_v3["Destination"].map(
                     dest_weights_v3
                 ).fillna(0.0)
-                weighted_avg_time_by_origin_v3 = (
-                    avg_time_by_origin_v3.groupby("FromAddress")
-                    .apply(lambda g: weighted_mean(g["AvgTime"].to_numpy(), g["Weight"].to_numpy()))
-                    .reset_index(name="WeightedAvgTime")
+                avg_time_by_origin_v3["WeightedTime"] = (
+                    avg_time_by_origin_v3["AvgTime"] * avg_time_by_origin_v3["Weight"]
                 )
+                weighted_avg_time_by_origin_v3 = (
+                    avg_time_by_origin_v3.groupby("FromAddress", as_index=False)
+                    .agg(
+                        WeightedTimeSum=("WeightedTime", "sum"),
+                        WeightSum=("Weight", "sum"),
+                        FallbackMeanTime=("AvgTime", "mean"),
+                    )
+                )
+                weighted_avg_time_by_origin_v3["WeightedAvgTime"] = np.where(
+                    weighted_avg_time_by_origin_v3["WeightSum"] > 0,
+                    weighted_avg_time_by_origin_v3["WeightedTimeSum"]
+                    / weighted_avg_time_by_origin_v3["WeightSum"],
+                    weighted_avg_time_by_origin_v3["FallbackMeanTime"],
+                )
+                weighted_avg_time_by_origin_v3 = weighted_avg_time_by_origin_v3[
+                    ["FromAddress", "WeightedAvgTime"]
+                ]
                 if not weighted_avg_time_by_origin_v3.empty:
                     best_time_origin = weighted_avg_time_by_origin_v3.sort_values(
                         "WeightedAvgTime"
@@ -3197,6 +2712,7 @@ with tab_regionals_v3:
                     built_best_time_v3 = built_subset_v3.groupby("Destination", as_index=False).agg(
                         BestTime=("ShippingTimeDays", "min")
                     )
+                    coverage_origin_map_v3 = compute_best_origin_map(built_subset_v3)
                     built_best_time_v3["Weight"] = built_best_time_v3["Destination"].map(
                         dest_weights_v3
                     ).fillna(0.0)
@@ -3265,10 +2781,13 @@ with tab_regionals_v3:
                         one_day_v3_display["PriorityRank"] = one_day_v3_display["Destination"].map(
                             rank_map_v3
                         )
+                        one_day_v3_display["CoverageFrom"] = one_day_v3_display["Destination"].map(
+                            coverage_origin_map_v3
+                        )
                         one_day_v3_display = one_day_v3_display.sort_values(
                             ["PriorityRank", "Destination"],
                             ascending=[True, True],
-                        )[["Destination", "Weight", "PriorityRank"]]
+                        )[["Destination", "Weight", "PriorityRank", "CoverageFrom"]]
                         st.dataframe(one_day_v3_display, use_container_width=True)
                     st.markdown("2-day shipping cities (page3)")
                     if two_day_v3.empty:
@@ -3278,10 +2797,13 @@ with tab_regionals_v3:
                         two_day_v3_display["PriorityRank"] = two_day_v3_display["Destination"].map(
                             rank_map_v3
                         )
+                        two_day_v3_display["CoverageFrom"] = two_day_v3_display["Destination"].map(
+                            coverage_origin_map_v3
+                        )
                         two_day_v3_display = two_day_v3_display.sort_values(
                             ["PriorityRank", "Destination"],
                             ascending=[True, True],
-                        )[["Destination", "Weight", "PriorityRank"]]
+                        )[["Destination", "Weight", "PriorityRank", "CoverageFrom"]]
                         st.dataframe(two_day_v3_display, use_container_width=True)
                     st.markdown("3-day shipping cities (page3)")
                     if three_day_v3.empty:
@@ -3291,10 +2813,13 @@ with tab_regionals_v3:
                         three_day_v3_display["PriorityRank"] = three_day_v3_display["Destination"].map(
                             rank_map_v3
                         )
+                        three_day_v3_display["CoverageFrom"] = three_day_v3_display["Destination"].map(
+                            coverage_origin_map_v3
+                        )
                         three_day_v3_display = three_day_v3_display.sort_values(
                             ["PriorityRank", "Destination"],
                             ascending=[True, True],
-                        )[["Destination", "Weight", "PriorityRank"]]
+                        )[["Destination", "Weight", "PriorityRank", "CoverageFrom"]]
                         st.dataframe(three_day_v3_display, use_container_width=True)
                     slow_1_v3 = built_best_time_v3[built_best_time_v3["BestTime"] > 1.0][
                         "Destination"
@@ -3413,25 +2938,16 @@ with tab_weights:
         if page3_df.empty:
             st.info("No data available in page3.csv.")
         else:
-            weights_rows = []
             total_weight = sum(V3_CITY_COUNTS.values())
-            for _, row in (
-                page3_df[["ToCity", "ToState"]].dropna().drop_duplicates().iterrows()
-            ):
-                city = str(row["ToCity"]).strip()
-                state = str(row["ToState"]).strip()
-                key = f"{city.casefold()}, {state.casefold()}"
-                weight = V3_CITY_COUNTS.get(key, 0)
-                pct = (weight / total_weight * 100.0) if total_weight else 0.0
-                weights_rows.append(
-                    {
-                        "City": city,
-                        "State": state,
-                        "Weight": weight,
-                        "Percent": pct,
-                    }
-                )
-            weights_df = pd.DataFrame(weights_rows).sort_values(
+            weights_df = page3_df[["ToCity", "ToState"]].dropna().drop_duplicates().copy()
+            weights_df["City"] = weights_df["ToCity"].astype(str).str.strip()
+            weights_df["State"] = weights_df["ToState"].astype(str).str.strip()
+            weights_df["Key"] = weights_df["City"].str.casefold() + ", " + weights_df["State"].str.casefold()
+            weights_df["Weight"] = weights_df["Key"].map(V3_CITY_COUNTS).fillna(0.0)
+            weights_df["Percent"] = (
+                weights_df["Weight"] / total_weight * 100.0
+            ) if total_weight else 0.0
+            weights_df = weights_df[["City", "State", "Weight", "Percent"]].sort_values(
                 ["Weight", "City", "State"],
                 ascending=[False, True, True],
             )
