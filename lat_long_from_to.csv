@@ -26,7 +26,9 @@ From,Fulfillment - Albuquerque,Albuquerque,NM,87113,35.1824,-106.5856
 From,Fulfillment - Kansas City,Kansas City,MO,64106,39.0841667,-94.5761111
 From,Fulfillment - Billings,Billings,MT,59102,45.783398,-108.5237
 From,Fulfillment - Minneapolis,Minneapolis,MN,55418,45.0049,-93.2514
-FromAddress,Fulfillment - Hewitt,Hewitt,TX,76643,31.46239,-97.195838
+FROM,San Antonio,San Antonio,TX,78205,29.4241,-98.4936
+FROM,Fulfillment - Hewitt,Hewitt,TX,76643,31.46239,-97.195838
+FROM,Fulfillment - Aubrey,Aubrey,TX,76227,33.3043,-96.9861
 TO,Brooklyn,Brooklyn,NY,11217,40.6782,-73.9442
 TO,Phoenix,Phoenix,AZ,85004,33.4484,-112.074
 TO,Houston,Houston,TX,77002,29.7604,-95.3698
