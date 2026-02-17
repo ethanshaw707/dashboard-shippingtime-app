@@ -630,3 +630,422 @@ TO,Woodbridge,Woodbridge,VA,22191,38.6582,-77.2497
 TO,Woodside,Woodside,CA,94062,37.4299,-122.2539
 TO,Yorba Linda,Yorba Linda,CA,92886,33.8886,-117.8131
 TO,Queens Village,Queens Village,NY,11427,40.7268,-73.7415
+TO,"Alvin","Alvin",TX,77511,29.42,-95.24
+TO,"Ann Arbor","Ann Arbor",MI,48104,42.28,-83.73
+TO,"Anna","Anna",TX,75409,33.35,-96.55
+TO,"Apopka","Apopka",FL,32703,28.69,-81.51
+TO,"Argyle","Argyle",TX,76226,33.12,-97.18
+TO,"Ashdown","Ashdown",AR,71822,33.67,-94.13
+TO,"Auburn","Auburn",CA,95603,38.90,-121.08
+TO,"Adel","Adel",IA,50003,41.61,-94.02
+TO,"Aiken","Aiken",SC,29801,33.56,-81.72
+TO,"Alameda","Alameda",CA,94501,37.77,-122.28
+TO,"Aliso Viejo","Aliso Viejo",CA,92656,33.57,-117.73
+TO,"Ambler","Ambler",PA,19002,40.15,-75.22
+TO,"Anacortes","Anacortes",WA,98221,48.51,-122.61
+TO,"Ankeny","Ankeny",IA,50023,41.73,-93.60
+TO,"Annandale","Annandale",VA,22003,38.83,-77.20
+TO,"Apache Junction","Apache Junction",AZ,85120,33.42,-111.55
+TO,"Appleton","Appleton",WI,54911,44.26,-88.41
+TO,"Arlington","Arlington",WA,98223,48.20,-122.13
+TO,"Arlington","Arlington",VA,22201,38.89,-77.09
+TO,"Ashland","Ashland",VA,23005,37.76,-77.48
+TO,"Ashton","Ashton",ID,83420,44.07,-111.45
+TO,"Atascadero","Atascadero",CA,93422,35.49,-120.67
+TO,"Athens","Athens",GA,30601,33.95,-83.38
+TO,"Athens","Athens",TX,75751,32.20,-95.86
+TO,"Atwater","Atwater",CA,95301,37.35,-120.61
+TO,"Ballston Lake","Ballston Lake",NY,12019,42.91,-73.87
+TO,"Barnegat","Barnegat",NJ,08005,39.75,-74.22
+TO,"Beaver Falls","Beaver Falls",PA,15010,40.75,-80.32
+TO,"Beavercreek","Beavercreek",OR,97004,45.25,-122.46
+TO,"Bethalto","Bethalto",IL,62010,38.91,-90.04
+TO,"Big Lake","Big Lake",MN,55309,45.33,-93.74
+TO,"Blairsville","Blairsville",GA,30512,34.88,-83.96
+TO,"Boynton Beach","Boynton Beach",FL,33435,26.53,-80.08
+TO,"Brownsville","Brownsville",TX,78520,25.90,-97.50
+TO,"Bruceton Mills","Bruceton Mills",WV,26525,39.65,-79.65
+TO,"Byron","Byron",GA,31008,32.65,-83.76
+TO,"Banner Elk","Banner Elk",NC,28604,36.16,-81.87
+TO,"Barrington","Barrington",IL,60010,42.15,-88.14
+TO,"Bayonne","Bayonne",NJ,07002,40.67,-74.11
+TO,"Beach Lake","Beach Lake",PA,18405,41.61,-75.06
+TO,"Beaumont","Beaumont",CA,92223,33.93,-116.98
+TO,"Beaverton","Beaverton",OR,97005,45.49,-122.80
+TO,"Belleview","Belleview",FL,34420,29.06,-82.06
+TO,"Bellevue","Bellevue",NE,68005,41.15,-95.91
+TO,"Belton","Belton",TX,76513,31.06,-97.46
+TO,"Belton","Belton",MO,64012,38.81,-94.53
+TO,"Benton","Benton",AR,72015,34.56,-92.59
+TO,"Berlin","Berlin",MD,21811,38.32,-75.22
+TO,"Bethesda","Bethesda",MD,20814,38.98,-77.10
+TO,"Bettendorf","Bettendorf",IA,52722,41.56,-90.49
+TO,"Bloomfield","Bloomfield",CT,06002,41.83,-72.73
+TO,"Bogota","Bogota",NJ,07603,40.88,-74.03
+TO,"Bowling Green","Bowling Green",KY,42101,36.97,-86.45
+TO,"Bridgeton","Bridgeton",NJ,08302,39.43,-75.23
+TO,"Broken Arrow","Broken Arrow",OK,74012,36.06,-95.80
+TO,"Broomfield","Broomfield",CO,80020,39.92,-105.09
+TO,"Buckeye","Buckeye",AZ,85326,33.37,-112.58
+TO,"Bulverde","Bulverde",TX,78163,29.74,-98.45
+TO,"Burlington","Burlington",NC,27215,36.10,-79.44
+TO,"Campbell","Campbell",CA,95008,37.29,-121.95
+TO,"Carlsbad","Carlsbad",CA,92008,33.16,-117.35
+TO,"Carson City","Carson City",NV,89701,39.16,-119.77
+TO,"Chagrin Falls","Chagrin Falls",OH,44022,41.43,-81.39
+TO,"Champaign","Champaign",IL,61820,40.12,-88.24
+TO,"Chesterton","Chesterton",IN,46304,41.61,-87.06
+TO,"Clarkston","Clarkston",MI,48346,42.74,-83.42
+TO,"Cordele","Cordele",GA,31015,31.96,-83.78
+TO,"Canby","Canby",OR,97013,45.26,-122.69
+TO,"Canfield","Canfield",OH,44406,41.03,-80.76
+TO,"Canonsburg","Canonsburg",PA,15317,40.26,-80.19
+TO,"Canton","Canton",MI,48187,42.31,-83.49
+TO,"Canyon Country","Canyon Country",CA,91387,34.42,-118.44
+TO,"Catonsville","Catonsville",MD,21228,39.27,-76.74
+TO,"Centerville","Centerville",OH,45459,39.63,-84.16
+TO,"Central Islip","Central Islip",NY,11722,40.79,-73.20
+TO,"Chandler","Chandler",OK,74834,35.70,-96.88
+TO,"Chattanooga","Chattanooga",TN,37402,35.05,-85.31
+TO,"Cherry Hill","Cherry Hill",NJ,08002,39.93,-75.03
+TO,"Chico","Chico",CA,95928,39.73,-121.84
+TO,"Chino Hills","Chino Hills",CA,91709,33.99,-117.73
+TO,"Christiansburg","Christiansburg",VA,24073,37.13,-80.41
+TO,"Clarksburg","Clarksburg",MD,20871,39.24,-77.28
+TO,"Clarksville","Clarksville",TN,37040,36.53,-87.36
+TO,"Colonial Beach","Colonial Beach",VA,22443,38.25,-76.96
+TO,"Columbia","Columbia",SC,29201,34.00,-81.03
+TO,"Columbia City","Columbia City",IN,46725,41.16,-85.49
+TO,"Columbia Falls","Columbia Falls",MT,59912,48.37,-114.18
+TO,"Conway","Conway",SC,29526,33.84,-79.05
+TO,"Conyers","Conyers",GA,30012,33.67,-84.02
+TO,"Coral Springs","Coral Springs",FL,33065,26.27,-80.27
+TO,"Corvallis","Corvallis",OR,97333,44.56,-123.26
+TO,"Coventry","Coventry",RI,02816,41.70,-71.68
+TO,"Covina","Covina",CA,91723,34.09,-117.89
+TO,"Covington","Covington",LA,70433,30.48,-90.10
+TO,"Crescent City","Crescent City",CA,95531,41.76,-124.20
+TO,"Dunedin","Dunedin",FL,34698,28.01,-82.78
+TO,"Dacula","Dacula",GA,30019,33.99,-83.89
+TO,"Dartmouth","Dartmouth",MA,02747,41.64,-70.98
+TO,"Dearborn Heights","Dearborn Heights",MI,48127,42.33,-83.28
+TO,"Decatur","Decatur",TX,76234,33.23,-97.59
+TO,"Dickinson","Dickinson",TX,77539,29.46,-95.05
+TO,"Doral","Doral",FL,33166,25.82,-80.36
+TO,"Dothan","Dothan",AL,36301,31.22,-85.39
+TO,"El Cajon","El Cajon",CA,92020,32.79,-116.96
+TO,"Elgin","Elgin",IL,60120,42.04,-88.28
+TO,"Elk River","Elk River",MN,55330,45.30,-93.57
+TO,"Erie","Erie",PA,16501,42.13,-80.09
+TO,"Everett","Everett",WA,98201,47.98,-122.20
+TO,"Evergreen","Evergreen",CO,80439,39.63,-105.32
+TO,"Excelsior","Excelsior",MN,55331,44.90,-93.57
+TO,"East Concord","East Concord",NY,14055,42.55,-78.63
+TO,"East Greenwich","East Greenwich",RI,02818,41.66,-71.45
+TO,"East Islip","East Islip",NY,11730,40.73,-73.19
+TO,"Eau Claire","Eau Claire",WI,54701,44.81,-91.50
+TO,"Edison","Edison",NJ,08817,40.52,-74.41
+TO,"Elizabeth","Elizabeth",CO,80107,39.36,-104.60
+TO,"Elk Grove","Elk Grove",CA,95758,38.41,-121.37
+TO,"Ellijay","Ellijay",GA,30540,34.69,-84.48
+TO,"Erie","Erie",CO,80516,40.05,-105.05
+TO,"Fallbrook","Fallbrook",CA,92028,33.38,-117.25
+TO,"Forked River","Forked River",NJ,08731,39.84,-74.19
+TO,"Fort White","Fort White",FL,32038,29.92,-82.71
+TO,"Fairfax","Fairfax",VA,22030,38.85,-77.31
+TO,"Fairfield","Fairfield",CA,94533,38.25,-122.04
+TO,"Fairfield","Fairfield",CT,06824,41.14,-73.26
+TO,"Fairhope","Fairhope",AL,36532,30.52,-87.90
+TO,"Fallon","Fallon",NV,89406,39.47,-118.78
+TO,"Farmington Hills","Farmington Hills",MI,48334,42.50,-83.37
+TO,"Fayetteville","Fayetteville",TN,37334,35.15,-86.57
+TO,"Findlay","Findlay",OH,45840,41.04,-83.65
+TO,"Fisherville","Fisherville",KY,40023,38.16,-85.43
+TO,"Fitchburg","Fitchburg",MA,01420,42.58,-71.80
+TO,"Flagstaff","Flagstaff",AZ,86001,35.20,-111.65
+TO,"Florissant","Florissant",MO,63031,38.79,-90.32
+TO,"Folsom","Folsom",CA,95630,38.68,-121.18
+TO,"Fond Du Lac","Fond Du Lac",WI,54935,43.78,-88.45
+TO,"Fontana","Fontana",CA,92335,34.10,-117.43
+TO,"Forest Hills","Forest Hills",NY,11375,40.72,-73.85
+TO,"Freehold","Freehold",NJ,07728,40.26,-74.27
+TO,"Georgetown","Georgetown",TX,78626,30.63,-97.68
+TO,"Gig Harbor","Gig Harbor",WA,98335,47.33,-122.58
+TO,"Gillette","Gillette",WY,82716,44.29,-105.50
+TO,"Gilroy","Gilroy",CA,95020,37.00,-121.57
+TO,"Goshen","Goshen",IN,46526,41.58,-85.83
+TO,"Grand Forks","Grand Forks",ND,58201,47.93,-97.03
+TO,"Gallatin","Gallatin",TN,37066,36.39,-86.45
+TO,"Geneseo","Geneseo",IL,61254,41.45,-90.15
+TO,"Gorham","Gorham",ME,04038,43.68,-70.44
+TO,"Greeneville","Greeneville",TN,37743,36.17,-82.83
+TO,"Greenfield","Greenfield",WI,53220,42.96,-88.01
+TO,"Greenville","Greenville",NC,27858,35.61,-77.37
+TO,"Grovetown","Grovetown",GA,30813,33.45,-82.20
+TO,"Hampstead","Hampstead",MD,21074,39.60,-76.85
+TO,"Hampton","Hampton",VA,23666,37.04,-76.41
+TO,"Haslet","Haslet",TX,76052,32.97,-97.35
+TO,"Hamilton","Hamilton",NJ,08619,40.23,-74.70
+TO,"Happy Valley","Happy Valley",OR,97086,45.44,-122.54
+TO,"Hattiesburg","Hattiesburg",MS,39401,31.33,-89.29
+TO,"Havertown","Havertown",PA,19083,39.98,-75.31
+TO,"Healdsburg","Healdsburg",CA,95448,38.61,-122.87
+TO,"Herndon","Herndon",VA,20170,38.97,-77.39
+TO,"Hewitt","Hewitt",NJ,07421,41.18,-74.37
+TO,"Hickory","Hickory",NC,28601,35.73,-81.34
+TO,"Hilliard","Hilliard",OH,43026,40.03,-83.16
+TO,"Howell","Howell",MI,48843,42.61,-83.93
+TO,"Huffman","Huffman",TX,77336,30.05,-95.09
+TO,"Iron Station","Iron Station",NC,28080,35.44,-81.12
+TO,"Irwin","Irwin",PA,15642,40.32,-79.70
+TO,"Jackson","Jackson",MI,49201,42.25,-84.40
+TO,"Jefferson City","Jefferson City",MO,65109,38.58,-92.17
+TO,"Jamestown","Jamestown",RI,02835,41.50,-71.37
+TO,"Jesup","Jesup",GA,31545,31.60,-81.89
+TO,"Juneau","Juneau",AK,99801,58.30,-134.42
+TO,"Kalispell","Kalispell",MT,59901,48.20,-114.31
+TO,"Kingman","Kingman",AZ,86401,35.19,-114.05
+TO,"Kingston","Kingston",TN,37763,35.87,-84.51
+TO,"Kissimmee","Kissimmee",FL,34741,28.29,-81.41
+TO,"Kanab","Kanab",UT,84741,37.05,-112.53
+TO,"Kenosha","Kenosha",WI,53140,42.58,-87.82
+TO,"La Pine","La Pine",OR,97739,43.67,-121.50
+TO,"Lafayette","Lafayette",LA,70501,30.22,-92.02
+TO,"Lake Stevens","Lake Stevens",WA,98258,48.02,-122.07
+TO,"Lakeville","Lakeville",MN,55044,44.65,-93.24
+TO,"Leslie","Leslie",MI,49251,42.45,-84.43
+TO,"Liberty Hill","Liberty Hill",TX,78642,30.67,-97.92
+TO,"Lone Tree","Lone Tree",CO,80124,39.54,-104.90
+TO,"Long Island","Long Island",ME,04050,43.70,-70.15
+TO,"Longview","Longview",TX,75601,32.50,-94.74
+TO,"La Verne","La Verne",CA,91750,34.10,-117.77
+TO,"Lake Elmo","Lake Elmo",MN,55042,44.99,-92.88
+TO,"Lake Harmony","Lake Harmony",PA,18624,41.06,-75.60
+TO,"Lake Jackson","Lake Jackson",TX,77566,29.03,-95.45
+TO,"Lake Worth","Lake Worth",FL,33460,26.62,-80.06
+TO,"Lakewood","Lakewood",CA,90712,33.85,-118.13
+TO,"Lakewood","Lakewood",OH,44107,41.48,-81.80
+TO,"Lander","Lander",WY,82520,42.83,-108.73
+TO,"Lebanon","Lebanon",PA,17042,40.34,-76.42
+TO,"Lehi","Lehi",UT,84043,40.39,-111.85
+TO,"Lewes","Lewes",DE,19958,38.77,-75.14
+TO,"Longwood","Longwood",FL,32750,28.70,-81.34
+TO,"Loveland","Loveland",OH,45140,39.27,-84.26
+TO,"Lufkin","Lufkin",TX,75901,31.34,-94.73
+TO,"Macon","Macon",GA,31201,32.84,-83.63
+TO,"Marshville","Marshville",NC,28103,34.99,-80.37
+TO,"Maspeth","Maspeth",NY,11378,40.72,-73.91
+TO,"McGregor","McGregor",MN,55760,46.61,-93.29
+TO,"Melbourne","Melbourne",FL,32901,28.08,-80.61
+TO,"Metairie","Metairie",LA,70005,29.98,-90.13
+TO,"Milford","Milford",OH,45150,39.18,-84.29
+TO,"Missouri Valley","Missouri Valley",IA,51555,41.56,-95.89
+TO,"Monterey","Monterey",CA,93940,36.60,-121.89
+TO,"Madison","Madison",AL,35758,34.70,-86.75
+TO,"Madisonville","Madisonville",TN,37354,35.52,-84.36
+TO,"Makawao","Makawao",HI,96768,20.86,-156.31
+TO,"Manchester","Manchester",NH,03101,42.99,-71.46
+TO,"Marion","Marion",OH,43302,40.59,-83.13
+TO,"Marlborough","Marlborough",MA,01752,42.35,-71.55
+TO,"Massapequa","Massapequa",NY,11758,40.68,-73.47
+TO,"Matawan","Matawan",NJ,07747,40.41,-74.23
+TO,"Matthews","Matthews",NC,28105,35.12,-80.72
+TO,"Mechanicsburg","Mechanicsburg",PA,17055,40.21,-77.01
+TO,"Medford","Medford",OR,97501,42.33,-122.87
+TO,"Melville","Melville",NY,11747,40.79,-73.41
+TO,"Menasha","Menasha",WI,54952,44.20,-88.45
+TO,"Middlebury","Middlebury",IN,46540,41.68,-85.71
+TO,"Middletown","Middletown",NY,10940,41.45,-74.42
+TO,"Midland","Midland",MI,48640,43.62,-84.23
+TO,"Milford","Milford",MI,48381,42.59,-83.60
+TO,"Milford","Milford",DE,19963,38.91,-75.43
+TO,"Minnetonka","Minnetonka",MN,55305,44.92,-93.43
+TO,"Minot","Minot",ND,58701,48.23,-101.29
+TO,"Mint Hill","Mint Hill",NC,28227,35.18,-80.65
+TO,"Mokena","Mokena",IL,60448,41.53,-87.89
+TO,"Monroe","Monroe",GA,30655,33.79,-83.71
+TO,"Moreno Valley","Moreno Valley",CA,92553,33.94,-117.23
+TO,"Mount Juliet","Mount Juliet",TN,37122,36.20,-86.52
+TO,"Mount Laurel","Mount Laurel",NJ,08054,39.93,-74.89
+TO,"Mount Prospect","Mount Prospect",IL,60056,42.06,-87.94
+TO,"Murphy","Murphy",NC,28906,35.09,-84.03
+TO,"Murrieta","Murrieta",CA,92562,33.55,-117.21
+TO,"Natick","Natick",MA,01760,42.28,-71.35
+TO,"New Fairfield","New Fairfield",CT,06812,41.47,-73.48
+TO,"Norristown","Norristown",PA,19401,40.12,-75.34
+TO,"Nutley","Nutley",NJ,07110,40.82,-74.16
+TO,"New Brighton","New Brighton",MN,55112,45.07,-93.19
+TO,"New Hartford","New Hartford",NY,13413,43.07,-75.29
+TO,"New Kensington","New Kensington",PA,15068,40.56,-79.76
+TO,"Newark","Newark",NJ,07102,40.73,-74.17
+TO,"Newport News","Newport News",VA,23607,37.01,-76.41
+TO,"Niceville","Niceville",FL,32578,30.52,-86.48
+TO,"Norco","Norco",CA,92860,33.93,-117.56
+TO,"North Aurora","North Aurora",IL,60542,41.80,-88.32
+TO,"North Mankato","North Mankato",MN,56003,44.18,-94.03
+TO,"North Port","North Port",FL,34287,27.04,-82.24
+TO,"Northampton","Northampton",PA,18067,40.69,-75.49
+TO,"Nottingham","Nottingham",MD,21236,39.39,-76.49
+TO,"O Fallon","O Fallon",MO,63366,38.81,-90.70
+TO,"Orchard Park","Orchard Park",NY,14127,42.77,-78.75
+TO,"Oakhurst","Oakhurst",TX,77359,30.73,-95.31
+TO,"Oakley","Oakley",CA,94561,37.99,-121.71
+TO,"Oceanside","Oceanside",CA,92054,33.20,-117.38
+TO,"Ogden","Ogden",UT,84401,41.22,-111.97
+TO,"Oswego","Oswego",IL,60543,41.68,-88.35
+TO,"Palmerton","Palmerton",PA,18071,40.80,-75.61
+TO,"Pasadena","Pasadena",MD,21122,39.11,-76.55
+TO,"Peconic","Peconic",NY,11958,41.05,-72.47
+TO,"Piedmont","Piedmont",OK,73078,35.64,-97.75
+TO,"Pigeon Forge","Pigeon Forge",TN,37863,35.79,-83.56
+TO,"Pittsboro","Pittsboro",NC,27312,35.72,-79.18
+TO,"Plainwell","Plainwell",MI,49080,42.44,-85.64
+TO,"Pleasantville","Pleasantville",NY,10570,41.13,-73.79
+TO,"Prairie Village","Prairie Village",KS,66208,38.99,-94.63
+TO,"Priest River","Priest River",ID,83856,48.18,-116.91
+TO,"Paramus","Paramus",NJ,07652,40.94,-74.07
+TO,"Parkville","Parkville",MD,21234,39.38,-76.53
+TO,"Pataskala","Pataskala",OH,43062,39.99,-82.68
+TO,"Pembroke Pines","Pembroke Pines",FL,33024,26.01,-80.24
+TO,"Peoria","Peoria",IL,61602,40.69,-89.59
+TO,"Perry Hall","Perry Hall",MD,21128,39.41,-76.45
+TO,"Perryville","Perryville",MO,63775,37.72,-89.86
+TO,"Plain City","Plain City",OH,43064,40.11,-83.27
+TO,"Pleasant Hill","Pleasant Hill",IA,50327,41.58,-93.52
+TO,"Plover","Plover",WI,54467,44.45,-89.54
+TO,"Plymouth","Plymouth",MI,48170,42.37,-83.47
+TO,"Pooler","Pooler",GA,31322,32.11,-81.25
+TO,"Port Saint Lucie","Port Saint Lucie",FL,34952,27.27,-80.36
+TO,"Potomac","Potomac",MD,20854,39.02,-77.21
+TO,"Pottstown","Pottstown",PA,19464,40.25,-75.64
+TO,"Prattville","Prattville",AL,36067,32.46,-86.46
+TO,"Providence","Providence",RI,02903,41.82,-71.41
+TO,"Racine","Racine",WI,53403,42.73,-87.78
+TO,"Raeford","Raeford",NC,28376,34.98,-79.23
+TO,"Rancho Santa Fe","Rancho Santa Fe",CA,92067,33.02,-117.20
+TO,"Richmond","Richmond",UT,84333,41.92,-111.81
+TO,"Rio Rancho","Rio Rancho",NM,87124,35.23,-106.66
+TO,"Rochester","Rochester",MA,02770,41.73,-70.82
+TO,"Rocky River","Rocky River",OH,44116,41.48,-81.84
+TO,"Romulus","Romulus",MI,48174,42.22,-83.40
+TO,"Rathdrum","Rathdrum",ID,83858,47.81,-116.90
+TO,"Reading","Reading",MA,01867,42.52,-71.11
+TO,"Redondo Beach","Redondo Beach",CA,90277,33.85,-118.39
+TO,"Ridge","Ridge",NY,11961,40.90,-72.89
+TO,"Robertsdale","Robertsdale",AL,36567,30.56,-87.71
+TO,"Rockford","Rockford",MI,49341,43.12,-85.56
+TO,"Rockland","Rockland",ME,04841,44.10,-69.11
+TO,"Rotterdam","Rotterdam",NY,12306,42.79,-73.97
+TO,"Round Hill","Round Hill",VA,20141,39.13,-77.78
+TO,"Rye","Rye",NY,10580,40.98,-73.68
+TO,"Saint Augustine","Saint Augustine",FL,32084,29.90,-81.31
+TO,"Saint George","Saint George",UT,84770,37.10,-113.58
+TO,"Sandy Springs","Sandy Springs",GA,30328,33.93,-84.38
+TO,"Seguin","Seguin",TX,78155,29.57,-97.96
+TO,"Springdale","Springdale",AR,72764,36.19,-94.13
+TO,"Stafford","Stafford",VA,22554,38.42,-77.41
+TO,"Stillwater","Stillwater",MN,55082,45.06,-92.81
+TO,"Saginaw","Saginaw",MI,48602,43.42,-83.95
+TO,"Salisbury","Salisbury",MD,21801,38.37,-75.60
+TO,"San Ramon","San Ramon",CA,94583,37.78,-121.98
+TO,"Sandusky","Sandusky",OH,44870,41.45,-82.71
+TO,"Sandy","Sandy",UT,84070,40.57,-111.86
+TO,"Santa Maria","Santa Maria",CA,93454,34.95,-120.44
+TO,"Saratoga","Saratoga",CA,95070,37.26,-122.03
+TO,"Saratoga Springs","Saratoga Springs",NY,12866,43.08,-73.78
+TO,"Scarborough","Scarborough",ME,04074,43.59,-70.34
+TO,"Scotch Plains","Scotch Plains",NJ,07076,40.66,-74.39
+TO,"Seaford","Seaford",DE,19973,38.64,-75.61
+TO,"Severna Park","Severna Park",MD,21146,39.07,-76.54
+TO,"Sewell","Sewell",NJ,08080,39.76,-75.14
+TO,"Seymour","Seymour",IN,47274,38.96,-85.89
+TO,"Shakopee","Shakopee",MN,55379,44.80,-93.53
+TO,"Sherman","Sherman",TX,75090,33.64,-96.61
+TO,"Sherwood","Sherwood",OR,97140,45.36,-122.84
+TO,"Shingle Springs","Shingle Springs",CA,95682,38.66,-120.94
+TO,"Simi Valley","Simi Valley",CA,93065,34.27,-118.78
+TO,"Simpsonville","Simpsonville",SC,29681,34.74,-82.26
+TO,"Sioux Falls","Sioux Falls",SD,57104,43.55,-96.73
+TO,"Slidell","Slidell",LA,70460,30.28,-89.78
+TO,"Smithfield","Smithfield",VA,23430,36.98,-76.62
+TO,"Sonora","Sonora",CA,95370,37.98,-120.38
+TO,"South Elgin","South Elgin",IL,60177,41.99,-88.29
+TO,"Spokane Valley","Spokane Valley",WA,99206,47.67,-117.23
+TO,"Spooner","Spooner",WI,54801,45.82,-91.89
+TO,"Spotsylvania","Spotsylvania",VA,22553,38.20,-77.59
+TO,"Spring Creek","Spring Creek",NV,89815,40.72,-115.59
+TO,"Spring Hill","Spring Hill",TN,37174,35.75,-86.93
+TO,"Springtown","Springtown",TX,76082,32.96,-97.68
+TO,"Star","Star",ID,83669,43.69,-116.49
+TO,"Strongsville","Strongsville",OH,44136,41.31,-81.83
+TO,"Suffield","Suffield",CT,06078,41.98,-72.65
+TO,"Suffolk","Suffolk",VA,23434,36.73,-76.58
+TO,"Sugar Land","Sugar Land",TX,77478,29.62,-95.63
+TO,"Suisun City","Suisun City",CA,94585,38.24,-122.04
+TO,"Sumas","Sumas",WA,98295,48.99,-122.26
+TO,"Sunnyvale","Sunnyvale",CA,94086,37.37,-122.04
+TO,"Superior","Superior",WI,54880,46.72,-92.10
+TO,"Thompsons Station","Thompsons Station",TN,37179,35.80,-86.91
+TO,"Troy","Troy",OH,45373,40.04,-84.20
+TO,"Trussville","Trussville",AL,35173,33.62,-86.61
+TO,"Taylorsville","Taylorsville",NC,28681,35.92,-81.18
+TO,"Temecula","Temecula",CA,92590,33.49,-117.15
+TO,"The Woodlands","The Woodlands",TX,77380,30.16,-95.46
+TO,"Thibodaux","Thibodaux",LA,70301,29.79,-90.82
+TO,"Tremont","Tremont",IL,61568,40.53,-89.49
+TO,"Trenton","Trenton",MI,48183,42.14,-83.18
+TO,"Turlock","Turlock",CA,95380,37.49,-120.85
+TO,"Tyler","Tyler",TX,75701,32.35,-95.30
+TO,"Union","Union",NJ,07083,40.70,-74.27
+TO,"Union City","Union City",CA,94587,37.59,-122.02
+TO,"Venice","Venice",FL,34285,27.10,-82.45
+TO,"Verona","Verona",WI,53593,42.99,-89.53
+TO,"Voorheesville","Voorheesville",NY,12186,42.65,-73.93
+TO,"Wheeling","Wheeling",WV,26003,40.07,-80.72
+TO,"Wadsworth","Wadsworth",OH,44281,41.03,-81.73
+TO,"Washougal","Washougal",WA,98671,45.58,-122.35
+TO,"Wasilla","Wasilla",AK,99654,61.58,-149.44
+TO,"Wausau","Wausau",WI,54403,44.96,-89.63
+TO,"Wauwatosa","Wauwatosa",WI,53213,43.05,-88.01
+TO,"Wayland","Wayland",MI,49348,42.67,-85.64
+TO,"Wayne","Wayne",PA,19087,40.04,-75.39
+TO,"Wellesley","Wellesley",MA,02482,42.30,-71.29
+TO,"Wenatchee","Wenatchee",WA,98801,47.42,-120.31
+TO,"Wentzville","Wentzville",MO,63385,38.81,-90.85
+TO,"West Chester","West Chester",OH,45069,39.34,-84.41
+TO,"West Linn","West Linn",OR,97068,45.37,-122.61
+TO,"West Milford","West Milford",NJ,07480,41.13,-74.37
+TO,"West Newbury","West Newbury",MA,01985,42.80,-70.99
+TO,"West Warwick","West Warwick",RI,02893,41.70,-71.52
+TO,"Westerville","Westerville",OH,43081,40.13,-82.93
+TO,"Westford","Westford",MA,01886,42.58,-71.44
+TO,"White Plains","White Plains",NY,10601,41.03,-73.76
+TO,"Whitmore Lake","Whitmore Lake",MI,48189,42.44,-83.74
+TO,"Wichita Falls","Wichita Falls",TX,76301,33.91,-98.49
+TO,"Wickenburg","Wickenburg",AZ,85390,33.97,-112.73
+TO,"Wilbraham","Wilbraham",MA,01095,42.12,-72.43
+TO,"Willis","Willis",TX,77378,30.42,-95.48
+TO,"Willow Spring","Willow Spring",NC,27592,35.58,-78.66
+TO,"Wilton","Wilton",CT,06897,41.20,-73.44
+TO,"Windermere","Windermere",FL,34786,28.50,-81.54
+TO,"Windsor","Windsor",CO,80550,40.48,-104.90
+TO,"Winterville","Winterville",NC,28590,35.53,-77.40
+TO,"Woodhaven","Woodhaven",MI,48183,42.13,-83.24
+TO,"Woodinville","Woodinville",WA,98072,47.75,-122.16
+TO,"Woods Cross","Woods Cross",UT,84087,40.87,-111.89
+TO,"Wurtsboro","Wurtsboro",NY,12790,41.58,-74.49
+TO,"Xenia","Xenia",OH,45385,39.68,-83.93
+TO,"Yadkinville","Yadkinville",NC,27055,36.13,-80.66
+TO,"Yorktown","Yorktown",VA,23690,37.24,-76.51
+TO,"Yorktown Heights","Yorktown Heights",NY,10598,41.27,-73.78
+TO,"Yuma","Yuma",AZ,85364,32.69,-114.62
+TO,"Zephyrhills","Zephyrhills",FL,33542,28.23,-82.18
+TO,"Zanesville","Zanesville",OH,43701,39.94,-82.00
+TO,"Des Plaines","Des Plaines",IL,60016,42.04,-87.89
+TO,"East Northport","East Northport",NY,11731,40.88,-73.32
+TO,"Floral Park","Floral Park",NY,11001,40.72,-73.70
+TO,"Hingham","Hingham",MA,02043,42.24,-70.89
+TO,"Loganville","Loganville",GA,30052,33.84,-83.90
+TO,"Ossining","Ossining",NY,10562,41.16,-73.86
+TO,"Parkersburg","Parkersburg",WV,26101,39.27,-81.56
+TO,"Tacoma","Tacoma",WA,98402,47.25,-122.44
