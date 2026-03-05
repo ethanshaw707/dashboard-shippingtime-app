@@ -1239,6 +1239,363 @@ def destination_weights(destinations, weight_map: dict) -> dict:
 def _dict_to_items(weight_map: dict) -> tuple:
     return tuple(sorted(weight_map.items()))
 
+
+# Computes the same aggregate outputs used by the network builder for a selected origin set.
+def compute_built_network_summary(
+    built_subset: pd.DataFrame,
+    dest_weights: dict,
+) -> dict:
+    built_best_time = built_subset.groupby("Destination", as_index=False).agg(
+        BestTime=("ShippingTimeDays", "min")
+    )
+    coverage_origin_map = compute_best_origin_map(built_subset)
+    built_best_time["Weight"] = built_best_time["Destination"].map(dest_weights).fillna(0.0)
+
+    one_day_df = built_best_time[built_best_time["BestTime"] <= 1.0].copy()
+    two_day_df = built_best_time[built_best_time["BestTime"] == 2.0].copy()
+    three_day_df = built_best_time[built_best_time["BestTime"] == 3.0].copy()
+
+    weight_rank = (
+        pd.Series(dest_weights)
+        .sort_values(ascending=False)
+        .reset_index()
+        .rename(columns={"index": "Destination", 0: "Weight"})
+    )
+    weight_rank["Rank"] = np.arange(1, len(weight_rank) + 1)
+    rank_map = dict(zip(weight_rank["Destination"], weight_rank["Rank"]))
+
+    total_weight = float(built_best_time["Weight"].sum())
+    one_day_weight = float(one_day_df["Weight"].sum())
+    two_day_coverage_weight = float(
+        built_best_time[built_best_time["BestTime"] <= 2.0]["Weight"].sum()
+    )
+    three_day_weight = float(three_day_df["Weight"].sum())
+    one_day_coverage = (one_day_weight / total_weight * 100.0) if total_weight else 0.0
+    two_day_coverage = (two_day_coverage_weight / total_weight * 100.0) if total_weight else 0.0
+    three_day_coverage = (three_day_weight / total_weight * 100.0) if total_weight else 0.0
+
+    built_avg_time = weighted_mean(
+        built_best_time["BestTime"].to_numpy(),
+        built_best_time["Weight"].to_numpy(),
+    )
+    built_best_cost = built_subset.groupby("Destination", as_index=False).agg(
+        BestCost=("Cost", "min")
+    )
+    built_best_cost["Weight"] = built_best_cost["Destination"].map(dest_weights).fillna(0.0)
+    built_avg_cost = weighted_mean(
+        built_best_cost["BestCost"].to_numpy(),
+        built_best_cost["Weight"].to_numpy(),
+    )
+
+    def prep_day_display(day_df: pd.DataFrame) -> pd.DataFrame:
+        if day_df.empty:
+            return day_df
+        display_df = day_df[["Destination", "Weight"]].copy()
+        display_df["PriorityRank"] = display_df["Destination"].map(rank_map)
+        display_df["CoverageFrom"] = display_df["Destination"].map(coverage_origin_map)
+        return display_df.sort_values(
+            ["PriorityRank", "Destination"],
+            ascending=[True, True],
+        )[["Destination", "Weight", "PriorityRank", "CoverageFrom"]]
+
+    slow_1 = built_best_time[built_best_time["BestTime"] > 1.0]["Destination"].sort_values().tolist()
+    slow_2 = built_best_time[built_best_time["BestTime"] > 2.0]["Destination"].sort_values().tolist()
+    slow_3 = built_best_time[built_best_time["BestTime"] > 3.0]["Destination"].sort_values().tolist()
+
+    return {
+        "built_best_time": built_best_time,
+        "coverage_origin_map": coverage_origin_map,
+        "rank_map": rank_map,
+        "best_time_map": dict(zip(built_best_time["Destination"], built_best_time["BestTime"])),
+        "avg_time": built_avg_time,
+        "avg_cost": built_avg_cost,
+        "coverage_1_day": one_day_coverage,
+        "coverage_2_day": two_day_coverage,
+        "coverage_3_day": three_day_coverage,
+        "one_day_display": prep_day_display(one_day_df),
+        "two_day_display": prep_day_display(two_day_df),
+        "three_day_display": prep_day_display(three_day_df),
+        "slow_1": slow_1,
+        "slow_2": slow_2,
+        "slow_3": slow_3,
+    }
+
+
+# Determines which side wins a metric so the better side can be highlighted.
+def compare_metric_winners(
+    left_value: float,
+    right_value: float,
+    higher_is_better: bool,
+) -> tuple[bool, bool]:
+    left_finite = bool(np.isfinite(left_value))
+    right_finite = bool(np.isfinite(right_value))
+    if not left_finite and not right_finite:
+        return False, False
+    if left_finite and not right_finite:
+        return True, False
+    if right_finite and not left_finite:
+        return False, True
+    if np.isclose(left_value, right_value):
+        return True, True
+    if higher_is_better:
+        return left_value > right_value, right_value > left_value
+    return left_value < right_value, right_value < left_value
+
+
+# Renders a metric value and colors the winner in green.
+def render_colored_metric(label: str, value_text: str, highlight: bool) -> None:
+    value_color = "#16a34a" if highlight else "#ffffff"
+    st.markdown(
+        (
+            "<div style='padding: 0.1rem 0;'>"
+            f"<div style='font-size:0.85rem;color:#6b7280'>{label}</div>"
+            f"<div style='font-size:1.25rem;font-weight:600;color:{value_color}'>{value_text}</div>"
+            "</div>"
+        ),
+        unsafe_allow_html=True,
+    )
+
+
+# Renders one full network-builder panel so compare mode matches the existing builder details.
+def render_network_builder_panel(
+    summary: dict | None,
+    panel_label: str,
+    key_prefix: str,
+    highlight_map: dict | None = None,
+) -> None:
+    highlight_map = highlight_map or {}
+    if summary is None:
+        st.caption(f"No origins selected for {panel_label}.")
+        return
+
+    metric_col_a, metric_col_b = st.columns(2)
+    with metric_col_a:
+        render_colored_metric(
+            f"Built network avg time ({panel_label})",
+            f"{summary['avg_time']:.2f}",
+            bool(highlight_map.get("avg_time", False)),
+        )
+    with metric_col_b:
+        render_colored_metric(
+            f"Built network avg cost ({panel_label})",
+            f"{summary['avg_cost']:.2f}",
+            bool(highlight_map.get("avg_cost", False)),
+        )
+
+    coverage_col_a, coverage_col_b, coverage_col_c = st.columns(3)
+    with coverage_col_a:
+        render_colored_metric(
+            f"1-day coverage (weighted) ({panel_label})",
+            f"{summary['coverage_1_day']:.1f}%",
+            bool(highlight_map.get("coverage_1_day", False)),
+        )
+    with coverage_col_b:
+        render_colored_metric(
+            f"2-day coverage (weighted) ({panel_label})",
+            f"{summary['coverage_2_day']:.1f}%",
+            bool(highlight_map.get("coverage_2_day", False)),
+        )
+    with coverage_col_c:
+        render_colored_metric(
+            f"3-day coverage (weighted) ({panel_label})",
+            f"{summary['coverage_3_day']:.1f}%",
+            bool(highlight_map.get("coverage_3_day", False)),
+        )
+
+
+# Returns the top priority cities uniquely covered by one network at a given day threshold.
+def unique_priority_cities_for_threshold(
+    primary_summary: dict | None,
+    other_summary: dict | None,
+    threshold_days: float,
+    limit: int = 5,
+) -> pd.DataFrame:
+    if primary_summary is None:
+        return pd.DataFrame(columns=["Destination", "Weight", "PriorityRank", "CoverageFrom"])
+
+    primary_times = primary_summary["built_best_time"][["Destination", "BestTime", "Weight"]].copy()
+    other_map = other_summary["best_time_map"] if other_summary else {}
+    primary_times["OtherBestTime"] = primary_times["Destination"].map(other_map)
+
+    unique_mask = (primary_times["BestTime"] <= threshold_days) & (
+        primary_times["OtherBestTime"].isna() | (primary_times["OtherBestTime"] > threshold_days)
+    )
+    unique_df = primary_times[unique_mask].copy()
+    if unique_df.empty:
+        return pd.DataFrame(columns=["Destination", "Weight", "PriorityRank", "CoverageFrom"])
+
+    unique_df["PriorityRank"] = unique_df["Destination"].map(primary_summary["rank_map"])
+    unique_df["CoverageFrom"] = unique_df["Destination"].map(primary_summary["coverage_origin_map"])
+    unique_df = unique_df.sort_values(
+        ["Weight", "PriorityRank", "Destination"],
+        ascending=[False, True, True],
+    ).head(limit)
+    return unique_df[["Destination", "Weight", "PriorityRank", "CoverageFrom"]]
+
+
+# Calculates projected monthly profit for a built network using weighted package distribution and day-based profit lifts.
+def compute_network_roi_projection(
+    summary: dict | None,
+    destination_weights_map: dict,
+    monthly_packages: int,
+    base_revenue_per_package: float,
+    base_profit_per_package: float,
+    one_day_bonus: float,
+    two_day_bonus: float,
+    three_day_penalty: float,
+) -> dict | None:
+    if summary is None:
+        return None
+    if monthly_packages <= 0:
+        return {
+            "projected_revenue": 0.0,
+            "projected_revenue_yearly": 0.0,
+            "projected_profit": 0.0,
+            "projected_profit_yearly": 0.0,
+            "shipping_uplift_profit": 0.0,
+            "avg_profit_per_package": 0.0,
+            "one_day_packages": 0.0,
+            "two_day_packages": 0.0,
+            "three_day_packages": 0.0,
+        }
+
+    weight_series = pd.Series(destination_weights_map, dtype=float)
+    total_weight = float(weight_series.sum())
+    if total_weight <= 0:
+        return {
+            "projected_revenue": 0.0,
+            "projected_revenue_yearly": 0.0,
+            "projected_profit": 0.0,
+            "projected_profit_yearly": 0.0,
+            "shipping_uplift_profit": 0.0,
+            "avg_profit_per_package": 0.0,
+            "one_day_packages": 0.0,
+            "two_day_packages": 0.0,
+            "three_day_packages": 0.0,
+        }
+
+    best_time_map = summary["best_time_map"]
+    dist_df = weight_series.rename("WeightShare").reset_index().rename(columns={"index": "Destination"})
+    dist_df["WeightShare"] = dist_df["WeightShare"] / total_weight
+    dist_df["Packages"] = dist_df["WeightShare"] * float(monthly_packages)
+    dist_df["BestTime"] = dist_df["Destination"].map(best_time_map)
+    dist_df["BestTime"] = dist_df["BestTime"].fillna(np.inf)
+
+    one_day_mask = dist_df["BestTime"] <= 1.0
+    two_day_mask = (dist_df["BestTime"] > 1.0) & (dist_df["BestTime"] <= 2.0)
+    three_day_mask = (dist_df["BestTime"] > 2.0) & (dist_df["BestTime"] <= 3.0)
+    dist_df["BonusPerPackage"] = np.where(
+        one_day_mask,
+        one_day_bonus,
+        np.where(two_day_mask, two_day_bonus, np.where(three_day_mask, -three_day_penalty, 0.0)),
+    )
+    dist_df["RevenueBonusPerPackage"] = np.where(
+        one_day_mask,
+        one_day_bonus,
+        np.where(two_day_mask, two_day_bonus, 0.0),
+    )
+    dist_df["RevenuePerPackage"] = base_revenue_per_package + dist_df["RevenueBonusPerPackage"]
+    dist_df["ProfitPerPackage"] = base_profit_per_package + dist_df["BonusPerPackage"]
+
+    projected_revenue = float(np.sum(dist_df["Packages"] * dist_df["RevenuePerPackage"]))
+    projected_revenue_yearly = projected_revenue * 12.0
+    projected_profit = float(np.sum(dist_df["Packages"] * dist_df["ProfitPerPackage"]))
+    projected_profit_yearly = projected_profit * 12.0
+    base_profit = float(np.sum(dist_df["Packages"] * base_profit_per_package))
+    shipping_uplift_profit = projected_profit - base_profit
+    avg_profit_per_package = projected_profit / float(monthly_packages)
+    one_day_packages = float(np.sum(dist_df.loc[one_day_mask, "Packages"]))
+    two_day_packages = float(np.sum(dist_df.loc[two_day_mask, "Packages"]))
+    three_day_packages = float(np.sum(dist_df.loc[three_day_mask, "Packages"]))
+
+    return {
+        "projected_revenue": projected_revenue,
+        "projected_revenue_yearly": projected_revenue_yearly,
+        "projected_profit": projected_profit,
+        "projected_profit_yearly": projected_profit_yearly,
+        "shipping_uplift_profit": shipping_uplift_profit,
+        "avg_profit_per_package": avg_profit_per_package,
+        "one_day_packages": one_day_packages,
+        "two_day_packages": two_day_packages,
+        "three_day_packages": three_day_packages,
+    }
+
+
+def recommend_next_city_by_profit(
+    full_df: pd.DataFrame,
+    selected_origins: list[str],
+    origin_options: list[str],
+    destination_weights_map: dict,
+    monthly_packages: int,
+    base_revenue_per_package: float,
+    base_profit_per_package: float,
+    one_day_bonus: float,
+    two_day_bonus: float,
+    three_day_penalty: float,
+) -> tuple[str | None, float | None]:
+    if not selected_origins:
+        return None, None
+
+    remaining_origins = [origin for origin in origin_options if origin not in selected_origins]
+    if not remaining_origins:
+        return None, None
+
+    base_subset = full_df[full_df["FromAddress"].isin(selected_origins)]
+    if base_subset.empty:
+        return None, None
+    base_summary = compute_built_network_summary(base_subset, destination_weights_map)
+    base_roi = compute_network_roi_projection(
+        base_summary,
+        destination_weights_map,
+        monthly_packages,
+        base_revenue_per_package,
+        base_profit_per_package,
+        one_day_bonus,
+        two_day_bonus,
+        three_day_penalty,
+    )
+    if base_roi is None:
+        return None, None
+
+    best_origin = None
+    best_profit_lift = float("-inf")
+    for candidate_origin in remaining_origins:
+        candidate_subset = full_df[
+            full_df["FromAddress"].isin(selected_origins + [candidate_origin])
+        ]
+        if candidate_subset.empty:
+            continue
+        candidate_summary = compute_built_network_summary(
+            candidate_subset,
+            destination_weights_map,
+        )
+        candidate_roi = compute_network_roi_projection(
+            candidate_summary,
+            destination_weights_map,
+            monthly_packages,
+            base_revenue_per_package,
+            base_profit_per_package,
+            one_day_bonus,
+            two_day_bonus,
+            three_day_penalty,
+        )
+        if candidate_roi is None:
+            continue
+
+        profit_lift = float(candidate_roi["projected_profit"] - base_roi["projected_profit"])
+        if (
+            best_origin is None
+            or profit_lift > best_profit_lift
+            or (np.isclose(profit_lift, best_profit_lift) and candidate_origin < best_origin)
+        ):
+            best_origin = candidate_origin
+            best_profit_lift = profit_lift
+
+    if best_origin is None:
+        return None, None
+    return best_origin, best_profit_lift
+
+
 def render_top_combos(
     df: pd.DataFrame,
     origin_list: list,
@@ -1330,6 +1687,7 @@ def render_top_combos(
 
     def small_best_combo_indices(k_size: int):
         best_combo = None
+        best_two_day_pct = float("-inf")
         best_weighted = float("inf")
         if required_small and k_size < len(required_small):
             return None
@@ -1342,7 +1700,12 @@ def render_top_combos(
             if not np.isfinite(avg_cost_local) or not np.isfinite(avg_time_local):
                 continue
             weighted_total = build_cost_weight * avg_cost_local + (1 - build_cost_weight) * avg_time_local
-            if weighted_total < best_weighted:
+            _, two_day_pct, _ = small_combo_day_percentages(list(combo))
+            if (
+                two_day_pct > best_two_day_pct
+                or (np.isclose(two_day_pct, best_two_day_pct) and weighted_total < best_weighted)
+            ):
+                best_two_day_pct = two_day_pct
                 best_weighted = weighted_total
                 best_combo = list(combo)
         return best_combo
@@ -1381,15 +1744,24 @@ def render_top_combos(
     def small_combo_day_percentages(combo_indices):
         best_time = np.nanmin(small_time_mat[combo_indices, :], axis=0)
         valid = np.isfinite(best_time)
-        total = int(np.sum(valid))
-        if total == 0:
-            return 0.0, 0.0
-        one_day = float(np.sum(best_time[valid] <= 1.0))
-        two_day = float(np.sum(best_time[valid] <= 2.0))
-        return one_day / total * 100.0, two_day / total * 100.0
+        if not valid.any():
+            return 0.0, 0.0, 0.0
+        valid_weights = weights_vec[valid]
+        if valid_weights.sum() == 0:
+            valid_weights = np.ones(len(valid_weights), dtype=float)
+        total_weight = float(np.sum(valid_weights))
+        one_day_weight = float(np.sum(valid_weights[best_time[valid] <= 1.0]))
+        two_day_weight = float(np.sum(valid_weights[best_time[valid] <= 2.0]))
+        three_day_weight = float(np.sum(valid_weights[best_time[valid] <= 3.0]))
+        return (
+            one_day_weight / total_weight * 100.0,
+            two_day_weight / total_weight * 100.0,
+            three_day_weight / total_weight * 100.0,
+        )
 
     def best_combo_indices(k_size: int):
         best_combo = None
+        best_two_day_pct = float("-inf")
         best_weighted = float("inf")
         if required_local and k_size < len(required_local):
             return None
@@ -1399,7 +1771,14 @@ def render_top_combos(
                 if required_idx not in combo:
                     continue
             weighted_total, _, _ = combo_weighted_total(list(combo))
-            if np.isfinite(weighted_total) and weighted_total < best_weighted:
+            if not np.isfinite(weighted_total):
+                continue
+            _, two_day_pct, _ = combo_day_percentages(list(combo))
+            if (
+                two_day_pct > best_two_day_pct
+                or (np.isclose(two_day_pct, best_two_day_pct) and weighted_total < best_weighted)
+            ):
+                best_two_day_pct = two_day_pct
                 best_weighted = weighted_total
                 best_combo = list(combo)
         return best_combo
@@ -1447,12 +1826,20 @@ def render_top_combos(
     def combo_day_percentages(combo_indices):
         best_time = np.nanmin(time_mat[combo_indices, :], axis=0)
         valid = np.isfinite(best_time)
-        total = int(np.sum(valid))
-        if total == 0:
-            return 0.0, 0.0
-        one_day = float(np.sum(best_time[valid] <= 1.0))
-        two_day = float(np.sum(best_time[valid] <= 2.0))
-        return one_day / total * 100.0, two_day / total * 100.0
+        if not valid.any():
+            return 0.0, 0.0, 0.0
+        valid_weights = weights_vec[valid]
+        if valid_weights.sum() == 0:
+            valid_weights = np.ones(len(valid_weights), dtype=float)
+        total_weight = float(np.sum(valid_weights))
+        one_day_weight = float(np.sum(valid_weights[best_time[valid] <= 1.0]))
+        two_day_weight = float(np.sum(valid_weights[best_time[valid] <= 2.0]))
+        three_day_weight = float(np.sum(valid_weights[best_time[valid] <= 3.0]))
+        return (
+            one_day_weight / total_weight * 100.0,
+            two_day_weight / total_weight * 100.0,
+            three_day_weight / total_weight * 100.0,
+        )
 
     def combo_indices_from_list(combo_list):
         if not combo_list:
@@ -1469,7 +1856,7 @@ def render_top_combos(
         if len(best_origins) != k_size - 1:
             return []
         prev_indices = [origin_list_local.index(name) for name in best_origins]
-        prev_one_day_pct, _ = combo_day_percentages(prev_indices)
+        _, prev_two_day_pct, _ = combo_day_percentages(prev_indices)
         results = []
         for origin in origin_list_local:
             if origin in best_origins:
@@ -1477,11 +1864,11 @@ def render_top_combos(
             combo = best_origins + [origin]
             combo_indices = [origin_list_local.index(name) for name in combo]
             weighted_total, _, _ = combo_weighted_total(combo_indices)
-            one_day_pct, _ = combo_day_percentages(combo_indices)
-            one_day_gain = one_day_pct - prev_one_day_pct
+            _, two_day_pct, _ = combo_day_percentages(combo_indices)
+            two_day_gain = two_day_pct - prev_two_day_pct
             if np.isfinite(weighted_total):
-                # Primary ranking: largest 1-day coverage gain. Tiebreaker: lower weighted total.
-                results.append((" + ".join(combo), weighted_total, one_day_gain))
+                # Primary ranking: largest 2-day coverage gain. Tiebreaker: lower weighted total.
+                results.append((" + ".join(combo), weighted_total, two_day_gain))
         results.sort(key=lambda x: (-x[2], x[1], x[0]))
         if len(results) <= 5:
             return [(name, weighted_total) for name, weighted_total, _ in results]
@@ -1501,10 +1888,11 @@ def render_top_combos(
         pair_df = pair_df[pair_df["Pair"].str.contains(required_name, regex=False)]
 
     if not pair_df.empty:
-        best_value = float(pair_df["WeightedTotal"].iloc[0])
-        tied_pairs = pair_df[pair_df["WeightedTotal"] == best_value]["Pair"].tolist()
+        best_value = float(pair_df["TwoDayCoveragePct"].iloc[0])
+        top_mask = np.isclose(pair_df["TwoDayCoveragePct"], best_value)
+        tied_pairs = pair_df[top_mask]["Pair"].tolist()
         if len(tied_pairs) > 5:
-            top_pairs = pair_df[pair_df["WeightedTotal"] == best_value][["Pair", "WeightedTotal"]].copy()
+            top_pairs = pair_df[top_mask][["Pair", "WeightedTotal"]].copy()
         else:
             top_pairs = pair_df.head(5)[["Pair", "WeightedTotal"]].copy()
         pair_labels = [
@@ -1512,7 +1900,7 @@ def render_top_combos(
             for pair, weighted_total in zip(top_pairs["Pair"], top_pairs["WeightedTotal"])
         ]
         selected_pair = st.selectbox(
-            "Top 5 pairs (weighted)",
+            "Top 5 pairs (2-day priority)",
             pair_labels,
             index=0,
             key=f"{key_prefix}_top5_pairs",
@@ -1551,8 +1939,8 @@ def render_top_combos(
             key=f"{key_prefix}_pair_no1_day",
         )
         if show_day_percentages:
-            pct_1, pct_2 = small_combo_day_percentages(combo_indices)
-            st.caption(f"1-day coverage: {pct_1:.1f}% | 2-day coverage: {pct_2:.1f}%")
+            pct_1, pct_2, pct_3 = small_combo_day_percentages(combo_indices)
+            st.caption(f"1-day coverage: {pct_1:.1f}% | 2-day coverage: {pct_2:.1f}% | 3-day coverage: {pct_3:.1f}%")
             not_one_day = small_combo_not_covered(combo_indices, 1.0)
             not_two_day = small_combo_not_covered(combo_indices, 2.0)
             st.caption(f"Not covered in 1 day: {format_not_covered(not_one_day)}")
@@ -1575,7 +1963,7 @@ def render_top_combos(
     if trio_list:
         trio_labels = [f"{name} ({value:.2f})" for name, value in trio_list]
         selected_trio = st.selectbox(
-            "Top 5 trios (weighted)",
+            "Top 5 trios (2-day priority)",
             trio_labels,
             index=0,
             key=f"{key_prefix}_top5_trios",
@@ -1605,8 +1993,8 @@ def render_top_combos(
             key=f"{key_prefix}_trio_no1_day",
         )
         if show_day_percentages:
-            pct_1, pct_2 = small_combo_day_percentages(trio_indices)
-            st.caption(f"1-day coverage: {pct_1:.1f}% | 2-day coverage: {pct_2:.1f}%")
+            pct_1, pct_2, pct_3 = small_combo_day_percentages(trio_indices)
+            st.caption(f"1-day coverage: {pct_1:.1f}% | 2-day coverage: {pct_2:.1f}% | 3-day coverage: {pct_3:.1f}%")
             not_one_day = small_combo_not_covered(trio_indices, 1.0)
             not_two_day = small_combo_not_covered(trio_indices, 2.0)
             st.caption(f"Not covered in 1 day: {format_not_covered(not_one_day)}")
@@ -1629,7 +2017,7 @@ def render_top_combos(
     if quad_list:
         quad_labels = [f"{name} ({value:.2f})" for name, value in quad_list]
         selected_quad = st.selectbox(
-            "Top 5 quads (weighted)",
+            "Top 5 quads (2-day priority)",
             quad_labels,
             index=0,
             key=f"{key_prefix}_top5_quads",
@@ -1659,8 +2047,8 @@ def render_top_combos(
             key=f"{key_prefix}_quad_no1_day",
         )
         if show_day_percentages:
-            pct_1, pct_2 = combo_day_percentages(quad_indices)
-            st.caption(f"1-day coverage: {pct_1:.1f}% | 2-day coverage: {pct_2:.1f}%")
+            pct_1, pct_2, pct_3 = combo_day_percentages(quad_indices)
+            st.caption(f"1-day coverage: {pct_1:.1f}% | 2-day coverage: {pct_2:.1f}% | 3-day coverage: {pct_3:.1f}%")
             not_one_day = combo_not_covered(quad_indices, 1.0)
             not_two_day = combo_not_covered(quad_indices, 2.0)
             st.caption(f"Not covered in 1 day: {format_not_covered(not_one_day)}")
@@ -1684,7 +2072,7 @@ def render_top_combos(
     if five_list:
         five_labels = [f"{name} ({value:.2f})" for name, value in five_list]
         selected_five = st.selectbox(
-            "Top 5 (5 locations) (weighted)",
+            "Top 5 (5 locations) (2-day priority)",
             five_labels,
             index=0,
             key=f"{key_prefix}_top5_fives",
@@ -1718,8 +2106,8 @@ def render_top_combos(
             key=f"{key_prefix}_five_no1_day",
         )
         if show_day_percentages:
-            pct_1, pct_2 = combo_day_percentages(five_indices)
-            st.caption(f"1-day coverage: {pct_1:.1f}% | 2-day coverage: {pct_2:.1f}%")
+            pct_1, pct_2, pct_3 = combo_day_percentages(five_indices)
+            st.caption(f"1-day coverage: {pct_1:.1f}% | 2-day coverage: {pct_2:.1f}% | 3-day coverage: {pct_3:.1f}%")
             not_one_day = combo_not_covered(five_indices, 1.0)
             not_two_day = combo_not_covered(five_indices, 2.0)
             st.caption(f"Not covered in 1 day: {format_not_covered(not_one_day)}")
@@ -1746,7 +2134,7 @@ def render_top_combos(
     if six_list:
         six_labels = [f"{name} ({value:.2f})" for name, value in six_list]
         selected_six = st.selectbox(
-            "Top 5 (6 locations) (weighted)",
+            "Top 5 (6 locations) (2-day priority)",
             six_labels,
             index=0,
             key=f"{key_prefix}_top5_sixes",
@@ -1780,8 +2168,8 @@ def render_top_combos(
             key=f"{key_prefix}_six_no1_day",
         )
         if show_day_percentages:
-            pct_1, pct_2 = combo_day_percentages(six_indices)
-            st.caption(f"1-day coverage: {pct_1:.1f}% | 2-day coverage: {pct_2:.1f}%")
+            pct_1, pct_2, pct_3 = combo_day_percentages(six_indices)
+            st.caption(f"1-day coverage: {pct_1:.1f}% | 2-day coverage: {pct_2:.1f}% | 3-day coverage: {pct_3:.1f}%")
             not_one_day = combo_not_covered(six_indices, 1.0)
             not_two_day = combo_not_covered(six_indices, 2.0)
             st.caption(f"Not covered in 1 day: {format_not_covered(not_one_day)}")
@@ -1790,12 +2178,12 @@ def render_top_combos(
         st.caption("Not enough origins to calculate 6-location combos.")
 
     st.markdown("Top 5 (7 locations)")
-    st.caption("From 7+ locations, candidates are ranked by the biggest increase in 1-day coverage (weighted total used as tiebreaker).")
+    st.caption("From 7+ locations, candidates are ranked by the biggest increase in 2-day coverage (weighted total used as tiebreaker).")
     seven_list = (expand_from_best(six_list, 7) if len(origin_list_local) >= 7 else [])
     if seven_list:
         seven_labels = [f"{name} ({value:.2f})" for name, value in seven_list]
         selected_seven = st.selectbox(
-            "Top 5 (7 locations) (weighted)",
+            "Top 5 (7 locations) (2-day priority)",
             seven_labels,
             index=0,
             key=f"{key_prefix}_top5_sevens",
@@ -1825,8 +2213,8 @@ def render_top_combos(
             key=f"{key_prefix}_seven_no1_day",
         )
         if show_day_percentages:
-            pct_1, pct_2 = combo_day_percentages(seven_indices)
-            st.caption(f"1-day coverage: {pct_1:.1f}% | 2-day coverage: {pct_2:.1f}%")
+            pct_1, pct_2, pct_3 = combo_day_percentages(seven_indices)
+            st.caption(f"1-day coverage: {pct_1:.1f}% | 2-day coverage: {pct_2:.1f}% | 3-day coverage: {pct_3:.1f}%")
             not_one_day = combo_not_covered(seven_indices, 1.0)
             not_two_day = combo_not_covered(seven_indices, 2.0)
             st.caption(f"Not covered in 1 day: {format_not_covered(not_one_day)}")
@@ -1839,7 +2227,7 @@ def render_top_combos(
     if eight_list:
         eight_labels = [f"{name} ({value:.2f})" for name, value in eight_list]
         selected_eight = st.selectbox(
-            "Top 5 (8 locations) (weighted)",
+            "Top 5 (8 locations) (2-day priority)",
             eight_labels,
             index=0,
             key=f"{key_prefix}_top5_eights",
@@ -1869,8 +2257,8 @@ def render_top_combos(
             key=f"{key_prefix}_eight_no1_day",
         )
         if show_day_percentages:
-            pct_1, pct_2 = combo_day_percentages(eight_indices)
-            st.caption(f"1-day coverage: {pct_1:.1f}% | 2-day coverage: {pct_2:.1f}%")
+            pct_1, pct_2, pct_3 = combo_day_percentages(eight_indices)
+            st.caption(f"1-day coverage: {pct_1:.1f}% | 2-day coverage: {pct_2:.1f}% | 3-day coverage: {pct_3:.1f}%")
             not_one_day = combo_not_covered(eight_indices, 1.0)
             not_two_day = combo_not_covered(eight_indices, 2.0)
             st.caption(f"Not covered in 1 day: {format_not_covered(not_one_day)}")
@@ -1883,7 +2271,7 @@ def render_top_combos(
     if nine_list:
         nine_labels = [f"{name} ({value:.2f})" for name, value in nine_list]
         selected_nine = st.selectbox(
-            "Top 5 (9 locations) (weighted)",
+            "Top 5 (9 locations) (2-day priority)",
             nine_labels,
             index=0,
             key=f"{key_prefix}_top5_nines",
@@ -1913,8 +2301,8 @@ def render_top_combos(
             key=f"{key_prefix}_nine_no1_day",
         )
         if show_day_percentages:
-            pct_1, pct_2 = combo_day_percentages(nine_indices)
-            st.caption(f"1-day coverage: {pct_1:.1f}% | 2-day coverage: {pct_2:.1f}%")
+            pct_1, pct_2, pct_3 = combo_day_percentages(nine_indices)
+            st.caption(f"1-day coverage: {pct_1:.1f}% | 2-day coverage: {pct_2:.1f}% | 3-day coverage: {pct_3:.1f}%")
             not_one_day = combo_not_covered(nine_indices, 1.0)
             not_two_day = combo_not_covered(nine_indices, 2.0)
             st.caption(f"Not covered in 1 day: {format_not_covered(not_one_day)}")
@@ -1928,7 +2316,7 @@ def render_top_combos(
         if ten_list:
             ten_labels = [f"{name} ({value:.2f})" for name, value in ten_list]
             selected_ten = st.selectbox(
-                "Top 5 (10 locations) (weighted)",
+                "Top 5 (10 locations) (2-day priority)",
                 ten_labels,
                 index=0,
                 key=f"{key_prefix}_top5_tens",
@@ -1958,8 +2346,8 @@ def render_top_combos(
                 key=f"{key_prefix}_ten_no1_day",
             )
             if show_day_percentages:
-                pct_1, pct_2 = combo_day_percentages(ten_indices)
-                st.caption(f"1-day coverage: {pct_1:.1f}% | 2-day coverage: {pct_2:.1f}%")
+                pct_1, pct_2, pct_3 = combo_day_percentages(ten_indices)
+                st.caption(f"1-day coverage: {pct_1:.1f}% | 2-day coverage: {pct_2:.1f}% | 3-day coverage: {pct_3:.1f}%")
                 not_one_day = combo_not_covered(ten_indices, 1.0)
 
                 not_two_day = combo_not_covered(ten_indices, 2.0)
@@ -1976,7 +2364,7 @@ def render_top_combos(
         if eleven_list:
             eleven_labels = [f"{name} ({value:.2f})" for name, value in eleven_list]
             selected_eleven = st.selectbox(
-                "Top 5 (11 locations) (weighted)",
+                "Top 5 (11 locations) (2-day priority)",
                 eleven_labels,
                 index=0,
                 key=f"{key_prefix}_top5_elevens",
@@ -2006,8 +2394,8 @@ def render_top_combos(
                 key=f"{key_prefix}_eleven_no1_day",
             )
             if show_day_percentages:
-                pct_1, pct_2 = combo_day_percentages(eleven_indices)
-                st.caption(f"1-day coverage: {pct_1:.1f}% | 2-day coverage: {pct_2:.1f}%")
+                pct_1, pct_2, pct_3 = combo_day_percentages(eleven_indices)
+                st.caption(f"1-day coverage: {pct_1:.1f}% | 2-day coverage: {pct_2:.1f}% | 3-day coverage: {pct_3:.1f}%")
                 not_one_day = combo_not_covered(eleven_indices, 1.0)
 
                 not_two_day = combo_not_covered(eleven_indices, 2.0)
@@ -2024,7 +2412,7 @@ def render_top_combos(
         if twelve_list:
             twelve_labels = [f"{name} ({value:.2f})" for name, value in twelve_list]
             selected_twelve = st.selectbox(
-                "Top 5 (12 locations) (weighted)",
+                "Top 5 (12 locations) (2-day priority)",
                 twelve_labels,
                 index=0,
                 key=f"{key_prefix}_top5_twelves",
@@ -2054,8 +2442,8 @@ def render_top_combos(
                 key=f"{key_prefix}_twelve_no1_day",
             )
             if show_day_percentages:
-                pct_1, pct_2 = combo_day_percentages(twelve_indices)
-                st.caption(f"1-day coverage: {pct_1:.1f}% | 2-day coverage: {pct_2:.1f}%")
+                pct_1, pct_2, pct_3 = combo_day_percentages(twelve_indices)
+                st.caption(f"1-day coverage: {pct_1:.1f}% | 2-day coverage: {pct_2:.1f}% | 3-day coverage: {pct_3:.1f}%")
                 not_one_day = combo_not_covered(twelve_indices, 1.0)
 
                 not_two_day = combo_not_covered(twelve_indices, 2.0)
@@ -2072,7 +2460,7 @@ def render_top_combos(
         if thirteen_list:
             thirteen_labels = [f"{name} ({value:.2f})" for name, value in thirteen_list]
             selected_thirteen = st.selectbox(
-                "Top 5 (13 locations) (weighted)",
+                "Top 5 (13 locations) (2-day priority)",
                 thirteen_labels,
                 index=0,
                 key=f"{key_prefix}_top5_thirteens",
@@ -2102,8 +2490,8 @@ def render_top_combos(
                 key=f"{key_prefix}_thirteen_no1_day",
             )
             if show_day_percentages:
-                pct_1, pct_2 = combo_day_percentages(thirteen_indices)
-                st.caption(f"1-day coverage: {pct_1:.1f}% | 2-day coverage: {pct_2:.1f}%")
+                pct_1, pct_2, pct_3 = combo_day_percentages(thirteen_indices)
+                st.caption(f"1-day coverage: {pct_1:.1f}% | 2-day coverage: {pct_2:.1f}% | 3-day coverage: {pct_3:.1f}%")
                 not_one_day = combo_not_covered(thirteen_indices, 1.0)
 
                 not_two_day = combo_not_covered(thirteen_indices, 2.0)
@@ -2120,7 +2508,7 @@ def render_top_combos(
         if fourteen_list:
             fourteen_labels = [f"{name} ({value:.2f})" for name, value in fourteen_list]
             selected_fourteen = st.selectbox(
-                "Top 5 (14 locations) (weighted)",
+                "Top 5 (14 locations) (2-day priority)",
                 fourteen_labels,
                 index=0,
                 key=f"{key_prefix}_top5_fourteens",
@@ -2150,8 +2538,8 @@ def render_top_combos(
                 key=f"{key_prefix}_fourteen_no1_day",
             )
             if show_day_percentages:
-                pct_1, pct_2 = combo_day_percentages(fourteen_indices)
-                st.caption(f"1-day coverage: {pct_1:.1f}% | 2-day coverage: {pct_2:.1f}%")
+                pct_1, pct_2, pct_3 = combo_day_percentages(fourteen_indices)
+                st.caption(f"1-day coverage: {pct_1:.1f}% | 2-day coverage: {pct_2:.1f}% | 3-day coverage: {pct_3:.1f}%")
                 not_one_day = combo_not_covered(fourteen_indices, 1.0)
 
                 not_two_day = combo_not_covered(fourteen_indices, 2.0)
@@ -2168,7 +2556,7 @@ def render_top_combos(
         if fifteen_list:
             fifteen_labels = [f"{name} ({value:.2f})" for name, value in fifteen_list]
             selected_fifteen = st.selectbox(
-                "Top 5 (15 locations) (weighted)",
+                "Top 5 (15 locations) (2-day priority)",
                 fifteen_labels,
                 index=0,
                 key=f"{key_prefix}_top5_fifteens",
@@ -2198,8 +2586,8 @@ def render_top_combos(
                 key=f"{key_prefix}_fifteen_no1_day",
             )
             if show_day_percentages:
-                pct_1, pct_2 = combo_day_percentages(fifteen_indices)
-                st.caption(f"1-day coverage: {pct_1:.1f}% | 2-day coverage: {pct_2:.1f}%")
+                pct_1, pct_2, pct_3 = combo_day_percentages(fifteen_indices)
+                st.caption(f"1-day coverage: {pct_1:.1f}% | 2-day coverage: {pct_2:.1f}% | 3-day coverage: {pct_3:.1f}%")
                 not_one_day = combo_not_covered(fifteen_indices, 1.0)
 
                 not_two_day = combo_not_covered(fifteen_indices, 2.0)
@@ -2216,7 +2604,7 @@ def render_top_combos(
         if sixteen_list:
             sixteen_labels = [f"{name} ({value:.2f})" for name, value in sixteen_list]
             selected_sixteen = st.selectbox(
-                "Top 5 (16 locations) (weighted)",
+                "Top 5 (16 locations) (2-day priority)",
                 sixteen_labels,
                 index=0,
                 key=f"{key_prefix}_top5_sixteens",
@@ -2246,8 +2634,8 @@ def render_top_combos(
                 key=f"{key_prefix}_sixteen_no1_day",
             )
             if show_day_percentages:
-                pct_1, pct_2 = combo_day_percentages(sixteen_indices)
-                st.caption(f"1-day coverage: {pct_1:.1f}% | 2-day coverage: {pct_2:.1f}%")
+                pct_1, pct_2, pct_3 = combo_day_percentages(sixteen_indices)
+                st.caption(f"1-day coverage: {pct_1:.1f}% | 2-day coverage: {pct_2:.1f}% | 3-day coverage: {pct_3:.1f}%")
                 not_one_day = combo_not_covered(sixteen_indices, 1.0)
 
                 not_two_day = combo_not_covered(sixteen_indices, 2.0)
@@ -2264,7 +2652,7 @@ def render_top_combos(
         if seventeen_list:
             seventeen_labels = [f"{name} ({value:.2f})" for name, value in seventeen_list]
             selected_seventeen = st.selectbox(
-                "Top 5 (17 locations) (weighted)",
+                "Top 5 (17 locations) (2-day priority)",
                 seventeen_labels,
                 index=0,
                 key=f"{key_prefix}_top5_seventeens",
@@ -2294,8 +2682,8 @@ def render_top_combos(
                 key=f"{key_prefix}_seventeen_no1_day",
             )
             if show_day_percentages:
-                pct_1, pct_2 = combo_day_percentages(seventeen_indices)
-                st.caption(f"1-day coverage: {pct_1:.1f}% | 2-day coverage: {pct_2:.1f}%")
+                pct_1, pct_2, pct_3 = combo_day_percentages(seventeen_indices)
+                st.caption(f"1-day coverage: {pct_1:.1f}% | 2-day coverage: {pct_2:.1f}% | 3-day coverage: {pct_3:.1f}%")
                 not_one_day = combo_not_covered(seventeen_indices, 1.0)
 
                 not_two_day = combo_not_covered(seventeen_indices, 2.0)
@@ -2312,7 +2700,7 @@ def render_top_combos(
         if eighteen_list:
             eighteen_labels = [f"{name} ({value:.2f})" for name, value in eighteen_list]
             selected_eighteen = st.selectbox(
-                "Top 5 (18 locations) (weighted)",
+                "Top 5 (18 locations) (2-day priority)",
                 eighteen_labels,
                 index=0,
                 key=f"{key_prefix}_top5_eighteens",
@@ -2342,8 +2730,8 @@ def render_top_combos(
                 key=f"{key_prefix}_eighteen_no1_day",
             )
             if show_day_percentages:
-                pct_1, pct_2 = combo_day_percentages(eighteen_indices)
-                st.caption(f"1-day coverage: {pct_1:.1f}% | 2-day coverage: {pct_2:.1f}%")
+                pct_1, pct_2, pct_3 = combo_day_percentages(eighteen_indices)
+                st.caption(f"1-day coverage: {pct_1:.1f}% | 2-day coverage: {pct_2:.1f}% | 3-day coverage: {pct_3:.1f}%")
                 not_one_day = combo_not_covered(eighteen_indices, 1.0)
 
                 not_two_day = combo_not_covered(eighteen_indices, 2.0)
@@ -2360,7 +2748,7 @@ def render_top_combos(
         if nineteen_list:
             nineteen_labels = [f"{name} ({value:.2f})" for name, value in nineteen_list]
             selected_nineteen = st.selectbox(
-                "Top 5 (19 locations) (weighted)",
+                "Top 5 (19 locations) (2-day priority)",
                 nineteen_labels,
                 index=0,
                 key=f"{key_prefix}_top5_nineteens",
@@ -2390,8 +2778,8 @@ def render_top_combos(
                 key=f"{key_prefix}_nineteen_no1_day",
             )
             if show_day_percentages:
-                pct_1, pct_2 = combo_day_percentages(nineteen_indices)
-                st.caption(f"1-day coverage: {pct_1:.1f}% | 2-day coverage: {pct_2:.1f}%")
+                pct_1, pct_2, pct_3 = combo_day_percentages(nineteen_indices)
+                st.caption(f"1-day coverage: {pct_1:.1f}% | 2-day coverage: {pct_2:.1f}% | 3-day coverage: {pct_3:.1f}%")
                 not_one_day = combo_not_covered(nineteen_indices, 1.0)
 
                 not_two_day = combo_not_covered(nineteen_indices, 2.0)
@@ -2408,7 +2796,7 @@ def render_top_combos(
         if twenty_list:
             twenty_labels = [f"{name} ({value:.2f})" for name, value in twenty_list]
             selected_twenty = st.selectbox(
-                "Top 5 (20 locations) (weighted)",
+                "Top 5 (20 locations) (2-day priority)",
                 twenty_labels,
                 index=0,
                 key=f"{key_prefix}_top5_twenties",
@@ -2438,8 +2826,8 @@ def render_top_combos(
                 key=f"{key_prefix}_twenty_no1_day",
             )
             if show_day_percentages:
-                pct_1, pct_2 = combo_day_percentages(twenty_indices)
-                st.caption(f"1-day coverage: {pct_1:.1f}% | 2-day coverage: {pct_2:.1f}%")
+                pct_1, pct_2, pct_3 = combo_day_percentages(twenty_indices)
+                st.caption(f"1-day coverage: {pct_1:.1f}% | 2-day coverage: {pct_2:.1f}% | 3-day coverage: {pct_3:.1f}%")
                 not_one_day = combo_not_covered(twenty_indices, 1.0)
 
                 not_two_day = combo_not_covered(twenty_indices, 2.0)
@@ -2475,6 +2863,7 @@ def compute_pair_df_cached(
         best_cost = np.nanmin(cost_mat[[i, j], :], axis=0)
         best_time = np.nanmin(time_mat[[i, j], :], axis=0)
         valid_mask = ~np.isnan(best_cost) & ~np.isnan(best_time)
+        valid_time = np.isfinite(best_time)
         if valid_mask.any():
             weights = weights_vec[valid_mask]
             if weights.sum() == 0:
@@ -2483,6 +2872,15 @@ def compute_pair_df_cached(
             weighted_total = float(np.sum(weighted * (weights / weights.sum())))
         else:
             weighted_total = float("nan")
+        if valid_time.any():
+            valid_weights = weights_vec[valid_time]
+            if valid_weights.sum() == 0:
+                valid_weights = np.ones(len(valid_weights), dtype=float)
+            total_weight = float(np.sum(valid_weights))
+            two_day_weight = float(np.sum(valid_weights[best_time[valid_time] <= 2.0]))
+            two_day_coverage_pct = two_day_weight / total_weight * 100.0
+        else:
+            two_day_coverage_pct = 0.0
 
         pair_cost = float(np.nansum(best_cost))
         pair_time = float(np.nansum(best_time))
@@ -2499,11 +2897,15 @@ def compute_pair_df_cached(
         pair_rows.append({
             "Pair": f"{origin_list[i]} + {origin_list[j]}",
             "WeightedTotal": weighted_total,
+            "TwoDayCoveragePct": two_day_coverage_pct,
             "PairCost": pair_cost,
             "PairTime": pair_time,
             "MajorCoveragePct": major_coverage_pct,
         })
-    return pd.DataFrame(pair_rows).sort_values("WeightedTotal")
+    return pd.DataFrame(pair_rows).sort_values(
+        by=["TwoDayCoveragePct", "WeightedTotal", "Pair"],
+        ascending=[False, True, True],
+    )
 
 
 @st.cache_data
@@ -2527,6 +2929,7 @@ def compute_top_k_combos_cached(
         best_cost = np.nanmin(cost_mat[list(combo), :], axis=0)
         best_time = np.nanmin(time_mat[list(combo), :], axis=0)
         valid_mask = ~np.isnan(best_cost) & ~np.isnan(best_time)
+        valid_time = np.isfinite(best_time)
         if valid_mask.any():
             weights = weights_vec[valid_mask]
             if weights.sum() == 0:
@@ -2535,14 +2938,29 @@ def compute_top_k_combos_cached(
             total = float(np.sum(weighted * (weights / weights.sum())))
         else:
             total = float("nan")
-        combos.append((" + ".join(origin_list[idx] for idx in combo), total))
-    combos.sort(key=lambda item: item[1])
+        if valid_time.any():
+            valid_weights = weights_vec[valid_time]
+            if valid_weights.sum() == 0:
+                valid_weights = np.ones(len(valid_weights), dtype=float)
+            total_weight = float(np.sum(valid_weights))
+            two_day_weight = float(np.sum(valid_weights[best_time[valid_time] <= 2.0]))
+            two_day_coverage_pct = two_day_weight / total_weight * 100.0
+        else:
+            two_day_coverage_pct = 0.0
+        combos.append((" + ".join(origin_list[idx] for idx in combo), total, two_day_coverage_pct))
+    combos.sort(key=lambda item: (-item[2], item[1] if np.isfinite(item[1]) else float("inf"), item[0]))
     if len(combos) <= limit:
-        return combos
-    cutoff = combos[limit - 1][1]
-    if not np.isfinite(cutoff):
-        return combos[:limit]
-    return [item for item in combos if item[1] <= cutoff]
+        return [(name, total) for name, total, _ in combos]
+    cutoff_two_day_pct = combos[limit - 1][2]
+    cutoff_weighted_total = combos[limit - 1][1]
+    if not np.isfinite(cutoff_weighted_total):
+        return [(name, total) for name, total, _ in combos[:limit]]
+    return [
+        (name, total)
+        for name, total, two_day_pct in combos
+        if two_day_pct > cutoff_two_day_pct
+        or (np.isclose(two_day_pct, cutoff_two_day_pct) and total <= cutoff_weighted_total)
+    ]
 
 
 @st.cache_data
@@ -2575,6 +2993,7 @@ def compute_top_k_combos_with_required_cached(
         best_cost = np.nanmin(cost_mat[combo_indices, :], axis=0)
         best_time = np.nanmin(time_mat[combo_indices, :], axis=0)
         valid_mask = ~np.isnan(best_cost) & ~np.isnan(best_time)
+        valid_time = np.isfinite(best_time)
         if valid_mask.any():
             weights = weights_vec[valid_mask]
             if weights.sum() == 0:
@@ -2583,14 +3002,29 @@ def compute_top_k_combos_with_required_cached(
             total = float(np.sum(weighted * (weights / weights.sum())))
         else:
             total = float("nan")
-        combos.append((" + ".join(origin_list[idx] for idx in combo_indices), total))
-    combos.sort(key=lambda item: item[1])
+        if valid_time.any():
+            valid_weights = weights_vec[valid_time]
+            if valid_weights.sum() == 0:
+                valid_weights = np.ones(len(valid_weights), dtype=float)
+            total_weight = float(np.sum(valid_weights))
+            two_day_weight = float(np.sum(valid_weights[best_time[valid_time] <= 2.0]))
+            two_day_coverage_pct = two_day_weight / total_weight * 100.0
+        else:
+            two_day_coverage_pct = 0.0
+        combos.append((" + ".join(origin_list[idx] for idx in combo_indices), total, two_day_coverage_pct))
+    combos.sort(key=lambda item: (-item[2], item[1] if np.isfinite(item[1]) else float("inf"), item[0]))
     if len(combos) <= limit:
-        return combos
-    cutoff = combos[limit - 1][1]
-    if not np.isfinite(cutoff):
-        return combos[:limit]
-    return [item for item in combos if item[1] <= cutoff]
+        return [(name, total) for name, total, _ in combos]
+    cutoff_two_day_pct = combos[limit - 1][2]
+    cutoff_weighted_total = combos[limit - 1][1]
+    if not np.isfinite(cutoff_weighted_total):
+        return [(name, total) for name, total, _ in combos[:limit]]
+    return [
+        (name, total)
+        for name, total, two_day_pct in combos
+        if two_day_pct > cutoff_two_day_pct
+        or (np.isclose(two_day_pct, cutoff_two_day_pct) and total <= cutoff_weighted_total)
+    ]
 
 
 @st.cache_data
@@ -2925,8 +3359,8 @@ def greedy_savings_per_sign(
 
 st.set_page_config(page_title="Shipping Cost Dashboard", layout="wide")
 st.title("Shipping Cost Dashboard")
-tab_regionals_v3, tab_roi, tab_weights = st.tabs(
-    ["Shipping Summary Regionals v3", "ROI", "Destination Weights"]
+tab_regionals_v3, tab_compare_networks, tab_roi, tab_weights = st.tabs(
+    ["Shipping Summary Regionals v3", "Compare Shipping Networks", "ROI", "Destination Weights"]
 )
 
 with tab_regionals_v3:
@@ -3406,6 +3840,617 @@ with tab_regionals_v3:
                     baseline_origin=baseline_origin_v3,
                     required_origin="Boise" if include_boise_v3 else None,
                 )
+    else:
+        st.info("page3.csv not found in the app folder.")
+
+with tab_compare_networks:
+    st.subheader("Compare Shipping Networks")
+    st.caption(
+        "Build two networks side by side, highlight the better side for each metric, and review unique priority-city coverage."
+    )
+
+    compare_page3_path = Path("page3.csv")
+    if compare_page3_path.exists():
+        compare_df = load_data(str(compare_page3_path))
+        if compare_df.empty:
+            st.info("No data available in page3.csv.")
+        else:
+            origin_options = sorted(compare_df["FromAddress"].unique())
+            dest_in_view_compare = sorted(compare_df["Destination"].unique())
+
+            if st.session_state.get("destination_weights_v3_version") != "city_counts_v1":
+                st.session_state.destination_weights_v3 = initial_destination_weights_by_city(
+                    compare_df,
+                    V3_CITY_COUNTS,
+                )
+                st.session_state.destination_weights_v3_version = "city_counts_v1"
+
+            dest_weights_compare = destination_weights(
+                dest_in_view_compare,
+                st.session_state.destination_weights_v3,
+            )
+
+            st.markdown("### ROI Assumptions")
+            roi_col_1, roi_col_2 = st.columns(2)
+            with roi_col_1:
+                monthly_packages = int(
+                    st.slider(
+                        "Packages sold per month",
+                        min_value=0,
+                        max_value=30000,
+                        value=10000,
+                        step=100,
+                        key="compare_monthly_packages",
+                    )
+                )
+                base_profit_per_package = float(
+                    st.slider(
+                        "Base profit per package ($)",
+                        min_value=0.0,
+                        max_value=50.0,
+                        value=10.0,
+                        step=0.5,
+                        key="compare_base_profit_per_package",
+                    )
+                )
+                base_revenue_per_package = float(
+                    st.slider(
+                        "Revenue per package ($)",
+                        min_value=0.0,
+                        max_value=200.0,
+                        value=10.0,
+                        step=0.5,
+                        key="compare_base_revenue_per_package",
+                    )
+                )
+            with roi_col_2:
+                one_day_bonus = float(
+                    st.slider(
+                        "Extra profit for 1-day shipping ($/package)",
+                        min_value=0.0,
+                        max_value=20.0,
+                        value=2.0,
+                        step=0.25,
+                        key="compare_one_day_bonus",
+                    )
+                )
+                two_day_bonus = float(
+                    st.slider(
+                        "Extra profit for 2-day shipping ($/package)",
+                        min_value=0.0,
+                        max_value=20.0,
+                        value=1.0,
+                        step=0.25,
+                        key="compare_two_day_bonus",
+                    )
+                )
+                three_day_penalty = float(
+                    st.slider(
+                        "Profit loss for 3-day shipping ($/package)",
+                        min_value=0.0,
+                        max_value=20.0,
+                        value=0.0,
+                        step=0.25,
+                        key="compare_three_day_penalty",
+                    )
+                )
+            st.caption(
+                "Revenue uses: revenue per package + 1-day/2-day boosts. "
+                "3-day penalty affects profit only."
+            )
+
+            selector_col_a, selector_col_b = st.columns(2)
+            with selector_col_a:
+                st.markdown("### Network A")
+                network_a_origins = st.multiselect(
+                    "Included origins (Network A)",
+                    origin_options,
+                    default=[],
+                    key="compare_network_a_origins",
+                )
+            with selector_col_b:
+                st.markdown("### Network B")
+                network_b_origins = st.multiselect(
+                    "Included origins (Network B)",
+                    origin_options,
+                    default=[],
+                    key="compare_network_b_origins",
+                )
+
+            subset_a = compare_df[compare_df["FromAddress"].isin(network_a_origins)]
+            subset_b = compare_df[compare_df["FromAddress"].isin(network_b_origins)]
+            summary_a = (
+                compute_built_network_summary(subset_a, dest_weights_compare)
+                if not subset_a.empty
+                else None
+            )
+            summary_b = (
+                compute_built_network_summary(subset_b, dest_weights_compare)
+                if not subset_b.empty
+                else None
+            )
+            roi_a = compute_network_roi_projection(
+                summary_a,
+                dest_weights_compare,
+                monthly_packages,
+                base_revenue_per_package,
+                base_profit_per_package,
+                one_day_bonus,
+                two_day_bonus,
+                three_day_penalty,
+            )
+            roi_b = compute_network_roi_projection(
+                summary_b,
+                dest_weights_compare,
+                monthly_packages,
+                base_revenue_per_package,
+                base_profit_per_package,
+                one_day_bonus,
+                two_day_bonus,
+                three_day_penalty,
+            )
+            recommended_city_a, recommended_lift_a = recommend_next_city_by_profit(
+                compare_df,
+                network_a_origins,
+                origin_options,
+                dest_weights_compare,
+                monthly_packages,
+                base_revenue_per_package,
+                base_profit_per_package,
+                one_day_bonus,
+                two_day_bonus,
+                three_day_penalty,
+            )
+            recommended_city_b, recommended_lift_b = recommend_next_city_by_profit(
+                compare_df,
+                network_b_origins,
+                origin_options,
+                dest_weights_compare,
+                monthly_packages,
+                base_revenue_per_package,
+                base_profit_per_package,
+                one_day_bonus,
+                two_day_bonus,
+                three_day_penalty,
+            )
+
+            highlights_a = {}
+            highlights_b = {}
+            roi_highlights_a = {}
+            roi_highlights_b = {}
+            shipping_saved_vs_other_monthly_a = float("nan")
+            shipping_saved_vs_other_monthly_b = float("nan")
+            if summary_a is not None and summary_b is not None:
+                time_a, time_b = compare_metric_winners(
+                    summary_a["avg_time"],
+                    summary_b["avg_time"],
+                    higher_is_better=False,
+                )
+                cost_a, cost_b = compare_metric_winners(
+                    summary_a["avg_cost"],
+                    summary_b["avg_cost"],
+                    higher_is_better=False,
+                )
+                cov1_a, cov1_b = compare_metric_winners(
+                    summary_a["coverage_1_day"],
+                    summary_b["coverage_1_day"],
+                    higher_is_better=True,
+                )
+                cov2_a, cov2_b = compare_metric_winners(
+                    summary_a["coverage_2_day"],
+                    summary_b["coverage_2_day"],
+                    higher_is_better=True,
+                )
+                cov3_a, cov3_b = compare_metric_winners(
+                    summary_a["coverage_3_day"],
+                    summary_b["coverage_3_day"],
+                    higher_is_better=True,
+                )
+                highlights_a = {
+                    "avg_time": time_a,
+                    "avg_cost": cost_a,
+                    "coverage_1_day": cov1_a,
+                    "coverage_2_day": cov2_a,
+                    "coverage_3_day": cov3_a,
+                }
+                highlights_b = {
+                    "avg_time": time_b,
+                    "avg_cost": cost_b,
+                    "coverage_1_day": cov1_b,
+                    "coverage_2_day": cov2_b,
+                    "coverage_3_day": cov3_b,
+                }
+                shipping_saved_vs_other_monthly_a = float(
+                    max(summary_b["avg_cost"] - summary_a["avg_cost"], 0.0) * monthly_packages
+                )
+                shipping_saved_vs_other_monthly_b = float(
+                    max(summary_a["avg_cost"] - summary_b["avg_cost"], 0.0) * monthly_packages
+                )
+            if roi_a is not None and roi_b is not None:
+                ship_saved_a, ship_saved_b = compare_metric_winners(
+                    shipping_saved_vs_other_monthly_a,
+                    shipping_saved_vs_other_monthly_b,
+                    higher_is_better=True,
+                )
+                revenue_a, revenue_b = compare_metric_winners(
+                    roi_a["projected_revenue"],
+                    roi_b["projected_revenue"],
+                    higher_is_better=True,
+                )
+                yearly_revenue_a, yearly_revenue_b = compare_metric_winners(
+                    roi_a["projected_revenue_yearly"],
+                    roi_b["projected_revenue_yearly"],
+                    higher_is_better=True,
+                )
+                profit_a, profit_b = compare_metric_winners(
+                    roi_a["projected_profit"],
+                    roi_b["projected_profit"],
+                    higher_is_better=True,
+                )
+                yearly_profit_a, yearly_profit_b = compare_metric_winners(
+                    roi_a["projected_profit_yearly"],
+                    roi_b["projected_profit_yearly"],
+                    higher_is_better=True,
+                )
+                uplift_a, uplift_b = compare_metric_winners(
+                    roi_a["shipping_uplift_profit"],
+                    roi_b["shipping_uplift_profit"],
+                    higher_is_better=True,
+                )
+                avg_pp_a, avg_pp_b = compare_metric_winners(
+                    roi_a["avg_profit_per_package"],
+                    roi_b["avg_profit_per_package"],
+                    higher_is_better=True,
+                )
+                one_day_pkg_a, one_day_pkg_b = compare_metric_winners(
+                    roi_a["one_day_packages"],
+                    roi_b["one_day_packages"],
+                    higher_is_better=True,
+                )
+                two_day_pkg_a, two_day_pkg_b = compare_metric_winners(
+                    roi_a["two_day_packages"],
+                    roi_b["two_day_packages"],
+                    higher_is_better=True,
+                )
+                three_day_pkg_a, three_day_pkg_b = compare_metric_winners(
+                    roi_a["three_day_packages"],
+                    roi_b["three_day_packages"],
+                    higher_is_better=True,
+                )
+                roi_highlights_a = {
+                    "shipping_saved_vs_other_monthly": ship_saved_a,
+                    "projected_revenue": revenue_a,
+                    "projected_revenue_yearly": yearly_revenue_a,
+                    "projected_profit": profit_a,
+                    "projected_profit_yearly": yearly_profit_a,
+                    "shipping_uplift_profit": uplift_a,
+                    "avg_profit_per_package": avg_pp_a,
+                    "one_day_packages": one_day_pkg_a,
+                    "two_day_packages": two_day_pkg_a,
+                    "three_day_packages": three_day_pkg_a,
+                }
+                roi_highlights_b = {
+                    "shipping_saved_vs_other_monthly": ship_saved_b,
+                    "projected_revenue": revenue_b,
+                    "projected_revenue_yearly": yearly_revenue_b,
+                    "projected_profit": profit_b,
+                    "projected_profit_yearly": yearly_profit_b,
+                    "shipping_uplift_profit": uplift_b,
+                    "avg_profit_per_package": avg_pp_b,
+                    "one_day_packages": one_day_pkg_b,
+                    "two_day_packages": two_day_pkg_b,
+                    "three_day_packages": three_day_pkg_b,
+                }
+
+            panel_col_a, panel_col_b = st.columns(2)
+            with panel_col_a:
+                st.markdown("### Network A Results")
+                render_network_builder_panel(
+                    summary_a,
+                    "Network A",
+                    "compare_network_a",
+                    highlights_a,
+                )
+                st.markdown("### ROI Analysis (Network A)")
+                if roi_a is None:
+                    st.caption("No ROI projection yet for Network A.")
+                else:
+                    render_colored_metric(
+                        "Projected monthly revenue (Network A)",
+                        f"${roi_a['projected_revenue']:,.2f}",
+                        bool(roi_highlights_a.get("projected_revenue", False)),
+                    )
+                    render_colored_metric(
+                        "Projected monthly profit (Network A)",
+                        f"${roi_a['projected_profit']:,.2f}",
+                        bool(roi_highlights_a.get("projected_profit", False)),
+                    )
+                    render_colored_metric(
+                        "Shipping-speed uplift profit (Network A)",
+                        f"${roi_a['shipping_uplift_profit']:,.2f}",
+                        bool(roi_highlights_a.get("shipping_uplift_profit", False)),
+                    )
+                    render_colored_metric(
+                        "Shipping cost saved vs Network B (monthly)",
+                        (
+                            f"${shipping_saved_vs_other_monthly_a:,.2f}"
+                            if np.isfinite(shipping_saved_vs_other_monthly_a)
+                            else "N/A"
+                        ),
+                        bool(roi_highlights_a.get("shipping_saved_vs_other_monthly", False)),
+                    )
+                    render_colored_metric(
+                        "Avg profit per package (Network A)",
+                        f"${roi_a['avg_profit_per_package']:.2f}",
+                        bool(roi_highlights_a.get("avg_profit_per_package", False)),
+                    )
+                    render_colored_metric(
+                        "Projected 1-day packages (Network A)",
+                        f"{roi_a['one_day_packages']:,.0f}",
+                        bool(roi_highlights_a.get("one_day_packages", False)),
+                    )
+                    render_colored_metric(
+                        "Projected 2-day packages (Network A)",
+                        f"{roi_a['two_day_packages']:,.0f}",
+                        bool(roi_highlights_a.get("two_day_packages", False)),
+                    )
+                    render_colored_metric(
+                        "Projected 3-day packages (Network A)",
+                        f"{roi_a['three_day_packages']:,.0f}",
+                        bool(roi_highlights_a.get("three_day_packages", False)),
+                    )
+                    render_colored_metric(
+                        "Projected yearly profit (Network A)",
+                        f"${roi_a['projected_profit_yearly']:,.2f}",
+                        bool(roi_highlights_a.get("projected_profit_yearly", False)),
+                    )
+                    render_colored_metric(
+                        "Projected yearly revenue (Network A)",
+                        f"${roi_a['projected_revenue_yearly']:,.2f}",
+                        bool(roi_highlights_a.get("projected_revenue_yearly", False)),
+                    )
+                st.markdown("### Recommended Next City (Network A)")
+                if not network_a_origins:
+                    st.info("Select at least one origin in Network A to see a recommendation.")
+                elif recommended_city_a is None or recommended_lift_a is None:
+                    st.info("No additional city available for recommendation.")
+                else:
+                    lift_label_a = (
+                        f"+${recommended_lift_a:,.2f}"
+                        if recommended_lift_a >= 0
+                        else f"-${abs(recommended_lift_a):,.2f}"
+                    )
+                    st.success(
+                        f"Recommended next city: {recommended_city_a} "
+                        f"({lift_label_a}/month projected profit vs current network)."
+                    )
+            with panel_col_b:
+                st.markdown("### Network B Results")
+                render_network_builder_panel(
+                    summary_b,
+                    "Network B",
+                    "compare_network_b",
+                    highlights_b,
+                )
+                st.markdown("### ROI Analysis (Network B)")
+                if roi_b is None:
+                    st.caption("No ROI projection yet for Network B.")
+                else:
+                    render_colored_metric(
+                        "Projected monthly revenue (Network B)",
+                        f"${roi_b['projected_revenue']:,.2f}",
+                        bool(roi_highlights_b.get("projected_revenue", False)),
+                    )
+                    render_colored_metric(
+                        "Projected monthly profit (Network B)",
+                        f"${roi_b['projected_profit']:,.2f}",
+                        bool(roi_highlights_b.get("projected_profit", False)),
+                    )
+                    render_colored_metric(
+                        "Shipping-speed uplift profit (Network B)",
+                        f"${roi_b['shipping_uplift_profit']:,.2f}",
+                        bool(roi_highlights_b.get("shipping_uplift_profit", False)),
+                    )
+                    render_colored_metric(
+                        "Shipping cost saved vs Network A (monthly)",
+                        (
+                            f"${shipping_saved_vs_other_monthly_b:,.2f}"
+                            if np.isfinite(shipping_saved_vs_other_monthly_b)
+                            else "N/A"
+                        ),
+                        bool(roi_highlights_b.get("shipping_saved_vs_other_monthly", False)),
+                    )
+                    render_colored_metric(
+                        "Avg profit per package (Network B)",
+                        f"${roi_b['avg_profit_per_package']:.2f}",
+                        bool(roi_highlights_b.get("avg_profit_per_package", False)),
+                    )
+                    render_colored_metric(
+                        "Projected 1-day packages (Network B)",
+                        f"{roi_b['one_day_packages']:,.0f}",
+                        bool(roi_highlights_b.get("one_day_packages", False)),
+                    )
+                    render_colored_metric(
+                        "Projected 2-day packages (Network B)",
+                        f"{roi_b['two_day_packages']:,.0f}",
+                        bool(roi_highlights_b.get("two_day_packages", False)),
+                    )
+                    render_colored_metric(
+                        "Projected 3-day packages (Network B)",
+                        f"{roi_b['three_day_packages']:,.0f}",
+                        bool(roi_highlights_b.get("three_day_packages", False)),
+                    )
+                    render_colored_metric(
+                        "Projected yearly profit (Network B)",
+                        f"${roi_b['projected_profit_yearly']:,.2f}",
+                        bool(roi_highlights_b.get("projected_profit_yearly", False)),
+                    )
+                    render_colored_metric(
+                        "Projected yearly revenue (Network B)",
+                        f"${roi_b['projected_revenue_yearly']:,.2f}",
+                        bool(roi_highlights_b.get("projected_revenue_yearly", False)),
+                    )
+                st.markdown("### Recommended Next City (Network B)")
+                if not network_b_origins:
+                    st.info("Select at least one origin in Network B to see a recommendation.")
+                elif recommended_city_b is None or recommended_lift_b is None:
+                    st.info("No additional city available for recommendation.")
+                else:
+                    lift_label_b = (
+                        f"+${recommended_lift_b:,.2f}"
+                        if recommended_lift_b >= 0
+                        else f"-${abs(recommended_lift_b):,.2f}"
+                    )
+                    st.success(
+                        f"Recommended next city: {recommended_city_b} "
+                        f"({lift_label_b}/month projected profit vs current network)."
+                    )
+
+            st.markdown("### Unique Priority Cities By Coverage Threshold")
+            if summary_a is None and summary_b is None:
+                st.caption("Select origins in at least one network to compare unique coverage.")
+            else:
+                for threshold, label in [(1.0, "1-day"), (2.0, "2-day"), (3.0, "3-day")]:
+                    st.markdown(f"#### {label} Unique Coverage")
+                    unique_a = unique_priority_cities_for_threshold(
+                        summary_a,
+                        summary_b,
+                        threshold,
+                        limit=5,
+                    )
+                    unique_b = unique_priority_cities_for_threshold(
+                        summary_b,
+                        summary_a,
+                        threshold,
+                        limit=5,
+                    )
+                    unique_col_a, unique_col_b = st.columns(2)
+                    with unique_col_a:
+                        st.markdown("Network A cities not covered by Network B")
+                        if unique_a.empty:
+                            st.caption(f"No unique {label} cities for Network A.")
+                        else:
+                            st.dataframe(unique_a, use_container_width=True)
+                    with unique_col_b:
+                        st.markdown("Network B cities not covered by Network A")
+                        if unique_b.empty:
+                            st.caption(f"No unique {label} cities for Network B.")
+                        else:
+                            st.dataframe(unique_b, use_container_width=True)
+
+            st.markdown("### Projected Savings Vs Comparison City")
+            demand_increase_pct = float(
+                st.slider(
+                    "Demand shift from comparison city to built networks (%)",
+                    min_value=0.0,
+                    max_value=200.0,
+                    value=0.0,
+                    step=1.0,
+                    key="compare_demand_increase_pct",
+                )
+            )
+            default_compare_city = "Harrisburg" if "Harrisburg" in origin_options else origin_options[0]
+            comparison_city = st.selectbox(
+                "Comparison city for savings analysis",
+                origin_options,
+                index=origin_options.index(default_compare_city),
+                key="compare_savings_city",
+            )
+
+            comparison_subset = compare_df[compare_df["FromAddress"] == comparison_city]
+            comparison_summary = (
+                compute_built_network_summary(comparison_subset, dest_weights_compare)
+                if not comparison_subset.empty
+                else None
+            )
+            if comparison_summary is None:
+                st.caption("Comparison city has no usable data for savings analysis.")
+            else:
+                built_network_monthly_packages = int(monthly_packages)
+                demand_shift_multiplier = 1.0 + (demand_increase_pct / 100.0)
+                comparison_city_monthly_packages = int(
+                    round(built_network_monthly_packages / demand_shift_multiplier)
+                )
+                comparison_city_roi = compute_network_roi_projection(
+                    comparison_summary,
+                    dest_weights_compare,
+                    comparison_city_monthly_packages,
+                    base_revenue_per_package,
+                    base_profit_per_package,
+                    one_day_bonus,
+                    two_day_bonus,
+                    three_day_penalty,
+                )
+                network_a_roi_vs_city = (
+                    compute_network_roi_projection(
+                        summary_a,
+                        dest_weights_compare,
+                        built_network_monthly_packages,
+                        base_revenue_per_package,
+                        base_profit_per_package,
+                        one_day_bonus,
+                        two_day_bonus,
+                        three_day_penalty,
+                    ) if summary_a is not None else None
+                )
+                network_b_roi_vs_city = (
+                    compute_network_roi_projection(
+                        summary_b,
+                        dest_weights_compare,
+                        built_network_monthly_packages,
+                        base_revenue_per_package,
+                        base_profit_per_package,
+                        one_day_bonus,
+                        two_day_bonus,
+                        three_day_penalty,
+                    ) if summary_b is not None else None
+                )
+
+                savings_rows = []
+                for network_name, network_roi in [
+                    ("Network A", network_a_roi_vs_city),
+                    ("Network B", network_b_roi_vs_city),
+                ]:
+                    if network_roi is None:
+                        savings_rows.append(
+                            {
+                                "Network": network_name,
+                                "ProjectedSavedMonthlyVsCity": float("nan"),
+                                "ProjectedSavedYearlyVsCity": float("nan"),
+                            }
+                        )
+                        continue
+                    monthly_saved = network_roi["projected_profit"] - comparison_city_roi["projected_profit"]
+                    yearly_saved = network_roi["projected_profit_yearly"] - comparison_city_roi["projected_profit_yearly"]
+                    savings_rows.append(
+                        {
+                            "Network": network_name,
+                            "ProjectedSavedMonthlyVsCity": monthly_saved,
+                            "ProjectedSavedYearlyVsCity": yearly_saved,
+                        }
+                    )
+
+                savings_df = pd.DataFrame(savings_rows)
+                savings_display_df = savings_df.copy()
+                for col in ["ProjectedSavedMonthlyVsCity", "ProjectedSavedYearlyVsCity"]:
+                    savings_display_df[col] = savings_display_df[col].apply(
+                        lambda val: f"${val:,.2f}" if np.isfinite(val) else "N/A"
+                    )
+                st.caption(
+                    "Calculation: ProjectedSavedMonthlyVsCity = built network projected monthly profit "
+                    "- comparison city projected monthly profit. "
+                    "ProjectedSavedYearlyVsCity = built network projected yearly profit "
+                    "- comparison city projected yearly profit."
+                )
+                st.caption(
+                    "Demand-shift calculation: comparison city packages = built network packages / "
+                    "(1 + demand shift % / 100). Example: 100% shift means the comparison city is at 50% of network volume."
+                )
+                st.caption(
+                    f"Built networks use {built_network_monthly_packages:,} packages/month. "
+                    f"{comparison_city} uses {comparison_city_monthly_packages:,} packages/month after demand shift."
+                )
+                st.dataframe(savings_display_df, use_container_width=True)
     else:
         st.info("page3.csv not found in the app folder.")
 
