@@ -1521,6 +1521,49 @@ def compute_network_roi_projection(
     }
 
 
+def apply_shipping_cost_savings_to_projected_profit(
+    roi_projection: dict | None,
+    network_summary: dict | None,
+    comparison_base_city_avg_cost: float | None,
+    monthly_packages: int,
+) -> dict | None:
+    if roi_projection is None:
+        return None
+
+    adjusted_roi = roi_projection.copy()
+    shipping_cost_savings_monthly = 0.0
+    if (
+        network_summary is not None
+        and comparison_base_city_avg_cost is not None
+        and np.isfinite(comparison_base_city_avg_cost)
+        and np.isfinite(network_summary["avg_cost"])
+    ):
+        shipping_cost_savings_monthly = float(
+            (comparison_base_city_avg_cost - network_summary["avg_cost"]) * monthly_packages
+        )
+    shipping_cost_savings_yearly = shipping_cost_savings_monthly * 12.0
+    avg_shipping_saved_per_package = (
+        shipping_cost_savings_monthly / float(monthly_packages)
+        if monthly_packages > 0
+        else 0.0
+    )
+    adjusted_roi["shipping_cost_savings_vs_base_city_monthly"] = shipping_cost_savings_monthly
+    adjusted_roi["shipping_cost_savings_vs_base_city_yearly"] = shipping_cost_savings_yearly
+    adjusted_roi["avg_shipping_saved_per_package_vs_base_city"] = avg_shipping_saved_per_package
+    adjusted_roi["projected_profit"] = float(
+        adjusted_roi["projected_profit"] + shipping_cost_savings_monthly
+    )
+    adjusted_roi["projected_profit_yearly"] = float(
+        adjusted_roi["projected_profit_yearly"] + shipping_cost_savings_yearly
+    )
+    adjusted_roi["avg_profit_per_package"] = (
+        adjusted_roi["projected_profit"] / float(monthly_packages)
+        if monthly_packages > 0
+        else 0.0
+    )
+    return adjusted_roi
+
+
 def recommend_next_city_by_profit(
     full_df: pd.DataFrame,
     selected_origins: list[str],
@@ -1532,6 +1575,7 @@ def recommend_next_city_by_profit(
     one_day_bonus: float,
     two_day_bonus: float,
     three_day_penalty: float,
+    comparison_base_city_avg_cost: float | None = None,
 ) -> tuple[str | None, float | None]:
     if not selected_origins:
         return None, None
@@ -1553,6 +1597,12 @@ def recommend_next_city_by_profit(
         one_day_bonus,
         two_day_bonus,
         three_day_penalty,
+    )
+    base_roi = apply_shipping_cost_savings_to_projected_profit(
+        base_roi,
+        base_summary,
+        comparison_base_city_avg_cost,
+        monthly_packages,
     )
     if base_roi is None:
         return None, None
@@ -1578,6 +1628,12 @@ def recommend_next_city_by_profit(
             one_day_bonus,
             two_day_bonus,
             three_day_penalty,
+        )
+        candidate_roi = apply_shipping_cost_savings_to_projected_profit(
+            candidate_roi,
+            candidate_summary,
+            comparison_base_city_avg_cost,
+            monthly_packages,
         )
         if candidate_roi is None:
             continue
@@ -3938,6 +3994,17 @@ with tab_compare_networks:
                 "Revenue uses: revenue per package + 1-day/2-day boosts. "
                 "3-day penalty affects profit only."
             )
+            default_base_city = "Harrisburg" if "Harrisburg" in origin_options else origin_options[0]
+            comparison_base_city = st.selectbox(
+                "Comparison base city for projected profit shipping savings",
+                origin_options,
+                index=origin_options.index(default_base_city),
+                key="compare_roi_base_city",
+            )
+            st.caption(
+                "Projected monthly profit includes shipping-cost savings vs this base city: "
+                "(base city avg cost - network avg cost) x packages/month."
+            )
 
             selector_col_a, selector_col_b = st.columns(2)
             with selector_col_a:
@@ -3957,6 +4024,18 @@ with tab_compare_networks:
                     key="compare_network_b_origins",
                 )
 
+            comparison_base_subset = compare_df[compare_df["FromAddress"] == comparison_base_city]
+            comparison_base_summary = (
+                compute_built_network_summary(comparison_base_subset, dest_weights_compare)
+                if not comparison_base_subset.empty
+                else None
+            )
+            comparison_base_city_avg_cost = (
+                float(comparison_base_summary["avg_cost"])
+                if comparison_base_summary is not None and np.isfinite(comparison_base_summary["avg_cost"])
+                else None
+            )
+
             subset_a = compare_df[compare_df["FromAddress"].isin(network_a_origins)]
             subset_b = compare_df[compare_df["FromAddress"].isin(network_b_origins)]
             summary_a = (
@@ -3969,25 +4048,35 @@ with tab_compare_networks:
                 if not subset_b.empty
                 else None
             )
-            roi_a = compute_network_roi_projection(
+            roi_a = apply_shipping_cost_savings_to_projected_profit(
+                compute_network_roi_projection(
+                    summary_a,
+                    dest_weights_compare,
+                    monthly_packages,
+                    base_revenue_per_package,
+                    base_profit_per_package,
+                    one_day_bonus,
+                    two_day_bonus,
+                    three_day_penalty,
+                ),
                 summary_a,
-                dest_weights_compare,
+                comparison_base_city_avg_cost,
                 monthly_packages,
-                base_revenue_per_package,
-                base_profit_per_package,
-                one_day_bonus,
-                two_day_bonus,
-                three_day_penalty,
             )
-            roi_b = compute_network_roi_projection(
+            roi_b = apply_shipping_cost_savings_to_projected_profit(
+                compute_network_roi_projection(
+                    summary_b,
+                    dest_weights_compare,
+                    monthly_packages,
+                    base_revenue_per_package,
+                    base_profit_per_package,
+                    one_day_bonus,
+                    two_day_bonus,
+                    three_day_penalty,
+                ),
                 summary_b,
-                dest_weights_compare,
+                comparison_base_city_avg_cost,
                 monthly_packages,
-                base_revenue_per_package,
-                base_profit_per_package,
-                one_day_bonus,
-                two_day_bonus,
-                three_day_penalty,
             )
             recommended_city_a, recommended_lift_a = recommend_next_city_by_profit(
                 compare_df,
@@ -4000,6 +4089,7 @@ with tab_compare_networks:
                 one_day_bonus,
                 two_day_bonus,
                 three_day_penalty,
+                comparison_base_city_avg_cost=comparison_base_city_avg_cost,
             )
             recommended_city_b, recommended_lift_b = recommend_next_city_by_profit(
                 compare_df,
@@ -4012,6 +4102,7 @@ with tab_compare_networks:
                 one_day_bonus,
                 two_day_bonus,
                 three_day_penalty,
+                comparison_base_city_avg_cost=comparison_base_city_avg_cost,
             )
 
             highlights_a = {}
@@ -4097,6 +4188,11 @@ with tab_compare_networks:
                     roi_b["shipping_uplift_profit"],
                     higher_is_better=True,
                 )
+                avg_ship_saved_pkg_a, avg_ship_saved_pkg_b = compare_metric_winners(
+                    roi_a["avg_shipping_saved_per_package_vs_base_city"],
+                    roi_b["avg_shipping_saved_per_package_vs_base_city"],
+                    higher_is_better=True,
+                )
                 avg_pp_a, avg_pp_b = compare_metric_winners(
                     roi_a["avg_profit_per_package"],
                     roi_b["avg_profit_per_package"],
@@ -4124,6 +4220,7 @@ with tab_compare_networks:
                     "projected_profit": profit_a,
                     "projected_profit_yearly": yearly_profit_a,
                     "shipping_uplift_profit": uplift_a,
+                    "avg_shipping_saved_per_package_vs_base_city": avg_ship_saved_pkg_a,
                     "avg_profit_per_package": avg_pp_a,
                     "one_day_packages": one_day_pkg_a,
                     "two_day_packages": two_day_pkg_a,
@@ -4136,6 +4233,7 @@ with tab_compare_networks:
                     "projected_profit": profit_b,
                     "projected_profit_yearly": yearly_profit_b,
                     "shipping_uplift_profit": uplift_b,
+                    "avg_shipping_saved_per_package_vs_base_city": avg_ship_saved_pkg_b,
                     "avg_profit_per_package": avg_pp_b,
                     "one_day_packages": one_day_pkg_b,
                     "two_day_packages": two_day_pkg_b,
@@ -4178,6 +4276,11 @@ with tab_compare_networks:
                             else "N/A"
                         ),
                         bool(roi_highlights_a.get("shipping_saved_vs_other_monthly", False)),
+                    )
+                    render_colored_metric(
+                        "Avg shipping saved per package (Network A)",
+                        f"${roi_a['avg_shipping_saved_per_package_vs_base_city']:.2f}",
+                        bool(roi_highlights_a.get("avg_shipping_saved_per_package_vs_base_city", False)),
                     )
                     render_colored_metric(
                         "Avg profit per package (Network A)",
@@ -4259,6 +4362,11 @@ with tab_compare_networks:
                             else "N/A"
                         ),
                         bool(roi_highlights_b.get("shipping_saved_vs_other_monthly", False)),
+                    )
+                    render_colored_metric(
+                        "Avg shipping saved per package (Network B)",
+                        f"${roi_b['avg_shipping_saved_per_package_vs_base_city']:.2f}",
+                        bool(roi_highlights_b.get("avg_shipping_saved_per_package_vs_base_city", False)),
                     )
                     render_colored_metric(
                         "Avg profit per package (Network B)",
@@ -4349,7 +4457,9 @@ with tab_compare_networks:
                     key="compare_demand_increase_pct",
                 )
             )
-            default_compare_city = "Harrisburg" if "Harrisburg" in origin_options else origin_options[0]
+            default_compare_city = (
+                comparison_base_city if comparison_base_city in origin_options else origin_options[0]
+            )
             comparison_city = st.selectbox(
                 "Comparison city for savings analysis",
                 origin_options,
@@ -4371,38 +4481,53 @@ with tab_compare_networks:
                 comparison_city_monthly_packages = int(
                     round(built_network_monthly_packages / demand_shift_multiplier)
                 )
-                comparison_city_roi = compute_network_roi_projection(
-                    comparison_summary,
-                    dest_weights_compare,
-                    comparison_city_monthly_packages,
-                    base_revenue_per_package,
-                    base_profit_per_package,
-                    one_day_bonus,
-                    two_day_bonus,
-                    three_day_penalty,
-                )
-                network_a_roi_vs_city = (
+                comparison_city_roi = apply_shipping_cost_savings_to_projected_profit(
                     compute_network_roi_projection(
-                        summary_a,
+                        comparison_summary,
                         dest_weights_compare,
-                        built_network_monthly_packages,
+                        comparison_city_monthly_packages,
                         base_revenue_per_package,
                         base_profit_per_package,
                         one_day_bonus,
                         two_day_bonus,
                         three_day_penalty,
+                    ),
+                    comparison_summary,
+                    comparison_base_city_avg_cost,
+                    comparison_city_monthly_packages,
+                )
+                network_a_roi_vs_city = (
+                    apply_shipping_cost_savings_to_projected_profit(
+                        compute_network_roi_projection(
+                            summary_a,
+                            dest_weights_compare,
+                            built_network_monthly_packages,
+                            base_revenue_per_package,
+                            base_profit_per_package,
+                            one_day_bonus,
+                            two_day_bonus,
+                            three_day_penalty,
+                        ),
+                        summary_a,
+                        comparison_base_city_avg_cost,
+                        built_network_monthly_packages,
                     ) if summary_a is not None else None
                 )
                 network_b_roi_vs_city = (
-                    compute_network_roi_projection(
+                    apply_shipping_cost_savings_to_projected_profit(
+                        compute_network_roi_projection(
+                            summary_b,
+                            dest_weights_compare,
+                            built_network_monthly_packages,
+                            base_revenue_per_package,
+                            base_profit_per_package,
+                            one_day_bonus,
+                            two_day_bonus,
+                            three_day_penalty,
+                        ),
                         summary_b,
-                        dest_weights_compare,
+                        comparison_base_city_avg_cost,
                         built_network_monthly_packages,
-                        base_revenue_per_package,
-                        base_profit_per_package,
-                        one_day_bonus,
-                        two_day_bonus,
-                        three_day_penalty,
                     ) if summary_b is not None else None
                 )
 
