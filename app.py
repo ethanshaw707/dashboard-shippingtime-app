@@ -3742,6 +3742,60 @@ with tab_regionals_v3:
                         "3-day coverage (weighted) (page3)",
                         f"{three_day_coverage_v3:.1f}%",
                     )
+                    origin_order_share_v3 = (
+                        built_best_time_v3[["Destination", "Weight"]]
+                        .assign(CoverageFrom=lambda d: d["Destination"].map(coverage_origin_map_v3))
+                        .assign(
+                            OriginList=lambda d: d["CoverageFrom"].apply(
+                                lambda val: [
+                                    origin.strip()
+                                    for origin in str(val).split(",")
+                                    if origin and origin.strip()
+                                ]
+                                if pd.notna(val)
+                                else []
+                            )
+                        )
+                    )
+                    origin_order_share_v3["OriginCount"] = origin_order_share_v3["OriginList"].apply(len)
+                    origin_order_share_v3 = origin_order_share_v3[
+                        origin_order_share_v3["OriginCount"] > 0
+                    ].copy()
+                    origin_order_share_v3 = origin_order_share_v3.explode("OriginList")
+                    origin_order_share_v3["OrderWeight"] = (
+                        origin_order_share_v3["Weight"] / origin_order_share_v3["OriginCount"]
+                    )
+                    origin_order_share_v3 = (
+                        origin_order_share_v3.groupby("OriginList", as_index=False)
+                        .agg(OrderWeight=("OrderWeight", "sum"))
+                        .rename(columns={"OriginList": "Origin"})
+                    )
+                    origin_order_share_v3 = (
+                        pd.DataFrame({"Origin": sorted(set(built_network_origins_v3))})
+                        .merge(origin_order_share_v3, on="Origin", how="left")
+                        .fillna({"OrderWeight": 0.0})
+                    )
+                    origin_order_share_v3["OrderSharePct"] = np.where(
+                        total_weight_v3 > 0,
+                        origin_order_share_v3["OrderWeight"] / total_weight_v3 * 100.0,
+                        0.0,
+                    )
+                    origin_order_share_v3 = origin_order_share_v3.sort_values(
+                        ["OrderSharePct", "Origin"],
+                        ascending=[False, True],
+                    )
+                    origin_order_share_display_v3 = origin_order_share_v3[
+                        ["Origin", "OrderSharePct"]
+                    ].copy()
+                    origin_order_share_display_v3["OrderSharePct"] = origin_order_share_display_v3[
+                        "OrderSharePct"
+                    ].map(lambda x: f"{x:.1f}%")
+                    st.markdown("Projected order share by included origin (page3)")
+                    st.caption(
+                        "Based on destination weights and the best-time origin per destination. "
+                        "If multiple origins tie for best time on a destination, its share is split evenly across them."
+                    )
+                    st.dataframe(origin_order_share_display_v3, use_container_width=True)
                     st.markdown("1-day shipping cities (page3)")
                     if one_day_v3.empty:
                         st.caption("No destinations with 1-day shipping in the page3 network.")
