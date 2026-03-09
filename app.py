@@ -1933,6 +1933,50 @@ def render_top_combos(
         top_results = results[:5]
         return [(name, weighted_total) for name, weighted_total, _ in top_results]
 
+    # Converts selected origin names into indices for the full combo matrix.
+    def small_combo_indices_from_names(combo_names):
+        return [small_origin_list.index(name) for name in combo_names]
+
+    # Returns the visible section title for each combo size.
+    def combo_section_title(k_size: int) -> str:
+        if k_size == 3:
+            return "Top 5 trios"
+        if k_size == 4:
+            return "Top 5 quads"
+        return f"Top 5 ({k_size} locations)"
+
+    # Returns the select label for each combo size and priority mode.
+    def combo_select_label(k_size: int, coverage_threshold: float) -> str:
+        if k_size == 3:
+            return f"Top 5 trios ({int(coverage_threshold)}-day priority)"
+        if k_size == 4:
+            return f"Top 5 quads ({int(coverage_threshold)}-day priority)"
+        return f"Top 5 ({k_size} locations) ({int(coverage_threshold)}-day priority)"
+
+    # Reads the active optimization preference for the next combo.
+    def current_priority_threshold(k_size: int) -> float:
+        return 1.0 if float(st.session_state.get(f"{key_prefix}_optimize_next_from_{k_size}", 2.0)) <= 1.0 else 2.0
+
+    # Renders the buttons that choose how the next combo should be ranked.
+    def render_priority_buttons(k_size: int) -> None:
+        if k_size >= max_k:
+            return
+        active_threshold = current_priority_threshold(k_size)
+        st.caption(f"Next combo will be optimized for {int(active_threshold)}-day shipping.")
+        button_col1, button_col2 = st.columns(2)
+        with button_col1:
+            if st.button(
+                "Optimize next combo for 1-day shipping",
+                key=f"{key_prefix}_optimize_next_from_{k_size}_one_day",
+            ):
+                st.session_state[f"{key_prefix}_optimize_next_from_{k_size}"] = 1.0
+        with button_col2:
+            if st.button(
+                "Optimize next combo for 2-day shipping",
+                key=f"{key_prefix}_optimize_next_from_{k_size}_two_day",
+            ):
+                st.session_state[f"{key_prefix}_optimize_next_from_{k_size}"] = 2.0
+
     pair_df = compute_pair_df_cached(
         df,
         tuple(small_origin_list),
@@ -1945,6 +1989,7 @@ def render_top_combos(
         required_name = required_small[0]
         pair_df = pair_df[pair_df["Pair"].str.contains(required_name, regex=False)]
 
+    selected_combo_names_by_size: dict[int, list[str]] = {}
     if not pair_df.empty:
         best_value = float(pair_df["TwoDayCoveragePct"].iloc[0])
         top_mask = np.isclose(pair_df["TwoDayCoveragePct"], best_value)
@@ -1964,6 +2009,7 @@ def render_top_combos(
             key=f"{key_prefix}_top5_pairs",
         )
         selected_pair_name = selected_pair.rsplit(" (", 1)[0]
+        selected_combo_names_by_size[2] = selected_pair_name.split(" + ")
         selected_row = pair_df[pair_df["Pair"] == selected_pair_name].iloc[0]
         combo_indices = [small_origin_list.index(name) for name in selected_pair_name.split(" + ")]
         combo_avg_cost, combo_avg_time = small_combo_avg_cost_time(combo_indices)
@@ -2003,8 +2049,78 @@ def render_top_combos(
             not_two_day = small_combo_not_covered(combo_indices, 2.0)
             st.caption(f"Not covered in 1 day: {format_not_covered(not_one_day)}")
             st.caption(f"Not covered in 2 days: {format_not_covered(not_two_day)}")
+        render_priority_buttons(2)
     else:
         st.caption("Not enough origins to calculate pairs.")
+
+    for k_size in range(3, max_k + 1):
+        st.markdown(combo_section_title(k_size))
+        previous_combo_names = selected_combo_names_by_size.get(k_size - 1)
+        if not previous_combo_names or len(small_origin_list) < k_size:
+            st.caption(f"Not enough origins to calculate {k_size}-location combos.")
+            continue
+
+        coverage_threshold = current_priority_threshold(k_size - 1)
+        combo_list = compute_top_k_combos_with_required_cached(
+            df,
+            tuple(small_origin_list),
+            tuple(dest_in_view),
+            tuple(previous_combo_names),
+            k_size,
+            build_cost_weight,
+            dest_weights_items,
+            optimize_for_days=coverage_threshold,
+        )
+        if not combo_list:
+            st.caption(f"No valid {k_size}-location combos could be calculated.")
+            continue
+
+        combo_labels = [f"{name} ({value:.2f})" for name, value in combo_list]
+        selected_combo = st.selectbox(
+            combo_select_label(k_size, coverage_threshold),
+            combo_labels,
+            index=0,
+            key=f"{key_prefix}_top5_{k_size}",
+        )
+        combo_name = selected_combo.rsplit(" (", 1)[0]
+        selected_combo_names_by_size[k_size] = combo_name.split(" + ")
+        combo_weighted_total_value = next(value for name, value in combo_list if name == combo_name)
+        combo_indices = small_combo_indices_from_names(selected_combo_names_by_size[k_size])
+        prev_combo = small_combo_indices_from_names(previous_combo_names)
+        combo_avg_cost, combo_avg_time = small_combo_avg_cost_time(combo_indices)
+        prev_cost, prev_time = small_combo_avg_cost_time(prev_combo)
+        prev_cost_delta = prev_cost - combo_avg_cost
+        prev_time_delta = prev_time - combo_avg_time
+        move_3_to_2, move_2_to_1 = small_combo_time_improvements(combo_indices, prev_combo)
+        st.caption(
+            f"Weighted total: {combo_weighted_total_value:.2f} - Avg cost: {combo_avg_cost:.2f} "
+            f"(delta {avg_cost - combo_avg_cost:.2f}) - Avg time: {combo_avg_time:.2f} "
+            f"(delta {avg_time - combo_avg_time:.2f})"
+        )
+        st.caption(
+            f"Delta vs selected {k_size - 1} origins: cost {prev_cost_delta:.2f}, "
+            f"time {prev_time_delta:.2f}"
+        )
+        st.caption(f"Moves 3->2 day: {move_3_to_2} - Moves 2->1 day: {move_2_to_1}")
+        improved_destinations = small_combo_improved_cities(prev_combo, combo_indices)
+        st.selectbox(
+            f"Improved destinations vs selected {k_size - 1} origins",
+            improved_destinations or ["None"],
+            key=f"{key_prefix}_{k_size}_improved_destinations",
+        )
+        if show_day_percentages:
+            pct_1, pct_2, pct_3 = small_combo_day_percentages(combo_indices)
+            st.caption(
+                f"1-day coverage: {pct_1:.1f}% | 2-day coverage: {pct_2:.1f}% | "
+                f"3-day coverage: {pct_3:.1f}%"
+            )
+            not_one_day = small_combo_not_covered(combo_indices, 1.0)
+            not_two_day = small_combo_not_covered(combo_indices, 2.0)
+            st.caption(f"Not covered in 1 day: {format_not_covered(not_one_day)}")
+            st.caption(f"Not covered in 2 days: {format_not_covered(not_two_day)}")
+        render_priority_buttons(k_size)
+
+    return
 
     st.markdown("Top 5 trios")
     trio_list = (
@@ -3030,6 +3146,7 @@ def compute_top_k_combos_with_required_cached(
     k: int,
     build_cost_weight: float,
     dest_weights_items: tuple,
+    optimize_for_days: float = 2.0,
     limit: int = 5,
 ) -> list[tuple[str, float]]:
     if k < len(required_origins):
@@ -3065,23 +3182,23 @@ def compute_top_k_combos_with_required_cached(
             if valid_weights.sum() == 0:
                 valid_weights = np.ones(len(valid_weights), dtype=float)
             total_weight = float(np.sum(valid_weights))
-            two_day_weight = float(np.sum(valid_weights[best_time[valid_time] <= 2.0]))
-            two_day_coverage_pct = two_day_weight / total_weight * 100.0
+            coverage_weight = float(np.sum(valid_weights[best_time[valid_time] <= optimize_for_days]))
+            coverage_pct = coverage_weight / total_weight * 100.0
         else:
-            two_day_coverage_pct = 0.0
-        combos.append((" + ".join(origin_list[idx] for idx in combo_indices), total, two_day_coverage_pct))
+            coverage_pct = 0.0
+        combos.append((" + ".join(origin_list[idx] for idx in combo_indices), total, coverage_pct))
     combos.sort(key=lambda item: (-item[2], item[1] if np.isfinite(item[1]) else float("inf"), item[0]))
     if len(combos) <= limit:
         return [(name, total) for name, total, _ in combos]
-    cutoff_two_day_pct = combos[limit - 1][2]
+    cutoff_coverage_pct = combos[limit - 1][2]
     cutoff_weighted_total = combos[limit - 1][1]
     if not np.isfinite(cutoff_weighted_total):
         return [(name, total) for name, total, _ in combos[:limit]]
     return [
         (name, total)
-        for name, total, two_day_pct in combos
-        if two_day_pct > cutoff_two_day_pct
-        or (np.isclose(two_day_pct, cutoff_two_day_pct) and total <= cutoff_weighted_total)
+        for name, total, coverage_pct in combos
+        if coverage_pct > cutoff_coverage_pct
+        or (np.isclose(coverage_pct, cutoff_coverage_pct) and total <= cutoff_weighted_total)
     ]
 
 
