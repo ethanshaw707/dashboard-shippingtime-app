@@ -1269,10 +1269,12 @@ def compute_built_network_summary(
     two_day_coverage_weight = float(
         built_best_time[built_best_time["BestTime"] <= 2.0]["Weight"].sum()
     )
-    three_day_weight = float(three_day_df["Weight"].sum())
+    three_day_coverage_weight = float(
+        built_best_time[built_best_time["BestTime"] <= 3.0]["Weight"].sum()
+    )
     one_day_coverage = (one_day_weight / total_weight * 100.0) if total_weight else 0.0
     two_day_coverage = (two_day_coverage_weight / total_weight * 100.0) if total_weight else 0.0
-    three_day_coverage = (three_day_weight / total_weight * 100.0) if total_weight else 0.0
+    three_day_coverage = (three_day_coverage_weight / total_weight * 100.0) if total_weight else 0.0
 
     built_avg_time = weighted_mean(
         built_best_time["BestTime"].to_numpy(),
@@ -1506,7 +1508,7 @@ def compute_network_roi_projection(
     avg_profit_per_package = projected_profit / float(monthly_packages)
     one_day_packages = float(np.sum(dist_df.loc[one_day_mask, "Packages"]))
     two_day_packages = float(np.sum(dist_df.loc[two_day_mask, "Packages"]))
-    three_day_packages = float(np.sum(dist_df.loc[three_day_mask, "Packages"]))
+    three_day_packages = float(np.sum(dist_df.loc[dist_df["BestTime"] <= 3.0, "Packages"]))
 
     return {
         "projected_revenue": projected_revenue,
